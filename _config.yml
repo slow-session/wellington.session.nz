@@ -7,15 +7,15 @@
 
 # Site settings
 title: The Wellington Session
-email: admin@wellingtonsession.org
+email: admin@wellington.session.nz
 description: > # this means to ignore newlines until "baseurl:"
   Website of the Irish session, Wellington, New Zealand.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://wellingtonsession.org" # the base hostname & protocol for your site
+url: "http://wellington.session.nz" # the base hostname & protocol for your site
 facebook: https://www.facebook.com/groups/WellingtonSession
 jekyll: https://jekyllrb.com
-github: https://github.com/slow-session/wellingtonsession.org
-mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
+github: https://github.com/slow-session/wellington.session.nz
+mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER%
 
 # Build settings
 markdown: kramdown

@@ -2,11 +2,13 @@
 layout: null
 ---
 
-# Session tunes
+Session tunes
+=============
 
 A collection of tunes for the Wellington Irish session.
 
-## A static website
+A static website
+----------------
 
 This is a static website that use Jekyll to process files and generate the
 website. Each tune is included as a markdown file in the `_tunes` collection.
@@ -42,12 +44,14 @@ abc: |
 ---
 ```
 
-## Open source
+Open source
+-----------
 
 This code open source (released under an [MIT licence](https://github.com/wellington-session/wellington-session.github.io/blob/master/LICENSE)). You are very welcome to copy the code and customise it for your own purposes. Get in touch with Edward Abraham ([edward@dragonfly.co.nz](mailto:edward@dragonfly.co.nz)) if you need a hand getting it set up.
 
 
-## Developing
+Developing
+----------
 
 To develop the website, follow the instructions for [Jekyll](https://jekyllrb.com/).
 
@@ -65,12 +69,13 @@ in your browser. Refresh the page to see the results of any changes you make.
 Send us a pull request if you have any new features that you think we should include, or if you
 have fixed any issues.
 
-## Loading changes to live website
+Loading changes to live website
+-------------------------------
 
 Once you've pushed updates to the **Branch: master** these changes need to be incorporated to the 
 **Branch: gh-pages**.
 
-Using the website <https://github.com/slow-session/wellingtonsession.org> you can issue a **Pull** request to get the changes from the **master** branch into the **gh-pages** branch.
+Using the website <https://github.com/slow-session/wellington.session.nz> you can issue a **Pull** request to get the changes from the **master** branch into the **gh-pages** branch.
 
   * Select the button **New pull request**
   * You should now see a screen headed **Compare changes**
@@ -80,6 +85,6 @@ Using the website <https://github.com/slow-session/wellingtonsession.org> you ca
     * You should see a message like: *asjl  wants to merge 1 commit into gh-pages from master*
   * Choose **Merge pull request** and then **Confirm Merge**
     * You should see a message like: *asjl  merged 1 commit into gh-pages from master 12 seconds ago*
-  * Check the website <http://wellingtonsession.org/> to make sure the changes are correct.
+  * Check the website <http://wellington.session.nz/> to make sure the changes are correct.
   
     
