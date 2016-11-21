@@ -1,0 +1,4 @@
+{% assign temp = tune.abc | lstrip %}
+{% assign words = temp | split: '|' %}
+{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }} 
+{% endif %}

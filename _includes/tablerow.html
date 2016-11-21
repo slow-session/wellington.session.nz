@@ -1,0 +1,50 @@
+<!--build the first three columns--> 
+<td><a href="{{ tune.url }}">{{ tune.title }}</a></td>
+<td>{{ tune.key }}</td>
+<td>{{ tune.rhythm }}</td>
+
+{% if tune.mp3_file %}
+<td style="text-align:center">
+    <!--build the audio player for each tune-->
+    <audio id="A{{ include.counter }}" title="{{ tune.title }}" controls loop preload="none">
+       <source src="{{ site.mp3_host }}{{ tune.mp3_file }}" type="audio/mpeg"> 
+    </audio>
+    <br />
+    <!--build the loop mechanism for each tune--> 
+    <span title="Play tune, select loop starting point, then select loop end point">
+        <input type="button" id="B1{{ include.counter }}" value="Loop Start" onclick="SetPlayRange(A{{ include.counter }},0,B1{{ include.counter }}, B2{{ include.counter }})">
+        <input type="button" id="B2{{ include.counter }}" value=" Loop End " onclick="SetPlayRange(A{{ include.counter }},1,B1{{ include.counter }}, B2{{ include.counter }})">
+        <input type="button" value="Reset" onclick="SetPlayRange(A{{ include.counter }},2,B1{{ include.counter }},B2{{ include.counter }})">
+    </span>
+</td>
+<!--build the slow down slider for each tune-->
+<td style="text-align:center">
+    <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100" onchange="setPlaySpeed(value/100, A{{ include.counter }})">
+        <output name="level">100</output>%
+    </form>
+</td>
+{% else %}
+<td style="text-align:center">
+<!--build the abc player for each tune-->
+    <span title="No MP3 available. Play and stop tune from ABC source">
+        <input type="button" value="Play ABC" id="play" onclick="abcSliderChanged(RSM{{ include.counter }}.value,ABC{{ include.counter }})">
+        <br />
+        <input type="button" value="Stop" id="stop" onclick="stopABC(ABC{{ include.counter }})">
+    </span>
+</td>
+<!--build the slow down slider for each tune-->
+<td style="text-align:center">   
+    <form onsubmit="return false" oninput="level.value = Math.round(flevel.valueAsNumber/3.2)">
+  	    <input name="flevel" id="RSM{{ include.counter }}" type="range" min="160" max="384" value="320" onchange="abcSliderChanged(value,ABC{{ include.counter }})">
+        <output name="level">100</output>%
+    </form>
+</td>
+    
+<!--unroll ABC to handle repeats and different endings for parts-->
+<script>
+var textAreas = document.getElementById("abc-textareas");
+
+textAreas.innerHTML += '<textarea id="{{'ABC' | append: include.counter }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
+</script>
+{% endif %}

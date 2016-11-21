@@ -1,0 +1,135 @@
+---
+layout: null
+permalink: /abc-collections/archive.abc
+---
+I:abc-charset utf-8
+%%titlefont Helvetica 26
+%%subtitlefont Helvetica 16
+%%gchordfont Helvetica 12
+%%composerfont Helvetica-Oblique 14
+%%partsfont Helvetica 12
+%%printtempo 0
+%%printparts 1
+%%partsbox 1
+%%bstemdown 1
+%%dateformat \%b \%e, \%Y
+%%footer "Wellington Session Archive	$P	$d"
+
+X:1
+%%withxrefs 1
+%%textfont Helvetica 48
+%%lineskipfac 6
+%%begintext center
+%%Wellington Session Archive
+%%endtext
+%%titlefont Helvetica 1
+T:Title-Page
+M:1/1
+K:C
+
+{% assign sortedtunes = site.tunes | sort: 'title' %}
+{% assign count = 0 %}
+X:1
+%%newpage
+%%textfont Helvetica 48
+%%begintext
+%%Jigs
+%%endtext
+%%withxrefs 1
+%%infoline 1
+%%titlefont Helvetica 1
+T:_Jigs_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm  contains 'ig' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%newpage
+%%infoline 1
+%%textfont Helvetica 48
+%%
+%%Reels
+%%endtext
+%%titlefont Helvetica 1
+T:_Reels_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'eel' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%infoline 1
+%%newpage
+%%textfont Helvetica 48
+%%begintext
+%%Polkas
+%%endtext
+%%titlefont Helvetica 1
+T:_Polkas_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'olka' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%newpage
+%%infoline 1
+%%textfont Helvetica 48
+%%begintext
+%%Hornpipes
+%%endtext
+%%titlefont Helvetica 1
+T:_Hornpipes_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'ornpipe' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%newpage
+%%infoline 1
+%%textfont Helvetica 48
+%%begintext
+%%Barndances
+%%endtext
+%%titlefont Helvetica 1
+T:_Barndances_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'arndance' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%newpage
+%%infoline 1
+%%textfont Helvetica 48
+%%begintext
+%%Waltz
+%%endtext
+%%titlefont Helvetica 1
+T:_Waltz_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'altz' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}
+
+X:1
+%%withxrefs 1
+%%newpage
+%%infoline 1
+%%textfont Helvetica 48
+%%begintext
+%%March
+%%endtext
+%%titlefont Helvetica 1
+T:_March_ 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'arch' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% endif %}{% endfor %}

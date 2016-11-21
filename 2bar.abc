@@ -1,0 +1,179 @@
+---
+layout: null
+permalink: /abc-collections/2bar.abc
+---
+I:abc-charset utf-8
+%%titlefont Helvetica 26
+%%subtitlefont Helvetica 16
+%%gchordfont Helvetica 12
+%%composerfont Helvetica-Oblique 14
+%%partsfont Helvetica 12
+%%printtempo 0
+%%printparts 1
+%%partsbox 1
+%%bstemdown 1
+%%dateformat \%b \%e, \%Y
+%%footer "Wellington Session Archive	$P	$d"
+
+%%topspace 0.0cm
+%%staffsep 0.7cm
+%%titleformat T-1
+%%musiconly 1
+%%printtempo 0
+%%titlefont Helvetica-Oblique 16
+%%subtitlefont Helvetica-Oblique 13
+
+{% assign tuneCounter = 0 %}
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+
+{% assign sortedtunes = site.tunes | sort: 'title' %}
+%%withxrefs 0
+X:100
+T:Jigs 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm  contains 'ig' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:200
+T:Reels 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'eel' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:300
+T:Polkas 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'olka' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:400
+T:Hornpipes 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'ornpipe' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:500
+T:Barndances 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'arndance' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:600
+T:Waltz 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'altz' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+
+X:700
+T:March 
+M:1/1
+K:C
+{% for tune in sortedtunes %}{% if tune.rhythm contains 'arch' %}{% include abc-book-2bar.html  %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+{% endif %}
+{% endif %}{% endfor %}
+%%multicol end

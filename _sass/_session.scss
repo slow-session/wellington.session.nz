@@ -1,0 +1,52 @@
+.player audio {
+    width: 70%;
+}
+
+.abctext {
+    display: none;
+}
+
+.button {
+   background-color:$brand-color;
+   color: darken($background-color, 10%);
+   cursor: pointer;
+}
+
+.sep {
+    border-bottom:1px solid black;
+}
+.sep td {
+    padding-bottom:5px;
+}
+
+fieldset{
+  margin: 0 auto;
+  text-align: left;
+}
+
+form
+{
+    text-align: left;
+}
+
+th {
+    background-color:$brand-color;
+    color: darken($background-color, 10%);
+    cursor: pointer;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+      background-color:darken($background-color, 3%);
+}
+tr:hover {
+    background-color: $grey-color-light;
+}
+tr#no_hover:hover {
+    background-color: transparent;
+}
+
