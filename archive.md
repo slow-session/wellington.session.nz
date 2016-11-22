@@ -20,7 +20,7 @@ or you can select by area such as Wellington, Dunedin etc.
 
 <script>
  $('#myButton').click(function () {
-     var redirectWindow = window.open('http://localhost:4001/?title=&rhythm=&location=Wellington&submit=Filter', '_blank');
+     var redirectWindow = window.open('http://session.nz/?title=&rhythm=&location=Wellington&submit=Filter', '_blank');
      redirectWindow.location;
  });
  </script>
