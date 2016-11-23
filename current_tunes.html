@@ -15,10 +15,10 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
         <br />
         <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Wellington, 'Beginner'">        
         Title:
-        <input type="text" id="title-box" name="title" value=''>
+        <input type="text" id="title-box" name="title" value='' onkeypress="enable_button()">
         &emsp; 
         Rhythm:
-        <select id="rhythm-box" name="rhythm">
+        <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">Any</option>
             <option value="reel">Reel</option>
             <option value="jig">Jig</option>
@@ -35,7 +35,7 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
         <input type='hidden' id='tags-box' name='tags' value=''>      
         &emsp;
         <span title="Run the filter with the default settings to see the whole list">
-        <input class="button" type="submit" name="submit" value="Filter">
+        <input class="filter_button filter_disabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
         </span>      
     </form>
 </fieldset>
@@ -80,4 +80,11 @@ $(document).ready(function() {
         
     $("#search-results").tablesorter({headers: { 3:{sorter: false}, 4: {sorter: false}}});    
 });
+</script>
+<script>
+function enable_button(){
+submit_button.disabled = false;
+submit_button.style.opacity=1.0;
+submit_button.style.cursor='pointer';
+}
 </script>

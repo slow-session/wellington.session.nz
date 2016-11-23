@@ -11,7 +11,16 @@
    color: darken($background-color, 10%);
    cursor: pointer;
 }
-
+.filter_button {
+   background-color:$brand-color;
+   padding:5px 10px;;
+   color: darken($background-color, 10%);
+   cursor: pointer;
+}
+.filter_button.filter_disabled {
+  opacity: 0.55; 
+  cursor: not-allowed;
+}
 .sep {
     border-bottom:1px solid black;
 }
