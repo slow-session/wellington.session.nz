@@ -2,7 +2,7 @@
 layout: page
 title: Tunebooks
 permalink: /tunebooks/
-navigation_weight: 15
+navigation_weight: 10
 ---
 
 Some of you would like to have printable copies of the music. We've taken all tunes we've collected and produced some different options:
