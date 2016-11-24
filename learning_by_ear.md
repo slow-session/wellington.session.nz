@@ -66,10 +66,10 @@ QuickTime X, released with OS 10.6 Snow Leopard and later versions, is **not cap
 
 While the options listed above will slow down the music for you there are commercial packages for around US$30 which work better at really slow speeds (50% or slower) and also have a number of other useful options such as picking out sections to loop and saving parts of a file for later. Members of the Wellington Slow session have experience with these packages:
 
-  * Ted  -> Amazing Slow Downer (Windows, Mac and iOS)
-  * Andy -> Capo (Mac and iOS)
-  * Andy -> Transcribe! (Windows, Mac and Linux)
-  * Andy -> Maple Player Classic (Android)
+  * Ted  -> <a href="http://www.ronimusic.com/slowdown.htm">Amazing Slow Downer</a> (Windows, Mac and iOS)
+  * Andy -> <a href="http://supermegaultragroovy.com/products/capo/">Capo</a> (Mac and iOS)
+  * Andy -> <a href="https://play.google.com/store/apps/details?id=com.smp.musicspeed">Music Speed Changer</a> (Android)
+   * Andy -> <a href="https://play.google.com/store/apps/details?id=com.sqr5.android.audioplayer">Maple Player Classic</a> (Android)
 
 If anyone else uses a different package and you're happy to answer questions about it, let us know. There's a very comprehensive list of software at:
 
