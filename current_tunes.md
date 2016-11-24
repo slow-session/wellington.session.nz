@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Current
+title: Current Tunes
 permalink: /current_tunes/
 navigation_weight: 5
 ---
-<p>
+
 These are the tunes we've been learning at the Slow Session since October 2015. These tunes will get played regularly so if you know these you'll get a chance to play them.
-</p>
 
 
 <fieldset>
