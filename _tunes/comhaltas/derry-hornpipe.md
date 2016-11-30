@@ -9,7 +9,7 @@ tags: wellington beginner 2016-17
 mp3_url: 
 mp3_file: /mp3/derry-hornpipe.mp3
 abc_url: 
-source: unknown
+source: Wellington
 transcription: id:hn-hornpipe-24
 abc: |
     X:24

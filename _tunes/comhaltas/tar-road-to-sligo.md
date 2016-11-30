@@ -4,12 +4,12 @@ key: D
 rhythm: jig
 mode: 
 date: 2016-1-27
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington
 mp3_file: /mp3/tar-road-to-sligo.mp3
 mp3_url: https://comhaltas.ie/music/detail/tar_road_to_sligo/
 abc_url: 
-source: unknown
+source: Wellington
 transcription: unknown
 chords: true
 abc: |

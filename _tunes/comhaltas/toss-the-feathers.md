@@ -8,7 +8,7 @@ location: Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/toss-the-feathers.mp3
 mp3_url: https://comhaltas.ie/music/detail/toss_the_feathers_em/
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/113
 abc: |
     X: 1

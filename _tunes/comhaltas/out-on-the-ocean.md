@@ -4,11 +4,11 @@ key: G
 rhythm: jig
 mode: major
 date: 2016-1-26
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington beginner 2016-17
 mp3_file: /mp3/out-on-the-ocean.mp3
 mp3_url: https://comhaltas.ie/music/detail/out_on_the_ocean/ 
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/108
 abc: |
     X: 1

@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/the-gravel-walks.mp3
 mp3_url: https://media.comhaltas.ie/audio/fs3/wip/GeorgeWhites.mp3
 abc_url: https://thesession.org/tunes/42
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

@@ -9,7 +9,7 @@ tags:
 mp3_file: 
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 
-source: 
+source: Wellington
 transcription: Ted Cizadlo
 abc: |
     X: 1

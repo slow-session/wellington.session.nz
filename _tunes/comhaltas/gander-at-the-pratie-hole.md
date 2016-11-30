@@ -4,11 +4,11 @@ key: Dmix
 rhythm: jig
 mode: mixolydian
 date: 2016-01-26
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/gander-at-the-pratie-hole.mp3
 mp3_url: (local recording)
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/401
 abc: |
     X: 5

@@ -4,12 +4,12 @@ key: G
 rhythm: slip jig
 mode: 
 date: 2016-06-30
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington
 mp3_file: /mp3/kid-on-the-mountain.mp3
 mp3_url: https://comhaltas.ie/music/detail/kid_on_the_mountain/
 abc_url: 
-source: unknown
+source: Wellington
 transcription:
 abc: |
     X:25

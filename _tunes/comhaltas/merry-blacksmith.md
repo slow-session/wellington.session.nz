@@ -4,12 +4,12 @@ key: D
 rhythm: reel
 mode: 
 date: 2016-3-2
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington beginner 2016-17
 mp3_file: /mp3/merry-blacksmith.mp3
 mp3_url: https://comhaltas.ie/music/detail/merry_blacksmith/
 abc_url: https://thesession.org/tunes/72
-source: unknown
+source: Wellington
 transcription: unknown
 chords: true
 abc: |

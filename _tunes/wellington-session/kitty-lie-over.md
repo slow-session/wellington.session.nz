@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/kitty-lie-over.mp3
 mp3_url: 
 abc_url: https://thesession.org/tunes/948
-source: unknown
+source: Wellington
 transcription:
 chords: false
 abc: |

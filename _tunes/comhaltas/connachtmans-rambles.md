@@ -4,11 +4,11 @@ key: D
 rhythm: jig
 mode: major
 date: 2015-11-1
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/connachtmans-rambles.mp3
 mp3_url: https://comhaltas.ie/music/detail/connactmans_rambles/
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/19
 abc: |
     X: 1

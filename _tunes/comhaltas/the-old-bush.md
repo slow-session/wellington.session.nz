@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/the-old-bush.mp3
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_370_5_caolainn_and_aisling_meaney/
 abc_url: https://thesession.org/tunes/1499
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

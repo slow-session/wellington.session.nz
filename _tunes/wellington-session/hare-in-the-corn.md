@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/hare-in-the-corn.mp3
 mp3_url: Wellington Session
 abc_url: 
-source: Richard Tait
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

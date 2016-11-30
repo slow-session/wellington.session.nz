@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/brid-harpers.mp3
 mp3_url: Wellington Session
 abc_url: https://thesession.org/tunes/2376
-source: Richard Tait
+source: Wellington
 transcription: 
 chords: false
 abc: |

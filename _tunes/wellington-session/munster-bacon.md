@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/munster-bacon.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 
-source: Jonathan Berkahn
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

@@ -4,12 +4,12 @@ key: D
 rhythm: reel
 mode: 
 date: 2016-11-09
-location: Wellington
+location: Arrowtown Wellington
 tags: 2016-17 wellington
 mp3_file: /mp3/jackie-colemans.mp3
 mp3_url: https://comhaltas.ie/music/detail/jackie_colemans/
 abc_url: 
-source: 
+source: Wellington
 transcription: 
 chords: 
 abc: |

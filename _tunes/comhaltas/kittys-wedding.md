@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_url: https://comhaltas.ie/music/detail/kittys_wedding/
 abc_url: https://thesession.org/tunes/869
-source: unknown
+source: Wellington
 transcription: 
 chords: false
 abc: |

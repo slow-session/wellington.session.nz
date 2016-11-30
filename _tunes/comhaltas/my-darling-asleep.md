@@ -4,12 +4,12 @@ key: D
 rhythm: jig
 mode: 
 date: 2016-09-28
-location: Wellington
+location: Arrowtown Wellington
 tags: wellington beginner 2016-17
 mp3_file: /mp3/my-darling-asleep.mp3
 mp3_url: 
 abc_url: 
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

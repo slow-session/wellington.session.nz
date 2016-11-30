@@ -9,7 +9,7 @@ tags: 2016-17 wellington
 mp3_file: /mp3/morrisons-bush.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 
-source: 
+source: Wellington
 transcription:
 abc: |
     X: 1

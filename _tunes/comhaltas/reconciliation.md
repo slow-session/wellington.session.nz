@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/reconciliation.mp3
 mp3_url: 
 abc_url: 
-source: unknown
+source: Wellington
 transcription: id:hn-reel-95
 chords: true
 abc: |

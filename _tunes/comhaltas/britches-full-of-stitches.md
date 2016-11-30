@@ -9,7 +9,7 @@ tags: wellington beginner 2016-17
 mp3_file: /mp3/britches-full-of-stitches.mp3
 mp3_url: https://comhaltas.ie/music/detail/britches_full_of_stitches/
 abc_url: https://comhaltas.ie/music/detail/
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

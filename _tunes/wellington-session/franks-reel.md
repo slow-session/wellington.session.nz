@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/franks-reel.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: trillian.mit.edu
-source: unknown
+source: Wellington
 transcription: 2006 John Chambers jc:trillian.mit.edu
 abc: |
     X: 1

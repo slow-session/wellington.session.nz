@@ -4,11 +4,11 @@ key: B
 rhythm: reel
 mode: minor
 date: 2016-4-11
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/otters-holt.mp3
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_480_16a_group_of_tutors/
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/636
 chords: false
 abc: |

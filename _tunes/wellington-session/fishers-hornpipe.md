@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/fishers-hornpipe.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/872
-source: unknown
+source: Wellington
 transcription: unknown
 chords: true
 abc: |

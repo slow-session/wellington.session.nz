@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/salamanca-reel.mp3
 mp3_url: https://comhaltas.ie/music/detail/salamanca/
 abc_url: https://thesession.org/tunes/99
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

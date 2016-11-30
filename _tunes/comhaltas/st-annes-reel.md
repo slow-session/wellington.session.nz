@@ -4,11 +4,11 @@ key: D
 rhythm: reel
 mode: Major
 date: 2016-4-11
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/st-annes-reel.mp3
 mp3_url: https://comhaltas.ie/music/detail/st_annes/ 
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/103
 abc: |
     X: 1

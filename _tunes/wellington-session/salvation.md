@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/salvation.mp3
 mp3_url: 
 abc_url: https://thesession.org/tunes/199
-source: Jackie Lamb
+source: Wellington
 transcription: 
 abc: |
     X: 2

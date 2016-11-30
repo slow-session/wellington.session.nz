@@ -8,7 +8,7 @@ location: Wellington
 tags:
 mp3_url: 
 abc_url: http://slowplayers.org/wp-content/uploads/Crested-Hens.txt
-source: unknown
+source: Wellington
 transcription: unknown
 chords: true
 abc: |

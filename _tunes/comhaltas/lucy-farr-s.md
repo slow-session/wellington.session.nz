@@ -4,11 +4,11 @@ key: G
 rhythm: barndance
 mode: major
 date: 2016-4-06
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/lucy-farr-s.mp3
 mp3_url: https://comhaltas.ie/music/detail/lucy_farrs_barndance/ 
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/NNN
 abc: |
     X: 1

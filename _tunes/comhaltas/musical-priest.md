@@ -4,11 +4,11 @@ key: Bmin
 rhythm: reel
 mode: minor
 date: 2016-10-12
-location: Wellington
+location: Arrowtown Wellington
 tags: 2016-17 wellington 
 mp3_file: /mp3/musical-priest.mp3
 mp3_url: https://comhaltas.ie/audio/cl323/cl323_7_64K.mp3
-abc_source: https://thesession.org/tunes/73
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/221
 abc: |
     X: 1

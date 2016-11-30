@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/drunken-gauger.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/2180
-source: Ceol Aneas
+source: Wellington
 transcription: 
 chords: false
 abc: |

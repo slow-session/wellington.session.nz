@@ -8,7 +8,7 @@ location: Wellington
 tags: 2016-17
 mp3_url: 
 abc_url: https://thesession.org/tunes/2264
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

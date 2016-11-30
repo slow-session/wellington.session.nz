@@ -4,11 +4,11 @@ key: G
 rhythm: reel
 mode: major
 date: 2016-08-11
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington
 mp3_file: /mp3/father-kellys.mp3
 mp3_url: https://comhaltas.ie/music/detail/father_kelly/
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/NNN
 abc: |
     X: 7

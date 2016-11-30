@@ -9,7 +9,7 @@ tags: 2015-16 wellington
 mp3_file: /mp3/two-fifty-to-vigo.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 
-source: unknown
+source: Wellington
 transcription: unknown
 chords: false
 abc: |

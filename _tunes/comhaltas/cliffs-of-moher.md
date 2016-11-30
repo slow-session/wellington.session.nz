@@ -4,11 +4,11 @@ key: Ador
 rhythm: jig
 mode: dorian
 date: 2016-02-17
-location: Wellington
+location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/cliffs-of-moher.mp3
 mp3_url: https://comhaltas.ie/music/detail/cliffs_of_moher/
-abc_source: The Session
+abc_source: Wellington
 abc_url: https://thesession.org/tunes/12
 abc: |
   X: 1
