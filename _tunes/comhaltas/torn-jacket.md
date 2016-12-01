@@ -1,5 +1,5 @@
 ---
-title: The Torn Jacket
+title: Torn Jacket
 key: D
 rhythm: reel
 mode: 
@@ -12,7 +12,8 @@ source: Wellington
 abc_url: https://thesession.org/tunes/
 abc: |
     X: 1
-    T: The Torn Jacket
+    T: Torn Jacket
+    C: Connie O'Connell
     R: reel
     M: 4/4
     L: 1/8
