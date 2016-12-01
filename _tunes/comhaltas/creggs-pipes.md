@@ -8,7 +8,7 @@ location: Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/creggs-pipes.mp3
 mp3_url: https://comhaltas.ie/music/detail/creggs_pipes/
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/605
 abc: |
     X: 1

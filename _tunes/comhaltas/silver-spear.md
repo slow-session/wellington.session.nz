@@ -8,7 +8,7 @@ location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/silver-spear.mp3
 mp3_url: https://comhaltas.ie/music/detail/silver_spear/ 
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/182
 abc: |
     X: 5

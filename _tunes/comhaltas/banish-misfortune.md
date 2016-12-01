@@ -8,7 +8,7 @@ location: Arrowtown Wellington
 tags: 2015-16 wellington 
 mp3_file: /mp3/banish-misfortune.mp3
 mp3_url: https://comhaltas.ie/music/detail/banish_misfortune/
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/9
 abc: |
     X: 1

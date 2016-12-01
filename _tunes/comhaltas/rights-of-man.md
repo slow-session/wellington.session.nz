@@ -8,7 +8,7 @@ location: Arrowtown Wellington
 tags: 2015-16 wellington beginner 2016-17
 mp3_file: /mp3/rights-of-man.mp3
 mp3_url: https://comhaltas.ie/music/detail/rights_of_man/
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/83
 abc: |
     X: 5

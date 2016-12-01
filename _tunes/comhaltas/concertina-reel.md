@@ -8,7 +8,7 @@ location: Arrowtown Wellington
 tags: 2015-16 wellington beginner
 mp3_file: /mp3/concertina-reel.mp3
 mp3_url: https://comhaltas.ie/music/detail/concertina_reel/
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/18
 abc: |
     X: 1

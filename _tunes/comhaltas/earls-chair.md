@@ -8,7 +8,7 @@ location: Arrowtown Wellington
 tags: 2015-16 2016-17 wellington 
 mp3_file: /mp3/earls-chair.mp3
 mp3_url: https://comhaltas.ie/music/detail/earls_chair/ 
-abc_source: Wellington
+source: Wellington
 abc_url: https://thesession.org/tunes/221
 abc: |
     X: 1
