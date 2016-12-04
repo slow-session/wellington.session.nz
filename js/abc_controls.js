@@ -1,6 +1,12 @@
 /*
- * code needed for ABC playback
+ * Audio controls for the ABC playback
+ * Developed as part of websites for http://session.nz and http://wellington.session.nz
+ * by Ted Cizadlo and Andy Linton
+ * Code available at:
+ * https://github.com/slow-session/session.nz/blob/master/js/audio_controls.js
+ * Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence.
  */
+
 var playingNow = 0;
 var abcStopped = 0;
 var mp3Available = 1;
