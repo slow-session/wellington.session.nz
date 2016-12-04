@@ -91,7 +91,7 @@ function toggle(button)
 
 <div class="attribution">
 The audio of {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>, 
-and is made available under a 
+and is made available under 
 {% case page.mp3_licence %}
     {% when 'CC-BY-NC-2.5' %}
 <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-Noncommercial 2.5 License</a>.
@@ -100,7 +100,11 @@ and is made available under a
     {% when 'CC-BY-NC-4.0' %}
 <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence</a>.
     {% when 'Attribution-Share Alike 3.0 United States License' %}
-<a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Attribution-Share Alike 3.0 United States License</a>.  
+<a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Attribution-Share Alike 3.0 United States License</a>.
+    {% when 'Connie_O_Connell' %}
+an agreement with Connie O'Connell. Permission to use gratefully acknowledged.<br />© Connie O'Connell. All Rights Reserved.
+{% endcase %}
+
 {% endcase %}
 
 {% if page.abc_source %}
