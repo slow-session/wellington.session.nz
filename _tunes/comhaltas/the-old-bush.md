@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-4-27
 location: Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/the-old-bush.mp3
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_370_5_caolainn_and_aisling_meaney/
 abc_url: https://thesession.org/tunes/1499

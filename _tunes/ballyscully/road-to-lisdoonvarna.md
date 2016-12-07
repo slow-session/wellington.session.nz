@@ -5,7 +5,7 @@ rhythm: slide
 mode: 
 date: 2016-08-19
 location: Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/road-to-lisdoonvarna.mp3
 mp3_url: Wellington Session
 abc_url: 

@@ -5,7 +5,7 @@ rhythm: jig
 mode: mixolydian
 date: 2016-01-26
 location: Arrowtown Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/gander-at-the-pratie-hole.mp3
 mp3_url: (local recording)
 source: Wellington

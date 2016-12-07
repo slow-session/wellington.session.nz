@@ -5,7 +5,7 @@ rhythm: reel
 mode: major
 date: 2016-01-16
 location: Arrowtown Wellington
-tags: 2015-16 wellington beginner
+tags: slowsession beginner
 mp3_file: /mp3/concertina-reel.mp3
 mp3_url: https://comhaltas.ie/music/detail/concertina_reel/
 source: Wellington

@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-1-26
 location: Arrowtown Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/mountain-road.mp3
 mp3_url: https://comhaltas.ie/music/detail/mountain_road/
 abc_url: https://thesession.org/tunes/68

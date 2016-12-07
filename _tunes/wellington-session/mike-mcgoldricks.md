@@ -5,7 +5,7 @@ rhythm: jig
 mode: 
 date: 2016-07-19
 location: Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/mike-mcgoldricks.mp3
 mp3_url: 
 abc_url: https://thesession.org/tunes/628

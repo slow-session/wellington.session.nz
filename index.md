@@ -47,7 +47,7 @@ slowly so you can join in.
   {% assign sortedtunes = site.tunes | sort: 'title' %}
   {% assign count = 100 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'beginner' and tune.tags contains 'wellington'%}
+      {% if tune.tags contains 'beginner' and tune.tags contains 'slowsession'%}
           {% assign count = count | plus: 1 %}
 <tr>
 {% include tablerow.html counter=count %}
@@ -77,7 +77,7 @@ We pick one or two new tunes each week for homework and we play these at a moder
   {% assign tune_count = 0 %
   {% assign count = 200 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'wellington' %}
+      {% if tune.tags contains 'slowsession' %}
           {% if tune.tags contains 'beginner' %}
               {% continue %}
           {% endif %}

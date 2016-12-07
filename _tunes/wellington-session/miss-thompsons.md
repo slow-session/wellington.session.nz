@@ -5,7 +5,7 @@ rhythm: reel
 mode: D
 date: 2016-01-01
 location: Wellington
-tags: 2016-17
+tags: 
 mp3_url: 
 abc_url: https://thesession.org/tunes/2264
 source: Wellington

@@ -5,7 +5,7 @@ rhythm: polka
 mode: 
 date: 2016-09-28
 location: Arrowtown Wellington
-tags: wellington beginner 2016-17
+tags: slowsession beginner
 mp3_file: /mp3/ballydesmond-polka-3.mp3
 mp3_url: https://comhaltas.ie/music/detail/ballydesmond_no_3/
 abc_url: https://thesession.org/tunes/238

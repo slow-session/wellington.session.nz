@@ -5,7 +5,7 @@ rhythm: polka
 mode: 
 date: 2016-11-02 
 location: Wellington
-tags: 2016-17 wellington
+tags: slowsession
 mp3_file: /mp3/morrisons-bush.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 

@@ -5,7 +5,7 @@ rhythm: reel
 mode: major
 date: 2016-08-11
 location: Arrowtown Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/father-kellys.mp3
 mp3_url: https://comhaltas.ie/music/detail/father_kelly/
 source: Wellington

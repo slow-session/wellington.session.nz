@@ -5,7 +5,7 @@ rhythm: jig
 mode: mix
 date: 2016-5-4
 location: Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/blarney-pilgrim.mp3
 mp3_url: https://comhaltas.ie/music/detail/blarney_pilgrim/ 
 source: Wellington

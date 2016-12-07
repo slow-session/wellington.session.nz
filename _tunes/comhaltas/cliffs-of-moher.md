@@ -5,7 +5,7 @@ rhythm: jig
 mode: dorian
 date: 2016-02-17
 location: Arrowtown Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/cliffs-of-moher.mp3
 mp3_url: https://comhaltas.ie/music/detail/cliffs_of_moher/
 source: Wellington

@@ -14,7 +14,7 @@ layout: null
     {% assign sortedtunes = site.tunes | sort: 'date' | reverse %}
     {% assign tune_count = 0 %}
     {% for tune in sortedtunes %}
-        {% if tune.tags contains 'wellington' %}
+        {% if tune.tags contains 'slowsession' %}
             {% if tune.tags contains 'beginner' %}
                 {% continue %}
             {% endif %}

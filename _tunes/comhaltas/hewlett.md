@@ -5,7 +5,7 @@ rhythm: planxty
 mode: 
 date: 2016-09-28
 location: Arrowtown Wellington
-tags: wellington beginner 2016-17
+tags: slowsession beginner
 mp3_file:
 mp3_url: 
 abc_url: 

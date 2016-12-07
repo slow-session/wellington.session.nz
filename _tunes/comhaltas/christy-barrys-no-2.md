@@ -5,7 +5,7 @@ rhythm: jig
 mode: Major
 date: 2016-03-29
 location: Arrowtown Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/christy-barrys-no-2.mp3
 mp3_url: https://comhaltas.ie/music/detail/christy_barrys_no_2/
 source: Wellington

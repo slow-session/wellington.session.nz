@@ -5,7 +5,7 @@ rhythm: reel
 mode: major
 date: 2016-03-08
 location: Arrowtown Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/over-the-moor-to-maggie.mp3
 mp3_url: https://comhaltas.ie/music/detail/over_the_moor_to_maggie/
 source: Wellington

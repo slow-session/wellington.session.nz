@@ -5,7 +5,7 @@ rhythm: slip jig
 mode: major
 date: 2016-07-13
 location: Arrowtown Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/foxhunters.mp3
 mp3_url: https://comhaltas.ie/music/detail/foxhunt/
 abc_url: https://thesession.org/tunes/482

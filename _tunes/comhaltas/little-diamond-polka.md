@@ -5,7 +5,7 @@ rhythm: polka
 mode: major
 date: 2016-01-26
 location: Wellington
-tags: 2015-16 wellington beginner
+tags: slowsession beginner
 mp3_file: /mp3/little-diamond-polka.mp3
 mp3_url: https://comhaltas.ie/music/detail/little_diamond_polka/
 source: Wellington

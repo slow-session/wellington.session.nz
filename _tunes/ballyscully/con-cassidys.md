@@ -5,7 +5,7 @@ rhythm: jig
 mode: Major
 date: 2016-07-25
 location: Arrowtown Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/con-cassidys.mp3
 mp3_url: Wellington Session
 abc_url: https://thesession.org

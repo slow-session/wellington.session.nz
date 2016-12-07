@@ -5,7 +5,7 @@ rhythm: reel
 mode: major
 date: 2016-03-02
 location: Arrowtown Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/silver-spear.mp3
 mp3_url: https://comhaltas.ie/music/detail/silver_spear/ 
 source: Wellington

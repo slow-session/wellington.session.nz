@@ -5,7 +5,7 @@ rhythm: polka
 mode: 
 date: 2016-09-28
 location: Wellington
-tags: wellington beginner 2016-17
+tags: slowsession beginner
 mp3_file: /mp3/britches-full-of-stitches.mp3
 mp3_url: https://comhaltas.ie/music/detail/britches_full_of_stitches/
 abc_url: https://comhaltas.ie/music/detail/

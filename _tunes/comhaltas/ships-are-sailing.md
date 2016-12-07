@@ -1,0 +1,27 @@
+---
+title: Ships are Sailing
+key: G
+rhythm: reel 
+mode:
+date: 2016-10-27
+location: Arrowtown Wellington
+tags: 
+mp3_file: /mp3/ships-are-sailing.mp3
+mp3_url: https://media.comhaltas.ie/audio/fs1/1-53ReelsP16ShipAreSailing.mp3
+abc_url: http://nefc.org.nz/
+source: Arrowtown
+transcription:
+chords: 
+abc: |
+    X:21
+    T:Ships are Sailing
+    Z:Mike Moroney
+    L:1/8
+    M:4/4
+    K:G
+    "Em"Beed B^cdB|"D"AD (3FED AD (3FED|"Em"~E3 F "G"GFGA|"Em"Beef "D"gfed|
+    "Em"Beed B^cdB|"D"AD (3FED AD (3FED|"Em"~E3 F "G"GFGA|[1"Em"Beed e2ed:|[2"Em"Beed e2ef|
+    |:"Em"gfga bgeg|"D"fefg afdf|"Em"~g3a bgeg|"D"~f3g "Em"e2ef|
+    "Em"gfga bgeg|"D"fefg afdf|"Em"~g2bg "D"~f2"^To Coda"af|"Em"edef gfed:|
+
+---

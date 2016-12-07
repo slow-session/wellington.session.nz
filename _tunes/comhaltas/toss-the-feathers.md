@@ -5,7 +5,7 @@ rhythm: reel
 mode: dorian
 date: 2016-04-18
 location: Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/toss-the-feathers.mp3
 mp3_url: https://comhaltas.ie/music/detail/toss_the_feathers_em/
 source: Wellington

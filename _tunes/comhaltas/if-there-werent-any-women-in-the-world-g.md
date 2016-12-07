@@ -5,7 +5,7 @@ rhythm: barndance
 mode: 
 date: 2016-4-6
 location: Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/if-there-werent-any-women-in-the-world-g.mp3
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_254_2_mac_gabhann_family/
 abc_url: 

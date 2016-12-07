@@ -5,7 +5,7 @@ rhythm: polka
 mode: 
 date: 2016-09-28
 location: Wellington
-tags: wellington beginner 2016-16
+tags: slowsession beginner
 mp3_file: /mp3/john-ryans.mp3
 mp3_url: https://comhaltas.ie/music/detail/armagh_polka
 abc_url: https://thesession.org/tunes/441

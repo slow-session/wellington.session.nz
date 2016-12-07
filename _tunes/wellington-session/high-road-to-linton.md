@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-09-20
 location: Wellington
-tags: 2015-16 wellington
+tags: slowsession
 mp3_file: /mp3/high-road-to-linton.mp3
 mp3_url: 
 abc_url: https://thesession.org/tunes/4161

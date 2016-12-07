@@ -40,7 +40,7 @@ X:100
 T:Jigs
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'ig' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'ig' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:200
@@ -54,7 +54,7 @@ X:200
 T:Reels
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'eel' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'eel' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:300
@@ -68,7 +68,7 @@ X:300
 T:Polkas 
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'olka' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'olka' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:400
@@ -82,7 +82,7 @@ X:400
 T:Hornpipes
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'ornpipe' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'ornpipe' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:500
@@ -96,11 +96,11 @@ X:500
 T:Barndances
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'arndance' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'arndance' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:600
-%%withxrefs 1
+tune.location
 %%newpage
 %%textfont Helvetica 48
 %%begintext
@@ -110,7 +110,7 @@ X:600
 T:Waltz
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'altz' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'altz' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}
 
 X:700
@@ -124,5 +124,5 @@ X:700
 T:March
 M:1/1
 K:C
-{% for tune in sortedtunes %}{% if tune.tags contains 'wellington' %}{% if tune.rhythm contains 'arch' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
+{% for tune in sortedtunes %}{% if tune.location contains 'Wellington' %}{% if tune.rhythm contains 'arch' %}{% assign count = count | plus: 1 %}{% include abc-book.html xcounter=count %}
 {% endif %}{%endif %}{% endfor %}

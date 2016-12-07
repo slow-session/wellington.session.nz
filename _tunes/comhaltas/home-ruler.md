@@ -5,7 +5,7 @@ key: D
 mode: major
 date: 2016-02-03
 location: Wellington
-tags: 2015-16 wellington 
+tags: slowsession 
 mp3_file: /mp3/home-ruler.mp3
 mp3_url: https://comhaltas.ie/music/detail/home_ruler/
 source: Wellington

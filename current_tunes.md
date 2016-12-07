@@ -12,7 +12,7 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
     <legend>Select from current Wellington Tunes:</legend>    
     <form id="wellington" method="get">
         <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Wellington, 'Beginner'">        
+        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
         Title:
         <input type="text" id="title-box" name="title" value='' onkeypress="enable_button()">
         &emsp; 
@@ -29,6 +29,12 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
             <option value="barndance">Barndance</option>
             <option value="planxty">Planxty</option>
             <option value="mazurka">Mazurka</option>
+        </select>&emsp;
+        Tags:
+        <select id="tags-box" name="tags" onChange="enable_button()">
+            <option value="">All Tunes</option>
+            <option value="slowsession">Slow Session</option>
+            <option value="beginner">Beginner</option>
         </select>
         </span>
         <input type='hidden' id='tags-box' name='tags' value=''>      
@@ -49,7 +55,7 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
       {% assign tuneID = 3000 %}
       {% assign tunes =  site.tunes | sort: 'title' %} 
       {% for tune in tunes %}
-          {% if tune.tags contains "wellington" %}
+          {% if tune.location contains "Wellington" %}
               {% assign tuneID = tuneID | plus: 1 %}
               "{{ tuneID }}": {
                   "title": "{{ tune.title | xml_escape }}",
@@ -59,8 +65,10 @@ These are the tunes we've been learning at the Slow Session since October 2015. 
                   "rhythm": "{{ tune.rhythm | xml_escape }}",
                   "tags": "{{ tune.tags | array_to_sentence_string }}",
                   "url": "{{ tune.url | xml_escape }}",
-                  "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-                  {% if tune.mp3_file %}"abc": ""{% else %}"abc": {{ tune.abc | jsonify }}{% endif %}
+                  {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+                  "abc": ""
+                  {% else %}"mp3": "",
+                  "abc": {{ tune.abc | jsonify }}{% endif %}
               }{% unless forloop.last %},{% endunless %}
           {% endif %}
       {% endfor %}};
