@@ -5,7 +5,9 @@ permalink: /current_tunes/
 navigation_weight: 5
 ---
 
-These are the tunes we've been learning at the Slow Session since October 2015. These tunes will get played regularly so if you know these you'll get a chance to play them.
+These are the some of the tunes we play at the Wellington Session. These tunes will get played regularly so if you know these you'll get a chance to play them.
+
+We've learned many of these tunes during the "Slow Session" part of the evening and you can find these by choosing the "Tags:" option,  picking "Slow Session" and pressing "Select".
 
 
 <fieldset>

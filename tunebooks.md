@@ -7,8 +7,8 @@ navigation_weight: 10
 
 Some of you would like to have printable copies of the music. We've taken all tunes we've collected and produced some different options:
 
-* [current.pdf](/abc-collections/current.pdf "PDF") - PDF containing the Wellington Slow Session tunes
-* [current-alpha.pdf](/abc-collections/current-alpha.pdf "PDF") - PDF containing the Wellington Slow Session tunes in alphabetical order
+* [current.pdf](/abc-collections/current.pdf "PDF") - PDF containing the Wellington Session tunes
+* [current-alpha.pdf](/abc-collections/current-alpha.pdf "PDF") - PDF containing the Wellington Session tunes in alphabetical order
 * [2bar.pdf](/abc-collections/2bar.pdf "PDF") - PDF with just the first two bars of the tunes
   * Some people like this as a handy reference when they can't think how a tune starts!
 
