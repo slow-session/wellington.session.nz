@@ -16,7 +16,7 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
         <br />
         <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
         Title:
-        <input type="text" id="title-box" name="title" value='' onkeypress="enable_button()">
+        <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
         &emsp; 
         Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
