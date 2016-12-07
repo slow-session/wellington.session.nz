@@ -65,6 +65,7 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
                   "key": "{{ tune.key | xml_escape }}",
                   "mode": "{{ tune.mode | xml_escape }}",
                   "rhythm": "{{ tune.rhythm | xml_escape }}",
+                  "location": "{{ tune.location | xml_escape }}",
                   "tags": "{{ tune.tags | array_to_sentence_string }}",
                   "url": "{{ tune.url | xml_escape }}",
                   {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
@@ -76,11 +77,11 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
       {% endfor %}};
 </script>
 
-<script type="text/javascript" src="{{ site.mp3_url }}/js/audio_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_url }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_url }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_url }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_url }}/js/search.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/lunr.min.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/search.js"></script>
 
 <script>
 $(document).ready(function() { 
