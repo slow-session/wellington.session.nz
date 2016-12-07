@@ -19,7 +19,6 @@ abc: |
     M:4/4
     L:1/8
     K:Dmaj
-    %%scale 1.13
     AFFF EFDE|FFAF BFAF|EEBE dEBE|ABde fedB|
     AFFF EFDE|FFAF BFAF|EEBE dEBE|ABde fdd2:|
     |:fddc dfag|fddc dfaf|eAAA eAfA|eAAA efge|
