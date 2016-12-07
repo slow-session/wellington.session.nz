@@ -36,7 +36,7 @@ URL: <input type="text" name="url" class="enter" value="" id="url" style="width:
 </div>
 </div>
 
-<script type="text/javascript" src="/js/audio_controls.js"></script>  
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>  
 
 <script>
 function createMP3player(mp3url) {
@@ -55,7 +55,7 @@ function createMP3player(mp3url) {
     // build the slow down slider for each tune
     mp3player += '<input name="flevel" id="RS' + tuneID + '"';
     mp3player += ' type="range" min="50" max="120" value="100"';
-    mp3player += ' onchange="setPlaySpeed(value/100, A' + tuneID + ')">';
+    mp3player += ' onchange="setPlaySpeed(A' + tuneID + ', value/100)">';
     mp3player += '<output name="level">100</output>%';
     mp3player += '</form>';
     // build the loop mechanism for each tune

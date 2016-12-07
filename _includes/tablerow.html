@@ -20,7 +20,8 @@
 <!--build the slow down slider for each tune-->
 <td style="text-align:center">
     <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100" onchange="setPlaySpeed(value/100, A{{ include.counter }})">
+  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100" 
+            onchange="setPlaySpeed(A{{ include.counter }}, value/100)">
         <output name="level">100</output>%
     </form>
 </td>
@@ -28,7 +29,8 @@
 <td style="text-align:center">
 <!--build the abc player for each tune-->
     <span title="No MP3 available. Play and stop tune from ABC source">
-        <input type="button" value="Play ABC" id="play" onclick="abcSliderChanged(RSM{{ include.counter }}.value,ABC{{ include.counter }})">
+        <input type="button" value="Play ABC" id="play" 
+            onclick="abcSliderChanged(ABC{{ include.counter }}, RSM{{ include.counter }}.value,)">
         <br />
         <input type="button" value="Stop" id="stop" onclick="stopABC(ABC{{ include.counter }})">
     </span>
@@ -36,7 +38,8 @@
 <!--build the slow down slider for each tune-->
 <td style="text-align:center">   
     <form onsubmit="return false" oninput="level.value = Math.round(flevel.valueAsNumber/3.2)">
-  	    <input name="flevel" id="RSM{{ include.counter }}" type="range" min="160" max="384" value="320" onchange="abcSliderChanged(value,ABC{{ include.counter }})">
+  	    <input name="flevel" id="RSM{{ include.counter }}" type="range" min="160" max="384" value="320" 
+            onchange="abcSliderChanged(ABC{{ include.counter }}, value)">
         <output name="level">100</output>%
     </form>
 </td>

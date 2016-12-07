@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<script type="text/javascript" src="/js/audio_controls.js"></script>
-<script type="text/javascript" src="/js/musical-ws.js"></script>
-<script type="text/javascript" src="/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the 
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.

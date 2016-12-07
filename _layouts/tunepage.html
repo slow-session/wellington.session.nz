@@ -16,7 +16,7 @@ layout: default
     <audio id="{{ titleTag }}A" title="{{ page.title }}" controls loop>
         <source src="{{ site.mp3_host }}{{ page.mp3_file }}" type="audio/mpeg"> 
     </audio>
-    <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" onchange="setPlaySpeed(value/100, {{ titleTag }}A)">
+    <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" onchange="setPlaySpeed({{ titleTag }}A, value/100)">
     <output name="level">100</output>%
     <br />
     <!--build the loop mechanism for each tune--> 
@@ -31,17 +31,17 @@ layout: default
 {% else %}
 <!-- build the abc player for each tune-->
 <form onsubmit="return false" oninput="level.value = Math.round(flevel.valueAsNumber/3.2)">
-    <input type="button" value="Play ABC" id="play" onclick="abcSliderChanged({{ titleTag }}RSM.value,ABC)">
+    <input type="button" value="Play ABC" id="play" onclick="abcSliderChanged(ABC, {{ titleTag }}RSM.value)">
     <input type="button" value="Stop" id="stop" onclick="stopABC(ABC)">
-    <input name="flevel" id="{{ titleTag }}RSM" type="range" min="160" max="384" value="320" onchange="abcSliderChanged(value, ABC)">
+    <input name="flevel" id="{{ titleTag }}RSM" type="range" min="160" max="384" value="320" onchange="abcSliderChanged(ABC, value)">
     <output name="level">100</output>%
 </form>
 {% endif %}
 </div>
 
-<script type="text/javascript" src="/js/audio_controls.js"></script>  
-<script type="text/javascript" src="/js/musical-ws.js"></script>
-<script type="text/javascript" src="/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>  
+<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 
 <script type="text/javascript">
 var MyTune="%%staffwidth 540\n" + {{ page.abc | jsonify  }};
@@ -71,10 +71,10 @@ function toggle(button)
     
     <div id="abcButtons">
         <form  onsubmit="return false"  oninput="level.value =  Math.round(flevel.valueAsNumber/3.2)">
-            <input   type="button"   value="Play ABC"   id="play" onclick="abcSliderChanged({{ titleTag }}RSM.value, ABC)">
+            <input   type="button"   value="Play ABC"   id="play" onclick="abcSliderChanged(ABC, {{ titleTag }}RSM.value)">
             <input type="button" value="Stop"  id="stop" onclick="stopABC(ABC)">  
             <input  name="flevel" id="{{  titleTag }}RSM" type="range" min="160"  max="384" value="320"            
-                         onchange="abcSliderChanged(value,ABC)">
+                         onchange="abcSliderChanged(ABC, value)">
             <output name="level">100</output>% 
         </form> 
         <br /> 
