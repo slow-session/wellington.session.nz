@@ -4,7 +4,7 @@ key: D
 rhythm: reel
 mode: 
 date: 2016-12-08
-location: wellington
+location: Wellington
 tags: 
 mp3_file: /mp3/dublin-reel.mp3
 mp3_url: https://media.comhaltas.ie/audio/cl341/cl341_5_64K.mp3
