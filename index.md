@@ -20,7 +20,7 @@ The pace usually picks up as the evening progresses, so if you are already fluen
 come along after 8:30. Of course, we'd be happy to have experienced players playing **slowly** 
 earlier on as well!
 
-<p style="text-align:center">
+<p style="text-align:left">
 <a target="_blank" title="follow us on facebook" href="http://www.facebook.com/groups/WellingtonSession/"><img alt="follow us on facebook" src="/images/badgefacebook.png"></a>
 Find out more about us and upcoming sessions.
 </p>
@@ -100,11 +100,11 @@ We pick one or two new tunes each week for homework and we play these at a moder
 Other Tunes
 -----------
 
-You can see the complete list of tunes we've been working on since October 2015 
-in our <a href="/current_tunes/">Current Tunes</a> page.
+You can see a list of some of the tunes that get played at the session including those we've been
+learning at the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
 
-There's also a comprehensive list of tunes including some that
-we haven't started yet is in our <a href="/archive/">Archive</a> page.  Feel free to poke around.
+There's also a comprehensive list of tunes including some that we haven't started yet in the 
+<a href="http://session.nz/archive/">NZ Archive</a> page.  Feel free to poke around.
 
 
 <script>

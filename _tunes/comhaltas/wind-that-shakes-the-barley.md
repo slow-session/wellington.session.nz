@@ -4,7 +4,7 @@ key: D
 rhythm: reel
 mode: 
 date: 2016-12-08
-location: Wellington
+location: Arrowtown Wellington
 tags: 
 mp3_file: /mp3/wind-that-shakes-the-barley.mp3
 mp3_url: https://media.comhaltas.ie/audio/fs2/2-38WindThatShakesTheBarley.mp3

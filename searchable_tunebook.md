@@ -2,24 +2,18 @@
 layout: page
 permalink: /tunebooks/searchable
 ---
-<h2>Searchable Tunebook</h2>
+Searchable Tunebook
+-------------------
 
-<p><strong>
-Please be patient! It takes a while to generate all the dots!
-</strong>
-</p>
 
-<p>
-<img alt="Think before you print" src="/images/think-before-you-print.gif" border=0>
-</p>
-
+**Please be patient! It takes a while to generate all the dots!**
 
 <fieldset>
     <legend>Select from the Tunes Archive</legend>
     
     <form id="search-query"  method="get">
         <br />
-       <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
+       <span title="Select the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
         Title:
         <input type="text" id="title-box" name="title" value=''>
         &emsp; 
@@ -46,11 +40,17 @@ Please be patient! It takes a while to generate all the dots!
         </span>
         &emsp;
         <span title="Run the filter with the default settings to see the whole list">
-        <input class="button" id="submit" type="submit" name="submit" value="Filter">
+        <input class="button" id="submit" type="submit" name="submit" value="Select">
         </span>
         
     </form>
 </fieldset>
+
+<br />
+
+{::nomarkdown}
+<img alt="Think before you print" src="/images/think-before-you-print.gif" border=0></img>
+{:/}
 
 <br />
 <p><span title="When you're happy with your selection you can print your tunebook using this button. Please think of the trees!">
@@ -81,9 +81,9 @@ Please be patient! It takes a while to generate all the dots!
     {% endfor %}};
 </script>
   
-<script type="text/javascript" src="{{ site.mp3_url }}/js/abcjs_plugin_2.3-min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_url }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="/js/searchable_tunebook.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_plugin_3.0-min.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/lunr.min.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/searchable_tunebook.js"></script>
 
 <script type="text/javascript"> 
    ABCJS.plugin.show_midi = false;
