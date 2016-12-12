@@ -14,20 +14,24 @@ layout: default
 {% if page.mp3_file %}
 <!--Layout audioplayer at top of page if mp3 file is available-->
 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-    <audio id="{{ titleTag }}A" title="{{ page.title }}" controls loop>
-        <source src="{{ site.mp3_host }}{{ page.mp3_file }}" type="audio/mpeg"> 
+    
+    <audio id="{{ titleTag }}A" title="{{ page.title }}" controls loop style="width: 60%;">
+        <source src="{{ page.mp3_file }}" type="audio/mpeg"> 
     </audio>
-    <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" onchange="setPlaySpeed({{ titleTag }}A, value/100)">
-    <output name="level">100</output>%
+    <span title="Adjust playback speed with slider">
+        <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" 
+                onchange="setPlaySpeed({{ titleTag }}A, value/100)" style="width: 30%;vertical-align:25%;">
+        <output name="level" style="vertical-align:25%;">100</output><span style="vertical-align:25%;">%</span>
+    </span>
     <br />
     <!--build the loop mechanism for each tune--> 
-    <span title="Play tune, select loop starting point, then select loop end point">
-    &emsp;&emsp;&emsp;&emsp;&emsp; 
-        <input type="button" id="{{ titleTag }}B1" value="Loop Start" onclick="SetPlayRange({{ titleTag }}A,0,{{ titleTag }}B1, {{ titleTag }}B2)">
-        <input type="button" id="{{ titleTag }}B2" value=" Loop End " onclick="SetPlayRange({{ titleTag }}A,1,{{ titleTag }}B1, {{ titleTag }}B2)">
-        <input type="button" value="Reset" onclick="SetPlayRange({{ titleTag }}A,2,{{ titleTag }}B1,{{ titleTag }}B2)">
-                
-    </span>
+    <div style="padding-left: 100px;">
+        <span title="Play tune, select loop starting point, then select loop end point">
+            <input type="button" id="{{ titleTag }}B1" value="Loop Start" onclick="SetPlayRange({{ titleTag }}A,0,{{ titleTag }}B1, {{ titleTag }}B2)">
+            <input type="button" id="{{ titleTag }}B2" value=" Loop End " onclick="SetPlayRange({{ titleTag }}A,1,{{ titleTag }}B1, {{ titleTag }}B2)">
+            <input type="button" value="Reset" onclick="SetPlayRange({{ titleTag }}A,2,{{ titleTag }}B1,{{ titleTag }}B2)">
+        </span>
+    </div>
 </form>
 {% else %}
 <!-- build the abc player for each tune-->
@@ -101,7 +105,7 @@ and is made available under
     {% when 'CC-BY-NC-4.0' %}
 <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence</a>.
     {% when 'Attribution-Share Alike 3.0 United States License' %}
-<a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Attribution-Share Alike 3.0 United States License</a>.
+<a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Attribution-Share Alike 3.0 United States License</a>.  
     {% when 'Connie_O_Connell' %}
 an agreement with Connie O'Connell. Permission to use gratefully acknowledged.<br />© Connie O'Connell. All Rights Reserved.
 {% endcase %}
