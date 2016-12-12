@@ -58,7 +58,7 @@ function createMP3player(mp3url) {
     mp3player += '<span title="Adjust playback speed with slider">';
     mp3player += '<input name="flevel" id="RS' + tuneID + '"';
     mp3player += ' type="range" min="50" max="120" value="100"';
-    mp3player += ' onchange="setPlaySpeed(value/100, A' + tuneID + ')" style="width: 30%;vertical-align:25%;">';
+    mp3player += ' onchange="setPlaySpeed(A' + tuneID + ', value/100)" style="width: 30%;vertical-align:25%;">';
     mp3player += '<output name="level" style="vertical-align:25%;">100</output><span style="vertical-align:25%;">%</span>';
     mp3player += '</span>';
     // build the loop mechanism for each tune
