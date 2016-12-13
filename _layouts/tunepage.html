@@ -16,7 +16,7 @@ layout: default
 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
     
     <audio id="{{ titleTag }}A" title="{{ page.title }}" controls loop style="width: 60%;">
-        <source src="{{ page.mp3_file }}" type="audio/mpeg"> 
+        <source src="{{ site.mp3_host }}{{ page.mp3_file }}" type="audio/mpeg"> 
     </audio>
     <span title="Adjust playback speed with slider">
         <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" 
