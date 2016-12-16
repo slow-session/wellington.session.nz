@@ -23,3 +23,5 @@ abc: |
     |:dA~A2 FADA|dA~A2 FADA|cG~G2 EG~G2|cG~G2 cdec|
     dA~A2 FADA|dA~A2 FADA,|~B,3A, B,CDE|FDEC A,DD2:|
 ---
+<fieldset><strong>A recording for this tune is not available yet. Qualify for glory by providing one!
+Make a recording of yourself or your session playing this tune and send it to us at admin@session.nz</strong></fieldset><br />
