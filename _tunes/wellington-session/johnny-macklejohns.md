@@ -1,5 +1,5 @@
 ---
-title: "Johnny Macklejohn's"
+title: Johnny Macklejohn's
 key: D
 rhythm: reel
 mode: major
