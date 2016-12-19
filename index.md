@@ -50,7 +50,7 @@ slowly so you can join in.
       {% if tune.tags contains 'beginner' and tune.tags contains 'slowsession'%}
           {% assign count = count | plus: 1 %}
 <tr>
-{% include tablerow.html counter=count %}
+{% include tablerow.html counter=count speed=80 %}
 </tr>
       {% endif %}
 {% endfor %}
@@ -83,7 +83,7 @@ We pick one or two new tunes each week for homework and we play these at a moder
           {% endif %}
           {% assign count = count | plus: 1 %}
 <tr>
-{% include tablerow.html  counter=count %}
+{% include tablerow.html  counter=count speed=90 %}
 </tr>
           {% assign tune_count = tune_count | plus: 1 %}
       {% endif %}
