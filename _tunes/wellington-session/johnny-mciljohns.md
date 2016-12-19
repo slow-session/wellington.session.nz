@@ -1,5 +1,5 @@
 ---
-title: Johnny Macklejohn's
+title: Johnny McIljohn's
 key: D
 rhythm: reel
 mode: major
@@ -11,15 +11,13 @@ mp3_url:
 source: Wellington
 abc: |
     X: 1
-    T: Johnny Macklejohn's
+    T: Johnny McIljohn's
     R: reel
     M: 4/4
     L: 1/8
     K: Dmaj
-    |:D(A A2) BAF(A|B2) AF Bd d2|D(A A2) BAFA|BdAF EF D2|
-    D(A A2) BAFA|BADA Bd d2|D(A A2) BAFA|Bd AF EF D2 :|
-    |:f2 fe d2 dA|BAFA BAFA|(f3 f) e2 eA|Bd AF EF D2|
-    effe d2 dA|BAFA BAFA|f2 fe d2 dA|Bd AF EF D2  :|
+    |:FA A2 BAFA|BAFA Bd d2|FA A2 BAFA|BdAF EF D2:|
+    |:f3 e d3 A|BAFA BAFA|f3 e d3 A|BdAF EF D2:|
 ---
 
 <fieldset><strong>A recording for this tune is not available yet. Qualify for glory by providing one!
