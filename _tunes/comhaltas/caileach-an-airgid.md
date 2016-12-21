@@ -1,9 +1,9 @@
 ---
-title: Caileach an Airgid
+title: Caileach an Airgid (The Hag With The Money)
 key: D
 rhythm: jig
 mode: 
-date: 2016-09-14
+date: 2016-12-7
 location: Wellington
 tags: slowsession
 mp3_file: /mp3/caileach-an-airgid.mp3
