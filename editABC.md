@@ -55,7 +55,7 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <br />
 <div id='warnings'></div>
     
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_2.3-min.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script> 
 <script type='text/javascript'>
