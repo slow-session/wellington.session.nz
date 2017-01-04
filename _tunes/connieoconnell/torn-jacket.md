@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-12-2
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/torn-jacket.mp3
 mp3_url: https://media.comhaltas.ie/audio/cl212/cl212_3.mp3
 source: Wellington

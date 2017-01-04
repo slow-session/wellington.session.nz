@@ -9,7 +9,7 @@ layout: default
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the 
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 All players of traditional Irish music are welcome. The session starts slowly, as we work 
-through beginner and recently learnt tunes:
+through new tunes and tunes we are just learning:
     
 * TOC
 {:toc}
@@ -25,29 +25,30 @@ earlier on as well!
 Find out more about us and upcoming sessions.
 </p>
 
-Beginner's tunes
+Tune of the Week
 ----------------
 
-If you are starting to learn Irish music, have a go at learning these tunes. Come down to the 
-slow session at 7:30 on Tuesday evenings at the Welsh Dragon to try them out. We'll play them 
-slowly so you can join in.
+We pick one tune each week for homework, and we'll play it sometime during the first hour.
+
 
 <div id="abc-textareas"></div>
 
-<table style="width:100%" id="beginner" class="tablesorter">
-<thead><tr>
-    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+<table style="width:100%" id="tuneoftheweek" class="tablesorter">
+<thead>
+    <tr>
+    <th style="width:25%;">Tune Name</th>
+    <th style="width:4%;">Key</th>
+    <th style="width:6%;">Rhythm</th>
     <th style="width:40%;">Audio Control</th>
     <th style="width:25%;">Speed Adjustment</th>
     </tr>
 </thead>
+
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'title' %}
   {% assign count = 100 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'beginner' and tune.tags contains 'slowsession'%}
+      {% if tune.tags contains 'tuneoftheweek' and tune.tags contains 'slowsession'%}
           {% assign count = count | plus: 1 %}
 <tr>
 {% include tablerow.html counter=count speed=80 %}
@@ -57,11 +58,10 @@ slowly so you can join in.
 </tbody>
 </table>
 
-New tunes
+Slow Session Tunes
 ---------
 
-We pick one or two new tunes each week for homework and we play these at a moderate pace around 8:00 after the beginner part of the session. Here are the last eight tunes we've worked on:
-
+Here are some of the tunes we'll be playing at a relaxed speed during the first hour.
 <table style="width:100%" id="newtunes" class="tablesorter">
 <thead>
     <tr>
@@ -73,24 +73,16 @@ We pick one or two new tunes each week for homework and we play these at a moder
     </tr>
 </thead>
 <tbody>
-  {% assign sortedtunes = site.tunes | sort: 'date' | reverse %}
-  {% assign tune_count = 0 %
-  {% assign count = 200 %}
+  {% assign sortedtunes = site.tunes | sort: 'title' %}
+  {% assign count = 100 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'slowsession' %}
-          {% if tune.tags contains 'beginner' %}
-              {% continue %}
-          {% endif %}
+      {% if tune.tags contains 'focustune' and tune.tags contains 'slowsession'%}
           {% assign count = count | plus: 1 %}
 <tr>
-{% include tablerow.html  counter=count speed=90 %}
+{% include tablerow.html counter=count speed=80 %}
 </tr>
-          {% assign tune_count = tune_count | plus: 1 %}
       {% endif %}
-      {% if tune_count == 8 %}
-      {% break %}
-      {% endif %}
-  {% endfor %}
+{% endfor %}
 </tbody>
 </table>
 
@@ -101,9 +93,9 @@ Other Tunes
 -----------
 
 You can see a list of some of the tunes that get played at the session including those we've been
-learning at the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
+learning in the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
 
-There's also a comprehensive list of tunes including some that we haven't started yet in the 
+There's also a large list of tunes including tunes played in other New Zealand sessions in the 
 <a href="http://session.nz/archive/">NZ Archive</a> page.  Feel free to poke around.
 
 
