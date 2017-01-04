@@ -5,7 +5,7 @@ rhythm: hornpipe
 mode: 
 date: 2016-01-01
 location: Wellington
-tags: slowsession beginner
+tags: slowsession beginner focustune
 mp3_file: /mp3/murphys.mp3
 mp3_url: 
 abc_url: 

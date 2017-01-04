@@ -5,7 +5,7 @@ rhythm: reel
 mode: minor
 date: 2016-10-12
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slowsession focustune
 mp3_file: /mp3/musical-priest.mp3
 mp3_url: https://comhaltas.ie/audio/cl323/cl323_7_64K.mp3
 source: Wellington

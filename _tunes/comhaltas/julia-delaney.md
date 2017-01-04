@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-08-04
 location: Arrowtown Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/julia-delaney.mp3
 mp3_url: http://media.comhaltas.ie/audio/cl468_mp3/cl468_4.mp3
 abc_url: 

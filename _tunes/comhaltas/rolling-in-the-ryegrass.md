@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: slowsession beginner
+tags: slowsession beginner focustune
 mp3_file: /mp3/rolling-in-the-ryegrass.mp3
 mp3_url: 
 abc_url: 
