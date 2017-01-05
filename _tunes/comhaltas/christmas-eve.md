@@ -5,7 +5,7 @@ rhythm: reel
 mode: 
 date: 2016-12-7
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession 
 mp3_file: /mp3/christmas-eve.mp3
 mp3_url: https://media.comhaltas.ie/audio/fs3/wip/ChristmasEve.mp3
 abc_url: 

@@ -5,7 +5,7 @@ rhythm: jig
 mode: major
 date: 2016-01-01
 location: Wellington
-tags: 
+tags: slowsession focustune
 mp3_file: /mp3/humours-of-ennistymon.mp3
 mp3_url: https://comhaltas.ie/music/detail/humours_of_ennistymon/
 abc_url: https://thesession.org/tunes/228

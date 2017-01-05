@@ -28,7 +28,7 @@ Find out more about us and upcoming sessions.
 Tune of the Week
 ----------------
 
-We pick one tune each week for homework, and we'll play it sometime during the first hour.
+We pick one tune each week to focus on, and we'll play it several times during the first hour.  
 
 
 <div id="abc-textareas"></div>
@@ -61,7 +61,7 @@ We pick one tune each week for homework, and we'll play it sometime during the f
 Slow Session Tunes
 ---------
 
-Here are some of the tunes we'll be playing at a relaxed speed during the first hour.
+Here are some of the tunes we'll be playing at a relaxed speed during the first hour to really learn them.  Feel free to suggest tunes for this list. We'll be updating the list on a regular basis.
 <table style="width:100%" id="newtunes" class="tablesorter">
 <thead>
     <tr>

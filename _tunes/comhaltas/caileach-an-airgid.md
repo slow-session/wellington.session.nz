@@ -5,7 +5,7 @@ rhythm: jig
 mode: 
 date: 2016-12-7
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/caileach-an-airgid.mp3
 mp3_url: https://comhaltas.ie/music/detail/caileach_an_airgid/
 abc_url: 
