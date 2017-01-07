@@ -20,7 +20,7 @@
 <!--build the slow down slider for each tune-->
 <td style="text-align:center">
     <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100"}"
+  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100"
             onchange="setPlaySpeed(A{{ include.counter }}, value/100)">
         <output name="level">100</output>%
     </form>
