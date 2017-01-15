@@ -127,10 +127,12 @@ function toggle(button)
 
 <textarea id="ABC" style="display:none;"></textarea>
 
+{% if page.mp3_file %}
 <div class="attribution">
 The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
 Permission to use is gratefully acknowledged and the audio is made available under
 this licence: {{ page.mp3_licence }}
+{% endif %}
 
 {% if page.abc_source %}
 The music notation was sourced from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
