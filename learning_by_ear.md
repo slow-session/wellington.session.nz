@@ -2,7 +2,7 @@
 layout: page
 title: Learning by Ear
 permalink: /learning_by_ear/
-navigation_weight: 25
+navigation_weight: 20
 ---
 
 * TOC

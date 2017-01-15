@@ -2,10 +2,14 @@
 layout: default
 ---
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 
+<audio id="OneAudioPlayer" loop>
+    <source id="mp3Source" type="audio/mp3"></source>
+    Your browser does not support the audio format.
+</audio>
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 All players of traditional Irish music are welcome. The session starts slowly, as we work
@@ -28,9 +32,9 @@ Find out more about us and upcoming sessions.
 Tune of the Week
 ----------------
 
-We pick one tune each week to focus on, and we'll play it several times during the first hour.  
+We pick one tune each week for homework, and we'll play it sometime during the first hour.
 
-
+<div id="DEBUG"></div>
 <div id="abc-textareas"></div>
 
 <table style="width:100%" id="tuneoftheweek" class="tablesorter">
@@ -39,8 +43,7 @@ We pick one tune each week to focus on, and we'll play it several times during t
     <th style="width:25%;">Tune Name</th>
     <th style="width:4%;">Key</th>
     <th style="width:6%;">Rhythm</th>
-    <th style="width:40%;">Audio Control</th>
-    <th style="width:25%;">Speed Adjustment</th>
+    <th style="width:65%;">Audio Player</th>
     </tr>
 </thead>
 
@@ -61,15 +64,14 @@ We pick one tune each week to focus on, and we'll play it several times during t
 Slow Session Tunes
 ---------
 
-Here are some of the tunes we'll be playing at a relaxed speed during the first hour to really learn them.  Feel free to suggest tunes for this list. We'll be updating the list on a regular basis.
+Here are some of the tunes we'll be playing at a relaxed speed during the first hour.
 <table style="width:100%" id="focustunes" class="tablesorter">
 <thead>
     <tr>
     <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
     <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th>
     <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:40%;">Audio Control</th>
-    <th style="width:25%;">Speed Adjustment</th>
+    <th style="width:65%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
@@ -86,9 +88,6 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
 </tbody>
 </table>
 
-<br />
-<p class="rss-subscribe">If you're familiar with using an RSS feed you can subscribe to new tune announcements <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <img src="images/feed-icon-28x28.png" alt=""></a></p>
-
 Other Tunes
 -----------
 
@@ -101,7 +100,7 @@ There's also a large list of tunes including tunes played in other New Zealand s
 
 <script>
 $(document).ready(function() {
-    // turn off sorting on last two columns
-    $("#focustunes").tablesorter({headers: { 3:{sorter: false}, 4: {sorter: false}}});
+    // turn off sorting on last column
+    $("#focustunes").tablesorter({headers: { 3:{sorter: false}}});
 });
 </script>

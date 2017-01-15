@@ -15,7 +15,8 @@ url: "http://wellington.session.nz" # the base hostname & protocol for your site
 facebook: https://www.facebook.com/groups/WellingtonSession
 jekyll: https://jekyllrb.com
 github: https://github.com/slow-session/wellington.session.nz
-mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
+#mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
+mp3_host: http://localhost:4000 # leave blank if mp3 files are served from THIS SERVER
 
 # Build settings
 markdown: kramdown
@@ -29,33 +30,3 @@ defaults:
         path: "_tunes"
     values:
         layout: "tunepage"
-  - scope:
-        path: "_tunes/comhaltas"
-    values:
-        mp3_licence: CC-BY-NC-2.5
-        mp3_source: Comhaltas Ceoltóirí Éireann
-  - scope:
-        path: "_tunes/wellington-session"
-    values:
-        mp3_licence: CC-BY-NC-4.0
-        mp3_source: Wellington Session
-  - scope:
-        path: "_tunes/ballyscully"
-    values:
-        mp3_licence: CC-BY-NC-4.0
-        mp3_source: Ballyscully - used by permission
-  - scope:
-        path: "_tunes/ceol-aneas"
-    values:
-        mp3_licence: CC-BY-NC-4.0
-        mp3_source: Ceol Aneas
-  - scope:
-        path: "_tunes/free-music-archive"
-    values:
-        mp3_licence: Attribution-Share Alike 3.0 United States License
-        mp3_source: Free Music Archive
-  - scope:
-        path: "_tunes/connieoconnell"
-    values:
-        mp3_licence: Connie_O_Connell
-        mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>

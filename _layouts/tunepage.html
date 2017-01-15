@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 <p class="post-meta"> {{ page.key }} {{ page.mode }} {{ page.rhythm }}, added
@@ -9,50 +10,69 @@ layout: default
 </p>
 
 {% assign titleTag = page.title | slugify | remove: '-' %}
-<div class="player">
 
 {% if page.mp3_file %}
 <!--Layout audioplayer at top of page if mp3 file is available-->
 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-    
-    <audio id="{{ titleTag }}A" title="{{ page.title }}" controls loop style="width: 60%;">
-        <source src="{{ site.mp3_host }}{{ page.mp3_file }}" type="audio/mpeg"> 
-    </audio>
-    <span title="Adjust playback speed with slider">
-        <input name="flevel" id="{{ titleTag }}RS" type="range" min="50" max="120" value="100" 
-                onchange="setPlaySpeed({{ titleTag }}A, value/100)" style="width: 30%;vertical-align:25%;">
-        <output name="level" style="vertical-align:25%;">100</output><span style="vertical-align:25%;">%</span>
-    </span>
-    <br />
-    <!--build the loop mechanism for each tune--> 
-    <div style="padding-left: 100px;">
-        <span title="Play tune, select loop starting point, then select loop end point">
-            <input type="button" id="{{ titleTag }}B1" value="Loop Start" onclick="SetPlayRange({{ titleTag }}A,0,{{ titleTag }}B1, {{ titleTag }}B2)">
-            <input type="button" id="{{ titleTag }}B2" value=" Loop End " onclick="SetPlayRange({{ titleTag }}A,1,{{ titleTag }}B1, {{ titleTag }}B2)">
-            <input type="button" value="Reset" onclick="SetPlayRange({{ titleTag }}A,2,{{ titleTag }}B1,{{ titleTag }}B2)">
-        </span>
-    </div>
+   <!-- declare an Audio Player for this page-->
+   <audio id="OneAudioPlayer" loop>
+       <source id="mp3Source" type="audio/mp3"></source>
+       Your browser does not support the audio format.
+   </audio>
+
+   <div id="audioplayer{{ titleTag }}" title="{{ tune.title }}" class="audioplayer">
+      <button id="pButton{{ titleTag }}" class="playButton"
+         onclick="playAudio(audioplayer{{ titleTag }}, pButton{{ titleTag }}, playPosition, '{{ site.mp3_host }}{{ page.mp3_file }}',APos{{ titleTag }})">
+        <div id="APos{{ titleTag }}" class="audioPos">0.0</div>
+      </button>
+      <input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="400" value="0"
+         oninput="adjustAudioPosition(value/400)" onchange="setAudioPosition(value/400, {{ titleTag }}B1, {{ titleTag }}B2)"/>
+      <div class="speed_control">
+         <span title="Adjust playback speed with slider">
+            <input name="flevel" id="RS{{ titleTag }}" type="range" min="50" max="120" value="100"
+               onchange="setPlaySpeed(audioplayer{{ titleTag }}, value/100)" />
+            <output name="level">100</output>%
+         </span>
+      </div>
+      <div class="loop_control">
+         <span title="Play tune, select loop starting point, then select loop end point">
+            <input type="button" id="{{ titleTag }}B1" value="Loop Start"
+               onclick="SetPlayRange(audioplayer{{ titleTag }}, 0, {{ titleTag }}B1, {{ titleTag }}B2)" />
+            <input type="button" id="{{ titleTag }}B2" value=" Loop End "
+               onclick="SetPlayRange(audioplayer{{ titleTag }}, 1, {{ titleTag }}B1, {{ titleTag }}B2)" />
+            <input type="button" value="Reset"
+               onclick="SetPlayRange(audioplayer{{ titleTag }}, 2, {{ titleTag }}B1, {{ titleTag }}B2)" />
+         </span>
+      </div>
+   </div>
 </form>
 {% else %}
 <!-- build the abc player for each tune-->
-<form onsubmit="return false" oninput="level.value = Math.round(flevel.valueAsNumber/3.2)">
-    <input type="button" value="Play ABC" id="play" onclick="abcSliderChanged(ABC, {{ titleTag }}RSM.value)">
-    <input type="button" value="Stop" id="stop" onclick="stopABC(ABC)">
-    <input name="flevel" id="{{ titleTag }}RSM" type="range" min="160" max="384" value="320" onchange="abcSliderChanged(ABC, value)">
-    <output name="level">100</output>%
-</form>
+<fieldset>
+   <strong>No recording available - use the ABC player below the music to hear the tune</strong>
+</fieldset>
 {% endif %}
-</div>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>  
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
 
 <script type="text/javascript">
-var MyTune="%%staffwidth 540\n" + {{ page.abc | jsonify  }};
+var MyFonts ="%%titlefont       Helvetica 20\n\
+%%subtitlefont    Helvetica 16\n\
+%%gchordfont      Helvetica 12\n\
+%%composerfont    Helvetica-Oblique 14\n\
+%%partsfont       Helvetica 12%%\n\
+%%tempofont       Helvetica 12\n\
+%%annotationfont  Helvetica 12\n\
+%%infofont        Helvetica 12\n\
+%%textfont        Helvetica 12\n\
+%%vocalfont       Helvetica 12\n\
+%%wordsfont       Helvetica 12\n";
+var MyTune="%%staffwidth 540\n" + MyFonts + {{ page.abc | jsonify  }};
 var MyABC = "<span class='showabc' style='font-size: 12px'><br />" + {{ page.abc | newline_to_br | jsonify }} + "</span>";
 
-function toggle(button) 
+function toggle(button)
 {
      switch(button.value)
      {
@@ -70,54 +90,57 @@ function toggle(button)
 
 
 <div class="post-content" itemprop="articleBody">
-    <div class="abc"><div id="notation"></div></div>
-  
-    {{ content }}
-    
-    <div id="abcButtons">
-        <form  onsubmit="return false"  oninput="level.value =  Math.round(flevel.valueAsNumber/3.2)">
-            <input   type="button"   value="Play ABC"   id="play" onclick="abcSliderChanged(ABC, {{ titleTag }}RSM.value)">
-            <input type="button" value="Stop"  id="stop" onclick="stopABC(ABC)">  
-            <input  name="flevel" id="{{  titleTag }}RSM" type="range" min="160"  max="384" value="320"            
-                         onchange="abcSliderChanged(ABC, value)">
-            <output name="level">100</output>% 
-        </form> 
-        <br /> 
-    </div>
+   <div class="abc"><div id="notation"></div></div>
 
-    <form>
-        <input type="button" value="Show ABC Source" onclick="toggle(this);">
-    </form>
-  
-    <div id="abcsource"></div>
+   {{ content }}
+
+   {% unless page.mp3_file %}
+   <fieldset><strong>A recording for this tune is not available yet. Qualify for glory by providing one!
+   Make a recording of yourself or your session playing this tune and send it to us at admin@session.nz</strong></fieldset><br />
+   {% endunless %}
+
+   <h4>Play the ABC version</h4>
+
+   <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+      <div class="audioplayer">
+         <button id="pButton" class="playButton"
+            onclick="playABC(ABC, pButton, playPosition, RSABC{{ titleTag }}.value,ABCPos)">
+            <div id="ABCPos" class="audioPos">0.0</div>
+         </button>
+         <input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="500" value="0"
+            oninput="setABCPosition(ABC, value/100)" />
+         <div class="speed_control">
+            <input name="flevel" id="RSABC{{ titleTag }}" type="range" min="50" max="120" value="100"
+                onchange="changeABCspeed(ABC, pButton, value)">
+            <output name="level">100</output>%
+         </div>
+      </div>
+      <p class="clear"></p>
+   </form>
+
+   <form>
+      <input type="button" value="Show ABC Source" onclick="toggle(this);">
+   </form>
+
+   <div id="abcsource"></div>
 </div>
 
 <textarea id="ABC" style="display:none;"></textarea>
 
 <div class="attribution">
-The audio of {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>, 
-and is made available under 
-{% case page.mp3_licence %}
-    {% when 'CC-BY-NC-2.5' %}
-<a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-Noncommercial 2.5 License</a>.
-    {% when 'CC-BY-4.0' %}
-<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0) Licence</a>.
-    {% when 'CC-BY-NC-4.0' %}
-<a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence</a>.
-    {% when 'Attribution-Share Alike 3.0 United States License' %}
-<a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Attribution-Share Alike 3.0 United States License</a>.  
-    {% when 'Connie_O_Connell' %}
-an agreement with Connie O'Connell. Permission to use gratefully acknowledged.<br />© Connie O'Connell. All Rights Reserved.
-{% endcase %}
+The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+Permission to use is gratefully acknowledged and the audio is made available under
+this licence: {{ page.mp3_licence }}
 
 {% if page.abc_source %}
 The music notation was sourced from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
 {% endif %}
 </div>
 
+
 <script>
 $(document).ready(function() {
-      {{ titleTag }}RSM.value=320; //initialise tune speed
+      RSABC{{ titleTag }}.value = 100; //initialise tune speed
       ABCJS.renderAbc('notation', MyTune);
       ABC.value = preProcessABC(MyTune);
 });

@@ -1,0 +1,71 @@
+.audioplayer {
+    width: 500px;
+    border: none;
+}
+
+.playButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url('/images/Play_button.png');
+    opacity: 0.7;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 10px auto auto 8px;
+    outline: none;
+}
+.playButton:hover {
+  opacity: 1.0;
+  transition: all 250ms linear;
+}
+
+.pauseButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url('/images/Pause_button.png');
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 10px auto auto 8px;
+    outline: none;
+}
+.stopButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url('/images/Stop_button.png');
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 10px auto auto 8px;
+    outline: none;
+}
+
+.audio_control {
+    width: 45%;
+    margin-top: 14px;
+    float: left;
+}
+
+.speed_control {
+    margin-top: 12px;
+    padding-left: 20px;
+    float: left;
+}
+
+.loop_control {
+    float: left;
+}
+
+.audioPos {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: -4px;
+    float: left;
+}
+
+p.clear {
+    clear: left;
+}

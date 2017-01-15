@@ -2,13 +2,16 @@
 layout: page
 title: Current Tunes
 permalink: /current_tunes/
-navigation_weight: 5
+navigation_weight: 10
 ---
 
 These are the some of the tunes we play at the Wellington Session. These tunes will get played regularly so if you know these you'll get a chance to play them.
 
 We've learned many of these tunes during the "Slow Session" part of the evening and you can find these by choosing the "Tags:" option,  picking "Slow Session" and pressing "Select".
-
+<audio id="OneAudioPlayer">
+    <source id="mp3Source" type="audio/mp3"></source>
+    Your browser does not support the audio format.
+</audio>
 
 <fieldset>
     <legend>Select from current Wellington Tunes:</legend>    
@@ -17,7 +20,7 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
         <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
         Title:
         <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
-        &emsp; 
+        &emsp;
         Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">Any</option>
@@ -45,23 +48,23 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
         <input class="filter_button filter_disabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
         </span>      
     </form>
+    <p></p>
+    <div id="tunes-count"></div>
 </fieldset>
-
 <br />
-
 <div id="tunes-table"></div>
 <div id="abc-textareas"></div>
 
 <script>
     window.store = {
       {% assign tuneID = 3000 %}
-      {% assign tunes =  site.tunes | sort: 'title' %} 
+      {% assign tunes =  site.tunes | sort: 'title' %}
       {% for tune in tunes %}
           {% if tune.location contains "Wellington" %}
               {% assign tuneID = tuneID | plus: 1 %}
               "{{ tuneID }}": {
                   "title": "{{ tune.title | xml_escape }}",
-                  "tuneID": "{{ tuneID }}", 
+                  "tuneID": "{{ tuneID }}",
                   "key": "{{ tune.key | xml_escape }}",
                   "mode": "{{ tune.mode | xml_escape }}",
                   "rhythm": "{{ tune.rhythm | xml_escape }}",
@@ -77,18 +80,18 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
       {% endfor %}};
 </script>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audio_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/lunr.min.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/search.js"></script>
 
 <script>
-$(document).ready(function() { 
+$(document).ready(function() {
     // Set initial sort order
-    $.tablesorter.defaults.sortList = [[0,0]]; 
-        
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}, 4: {sorter: false}}});    
+    $.tablesorter.defaults.sortList = [[0,0]];
+
+    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
 });
 </script>
 <script>

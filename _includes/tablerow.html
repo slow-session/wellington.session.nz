@@ -4,43 +4,57 @@
 <td>{{ tune.rhythm }}</td>
 
 {% if tune.mp3_file %}
-<td style="text-align:center">
-    <!--build the audio player for each tune-->
-    <audio id="A{{ include.counter }}" title="{{ tune.title }}" controls loop preload="none">
-       <source src="{{ site.mp3_host }}{{ tune.mp3_file }}" type="audio/mpeg">
-    </audio>
-    <br />
-    <!--build the loop mechanism for each tune-->
-    <span title="Play tune, select loop starting point, then select loop end point">
-        <input type="button" id="B1{{ include.counter }}" value="Loop Start" onclick="SetPlayRange(A{{ include.counter }},0,B1{{ include.counter }}, B2{{ include.counter }})">
-        <input type="button" id="B2{{ include.counter }}" value=" Loop End " onclick="SetPlayRange(A{{ include.counter }},1,B1{{ include.counter }}, B2{{ include.counter }})">
-        <input type="button" value="Reset" onclick="SetPlayRange(A{{ include.counter }},2,B1{{ include.counter }},B2{{ include.counter }})">
-    </span>
-</td>
-<!--build the slow down slider for each tune-->
-<td style="text-align:center">
-    <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-  	    <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100"
-            onchange="setPlaySpeed(A{{ include.counter }}, value/100)">
-        <output name="level">100</output>%
-    </form>
+<td>
+   <!--build the audio player for each tune-->
+   <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+      <div id="audioplayer{{ include.counter }}" title="{{ tune.title }}" class="audioplayer">
+         <button id="pButton{{ include.counter }}" class="playButton"
+            onclick="playAudio(audioplayer{{ include.counter }}, pButton{{ include.counter }}, playPosition{{ include.counter }}, '{{ site.mp3_host }}{{ tune.mp3_file }}', APos{{ include.counter }})">
+            <div id="APos{{ include.counter }}" class="audioPos">0.0</div>
+         </button>
+         <input name="playPosition{{ include.counter }}" id="playPosition{{ include.counter }}" type="range" class="audio_control" min="0" max="400" value="0"
+            oninput="adjustAudioPosition(value/400)" onchange="setAudioPosition(value/400, B1{{ include.counter }}, B2{{ include.counter }})"/>
+         <div id="speed_control{{ include.counter }}" class="speed_control">
+            <span title="Adjust playback speed with slider">
+               <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100"
+                  onchange="setPlaySpeed(audioplayer{{ include.counter }}, value/100)" />
+               <output name="level">100</output>%
+            </span>
+         </div>
+         <div class="loop_control">
+            <span title="Play tune, select loop starting point, then select loop end point">
+               <input type="button" id="B1{{ include.counter }}" value="Loop Start"
+                  onclick="SetPlayRange(audioplayer{{ include.counter }},0,B1{{ include.counter }}, B2{{ include.counter }})" />
+               <input type="button" id="B2{{ include.counter }}" value=" Loop End "
+                  onclick="SetPlayRange(audioplayer{{ include.counter }},1,B1{{ include.counter }}, B2{{ include.counter }})" />
+               <input type="button" value="Reset"
+                  onclick="SetPlayRange(audioplayer{{ include.counter }},2,B1{{ include.counter }}, B2{{ include.counter }})" />
+
+            </span>
+         </div>
+      </div>
+   </form>
 </td>
 {% else %}
-<td style="text-align:center">
-<!--build the abc player for each tune-->
-    <span title="No MP3 available. Play and stop tune from ABC source">
-        <input type="button" value="Play ABC" id="play"
-            onclick="abcSliderChanged(ABC{{ include.counter }}, RSM{{ include.counter }}.value)">
-        <br />
-        <input type="button" value="Stop" id="stop" onclick="stopABC(ABC{{ include.counter }})">
-    </span>
-</td>
-<!--build the slow down slider for each tune-->
-<td style="text-align:center">
-    <form onsubmit="return false" oninput="level.value = Math.round(flevel.valueAsNumber/3.2)">
-  	    <input name="flevel" id="RSM{{ include.counter }}" type="range" min="160" max="384" value="320"
-            onchange="abcSliderChanged(ABC{{ include.counter }}, value)">
-        <output name="level">100</output>%
+<td>
+    <!--build the abc player for each tune-->
+    <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+      <div class="audioplayer">
+          <button id="pButton{{ include.counter }}" class="playButton"
+            onclick="playABC(ABC{{ include.counter }}, pButton{{ include.counter }}, playPosition{{ include.counter }}, RS{{ include.counter }}.value, APos{{ include.counter }})">
+            <div id="APos{{ include.counter }}" class="audioPos">0.0</div>
+          </button>
+          <input name="playPosition{{ include.counter }}" id="playPosition{{ include.counter }}" type="range" class="audio_control" min="0" max="500" value="0"
+             oninput="setABCPosition(playPosition{{ include.counter }}, value/100)" />
+          <div class="speed_control">
+             <input name="flevel" id="RS{{ include.counter }}" type="range" min="50" max="120" value="100"
+                 onchange="changeABCspeed(ABC{{ include.counter }}, pButton{{ include.counter }}, value)">
+             <output name="level">100</output>%
+          </div>
+      </div>
+      <div class="loop_control">
+         <p><small>No recording - playing the <i>dots</i>!</small></p>
+      </div>
     </form>
 </td>
 
