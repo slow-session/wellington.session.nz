@@ -26,7 +26,7 @@ layout: default
         <div id="APos{{ titleTag }}" class="audioPos">0.0</div>
       </button>
       <input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="400" value="0"
-         oninput="adjustAudioPosition(value/400)" onchange="setAudioPosition(value/400, {{ titleTag }}B1, {{ titleTag }}B2)"/>
+         oninput="adjustAudioPosition(audioplayer{{ titleTag }}, value/400)" onchange="setAudioPosition(audioplayer{{ titleTag }}, value/400, {{ titleTag }}B1, {{ titleTag }}B2)"/>
       <div class="speed_control">
          <span title="Adjust playback speed with slider">
             <input name="flevel" id="RS{{ titleTag }}" type="range" min="50" max="120" value="100"
