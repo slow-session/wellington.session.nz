@@ -2,15 +2,15 @@
 title: Belfast Hornpipe
 key: D
 rhythm: hornpipe
-mode: 
+mode:
 date: 2016-01-01
 location: Wellington
-tags: 
+tags:
 mp3_file: /mp3/belfast-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/
-abc_url: 
+abc_url:
 source: Wellington
 transcription: id:hn-hornpipe-46
 chords: false
@@ -21,6 +21,7 @@ abc: |
     R:hornpipe
     Z:id:hn-hornpipe-46
     M:C|
+    L:1/8
     K:D
     ag|(3faf df AdFA|DFAd f2ef|gabg efge|cdec A2ag|
     (3faf df AdFA|DFAd f2ef|gfed cABc|(3dcd fe d2:|
@@ -32,6 +33,5 @@ abc: |
     "Version of 1st part:"
     ag|(3faf df AdFA|DFAd f2ef|gbeg ceAF|GABG E2ag|
     (3faf df AdFA|DFAd f2ef|gabg eABc|d2f2 d2:|
-    
----
 
+---
