@@ -6,10 +6,8 @@ layout: default
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 
-<audio id="OneAudioPlayer" loop>
-    <source id="mp3Source" type="audio/mp3"></source>
-    Your browser does not support the audio format.
-</audio>
+<div id="audioPlayer"></div>
+
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 All players of traditional Irish music are welcome. The session starts slowly, as we work
@@ -95,11 +93,13 @@ You can see a list of some of the tunes that get played at the session including
 learning in the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
 
 There's also a large list of tunes including tunes played in other New Zealand sessions in the
-<a href="http://session.nz/archive/">NZ Archive</a> page.  Feel free to poke around.
+<a href="{{ site.mp3_host }}/archive/">NZ Archive</a> page.  Feel free to poke around.
 
 
 <script>
 $(document).ready(function() {
+    audioPlayer.innerHTML = createAudioPlayer();
+
     // turn off sorting on last column
     $("#focustunes").tablesorter({headers: { 3:{sorter: false}}});
 });

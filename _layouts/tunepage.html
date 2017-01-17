@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -12,40 +15,9 @@ layout: default
 {% assign titleTag = page.title | slugify | remove: '-' %}
 
 {% if page.mp3_file %}
-<!--Layout audioplayer at top of page if mp3 file is available-->
-<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-   <!-- declare an Audio Player for this page-->
-   <audio id="OneAudioPlayer" loop>
-       <source id="mp3Source" type="audio/mp3"></source>
-       Your browser does not support the audio format.
-   </audio>
+<div id="audioPlayer"></div>
+<div id="showPlayer"></div>
 
-   <div id="audioplayer{{ titleTag }}" title="{{ tune.title }}" class="audioplayer">
-      <button id="pButton{{ titleTag }}" class="playButton"
-         onclick="playAudio(audioplayer{{ titleTag }}, pButton{{ titleTag }}, playPosition, '{{ site.mp3_host }}{{ page.mp3_file }}',APos{{ titleTag }})">
-        <div id="APos{{ titleTag }}" class="audioPos">0.0</div>
-      </button>
-      <input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="400" value="0"
-         oninput="adjustAudioPosition(audioplayer{{ titleTag }}, value/400)" onchange="setAudioPosition(audioplayer{{ titleTag }}, value/400, {{ titleTag }}B1, {{ titleTag }}B2)"/>
-      <div class="speed_control">
-         <span title="Adjust playback speed with slider">
-            <input name="flevel" id="RS{{ titleTag }}" type="range" min="50" max="120" value="100"
-               onchange="setPlaySpeed(audioplayer{{ titleTag }}, value/100)" />
-            <output name="level">100</output>%
-         </span>
-      </div>
-      <div class="loop_control">
-         <span title="Play tune, select loop starting point, then select loop end point">
-            <input type="button" id="{{ titleTag }}B1" value="Loop Start"
-               onclick="SetPlayRange(audioplayer{{ titleTag }}, 0, {{ titleTag }}B1, {{ titleTag }}B2)" />
-            <input type="button" id="{{ titleTag }}B2" value=" Loop End "
-               onclick="SetPlayRange(audioplayer{{ titleTag }}, 1, {{ titleTag }}B1, {{ titleTag }}B2)" />
-            <input type="button" value="Reset"
-               onclick="SetPlayRange(audioplayer{{ titleTag }}, 2, {{ titleTag }}B1, {{ titleTag }}B2)" />
-         </span>
-      </div>
-   </div>
-</form>
 {% else %}
 <!-- build the abc player for each tune-->
 <fieldset>
@@ -53,9 +25,6 @@ layout: default
 </fieldset>
 {% endif %}
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
 
 <script type="text/javascript">
 var MyFonts ="%%titlefont       Helvetica 20\n\
@@ -100,23 +69,8 @@ function toggle(button)
    {% endunless %}
 
    <h4>Play the ABC version</h4>
-
-   <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-      <div class="audioplayer">
-         <button id="pButton" class="playButton"
-            onclick="playABC(ABC, pButton, playPosition, RSABC{{ titleTag }}.value,ABCPos)">
-            <div id="ABCPos" class="audioPos">0.0</div>
-         </button>
-         <input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="500" value="0"
-            oninput="setABCPosition(ABC, value/100)" />
-         <div class="speed_control">
-            <input name="flevel" id="RSABC{{ titleTag }}" type="range" min="50" max="120" value="100"
-                onchange="changeABCspeed(ABC, pButton, value)">
-            <output name="level">100</output>%
-         </div>
-      </div>
-      <p class="clear"></p>
-   </form>
+   <div id="textAreas"></div>
+   <div id="ABCplayer"></div>
 
    <form>
       <input type="button" value="Show ABC Source" onclick="toggle(this);">
@@ -125,10 +79,9 @@ function toggle(button)
    <div id="abcsource"></div>
 </div>
 
-<textarea id="ABC" style="display:none;"></textarea>
 
-{% if page.mp3_file %}
 <div class="attribution">
+{% if page.mp3_file %}
 The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
 Permission to use is gratefully acknowledged and the audio is made available under
 this licence: {{ page.mp3_licence }}
@@ -142,9 +95,15 @@ The music notation was sourced from <a href="{{ page.abc_url }}">{{ page.abc_sou
 
 <script>
 $(document).ready(function() {
-      RSABC{{ titleTag }}.value = 100; //initialise tune speed
-      ABCJS.renderAbc('notation', MyTune);
-      ABC.value = preProcessABC(MyTune);
+    {% if page.mp3_file %}
+    audioPlayer.innerHTML = createAudioPlayer();
+    showPlayer.innerHTML = createMP3player('{{ titleTag }}', '{{ site.mp3_host }}{{ page.mp3_file }}');
+    {% endif %}
+
+    ABCJS.renderAbc('notation', MyTune);
+
+    textAreas.innerHTML += '<textarea id="ABC{{ titleTag }}" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
+    ABCplayer.innerHTML = createABCplayer('{{ titleTag }}');
 });
 </script>
 

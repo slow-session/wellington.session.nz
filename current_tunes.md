@@ -8,10 +8,8 @@ navigation_weight: 10
 These are the some of the tunes we play at the Wellington Session. These tunes will get played regularly so if you know these you'll get a chance to play them.
 
 We've learned many of these tunes during the "Slow Session" part of the evening and you can find these by choosing the "Tags:" option,  picking "Slow Session" and pressing "Select".
-<audio id="OneAudioPlayer">
-    <source id="mp3Source" type="audio/mp3"></source>
-    Your browser does not support the audio format.
-</audio>
+
+<div id="audioPlayer"></div>
 
 <fieldset>
     <legend>Select from current Wellington Tunes:</legend>    
@@ -88,6 +86,8 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
 
 <script>
 $(document).ready(function() {
+    audioPlayer.innerHTML = createAudioPlayer();
+
     // Set initial sort order
     $.tablesorter.defaults.sortList = [[0,0]];
 

@@ -31,27 +31,13 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 </span>
 
 <!-- Area to store unrolled ABC -->
-<textarea id="processedABC" style="display:none;"></textarea>
+<textarea id="ABCprocessed" style="display:none;"></textarea>
 
-<!-- Controls for ABC -->
-<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-	<span title="Play the ABC you've entered. You can slow down the playback using the Slider.">      
-		<div class="audioplayer">
-			<button id="pButton" class="playButton"
-				onclick="processedABC.value=preProcessABC(abc.value);playABC(processedABC, pButton, playPosition, RSABC.value), APos">
-				<div id="APos" class="audioPos">0.0</div>
-			</button>
-			<input name="playPosition" id="playPosition" type="range" class="audio_control" min="0" max="400" value="0"
-				oninput="setABCPosition(value/100)" />
-			<div class="speed_control">
-				<input name="flevel" id="RSABC" type="range" min="50" max="120" value="100"
-					onchange="changeABCspeed(processedABC, pButton, value)">
-				<output name="level">100</output>%
-			</div>
-		</div>
-	</span>
-	<p class="clear"></p>
-   <!-- Allow the user to save their ABC-->
+<!-- Controls for ABC player -->
+<div id="ABCplayer"></div>
+
+<!-- Allow the user to save their ABC-->
+<form>
    <span title="Download the ABC you've entered. Don't lose your work!">      
   		<input value='Download ABC' type='button' onclick='downloadABC(document.getElementById("abc").value)' />
    </span>
@@ -65,8 +51,8 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<script type='text/javascript'>
 
+<script type='text/javascript'>
 function downloadABC(text) {
     var pom = document.createElement('a');
     pom.setAttribute(
@@ -86,6 +72,17 @@ function downloadABC(text) {
 
 $(document).ready(function()
 {
-    abc.editor = new ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
+	// Play the initial ABC
+	ABCprocessed.value = preProcessABC(abc.value);
+	ABCplayer.innerHTML = createABCplayer('processed');
+
+	// If the ABC changes get ready to play the new tune
+	$('#abc').bind('input propertychange', function() {
+		ABCprocessed.value = preProcessABC(abc.value);
+		ABCplayer.innerHTML = createABCplayer('processed');
+	});
+
+	// Display the ABC in the textbox
+	abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
 });
 </script>
