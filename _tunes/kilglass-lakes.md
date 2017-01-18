@@ -1,11 +1,11 @@
 ---
-title: "Kilglass Lakes"
+title: Kilglass Lakes
 key: D
 rhythm: jig
 mode: major
 date: 2015-11-1
 location: Wellington
-tags: 
+tags:
 mp3_file: /mp3/kilglass-lakes.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -25,4 +25,3 @@ abc: |
     DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 
 ---
-

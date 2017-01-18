@@ -1,6 +1,6 @@
 ---
 title: Finnish Polka
-key: D
+key: Bm
 rhythm: polka
 mode:
 date: 2016-10-27

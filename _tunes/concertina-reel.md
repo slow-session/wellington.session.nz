@@ -1,5 +1,5 @@
 ---
-title: "Concertina Reel"
+title: Concertina Reel
 key: D
 rhythm: reel
 mode: major

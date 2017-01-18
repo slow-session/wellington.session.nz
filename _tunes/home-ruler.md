@@ -1,5 +1,5 @@
 ---
-title: "Home Ruler"
+title: Home Ruler
 rhythm: hornpipe
 key: D
 mode: major

@@ -1,5 +1,5 @@
 ---
-title: "Jim Ward's"
+title: Jim Ward's
 key: G
 rhythm: jig
 mode: major

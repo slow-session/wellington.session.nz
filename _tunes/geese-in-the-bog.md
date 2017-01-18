@@ -1,5 +1,5 @@
 ---
-title: "Geese in the Bog"
+title: Geese in the Bog
 key: Ador
 rhythm: jig
 mode: dorian

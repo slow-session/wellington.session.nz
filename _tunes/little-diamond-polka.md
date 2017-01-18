@@ -1,5 +1,5 @@
 ---
-title: "Little Diamond Polka"
+title: Little Diamond Polka
 key: D
 rhythm: polka
 mode: major

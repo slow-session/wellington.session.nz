@@ -1,15 +1,15 @@
 ---
-title: "Wise Maid"
+title: Wise Maid
 key: D
 rhythm: reel
 mode: major
 date: 2016-01-26
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/wise-maid.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/wise_maid/ 
+mp3_url: https://comhaltas.ie/music/detail/wise_maid/
 source: Wellington
 abc_url: https://thesession.org/tunes/118
 abc: |
