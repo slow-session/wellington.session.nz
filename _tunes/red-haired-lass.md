@@ -2,14 +2,14 @@
 title: Red Haired Lass
 key: G
 rhythm: reel
-mode: 
+mode:
 date: 2016-09-28
 location: Arrowtown Wellington
-tags: slowsession beginner
+tags: slowsession beginner aff
 mp3_file: /mp3/red-haired-lass.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: 
+mp3_url:
 abc_url: https://thesession.org/tunes/1716
 source: Wellington
 transcription:
@@ -26,4 +26,3 @@ abc: |
     d2 gd edgd|d2 gd BABc|d2 gd edef|gedB c2 Bc|
     d2 gd edgd|d2 gd BABd|c3A B3A|GABd egdB||
 ---
-

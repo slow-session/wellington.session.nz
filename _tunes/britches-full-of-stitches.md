@@ -2,10 +2,10 @@
 title: Britches Full of Stitches
 key: G
 rhythm: polka
-mode: 
+mode:
 date: 2016-09-28
 location: Wellington
-tags: slowsession beginner
+tags: slowsession beginner aff
 mp3_file: /mp3/britches-full-of-stitches.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -26,4 +26,3 @@ abc: |
     |: d>e dB | AG AB | d>e dB | AG E2 |
     d>e dB | AG AB | G>A GE | ED D2 :|
 ---
-

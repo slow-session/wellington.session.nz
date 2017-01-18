@@ -5,12 +5,12 @@ rhythm: jig
 mode: dorian
 date: 2016-10-26
 location: Arrowtown Wellington
-tags: slowsession
+tags: slowsession aff
 mp3_file: /mp3/morrisons.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/fs1/2-40JigsP27JimMorrisons.mp3
-abc_url: 
+abc_url:
 source: Wellington
 transcription: unknown
 abc: |
@@ -26,7 +26,6 @@ abc: |
     Bee fee|aee fee|gfe d2A|BAG FGA|
     Bee fee|aee fee|Bee fee|faf def|
     g3 gfe|def g2d|edc d2A|BAG FED|
-    
-    
----
 
+
+---

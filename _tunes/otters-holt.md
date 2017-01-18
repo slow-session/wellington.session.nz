@@ -5,7 +5,7 @@ rhythm: reel
 mode: minor
 date: 2016-4-11
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slowsession aff
 mp3_file: /mp3/otters-holt.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -26,4 +26,3 @@ abc: |
     |:d2fd Adfa|bfaf effe|d2fd Adfa|bfaf ~e3f|
     ~d2fd Adfa|bfaf efde|fBBA FEFA|(3Bcd cA ~B3c:|
 ---
-

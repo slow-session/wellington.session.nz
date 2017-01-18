@@ -2,15 +2,15 @@
 title: Haunted House
 key: G
 rhythm: jig
-mode: 
+mode:
 date: 2016-1-26
 location: Wellington
-tags: slowsession beginner
+tags: slowsession beginner aff
 mp3_file: /mp3/haunted-house.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/haunted_house/
-abc_url: 
+abc_url:
 source: Wellington
 transcription: unknown
 abc: |
@@ -29,7 +29,6 @@ abc: |
     |:"G"GBd "C"e2 e|ege "Em"dBA|"G"GAB "D"d2 B|ded "Bm"BAG|
     |[1 "G"GBd "C"e2 e|ege dBA|"G"GBd "C"ege|"D"dBA "G"G3:|
     [2 "G"GFG "D"AGA|"G"BGE "Em"EDE|"G"GBd "C"ege|"D"dBA "G"G2 D||
-    
-    
----
 
+
+---

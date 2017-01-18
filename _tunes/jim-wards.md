@@ -5,7 +5,7 @@ rhythm: jig
 mode: major
 date: 2016-02-24
 location: Arrowtown Wellington
-tags: slowsession beginner
+tags: slowsession beginner aff
 mp3_file: /mp3/jim-wards.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -23,5 +23,5 @@ abc: |
     G3 GAB | AGE GAB | cBA BGE |1 DED D :|2 DED D2 ||
     |:B | cBA BAG | A3 AGE | cBA BGE | DED D2B |
     cBA BAG | A3 ABc | dcB AGE |1 GED D2 :|2 GED D |]
-    
+
 ---
