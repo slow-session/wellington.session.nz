@@ -95,15 +95,17 @@ this licence: {{ page.mp3_licence }}</p>
 
 <script>
 $(document).ready(function() {
+    var tuneId = 666;
     {% if page.mp3_file %}
     audioPlayer.innerHTML = createAudioPlayer();
-    showPlayer.innerHTML = createMP3player('{{ titleTag }}', '{{ site.mp3_host }}{{ page.mp3_file }}');
+    showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}');
+    tuneId++;
     {% endif %}
 
     ABCJS.renderAbc('notation', MyTune);
 
-    textAreas.innerHTML += '<textarea id="ABC{{ titleTag }}" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-    ABCplayer.innerHTML = createABCplayer('{{ titleTag }}');
+    textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
+    ABCplayer.innerHTML = createABCplayer(tuneId);
 });
 </script>
 
