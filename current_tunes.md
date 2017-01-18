@@ -39,8 +39,7 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
             <option value="slowsession">Slow Session</option>
             <option value="beginner">Beginner</option>
         </select>
-        </span>
-        <input type='hidden' id='tags-box' name='tags' value=''>      
+        </span>    
         &emsp;
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filter_button filter_disabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
