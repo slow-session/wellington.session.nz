@@ -19,8 +19,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Bdor
-    A|FB~B2 cfec|cfec BAFE|FB~B2 caaf|gfeg ~f3e|
-    |fafe cfec|~B3A defg|af~f2 fecB|cfec ~B3:|
-    c|dB~B2 aBgB|fB~B2 cBAc|dB~B2 abaf|gfeg ~f3e|
-    |fafe cfec|~B3A defg|af~f2 fecB|cfec ~B3:|
+    |:A|FB~B2 cfec|cfec BAFE|FB~B2 cfaf|gfeg ~f3e|
+    fafe cfec|~B3A defg|af~f2 fecB|cfec ~B3:|
+    |:c|dB~B2 aBgB|fB~B2 cBAc|dB~B2 abaf|gfeg ~f3e|
+    fafe cfec|~B3A defg|af~f2 fecB|cfec ~B3:|
 ---
