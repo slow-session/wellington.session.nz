@@ -60,10 +60,22 @@
 }
 
 .audioPos {
-    font-size: 12px;
-    margin-top: 25px;
-    margin-left: -4px;
-    float: left;
+    position: relative;
+    font-size: 11px;
+    margin-top: 22px;
+    margin-left: -15px;
+    //float: right;
+    text-align: center;
+}
+
+.durationP {
+    position: relative;
+    font-size: 11px;
+    //margin-top: 37px;
+    margin-left: -12px;
+    //float: right;
+    text-align: center;
+    text-decoration: overline;
 }
 
 p.clear {
