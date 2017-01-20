@@ -18,7 +18,7 @@ default licensing may be set for each folder in the `_config.yml` file.
 An example of the front-matter for the Connachtman's Rambles, in the file
 `comhaltas/connachtmans-rambles.md`, is given below. Supply similar information
 to add new tunes to the collection. Put an MP3 file whose name is the same
-as the title (including capitalisation) in the `mp3` folder in order for the 
+as the title (including capitalisation) in the `mp3` folder in order for the
 audio to play.
 ```
 ---
@@ -72,7 +72,7 @@ have fixed any issues.
 Loading changes to live website
 -------------------------------
 
-Once you've pushed updates to the **Branch: master** these changes need to be incorporated to the 
+Once you've pushed updates to the **Branch: master** these changes need to be incorporated to the
 **Branch: gh-pages**.
 
 Using the website <https://github.com/slow-session/wellington.session.nz> you can issue a **Pull** request to get the changes from the **master** branch into the **gh-pages** branch.
@@ -80,11 +80,9 @@ Using the website <https://github.com/slow-session/wellington.session.nz> you ca
   * Select the button **New pull request**
   * You should now see a screen headed **Compare changes**
   * Set *base:* to **gh-pages** and *compare:* to **master**
-    * **Make sure you get these in the right order otherwise you'll downgrade the master branch to be the same as the gh-pages branch**
+    * **Make sure you get these in the right order otherwise you'll downgrade the master branch to be the same as the gh-pages branch** 
   * If you're happy that the changes should be committed to the live website, press **Create pull request**
     * You should see a message like: *asjl  wants to merge 1 commit into gh-pages from master*
   * Choose **Merge pull request** and then **Confirm Merge**
     * You should see a message like: *asjl  merged 1 commit into gh-pages from master 12 seconds ago*
   * Check the website <http://wellington.session.nz/> to make sure the changes are correct.
-  
-    
