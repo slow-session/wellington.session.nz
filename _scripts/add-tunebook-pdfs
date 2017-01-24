@@ -8,15 +8,15 @@ fi
 
 ARCHIVEDIR=$1
 
-SOURCEDIR="~/GitHub/${ARCHIVEDIR}"
-SITEDIR="~/GitHub/${ARCHIVEDIR}/_site/abc-collections"
+echo
 
+SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
+SITEDIR="${SOURCEDIR}/_site/abc-collections"
 
 #
 # Get any updates from main respository
 #
 cd ${SOURCEDIR}
-pwd
 /usr/local/bin/git pull
 
 #
