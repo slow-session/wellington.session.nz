@@ -29,9 +29,9 @@ then
 fi
 
 cd ${SITEDIR}
-pwd
 ABCFILES=`ls *abc`
-echo ${ABCFILES}
+echo "Processing: ${ABCFILES}"
+
 #
 # Build the PDF files in ${SOURCEDIR}
 #
