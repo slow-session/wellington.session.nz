@@ -31,7 +31,7 @@ I:abc-charset utf-8
 {% assign sortedtunes = site.tunes | sort: 'title' %}
 %%withxrefs 0
 X:100
-T:Jigs 
+T:Jigs
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm  contains 'ig' %}{% include abc-book-2bar.html  %}
@@ -52,7 +52,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:200
-T:Reels 
+T:Reels
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'eel' %}{% include abc-book-2bar.html  %}
@@ -73,7 +73,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:300
-T:Polkas 
+T:Polkas
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'olka' %}{% include abc-book-2bar.html  %}
@@ -94,7 +94,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:400
-T:Hornpipes 
+T:Hornpipes
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'ornpipe' %}{% include abc-book-2bar.html  %}
@@ -115,7 +115,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:500
-T:Barndances 
+T:Barndances
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'arndance' %}{% include abc-book-2bar.html  %}
@@ -136,7 +136,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:600
-T:Waltz 
+T:Waltz
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'altz' %}{% include abc-book-2bar.html  %}
@@ -157,7 +157,7 @@ K:C
 {% endif %}{% endfor %}
 
 X:700
-T:March 
+T:March
 M:1/1
 K:C
 {% for tune in sortedtunes %}{% if tune.rhythm contains 'arch' %}{% include abc-book-2bar.html  %}
