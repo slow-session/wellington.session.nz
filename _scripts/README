@@ -1,0 +1,14 @@
+These scripts are used to add extra features to the website such as:
+
+* updating the tunebook PDF files
+* generating the copyright pull down lists used in createMD
+* generating .csv files listing details of where tunes are played
+
+In some cases they will need to have additional software installed such as:
+
+* abcm2ps
+* ps2pdf
+
+You can install these using the Brew system e.g.
+
+$ brew install abcm2ps
