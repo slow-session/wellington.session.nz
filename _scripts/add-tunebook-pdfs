@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/sh
 
 if [ $# -ne 1 ]
 then
@@ -8,14 +8,15 @@ fi
 
 ARCHIVEDIR=$1
 
-SOURCEDIR="~GitHub/${ARCHIVEDIR}"
-SITEDIR="~GitHub/${ARCHIVEDIR}/_site/abc-collections"
+SOURCEDIR="~/GitHub/${ARCHIVEDIR}"
+SITEDIR="~/GitHub/${ARCHIVEDIR}/_site/abc-collections"
 
 
 #
 # Get any updates from main respository
 #
 cd ${SOURCEDIR}
+pwd
 /usr/local/bin/git pull
 
 #
@@ -28,8 +29,9 @@ then
 fi
 
 cd ${SITEDIR}
+pwd
 ABCFILES=`ls *abc`
-
+echo ${ABCFILES}
 #
 # Build the PDF files in ${SOURCEDIR}
 #
