@@ -8,8 +8,8 @@ fi
 
 ARCHIVEDIR=$1
 
-SOURCEDIR="~/GitHub/${ARCHIVEDIR}"
-SITEDIR="~/GitHub/${ARCHIVEDIR}/_site/abc-collections"
+SOURCEDIR="~GitHub/${ARCHIVEDIR}"
+SITEDIR="~GitHub/${ARCHIVEDIR}/_site/abc-collections"
 
 
 #
