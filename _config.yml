@@ -24,6 +24,8 @@ collections:
   tunes:
     output: true
 
+exclude: [ _scripts, ]
+
 defaults:
   - scope:
         path: "_tunes"
