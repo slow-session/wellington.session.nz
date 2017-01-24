@@ -1,5 +1,13 @@
 #!/bin/sh
 
+#
+# You may need to change the SOURCEDIR variable to
+# match your directory structure i.e. the "GitHub"
+# part
+#
+SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
+SITEDIR="${SOURCEDIR}/_site/abc-collections"
+
 if [ $# -ne 1 ]
 then
     echo "Usage: $0 <archive_directory>"
@@ -9,9 +17,6 @@ fi
 ARCHIVEDIR=$1
 
 echo
-
-SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
-SITEDIR="${SOURCEDIR}/_site/abc-collections"
 
 #
 # Get any updates from main respository
@@ -28,6 +33,9 @@ then
     exit
 fi
 
+#
+# Get the list of files to process
+#
 cd ${SITEDIR}
 ABCFILES=`ls *abc`
 echo "Processing: ${ABCFILES}"
