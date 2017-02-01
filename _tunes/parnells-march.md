@@ -7,12 +7,12 @@ date: 2016-07-25
 location: Wellington
 tags: slowsession focustune
 mp3_file: /mp3/parnells-march.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_source: Ballyscully - used by permission
-mp3_url: Wellington Session
+mp3_licence: "© Four Winds. All Rights Reserved."
+mp3_source: Four Winds
+mp3_url: http://fourwindsirishmusic.com/
 abc_url: https://thesession.org/tunes/7512
 source: Wellington
-transcription: 
+transcription:
 abc: |
     X: 2
     T: Parnell's March
@@ -29,6 +29,5 @@ abc: |
     d3 d^cd ed=c BAG | ABA d^cd Ad^c d2 =c |
     BGD BGD ded dcB | ~c2 B c2 e ~g3 gfe |
     d2 B GAB c2 A FGA | {B}A2 G G2 F G3 :|
-    
----
 
+---
