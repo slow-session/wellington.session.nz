@@ -2,15 +2,15 @@
 title: Silver Spire
 key: D
 rhythm: reel
-mode: 
+mode:
 date: 2016-11-17
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/silver-spire.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
-mp3_url: Richard Tait 
-abc_url: 
+mp3_url: Richard Tait
+abc_url:
 source: Wellington
 transcription:
 abc: |
@@ -25,6 +25,5 @@ abc: |
     D2FE DFAc|dcde fdAF|G2BG F2AF|EA,CE D2:|
     |:CB,|A,B,CD EFGE|FDEF GABc|dBBA Bcde|f2gf e2 (3ABc|
     d2fd cdec|BABc dAFD|G2BG F2AF|EA,CE D2:|
-    
----
 
+---

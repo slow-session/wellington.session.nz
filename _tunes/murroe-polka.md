@@ -5,11 +5,11 @@ rhythm: polka
 mode: major
 date: 2016-01-26
 location: Wellington
-tags: slowsession 
+tags: slowsession focustune
 mp3_file: /mp3/murroe-polka.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/murrow_polka/ 
+mp3_url: https://comhaltas.ie/music/detail/murrow_polka/
 source: Wellington
 abc_url: https://thesession.org/tunes/1508
 abc: |

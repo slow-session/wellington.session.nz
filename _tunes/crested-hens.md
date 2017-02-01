@@ -5,10 +5,10 @@ rhythm: waltz
 mode: Edorian
 date: 2016-01-01
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 mp3_url:
 mp3_licence:
-mp3_source: 
+mp3_source:
 abc_url: http://slowplayers.org/wp-content/uploads/Crested-Hens.txt
 source: Wellington
 transcription: unknown

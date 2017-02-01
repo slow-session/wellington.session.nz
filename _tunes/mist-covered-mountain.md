@@ -2,17 +2,17 @@
 title: Mist Covered Mountain
 key: Ador
 rhythm: jig
-mode: 
+mode:
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: 
+tags: slowsession focustune
 mp3_file: /mp3/mist-covered-mountain.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/lurgadan_jig_mist_covered_mountain_eddie_moloneys_jig/
 abc_url: https://thesession.org/tunes/256
 source: Wellington
-transcription: 
+transcription:
 abc: |
     X: 1
     T: The Mist On The Mountain
@@ -26,7 +26,6 @@ abc: |
     age a2b|age edB|AGE G2A|BAG A3|
     age a2b|age edB|AGE G2A|BAB GED|
     EDE G2A|BAG ABd|efg dBG|BAG A2||
-    
-    
----
 
+
+---

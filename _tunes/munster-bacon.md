@@ -2,15 +2,15 @@
 title: Munster Bacon
 key: D
 rhythm: jig
-mode: 
+mode:
 date: 2016-05-25
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/munster-bacon.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
-abc_url: 
+abc_url:
 source: Wellington
 transcription: unknown
 chords: false
@@ -27,4 +27,3 @@ abc: |
     |:afd dfa|bag a2g|~f3 ged|cde A2G|
     F2d cde|def efg|f/g/af gec|1 edc dfg:|2 edc dcB||
 ---
-

@@ -2,10 +2,10 @@
 title: Leslie's March
 key: D
 rhythm: jig
-mode: 
+mode:
 date: 2016-09-14
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 mp3_file: /mp3/leslies-march.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -28,4 +28,3 @@ abc: |
     |:dfa dfa|dfa afd|egb egb|egb bge|
     dfa dfa|dfa a2 g|fed d2 A|def e2d :|
 ---
-
