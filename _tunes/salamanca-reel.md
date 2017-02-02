@@ -15,15 +15,15 @@ source: Wellington
 transcription: unknown
 chords: false
 abc: |
-    X: 4
-    T: The Salamanca
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Dmaj
-    |dB|:AD(3FED AD(3FED|Adcd fdcd|BE~G2 BE~G2|Bded cdeg|
-    fB~B2 fB~B2|fafc deag|fdec dBAG|FGEF D2:|
-    |:fg|afdf gbeg|fddc dcBc|Addc defg|a2^gb a2f=g|
-    ~a3f ~g3e|~f3e dfag|fdec dBAG|FGEF D2:|
-
+    X: 73
+    T:Salamanca Reel, The
+    R:reel
+    D:Bothy Band 1975.
+    Z:id:hn-reel-73
+    M:C|
+    K:D
+    AD"D" (3FED AD (3FED|Adcd fedc|"Em"BE~E2 BE~E2|Beed cdeg|
+    "Bm"fB~B2 fB~B2|fgef dfag|fdec "G" dBAG|1 "A"FAEF "D"D2dB:|2 "A" FAEF "D"D2fg||
+    |:"D"afdf "G" gbeg|"D"fdcd BAFB|Addc "A"defg|(3aba gb a2fg|
+    "D"~a3f "G"~g3e|"D"~f3e "G"dfag|fdec dBAG|1 "A"FGEF "D"D2fg:|2 "A"FAEF "D"D2dB||
 ---
