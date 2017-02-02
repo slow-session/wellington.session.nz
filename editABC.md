@@ -33,13 +33,16 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <!-- Area to store unrolled ABC -->
 <textarea id="ABCprocessed" style="display:none;"></textarea>
 
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;"></textarea>
+
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
 
 <!-- Allow the user to save their ABC-->
 <form>
    <span title="Download the ABC you've entered. Don't lose your work!">      
-  		<input value='Download ABC' type='button' onclick='downloadABC(document.getElementById("abc").value)' />
+  		<input value='Download ABC' type='button' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
    </span>
 </form>
 </fieldset>
@@ -51,38 +54,29 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
 <script type='text/javascript'>
-function downloadABC(text) {
-    var pom = document.createElement('a');
-    pom.setAttribute(
-        'href',
-        'data:application/download;charset=utf-8,' + encodeURIComponent(text)
-    );
-    pom.setAttribute('download', "edited.abc");
-
-    if (document.createEvent) {
-        var event = document.createEvent('MouseEvents');
-        event.initEvent('click', true, true);
-        pom.dispatchEvent(event);
-    } else {
-        pom.click();
-    }
-}
-
 $(document).ready(function()
 {
-	// Play the initial ABC
-	ABCprocessed.value = preProcessABC(abc.value);
+	// Create the ABC player
 	ABCplayer.innerHTML = createABCplayer('processed');
 
-	// If the ABC changes get ready to play the new tune
+	// Get ready to play the initial ABC
+	ABCprocessed.value = preProcessABC(abc.value);
+
+	// Set the filename for downloading
+	document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCprocessed.value)) + '.abc';
+
+	// If the ABC changes get ready to play the revised ABC
 	$('#abc').bind('input propertychange', function() {
 		ABCprocessed.value = preProcessABC(abc.value);
-		ABCplayer.innerHTML = createABCplayer('processed');
+
+		// Reset the filename for downloading
+	    document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCprocessed.value)) + '.abc';
 	});
 
-	// Display the ABC in the textbox
+	// Display the ABC in the textbox as dots
 	abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
 });
 </script>
