@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/audioplayer.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/abc_controls.js"></script>
 
 <div id="audioPlayer"></div>
 

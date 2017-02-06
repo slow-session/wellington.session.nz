@@ -16,6 +16,7 @@ facebook: https://www.facebook.com/groups/WellingtonSession
 jekyll: https://jekyllrb.com
 github: https://github.com/slow-session/wellington.session.nz
 mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
+js_host: http://session.nz # leave blank if js files are served from THIS SERVER
 
 # Build settings
 markdown: kramdown

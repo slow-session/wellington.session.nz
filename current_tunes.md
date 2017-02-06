@@ -77,11 +77,11 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
       {% endfor %}};
 </script>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/audioplayer.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/search.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/audioplayer.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/musical-ws.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/abc_controls.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/search.js"></script>
 
 <script>
 $(document).ready(function() {

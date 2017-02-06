@@ -10,13 +10,13 @@ Searchable Tunebook
 
 <fieldset>
     <legend>Select from the Tunes Archive</legend>
-    
+
     <form id="search-query"  method="get">
         <br />
        <span title="Select the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
         Title:
         <input type="text" id="title-box" name="title" value=''>
-        &emsp; 
+        &emsp;
         Rhythm:
         <select id="rhythm-box" name="rhythm">
             <option value="">Any</option>
@@ -42,7 +42,7 @@ Searchable Tunebook
         <span title="Run the filter with the default settings to see the whole list">
         <input class="button" id="submit" type="submit" name="submit" value="Select">
         </span>
-        
+
     </form>
 </fieldset>
 
@@ -61,14 +61,14 @@ Searchable Tunebook
 
 <br />
 <br />
- 
+
 <div id="tunebook"></div>
 
 
 <script>
   window.store = {
       {% assign tuneCount = 1 %}
-      {% assign tunes =  site.tunes | sort: 'title' %} 
+      {% assign tunes =  site.tunes | sort: 'title' %}
       {% for tune in tunes %}
           "{{ tuneCount }}": {
           "title": "{{ tune.title | xml_escape }}",
@@ -80,16 +80,16 @@ Searchable Tunebook
       {% assign tuneCount = tuneCount | plus: 1 %}
     {% endfor %}};
 </script>
-  
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_plugin_3.0-min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/searchable_tunebook.js"></script>
 
-<script type="text/javascript"> 
+<script type="text/javascript" src="{{ site.js_host }}/js/abcjs_plugin_3.0-min.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/searchable_tunebook.js"></script>
+
+<script type="text/javascript">
    ABCJS.plugin.show_midi = false;
    ABCJS.plugin.hide_abc = true;
    ABCJS.plugin.auto_render_threshold = {{tuneCount}};
-   
+
    function printDiv(divName) {
         var printContents = document.getElementById(divName).innerHTML;
         var originalContents = document.body.innerHTML;
@@ -100,7 +100,5 @@ Searchable Tunebook
 
         document.body.innerHTML = originalContents;
    }
-   
+
 </script>
-
-
