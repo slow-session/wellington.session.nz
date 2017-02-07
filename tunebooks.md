@@ -26,6 +26,8 @@ You can also get copies of the ABC files that were used to generate these PDFs:
 * [2bar-by-type.abc](/abc-collections/2bar-by-type.abc "ABC")
 * [2bar-alphabetical.abc](/abc-collections/2bar-alphabetical.abc "ABC")
 
+<!--
 You can also search our archive for single tunes by name or particular types of tunes e.g. Reels, Slip Jigs, Polkas and print out copies of the sheet music. If you try this **Please be patient! It takes a while to generate all the dots!**
 
 * [Searchable Tunebook](/tunebooks/searchable "Search")
+-->
