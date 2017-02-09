@@ -1,14 +1,14 @@
 ---
 title: Apples in Winter
 key: Edor
-rhythm: 6/8
+rhythm: jig
 mode:
 date: 2017-01-23
 location: Wellington
 mp3_file: /mp3/apples-in-winter.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: https://comhaltas.ie/music/detail/comhaltaslive_264_6_roscommon_trio/
-mp3_url: apples-in-winter.mp3
+mp3_source: Comhaltas Ceoltóirí Éireann
+mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_264_6_roscommon_trio/
 source: Wellington
 abc_url: https://thesession.org/tunes/299
 abc: |
