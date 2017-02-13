@@ -5,13 +5,14 @@ rhythm: reel
 mode:
 date: 2016-12-5
 location: Wellington
-tags: 
+tags:
 mp3_file: /mp3/meitheal-reel.mp3
 mp3_licence: "© Connie O'Connell. All Rights Reserved."
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>
 mp3_url: http://epu.ucc.ie/connieoconnell/wp-content/uploads/2014/05/63-Meitheal-Reel.mp3
 source: Wellington
-abc_url:
+abc_source: Connie O'Connell's website
+abc_url: http://epu.ucc.ie/connieoconnell/portfolio/meitheal-reel/
 abc: |
     X: 1
     T: Meitheal Reel

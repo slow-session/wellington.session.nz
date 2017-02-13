@@ -3,14 +3,14 @@ title: Old Butter Road
 key: D
 rhythm: reel
 date: 2017-02-13
-location: Wellington 
-tags: 
+location: Wellington
+tags:
 mp3_file: /mp3/old-butter-road.mp3
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>
 mp3_licence: "© Connie O'Connell. All Rights Reserved."
 mp3_url: http://epu.ucc.ie/connieoconnell/wp-content/uploads/2014/06/01OldButterRoad.mp3
 source: Wellington
-abc_source: Transcribed from Connie O'Connell's website
+abc_source: Connie O'Connell's website
 abc_url: http://epu.ucc.ie/connieoconnell/portfolio/old-butter-road/
 abc: |
     X: 1
