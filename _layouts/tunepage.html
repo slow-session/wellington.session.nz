@@ -85,6 +85,9 @@ function toggle(button)
 <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
 Permission to use is gratefully acknowledged and the audio is made available under
 this licence: {{ page.mp3_licence }}</p>
+{% if page.mp3_url %}
+<p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
+{% endif %}
 {% endif %}
 
 {% if page.abc_source %}
