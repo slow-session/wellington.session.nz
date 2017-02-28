@@ -3,8 +3,8 @@ title: Golden Castle
 key: Gdor
 rhythm: hornpipe
 date: 2017-02-27
-location: Wellington 
-tags: 
+location: Wellington
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/golden-castle.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: © Katie Davis Henderson. All Rights Reserved.
@@ -23,6 +23,6 @@ abc: |
     DGGF G2 (3A=Bc | dcde f2ga | gfdc AdcA | G2GF G2 :|
     |: (3A=Bc | dgga _b2 ag | gfde f2ga | gfdc AdcA | DGGE FEDC |
     DGGF G2 (3A=Bc | dcde f2ga | gfdc AdcA | G2GF G2 :|
-    
+
 
 ---
