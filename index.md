@@ -92,6 +92,8 @@ Other Tunes
 You can see a list of some of the tunes that get played at the session including those we've been
 learning in the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
 
+We add new tunes reasonably often - you can check those out in our <a href="/latest.html">Recently Added</a> page.
+
 There's also a large list of tunes including tunes played in other New Zealand sessions in the
 <a href="{{ site.mp3_host }}/archive/">NZ Archive</a> page.  Feel free to poke around.
 
