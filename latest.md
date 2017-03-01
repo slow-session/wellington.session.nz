@@ -11,7 +11,7 @@ layout: default
 Recent Tunes
 ------------
 
-These are tunes that have been added to the archive in the last ten days.
+These are tunes that have been added to the archive recently.
 
 <div id="abc-textareas"></div>
 
