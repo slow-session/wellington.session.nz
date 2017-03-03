@@ -76,3 +76,19 @@ If anyone else uses a different package and you're happy to answer questions abo
 <http://www.seventhstring.com/resources/transcription.html>
 
 You can try some of the packages for free for a limited period before you buy e.g. Transcribe!
+
+## Want to learn a tune from YouTube?
+
+These Chrome apps are really useful to slow it down and loop the video:
+
+### Youtube Playback Speed Control
+
+Control speed of the youtube playback using keyboard.
+
+<a href="https://chrome.google.com/webstore/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik">https://chrome.google.com/webstore/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik</a>
+
+### YouTurn
+
+Repeat YouTube videos automatically.
+
+<a href="https://chrome.google.com/webstore/detail/youturn/icphmmimmfdlgaaglejeokffekamhplg">https://chrome.google.com/webstore/detail/youturn/icphmmimmfdlgaaglejeokffekamhplg</a>
