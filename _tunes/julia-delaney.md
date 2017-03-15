@@ -2,15 +2,15 @@
 title: Julia Delaney
 key: Ddor
 rhythm: reel
-mode: 
+mode:
 date: 2016-08-04
 location: Arrowtown Wellington
-tags: slowsession focustune
+tags: slowsession 
 mp3_file: /mp3/julia-delaney.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: http://media.comhaltas.ie/audio/cl468_mp3/cl468_4.mp3
-abc_url: 
+abc_url:
 source: Wellington
 transcription: unknown
 chords: true
@@ -31,4 +31,3 @@ abc: |
     "Dm"fede "F"fagf|"C"ecgc "Am"acgc|"Dm"fede "C"fagf|"Am"edc=A "Dm"d2de|
     "F"fede fagf|"C"ecgc "Am"acgc|"Bb"fedf "C"edc=B|"A"Add^c "Dm"d4||
 ---
-

@@ -5,7 +5,7 @@ rhythm: reel
 mode: minor
 date: 2016-10-12
 location: Arrowtown Wellington
-tags: slowsession focustune
+tags: slowsession 
 mp3_file: /mp3/musical-priest.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -23,6 +23,5 @@ abc: |
     |:Bc|d2dc dfed|(3cBA eA fAeA|dcBc defb|afec B2:|
     |Bc|dB (3BBB bafb|afec ABce|dB (3BBB bafb|afec B2Bc|
     dB (3BBB bafb|afec ABce|dcBc defb|afec B2|
-    
----
 
+---
