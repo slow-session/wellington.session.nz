@@ -9,14 +9,6 @@ The Wellington Session happens on Tuesday nights from 7:30 p.m. at the Welsh Dra
 
 The pace usually picks up as the evening progresses, so if you are already fluent in tunes, come along after 8:30. Of course, we'd be happy to have experienced players earlier on as well!
 
-{::nomarkdown}
-<p style="text-align:center">
-<a target="_blank" title="follow us on facebook" href="http://www.facebook.com/groups/WellingtonSession/">
-<img alt="follow us on facebook" src="/images/badgefacebook.png" style="border:0"></a>
-Find out more about us and upcoming sessions.
-</p>
-{:/}
-
 Where is the Welsh Dragon?
 --------------------------
 

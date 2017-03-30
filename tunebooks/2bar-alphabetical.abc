@@ -1,0 +1,51 @@
+---
+layout: null
+permalink: /tunebooks/2bar-alphabetical.abc
+---
+I:abc-charset utf-8
+%%titlefont Helvetica 26
+%%subtitlefont Helvetica 16
+%%gchordfont Helvetica 12
+%%composerfont Helvetica-Oblique 14
+%%partsfont Helvetica 12
+%%printtempo 0
+%%printparts 1
+%%partsbox 1
+%%bstemdown 1
+%%dateformat \%b \%e, \%Y
+%%footer "Wellington Session Archive	$P	$d"
+
+%%topspace 0.0cm
+%%staffsep 0.7cm
+%%titleformat T-1
+%%musiconly 1
+%%printtempo 0
+%%titlefont Helvetica-Oblique 16
+%%subtitlefont Helvetica-Oblique 13
+
+{% assign tuneCounter = 0 %}
+%%multicol start
+%%rightmargin 11.5cm
+%%leftmargin 1.5cm
+
+{% assign sortedtunes = site.tunes | sort: 'title' %}
+%%withxrefs 1
+%%infoline 1
+{% assign count = 0 %}
+{% for tune in sortedtunes %}
+{% assign xcount = xcount | plus: 1 %}
+{% include abc-book-2bar.html  xcounter=xcount %}
+{% assign tuneCounter = tuneCounter | plus: 1 %}
+{% if tuneCounter == 10 %}
+%%multicol new
+%%rightmargin 1.5cm
+%%leftmargin 11.5cm
+{% endif %}
+{% if tuneCounter == 20 %}
+{% assign tuneCounter = 0 %}
+%%multicol end
+%%newpage
+%%multicol start
+%%rightmargin 11.5cm
+{% endif %}{% endfor %}
+%%multicol end

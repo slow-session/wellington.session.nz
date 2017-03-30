@@ -9,7 +9,7 @@ site = "wellington.session.nz"
 
 desc "build the site"
 task :build do
-  system "jekyll build --incremental"
+  system "JEKYLL_ENV=production bundle exec jekyll build --incremental"
 end
 
 ##############
@@ -21,5 +21,63 @@ end
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
-  system "jekyll serve --config '_config.yml,_config_localhost.yml' --watch --port=4001"
+  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localhost.yml' --watch --port=4001"
+end
+
+##############
+#   Deploy   #
+##############
+
+# Deploy the site
+# Ping / Notify after site is deployed
+
+#desc "deploy the site"
+#task :deploy do
+#  system "bundle exec s3_website push"
+#  system "bundle exec rake notify" #ping google/bing about our sitemap updates
+#end
+
+##############
+# Tunebooks  #
+##############
+
+# Build the PDF Tunebooks
+
+desc "build the pdf tunebooks"
+task :tunebooks do
+    system "_scripts/add-tunebook-pdfs #{site}"
+end
+
+##############
+#   Notify   #
+##############
+
+# Ping Google and Yahoo to let them know you updated your site
+
+desc 'Notify Google of the new sitemap'
+task :sitemapgoogle do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Google about our sitemap'
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('#{site}/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end
+
+desc 'Notify Bing of the new sitemap'
+task :sitemapbing do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Bing about our sitemap'
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('#{site}/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end
+
+desc "Notify various services about new content"
+task :notify => [:sitemapgoogle, :sitemapbing] do
 end

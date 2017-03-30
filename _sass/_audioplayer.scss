@@ -1,6 +1,12 @@
 .audioplayer {
     width: 500px;
     border: none;
+    margin: 0 auto;
+}
+
+.audioplayer_left {
+    width: 500px;
+    border: none;
 }
 
 .playButton {
@@ -43,19 +49,19 @@
     outline: none;
 }
 
-.audio_control {
+.audioControl {
     width: 45%;
     margin-top: 14px;
     float: left;
 }
 
-.speed_control {
+.speedControl {
     margin-top: 12px;
     padding-left: 20px;
     float: left;
 }
 
-.loop_control {
+.loopControl {
     float: left;
 }
 
@@ -80,4 +86,72 @@
 
 p.clear {
     clear: left;
+}
+
+.tuneTitle {
+    font-size: 110%;
+}
+.player audio {
+    width: 70%;
+}
+
+.abctext {
+    display: none;
+}
+
+.loopButton {
+   background-color: lighten($brand-color, 40%);
+   background: linear-gradient($Loopbutton-color1, $Loopbutton-color2);
+   cursor: pointer;
+   padding: 3px;
+   border-radius: 10px;
+   font-size: 80%;
+}
+
+.filterButton {
+   background-color:$brand-color;
+   padding:5px 10px;
+   color: darken($complimentary-color, 10%);
+   cursor: pointer;
+}
+.filterButton.filterDisabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.sep {
+    border-bottom:1px solid black;
+}
+.sep td {
+    padding-bottom:5px;
+}
+
+fieldset{
+  margin: 0 auto;
+  text-align: left;
+}
+
+form
+{
+    text-align: left;
+}
+
+th {
+    background-color:$brand-color;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-of-type(odd) {
+      background-color:darken($complimentary-color, 3%);
+}
+tr:hover {
+    background-color: darken($complimentary-color, 10%);
+}
+tr#no_hover:hover {
+    background-color: transparent;
 }
