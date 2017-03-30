@@ -2,7 +2,6 @@
 layout: page
 title: Current Tunes
 permalink: /current_tunes/
-navigation_weight: 10
 ---
 
 These are the some of the tunes we play at the Wellington Session. These tunes will get played regularly so if you know these you'll get a chance to play them.
@@ -42,12 +41,13 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
         </span>    
         &emsp;
         <span title="Run the filter with the default settings to see the whole list">
-        <input class="filter_button filter_disabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
+        <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
         </span>      
     </form>
     <p></p>
     <div id="tunes-count"></div>
 </fieldset>
+
 <br />
 <div id="tunes-table"></div>
 <div id="abc-textareas"></div>
@@ -74,29 +74,28 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
                   "abc": {{ tune.abc | jsonify }}{% endif %}
               }{% unless forloop.last %},{% endunless %}
           {% endif %}
-      {% endfor %}};
+      {% endfor %}
+    };
 </script>
 
-<script type="text/javascript" src="{{ site.js_host }}/js/audioplayer.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/abc_controls.js"></script>
 <script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/search.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/build_table.js"></script>
 
 <script>
-$(document).ready(function() {
-    audioPlayer.innerHTML = createAudioPlayer();
+    $(document).ready(function() {
+        audioPlayer.innerHTML = createAudioPlayer();
 
-    // Set initial sort order
-    $.tablesorter.defaults.sortList = [[0,0]];
+        /* Set initial sort order */
+        $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
-});
+        $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
+    });
 </script>
+
 <script>
-function enable_button(){
-submit_button.disabled = false;
-submit_button.style.opacity=1.0;
-submit_button.style.cursor='pointer';
-}
+    function enable_button() {
+        submit_button.disabled = false;
+        submit_button.style.opacity=1.0;
+        submit_button.style.cursor='pointer';
+    }
 </script>

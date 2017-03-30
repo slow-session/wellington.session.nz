@@ -1,31 +1,71 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: The Wellington Session
+name: The Wellington Session
 email: admin@session.nz
-description: > # this means to ignore newlines until "baseurl:"
-  Website of the Irish session, Wellington, New Zealand.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://wellington.session.nz" # the base hostname & protocol for your site
-facebook: https://www.facebook.com/groups/WellingtonSession
-jekyll: https://jekyllrb.com
-github: https://github.com/slow-session/wellington.session.nz
-mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
-js_host: http://session.nz # leave blank if js files are served from THIS SERVER
+author: asjl
+
+keywords: irish, traditional, music, jigs, reels, polkas, craic
+description: Witty description here.
+
+# Only use this if you are serving your site via Github Pages
+github:
+  url: "http://wellington.session.nz"
+
+header: yes
+header_sm: images/banner-small.jpg
+header_med: images/banner-med.jpg
+header_large: images/banner-large.jpg
+header_xl: images/banner-xl.jpg
+
+
+# Exclude our ruby stuff and other dirs
+exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, .last_optimized, _scripts, documentation]
+
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
+destination: _site
+
+gems:
+  - jekyll-feed
+
+feed:
+  path: atom.xml
+
+# Compress our Css
+#sass:
+#    style: :compressed
+
+permalink: /blog/:year/:title
+
+#### SEO Stuff
+# Google Analytics
+google_universal_analytics: UA-77351761-1
+google_universal_analytics_cookiedomain: auto
+
+# Facebook Opengraph
+facebook_user:
+facebook_app_id:                      #enter your App ID
+facebook_locale: en_US
+facebook_page: https://www.facebook.com/groups/WellingtonSession/
+facebook_image:                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+
+# Twitter Cards
+twitter_user:
+twitter_card: false
+twitter_image:                        #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+
+#
+# Additions for session.nz
+#
+mp3_host: http://session.nz # leave blank if mp3 files are served from THIS SERVER
+js_host: http://session.nz # leave blank if js files are served from THIS SERVER
 
 collections:
   tunes:
     output: true
-
-exclude: [ _scripts, ]
 
 defaults:
   - scope:

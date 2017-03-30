@@ -1,20 +1,17 @@
+<!--
+---
+layout: compress
+---
+-->
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   {% include head.html %}
-
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+    <main class="wrap">
+      {% include header.html %}
+      {% include navigation.html %}
+      {{ content }}
+    </main>
+      {% include footer.html %}
   </body>
-
 </html>

@@ -1,0 +1,20 @@
+- title: "home"
+  href: "/"
+
+- title: "Venue"
+  href: "/venue/"
+
+- title: "Tunes"
+  href: "/current_tunes/"
+
+- title: "Build a Set"
+  href: "/build_a_set/"
+
+- title: "Learn by Ear"
+  href: "/learn_by_ear/"
+
+- title: "Tunebooks"
+  href: "/tunebooks/"
+
+- title: "NZ Archive"
+  href: "/archive/"

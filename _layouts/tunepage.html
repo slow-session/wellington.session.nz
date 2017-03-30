@@ -1,33 +1,67 @@
 ---
-layout: default
+layout: page
 ---
-<script type="text/javascript" src="{{ site.js_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/audioplayer.js"></script>
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-<p class="post-meta"> {{ page.key }} {{ page.mode }} {{ page.rhythm }}, added
-  <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
-  <br />Played in: {{ page.location }}
-</p>
-
-{% assign titleTag = page.title | slugify | remove: '-' %}
+{{ page.key }} {{ page.mode }} {{ page.rhythm }}, added
+<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
+<br />Played in: {{ page.location }}
+<br />
+<br />
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
-<div id="showPlayer"></div>
+<div id="showPlayer" class="audioplayer_left"></div>
 
 {% else %}
 <!-- build the abc player for each tune-->
 <fieldset>
-   <strong>No recording available - use the ABC player below the music to hear the tune</strong>
+    <strong>No recording available - use the ABC player below the music to hear the tune</strong>
 </fieldset>
 {% endif %}
 
+<div class="abc">
+    <div id="notation"></div>
+</div>
+
+{{ content }}
+
+{% unless page.mp3_file %}
+<fieldset>
+    <strong>A recording for this tune is not available yet. Qualify for glory by
+        providing one! Make a recording of yourself or your session playing this
+        tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
+</strong></fieldset>
+<br />
+{% endunless %}
+
+<h2>Play the ABC version</h2>
+<div id="textAreas"></div>
+<div id="ABCplayer" class="audioplayer_left"></div>
+
+<form>
+    <input type="button" value="Show ABC Source" onclick="toggle(this);">
+</form>
+
+<div id="abcsource"></div>
+
+<div class="attribution">
+    <br />
+    {% if page.mp3_file %}
+    <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        Permission to use is gratefully acknowledged and the audio is made available under this licence:
+        {{ page.mp3_licence }}</p>
+    {% if page.mp3_url %}
+    <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
+    {% endif %}
+    {% endif %}
+
+    {% if page.abc_source %}
+    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
+    {% endif %}</p>
+</div>
 
 <script type="text/javascript">
-var MyFonts ="%%titlefont       Helvetica 20\n\
+    var MyFonts =
+        "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
 %%gchordfont      Helvetica 12\n\
 %%composerfont    Helvetica-Oblique 14\n\
@@ -38,78 +72,37 @@ var MyFonts ="%%titlefont       Helvetica 20\n\
 %%textfont        Helvetica 12\n\
 %%vocalfont       Helvetica 12\n\
 %%wordsfont       Helvetica 12\n";
-var MyTune="%%staffwidth 540\n" + MyFonts + {{ page.abc | jsonify  }};
-var MyABC = "<span class='showabc' style='font-size: 12px'><br />" + {{ page.abc | newline_to_br | jsonify }} + "</span>";
 
-function toggle(button)
-{
-     switch(button.value)
-     {
-          case "Show ABC Source":
-               button.value = "Hide ABC Source";
-               document.getElementById('abcsource').innerHTML = MyABC;
-               break;
-          case "Hide ABC Source":
-               button.value = "Show ABC Source";
-               document.getElementById('abcsource').innerHTML = "";
-               break;
-     }
-}
+    var MyTune = "%%staffwidth 540\n" + MyFonts + {{ page.abc | jsonify }};
+    var MyABC = "<span class='showabc' style='font-size: 12px'><br />" + {{ page.abc | newline_to_br | jsonify }} + "</span>";
+
+    function toggle(button) {
+        switch (button.value) {
+            case "Show ABC Source":
+                button.value = "Hide ABC Source";
+                document.getElementById('abcsource').innerHTML = MyABC;
+                break;
+            case "Hide ABC Source":
+                button.value = "Show ABC Source";
+                document.getElementById('abcsource').innerHTML = "";
+                break;
+        }
+    }
 </script>
-
-
-<div class="post-content" itemprop="articleBody">
-   <div class="abc"><div id="notation"></div></div>
-
-   {{ content }}
-
-   {% unless page.mp3_file %}
-   <fieldset><strong>A recording for this tune is not available yet. Qualify for glory by providing one!
-   Make a recording of yourself or your session playing this tune and send it to us at admin@session.nz</strong></fieldset><br />
-   {% endunless %}
-
-   <h4>Play the ABC version</h4>
-   <div id="textAreas"></div>
-   <div id="ABCplayer"></div>
-
-   <form>
-      <input type="button" value="Show ABC Source" onclick="toggle(this);">
-   </form>
-
-   <div id="abcsource"></div>
-</div>
-
-
-<div class="attribution">
-{% if page.mp3_file %}
-<p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
-Permission to use is gratefully acknowledged and the audio is made available under
-this licence: {{ page.mp3_licence }}</p>
-{% if page.mp3_url %}
-<p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
-{% endif %}
-{% endif %}
-
-{% if page.abc_source %}
-<p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
-{% endif %}</p>
-</div>
-
 
 <script>
-$(document).ready(function() {
-    var tuneId = 666;
-    {% if page.mp3_file %}
-    audioPlayer.innerHTML = createAudioPlayer();
-    showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}');
-    tuneId++;
-    {% endif %}
+    $(document).ready(function() {
+        var tuneId = 666;
 
-    ABCJS.renderAbc('notation', MyTune);
+        {% if page.mp3_file %}
+        audioPlayer.innerHTML = createAudioPlayer();
+        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}');
+        tuneId++;
+        {% endif %}
 
-    textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-    ABCplayer.innerHTML = createABCplayer(tuneId);
-});
+        ABCJS.renderAbc('notation', MyTune);
+
+        textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
+        ABCplayer.innerHTML = createABCplayer(tuneId);
+    });
 </script>
-
-</article>

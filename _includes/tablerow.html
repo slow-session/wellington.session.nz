@@ -1,18 +1,18 @@
 <!--build the first three columns-->
-<td><a href="{{ tune.url }}">{{ tune.title }}</a></td>
+<td class="tuneTitle"><a href="{{ tune.url }}">{{ tune.title }}</a></td>
 <td>{{ tune.key }}</td>
 <td>{{ tune.rhythm }}</td>
 
 {% if tune.mp3_file %}
-<td id="showPlayer{{ include.counter }}">
+<td id="showPlayer{{ include.tuneId }}">
    <script>
-   showPlayer{{ include.counter }}.innerHTML = createMP3player('{{ include.counter }}', '{{ site.mp3_host }}{{ tune.mp3_file }}');
+   showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}');
    </script>
 </td>
 {% else %}
-<td id="showPlayer{{ include.counter }}">
+<td id="showPlayer{{ include.tuneId }}">
     <script>
-    showPlayer{{ include.counter }}.innerHTML = createABCplayer('{{ include.counter }}');
+    showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}');
     </script>
 </td>
 
@@ -20,6 +20,6 @@
 <script>
 var textAreas = document.getElementById("abc-textareas");
 
-textAreas.innerHTML += '<textarea id="{{'ABC' | append: include.counter }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
+textAreas.innerHTML += '<textarea id="{{'ABC' | append: include.tuneId }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
 </script>
 {% endif %}

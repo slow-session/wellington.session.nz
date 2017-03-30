@@ -1,17 +1,11 @@
 ---
-layout: default
+layout: page
+title: Latest Tunes
+permalink: /latest/
 ---
-
-<script type="text/javascript" src="{{ site.js_host }}/js/audioplayer.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/abc_controls.js"></script>
-
 <div id="audioPlayer"></div>
 
-Recent Tunes
-------------
-
-These are tunes that have been added to the archive recently.
+These are last 10 tunes to we've added.
 
 <div id="abc-textareas"></div>
 
@@ -19,23 +13,24 @@ These are tunes that have been added to the archive recently.
 <thead>
     <tr>
     <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:65%;">Audio Player</th>
+    <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
+    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
-  {% assign sortedtunes = site.tunes | sort: 'title' %}
-  {% assign count = 200 %}
-  {% capture tendaysago %}{{ 'now' | date: '%s' | minus : 864000 }}{% endcapture %}
+  {% assign sortedtunes = site.tunes | sort: 'date' | reverse %}
+  {% assign tune_count = 0 %}
+  {% assign tuneid = 200 %}
     {% for tune in sortedtunes %}
-        {% capture posttime %}{{tune.date | date: '%s'}}{% endcapture %}
-        {% if posttime > tendaysago %}
-        {% assign count = count | plus: 1 %}
+    {% assign tune_count = tune_count | plus: 1 %}
+        {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow.html counter=count %}
+{% include tablerow.html tuneId=tuneid %}
 </tr>
-      {% endif %}
+        {% if tune_count > 9 %}
+        {% break %}
+        {% endif %}
 {% endfor %}
 </tbody>
 </table>
@@ -44,7 +39,7 @@ These are tunes that have been added to the archive recently.
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    // turn off sorting on last column
+    /* turn off sorting on last column */
     $("#recenttunes").tablesorter({headers: { 3:{sorter: false}}});
 });
 </script>

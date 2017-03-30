@@ -1,0 +1,13 @@
+current directory: /home/asjl/GitHub/wellington.session.nz/vendor/ruby/2.3.0/gems/json-2.0.3/ext/json
+/usr/bin/ruby2.3 -r ./siteconf20170330-6485-1aih7b.rb extconf.rb
+creating Makefile
+
+current directory: /home/asjl/GitHub/wellington.session.nz/vendor/ruby/2.3.0/gems/json-2.0.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/asjl/GitHub/wellington.session.nz/vendor/ruby/2.3.0/gems/json-2.0.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/asjl/GitHub/wellington.session.nz/vendor/ruby/2.3.0/gems/json-2.0.3/ext/json
+make "DESTDIR=" install

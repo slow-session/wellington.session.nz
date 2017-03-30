@@ -3,7 +3,7 @@
 # to a PDF, using abc2ps.
 TMPPS=$(mktemp /tmp/temp.XXXXXXX).ps
 PDF=$(basename "${1%.abc}.pdf")
-/usr/local/bin/abcm2ps "$@" -q -x -O $TMPPS
-/usr/local/bin/ps2pdf $TMPPS $PDF
+abcm2ps "$@" -q -x -O $TMPPS
+ps2pdf $TMPPS $PDF
 #echo "Created $PDF"
 rm $TMPPS

@@ -1,13 +1,5 @@
 #!/bin/sh
 
-#
-# You may need to change the SOURCEDIR variable to
-# match your directory structure i.e. the "GitHub"
-# part
-#
-SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
-SITEDIR="${SOURCEDIR}/_site/abc-collections"
-
 if [ $# -ne 1 ]
 then
     echo "Usage: $0 <archive_directory>"
@@ -16,18 +8,24 @@ fi
 
 ARCHIVEDIR=$1
 
-echo
+#
+# You may need to change the SOURCEDIR variable to
+# match your directory structure i.e. the "GitHub"
+# part
+#
+SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
+SITEDIR="${SOURCEDIR}/_site"
 
 #
 # Get any updates from main respository
 #
 cd ${SOURCEDIR}
-/usr/local/bin/git pull
+git pull
 
 #
 # Build the ABC source files in ${SITEDIR}
 #
-/usr/local/bin/jekyll build
+bundle exec jekyll build
 if [ $? -ne 0 ]
 then
     exit
@@ -36,18 +34,18 @@ fi
 #
 # Get the list of files to process
 #
-cd ${SITEDIR}
+cd ${SITEDIR}/tunebooks
 ABCFILES=`ls *abc`
 echo "Processing: ${ABCFILES}"
 
 #
 # Build the PDF files in ${SOURCEDIR}
 #
-cd ${SOURCEDIR}/abc-collections
+cd ${SOURCEDIR}/tunebooks
 
 for ABCFILE in ${ABCFILES}
 do
-    ${SOURCEDIR}/_scripts/abc2pdf ${SITEDIR}/${ABCFILE}
+    ${SOURCEDIR}/_scripts/abc2pdf ${SITEDIR}/tunebooks/${ABCFILE}
 done
 
 cd ${SOURCEDIR}
@@ -55,6 +53,6 @@ cd ${SOURCEDIR}
 # Push the new PDFs to the main site
 # They'll get loaded next time there's an upgrade
 #
-/usr/local/bin/git add .
-/usr/local/bin/git commit -m "Updating Tunebook PDFs"
-/usr/local/bin/git push
+git add .
+git commit -m "Updating Tunebook PDFs"
+git push

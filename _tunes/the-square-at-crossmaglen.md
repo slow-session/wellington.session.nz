@@ -21,7 +21,7 @@ abc: |
     L: 1/8
     K: Gdor
     |:DGGA BGGA|BGAG FCA,B, CFFE FAcA|FC~C2 A,CFA|
-    DGGA BGGF|~_E3F G#FGA|BABd _ecdB|AFcA BGG2:|
+    DGGA BGGF|~_E3F G^FGA|BABd _ecdB|AFcA BGG2:|
     |:~g3d Bdga|bgag fcAB|cffe f2ag|fc~c2 Ac ba|
     ~g3d Bdga|bgag fcAc |~B3G AfcA|BGAF G3d:|
 
