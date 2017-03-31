@@ -1,6 +1,10 @@
-_site
+.bundle
 .sass-cache
+_site
+bin
+vendor/ruby
+Gemfile.lock
+images/image_optim_cache.yml
 .jekyll-metadata
-*.swp
+.directory
 .DS_Store
-*~
