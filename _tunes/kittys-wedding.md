@@ -5,14 +5,14 @@ rhythm: hornpipe
 mode: major
 date: 2016-06-08
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/kittys_wedding/
 abc_url: https://thesession.org/tunes/869
 source: Wellington
-transcription: 
+transcription:
 chords: false
 abc: |
     X: 1
@@ -25,6 +25,5 @@ abc: |
     d2Bd A2FA|BAFA D2 ED|B,DA,D DFBF|AFEF D2:|
     |:fg|afed bafd|Adfd edBd|DFAd FAde|fdgf e2fg|
     afed bafd|Adfd edBd|DFAd FAdf|eABc d2:|
-    
----
 
+---

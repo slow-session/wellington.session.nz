@@ -4,7 +4,7 @@ key: C
 rhythm: jig
 date: 2017-02-14
 location: Wellington
-tags:
+tags: slowsession focustune
 mp3_file: /mp3/connaughtmans-rambles.mp3
 mp3_source: Adrian Barker and Ben Stephenson
 mp3_licence: "© Adrian Barker and Ben Stephenson. All Rights Reserved."

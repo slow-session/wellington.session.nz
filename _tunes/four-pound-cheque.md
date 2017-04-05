@@ -2,14 +2,14 @@
 title: Fourty Two Pound Cheque
 key: D
 rhythm: polka
-mode: 
+mode:
 date: 2016-06-23
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/four-pound-cheque.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
-mp3_url: Richard Tait 
+mp3_url: Richard Tait
 abc_url: https://thesession.org/tunes/786
 source: Wellington
 transcription:
@@ -23,6 +23,5 @@ abc: |
     K: Dmaj
     |: Ad Bd/B/ | AD FA | GE BE | A>G FD | Ad Bd/B/ | AD FA | GE A>G | FD D2 :|
     |: Ad fe/f/ | gf ed | cA eA | e>d cA | Ad fe/f/ | gf e>d | cA Bc | d2 d2:|
-    
----
 
+---
