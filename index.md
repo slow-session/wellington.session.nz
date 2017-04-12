@@ -45,7 +45,7 @@ We pick one tune each week for homework, and we'll play it sometime during the f
       {% if tune.tags contains 'tuneoftheweek' and tune.tags contains 'slowsession'%}
           {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow.html tuneId=tuneid %}
+{% include tablerow.html showSet=false tuneId=tuneid %}
 </tr>
       {% endif %}
 {% endfor %}
@@ -73,7 +73,7 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
       {% if tune.tags contains 'focustune' and tune.tags contains 'slowsession'%}
           {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow-set.html tuneId=tuneid %}
+{% include tablerow.html showSet=true tuneId=tuneid %}
 </tr>
       {% endif %}
 {% endfor %}
