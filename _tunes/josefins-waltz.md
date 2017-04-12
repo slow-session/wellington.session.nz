@@ -5,6 +5,7 @@ rhythm: waltz
 mode: major
 date: 2016-01-12
 location: Wellington
+set:
 tags: slowsession
 mp3_file: /mp3/josefins-waltz.mp3
 mp3_url: https://www.facebook.com/groups/WellingtonSession

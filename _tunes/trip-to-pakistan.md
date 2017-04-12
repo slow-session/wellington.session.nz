@@ -5,6 +5,7 @@ rhythm: reel
 mode: minor
 date: 2016-10-26
 location: Wellington
+set:
 tags:
 mp3_file:
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

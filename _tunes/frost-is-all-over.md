@@ -5,6 +5,7 @@ rhythm: jig
 mode: 
 date: 2016-01-01
 location: Wellington
+set:
 tags: 
 mp3_file: /mp3/frost-is-all-over.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

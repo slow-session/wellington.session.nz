@@ -5,6 +5,7 @@ rhythm: reel
 mode:
 date: 2017-01-12
 location: Arrowtown Wellington
+set:
 tags: slowsession focustune
 mp3_file: /mp3/flooded-road-to-glenties.mp3
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

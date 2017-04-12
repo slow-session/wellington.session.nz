@@ -4,6 +4,7 @@ key: Gdor
 rhythm: hornpipe
 date: 2017-02-27
 location: Wellington
+set:
 tags: slowsession focustune 
 mp3_file: /mp3/golden-castle.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>

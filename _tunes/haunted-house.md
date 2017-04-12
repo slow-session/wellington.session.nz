@@ -5,6 +5,7 @@ rhythm: jig
 mode:
 date: 2016-1-26
 location: Wellington
+set:
 tags: slowsession beginner aff
 mp3_file: /mp3/haunted-house.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

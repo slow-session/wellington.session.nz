@@ -4,6 +4,7 @@ key: Edor
 rhythm: reel
 date: 2017-02-07
 location: Wellington 
+set:
 tags: 
 mp3_file: /mp3/golden-keyboard.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann

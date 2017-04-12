@@ -5,6 +5,7 @@ rhythm: slide
 mode: Major
 date: 2016-07-25
 location: Wellington
+set:
 tags: slowsession 
 mp3_file: /mp3/parnells-march.mp3
 mp3_licence: "© Four Winds. All Rights Reserved."

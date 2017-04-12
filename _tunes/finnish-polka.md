@@ -5,6 +5,7 @@ rhythm: polka
 mode:
 date: 2016-10-27
 location: Wellington Dunedin
+set: 3.2
 tags: slowsession aff focustune
 mp3_file: /mp3/finnish-polka.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>

@@ -5,6 +5,7 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Arrowtown Wellington
+set:
 tags: slowsession beginner aff
 mp3_file: /mp3/rolling-in-the-ryegrass.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

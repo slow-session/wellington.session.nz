@@ -5,6 +5,7 @@ rhythm: waltz
 mode: Edorian
 date: 2016-01-01
 location: Wellington
+set:
 tags: slowsession
 mp3_url:
 mp3_licence:
