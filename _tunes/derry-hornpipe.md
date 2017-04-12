@@ -5,7 +5,7 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Wellington
-set:
+set: 9.3
 tags: slowsession beginner focustune
 mp3_url:
 mp3_file: /mp3/derry-hornpipe.mp3
