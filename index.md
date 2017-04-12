@@ -62,7 +62,8 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
     <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
     <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
     <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:60%;">Audio Player</th>
+    <th style="width:5%;">Set<br />&#x25B2;&#x25BC;</th>
+    <th style="width:55%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
@@ -94,6 +95,6 @@ $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
-    $("#focustunes").tablesorter({headers: { 3:{sorter: false}}});
+    $("#focustunes").tablesorter({headers: { 4:{sorter: false}}});
 });
 </script>
