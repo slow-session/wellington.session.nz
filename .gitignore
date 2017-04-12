@@ -8,3 +8,4 @@ images/image_optim_cache.yml
 .jekyll-metadata
 .directory
 .DS_Store
+_config_localnet.yml
