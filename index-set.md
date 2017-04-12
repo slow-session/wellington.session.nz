@@ -1,5 +1,6 @@
 ---
 layout: page
+title: The Wellington Session
 ---
 <div id="audioPlayer"></div>
 
