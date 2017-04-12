@@ -4,7 +4,7 @@ key: Ador
 rhythm: jig
 date: 2017-02-14
 location: Wellington
-set: 6.1
+set: 2.1
 tags: slowsession focustune
 mp3_file: /mp3/rakes-of-kildare.mp3
 mp3_source: Adrian Barker and Ben Stephenson
