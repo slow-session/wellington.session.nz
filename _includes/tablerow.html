@@ -2,7 +2,8 @@
 <td class="tuneTitle"><a href="{{ tune.url }}">{{ tune.title }}</a></td>
 <td>{{ tune.key }}</td>
 <td>{{ tune.rhythm }}</td>
-
+{% if tune.set %} {% assign tempSet = tune.set %} {% else %} {% assign tempSet = "none" %} {% endif %}
+<td>{{ tempSet }}</td>
 {% if tune.mp3_file %}
 <td id="showPlayer{{ include.tuneId }}">
    <script>
