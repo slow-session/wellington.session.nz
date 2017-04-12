@@ -5,7 +5,7 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Wellington
-set:
+set: 9.1
 tags: slowsession beginner focustune
 mp3_file: /mp3/murphys.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
