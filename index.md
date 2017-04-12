@@ -73,7 +73,7 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
       {% if tune.tags contains 'focustune' and tune.tags contains 'slowsession'%}
           {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow.html tuneId=tuneid %}
+{% include tablerow-set.html tuneId=tuneid %}
 </tr>
       {% endif %}
 {% endfor %}
