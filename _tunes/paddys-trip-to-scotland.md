@@ -5,6 +5,7 @@ rhythm: reel
 mode: maj
 date: 2016-06-02
 location: Wellington
+set:
 tags: slowsession focustune
 mp3_file: /mp3/paddys-trip-to-scotland.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

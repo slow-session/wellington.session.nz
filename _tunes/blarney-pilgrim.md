@@ -5,6 +5,7 @@ rhythm: jig
 mode: mix
 date: 2016-5-4
 location: Wellington
+set:
 tags: slowsession 
 mp3_file: /mp3/blarney-pilgrim.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

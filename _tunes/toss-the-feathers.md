@@ -5,6 +5,7 @@ rhythm: reel
 mode: dorian
 date: 2016-04-18
 location: Wellington
+set:
 tags: slowsession
 mp3_file: /mp3/toss-the-feathers.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

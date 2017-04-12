@@ -5,6 +5,7 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Wellington
+set:
 tags:
 mp3_file: /mp3/paddy-faheys-reel-14.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>

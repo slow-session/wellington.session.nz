@@ -5,6 +5,7 @@ rhythm: slip jig
 mode:
 date: 2016-08-19
 location: Arrowtown Wellington
+set:
 tags: slowsession focustune
 mp3_file: /mp3/snowy-path.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>

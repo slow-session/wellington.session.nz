@@ -4,6 +4,7 @@ key: C
 rhythm: reel
 date: 2017-04-05
 location: Wellington
+set:
 tags:
 mp3_file: /mp3/skylark.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>

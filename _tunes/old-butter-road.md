@@ -4,6 +4,7 @@ key: D
 rhythm: reel
 date: 2017-02-13
 location: Wellington
+set:
 tags:
 mp3_file: /mp3/old-butter-road.mp3
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>

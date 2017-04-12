@@ -5,6 +5,7 @@ rhythm: reel
 mode:
 date: 2016-11-17
 location: Wellington
+set:
 tags: slowsession focustune
 mp3_file: /mp3/silver-spire.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

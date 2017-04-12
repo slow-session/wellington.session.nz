@@ -4,6 +4,7 @@ key: D
 rhythm: reel
 date: 2017-03-16
 location: Wellington
+set:
 tags: slowsession
 mp3_file: /mp3/maid-behind-the-bar.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann

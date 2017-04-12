@@ -5,6 +5,7 @@ rhythm: jig
 mode: major
 date: 2015-11-1
 location: Wellington
+set:
 tags:
 mp3_file: /mp3/kilglass-lakes.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

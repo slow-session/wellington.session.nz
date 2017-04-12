@@ -5,6 +5,7 @@ rhythm: polka
 mode: major
 date: 2016-01-26
 location: Wellington
+set: 3.3
 tags: slowsession focustune
 mp3_file: /mp3/murroe-polka.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
