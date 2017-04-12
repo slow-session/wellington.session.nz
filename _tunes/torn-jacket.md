@@ -2,10 +2,10 @@
 title: Torn Jacket
 key: D
 rhythm: reel
-mode: 
+mode:
 date: 2016-12-2
 location: Wellington
-set:
+set: 5.1
 tags: slowsession focustune
 mp3_file: /mp3/torn-jacket.mp3
 mp3_licence: "© Connie O'Connell. All Rights Reserved."
