@@ -24,10 +24,12 @@ abc: |
     K: Gmaj
     A| ~B3 GBd | cBc ABc | B/c/dB GBd | cAG FGA |
     ~B3 GBd | cBc ABc | ded cAF | AGF G2 :|
-    d | ~f3 fed | cAG FGA | dgg gfg | afd d2 e |
+    d |: ~f3 fed | cAG FGA | dgg gfg | afd d2 e |
     f/g/ag fed | cAG FGA | ~B3 cAF | AGF GB :|
     d | gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
-    gdB gdB | ecA ecA | B/c/dB GBd | cAF G2 :|
+    gdB gdB | ecA ecA | B/c/dB GBd | cAF G2 |
+    d | gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
+    ~B3 GBd | cBc ABc | ded cAF | AGF G2  ||
 
 
 ---
