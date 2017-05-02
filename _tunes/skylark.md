@@ -1,6 +1,6 @@
 ---
 title: Skylark
-key: C
+key: Dmaj
 rhythm: reel
 date: 2017-04-05
 location: Wellington
