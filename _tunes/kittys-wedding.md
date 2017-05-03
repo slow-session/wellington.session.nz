@@ -5,7 +5,7 @@ rhythm: hornpipe
 mode: major
 date: 2016-06-08
 location: Wellington
-set:
+set: 11.2
 tags: slowsession focustune
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
