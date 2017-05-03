@@ -5,8 +5,8 @@ rhythm: reel
 mode: major
 date: 2016-01-16
 location: Arrowtown Wellington
-set:
-tags: slowsession beginner aff
+set: 7.2
+tags: slowsession beginner focustune
 mp3_file: /mp3/concertina-reel.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
