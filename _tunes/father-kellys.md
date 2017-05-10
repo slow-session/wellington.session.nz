@@ -2,7 +2,7 @@
 title: Father Kelly's
 key: G
 rhythm: reel
-mode: major
+mode:
 date: 2016-08-11
 location: Arrowtown Wellington
 set:

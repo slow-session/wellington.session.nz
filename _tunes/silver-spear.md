@@ -2,7 +2,7 @@
 title: Silver Spear
 key: D
 rhythm: reel
-mode: major
+mode:
 date: 2016-03-02
 location: Arrowtown Wellington
 set:

@@ -2,11 +2,11 @@
 title: Home Ruler
 rhythm: hornpipe
 key: D
-mode: major
+mode:
 date: 2016-02-03
 location: Wellington
-set: 11.1
-tags: slowsession focustune
+set:
+tags: slowsession 
 mp3_file: /mp3/home-ruler.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

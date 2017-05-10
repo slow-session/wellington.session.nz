@@ -2,7 +2,7 @@
 title: O'Keefe's Slide
 key: A
 rhythm: slide
-mode: Dorian
+mode: dor
 date: 2016-12-09
 location: Wellington
 set:

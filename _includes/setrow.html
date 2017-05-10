@@ -1,0 +1,36 @@
+<!--build the first two columns-->
+<td class="setTitle"><a href="{{ set.url }}">{{ set.title }}</a></td>
+<td>{{ set.rhythm }}</td>
+
+<td>
+<table style="width: 100%;">
+{% for setTune in set.tunes %}
+{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}
+{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}
+{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}
+{% for tune in siteTunes %}
+<tr style="height: 77px; background-color:transparent;"><td  style="vertical-align: center;">
+<a href="{{ setTuneURL | absolute_url }}">{{ tune.title | escape }} ({{ tune.key}}{{ tune.mode}})</a>
+</td></tr>
+{% endfor %}
+{% endfor %}
+</table>
+</td>
+
+<td>
+<table style="width: 100%;">
+{% assign setTuneID = include.setId | times: 10 %}
+{% for setTune in set.tunes %}
+{% assign setTuneID = setTuneID | plus: 1 %}
+{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}
+{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}
+{% for tune in siteTunes %}
+<tr style="background-color:transparent;"><td id="showPlayer{{ setTuneID }}">
+<script>
+showPlayer{{ setTuneID }}.innerHTML = createMP3player('{{setTuneID}}', '{{ site.mp3_host }}{{ setTuneMP3 }}');
+</script>
+</td></tr>
+{% endfor %}
+{% endfor %}
+</table>
+</td>

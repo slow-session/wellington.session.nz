@@ -2,7 +2,7 @@
 title: Connachtman's Rambles
 key: D
 rhythm: jig
-mode: major
+mode:
 date: 2015-11-1
 location: Arrowtown Wellington
 set:

@@ -2,7 +2,7 @@
 title: Blackthorn Stick
 key: G
 rhythm: jig
-mode: major
+mode:
 date: 2016-01-01
 location: Arrowtown Wellington
 set:

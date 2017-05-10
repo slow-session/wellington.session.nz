@@ -2,7 +2,7 @@
 title: Josefin’s waltz
 key: G
 rhythm: waltz
-mode: major
+mode:
 date: 2016-01-12
 location: Wellington
 set:

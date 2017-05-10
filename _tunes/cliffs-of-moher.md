@@ -2,7 +2,7 @@
 title: Cliffs of Moher
 key: Ador
 rhythm: jig
-mode: dorian
+mode: dor
 date: 2016-02-17
 location: Arrowtown Wellington
 set:

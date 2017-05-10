@@ -2,7 +2,7 @@
 title: Over the Moor to Maggie
 key: G
 rhythm: reel
-mode: major
+mode:
 date: 2016-03-08
 location: Arrowtown Wellington
 set:

@@ -2,7 +2,7 @@
 title: Johnny McIljohn's
 key: D
 rhythm: reel
-mode: major
+mode:
 date: 2016-12-16
 location: Arrowtown Wellington
 set:

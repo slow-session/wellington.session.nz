@@ -1,0 +1,79 @@
+---
+layout: page
+---
+<div id="tunelist"></div>
+Type: {{ page.rhythm }}, added
+<time datetime="{{ page.date | date_to_xmlschema }}" setTuneprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
+<br />Played in: {{ page.location }}
+<br />
+
+<div id="audioPlayer"></div>
+
+<script type="text/javascript">
+    audioPlayer.innerHTML = createAudioPlayer();
+
+    var MyFonts =
+    "%%titlefont       Helvetica 20\n\
+%%subtitlefont    Helvetica 16\n\
+%%gchordfont      Helvetica 12\n\
+%%composerfont    Helvetica-Oblique 14\n\
+%%partsfont       Helvetica 12%%\n\
+%%tempofont       Helvetica 12\n\
+%%annotationfont  Helvetica 12\n\
+%%infofont        Helvetica 12\n\
+%%textfont        Helvetica 12\n\
+%%vocalfont       Helvetica 12\n\
+%%wordsfont       Helvetica 12\n";
+
+    var tuneList = '';
+    var attributionDetails = '<br />';
+    var printTunes = '';
+
+    function printSet(printTunes) {
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printTunes;
+        window.print();
+        document.body.innerHTML = originalContents;
+   }
+</script>
+
+{% assign tuneId = 100 %}
+{% for setTune in page.tunes %}
+{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}
+{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}
+{% for tune in siteTunes %}
+    <div id="notation{{tuneId}}" class="abc"></div>
+    <div id="showPlayer{{tuneId}}" class="audioplayer_left"></div>
+
+    <script type="text/javascript">
+        var thisTune = "%%staffwidth 540\n" + MyFonts + {{ tune.abc | jsonify }};
+        ABCJS.renderAbc('notation{{tuneId}}', thisTune);
+
+        showPlayer{{tuneId}}.innerHTML = createMP3player({{ tuneId }}, '{{ site.mp3_host }}{{ tune.mp3_file }}');
+
+        tuneList += '{{ tune.title | escape  }} ({{ tune.key}}{{ tune.mode}}), ';
+        attributionDetails += '<p>The audio for {{ tune.title | escape }} is sourced from <a href="{{ tune.mp3_url }}">{{ tune.mp3_source }}</a>. \
+Permission to use is gratefully acknowledged and the audio is made available under this licence: {{ tune.mp3_licence }}</p> \
+{% if tune.mp3_url %}<p>Original audio: <a href="{{ tune.mp3_url }}">{{ tune.mp3_url }}</a></p>{% endif %} \
+{% if tune.abc_source %}<p>The music notation was derived from <a href="{{ tune.abc_url }}">{{ tune.abc_source }}</a></p>{% endif %}';
+
+        printTunes += document.getElementById('notation{{tuneId}}').innerHTML;
+    </script>
+    {% assign tuneId = tuneId | plus: 1 %}
+{% endfor %}
+{% endfor %}
+
+<hr>
+<p>You can print your set using this button. Please think of the trees!</p>
+
+<input class="button" type="button" class="loopButton" onclick="printSet(printTunes)" value="Print this Set" />
+
+<div id="details" class="attribution"></div>
+
+<script>
+$(document).ready(function() {
+    tunelist.innerHTML = tuneList.slice(0, -2);
+    details.innerHTML = attributionDetails;
+});
+</script>

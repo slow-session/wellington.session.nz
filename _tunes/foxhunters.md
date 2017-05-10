@@ -2,11 +2,11 @@
 title: Foxhunter's
 key: D
 rhythm: slip jig
-mode: major
+mode:
 date: 2016-07-13
 location: Arrowtown Wellington
-set: 4.2
-tags: slowsession focustune
+set:
+tags: slowsession 
 mp3_file: /mp3/foxhunters.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

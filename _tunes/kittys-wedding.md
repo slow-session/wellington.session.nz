@@ -2,19 +2,18 @@
 title: Kitty's Wedding
 key: D
 rhythm: hornpipe
-mode: major
+mode:
 date: 2016-06-08
 location: Wellington
-set: 11.2
-tags: slowsession focustune
+set:
+tags: slowsession 
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/kittys_wedding/
-abc_url: https://thesession.org/tunes/869
 source: Wellington
-transcription:
-chords: false
+abc_source: The Session
+abc_url: https://thesession.org/tunes/869
 abc: |
     X: 1
     T: Kitty's Wedding

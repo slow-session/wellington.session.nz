@@ -2,7 +2,7 @@
 title: Creggs Pipes
 key: G
 rhythm: reel
-mode: major
+mode:
 date: 2016-03-08
 location: Wellington
 set:

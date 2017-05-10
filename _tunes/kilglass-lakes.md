@@ -2,7 +2,7 @@
 title: Kilglass Lakes
 key: D
 rhythm: jig
-mode: major
+mode:
 date: 2015-11-1
 location: Wellington
 set:

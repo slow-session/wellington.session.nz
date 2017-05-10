@@ -5,8 +5,8 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Wellington
-set: 5.2
-tags: slowsession focustune
+set:
+tags: slowsession 
 mp3_file: /mp3/swinging-on-the-gate.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

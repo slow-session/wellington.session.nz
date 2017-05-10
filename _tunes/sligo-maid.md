@@ -2,7 +2,7 @@
 title: Sligo Maid
 key: Ador
 rhythm: reel
-mode: dorian
+mode: dor
 date: 2016-06-08
 location: Arrowtown Wellington
 set:

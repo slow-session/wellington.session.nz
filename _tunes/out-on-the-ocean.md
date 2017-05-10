@@ -2,7 +2,7 @@
 title: Out On the Ocean
 key: G          
 rhythm: jig
-mode: major
+mode:
 date: 2016-1-26
 location: Arrowtown Wellington
 set:

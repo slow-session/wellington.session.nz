@@ -6,7 +6,7 @@ mode:
 date: 2016-3-2
 location: Arrowtown Wellington
 set:
-tags: slowsession beginner focustune 
+tags: slowsession beginner focustune
 mp3_file: /mp3/merry-blacksmith.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
