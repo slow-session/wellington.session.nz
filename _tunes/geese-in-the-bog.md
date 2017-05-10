@@ -2,7 +2,7 @@
 title: Geese in the Bog
 key: Ador
 rhythm: jig
-mode: dorian
+mode: dor
 date: 2015-11-01
 location: Arrowtown Wellington
 set:

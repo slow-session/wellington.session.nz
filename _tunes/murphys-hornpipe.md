@@ -5,8 +5,8 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Wellington
-set: 9.1
-tags: slowsession beginner focustune
+set:
+tags: slowsession beginner
 mp3_file: /mp3/murphys-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

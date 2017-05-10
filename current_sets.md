@@ -1,0 +1,98 @@
+---
+layout: page
+title: Current Sets
+permalink: /current_sets/
+---
+
+These are the some of the sets we play at the Wellington Slow Session. These sets will get played regularly so if you know these you'll get a chance to play them.
+
+If you don't find the set you're looking for you can put tunes together and try them out using our <a href="/build_a_set/">Build a Set</a> page.
+
+<div id="audioPlayer"></div>
+
+<fieldset>
+    <legend>Select from current Wellington Sets:</legend>    
+    <form id="wellington" method="get">
+        <br />
+        <span title="Filter the Sets Archive for sets by title or by type such as 'reel', 'jig', 'polka'.">        
+        Title:
+        <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
+        &emsp;
+        Rhythm:
+        <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+            <option value="">Any</option>
+            <option value="reel">Reel</option>
+            <option value="jig">Jig</option>
+            <option value="slip jig">Slip Jig</option>
+            <option value="polka">Polka</option>
+            <option value="hornpipe">Hornpipe</option>
+            <option value="slide">Slide</option>
+            <option value="waltz">Waltz</option>
+            <option value="barndance">Barndance</option>
+            <option value="planxty">Planxty</option>
+            <option value="mazurka">Mazurka</option>
+        </select>
+        </span>    
+        &emsp;
+        <span title="Run the filter with the default settings to see the whole list">
+        <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
+        </span>      
+    </form>
+    <p></p>
+    <div id="sets-count"></div>
+</fieldset>
+
+<br />
+<div id="sets-table"></div>
+<div id="abc-textareas"></div>
+
+<script>
+    window.store = {
+      {% assign setID = 100 %}
+      {% for set in site.sets %}
+          "{{ setID }}": {
+              "title": "{{ set.title | xml_escape }}",
+              "setID": "{{ setID }}",
+              "rhythm": "{{ set.rhythm | xml_escape }}",
+              "location": "{{ set.location | xml_escape }}",
+              "url": "{{ set.url | absolute_url }}",
+              "setTunes": "{{ set.tunes | xml_escape }}",
+              "setTitles": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}}{{ tune.mode}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+              "tuneMP3s": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}{% for tune in siteTunes %}{{ tune.mp3_file | prepend: site.mp3_host }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+          }{% unless forloop.last %},{% endunless %}
+          {% assign setID = setID | plus: 1 %}
+      {% endfor %}
+    };
+
+</script>
+
+<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script type="text/javascript" src="{{ site.js_host }}/js/build_sets.js"></script>
+
+<script>
+$(document).ready(function() {
+    audioPlayer.innerHTML = createAudioPlayer();
+
+    /* Set initial sort order */
+    $.tablesorter.defaults.sortList = [[0,0]];
+
+    $("#search-results").tablesorter({
+        headers: {
+            2: {
+                sorter: false
+            },  
+            3: {
+                sorter: false
+            }
+        }
+    });   
+});
+</script>
+
+<script>
+    function enable_button() {
+        submit_button.disabled = false;
+        submit_button.style.opacity=1.0;
+        submit_button.style.cursor='pointer';
+    }
+</script>

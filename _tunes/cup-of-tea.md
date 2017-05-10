@@ -2,7 +2,7 @@
 title: Cup of Tea
 key: E Dor
 rhythm: reel
-mode: Dorian
+mode: dor
 date: 2016-5-4
 location: Arrowtown Wellington
 set:

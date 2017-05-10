@@ -2,7 +2,7 @@
 title: Lucy Farr's Barn Dance
 key: G
 rhythm: barndance
-mode: major
+mode:
 date: 2016-4-06
 location: Arrowtown Wellington
 set:

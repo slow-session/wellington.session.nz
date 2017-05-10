@@ -2,11 +2,11 @@
 title: Rose in the Heather
 key: D
 rhythm: jig
-mode: major
+mode:
 date: 2016-01-01
 location: Wellington
 set:
-tags: slowsession focustune 
+tags: slowsession focustune
 mp3_file: /mp3/rose-in-the-heather.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

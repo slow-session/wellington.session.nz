@@ -4,7 +4,7 @@ key: Ador
 rhythm: jig
 date: 2017-04-21
 location: Wellington 
-set: 
+set:
 tags: 
 mp3_file: /mp3/sliabh-russell.mp3
 mp3_source: Ballyscully

@@ -2,11 +2,11 @@
 title: Morrison's
 key: Edor
 rhythm: jig
-mode: dorian
+mode: dor
 date: 2016-10-26
 location: Arrowtown Wellington
-set: 6.1
-tags: slowsession aff focustune
+set:
+tags: slowsession aff 
 mp3_file: /mp3/morrisons.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

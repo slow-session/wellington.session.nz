@@ -2,7 +2,7 @@
 title: Rights of Man
 key: G
 rhythm: hornpipe
-mode: major
+mode:
 date: 2016-5-11
 location: Arrowtown Wellington
 set:

@@ -2,7 +2,7 @@
 title: Jim Ward's
 key: G
 rhythm: jig
-mode: major
+mode:
 date: 2016-02-24
 location: Arrowtown Wellington
 set:

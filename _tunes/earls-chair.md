@@ -2,11 +2,11 @@
 title: Earl's Chair
 key: D
 rhythm: reel
-mode: major
+mode:
 date: 2016-10-12
 location: Arrowtown Wellington
-set: 10.2
-tags: slowsession focustune tuneoftheweek
+set:
+tags: slowsession  tuneoftheweek
 mp3_file: /mp3/earls-chair.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

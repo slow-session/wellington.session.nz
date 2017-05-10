@@ -2,7 +2,7 @@
 title: Star of Munster
 key: Ador
 rhythm: reel
-mode: dorian
+mode: dor
 date: 2016-01-01
 location: Wellington
 set:

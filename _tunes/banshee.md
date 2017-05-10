@@ -2,7 +2,7 @@
 title: Banshee
 key: G
 rhythm: reel
-mode: major
+mode:
 date: 2016-01-26
 location: Arrowtown Wellington
 set:

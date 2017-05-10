@@ -5,8 +5,8 @@ rhythm: reel
 mode:
 date: 2016-12-2
 location: Wellington
-set: 5.1
-tags: slowsession focustune
+set:
+tags: slowsession 
 mp3_file: /mp3/torn-jacket.mp3
 mp3_licence: "© Connie O'Connell. All Rights Reserved."
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>

@@ -2,7 +2,7 @@
 title: Drunken Gauger
 key: G
 rhythm: jig
-mode: major
+mode:
 date: 2016-11-24
 location: Wellington
 set:

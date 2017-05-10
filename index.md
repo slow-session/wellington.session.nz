@@ -1,6 +1,5 @@
 ---
 layout: page
-title: The Wellington Session
 ---
 <div id="audioPlayer"></div>
 
@@ -39,44 +38,64 @@ We pick one tune each week for homework, and we'll play it sometime during the f
 </thead>
 
 <tbody>
-  {% assign sortedtunes = site.tunes | sort: 'title' %}
+{% assign tunes = site.tunes | where: 'tags', 'tuneoftheweek' | where: 'tags', 'slowsession' %}
+{% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 100 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'tuneoftheweek' and tune.tags contains 'slowsession'%}
-          {% assign tuneid = tuneid | plus: 1 %}
+      {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow.html showSet=false tuneId=tuneid %}
+{% include tablerow.html tuneId=tuneid %}
 </tr>
-      {% endif %}
-{% endfor %}
+  {% endfor %}
 </tbody>
 </table>
 
 Slow Session Tunes
 ---------
 
+
 Here are some of the tunes we'll be playing at a relaxed speed during the first hour.
+
+<table style="width:100%" id="focussets" class="tablesorter">
+<thead>
+    <tr>
+    <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
+    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:26%;">Titles</th>
+    <th style="width:45%;">Audio Player</th>
+    </tr>
+</thead>
+<tbody>
+{% assign sets = site.sets | where: 'tags', 'focusset' %}
+{% assign setid = 200 %}
+{% for set in sets %}
+{% assign setid = setid | plus: 1 %}
+<tr>
+{% include setrow.html setId=setid %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<br />
 <table style="width:100%" id="focustunes" class="tablesorter">
 <thead>
     <tr>
-    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
+    <th style="width:20%;">Tune Name&#x25B2;&#x25BC;</th>
+    <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th>
     <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:5%;">Set<br />&#x25B2;&#x25BC;</th>
     <th style="width:55%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
-  {% assign sortedtunes = site.tunes | sort: 'title' %}
+{% assign tunes = site.tunes | where: 'tags', 'focustune' | where: 'tags', 'slowsession' %}
+{% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}
-      {% if tune.tags contains 'focustune' and tune.tags contains 'slowsession'%}
-          {% assign tuneid = tuneid | plus: 1 %}
+      {% assign tuneid = tuneid | plus: 1 %}
 <tr>
-{% include tablerow.html showSet=true tuneId=tuneid %}
+{% include tablerow.html tuneId=tuneid %}
 </tr>
-      {% endif %}
-{% endfor %}
+  {% endfor %}
 </tbody>
 </table>
 
@@ -96,5 +115,17 @@ $(document).ready(function() {
 
     /* turn off sorting on last column */
     $("#focustunes").tablesorter({headers: { 4:{sorter: false}}});
+
+    /* turn off sorting on last two columns */
+    $("#focussets").tablesorter({
+        headers: {
+            2: {
+                sorter: false
+            },  
+            3: {
+                sorter: false
+            }
+        }
+    });
 });
 </script>
