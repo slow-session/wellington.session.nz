@@ -1,8 +1,8 @@
 ---
 title: Dunmore Lasses
-key: D
+key: Emin
 rhythm: reel
-mode: 
+mode:
 date: 2016-1-26
 location: Arrowtown Wellington
 set:
@@ -27,4 +27,3 @@ abc: |
     |:g2eg fedc|Be~e2 Be~e2|g2eg fedB|AcBA GE~E2|
     g2eg fedc|Beed ~e3f| (3.g.f.e fd eBdB|AcBA GEE2:|
 ---
-
