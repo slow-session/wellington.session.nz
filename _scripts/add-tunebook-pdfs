@@ -35,7 +35,8 @@ fi
 # Get the list of files to process
 #
 cd ${SITEDIR}/tunebooks
-ABCFILES=`ls *abc`
+ABCFILES=$(echo *abc)
+OTHERABCFILES=$(echo other/*abc)
 echo "Processing: ${ABCFILES}"
 
 #
@@ -46,6 +47,10 @@ cd ${SOURCEDIR}/tunebooks
 for ABCFILE in ${ABCFILES}
 do
     ${SOURCEDIR}/_scripts/abc2pdf ${SITEDIR}/tunebooks/${ABCFILE}
+done
+for OTHERABCFILE in ${OTHERABCFILES}
+do
+    ${SOURCEDIR}/_scripts/abc2pdf-index ${SITEDIR}/tunebooks/${OTHERABCFILE}
 done
 
 cd ${SOURCEDIR}
