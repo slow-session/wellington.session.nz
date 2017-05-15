@@ -1,19 +1,19 @@
 ---
-title: Johnny McIljohn's
+title: Johnny Macklejohn's
 key: D
 rhythm: reel
-mode:
+mode: major
 date: 2016-12-16
 location: Arrowtown Wellington
-set:
 tags: slowsession
-mp3_file:
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_source: Wellington Session
+mp3_file: /mp3/johnny-macklejohns.mp3
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
+mp3_source: Sean Smyth and Donogh Hennessey
 mp3_url:
 source: Wellington
 abc: |
     X: 1
+    T: Johnny Macklejohn's
     T: Johnny McIljohn's
     R: reel
     M: 4/4
