@@ -36,8 +36,7 @@ fi
 #
 cd ${SITEDIR}/tunebooks
 ABCFILES=$(echo *abc)
-OTHERABCFILES=$(echo other/*abc)
-echo "Processing: ${ABCFILES}"
+echo "Processing: ${ABCFILES} "
 
 #
 # Build the PDF files in ${SOURCEDIR}
@@ -48,9 +47,15 @@ for ABCFILE in ${ABCFILES}
 do
     ${SOURCEDIR}/_scripts/abc2pdf ${SITEDIR}/tunebooks/${ABCFILE}
 done
+
+cd ${SITEDIR}/tunebooks/other
+OTHERABCFILES=$(echo *abc)
+echo "Processing: ${OTHERABCFILES} "
+
+cd ${SOURCEDIR}/tunebooks/other
 for OTHERABCFILE in ${OTHERABCFILES}
 do
-    ${SOURCEDIR}/_scripts/abc2pdf-index ${SITEDIR}/tunebooks/${OTHERABCFILE}
+    ${SOURCEDIR}/_scripts/abc2pdf-index ${SITEDIR}/tunebooks/other/${OTHERABCFILE}
 done
 
 cd ${SOURCEDIR}
