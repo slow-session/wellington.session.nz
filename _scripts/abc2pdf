@@ -4,6 +4,7 @@
 TMPPS=$(mktemp /tmp/temp.XXXXXXX).ps
 PDF=$(basename "${1%.abc}.pdf")
 abcm2ps "$@" -q -x -O $TMPPS
-ps2pdf $TMPPS $PDF
+abcmaddidx.tcl -b index-$TMPPS
+ps2pdf index-$TMPPS $PDF
 #echo "Created $PDF"
 rm $TMPPS
