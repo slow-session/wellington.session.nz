@@ -3,7 +3,7 @@ title: Congress Reel, The
 key: G
 rhythm: reel
 mode:
-date: 2016-10-27
+date: 2017-05-18
 location: Arrowtown Dunedin Wellington
 tags:
 mp3_file: /mp3/congress.mp3
