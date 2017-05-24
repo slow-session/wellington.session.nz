@@ -1,5 +1,6 @@
 ---
 title: Foxhunter's
+titleID: foxhunters.md
 key: D
 rhythm: slip jig
 mode:

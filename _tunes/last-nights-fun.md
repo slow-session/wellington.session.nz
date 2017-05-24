@@ -1,5 +1,6 @@
 ---
 title: Last Night's Fun
+titleID: last-nights-fun.md
 key: Dmaj
 rhythm: reel
 date: 2017-04-19

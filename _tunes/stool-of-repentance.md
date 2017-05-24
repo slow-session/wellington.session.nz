@@ -1,5 +1,6 @@
 ---
 title: Stool Of Repentance
+titleID: stool-of-repentance.md
 key: A
 rhythm: jig
 mode: 

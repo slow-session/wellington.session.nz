@@ -1,5 +1,6 @@
 ---
 title: Belfast Hornpipe
+titleID: belfast-hornpipe.md
 key: D
 rhythm: hornpipe
 mode:

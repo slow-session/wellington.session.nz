@@ -1,5 +1,6 @@
 ---
 title: Behind the Haystack
+titleID: behind-the-haystack.md
 key: D
 rhythm: jig
 mode:

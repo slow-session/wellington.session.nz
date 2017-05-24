@@ -1,5 +1,6 @@
 ---
 title: Frank's Reel
+titleID: franks-reel.md
 key: A
 rhythm: reel
 mode:

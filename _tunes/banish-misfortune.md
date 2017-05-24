@@ -1,5 +1,6 @@
 ---
 title: Banish Misfortune
+titleID: banish-misfortune.md
 key: Dmix
 rhythm: jig
 mode: mixolydian

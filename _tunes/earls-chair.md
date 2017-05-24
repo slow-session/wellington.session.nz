@@ -1,5 +1,6 @@
 ---
 title: Earl's Chair
+titleID: earls-chair.md
 key: D
 rhythm: reel
 mode:

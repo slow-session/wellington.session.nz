@@ -1,5 +1,6 @@
 ---
 title: Rights of Man
+titleID: rights-of-man.md
 key: G
 rhythm: hornpipe
 mode:

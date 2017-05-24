@@ -1,5 +1,6 @@
 ---
 title: Golden Castle
+titleID: golden-castle.md
 key: Gdor
 rhythm: hornpipe
 date: 2017-02-27

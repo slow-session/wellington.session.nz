@@ -1,5 +1,6 @@
 ---
 title: Blarney Pilgrim
+titleID: blarney-pilgrim.md
 key: Dmix
 rhythm: jig
 mode: mix

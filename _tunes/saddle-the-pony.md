@@ -1,5 +1,6 @@
 ---
 title: Saddle the Pony
+titleID: saddle-the-pony.md
 key: G
 rhythm: jig
 date: 2017-05-15

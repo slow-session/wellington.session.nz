@@ -1,5 +1,6 @@
 ---
 title: Haunted House
+titleID: haunted-house.md
 key: G
 rhythm: jig
 mode:

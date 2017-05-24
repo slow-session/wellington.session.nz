@@ -1,5 +1,6 @@
 ---
 title: Catharsis
+titleID: catharsis.md
 key: Gmin
 rhythm: reel
 mode:

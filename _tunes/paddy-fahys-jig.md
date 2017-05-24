@@ -1,5 +1,6 @@
 ---
 title: Paddy Fahy's Jig
+titleID: paddy-fahys-jig.md
 key: G
 rhythm: jig
 mode: 

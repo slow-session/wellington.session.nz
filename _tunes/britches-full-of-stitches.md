@@ -1,5 +1,6 @@
 ---
 title: Britches Full of Stitches
+titleID: britches-full-of-stitches.md
 key: G
 rhythm: polka
 mode:

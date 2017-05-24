@@ -1,5 +1,6 @@
 ---
 title: Blackthorn Stick
+titleID: blackthorn-stick.md
 key: G
 rhythm: jig
 mode:

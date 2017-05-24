@@ -1,5 +1,6 @@
 ---
 title: Tommy Peoples
+titleID: tommy-peoples.md
 key: G
 rhythm: reel
 mode:

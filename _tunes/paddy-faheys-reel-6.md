@@ -1,5 +1,6 @@
 ---
 title: Paddy Fahey's No. 6
+titleID: paddy-faheys-reel-6.md
 key: Dmix
 rhythm: reel
 mode:

@@ -1,5 +1,6 @@
 ---
 title: Swinging on the Gate
+titleID: swinging-on-the-gate.md
 key: G
 rhythm: reel
 mode:

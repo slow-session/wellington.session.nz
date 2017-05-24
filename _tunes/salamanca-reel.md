@@ -1,5 +1,6 @@
 ---
 title: Salamanca
+titleID: salamanca-reel.md
 key: D
 rhythm: reel
 mode:

@@ -7,13 +7,12 @@ Type: {{ page.rhythm }}, added
 <br />Played in: {{ page.location }}
 <br />
 
-<div id="audioPlayer"></div>
+<!-- Area to store unrolled ABC (style="display:none;")-->
+<textarea id="ABCprocessed" style="display:none;">X: 1
+</textarea>
 
 <script type="text/javascript">
-    audioPlayer.innerHTML = createAudioPlayer();
-
-    var MyFonts =
-    "%%titlefont       Helvetica 20\n\
+    var MyFonts = "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
 %%gchordfont      Helvetica 12\n\
 %%composerfont    Helvetica-Oblique 14\n\
@@ -26,7 +25,8 @@ Type: {{ page.rhythm }}, added
 %%wordsfont       Helvetica 12\n";
 
     var tuneList = '';
-    var attributionDetails = '<br />';
+    var abcSource = '';
+    var regex = new RegExp('X:.*\n');
     var printTunes = '';
 
     function printSet(printTunes) {
@@ -40,23 +40,18 @@ Type: {{ page.rhythm }}, added
 
 {% assign tuneId = 100 %}
 {% for setTune in page.tunes %}
-{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}
-{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}
+{% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
     <div id="notation{{tuneId}}" class="abc"></div>
-    <div id="showPlayer{{tuneId}}" class="audioplayer_left"></div>
-
     <script type="text/javascript">
+        tuneList += '{{ tune.title | escape  }} ({{ tune.key}}{{ tune.mode}}), ';
+
         var thisTune = "%%staffwidth 540\n" + MyFonts + {{ tune.abc | jsonify }};
         ABCJS.renderAbc('notation{{tuneId}}', thisTune);
 
-        showPlayer{{tuneId}}.innerHTML = createMP3player({{ tuneId }}, '{{ site.mp3_host }}{{ tune.mp3_file }}');
-
-        tuneList += '{{ tune.title | escape  }} ({{ tune.key}}{{ tune.mode}}), ';
-        attributionDetails += '<p>The audio for {{ tune.title | escape }} is sourced from <a href="{{ tune.mp3_url }}">{{ tune.mp3_source }}</a>. \
-Permission to use is gratefully acknowledged and the audio is made available under this licence: {{ tune.mp3_licence }}</p> \
-{% if tune.mp3_url %}<p>Original audio: <a href="{{ tune.mp3_url }}">{{ tune.mp3_url }}</a></p>{% endif %} \
-{% if tune.abc_source %}<p>The music notation was derived from <a href="{{ tune.abc_url }}">{{ tune.abc_source }}</a></p>{% endif %}';
+        abcSource = {{ tune.abc | jsonify }};
+        abcSource = abcSource.replace(regex, '');
+        document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
 
         printTunes += document.getElementById('notation{{tuneId}}').innerHTML;
     </script>
@@ -64,16 +59,18 @@ Permission to use is gratefully acknowledged and the audio is made available und
 {% endfor %}
 {% endfor %}
 
+<!-- Controls for ABC player -->
+<div id="ABCplayer" class="audioplayer_left"></div>
+
 <hr>
 <p>You can print your set using this button. Please think of the trees!</p>
 
 <input class="button" type="button" class="loopButton" onclick="printSet(printTunes)" value="Print this Set" />
 
-<div id="details" class="attribution"></div>
-
 <script>
 $(document).ready(function() {
     tunelist.innerHTML = tuneList.slice(0, -2);
-    details.innerHTML = attributionDetails;
+
+    ABCplayer.innerHTML = createABCplayer('processed');
 });
 </script>

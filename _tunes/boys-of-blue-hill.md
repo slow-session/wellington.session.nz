@@ -1,5 +1,6 @@
 ---
 title: Boys of BlueHill
+titleID: boys-of-blue-hill.md
 key: D
 rhythm: hornpipe
 mode:

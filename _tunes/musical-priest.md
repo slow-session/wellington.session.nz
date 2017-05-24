@@ -1,5 +1,6 @@
 ---
 title: Musical Priest
+titleID: musical-priest.md
 key: Bmin
 rhythm: reel
 mode: minor

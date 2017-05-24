@@ -1,5 +1,6 @@
 ---
 title: Hare in the Corn
+titleID: hare-in-the-corn.md
 key: G
 rhythm: jig
 mode: 

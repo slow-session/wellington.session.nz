@@ -1,5 +1,6 @@
 ---
 title: Drunken Gauger
+titleID: drunken-gauger.md
 key: G
 rhythm: jig
 mode:

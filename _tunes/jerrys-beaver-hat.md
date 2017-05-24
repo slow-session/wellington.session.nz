@@ -1,5 +1,6 @@
 ---
 title: Jerry's Beaver Hat
+titleID: jerrys-beaver-hat.md
 key: D
 rhythm: jig
 mode: Major
