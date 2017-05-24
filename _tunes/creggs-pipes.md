@@ -1,5 +1,6 @@
 ---
 title: Creggs Pipes
+titleID: creggs-pipes.md
 key: G
 rhythm: reel
 mode:

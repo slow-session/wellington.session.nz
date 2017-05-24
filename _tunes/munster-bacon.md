@@ -1,5 +1,6 @@
 ---
 title: Munster Bacon
+titleID: munster-bacon.md
 key: D
 rhythm: jig
 mode:

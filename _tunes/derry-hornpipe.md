@@ -1,5 +1,6 @@
 ---
 title: Derry Hornpipe
+titleID: derry-hornpipe.md
 key: D
 rhythm: hornpipe
 mode:

@@ -1,5 +1,6 @@
 ---
 title: Shoemaker's Fancy
+titleID: shoemakers-fancy.md
 key: G
 rhythm: jig
 date: 2017-02-14

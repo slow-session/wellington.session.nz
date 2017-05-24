@@ -1,5 +1,6 @@
 ---
 title: Dublin Reel
+titleID: dublin-reel.md
 key: D
 rhythm: reel
 mode: 

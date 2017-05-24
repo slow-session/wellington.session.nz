@@ -1,5 +1,6 @@
 ---
 title: Cliffs of Moher
+titleID: cliffs-of-moher.md
 key: Ador
 rhythm: jig
 mode: dor

@@ -1,5 +1,6 @@
 ---
 title: Finnish Polka
+titleID: finnish-polka.md
 key: Bm
 rhythm: polka
 mode:

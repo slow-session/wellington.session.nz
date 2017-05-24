@@ -1,5 +1,6 @@
 ---
 title: Bill Collins' Jig
+titleID: bill-collins-jig.md
 key: D
 rhythm: jig
 mode: 

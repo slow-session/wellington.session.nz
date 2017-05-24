@@ -57,9 +57,10 @@ If you don't find the set you're looking for you can put tunes together and try 
               "location": "{{ set.location | xml_escape }}",
               "url": "{{ set.url | absolute_url }}",
               "setTunes": "{{ set.tunes | xml_escape }}",
-              "setTitles": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}}{{ tune.mode}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+              "setTitles": "{% for setTune in set.tunes %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{{ tune.title | xml_escape }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+              "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}}{{ tune.mode}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
               "tuneMP3s": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'mp3_file', setTuneMP3 %}{% for tune in siteTunes %}{{ tune.mp3_file | prepend: site.mp3_host }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
-          }{% unless forloop.last %},{% endunless %}
+          },
           {% assign setID = setID | plus: 1 %}
       {% endfor %}
     };

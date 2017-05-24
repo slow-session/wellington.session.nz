@@ -1,5 +1,6 @@
 ---
 title: Brendan Tonra's
+titleID: brendan-tonras.md
 key: D
 rhythm: jig
 mode: 

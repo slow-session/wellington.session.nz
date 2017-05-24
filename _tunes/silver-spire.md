@@ -1,5 +1,6 @@
 ---
 title: Silver Spire
+titleID: silver-spire.md
 key: D
 rhythm: reel
 mode:

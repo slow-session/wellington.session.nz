@@ -1,5 +1,6 @@
 ---
 title: McHugh's
+titleID: mchughs.md
 key: G
 rhythm: jig
 mode: 

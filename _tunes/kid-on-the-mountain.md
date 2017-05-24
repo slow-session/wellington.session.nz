@@ -1,5 +1,6 @@
 ---
 title: Kid on the Mountain
+titleID: kid-on-the-mountain.md
 key: G
 rhythm: slip jig
 mode:

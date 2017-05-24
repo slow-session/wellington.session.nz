@@ -1,5 +1,6 @@
 ---
 title: Red Haired Lass
+titleID: red-haired-lass.md
 key: G
 rhythm: reel
 mode:

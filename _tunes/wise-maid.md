@@ -1,5 +1,6 @@
 ---
 title: Wise Maid
+titleID: wise-maid.md
 key: D
 rhythm: reel
 mode:

@@ -1,5 +1,6 @@
 ---
 title: Silver Spear
+titleID: silver-spear.md
 key: D
 rhythm: reel
 mode:

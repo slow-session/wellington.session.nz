@@ -1,5 +1,6 @@
 ---
 title: Morning Star
+titleID: morning-star.md
 key: D
 rhythm: reel
 date: 2017-02-01

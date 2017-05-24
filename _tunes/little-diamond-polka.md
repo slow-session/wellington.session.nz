@@ -1,5 +1,6 @@
 ---
 title: Little Diamond Polka
+titleID: little-diamond-polka.md
 key: D
 rhythm: polka
 mode:

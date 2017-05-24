@@ -1,5 +1,6 @@
 ---
 title: Merry Blacksmith
+titleID: merry-blacksmith.md
 key: D
 rhythm: reel
 mode:

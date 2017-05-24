@@ -1,5 +1,6 @@
 ---
 title: Pipe on the Hob
+titleID: pipe-on-the-hob.md
 key: Ador
 rhythm: jig
 date: 2017-02-23

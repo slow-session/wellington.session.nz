@@ -1,5 +1,6 @@
 ---
 title: Kitty's Wedding
+titleID: kittys-wedding.md
 key: D
 rhythm: hornpipe
 mode:

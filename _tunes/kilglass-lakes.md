@@ -1,5 +1,6 @@
 ---
 title: Kilglass Lakes
+titleID: kilglass-lakes.md
 key: D
 rhythm: jig
 mode:

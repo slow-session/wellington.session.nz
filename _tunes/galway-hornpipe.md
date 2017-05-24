@@ -1,5 +1,6 @@
 ---
 title: Galway Hornpipe
+titleID: galway-hornpipe.md
 key: D
 rhythm: hornpipe
 mode: 

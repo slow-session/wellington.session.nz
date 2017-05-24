@@ -1,5 +1,6 @@
 ---
 title: Christmas Eve
+titleID: christmas-eve.md
 key: G
 rhythm: reel
 mode:

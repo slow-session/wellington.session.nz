@@ -1,5 +1,6 @@
 ---
 title: Garrett Barry's Jig
+titleID: garrett-barry-s.md
 key: G
 rhythm: jig
 mode: 

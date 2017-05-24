@@ -1,5 +1,6 @@
 ---
 title: Paddy's Trip to Scotland
+titleID: paddys-trip-to-scotland.md
 key: D
 rhythm: reel
 mode: maj
