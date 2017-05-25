@@ -4,14 +4,14 @@ titleID: rambling-sailor.md
 key: A
 rhythm: polka
 date: 2017-05-25
-location: Wellington 
-set: 
+location: Wellington
+set:
 tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
-source: 
+mp3_file:
+mp3_source:
+mp3_licence:
+mp3_url:
+source:
 abc_source: The Session
 abc_url: https://thesession.org/tunes/12050
 abc: |
