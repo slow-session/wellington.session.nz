@@ -21,8 +21,6 @@
 
 <!--unroll ABC to handle repeats and different endings for parts-->
 <script>
-var textAreas = document.getElementById("abc-textareas");
-
 textAreas.innerHTML += '<textarea id="{{'ABC' | append: include.tuneId }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
 </script>
 {% endif %}

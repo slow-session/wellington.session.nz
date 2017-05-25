@@ -26,6 +26,9 @@ We pick one tune each week for homework, and we'll play it sometime during the f
 
 <div id="DEBUG"></div>
 <div id="abc-textareas"></div>
+<script>
+var textAreas = document.getElementById("abc-textareas");
+</script>
 
 <table style="width:100%" id="tuneoftheweek" class="tablesorter">
 <thead>
