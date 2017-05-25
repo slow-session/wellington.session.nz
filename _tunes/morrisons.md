@@ -1,13 +1,13 @@
 ---
 title: Morrison's
 titleID: morrisons.md
-key: Edor
+key: E
 rhythm: jig
 mode: dor
 date: 2016-10-26
 location: Arrowtown Wellington
 set:
-tags: slowsession aff 
+tags: slowsession aff
 mp3_file: /mp3/morrisons.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

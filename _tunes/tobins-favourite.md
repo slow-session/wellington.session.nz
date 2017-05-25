@@ -3,11 +3,11 @@ title: Tobin's Favourite
 titleID: tobins-favourite.md
 key: D
 rhythm: jig
-mode: 
+mode:
 date: 2016-01-01
 location: Arrowtown Wellington
 set:
-tags: 
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/tobins-favourite.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -26,6 +26,5 @@ abc: |
     DFA dcd|ecA cde|(3fg a f gec|edc d:||
     |:d2|dfa agf|(3efg e efg|fdf gfg|ecA GFE|
     DFA dcd|ecA cde|(3fg a f gec|edc d:||
-    
----
 
+---
