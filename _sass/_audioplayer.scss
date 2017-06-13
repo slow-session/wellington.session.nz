@@ -147,10 +147,10 @@ td {
 }
 
 tr:nth-of-type(odd) {
-      background-color:darken($complimentary-color, 3%);
+      background-color:darken($complimentary-color, 6%);
 }
 tr:hover {
-    background-color: darken($complimentary-color, 10%);
+    background-color: darken($complimentary-color, 13%);
 }
 tr#no_hover:hover {
     background-color: transparent;
