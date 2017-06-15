@@ -3,11 +3,11 @@ title: Musical Priest
 titleID: musical-priest.md
 key: Bmin
 rhythm: reel
-mode: minor
+mode: 
 date: 2016-10-12
 location: Arrowtown Wellington
 set:
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/musical-priest.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
