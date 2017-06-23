@@ -6,7 +6,7 @@ rhythm: reel
 date: 2017-06-14
 location: Wellington
 set:
-tags: slowsession tuneoftheweek
+tags: slowsession 
 mp3_file: /mp3/jennys-chickens.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
