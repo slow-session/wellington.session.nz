@@ -2,18 +2,18 @@
 title: Dirty Linen
 titleID: dirty-linen.md
 key: Amix
-rhythm: jig
+rhythm: slip jig
 date: 2017-06-29
-location: Wellington 
-set: 
-tags: 
+location: Wellington
+set:
+tags:
 mp3_file: /mp3/dirty-linen.mp3
 mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: The Session
-abc_url: 
+abc_url:
 abc: |
     X: 1
     T: Dirty Linnen
