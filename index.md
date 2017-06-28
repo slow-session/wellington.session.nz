@@ -3,13 +3,6 @@ layout: page
 ---
 <div id="audioPlayer"></div>
 
-<fieldset>
-<p>
-The Wellington session will be at the <a href="http://www.sprigandferntaverns.co.nz/taverns/tinakori-road-wellington">Sprig and Fern, Thorndon</a> during June:</p>
-<ul>
-<li><a href="https://www.facebook.com/events/180352249155454/?acontext=%7B%22ref%22%3A%222%22%2C%22ref_dashboard_filter%22%3A%22upcoming%22%2C%22action_history%22%3A%22%5B%7B%5C%22surface%5C%22%3A%5C%22dashboard%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22main_list%5C%22%2C%5C%22extra_data%5C%22%3A%5B%5D%7D%5D%22%7D">27 June</a></li>
-</ul></fieldset>
-
 
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.

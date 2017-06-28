@@ -13,9 +13,9 @@ $Loopbutton-color1: lighten($brand-color, 40%);
 $Loopbutton-color2: lighten($brand-color, 30%);
 
 // Links
-$link-color: $brand-color;
-$link-hover-color: lighten($brand-color, 25%);
-$link-visited-color: darken($brand-color, 25%);
+$link-color: #0000EE; //$brand-color;
+$link-hover-color: lighten($link-color, 25%);
+$link-visited-color: #551A8B; // darken($link-color, 25%);
 
 // Text
 $base-font-family: Helvetica, Arial, sans-serif;
