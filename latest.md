@@ -7,7 +7,7 @@ permalink: /latest/
 
 These are last 10 tunes to we've added.
 
-<div id="abc-textareas"></div>
+<div id="textAreas"></div>
 
 <table style="width:100%" id="recenttunes" class="tablesorter">
 <thead>
