@@ -4,14 +4,14 @@ titleID: luke-skywalker-walks-on-sunshine.md
 key: A
 rhythm: jig
 date: 2017-05-26
-location: 
-set: 
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
-source: 
+location: Wellington
+set:
+tags:
+mp3_file:
+mp3_source:
+mp3_licence:
+mp3_url:
+source:
 abc_source: The Session
 abc_url: https://thesession.org/tunes/15398
 abc: |
