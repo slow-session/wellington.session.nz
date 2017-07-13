@@ -6,7 +6,7 @@ rhythm: barndance
 date: 2017-05-26
 location: Wellington
 set:
-tags: slowsession tuneoftheweek
+tags: slowsession 
 mp3_file: /mp3/lair-mignonne.mp3
 mp3_source:
 mp3_licence:
