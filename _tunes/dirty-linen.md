@@ -6,7 +6,7 @@ rhythm: slip jig
 date: 2017-06-29
 location: Wellington
 set:
-tags: slowsession tuneoftheweek
+tags: slowsession 
 mp3_file: /mp3/dirty-linen.mp3
 mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -28,4 +28,4 @@ abc: |
     fef afd efg| fef afd g3| fef afd efg |fed edB dBG|
 
 ---
-Also known as "Last Night's Fun" slip jig in Ddor 
+Also known as "Last Night's Fun" slip jig in Ddor
