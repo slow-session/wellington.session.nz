@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2017-05-18
 location: Arrowtown Dunedin Wellington
-tags:
+tags: slowsession focustune
 mp3_file: /mp3/congress.mp3
 mp3_source: Ballyscully
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
