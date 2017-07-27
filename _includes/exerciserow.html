@@ -1,0 +1,7 @@
+<!--build the first three columns-->
+<td id="showPlayer{{ include.exerciseId }}">
+   <script>
+   showPlayer{{ include.exerciseId }}.innerHTML = createMP3player('{{ include.exerciseId }}', '{{ exercise.mp3_file }}');
+   </script>
+</td>
+<td>{{ exercise.title }}<br />{{ exercise.notes }}</td>
