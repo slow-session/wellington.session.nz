@@ -3,14 +3,14 @@ title: Last Night's Fun
 titleID: last-nights-fun.md
 key: Dmaj
 rhythm: reel
-date: 2017-04-19
-location: Wellington 
+date: 2017-07-28
+location: Wellington
 set:
-tags: 
+tags:
 mp3_file: /mp3/last-nights-fun.mp3
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: https://comhaltas.ie/shop/detail/foinn_seisiun_cd_3/
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1381653431930988/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/63
@@ -24,6 +24,5 @@ abc: |
     |:ADFD A2AB|ADFD EFGB|ADFD A2 Bd| e2fe dBAB:|
     |df (3fff af (3fff|defd e2fe| df (3fff af (3fff|egfe dBAB|
     dff2 aff2|defd e3f| a2bf afeg|fedc BcdB|
-    
 
 ---
