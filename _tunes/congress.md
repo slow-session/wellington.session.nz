@@ -8,9 +8,9 @@ date: 2017-05-18
 location: Arrowtown Dunedin Wellington
 tags: slowsession focustune
 mp3_file: /mp3/congress.mp3
-mp3_source: Ballyscully
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_url:
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
+mp3_source: Comhaltas Ceoltóirí Éireann
+mp3_url: https://media.comhaltas.ie/audio/cl281/cl281_1_64K.mp3
 abc_source: Dunedin Fiddle Orchestra
 abc_url: http://nefc.org.nz/
 source: 50Dundas
