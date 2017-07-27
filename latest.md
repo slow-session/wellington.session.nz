@@ -5,7 +5,7 @@ permalink: /latest/
 ---
 <div id="audioPlayer"></div>
 
-These are last 10 tunes to we've added.
+These are the last 10 tunes we've added to the archive.
 
 <div id="textAreas"></div>
 
