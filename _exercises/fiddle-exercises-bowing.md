@@ -5,5 +5,5 @@ location: Wellington
 tags: exercise
 mp3_file: /exercises/fiddle-exercises-bowing.mp3
 source: Wellington
-notes: tj56ybfd
+notes: These exercises came from a workshop taken by Colin Farrell at Ceol Aneas 2017
 ---
