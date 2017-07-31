@@ -17,7 +17,7 @@ come along after 8:30. Of course, we'd be happy to have experienced players play
 earlier on as well!
 
 You can see a list of some of the tunes that get played at the session including those we've been
-learning in the slow part of the session in our <a href="/current_tunes/">Tunes</a> page.
+learning in the slow part of the session in our <a href="/current_tunes/">Current Tunes</a> page.
 
 {::nomarkdown}
 <img alt="NEW!" src="/images/new.gif" border=0 height="48" width="48"> We add new tunes reasonably often - you can check those out in our <a href="/latest/">Latest Tunes</a> page.
@@ -106,6 +106,13 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
 {% endfor %}
 </tbody>
 </table>
+
+NZ Sessions
+==============
+
+There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. It’s a long, long way from Clare to here.
+
+Find out more information in our <a href="/nz_sessions">NZ Sessions</a> page.
 
 <script>
 $(document).ready(function() {
