@@ -47,7 +47,6 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
             {% endif %}
             {% endfor %}
         </select>&emsp;
-        Tags:
         <select id="tags-box" name="tags" onChange="enable_button()">
             <option value="">All Tunes</option>
             {% for tag in tags %}
