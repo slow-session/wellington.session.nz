@@ -55,34 +55,71 @@ Please think of the trees!">
 
 <div id="audioPlayer"></div>
 
+{% assign tune_rhythms = '' %}
+{% assign tune_tags = '' %}
+{% assign tune_locations = '' %}
+
+{% for tune in site.tunes %}
+    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+    {% for tag in tune.tags %}
+        {% assign tune_tags = tune_tags | append: tag | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
+        {% unless forloop.last %}{% assign tune_tags = tune_tags | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% for location in tune.location %}
+        {% assign tune_locations = tune_locations | append: location | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
+        {% unless forloop.last %}{% assign tune_locations = tune_locations | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% unless forloop.last %}
+        {% assign tune_rhythms = tune_rhythms | append: ':' %}
+        {% assign tune_tags = tune_tags | append: ':' %}
+        {% assign tune_locations = tune_locations | append: ':' %}
+    {% endunless %}
+{% endfor %}
+
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+
+{% assign tune_tags = tune_tags | replace: '::', ':' %}
+{% assign tags = tune_tags | split: ':' | uniq | sort %}
+
+{% assign tune_locations = tune_locations | replace: '::', ':' %}
+{% assign tune_locations = tune_locations | replace: ' ', ':' %}
+{% assign locations = tune_locations | split: ':' | uniq | sort %}
+
 <div id="search_controls">
 <fieldset>
     <legend>Select from current Wellington Tunes:</legend>    
     <form id="wellington" method="get">
         <br />
         <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
-        Title:
-        <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
+		<input type="text" id="title-box" name="title" placeholder='Search'
+            value='' onkeydown="enable_button()">
         &emsp;
-        Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
-            <option value="">Any</option>
-            <option value="reel">Reel</option>
-            <option value="jig">Jig</option>
-            <option value="slip jig">Slip Jig</option>
-            <option value="polka">Polka</option>
-            <option value="hornpipe">Hornpipe</option>
-            <option value="slide">Slide</option>
-            <option value="waltz">Waltz</option>
-            <option value="barndance">Barndance</option>
-            <option value="planxty">Planxty</option>
-            <option value="mazurka">Mazurka</option>
-        </select>&emsp;
-        Tags:
+            <option value="">All Rhythms</option>
+            {% for rhythm in rhythms %}
+            {% if rhythm != '' %}
+            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+        &emsp;
         <select id="tags-box" name="tags" onChange="enable_button()">
             <option value="">All Tunes</option>
-            <option value="slowsession">Slow Session</option>
-            <option value="beginner">Beginner</option>
+            {% for tag in tags %}
+            {% if tag != '' %}
+            <option value="{{ tag }}">{{ tag | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+        &emsp;
+        <select id="location-box" name="location" onChange="enable_button()">
+            <option value="">All Locations</option>
+            {% for location in locations %}
+            {% if location != '' %}
+            <option value="{{ location }}">{{ location | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
         </select>
         </span>    
         &emsp;
