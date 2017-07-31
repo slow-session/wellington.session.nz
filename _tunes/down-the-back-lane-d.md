@@ -5,7 +5,6 @@ key: Dmix
 rhythm: jig
 date: 2017-04-19
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/down-the-back-lane-d.mp3
 mp3_source: Wynton Moore
@@ -27,10 +26,8 @@ abc: |
     ^cAG AAG | FDE FFG | Add fed | e^cA ~G3 |
     |: Add (3gfe d | ^cAB cAG | Add fed | e^cA G3 |
     Add (3gfe d | ^cAB cde | fag e^cA | AGF G3 :|
-
 ---
 Recording transposed from a version played on a flat set.
-
 Make sure you listen the the <a href="{{ site.url
 }}/tunes/down-the-back-lane.html">original recording</a> - so much
 nicer!

@@ -6,7 +6,6 @@ rhythm: hornpipe
 mode:
 date: 2016-06-08
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -26,5 +25,4 @@ abc: |
     d2Bd A2FA|BAFA D2 ED|B,DA,D DFBF|AFEF D2:|
     |:fg|afed bafd|Adfd edBd|DFAd FAde|fdgf e2fg|
     afed bafd|Adfd edBd|DFAd FAdf|eABc d2:|
-
 ---

@@ -3,11 +3,9 @@ title: Cliffs of Moher
 titleID: cliffs-of-moher.md
 key: Ador
 rhythm: jig
-mode: dor
 date: 2016-02-17
 location: Arrowtown Wellington
-set:
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/cliffs-of-moher.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -27,5 +25,4 @@ abc: |
   e2e dBA| e2e dBA| GAB dBA| EFG A3|
   efe dBA| efe dBA|GAB dBA| GAB dBd|
   efe ded| cec BeB| GAB dBA| EFG A3|
-  
 ---

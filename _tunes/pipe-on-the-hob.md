@@ -5,7 +5,6 @@ key: Ador
 rhythm: jig
 date: 2017-02-23
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/pipe-on-the-hob.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -27,5 +26,4 @@ abc: |
     g3 gea|age deg|age dBe|ABA A3:|
     |:c2c d2d|edc AGE|c3 d2d|edc A2B|
     cBc dcd|ede gab|age dBe|ABA A3:|
-
 ---

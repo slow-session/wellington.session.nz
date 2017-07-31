@@ -5,7 +5,6 @@ key: D
 rhythm: waltz
 date: 2017-05-25
 location: Wellington 
-set: 
 tags: 
 mp3_file: 
 mp3_source: 
@@ -27,5 +26,4 @@ abc: |
     "Em"e4 ef|"Em7" e2 d2 e2|"Bm"f3e fe|"F#m7"dc BA Bc|
     "G"d3 c de|"G6" dc BA Bc |"D" d3 B AF |D4 DE |
     "D"F2 d2 "G"B2 |"D" A3 F DE |"A" F2 AF EF |"D" D6:|
-
 ---

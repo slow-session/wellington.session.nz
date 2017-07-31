@@ -3,10 +3,8 @@ title: Belltable Waltz
 titleID: belltable-waltz.md
 key: D
 rhythm: waltz
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/belltable-waltz.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/belltable_waltz/
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 2
     T: Bell Table
@@ -33,4 +29,3 @@ abc: |
     B4 g2 | f<a- a2 c2 | e<d- d2 c2 | d6 :|
     
 ---
-

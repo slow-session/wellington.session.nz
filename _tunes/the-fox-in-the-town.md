@@ -5,7 +5,6 @@ key: G
 rhythm: reel
 date: 2017-02-26
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/the-fox-in-the-town.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
@@ -25,6 +24,5 @@ abc: |
     BEED EDB,A,|G,2B,G, DG,B,D|EFGB ADFA|GBAF G2:|
     |:GA|BEED B,DGE|DB,B,2 DEGA|BEE2 BEGE|EFGB A2GF|
     G3E DEDB,|G,B,DG EDB,D|EFGB ADFA|GBAF G2:|
-
 ---
 Original recording done in G# - transposed to G.

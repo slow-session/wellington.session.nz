@@ -6,7 +6,6 @@ rhythm: slip jig
 mode:
 date: 2016-07-13
 location: Arrowtown Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/foxhunters.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/foxhunt/
 abc_url: https://thesession.org/tunes/482
 source: Wellington
-transcription:
-chords: false
 abc: |
     X: 1
     T: The Foxhunter's
@@ -27,6 +24,4 @@ abc: |
     |: B3 BAG FGA | B2E E2F G2B | ABc dcB ABc | d2 D D2 F E2 D :|
     |: fdf f2d g2e | fdf f2d e2d | fdf f2d g2b | afd def e2d :|
     |: gfe dcB AGF | B2 E E2 F G2 B | ABc dcB ABc | d2 D DEF E2 D :|
-
-
 ---

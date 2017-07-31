@@ -5,7 +5,6 @@ key: D
 rhythm: jig
 date: 2017-06-29
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/billowing-waves.mp3
 mp3_source: Richard Tait
@@ -27,5 +26,4 @@ abc: |
     BAB GBG | G2 g fdc | BdB cec | d2 B cBA :|
     G2 g fdg | fdg fdc | B2 g fdc | BdB cAF |
     G2 g fdg | bag fdc | BdB cec | d2 B cBA :|
-
 ---

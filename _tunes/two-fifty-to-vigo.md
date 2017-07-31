@@ -3,10 +3,8 @@ title: Two Fifty to Vigo
 titleID: two-fifty-to-vigo.md
 key: Bmin
 rhythm: reel
-mode: 
 date: 2015-11-10
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/two-fifty-to-vigo.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +12,6 @@ mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 2
     T: 250 To Vigo
@@ -36,5 +32,3 @@ abc: |
     affd caBc-|caBc dcBA|affd caBc-|caaf feef|
     affd caBc-|caBc dcBA|fBBA Bfcd-|dfec|dcBA:|B8|]
 ---
-
-

@@ -5,7 +5,6 @@ key: Dmaj
 rhythm: reel
 date: 2017-07-28
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/last-nights-fun.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -24,5 +23,4 @@ abc: |
     |:ADFD A2AB|ADFD EFGB|ADFD A2 Bd| e2fe dBAB:|
     |df (3fff af (3fff|defd e2fe| df (3fff af (3fff|egfe dBAB|
     dff2 aff2|defd e3f| a2bf afeg|fedc BcdB|
-
 ---

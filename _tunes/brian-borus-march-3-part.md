@@ -3,10 +3,8 @@ title: Brian Boru's March
 titleID: brian-borus-march-3-part.md
 key: Aaeol
 rhythm: march
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/brian-borus-march-3-part.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/brian_borus_march/
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X: 1
     T: Brian Boru's March (3-part)
@@ -31,4 +27,3 @@ abc: |
     |:"Am" c3/2B/A a2 a|c3/2B/A a2 a|"G"B3/2A/G g2 g|B3/2A/G g2 B|
     "Am"c3/2B/A a2 a|c3/2B/A a2 b|c'ba "Em"gfe|dcB A2 B :|
 ---
-

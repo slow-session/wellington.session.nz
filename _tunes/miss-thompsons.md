@@ -3,16 +3,12 @@ title: Miss Thompson's
 titleID: miss-thompsons.md
 key: D
 rhythm: reel
-mode: D
 date: 2016-01-01
 location: Wellington
-set:
-tags: 
-mp3_url: 
+tags:
+mp3_url:
 abc_url: https://thesession.org/tunes/2264
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 2
     T: Miss Thompson's

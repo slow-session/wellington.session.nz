@@ -6,7 +6,6 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/belfast-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/
 abc_url:
 source: Wellington
-transcription: id:hn-hornpipe-46
-chords: false
 abc: |
     X:46
     T:Belfast Hornpipe, The
@@ -35,5 +32,4 @@ abc: |
     "Version of 1st part:"
     ag|(3faf df AdFA|DFAd f2ef|gbeg ceAF|GABG E2ag|
     (3faf df AdFA|DFAd f2ef|gabg eABc|d2f2 d2:|
-
 ---

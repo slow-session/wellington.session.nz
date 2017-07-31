@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2015-11-1
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/kilglass-lakes.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -25,5 +24,4 @@ abc: |
     DED DFA|BAF d2e|faf ede|1 fdd d2 D :|2 fdd d2 e ||
     ||faa fbb|afe ~f3|~f3 dBA|(3Bcd B AFE|
     DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
-
 ---

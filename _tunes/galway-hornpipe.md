@@ -3,10 +3,8 @@ title: Galway Hornpipe
 titleID: galway-hornpipe.md
 key: D
 rhythm: hornpipe
-mode: 
 date: 2016-01-01
 location: Arrowtown Wellington
-set:
 tags: slowsession beginner
 mp3_file: /mp3/galway-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: 
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X: 1
     T: The Galway
@@ -29,4 +25,3 @@ abc: |
     d2 df edAF|GFGA BdcB|AdcB AGFE|D2 CE D2:|
     
 ---
-

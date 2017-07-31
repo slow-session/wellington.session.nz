@@ -5,7 +5,6 @@ key: D
 rhythm: jig
 date: 2017-05-15
 location: Arrowtown 
-set: 
 tags: 
 mp3_file: /mp3/hag-at-the-churn.mp3
 mp3_source: Mick Hanly and Micheal O Dhomhnaill
@@ -25,5 +24,4 @@ abc: |
     |AdB c3|Add efg|AdB c2A|GEG AED|
     AdB c3|Add efg|age dcA|GEG AED||
     
-
 ---

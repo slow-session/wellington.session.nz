@@ -5,7 +5,6 @@ key: Gdor
 rhythm: reel
 date: 2017-03-06
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/the-square-at-crossmaglen.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -26,6 +25,4 @@ abc: |
     DGGA BGGF|~_E3F G^FGA|BABd _ecdB|AFcA BGG2:|
     |:~g3d Bdga|bgag fcAB|cffe f2ag|fc~c2 Ac ba|
     ~g3d Bdga|bgag fcAc |~B3G AfcA|BGAF G3d:|
-
-
 ---

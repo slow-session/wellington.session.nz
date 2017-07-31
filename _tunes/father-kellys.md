@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2016-08-11
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/father-kellys.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -26,4 +25,3 @@ abc: |
     Bc |: "G"d2 (3Bcd gdBd | d2 (3Bcd gdBd | "C"e2 ce agfe | "D"defg agfe |
     "G"d2 (3Bcd gdBd | "G"d2 (3Bcd gdBd | "C"cBAc BAGB |"D" AGFA "G"G2 :|
 ---
-

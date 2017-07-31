@@ -5,7 +5,6 @@ key: Gmix
 rhythm: slip jig
 date: 2017-03-27
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/will-you-come-down-to-limerick.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -25,5 +24,4 @@ abc: |
     [|A|de^f gaf ~g3|de^f gag fed|cde fge ~f3|cde fed cA^F|
     de^f gaf ~g3|de^f gag fga|bgg ag^f g2e|fed cAG ^FGA|]
     |:B2d cA^F ~G3|~B3 GBd cBA|BDD ADD ~G3|1 ^FGA =fed cAG:|2 ^FGA =fed cAd|]
-
 ---

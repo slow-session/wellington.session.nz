@@ -3,11 +3,9 @@ title: Toss the Feathers
 titleID: toss-the-feathers-d.md
 key: Dmix
 rhythm: reel
-mode: mix
 date: 2017-04-19
 location: Wellington
-set:
-tags: 
+tags:
 mp3_file: /mp3/toss-the-feathers-d.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

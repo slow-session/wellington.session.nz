@@ -3,10 +3,8 @@ title: Sailor's Bonnet
 titleID: sailors-bonnet.md
 key: D
 rhythm: reel
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/sailors-bonnet.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/sailors_bonnet/
 abc_url: https://thesession.org/tunes/570
 source: Wellington
-transcription: 
 abc: |
     X: 1
     T: The Sailor's Bonnet
@@ -28,4 +25,3 @@ abc: |
     
     
 ---
-

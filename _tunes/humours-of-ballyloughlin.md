@@ -3,10 +3,8 @@ title: Humours of Ballyloughlin
 titleID: humours-of-ballyloughlin.md
 key: Dmix
 rhythm: jig
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/humours-of-ballyloughlin.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_424_4_lydia_warnock
 abc_url: https://thesession.org/tunes/210
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X: 1
     T: The Humours Of Ballyloughlin
@@ -33,4 +29,3 @@ abc: |
     ABA dAG|~F3 GEA|DED DFA|1 DED D2 A:|2 DED D3||
     
 ---
-

@@ -3,10 +3,8 @@ title: Road to Lisdoonvarna
 titleID: road-to-lisdoonvarna.md
 key: Edor
 rhythm: slide
-mode: 
 date: 2016-08-19
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/road-to-lisdoonvarna.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +12,6 @@ mp3_source: Ballyscully
 mp3_url: http://www.burginguitars.co.nz/recordings/ballyscully-live/
 abc_url: 
 source: Wellington
-transcription: Jaya R. Carl, March 14, 2004
-chords: true
 abc: |
     X:161
     T:Road To Lisdoonvarna, The
@@ -29,4 +25,3 @@ abc: |
     
     
 ---
-

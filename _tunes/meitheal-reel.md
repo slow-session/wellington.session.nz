@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2016-12-5
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/meitheal-reel.mp3
 mp3_licence: "© Connie O'Connell. All Rights Reserved."

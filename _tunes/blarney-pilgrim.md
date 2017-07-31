@@ -3,15 +3,13 @@ title: Blarney Pilgrim
 titleID: blarney-pilgrim.md
 key: Dmix
 rhythm: jig
-mode: mix
 date: 2016-5-4
 location: Wellington
-set:
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/blarney-pilgrim.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/blarney_pilgrim/ 
+mp3_url: https://comhaltas.ie/music/detail/blarney_pilgrim/
 source: Wellington
 abc_url: https://thesession.org/tunes/5
 abc: |

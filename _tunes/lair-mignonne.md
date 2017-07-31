@@ -5,7 +5,6 @@ key: A
 rhythm: barndance
 date: 2017-05-26
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/lair-mignonne.mp3
 mp3_source:
@@ -23,5 +22,4 @@ abc: |
     K: A
     EAB ||: c>cce cBAB | c>cce cBAB | F3A E3 c ||1 BAGA BEAB :||2 BAGB ABce ||
     |:f>ffa fece| f>ffa fecA | F>FF A E3c ||1 BAGA BEce :||2 BAGB AEAB |]
-
 ---

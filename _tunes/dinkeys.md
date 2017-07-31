@@ -5,7 +5,6 @@ key: Amix
 rhythm: reel
 date: 2017-05-29
 location: 
-set: 
 tags: 
 mp3_file: 
 mp3_source: 
@@ -25,5 +24,4 @@ abc: |
     cdBc ABcd|egfg edBd|gfgd efed|c2B2 A2:|
     |:eg|aAAA aAbA|aAAA agef|gBBB gBaB|gBBB gfeg|
     aAAA aAbA|aAAA agef|gfgd efed|cdBc A2:|
-
 ---

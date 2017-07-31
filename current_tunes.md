@@ -10,33 +10,53 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
 
 <div id="audioPlayer"></div>
 
+{% assign tune_rhythms = '' %}
+{% assign tune_tags = '' %}
+
+{% for tune in site.tunes %}
+    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+    {% for tag in tune.tags %}
+        {% assign tune_tags = tune_tags | append: tag | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
+        {% unless forloop.last %}{% assign tune_tags = tune_tags | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% unless forloop.last %}
+        {% assign tune_rhythms = tune_rhythms | append: ':' %}
+        {% assign tune_tags = tune_tags | append: ':' %}
+    {% endunless %}
+{% endfor %}
+
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+
+{% assign tune_tags = tune_tags | replace: '::', ':' %}
+{% assign tags = tune_tags | split: ':' | uniq | sort %}
+
 <fieldset>
     <legend>Select from current Wellington Tunes:</legend>    
     <form id="wellington" method="get">
         <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
+        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">  
+
         Title:
         <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
         &emsp;
         Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">Any</option>
-            <option value="reel">Reel</option>
-            <option value="jig">Jig</option>
-            <option value="slip jig">Slip Jig</option>
-            <option value="polka">Polka</option>
-            <option value="hornpipe">Hornpipe</option>
-            <option value="slide">Slide</option>
-            <option value="waltz">Waltz</option>
-            <option value="barndance">Barndance</option>
-            <option value="planxty">Planxty</option>
-            <option value="mazurka">Mazurka</option>
+            {% for rhythm in rhythms %}
+            {% if rhythm != '' %}
+            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
         </select>&emsp;
         Tags:
         <select id="tags-box" name="tags" onChange="enable_button()">
             <option value="">All Tunes</option>
-            <option value="slowsession">Slow Session</option>
-            <option value="beginner">Beginner</option>
+            {% for tag in tags %}
+            {% if tag != '' %}
+            <option value="{{ tag }}">{{ tag | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
         </select>
         </span>    
         &emsp;
@@ -57,23 +77,20 @@ We've learned many of these tunes during the "Slow Session" part of the evening 
       {% assign tuneID = 3000 %}
       {% assign tunes =  site.tunes | sort: 'title' %}
       {% for tune in tunes %}
-          {% if tune.location contains "Wellington" %}
-              {% assign tuneID = tuneID | plus: 1 %}
-              "{{ tuneID }}": {
-                  "title": "{{ tune.title | xml_escape }}",
-                  "tuneID": "{{ tuneID }}",
-                  "key": "{{ tune.key | xml_escape }}",
-                  "mode": "{{ tune.mode | xml_escape }}",
-                  "rhythm": "{{ tune.rhythm | xml_escape }}",
-                  "location": "{{ tune.location | xml_escape }}",
-                  "tags": "{{ tune.tags | array_to_sentence_string }}",
-                  "url": "{{ tune.url | xml_escape }}",
-                  {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-                  "abc": ""
-                  {% else %}"mp3": "",
-                  "abc": {{ tune.abc | jsonify }}{% endif %}
-              }{% unless forloop.last %},{% endunless %}
-          {% endif %}
+        {% assign tuneID = tuneID | plus: 1 %}
+        "{{ tuneID }}": {
+        "title": "{{ tune.title | xml_escape }}",
+        "tuneID": "{{ tuneID }}",
+        "key": "{{ tune.key | xml_escape }}",
+        "rhythm": "{{ tune.rhythm | xml_escape }}",
+        "location": "{{ tune.location | xml_escape }}",
+        "tags": "{{ tune.tags | array_to_sentence_string }}",
+        "url": "{{ tune.url | xml_escape }}",
+        {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+        "abc": ""
+        {% else %}"mp3": "",
+        "abc": {{ tune.abc | jsonify }}{% endif %}
+        }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
 </script>

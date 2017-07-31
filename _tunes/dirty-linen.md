@@ -5,7 +5,6 @@ key: Amix
 rhythm: slip jig
 date: 2017-06-29
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/dirty-linen.mp3
 mp3_source: Richard Tait
@@ -26,6 +25,5 @@ abc: |
     A3 edB efg|A3 edB d2B| A3 edB efg |fed edB d2e|
     fef afd efg| fef afd g3| fef afd efg |fed edB d2e|
     fef afd efg| fef afd g3| fef afd efg |fed edB dBG|
-
 ---
 Also known as "Last Night's Fun" slip jig in Ddor

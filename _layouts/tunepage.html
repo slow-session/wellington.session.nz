@@ -9,13 +9,17 @@ layout: page
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
-<div id="showPlayer" class="audioplayer_left"></div>
+<div id="showPlayer"></div>
 
 {% else %}
 <!-- build the abc player for each tune-->
-<fieldset>
-    <strong>No recording available - use the ABC player below the music to hear the tune</strong>
-</fieldset>
+<fieldset style="width:800px;float:left;">
+    <strong><p>A recording for this tune is not available yet. Qualify for glory by
+        providing one! Make a recording of yourself or your session playing this
+        tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>.</p>
+
+Use the ABC player below the music to hear the tune.
+</strong></fieldset>
 {% endif %}
 
 <div class="abc">
@@ -24,18 +28,9 @@ layout: page
 
 {{ content }}
 
-{% unless page.mp3_file %}
-<fieldset>
-    <strong>A recording for this tune is not available yet. Qualify for glory by
-        providing one! Make a recording of yourself or your session playing this
-        tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
-</strong></fieldset>
-<br />
-{% endunless %}
-
 <h2>Play the ABC version</h2>
 <div id="textAreas"></div>
-<div id="ABCplayer" class="audioplayer_left"></div>
+<div id="ABCplayer"></div>
 
 <form>
     <input type="button" value="Show ABC Source" onclick="toggle(this);">
@@ -96,13 +91,13 @@ layout: page
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3playerWide(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}');
+        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
         tuneId++;
         {% endif %}
 
         ABCJS.renderAbc('notation', MyTune);
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneId);
+        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage');
     });
 </script>

@@ -3,10 +3,8 @@ title: Christy Barry's No 2
 titleID: christy-barrys-no-2.md
 key: G
 rhythm: jig
-mode: Major
 date: 2016-03-29
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/christy-barrys-no-2.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -25,5 +23,4 @@ abc: |
   EDG EDB,|DEG B3|dBd gfe|1 dBA G3:||2 dBa g3||!
   |:gab age|deg B3|gab gab|dBd e2d|!
   gab age|deg B3|dBd gfe|1 dBa g3:||2 dBA G3|!
-
 ---

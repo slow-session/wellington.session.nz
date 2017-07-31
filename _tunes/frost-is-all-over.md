@@ -3,10 +3,8 @@ title: Frost is All Over
 titleID: frost-is-all-over.md
 key: D
 rhythm: jig
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/frost-is-all-over.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/frost_is_all_over
 abc_url: trillian.mit.edu
 source: Wellington
-transcription: John Chambers jc:trillian.mit.edu
-chords: true
 abc: |
     X: 1
     T: The Frost is All Over
@@ -45,4 +41,3 @@ abc: |
     | "D"f>ga "A7"efg \
     | "D"fdd d2 :|
 ---
-

@@ -3,10 +3,8 @@ title: If There Weren’t Any Women in the World-A
 titleID: if-there-werent-any-women-in-the-world-a.md
 key: A
 rhythm: barndance
-mode: 
 date: 2016-4-6
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/if-there-werent-any-women-in-the-world-a.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_254_2_mac_gabhann_family/
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 10
     T: If We Hadn't Any Women In The World
@@ -28,4 +24,3 @@ abc: |
     |: (3cde |f2- f>g a3 g | f2 e2 e2 A>B | c>e^d>e f>ec>A | B4- B2 c>d |
     e2 e>c A2 c>A | F2 =F2 E2 A>B | c2 (3cde B2 (3BAG | A4- A>A :|
 ---
-

@@ -1,13 +1,11 @@
 ---
 title: Cup of Tea
 titleID: cup-of-tea.md
-key: E Dor
+key: Edor
 rhythm: reel
-mode: dor
 date: 2016-5-4
 location: Arrowtown Wellington
-set:
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/cup-of-tea.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

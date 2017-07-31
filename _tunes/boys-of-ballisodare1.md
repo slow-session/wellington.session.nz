@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/boys-of-ballisodare1.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/
 abc_url:
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X:57
     T:Boys of Ballisodare, The
@@ -31,5 +28,4 @@ abc: |
     ~g3a bc'ba|gfga be~e2|bgaf gedB|AcBA GED2||
     Bd~d2 Bdgd|Bdgd BA~A2|~B3 d e2dB|AcBA GED2|
     Bd~d2 Bdgd|Bdgd BA~A2|eB~B2 eBdB|AcBA GED2||
-
 ---

@@ -30,10 +30,10 @@ var ABCdurationP;
 // Select a timbre that sounds like an electric piano.
 var inst = new Instrument('string');
 
-function createABCplayer (tuneID) {
+function createABCplayer (tuneID, playerClass) {
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    abcPlayer += '  <div class="audioplayer">';
+    abcPlayer += '  <div class="' + playerClass + '">';
     abcPlayer += '      <button id="pButton' + tuneID + '" class="playButton"';
     abcPlayer += '          onclick="playABC(ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value, APos' + tuneID + ' , Dur' + tuneID + ')">';
     abcPlayer += '          <div id="APos' + tuneID + '" class="audioPos"></div>';

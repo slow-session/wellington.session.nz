@@ -5,7 +5,6 @@ key: Ador
 rhythm: hornpipe
 date: 2017-03-09
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/humours-of-tullycrine.mp3
 mp3_source: <a href="http://www.irishmusic.org.nz/">John McEvoy @ Ceol Aneas 2016</a>
@@ -25,6 +24,4 @@ abc: |
     EAAB cBcd|eaag e2dB|c2Ac BAGA|1BAAG A3:|2BAAG A2Bd||
     |:eaab aged|eaab aged|egga ged2|dgga gedB|
     A3B B3d|eaag e2dB|c2Ac BAGA|1BAAG A2Bd:|2BAAG A3||
-
-
 ---

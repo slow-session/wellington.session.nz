@@ -6,16 +6,13 @@ rhythm: hornpipe
 mode:
 date: 2016-2-3
 location: Arrowtown Wellington
-set:
-tags: slowsession aff
+tags: slowsession
 mp3_file: /mp3/plains-of-boyle.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/plains_of_boyle/
 abc_url: https://thesession.org/tunes/652
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 1
     T: The Plains Of Boyle

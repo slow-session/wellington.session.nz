@@ -6,16 +6,13 @@ rhythm: jig
 mode:
 date: 2016-12-7
 location: Wellington
-set:
-tags: slowsession aff
+tags: slowsession
 mp3_file: /mp3/caileach-an-airgid.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/caileach_an_airgid/
 abc_url:
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 1
     T: Caileach an Airgid (The Hag With The Money)

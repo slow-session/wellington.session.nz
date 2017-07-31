@@ -5,7 +5,6 @@ key: Bm
 rhythm: reel
 date: 2017-02-09
 location: Wellington 
-set:
 tags: 
 mp3_file: /mp3/the-curlew.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -25,5 +24,4 @@ abc: |
     fB~B2 Bcde|fece ~a3f|~=g3e ~f3e|dBBA FB~B2:|
     |:(3Bcd cd BF~F2|DF~F2 Bcdf|ecBc AE~E2|CEAB cedc|
     (3Bcd cd BF~F2|DF~F2 Bcdf|ecBA fcec|dcBA FB~B2:|
-
 ---

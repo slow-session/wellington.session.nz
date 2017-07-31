@@ -35,50 +35,12 @@ function createAudioPlayer() {
     return (pagePlayer);
 }
 
-function createMP3player(tuneID, mp3url) {
+function createMP3player(tuneID, mp3url, playerClass) {
     var mp3player = '';
 
     // build the MP3 player for each tune
     mp3player += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    mp3player += '    <div id="audioplayer' + tuneID + '" class="audioplayer">';
-    mp3player += '        <button id="pButton' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\', APos' + tuneID + ', Dur' + tuneID + ',  RS' + tuneID +')">';
-    mp3player += '            <div id="APos' + tuneID + '" class="audioPos"></div>';
-    mp3player += '            <div id="Dur' + tuneID + '" class="durationP"></div>';
-    mp3player += '        </button>';
-    mp3player += '        <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="audioControl" min="0" max="400" value="0"';
-    mp3player += '            oninput="adjustAudioPosition(audioplayer' + tuneID + ', value/400)"';
-    mp3player += '            onchange="setAudioPosition(audioplayer' + tuneID + ', value/400, B1' + tuneID + ', B2' + tuneID + ')"/>';
-    mp3player += '        <div id="speedControl' + tuneID + '" class="speedControl">';
-    mp3player += '            <span title="Adjust playback speed with slider">';
-    mp3player += '               <input name="flevel" id="RS' + tuneID + '" type="range" min="50" max="120" value="100"';
-    mp3player += '                  onchange="setPlaySpeed(audioplayer' + tuneID + ', value/100)" />';
-    mp3player += '               <output name="level">100</output>%';
-    mp3player += '            </span>';
-    mp3player += '        </div>';
-    mp3player += '        <div class="loopControl">';
-    mp3player += '            <span title="Play tune, select loop starting point, then select loop end point">';
-    mp3player += '               <input type="button" class="loopButton"id="B1' + tuneID + '" value=" Loop Start "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',0,B1' + tuneID + ', B2' + tuneID + ')" />';
-    mp3player += '               <input type="button" class="loopButton" id="B2' + tuneID + '" value=" Loop End "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',1,B1' + tuneID + ', B2' + tuneID + ')" />';
-    mp3player += '               <input type="button" class="loopButton" value=" Reset "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',2,B1' + tuneID + ', B2' + tuneID + ')" />';
-    mp3player += '            </span>';
-    mp3player += '        </div>';
-    mp3player += '        <p class="clear"> </p>';
-    mp3player += '    </div>';
-    mp3player += '</form>';
-
-    return (mp3player);
-}
-
-function createMP3playerWide(tuneID, mp3url) {
-    var mp3player = '';
-
-    // build the MP3 player for each tune
-    mp3player += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    mp3player += '    <div id="audioplayer' + tuneID + '" class="audioplayer_wide">';
+    mp3player += '    <div id="audioplayer' + tuneID + '" class="' + playerClass + '">';
     mp3player += '        <button id="pButton' + tuneID + '" class="playButton"';
     mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\', APos' + tuneID + ', Dur' + tuneID + ',  RS' + tuneID +')">';
     mp3player += '            <div id="APos' + tuneID + '" class="audioPos"></div>';

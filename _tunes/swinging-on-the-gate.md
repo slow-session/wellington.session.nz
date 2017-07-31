@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/swinging-on-the-gate.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url:
 abc_url: https://thesession.org/tunes/236
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 1
     T: Swinging on the Gate
@@ -27,5 +24,4 @@ abc: |
     gedB G2AB|cABG AGEG|cABG AGEG|DGGF GABd:|
     |:~g3a bgaf|gfed cBAG|EAAB cBAG|(3EFG AB cdef|
     ~g3a bgaf|gfed cBAB|cABG AGEG|DGGF GABd:|
-
 ---

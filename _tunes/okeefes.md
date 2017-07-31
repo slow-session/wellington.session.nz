@@ -1,12 +1,10 @@
 ---
 title: O'Keefe's Slide
 titleID: okeefes.md
-key: A
+key: Ador
 rhythm: slide
-mode: dor
 date: 2016-12-09
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/okeefes.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/
 abc_url: https://thesession.org/tunes/53
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
      X: 1
      T: O'Keefe's

@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2017-01-12
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/paddy-faheys-reel-6.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
@@ -27,5 +26,4 @@ abc: |
    |:dg ~g2 dgBg|dgag fdcA|c~=f3 cfAf|
    c=fag ^fdcA|d~g3 dgBg|dgag fdef|
    g2 agfd (3efg|1 fdcA GABc:|2 fdcA G2 GA||
-
 ---

@@ -5,7 +5,6 @@ key: G
 rhythm: reel
 date: 2017-02-09
 location: Wellington 
-set:
 tags: 
 mp3_file: /mp3/galway-reel.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
@@ -25,5 +24,4 @@ abc: |
     (3EFE DE GEDB,|(3DED B,E DG,B,D|E2GE DEGA|(3Bcd AB G3:||
     |:B|dG (3GAG (3EFG DG|B,DGB dGBd|ec (3cdc AcFA|DFAd fed^c|
     dG (3GAG (3EFG DG|B,DGB dGBd|ec (3cdc ecfe|dBAB G3:||
-
 ---

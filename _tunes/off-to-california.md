@@ -6,7 +6,6 @@ rhythm: hornpipe
 mode:
 date: 2016-5-11
 location: Arrowtown Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/off-to-california.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

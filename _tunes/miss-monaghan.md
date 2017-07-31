@@ -5,7 +5,6 @@ key: Dmaj
 rhythm: reel
 date: 2017-04-24
 location: Wellington 
-set:
 tags: 
 mp3_file: /mp3/miss-monaghan.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -26,5 +25,4 @@ abc: |
     |: faab afdf | gefd edBc | ~d3B ABde | fede fee2 |
     faab afdf | g2fd edBc | d2dB ABdB | AFEG FDD2 :|
     
-
 ---
