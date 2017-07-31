@@ -25,12 +25,10 @@ If you don't find the set you're looking for you can put tunes together and try 
     <form id="wellington" method="get">
         <br />
         <span title="Filter the Sets Archive for sets by title or by type such as 'reel', 'jig', 'polka'.">        
-        Title:
-        <input type="text" id="title-box" name="title" value='' onkeydown="enable_button()">
+        <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="enable_button()">
         &emsp;
-        Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
-            <option value="">Any</option>
+            <option value="">Any Rhythm</option>
             {% for rhythm in rhythms %}
             {% if rhythm != '' %}
             <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
