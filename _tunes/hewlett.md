@@ -14,8 +14,6 @@ mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
 mp3_url: http://toraigh.com/slowsessions/Hewlett.mp3
 abc_url:
 source: Wellington
-transcription: 1998 by John Chambers trillian.mit.edu
-chords: true
 abc: |
     X: 1
     T: Hewlett

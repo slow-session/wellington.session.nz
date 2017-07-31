@@ -10,6 +10,16 @@ If you don't find the set you're looking for you can put tunes together and try 
 
 <div id="audioPlayer"></div>
 
+{% assign tune_rhythms = '' %}
+{% for tune in site.tunes %}
+{% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+{% unless forloop.last %}
+{% assign tune_rhythms = tune_rhythms | append: ':' %}
+{% endunless %}
+{% endfor %}
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+
 <fieldset>
     <legend>Select from current Wellington Sets:</legend>    
     <form id="wellington" method="get">
@@ -21,16 +31,11 @@ If you don't find the set you're looking for you can put tunes together and try 
         Rhythm:
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">Any</option>
-            <option value="reel">Reel</option>
-            <option value="jig">Jig</option>
-            <option value="slip jig">Slip Jig</option>
-            <option value="polka">Polka</option>
-            <option value="hornpipe">Hornpipe</option>
-            <option value="slide">Slide</option>
-            <option value="waltz">Waltz</option>
-            <option value="barndance">Barndance</option>
-            <option value="planxty">Planxty</option>
-            <option value="mazurka">Mazurka</option>
+            {% for rhythm in rhythms %}
+            {% if rhythm != '' %}
+            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
+            {% endif %}
+            {% endfor %}
         </select>
         </span>    
         &emsp;
@@ -58,7 +63,7 @@ If you don't find the set you're looking for you can put tunes together and try 
               "url": "{{ set.url | absolute_url }}",
               "setTunes": "{{ set.tunes | xml_escape }}",
               "setTitles": "{% for setTune in set.tunes %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{{ tune.title | xml_escape }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
-              "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}}{{ tune.mode}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+              "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
               "tuneSources": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{% if tune.mp3_file %}{{ tune.mp3_file | prepend: site.mp3_host }}{% else %}{{ tune.abc | uri_escape }}{% endif %}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
           },
           {% assign setID = setID | plus: 1 %}

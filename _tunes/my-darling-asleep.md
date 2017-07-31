@@ -3,10 +3,8 @@ title: My Darling Asleep
 titleID: my-darling-asleep.md
 key: D
 rhythm: jig
-mode: 
 date: 2016-09-28
 location: Arrowtown Wellington
-set:
 tags: slowsession beginner
 mp3_file: /mp3/my-darling-asleep.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: 
 abc_url: 
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 4
     T: My Darling Asleep
@@ -29,4 +25,3 @@ abc: |
     fdd cAA|BAG A2G|FAA def|gec d2:|
     
 ---
-

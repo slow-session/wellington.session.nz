@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2016-01-01
 location: Arrowtown Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/blackthorn-stick.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/kinnegad_slashers_blackthorn_stick_scotsman_over_the_border/
 abc_url: https://thesession.org/tunes/702
 source: Wellington
-transcription:
 abc: |
     X: 1
     T: The Blackthorn Stick
@@ -26,6 +24,4 @@ abc: |
     gfg age|dBG AGE|DGG FGA|BGG G2:|
     |:d|edd gdd|edd gdd|e2 e gfg|edB A2 d|
     gfg age|dBG AGE|DGG FGA|BGG G2:|
-
-
 ---

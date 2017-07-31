@@ -3,10 +3,8 @@ title: Fisher's Hornpipe
 titleID: fishers-hornpipe.md
 key: D
 rhythm: hornpipe
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/fishers-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +12,6 @@ mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/872
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X: 9
     T: Fisher's Hornpipe
@@ -30,4 +26,3 @@ abc: |
     "G" AFDF A2 GA | "D" BdcB "A" AGFE | "D"D2 d2 D2 :|
     
 ---
-

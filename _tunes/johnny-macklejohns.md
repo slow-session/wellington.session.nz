@@ -3,7 +3,6 @@ title: Johnny Macklejohn's
 titleID: johnny-macklejohns.md
 key: D
 rhythm: reel
-mode: major
 date: 2016-12-16
 location: Arrowtown Wellington
 tags: slowsession

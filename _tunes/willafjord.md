@@ -3,10 +3,8 @@ title: Willafjord
 titleID: willafjord.md
 key: G
 rhythm: reel
-mode: 
 date: 2015-12-21
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/willafjord.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +12,6 @@ mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/857
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 1
     T: Willafjord
@@ -29,4 +25,3 @@ abc: |
     f2d f2f df | gdaf gfed | ABcd efge | f2d2 d2 :|
     
 ---
-

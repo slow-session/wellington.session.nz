@@ -5,7 +5,6 @@ key: G
 rhythm: jig
 date: 2017-02-14
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/shoemakers-fancy.mp3
 mp3_source: Adrian Barker and Ben Stephenson

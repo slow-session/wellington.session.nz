@@ -3,10 +3,8 @@ title: An Londubh
 titleID: an-londubh.md
 key: D
 rhythm: hornpipe
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/an-londubh.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +12,6 @@ mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/4508
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X: 1
     T: An Londubh
@@ -32,4 +28,3 @@ abc: |
     dcAF G2 A/B/c|d2 AG (3FGF D2|FGAF GBAG|1 (3FGF D2 DEFG :|2 (3FGF D2 DFGA||
     
 ---
-

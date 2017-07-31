@@ -3,10 +3,8 @@ title: Will You Come Home With Me
 titleID: will-you-come-home-with-me.md
 key: G
 rhythm: jig
-mode: 
 date: 2016-11-09
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/will-you-come-home-with-me.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://archive.comhaltas.ie/tracks/14265
 abc_url: 
 source: Wellington
-transcription: 
-chords: 
 abc: |
     X: 1
     T: Will You Come Home With Me

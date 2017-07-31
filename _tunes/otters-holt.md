@@ -1,12 +1,10 @@
 ---
 title: Otter's Holt
 titleID: otters-holt.md
-key: B
+key: Bm
 rhythm: reel
-mode: minor
 date: 2016-4-11
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/otters-holt.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_480_16a_group_of_tutors/
 source: Wellington
 abc_url: https://thesession.org/tunes/636
-chords: false
 abc: |
     X: 3
     T: The Otter's Holt

@@ -6,7 +6,6 @@ rhythm: reel
 mode:
 date: 2016-12-7
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/christmas-eve.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/fs3/wip/ChristmasEve.mp3
 abc_url:
 source: Wellington
-transcription: unknown
-chords: true
 abc: |
     X:53
     T:Christmas Eve
@@ -35,5 +32,4 @@ abc: |
     |"G"(BABd) (edeg)|"Em"(abge) g2 (eg)|"C"(abge) d2 (BG)|1"D"(ABGE) "G"G2 (GA):|2"D"(ABGE) "G"G2 (dc)||
     |:"G"B (G{A}G{F}G) (BGBd)|"C"(egfg) (egdc)|"G"B(G{A}G{F}G) (DGBG)|"D"E(A{B}A{G}A) F(Adc)|
     |"G"B (G{A}G{F}G) (BGBd)|"C"(egfg) (egdg)|"G"(bgag) (egdB)|"D"(ABGE) "G"G2 dc):|
-
 ---

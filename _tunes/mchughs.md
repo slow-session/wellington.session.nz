@@ -3,10 +3,8 @@ title: McHugh's
 titleID: mchughs.md
 key: G
 rhythm: jig
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/mchughs.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: 
 abc_url: https://thesession.org/tunes/2664
 source: Wellington
-transcription: 
-chords: false
 abc: |
     X: 1
     T: McHugh's
@@ -29,4 +25,3 @@ abc: |
     B2B GAB | c3 B3 | AGE DEG |1 AGF G2 c :|2 AGF G3 ||
     
 ---
-

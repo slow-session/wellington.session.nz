@@ -3,10 +3,8 @@ title: Toss the Feathers
 titleID: toss-the-feathers-em.md
 key: Edor
 rhythm: reel
-mode: dor
 date: 2016-04-18
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/toss-the-feathers-em.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

@@ -5,7 +5,6 @@ key: G
 rhythm: jig
 date: 2017-05-15
 location: Wellington 
-set: 
 tags: 
 mp3_file: /mp3/saddle-the-pony.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -26,5 +25,4 @@ abc: |
     efe edB | def gfg | ege edB | dBA ABd |
     efe edB | def gfg | e/f/ge dBA | BAF G2 :|
     
-
 ---

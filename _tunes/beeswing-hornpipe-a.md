@@ -3,10 +3,8 @@ title: Beeswing Hornpipe A
 titleID: beeswing-hornpipe-a.md
 key: A
 rhythm: hornpipe
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/beeswing-hornpipe-a.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: http://media.comhaltas.ie/audio/cl232/cl232_4.mp3
 abc_url: trillian.mit.edu
 source: Wellington
-transcription: 2012 John Chambers jc:trillian.mit.edu
 abc: |
     X:21333
     T:Beeswing Hornpipe (A)
@@ -32,8 +29,6 @@ abc: |
     |: (ed) |\
     cAec aecA | BGeB geBG | FDAF dBcA | BGAF E2(FG) |
     Aeca GeBg | DAFd CAEc | (DF)Bd (cB)AG | B2A2 A2 :|
-
     
     
 ---
-

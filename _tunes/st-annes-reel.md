@@ -3,10 +3,8 @@ title: St Anne's Reel
 titleID: st-annes-reel.md
 key: D
 rhythm: reel
-mode: Major
 date: 2016-4-11
 location: Arrowtown Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/st-annes-reel.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -27,4 +25,3 @@ abc: |
     |:f2fg fedc|Bggf g2gf|edcB ABce|baa^g abag|
     f2fg fedc|Bggf g2gf|edcB ABcd|eddc d2 de:| 
 ---
-

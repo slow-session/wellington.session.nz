@@ -5,7 +5,6 @@ key: D
 rhythm: polka
 date: 2017-05-14
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/toms-blue-boat.mp3
 mp3_source: Emily Griffiths
@@ -26,5 +25,4 @@ abc: |
     |: e>f  ed | Bc dB | A>B  AG | FA df |
     |1 e>f ed | Bc  dB | AG  FD | E2E2 :|
     |2 gf ed | Be dB | AG FD | E2E2 |]
-
 ---

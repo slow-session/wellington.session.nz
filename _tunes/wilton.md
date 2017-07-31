@@ -5,7 +5,6 @@ key: G
 rhythm: jig
 date: 2017-05-17
 location: Wellington 
-set: 
 tags: 
 mp3_file: /mp3/wilton.mp3
 mp3_source: Richard Tait
@@ -29,5 +28,4 @@ abc: |
     d2d dcB|c2c cdc|B2B BAG| AFD D2C|
     B,2D DB,D|G2A BAB|cBA BAG|AGF (G2G)||
     
-
 ---

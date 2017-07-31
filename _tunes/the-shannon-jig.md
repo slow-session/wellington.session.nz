@@ -3,7 +3,6 @@ title: The Shannon Jig
 titleID: the-shannon-jig.md
 key: A
 rhythm: jig
-mode: major
 date: 2016-01-01
 location:
 tags:
@@ -13,8 +12,6 @@ mp3_source: <a href="http://www.irishmusic.org.nz/">Cian Kissane @ Ceol Aneas 20
 mp3_url: 
 abc_url:
 source: Wellington
-transcription: Ted Cizadlo
-chords: false
 abc: |
     X: 1
     T: The Shannon Jig

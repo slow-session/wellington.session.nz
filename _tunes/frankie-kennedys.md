@@ -5,7 +5,6 @@ key: D
 rhythm: jig
 date: 2017-07-27
 location: Wellington 
-set: 
 tags: 
 mp3_file: /mp3/frankie-kennedys.mp3
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
@@ -27,5 +26,4 @@ abc: |
     fdA dfa|fga b2a|geg fdf|ecA dcB|
     |:A2d dcd|Bee ede|fdB AFA|BAF DFG|
     A2d dcd|Bee ede|fdB ABc|1dfe dcB:|2dfe d||
-
 ---

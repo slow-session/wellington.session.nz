@@ -5,7 +5,6 @@ key: A
 rhythm: jig
 date: 2017-05-26
 location: Wellington
-set:
 tags:
 mp3_file:
 mp3_source:
@@ -30,5 +29,4 @@ abc: |
     f2a e2 Ae | BAB c2 ce | dB cA Bcd | cA BG Ace |
     f2a e2 Ae | BAB c2 ce | dB cA edc | fd f/2g/2a gec |
     d2f e2 Ae | BAB c2 ce | dB cA Bcd | cA BG AcB ||
-
 ---

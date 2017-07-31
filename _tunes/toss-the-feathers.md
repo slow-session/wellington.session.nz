@@ -1,9 +1,8 @@
 ---
 title: Toss the Feathers
 titleID: toss-the-feathers.md
-key: E
+key: Edor
 rhythm: reel
-mode: dor
 date: 2016-04-18
 location: Wellington
 tags: slowsession

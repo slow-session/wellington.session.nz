@@ -5,7 +5,6 @@ key: A
 rhythm: polka
 date: 2017-05-25
 location: Wellington
-set:
 tags: 
 mp3_file:
 mp3_source:
@@ -25,5 +24,4 @@ abc: |
     c>B cA | ce fe | f/g/a/f/ ec | BA A2 :|
     |: A>B ce | ae fe | A>B ce | fc e2 |
     A>B ce | ae fe | f/g/a/f/ ec | BA A2 :|
-
 ---

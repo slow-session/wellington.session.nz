@@ -3,10 +3,8 @@ title: Red Tom of the Hills
 titleID: red-tom-of-the-hills.md
 key: Gdor
 rhythm: reel
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags: 
 mp3_file: /mp3/red-tom-of-the-hills.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/cl398_mp3/cl398_2.mp3
 abc_url: https://thesession.org/tunes/5166
 source: Wellington
-transcription:
 abc: |
     X: 1
     T: Red Tom Of The Hills
@@ -28,4 +25,3 @@ abc: |
     d~g3 =b~g3|dG=Bd gdBd|f2 a^f ~g3a|1 fdcA G2 Bd:|2 fdcA G3 F||
     
 ---
-

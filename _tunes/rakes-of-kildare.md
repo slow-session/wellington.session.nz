@@ -5,7 +5,6 @@ key: Ador
 rhythm: jig
 date: 2017-02-14
 location: Wellington
-set:
 tags: slowsession 
 mp3_file: /mp3/rakes-of-kildare.mp3
 mp3_source: Adrian Barker and Ben Stephenson
@@ -26,6 +25,4 @@ abc: |
     aea aea| aea b2a|g2g efg|dBA G3|
     [1 aea aea| aea b2a| gfe dBG|ABA A3:|
     [2 EAA AGA| Bcd e2f|gfe dBG| ABA A3||
-
-
 ---

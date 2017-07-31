@@ -5,7 +5,6 @@ key: G
 rhythm: jig
 date: 2017-07-26
 location: Wellington
-set:
 tags: slowsession tuneoftheweek
 mp3_file: /mp3/bundle-and-go.mp3
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."

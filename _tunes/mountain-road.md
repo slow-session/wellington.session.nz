@@ -3,10 +3,8 @@ title: Mountain Road
 titleID: mountain-road.md
 key: D
 rhythm: reel
-mode: 
 date: 2016-1-26
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/mountain-road.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/mountain_road/
 abc_url: https://thesession.org/tunes/68
 source: Wellington
-transcription: unknown
-chords: false
 abc: |
     X: 2
     T: The Mountain Road

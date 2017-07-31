@@ -3,10 +3,8 @@ title: John Ryans
 titleID: john-ryans.md
 key: D
 rhythm: polka
-mode: 
 date: 2016-09-28
 location: Wellington
-set:
 tags: slowsession beginner
 mp3_file: /mp3/john-ryans.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,7 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/armagh_polka
 abc_url: https://thesession.org/tunes/441
 source: Wellington
-transcription: unknown
 abc: |
     X: 3
     T: John Ryan's
@@ -28,4 +25,3 @@ abc: |
     fd- de/f/ | g/a/g/f ed/e/ | fd ed/c/ |[1 d2 d>e :|[2 d2 d2 |]
     
 ---
-

@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2016-01-01
 location: Wellington
-set:
 tags: slowsession focustune
 mp3_file: /mp3/brid-harpers.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +13,6 @@ mp3_source: Wellington Session
 mp3_url: Wellington Session
 abc_url: https://thesession.org/tunes/2376
 source: Wellington
-transcription:
-chords: false
 abc: |
     X: 1
     T: Brid Harper's
@@ -28,5 +25,4 @@ abc: |
     GEF G2A|B2e dBd|edB AGA|BGE E2:|
     |:f|~g3 fed|~e3 dBA|~G3 AGA|BGE EGE|
     DB,D GAc|BdB g2d|edB AGA|BGE E2:|
-
 ---

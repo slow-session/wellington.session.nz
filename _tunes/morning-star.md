@@ -5,7 +5,6 @@ key: D
 rhythm: reel
 date: 2017-02-01
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/morning-star.mp3
 mp3_source: Adrian Barker and Ben Stephenson
@@ -24,5 +23,4 @@ abc: |
     ~B3 A BGEF|~G2 Bd ef{b}gd|~B3 A BGEF|GB{c}AF ~G3 A:|
     (3Bcd ef ~g2 fg|a f dfgf ed|(3Bcd ef g2 fg|{c'}afdf ~e3 d|
     (3Bcd ef ~g2 fg|a f dfgf ed|B3 A BGEF|GB{c}AF ~G3 A||
-
 ---

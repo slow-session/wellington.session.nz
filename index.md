@@ -4,7 +4,6 @@ title: The Wellington Session
 ---
 <div id="audioPlayer"></div>
 
-
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the
 <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 All players of traditional Irish music are welcome. The session starts slowly, as we work
@@ -16,6 +15,9 @@ through new tunes and tunes we are just learning:
 If you are relatively new to playing this music, come along right at the start. The pace usually picks up as the evening progresses, so if you are already fluent in tunes,
 come along after 8:30. Of course, we'd be happy to have experienced players playing **slowly**
 earlier on as well!
+
+You can see a list of some of the tunes that get played at the session including those we've been
+learning in the slow part of the session in our <a href="/current_tunes/">Tunes</a> page.
 
 {::nomarkdown}
 <img alt="NEW!" src="/images/new.gif" border=0 height="48" width="48"> We add new tunes reasonably often - you can check those out in our <a href="/latest/">Latest Tunes</a> page.
@@ -104,16 +106,6 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
 {% endfor %}
 </tbody>
 </table>
-
-Other Tunes
-===========
-
-You can see a list of some of the tunes that get played at the session including those we've been
-learning in the slow part of the session in our <a href="/current_tunes/">Tunes</a> page.
-
-There's also a large list of tunes including tunes played in other New Zealand sessions in the
-<a href="{{ site.mp3_host }}/archive/">NZ Archive</a> page.  Feel free to poke around.
-
 
 <script>
 $(document).ready(function() {

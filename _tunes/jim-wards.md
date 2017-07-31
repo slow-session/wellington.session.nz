@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2016-02-24
 location: Arrowtown Wellington
-set:
 tags: slowsession beginner
 mp3_file: /mp3/jim-wards.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -25,5 +24,4 @@ abc: |
     G3 GAB | AGE GAB | cBA BGE |1 DED D :|2 DED D2 ||
     |:B | cBA BAG | A3 AGE | cBA BGE | DED D2B |
     cBA BAG | A3 ABc | dcB AGE |1 GED D2 :|2 GED D |]
-
 ---

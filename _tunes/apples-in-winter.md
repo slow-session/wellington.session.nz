@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2017-01-23
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/apples-in-winter.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -26,5 +25,4 @@ abc: |
     d|efe edB|e/f/ge fdB|dec dAF|DFA def|
     [1efe edB|def ~g2a|bgb afa|gee e2:|
     [2edB def|gba ~g2e|fdB AGF|GEE E2||
-
 ---

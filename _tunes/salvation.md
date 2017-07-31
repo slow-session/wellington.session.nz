@@ -3,10 +3,8 @@ title: Salvation
 titleID: salvation.md
 key: A
 rhythm: reel
-mode: 
 date: 2016-01-01
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/salvation.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,7 +12,6 @@ mp3_source: Wellington Session
 mp3_url: 
 abc_url: https://thesession.org/tunes/199
 source: Wellington
-transcription: 
 abc: |
     X: 2
     T: The Salvation
@@ -29,4 +26,3 @@ abc: |
     cdec defg | agae fece | fecA B2AB | cBAE FAE2 :||
     
 ---
-

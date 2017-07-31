@@ -13,9 +13,7 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/cl281/cl281_1_64K.mp3
 abc_source: Dunedin Fiddle Orchestra
 abc_url: http://nefc.org.nz/
-source: 50Dundas
-transcription:
-chords:
+source: Dunedin
 abc: |
     X:65
     T:Congress Reel, The
@@ -29,5 +27,4 @@ abc: |
     "Am" eAAG A2    Bd | "Am" eaaf "G" gedB | "F" cBcd        eged | "E/G" cABG "Am" A2 Bd :|
     "Am" eaag a2    ag | eaaf          gedg | "G" egdg        egdg | "Em" eaaf        gedg |
     "Am" eaag a2    ag | "Am" eaaf "G" gedB | "F" cBcd        eged | "E/G" cABG "Am" A2 Bd :|
-
 ---

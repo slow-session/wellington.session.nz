@@ -6,7 +6,6 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Arrowtown Wellington
-set:
 tags:
 mp3_file: /mp3/boys-of-blue-hill.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +13,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/boys_of_bluehill/
 abc_url:
 source: Wellington
-transcription:
-chords: true
 abc: |
     X:1
     T: Boys of Blue Hill

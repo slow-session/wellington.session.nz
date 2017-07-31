@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2016-11-24
 location: Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/drunken-gauger.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
@@ -14,8 +13,6 @@ mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
 abc_url: https://thesession.org/tunes/2180
 source: Wellington
-transcription: 
-chords: false
 abc: |
     X: 1
     T: The Drunken Gauger
@@ -31,4 +28,3 @@ abc: |
     c2A BdB|AGA AGE|DE/F/G AGA|BGG G2:|
     
 ---
-

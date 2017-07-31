@@ -5,7 +5,6 @@ key: D
 rhythm: jig
 date: 2017-06-29
 location: Wellington
-set:
 tags:
 mp3_file: /mp3/lonesome-jig.mp3
 mp3_source: Richard Tait
@@ -26,5 +25,4 @@ abc: |
     |F2 E EDE|F2 D DED|AFE EFA|B3 d3:|
     |:ABd e2 f|d2 cB2 A|ABd e2 f|d2 A B3|
     |ABd ede|fdB BAF|AFE EFA|B3 d3:|
-
 ---

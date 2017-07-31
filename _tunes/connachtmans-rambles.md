@@ -6,7 +6,6 @@ rhythm: jig
 mode:
 date: 2015-11-1
 location: Arrowtown Wellington
-set:
 tags: slowsession
 mp3_file: /mp3/connachtmans-rambles.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

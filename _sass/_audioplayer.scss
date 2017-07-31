@@ -1,17 +1,18 @@
-.audioplayer {
+.mp3player_tunepage {
+    width: 800px;
+}
+
+.abcplayer_tunepage {
     width: 500px;
-    border: none;
+}
+
+.mp3player_tablerow{
+    width: 500px;
     margin: 0 auto;
 }
 
-.audioplayer_left {
+.abcplayer_tablerow {
     width: 500px;
-    border: none;
-}
-
-.audioplayer_wide {
-    width: 800px;
-    border: none;
     margin: 0 auto;
 }
 

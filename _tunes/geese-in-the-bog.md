@@ -3,11 +3,9 @@ title: Geese in the Bog
 titleID: geese-in-the-bog.md
 key: Ador
 rhythm: jig
-mode: dor
 date: 2015-11-01
 location: Arrowtown Wellington
-set:
-tags: slowsession aff
+tags: slowsession
 mp3_file: /mp3/geese-in-the-bog.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

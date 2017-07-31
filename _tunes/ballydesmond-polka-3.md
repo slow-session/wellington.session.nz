@@ -3,10 +3,8 @@ title: Ballydesmond No. 3
 titleID: ballydesmond-polka-3.md
 key: G
 rhythm: polka
-mode: 
 date: 2016-09-28
 location: Arrowtown Wellington
-set:
 tags: slowsession beginner
 mp3_file: /mp3/ballydesmond-polka-3.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -14,8 +12,6 @@ mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/ballydesmond_no_3/
 abc_url: https://thesession.org/tunes/238
 source: Wellington
-transcription: All three of the Ballydesmond polkas are from playing of Denis Murphy and
-chords: false
 abc: |
     X: 3
     T: The Ballydesmond No. 3
@@ -29,4 +25,3 @@ abc: |
     |:"Am"ae ae|"Am"ae e3/2f/2|"G"gd gd|"G"gd d3/2^g/2|
     |"Am"ae ae|"Am"ae e3/2f/2|"G"ge "Em"dB|"Am"A2 A2:|
 ---
-

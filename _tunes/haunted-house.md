@@ -6,15 +6,13 @@ rhythm: jig
 mode:
 date: 2016-1-26
 location: Wellington
-set:
-tags: slowsession beginner aff
+tags: slowsession beginner
 mp3_file: /mp3/haunted-house.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/haunted_house/
 abc_url:
 source: Wellington
-transcription: unknown
 abc: |
     X:65
     T:Haunted House, The
@@ -31,6 +29,4 @@ abc: |
     |:"G"GBd "C"e2 e|ege "Em"dBA|"G"GAB "D"d2 B|ded "Bm"BAG|
     |[1 "G"GBd "C"e2 e|ege dBA|"G"GBd "C"ege|"D"dBA "G"G3:|
     [2 "G"GFG "D"AGA|"G"BGE "Em"EDE|"G"GBd "C"ege|"D"dBA "G"G2 D||
-
-
 ---
