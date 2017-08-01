@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2017-07-26
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession focustune
 mp3_file: /mp3/bundle-and-go.mp3
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
