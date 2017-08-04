@@ -24,6 +24,6 @@ abc: |
     K: G
     dB |: BAB GBG |G2 g fdc|BAB GBG|d2 B cBA |
     BAB GBG | G2 g fdc | BdB cec | d2 B cBA :|
-    G2 g fdg | fdg fdc | B2 g fdc | BdB cAF |
+    |:G2 g fdg | fdg fdc | B2 g fdc | BdB cAF |
     G2 g fdg | bag fdc | BdB cec | d2 B cBA :|
 ---
