@@ -1,7 +1,7 @@
 ---
 title: Brosna Slide
 titleID: brosna-slide.md
-key: D
+key: G
 rhythm: slide
 mode:
 date: 2016-01-01

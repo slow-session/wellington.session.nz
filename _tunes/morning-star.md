@@ -1,7 +1,7 @@
 ---
 title: Morning Star
 titleID: morning-star.md
-key: D
+key: G
 rhythm: reel
 date: 2017-02-01
 location: Wellington
@@ -19,7 +19,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    K: Dmaj
+    K: Gmaj
     ~B3 A BGEF|~G2 Bd ef{b}gd|~B3 A BGEF|GB{c}AF ~G3 A:|
     (3Bcd ef ~g2 fg|a f dfgf ed|(3Bcd ef g2 fg|{c'}afdf ~e3 d|
     (3Bcd ef ~g2 fg|a f dfgf ed|B3 A BGEF|GB{c}AF ~G3 A||
