@@ -1,5 +1,5 @@
 ---
-title: Cooley's Set
+title: Alchemy Set
 rhythm: reel
 date: 2017-05-15
 location: Wellington
