@@ -25,6 +25,6 @@ abc: |
     K:G
     "Am" eAAG A2 (3Bcd | "Am" eaaf "G" gedg | "F/Am" eA ~A2 eA ~A2 | "G" BG ~G2       GABd |
     "Am" eAAG A2    Bd | "Am" eaaf "G" gedB | "F" cBcd        eged | "E/G" cABG "Am" A2 Bd :|
-    "Am" eaag a2    ag | eaaf          gedg | "G" egdg        egdg | "Em" eaaf        gedg |
+    |:"Am" eaag a2    ag | eaaf          gedg | "G" egdg        egdg | "Em" eaaf        gedg |
     "Am" eaag a2    ag | "Am" eaaf "G" gedB | "F" cBcd        eged | "E/G" cABG "Am" A2 Bd :|
 ---
