@@ -5,7 +5,7 @@ permalink: /latest/
 ---
 <div id="audioPlayer"></div>
 
-These are the last 10 tunes we've added to the archive.
+These are the last 15 tunes we've added to the archive.
 
 <div id="textAreas"></div>
 
@@ -28,7 +28,7 @@ These are the last 10 tunes we've added to the archive.
 <tr>
 {% include tablerow.html tuneId=tuneid %}
 </tr>
-        {% if tune_count > 9 %}
+        {% if tune_count > 14 %}
         {% break %}
         {% endif %}
 {% endfor %}
