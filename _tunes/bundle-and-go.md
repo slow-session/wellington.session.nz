@@ -4,7 +4,7 @@ titleID: bundle-and-go.md
 key: G
 rhythm: jig
 date: 2017-07-26
-location: Wellington
+location: Wellington Donegal
 tags: slowsession focustune
 mp3_file: /mp3/bundle-and-go.mp3
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
