@@ -4,15 +4,15 @@ titleID: frankie-kennedys.md
 key: D
 rhythm: jig
 date: 2017-07-27
-location: Wellington 
-tags: 
+location: Wellington Donegal
+tags:
 mp3_file: /mp3/frankie-kennedys.mp3
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: The Session
-abc_url: 
+abc_url:
 abc: |
     X: 1
     T: Frankie Kennedy's
