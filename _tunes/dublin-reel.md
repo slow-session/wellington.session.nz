@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2016-12-08
 location: Wellington
-tags: 
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/dublin-reel.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -24,5 +24,5 @@ abc: |
     eA~A2 eAfA | eA~A2 BAFA | ~e2ed egfe |dB (3cBA BAFA||
     ~d2dc dAFA | dedB AGFA | ~d2dc dfed |cdBc A ABc |
     d2dc dAFA | dcdB AGFA | ~d2 df ~e2 eg |fdBc defe|]
-    
+
 ---
