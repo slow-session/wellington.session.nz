@@ -10,8 +10,9 @@ mp3_file: /mp3/dublin-reel.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/cl341/cl341_5_64K.mp3
-abc_url: https://thesession.org/tunes/384
 source: Wellington
+abc_source: The Session
+abc_url: https://thesession.org/tunes/384
 abc: |
     X: 5
     T: The Dublin
