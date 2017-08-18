@@ -61,6 +61,17 @@ task :tunebooks do
     system "_scripts/add-tunebook-pdfs #{site}"
 end
 
+####################
+# createMD options #
+####################
+
+# Build the options
+
+desc "build the createMD option"
+task :createMD do
+    system "_scripts/mk_createMD_options.py #{site}"
+end
+
 ##############
 #   Notify   #
 ##############
