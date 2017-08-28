@@ -70,9 +70,6 @@ collections:
   sets:
     output: true
 
-  exercises:
-    output: true
-
 defaults:
   - scope:
         path: "_tunes"
