@@ -28,6 +28,11 @@ You can also get copies of the ABC files that were used to generate these PDFs:
 
 Other tunebooks
 ---------------
+
+Sean Manning's Sets (Dunedin):
+
+ * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
+
 Some tunebooks from early days of ABC i.e. the 1990s:
 
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
@@ -37,6 +42,7 @@ Some tunebooks from early days of ABC i.e. the 1990s:
 
 You can also get copies of the ABC files that were used to generate these PDFs:
 
+* [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
 * [obrien.abc](/tunebooks/other/obrien.abc "ABC")
 * [reavy.abc](/tunebooks/other/reavy.abc "ABC")
 * [session1.abc](/tunebooks/other/session1.abc "ABC")
