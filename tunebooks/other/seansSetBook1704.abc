@@ -1,0 +1,1111 @@
+%%withxrefs true
+
+X:1
+T: Abbey/Virginia Set
+T:Abbey Reel
+M:4/4
+K:Ador
+|:B|A2B A2GE|A/B/A GA B[Gd]dB|A3B AGEF|G3A Bdd:|
+g|egg2 a2ba|gabg aged|egg2 a2ga|bgaf gedg|
+egg2 a2bg|agbg aged|egg2 a2ga|bgaf ged|
+T:Virginia Reel
+K:D
+|:DBBA B3A|BAdB AFEF|DFF2 A3B|AFBF AFEF|
+DBBA B3A|BAdB ABde|f3e defe|dBAF BEE2:|:
+defe d3A|BAFA dAFA|defe defg| afbf afeg|
+f3d efdB|AFF2 ABde|f3e defe|dBAF BEE2:|
+
+X:2
+%%scale .56
+T:Aconry Lasses Set
+T:Aconry Lasses
+M:4/4
+K:D
+|GBAF DEFA|d2 cA BGAF|GBAF DEFA|d/c/B cA BGAF|
+GBAF DEFA|d2 cA BGAF|GABG FGAc|cBBG BGBd||
+g2 ag fddf|eccB cdef|g2 ag fddB|cedc BGBd|
+g2 ag fddf|eccB|cdef|gaag fafd|cedc BGAF||
+T:Old wheels of the World
+gf||eAA2 eABA|GE3 G3 E|A3 B cBcd|efge d2 Bd|
+eAA2 eABA|GE E2 G3 E|A3 B cBcd|efged2Bd||
+dgg2dgg2|eaa2eaa2|efge defg|a/g/f g/f/e d2Bc|
+dgg2 dgfg|eaa2eaa2|efge defg|afged2gf||
+T:Spike Island Lasses
+K:D
+=cAGB ADD2|FDAD FD D2{B/c/d}|=cAGc AGFG|Adde fded|
+=cAGB ADD2|FDAF FDD2{B/c/d}|=cAGc AGFG|Addc d3e||
+f2df ef g/f/e|dfed cAA2|f/g/f df edc[dB]|Addcd2cd|
+eaag efge|dfed =cAG[cG]|Addc d3=c|Adde fded||
+=cAGc A3d|B3=cA2dB|=cAGB AGFG|Adde fded|
+=cAGB A3d|BGGF GBdB|-cAG2 AGFG|Addcd3e||
+f/e/d ad fd[Aa]d|faaf gee2|fdad faaf|gagf d=c A/B/c|
+defg a3b|agfag3e|fedf edcA|dcde fded||"last time"=cAGED4||
+
+X:3
+T:Aoibhneas Ellis Ní Cheallaigh Set
+T:(Last tune is either Yellow Wattle or Hardiman)
+T:Aoibhneas Ellis Ní Cheallaigh
+M:9/8
+L:1/8
+R:Slip Jig
+K:Ador
+||:A3 ABA AGE|A2E G2E DEG|A3 ABA AGE|G3 G2E DEG:||:
+c2A BAG AGE|cBA BGE DEG|c2A BAG AGE|G3 G2E DEG:||
+T:Taim in Arrears
+T:Máll Rua
+K:G
+||:DGG GAG FGA|BdB GAB c3|DGG GAG FGA|BdB cAF G3:||:
+ded BAG FED|ded cAB c3|ded cAG FGA|BdB cAF G3:||
+T:Yellow Wattle, The
+M:6/8
+K:Dmix
+||:dcA AGE|ABA ABc|dcA ABc|dcA GED|dcA AGE|ABA AGE|EDD cde|dcA GED:||:
+DED c3|ded c3|ded cde|dcA GED|DED c3|ded d2c|ABA ABc|dcA GED:||
+T:Hardiman the Fiddler
+K:Dmix
+||:A2G FDE F2G|A3 AGA cAG|A2G FDE F2G|Add ded cAG:||
+Add d2e f2e|Add ded cAG|Add d2e f2g|agf ged cAG|
+Add d2e f2e|Add ded cAG|dcA cde f2g|agf ged cAG|
+
+X:4
+T:Breabach Retreat Marches - Allan Water Set
+C:Two Retreat Marches taught by Breabach to DFC 20/3/14
+T:Allan Water
+M:3/4
+K:D
+A>d|:f2 fdec|d2 A2 A>c|B2Bc df/e/|d2 c2 A>d|
+f2 fdec|d2 A2 A>c|B3 ecA|1d4 A>d:|d4 c>d|:
+e2 e2 cA|d2 e2 f2|g>a gefd|fg/f/ e2 a>g|
+f2 fdec|d2 A2 A>c|B3 ecA|1d4 c>d:|2d4 A>d|
+T:Dark Lowers the Night
+K:Bm
+d>c|:B2 B>c de|f2 f2 ga|f2 e>d cB|c4 d>c|
+B2 B>c de|f2 f2 g>a|f2 fedc|1B2 B2 d>c:|2B2 B2 a>g|:
+f2 f2 g2|a2 a2 a>g|f2 edcB|c2 c2 d>c|
+B2 B>c de|f2 f2 g>a|f2 fedc|1B2 B2 a>g:|2B2 B2 d>c|
+
+X:5
+T:Budgie's Ball Jigs
+C:From Aiofe Granville's 'Sáimhín Só'
+T: Budgie's Ball (Conal O'Gráda)
+R: jig
+M: 6/8
+L: 1/8
+K: Gmaj
+dgg {b}gdB | cea {c'}agf | {b}gdb {b}gdB | {d}cAd dBc |
+dgg {b}gdB | cea {c'}agf | {b}gdb {b}gdB | {d}cAd ~G3:|
+dBB dBB | ceg {b}geg | dBB dBB | ADD cBA |
+dBB dBB | ceg {b}geg | bgd ~g2 B | {d}cAd ~G3 :|
+T: The Bank Of Turf
+R: jig
+M: 6/8
+L: 1/8
+K: Dmaj
+dB|:ABA DFA|BAF DFA|dcd ede|~fef def|
+~g3 gab|afd B3|1efe e2d|cBA AdB:|2ABA efe|d3 dcd||
+|:eAA efg|fed fga|gfe fed|edB ABd|
+eAA efg|fdd fga|gfe dcB|1A3 Bcd:|2A3 AdB||
+T:Shores of Lough Gowna, The
+T:(Added by SM)
+M:6/8
+L:1/8
+K:D
+||:B3 BAF|FEF DFA|B3 BAF|d2e fed|B3 BAF|FEF DFA|def geg|fdB B2A:||:
+def a2b|afb afe|dFA def|gfe fdB|def afb|afb afe|def geg|fdB B2A:||
+
+X:6
+T:Bunny's Hat/Edinburgh Rock/Trip to Pakistan
+T:Bunny's Hat, The
+C:?A Mike McGoldrick Set
+M:4/4
+K:Bm
+|:FABA cBAF|Bcde fedB|FABF A3F|EF3 AB3|
+FABA cBAF|Bcde fedB|FABd cA3|faec dBBA:|:
+FA B/c/d efaf|efaf edcA|FA B/c/d efaf|edcd AB2A|
+FA B/c/d e f3|aefa bafe|dB3 cAce|faec dBcA:|
+T:Edinburgh Rock
+M:4/4
+K:F#dor
+|:AFF2 EFAF|AFF2 cecB| AFF2 EFAF|cBB2BAAF|
+AFF2 EFBF|AFF2 cecB|AFAB cBAB|ceae f3e:|:
+affe cBAF|eff2 afbf|affe cBAF|EFF2 AFce|
+affe cecB|AFAB cBAB|cee2 cBAB|ceae f3e:|
+T: Trip To Pakistan
+M: 4/4
+L: 1/8
+K: Emin
+|:EGBE G3 B|A3 B AGFG|EGBE G3 B|AGFG E4:|
+|:EGBG c3 A|B3 d AGFG|EGBG c3 A|BAGB A4:|
+|:FGBF GBGF|EFGE FGFE|DFAD FADF|AGFG E4:|
+
+X:7
+%%scale .6
+T: Caisleán na nOg/ Bobby Casey's/ Her Long Black Hair
+C:First and last tunes are a Set from David Kidron
+R: hornpipe
+M: 4/4
+L: 1/8
+K: Gdor
+|: GF | DGGF G2 (3A=Bc | dcde f2ga | gedc AdcA | DGGE FEDC |
+DGGF G2 (3A=Bc | dcde f2ga | gfdc AdcA | G2GF G2 :|
+|: (3A=Bc | dgga _b2 ag | gfde f2ga | gfdc AdcA | DGGE FEDC |
+DGGF G2 (3A=Bc | dcde f2ga | gfdc AdcA | G2GF G2 :|
+T:Bobby Casey's
+K:Am
+ed|cAAB c2cd|eaag e2dB|c2cAB2Bc|d2de dBGB|
+AGAB cBcd|eaag e2dB|cAAc dBGB|1A2AG A2ed:|2A2AGA2 A/c/d|
+eaab aged|eaab aged|egga ged2|e/^f/g fg gedB|
+AGAB cBcd|eaage2dB|cAAc dBGB|1A2AG A2 A/c/d:|2A2AGA2ed|
+T:Her Long Black Hair Flowing Down Her Back
+M:4/4
+C:Junior Crehan
+K:Am
+|:cd|edce d2cA|GEE2 G2cd|edce d2cd|eaaga2gf|
+edce d2cA|GEE2 GAcd|edcA dcAG|A2AG A2:|:
+cd|egg^f gede|cAAB c3d|eaag a2gf|edce d2cd|
+egg^f gede|cAAB c3d|edcA cdAG|A2AG A2:|
+
+X:8
+%%scale .7
+T:Carraigaholt/ Woman of the House/O'Rourke's
+T:Humours of carraigaholt
+M:C|
+L:1/8
+K:D 
+||:"D"dcAF "G"G2 AG |"F#m"F2 DE "Bm"FGAB |"F"=cAAF "G"G2 FG |"D"Adde fdec |
+"etc"dcAF GBAG |F2 DE FGAB |=cAAF G2 FG |Addc d3 e :||:
+"D/A"fdde fdgf |"A/C#"edcd efge |"Bm/B"f3 d fdgf |"A/A"edcd e3 g |
+"etc"fdde fdgf |edcd efge |"Bm"agfa "A"gfec |"G"Addc d3 e :||
+T:The Woman of the House
+M:C|
+L:1/8
+K:G
+GE||:DBBA B2 BA|GABd eBdB |A/B/A GB A2 B/c/d|eBB2 eBdB|
+GBBA B2BA|GA B/c/d eBdB |GABG A/B/A GA|BGAG EGD2:||:
+f3d edBd|edge dABd|f3d edBd|eaag eaa2|
+f3d edBd|g3e dcBA|GABG A/B/A GA|BGAG EGD2:||
+T:O'Rourke's     
+M:4/4
+K:D
+||:ed |cAAe fded |cAeA dfed |cAAe fded |fa ge d2 :||
+ef |g2 fg e3 f |gefd ea a2 |gefd edcd |eage d2 ef |
+g2 fg e2 ef |gefd ea a2 |bgaf gfed |eaaf gfed ||
+
+X:9
+T: Con Cassidy's/ To Limerick We Go
+T:Con Cassidy's
+R: jig
+M: 6/8
+L: 1/8
+K: Gmaj
+|B3 BAB|d2c A2F|G3GFG|BAG A2B|
+c3 cBc|e2d B2c|ded cAF|1~G3 G2A:|2~G3 G2g:|
+|:f2d def|gfg a2g|f2d ded|c2A A2g|
+f2d def|gfg a2g|fed ed^c|1d3 d2g:|2ded cdc||
+T: To Limerick We Go
+R: slip jig
+M: 9/8
+L: 1/8
+K: Gmaj
+|:BdB AGA BGE|BdB AGB A3|BdB AGA BGE|cBA BGE D3:|
+|:DEG A2A A2B|AGE G2G G2A|DEG A2A A2B|B2A AGE D3:|
+
+X:10
+T:Congress/ Within a Mile of Dublin/ Pigeon on the Gate
+T:Congress Reel, The
+M: 4/4
+L: 1/8
+K: Ador
+|:eAAG A2Bd|eaaf gedg|eA A2 eA A2|BGGA Bdeg|
+eAAG A2 (3Bcd|eaaf gedB|cBcd e=fed|(3cBA BG A2Bd:|
+|:eaag a3 g|eaag (3ege dg|(3ege dg (3ege dg|eaaf gedg|
+eaag a2ag|eaaf (3ege dB|c2cd e=fed|cABG A2Bd:|
+T:Within a Mile of Dublin
+K: Dmix
+FG|:AD (3DDD FEFG|AD (3DDD cABG|AD (3DDD FEFG|ABcA G2 FG:|
+Addc AGFG|Adde fdec|Addc AGFG|ABcA G2 FG|
+Addc AGFG|Adde f2 fg|af (3gfe fdec|dcAF G2 FG|
+T:Pigeon on the Gate
+K: Edor
+dc|BE ~E2 BEdE|BE ~E2 dBAF|D2 (3FED ADFE|D2 dA BAFA|
+BE ~E2 BEdE|BE ~E2 dBAF|D2 FA dfec|dBAF E2:|
+FA|Beed efed|(3Bcd ef gedB|Addc d3 B|A2 FA DAFA|
+Beed efed|(3Bcd ef g2 fg|af (3gfe fd ec|dBAF E2:|
+
+X:11
+T:Connaught Heifers/ Kitty Goes a-Milking
+T:Connaught Heifers
+M:4/4
+K:D
+F3G A2BG|A2BG AGFD|F3G AGGF|DGGB =cAAG|
+FDFG A2 BG|A2BG AGFD|F3G AGGF|DGGB =cAAg||
+fdec d3=cA|B=cBG ABde|f2ec d2=cA|BGG2 AGFd|
+fgec d2=cA|B/c/d BG ABde|f2ecd2=cA|BGG2 AGFD||
+T:Kitty Goes a-Milking
+M:4/4
+K:G
+||:dGG2 d2cA|dGG2 FGAB|dGG2 d2eg|fdcA GABc:||
+dgg2 agg2|dggf d2cA|dgg2 agg2|dcAB c2Bc|
+dgg2 agg2|dggf d2cA|defg a3g|fdcA G4|
+
+X:12
+T:Cook in the Kitchen/ Sixpenny Money
+T: The Cook In The Kitchen
+R: jig
+M: 6/8
+L: 1/8
+K: Gmaj
+|: E | DGG GFG | =FDE ~F3 | DGG GFG | A2 d cAG |
+DGG GFG | =FDE F2 d | cAG FGA | BGG G2 :||
+|: A | ~B3 BAG | ~A3 AGF | ~G3 GFG | A2 d cAG |
+~B3 BAG | ~A3 A2 d | cAG FGA | BGG G2 :||
+|: B | d2 e f2 g | a2 g fed | cAG FGA | B/c/dB cAG |
+d2 e f2 g | a2 g fed | cAG FGA | BGG G2 :||
+T: Sixpenny Money
+R: jig
+M: 6/8
+L: 1/8
+K: Dmaj
+fAA fAA|BAG FGE|DED AFA|dfd efg|
+FAA FAA|BAG FGE|DED AFA|dfd e2 d:||
+fef gfg|afd ede|fef gfg|afd e2 d|
+fef gfg|afd fga|ABA AFA|dfd e2 d:||
+
+X:13
+T:Copperplate, New and Old
+T:New
+M:4/4
+K:G
+||:G2dG BGdG|G2dc BGGB|A2[eE]A cAeA|A2[eE]d cAFA|
+G2dG BGdG|G2d[cG] BGG2|ABcd ef g/f/e|1aged cAFA:||2aged ^cdef||:
+g2gf g2ef|g/f/e dc BGGB|[Ae]a a/g/a agea|aged B/^c/d ef|
+g2gf g2ef|g/f/e dc BGGB|ABcd efge|1aged ^cdef:||2aged cAFA||
+T:Old
+K:Ador
+||:A2EA cAAe|aged cAFA|G2DG BGBd|gedc BAGB|
+A2EA cAAe|aged cAGB|ABcd efge|aged cAA2:||:
+ageg a2eg|aged cAA2|gfef g2ef|gfge dBGB|
+ageg a2eg|aged cAGB|ABcd efge|aged cAA2|
+
+X:14
+T:Coppers And Brass/Rambling Pitchfork
+T:Coppers and Brass
+M: 6/8
+L: 1/8
+K: Gmaj
+A||:B3 GBd|cBc ABc|BdB GBd|cAG FGA|B3 GBd|cBc ABc|d3 edc|1BAF G2 A:||2BAF G2 e||:
+f3 fed|cBA FGA|Ggg gfg|afd d2 e|f3 fed|cBA FGA|B3 cAF|1AGF G2 e:||2AGF GBd||
+T:Coppers and Brass, easier version
+K:G
+dc|BGB BG |AFA AFA|B3A3|GBd gdc|B3 BGB|AFA DFA|ded cAF|{B}AGF G:|:
+Bc |f3 fed|{d}cAG FGA|g3gfg|acd dcG|fdd edd|cAG FGA|BGB cAF|AGFG2:|
+T:Rambling Pitchfork, The
+R: jig
+M: 6/8
+L: 1/8
+K:D
+||:F3 AFF |dFF AFD |GFG ABc |ded cAG|F3 AFF |dFF AFD |G3 BGB |AFD D3 :||:
+d2e fed |ecA AFA |dcd efg |faf gec|d2e fed |ecA AGF |G3 BGB |AFD D3 :||
+
+X:15
+T:Cordal Jig/ Furze in Bloom
+T:Cordal Jig, The
+M:6/8
+K:D
+|:BAF !turn!E3|FEF DFA|BAF EFA|B{/d}BA Bcd|
+BAF E3|FEF DFA|def edc|!turn!B3 Bcd:|:
+d2e fed|c2d ecA|d2e fed|f2e fga|
+dcd fed|cBc ecA|dcd fed|!turn!f3 fga:|
+T:Furze in Bloom, The
+f|:edB BAB|def e2f|edB BAF|AFE E2f|
+edB BAB|gfe !turn!f3|edB BAF|1AFE E2f:|2AFE Bcd||
+e3 efg|edB d2A|ded dfa|b2a faf|
+!turn!e3 efg|edB d2f|edB BAF|1AFE Bcd:|2AFE E2f||
+
+X:16
+T: Doctor John Hart/ Robert Jordan
+T:Doctor John Hart
+R: waltz
+M: 3/4
+L: 1/8
+K: Amaj
+e2ce/2f/2 ec|ed cB A2|B2A/2B/2c A/2B/2c|{c}BA F2F2|
+ae ab c'b|ab af ae|fa/2b/2 af ec|B2ce f2|
+fc ef ec|A2A2A2|{cd}ec fe e/2c/2B/2A/2|B2Bc B2|
+{cd}ed cB A>A|Bc BA G3/2F/2|EA GB Ac|B2A2A2||
+E/2C/2E/2F/2 EC B,A,|E2EF E2|{A}FE FA FE|C2EF F2|
+AG AB cB|AB cd ed|cd ef ed/2c/2|{c}B2GA B2|
+{f}ec AF E/2D/2C/2B,/2|A,2A2A2|{Ac}ec/2e/2 fe/2f/2 af|e2cB B2|
+{cd}ed cB A>A|Bc BA G3/2F/2|EA GB Ac|B2A2A2|]
+T:Robert Jordan
+R: hornpipe
+M: 4/4
+L: 1/8
+K: Gmaj
+|: d2 Bd e2 d2 | B2 A2 G2 ED | E2 G2 G2 AB | d2 B2 A2 z2 |
+B2 d2 e2 d2 | dBAG g2 g2 | gaba aged | e6 e2 | efge dedB |
+AGAB d2 Be | d2 BA G2 BA | GE A2 A2 GA |
+BAGF GABG | AGED EFGE | dedB dBAG | B4 G4 :|
+|: d2 AB deBe | dBAG G2 G2 | GABA GDAG | E4 e2 e2 |
+d/B/A GA B2 g2 | d/B/A GA B2 g2 | a2 ge dedB | A4 A2 BG |
+E2 G2 GAGE | DEGA BABG | AGAB dBdA | G2 e2 e2 ed |
+B2 BA G2 G2 | A2 AG E2 E2 | edBA GEGD | E2 G2 G4 :|
+
+X:17
+%%scale .6
+%%measurenb 0.
+T:Farewell To Connaught/ Rip the Calico/ Trim the Velvet
+T:Farewell to Connaught
+C:AKA The Haberdashery Set, The Bodice Ripper
+M: 4/4
+L: 1/8
+R: reel
+K: Dmix
+|:D2 F/E/D FGAB | c2Bd cA G2 | Add^c d2 cd | ed^cd ed^cA | 
+D2 F/E/D FGAB | c2 Bd cA G2 | ABAG EGAB | cAGE ED D2 :|
+|: f-ggf g2 ed | cded cA A2 |gaag a3g | eaag edcd |
+fggf g2 ed | cded dAAG | ABAG EGAB | cAGE ED D2 :|
+T:Rip the Calico
+Q:1/4
+M:C
+L:1/8
+K:G 
+|:G2GF G2 GA |BA A/A/A BA A/A/A |G3 GF G2 GA |BAGE ED D2 ::
+BddB G3 A |BddB cA A2 |BddB G3 A |BAGE ED D2 ::
+GE E/E/E c3 A |BddB BA A2 |GE E/E/E c3 A |BAGE EDDE :|
+T:Trim the Velvet
+M:4/4
+L:1/8
+K:G 
+G3 B AGFA |G2 B/c/d cAFA |G3 B AGFD |defd cAFA |
+G3 B A3 c |BcdB cAFA |DG G/G/G A[BG][cF]A |defd cAFA |
+dgeg dg g2 |dedB cAFA |dgfg dg g2 |defd cAFA |
+d3 e dBGB |dedB cAFA |dg g/g/g dg g/g/g |defd cAFA |
+g2 gf gaaf |g2 ab c'baf |gabg fgaf |defd cAFA |
+g2 gf gaaf |g2 ab c'bag |bg g2 af f2 |defd cAFA ||
+|:B/A/G dG BGGA |B/A/G dB cAFA |BGG2 cAA2 |defd cAFA :||"Last"G4|
+%%scale .7
+
+X:18
+%%scale .7
+%%measurenb 0.
+T:Father's Shirt/ Paddy Cronin's/ Lad O'Beirne's Geese
+T:Did You Wash Your Father's Shirt?
+M:4/4
+K:D
+||:E/F/G AB =cAG2|Addc d3e|fdec dBAB|1=cAGE D2 AD:||2=cAGE D3 g||:
+fdec dcAg|fdec d2de|fdec dcAB|1=cAGE D3 g:||2=cAGE D4|
+T:Paddy Cronin's Beauty
+M:4/4
+K:G
+||:[dG]GBG ABcA|dGBG c2 Bc|dGBG ABcA|dBcA G3B:||:
+d/d/d de fdec|dggf g2 ag|edd2 ecc2|dBcA G3B:||
+T:Lad O'Beirne's Geese in the Bog
+M:4/4
+K:D
+|dF F2 AFEF|dFBF A2 Bc|dF F2 AFED|DBBS B3c|
+dF F2 AFEF|dFBF A2 Bc|d/c/B BA BAFE|DBBA B3c||
+d2fd edef|d2fd faaf|defd edcA|BdcA BABc|
+defd edef|d2fd faa2|bgaf gfed|BdcA B3c||
+
+X:19
+T:First House In Connaught/Sailor's Bonnet
+T:The First House in Connaught
+M:C|
+L:1/8
+K:G 
+||:DG G/G/G AG G/G/G |BddB AGFE |DF F/F/F AF F/F/F |ABcA BGAF |
+DG G/G/G AG G/G/G |BddB AGFA |defg agfd |cAFA G4:||: 
+gfga gfdf |g2 bg gede |fede fgag |g2 af bfaf |
+gfga gfdf |g2 bg gfdc |defg agfd |cAFA G4 :||
+T: Sailor's Bonnet, The
+M: 4/4
+L: 1/8
+R: reel
+K: Dmaj
+||:A2 FA df f2|dfef dB B2| A2 FA dfec| dBAF ADD2 :|
+|:a3 a afef|afef dB B2|fb b/b/b bafa|bfaf fee2|
+bf3 afed|afef dB B2|A2 FA dfec |dBAF ADD2 :|
+
+X:20
+T:Green Cottage/ Perry's
+T:Green Cottage
+M:6/8
+L:1/8
+C:Jono Lonie
+O:New Zealand
+Q:1/4
+K:G
+||:E3 B,EG|FED EFA|E3 B,EG|FED B,3|E3 B,EG|FED EFA|BdB AFE|1 FGA FED:|2 FGA FGA|
+|:BdB AFA|FBF AFE|BdB AFf|edB dBA|BdB AFA|BFB AFA|gfe dBA|1 FGA FED:|2 FGA BGF||
+T:Perry's
+M:4/4
+C:Jono Lonie
+K:G
+K:G
+ef|:gB B/B/B dBAB|c2 Bc AGEG|D/D/D BD ADBD|c2 ec BcAf|
+gB B/B/B dBAB|c2 Bc AGEG|D/D/D BD ADBD|AGEF G3 G:|:
+GEDE G2 GA|c/c/c Bc AGEG|c2 ec B2 dB|AGAB AGEF|
+GEDE G2 GA|c/c/c Bc AGEG|D/D/D BD ADBD|AGEF G3 :|
+
+X:21
+%%scale .6
+T:Green Fields of Rossbeigh/ Lady of the House/ New Mown Meadow/ Bag of Spuds
+M:4/4
+K:G
+T:Lady of the House, The
+GABGc2BA|GBdg (3ege dB|GABG A2 (3Bcd|eAA2eAA2|
+GABGc2BA|GBdg (3ege dB|GABG A2GA|B2dc BGG2:|:
+gfeg fedf|efge dBAB|GABG A2 (3Bcd|eAA2eAA2|
+gfeg fedf|efge dBAB|GABG A2GA|B2dc BGG2:|
+T: The Green Fields Of Rossbeigh
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+BE(3EDE BAFA|ABde fded|BE(3EDE BAFA|(3BcB AF E2dc|
+BE(3EDE BAFA|ABde fded|BE(3EDE BAFA|BFAF E2FA:||
+(3Bcd ef g2fe|dB(3BAB dBAd|(3Bcd ef gfge|dBAF E2ef|
+gfga gfeg|fefg fedB|ABde fgfe|dBAF E2FA:||
+T:New Mown Meadow, The
+K:Gmix
+AD D2D2EG|AcBG AGEG|Add2AGEG|G2 AG EDEG|
+AD D2D2EG|AcBG AGEG|c3A B3A|1GBAG EDEG:|2GBAG EG2B|
+d2Bd edBd|dGBG AGEG|d2Bd eddB|GBAG EG3|
+d2Bd edBd|dGBG AGEG|c3A B3A|1GBAG EGGB:|2GBAG EDEG||
+T:Bag of Spuds, The
+K:Ador
+A2eA cAeA|ABcd (3e=fe dB|G2 dG BGdB|GB B2 GBdB|
+A2eA cAeA|ABcd (3e=fe dB|ABcd eg g2|dBGA BA A2:|:
+a2 ea a2ea|agbg agef|(3gfe dc BGBd|gfga bgea|
+a2 ea a2 (3efg|agbg agef|gedc BGBd|gedB BA A2:|
+
+X:22
+T:Helen's Jig Set
+C:First 2 tunes from Ceol Aneas 2015, latter 2 from Mike Lean
+T:Port an Bhand
+T:(Wran Day Jig)
+M:6/8
+K:D
+dAd cAc| BAF AFD|dAd cAc| BAF E3|dAd cAc| BAF A[FB][Ed]|D2F AFD| EFE D3:|:
+DEF ABc| BAF AFE|DEF ABc| BAF E3|DEF ABc| BAF ABd|D2F AFD| EFE D3:|
+T:Tuar na hAimsire
+T:(The Weather Forcast)
+K:D
+D2F EDB,| DFA dcd|edB AFD| FAF ECA,|D2F EDB,| DFA dcd|edB AFE| FDC D3:|:
+d2f ede| fdB AFA|BdB AFD| FE^D E3|d2f ede| fdB AFA|BdB AFE| FDC DFA|
+d2f ede| fdB AFA|dcB AFD| CEC A,B,C|ABc d2f| edB AFD|FAF DEF| EDC D3|
+T:Brae Roy Road
+M:6/8
+K:D
+A,3 A,B,D|E3 EFE|DFE DdA|B3 A>Bc|d>dd c>BA|d2B A>FE|D>DD EDE|1F>EE E>DB,:|2F>DD D3|
+|:DFA DGB|Ddc d2e|f2d e2c|d2B ABc|d>dd cBA|d2B AFE|D>DD EDE|1F>EE E3:|2F>DD D3|\
+T:Rodney Millar's Wife (actual name unavailable)
+f3f>gf|ecA ecA|Bcd ecA|Bcd efg|f3f>gf|ecA ecA|Bcd ecA|1ABc d2A:|2ABc d2=c|:
+B3 B=cB|GBB BcB|ADD dDD|cDD =cDD|B3 B=cB|GBB BcB|ABA ABc|1d3 d2=c:|2d3 d2A|
+
+X:23
+%%scale .6
+%%measurenb 0.
+T:Holly Bush/ Ravelled Hank of Yarn/ Speed the Plough
+T:The Holly Bush
+L:1/8
+M:4/4
+K:Dmix
+||:A2FA DAFG|ABde fded|cGG2 EGG2|cedc AGFG|
+A2FA DAFG|ABde fded|cGG2 cedc|AcGE D2FG:||:
+Add^c defg|adde dcAc|GccB cdeg|aged cAGc|
+Add^c defg|adde dcAc|cGG2 cedc|AcGE D2FG:||
+T:The Ravelled Hank of Yarn
+L:1/8
+M:4/4
+K:G
+||:B2Bd A3B|GBBB GBBB|dAAA d2eg|fdcA AGGA|
+B2Bd A3B|GBBB GBBB|dAAA d2eg|fdcA AGG2:||:
+d2G2 dGBd|g2ga bage|dGGG d2eg|fdcA AGGB|
+dGGG dGBd|g3a bgaf|g2ga bgag|fdcA AG3:||
+T:Speed the Plough
+K:D
+||:d3A BAFB|AFF2 EFDF|F2AF G2BG|ABde fgfe|
+d3A BAFB|AFF2 EFDF|F2AF G2BG|ABde fdd2:||
+faaf afdf|gefd edBd|faab afdB|ABde fee2|
+faaf afdf|gefd edBd|F2AF G2BG|1ABde fdde:||2ABde fgfe|
+
+X:24
+T:Humours of Kiltyclougher, The
+M: 6/8
+L: 1/8
+K: Dmix
+|:B|AGD G2E|c2E G2E|~D3 D2E|GED ~D2B|AGD G2E|c2E EFG|~A3 BGE|ABA A2:|
+B|:c2B c2d|ecA ABc|BAG GAB|dBG G2B|c2B c2d|ecA ABc|BAG dBG|ABA A2:|
+T: The Rolling Waves
+R: jig
+M: 6/8
+L: 1/8
+K: Dmaj
+|:F2 E EDE|F2 D DED|F2 E EFA|d2 e fdA|F2 E EDE|F2 D DED|AFE EFA|B3 d3:|
+|:ABd e2 f|d2 cB2 A|ABd e2 f|d2 A B3|ABd ede|fdB BAF|AFE EFA|B3 d3:|
+
+X:25
+T:Kerfunten/ Have a Drink/ Scotsman/ Eddie Kelly's
+C:A Jock Walton Set
+T:(last tune is either Scotsman or Eddie Kelly's)
+T:Kerfunten, The
+M: 6/8
+L: 1/8
+K: Dmaj
+BBB BAG|Bcd efg|ddd edB|A3 AGA|BBB BAG|Bcd efg|ddd edB|ABA G3:|:
+ggg gab|eee ede|ggg gab|bag a3|ggg gab|eee ede|ddd gdB |ABA G3:|
+T:Have a Drink with me
+K:G
+||:d/c/|BAG EGD|EGD EGD|BAG EGD|EAA ABc|BAG EGD|EGD EGD|BAG E2D|EGG G2:||:
+D|GBd e2d|dgd B2 A|GBd e2d|eaa aga|bag agf|gfe dBG|BAG EGD|EGG G2:||
+T:Scotsman over the Border
+K:D
+||:D2D FDF|AFA d2A|BdB BAB|def edB|AD2 FDF|AFA d2A|BdB BAF|dAF E2D:||:
+dfa afa|bag fge|dfa afe|def edB|dfa afa|bag fed|B3 AFA|dAF E2D:||
+T:Eddie Kelly's
+M:6/8
+L:1/8
+R:jig
+K:Em
+||:BEF G2A|Bee edc|B3 GAB|AFD AFD|BEF G2A|Bee edc|B3 GAB|AFD E3:||:
+gfe fed|Bee Bee|gfe fed|B^cd e2f|gfe fed|Bee Bee|gfe fed|1B^cd e2f:|2B^cd ed=c||
+
+X:26
+%%scale .65
+T:Maid Behind the Bar/Sally Gardens/ Sligo Maid
+T: Maid Behind The Bar, The
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+E|FAAB AFED|FAAB A2de|fBBA Bcde|fdgf efdB|
+FAAB AFED|FAAB A2de|fBBA BcdB|AFEF D3:|
+e|faag fdde|fdad fdd2|efga beef|gebe gee2|
+faaf b2af|defd e2de|fBBA BcdB|AFEF D3:|
+T: The Sally Gardens
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:G2GA BAGB|dBeB dBAB|d2Bd efge|dBAB GEDE|
+GFGA BAGB|d2eB dBAB|d2Bd efge|dBAB G4:|
+|:dggf g2de|g2bg ageg|eaag a2eg|a2bg ageg|
+dggf g2de|g2bg ageg|d2Bd efge|dBAB G4:|
+T: Sligo Maid, The
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|: A2BA (3B^cd ef | gedB AGEF | G2BG dGBG | DEGA BAdB |
+A2BA (3B^cd ef | gedB AGEG | B3G A2GE | DEGA BAA2:|
+|: eaag a2ga | bgaf gfed | eggf g2ge | dega bgag |
+eaag a2ga | bgaf gfed | eg (3gfg edBA | dBgB BAA2 :|
+
+X:27
+T:Maud McQuilan's/ Trip to Durrow
+T:Maud McQuillans
+M:4/4
+K:G
+B3c dcBA|GABGD3B|c3d edcB|AGFE D^cdc|
+BABc dcBA|GABG DCB,D|CEGE DFA[FD]|GDBA G2dc:|:
+BGBd g3f|eccB cBAB|cAce a3g|fdd^c dcBc|
+dGBd g3f|ec (3cBc ecge|dBGB cADF|AGGF G2dc:|
+T: Trip To Durrow, The
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+D2DF ADFA|dfed B3c|dBBA dBBA|FADE FE E2|
+D2DF ADFA|dfed B3c|dBBA FAdB|AFEG FD D2:|
+|:dcde fefg|afdf gfed|(3Bcd ef gebe|gebe gfef|
+d2de fefg|afdf gfed|(3Bcd ef gbag|fdec d2de|
+fdec d2de|fded B3c|dBBA dBBA|FADE FE E2|
+D2DF ADFA|dfed B3c|dBBA FAdB|AFEG FD D2:|
+
+X:28
+T:Mist Covered mountain Set/ Walls of Liscarroll
+C:Na Connery's play the first tune in Dm, which fits better than the more common Am. Consider playing the set the other way round
+T:Mist Covered Mountain, The
+M:6/8
+K:D
+|:EAA ABd|edB dBA|G3 GAB|dBA GED|
+EAA ABd|eAA Bcd|efg dBG|BAG A3:|:
+age a2b|age edB|AGE G2A|BAB GED|
+age a2b|age edB|AGE G2A|BAG A3:|
+T:The walls of Liscarroll, The
+C:anon.
+O:Ireland
+B:Francis O'Neill: "The Dance Music of Ireland" (1907) no. 8
+R:Double jig
+K:Dmix
+A|:dcA AGE|GED D2E|GEE cEE|GAB cde|
+dcA AGE|GED D2E|GEE cEE|DED D2:|:
+dcd ecA|dcd ecA|GEE cEE|GAB cde|
+1dcd ecA|dcd ecA|GEE cEE|DED D2:|
+2dcA AGE|GEE D2E|GEE cEE|DED D2|
+
+X:29
+%%scale .7
+T:Monahan Twig/ Colliers
+T:Monahan Twig
+M:4/4
+K:D
+ed|cAAG Aced|cAAG E3[BG]|cAAG Aced|BAGB d2 ed|
+cAAG Aced|cAAG E3B|cAAG Aced|BAGB d2ed||
+B/c/d ef gfed|B/c/d ef e3d|cdef gfge|dBGB d2ed|
+cded cded|cAAB cdef|gfge dfed|BAGB d2ed||
+T:Colliers'
+M:4/4
+K:Dmix
+||:AG|F/E/D E/F/G A3B|cAdB cABG|AddA d3e|fdeA d^cAG|
+F2DF A3B|cAdB cABG|Add^c A3G|EFGE FD:||:
+de|fded fde^c|Add^c Adde|fdde fde^c|A3B cBcd|
+eaag efge|B/c/d ed ^cAGG|Add^c A3G|EFGE FD:||
+
+X:30
+T:Mouth of the Tobique/Turnpike
+T:Mouth of the Tobique
+C:Arr. Christine Martin
+M:C
+K:G
+|:(3DEF|GFGA Bded|BdBG D2 (BG)|ABAF DFAF|GABc d2 (3DEF|
+GFGA Bded|BdBG D2 (BG)|ABAF DFAF|GBAF G2:|:
+(ef)|gfga gdBg|fdAd f2 (gf)|ecAG FDEF|GABc d2 (ef)|
+gfga gdBg|fdAd f2 (gf)|ecAG FDEF|GBAF G2:|:
+(3DEF|G2 (BG) GcGG|BGGc GGBG|FGAB cAFA|GABc d2 (3DEF|
+G2 (BG) GcGG|BGGc GGBG|FGAB cAFA|GBAF G2:|
+T:The Turnpike
+M:4/4
+L:1/8
+K:A
+ABcA BcAF|ECEF ABce|agae faec|dBcA BdcB|
+ABcA BcAF|ECEF ABce|agae faec|1BAGB A4:|2BAGB A2GF|
+|:E2GE BEGE|A2cA eAcA|B2^dB fBdB|e2ge bege|
+agae faec|defg a2ga|bgaf gece|1dBGB A2GF:|2dBGB A4|]
+
+X:31
+T: Mrs Jamieson's/ Hurricaine
+C:A set put together by Sandra Crawshaw when she needed some Scottish music
+T:Mrs Jameison's
+R: jig
+M: 6/8
+L: 1/8
+K: Amaj
+E>AB c2E|F2E FA2|E>Ac e2f|e2c B2c|
+E>AB c2E|F2E FA2|EAB c<ef|c2B A3|
+e2A f2A|e2E F2A|e2A f2A|a2c B2c|
+e>AA ABc|F2E F2A|EAB c<ef|c2BA3|
+T: The Hurricane
+R: reel
+M: 4/4
+L: 1/8
+K: Amaj
+d|:"A(cba)"cABG A2ED|CEAc "Bm"BB,B,d|"A"cABG Aaga|1"D(A4)"(3fga ed cAAd:|2(3fga ed cAAa||
+|:"(tune)"gaea cAAa|gaea "Bm"fBBa|"(tune)"gaea ABcd|1"(cba)"(3edc dB cAAa:|2(3edc dB cAAe||
+"(tune)"ac'e'c' aecA|"(EGBd)"GBEB GBEe|"(tune)"ac'e'c' aecA|"(ABcd)"defg aAAe|
+"(tune)"ac'e'c' aecA|"(EGBd)"GBEB GBEd|"(edcA)"cABG Aaga|"D"(3fga ed cAA2|
+|:"F#m"cfaf cfaf|"E"efge Bege|"F#m"fgaf cfaf|"E"gbeg "F#m"affc|
+"F#m"fgaf cfaf|"E"efge Bege|"D"aefd ceaf|1"E4"ecdB cAAB:|2ecdB cAAd||
+
+X:32
+%%scale .7
+T: Musical Priest/ Red Haired Lass
+T:Musical Priest
+R: reel
+M: 4/4
+L: 1/8
+K: Bmin
+|:BA|FBBA B2Bd|cBAf ecBA|FBBA B2Bd|cBAc B2:|
+|:Bc|d2dc dfed|(3cBA eA fAeA|dcBc defb|afec B2:|
+|Bc|dBB2 bafb|afec ABce|dB B2 bafb|afec B2Bc|
+dB B2 bafb|afec ABce|dcBc defb|afec B2|
+T: Red-haired Lass, The
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+DG{A}GF ~G2 E|DGBG AGEG|DG{A}GF GABd|egdB cBAG|
+DG{A}GF GABG|DGBG AGEG|DG{A}GF GABd|gedB ~c2 Bc||
+d2 gd edgd|(3ddd gd BABc|d2 gd edef|gedB ~c2 Bc|
+d2 gd edgd|(3ddd gd BABd|~c3 A BcBA|GABd edBA||
+T:Alternatives
+DG{A}GF ~G2{A}BG|G2{A}BG AGEG|DG{A}GF GABd|e/f/g dB cBAG|
+DG{A}GF G2 {A}BG|G2 {A}BG AGEG|DG{A}GF GABd|e/f/g  dB ~c2 Bc||
+d2 gd edgd|(3ddd gd BABc|d2 gd edef|gedB ~c2 Bc|
+d2 gd edgd|(3ddd gd BABd|~c3 A B2BA|GABd e/f/g BA||
+
+X:33
+T:Old Tipperary/ Strop the Razor
+T:Old Tipparary, The
+M:6/8
+L:1/8
+K:G
+||:dcA G3|AGF G3|dcA G3|AGE F2A|dcA G3|AGF G2d|fdd edd|fdd cAF:||:
+GBd g3|gaf g3|d2g gfg|a2g fga|bc'b agf|gfe f2e|dcA cde|fed cAF:||
+T:Strop the Razor
+M:6/8
+L:1/8
+K:G
+||:BGG AGG|BGG AGF|DGG GFG|DGG G2A|BGG AGG|BGG AGF|D2E F2G|ADE FGA:||:
+dBB cAA|dBB cAF|DGG GFG|DGG G2A|dBB cAA|dBB cAF|D2E F2G|ADE FGA:||:
+BAB cBc|dcd dBd|g3 gfd|gag gdc|BAB cBc|dcd d2e|=f3 fde|=fag ^fdc:||
+
+X:34
+T:Paddy Taylor's/Sean Reid's/ Tommy Peoples'
+T:Paddy Taylor's
+M:4/4
+K:G
+|:FEDF ABAF|GEcE dEcE|FEDF ABAF|1GEcE ED D2:|2GEcE EDDB||
+Addc dfed|B/c/d ef g2 ed|Addc dfed|=cAGE EDDB|
+Ad dc d3A|B/c/d ef g2 fg|af ge d2 cA|B/c/d AG FD DE|:
+F3G A2 dG|GGdG GGdG|FEFG Add=c|A/B/A GE ED D2:|
+T:Sean Reid's
+|:DG !turn!G2 BG !turn!G2|cA !turn!A2 dBcA|DGGF GABd|cAFG AG G2|
+DG !turn!G2 BG !turn!G2|cA !turn!A2 d2 ef|g2 ag gfde|fdcA AG G2:|:
+dgga gfde|fdge fdcA|dg !turn!g2 gfde|fdcA AG G2|
+!turn!g3a gfde|f3 g fdcA|dg !turn!g2 bgag|1fdcA AG G2:|2cAdc BGGF||
+T:Tommy Peoples'
+G2 BG cABG|ADDE FGAF|G2BG cABG|1Addc BGGF:|2Addc BGGf||
+g2 dg egde|g2 bg fgaf|g2dg egdB|1cAdc BGGf:|2cAdc BGGF||
+
+X:35
+%%scale .7
+T:Poor Old Woman/ Jenny's Welcome
+T:Poor Old Woman, The
+K:C
+|:ed|c2 Bc AcBA|GEGA GABd|edcB ABcd|e2 A2 A2 ed|
+c2 Bc AcBA|GEGA GABd|eg^fa gedB|BAAG A2:|:
+e^f|g2 ga gedB|BAAG G2 e^f|g2 ga gedc|BcAB G2 GB|
+AEAB AcBA|GEGA GABd|eg^fa gedB|BAAG A2:|
+T: Jenny's Welcome To Charlie
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|D2 AB AGEF|GEcE dEcE|D2 AB AGEF|GEcE EDCE|
+|D2 AB AGEF|GEcE d2 cd|eddc AGEF|1 GEcE EDCE:|2 GEcE EDD2|
+|:f3 d efed|^cA (3AAA cA (3AAA|f2 fd edcd|eaag edde|
+|~f3 d efed|^cAAB =c2 cd|eddc AGEF|GEcE EDD2:|
+|:a2 ab agef|~g3 a gedg|eaag aged|eaag edde|
+|~a3 b agef|~g3 a gedB|A2 (3Bcd eddc|AcGE EDD2:|
+|:Add^c defd|AccB cdec|Add^c d2 cd|eaag edd^c|
+|~d3 e dcAB|~c3 d cAGE|D2 (3EFG Addc|1 AcGE EDD2:|2 AcGE EDCE||
+%%Scale .8
+
+X:36
+T:Párraig's Jigs in A
+C:Párraig was a visitor to sessions at ceol Aneas, Chrtistchurch and Dunedin in June 2016
+T:The Rambler
+R: jig
+M: 6/8
+L: 1/8
+K: Amaj
+|: EFE E2 A|FEC E2 e|fec ABc|dcd BAF|
+|EFE E2 A|FEC E2 e|fec ABc|1 BcB A2 F :|2 BcB Acd||
+|: ecB Ace|aff faf|ece fec|cBA Bcd|
+|ecB Ace|aff faf|ece fec|1 BcB Aee:|2 BcB (3ABA F||
+T: Health To The Ladies
+R: jig
+M: 6/8
+L: 1/8
+K: Amaj
+f|ecA BAF|AFE EFA|Bdc BAB|cBB B2f|
+ecA BAF|AFE EFA|Bdc BAB|cAA A2:|:
+A|cee dff|cee ecA|cee dff|ecA B2A|
+cee dff|cee ecA|Bdc BAB|cAA A2:|
+
+X:37
+T:Queen of the Rushes Set
+T:Queen of the Rushes
+M:6/8
+K:G
+d/c/|B2G GdB|c2A AGA|B2G GAB|cAG FED|
+B2GB2G|c2A AGA|B{^c}dB =cAd|G3{AG}G2:|:
+g|fed efg|afd dcA|gfg bag|afdd2e|
+=f2d e^fg|afd dcA|BdB cAd|G3{AG}G2:|:
+B/c/|d3gdB|d3{^cd}gdB|cBc ABc|cBc ABc|
+d3gdB|d3gdB|BdB cAd|G3{AG}G2:|
+T:Paddy Fahy's Jig
+M:6/8
+K:G
+||:DGA B2B|cBc d2g|gdc BAB|cAG F2D|DGA B2B|cBc d2g|gdc BAB|cAF G3:||:
+ggg fga|gdc BAG|e2A c2A|afd def|g2a bag|fdc fdc|B3 cAF|AGF G3:||
+T:Cliffs of Moher
+K:Ador
+eaa bag|eaf ged|c2A BAG|EFG ABd|eaa bag|eaf ged|c2A BAG|EFG A3:|:
+(e=fe) dBA|(e=fe) dBA|GAB dBA|GAB dBd|
+[1(e=fe) dBA|(e=fe) dBA|GAB dBG|EFG A3:|[2efe dee|cee Bee|EFG BAG|EDB, A,3|
+
+X:38
+T: Rakish Paddy/ Dublin Reel
+T: Rakish Paddy
+M:4/4 
+L:1/8 
+K:Dmix 
+AB |:"Am"c2AB c2 AB |"C"cAAG E[DG] [D2G2] |"D"Add^c d2fe |dcAG FGAB |
+"Am"c2AB c2 AB |"C"cAAG E[DG] [D2G2]|"D"DEFG ABcA |dcAG FA D2 ::
+"C"eg g2 ag g2 |eg g2 ed^cd |"Am"ea a2 ba a2 |ea a2 egdg |
+"C"eg g2 ag g2 |f3e defg |"D"afge fde^c |dcAG FD D2 :|
+T:The Dublin Reel     
+M:C|
+L:1/8
+K:D 
+||:dF F2 dFeF |dF F2 AFEF |[1dF ~F2 dfed |cABG AFEF :|[2d2 dc dfed |cABG AFEf |:
+eA A2 eAfA |eA A2 BAFA |[1eA A2 egfe |dBcA BAFA :|[2d2 dc dfed |cABG AFEF|:
+d2 dc dAFA |dcdA FDFA |d2 dc dfed |cABG AFEF :|
+
+X:39
+T:Road to Banff/ Basil the Retreiver
+C:Set attributed to Christine Martin
+T:Road to Banff
+M:6/8
+K:D
+||:Add dcd|BAG A3|AdA eAf|g2g ecB|Add dcd|BAG A3|AdA eAf|gec d3:||
+a3 fdA|g3 ecB|AcA eAf|g3 efg|a3 fdA|g3 ecB|AdA eAf|gec d3:||
+T:Basil the Retriever
+M:6/8
+K:Bm
+||:FBB BAB|dcB cBA|GBB BAB|dcB cBA|A3 cBc|eaf edc|dBB gBf|ecA B3:||:
+bBB aBf|BbB aBf|ecB Ace|agf edc|BAB cBc|dcd ede|fBB gBf|ecA B3:||
+
+X:40
+T:Rógaire Dubh/ Girl of the Big House
+T:Rógaire Dubh, An
+M:6/8
+K:D
+|:d|cAA BGG|cAA AdB|c2A BAG|AFD DdB|
+cAA BGG|cAA AGF|G3 B[dG]B|AFD D2:|
+e|!turn!f3!turn! g3|afd cBA|f3 gfg|afd de/f/g|
+agf gfe|fed {e=f}e2d|cAA BGG|AFD D2|
+T:Girl of the Big House, The
+K:G
+AG|F{G}FD DAD|ADA GEA|DD/D/D AGE|F/G/AD DAG|
+!turn!F3!turn!G3|AGA cde|dcA GEA|D{A}D{G}D DAG||
+F{B}AD DAG|ADA GEA|DF/G/A AGE|FAD DAG|
+FDD GDD|ADD cde|dcA GEA|D{A}D{G}D DAB|:
+c{d}cA AGF|G3 {A}GFG|A{B}[dA]B cAG|A[dD][^cA] d2e|
+g/f/ed =cAG|A{B}[AD]F [cA][eE][dAD]|dcA GEA|D{A}D{G}D d2 z:|
+
+X:41
+T:Scholar/ Teetotaler
+T:Scholar
+M: 4/4
+L: 1/8
+R: reel
+K: Dmaj
+|:dfaf gfeg|fdAG FGA=c|BGFG EFGg|fdec dcBA|
+dfaf gfeg|fdAG FGA=c|BGFG EFGg|fdec d4:|
+|:a2af dfaf|dfaf bagf|g2ge =cege|=cege afgf|
+a2af dfaf|dfaf bagf|g2gf gbag|fdec d4:|
+T: Teetotaler
+M: 4/4
+L: 1/8
+R: reel
+K: Gmaj
+|:G2 GF GABc|dB eB dBAc|BEED EFGA |BGAF GFED|
+G2 GF GABc|dB eB dBAc|BEED EFGA |BGAF G4:|
+|:Beed e2ef| geaf gfed| Bdd^c d2 de| fdaf gfed|
+Beed e2ef|geaf gfed|BEED EFGA|BGAF G4:|
+
+X:42
+T:Star Set (Morning Star/ Wise Maid/ Star of Munster)
+T:Morning Star, The
+M:4/4
+K:G
+GA|:B2 BA BGEF|GABd gedc|1B2 BA BGEG|FGAF G3A:|2dBAc BE E/D/E|FGAF G3A|:
+B/c/d ef gfge|fedf edBA|B/c/d ef g3e|afdf e2 ed|
+B/c/d ef gfge|fedf edBA|Bdd^c ef|geaf gfed:|
+T:Around the World (The Wise Maid)
+M:C|
+L:1/8
+K:D
+F2FG FEDE|FAAB AFED|d2 e/f/g fdec|dBAF BEE2|
+F3G FEDE|FAAB AFED|d2 e/f/g "G"fdec |dBAG FDD2:|:
+d2 AG FDFA|dfaf gfeg|fAdf eAce|dfed cAA2|
+BDGB ADFA|dfaf gfed|Bd ce dBAG |FAEA D2||
+T:Star of Munster
+K:G
+ed|cBAc BAGB|AGEF GEDF|1EAAB c3d|eaaf gedB:|2EAAB cded|c/B/A BA A2 cd:|:
+eaab ageg|agbg agef| ggga gfef|g/f/e af gfed|
+eaab ageg|agbg agef|g3e a ga |bgaf gfed:|
+
+X:43
+T: Swaggering Jig/Spotted Dog
+T:Swaggering Jig, the
+R: slip jig
+M: 9/8
+L: 1/8
+K: Gmaj
+|:BGG AGE DEG|BAG DEG A3|BGG AGE DEG|cBA BGE D3:|
+Bdd dge dBG|Bdd dBG A3| Bdd dge dBG|cBA BGE D3|
+Bdd dge dBG|Bdd dBG A3| gfe fdB cBA|cBA BGE D3||
+T: Spotted Dog, The
+R: Slip Jig
+M: 6/8
+L: 1/8
+K: Amaj
+|:E2A ABc|BAF AFE|F2B Bce|fec BAF|
+E2A ABc|BAF A2a|faa eaa|ABc B2A:|
+|:cee ece|fec ecA|cee fec|EFA B2A|
+cee ece|fec e2a|faa eaa|ABc B2A:|
+
+X:44
+T:Swinging on the Gate/ Ships are Sailing
+C:Set attributed to Anne Bowen, for the Dunedin Fiddle Club
+T:Swinging on the Gate
+R:Reel
+L:1/8
+M:4/4
+K:D
+FA||:d2AF D2EF|G2FG FDB,D|G,DFA d2cA|B/c/d ed cABc|
+dBAF D2EF|GEFD FDB,D|GE F/E/D EDB,G,|A,B,DE D2FA:||:
+d2de faef|dcBA F2ED|B,EE2 GFED|B,DEF GABc|
+dcde f/g/a ef|dcBA F2 EF|G/F/E FD EDB,G,|A,B,DE D2| 
+T:Ships are Sailing
+K:G
+||:Beed B^cdB|AD F/E/D AD F/E/D|EDEF GFGA|Beef gfed|
+Beed B^cdB|AD F/E/D AD F/E/D|EDEF GFGA|1Beed e4:||2Beed e2ef|
+||:gfga bgeg|fefg afdf|gfga bgeg|fefg e2ef|
+gfga bgeg|fefg afdf|g2bg f2af|1edef g2ef:||2edef g2z2|
+
+X:45
+%%scale .7
+%%measurenb 0.
+T:Tarbolton/ Longford Collector/ Sailor's Bonnet or Salamanca
+C:A set mentioned in Comhaltes circles - Salamanca is for DN as Sailor's Bonnet is part of another set there
+T: The Tarbolton
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+D|Eeed e2 BA|GBAF GFEF|Dddc d2 AF|GBAG FDDF|
+Eeed efge|fedf edBA|GABG FGA=c|BGAF GE E :|
+|gfef (3gfe be|gebe gfef|d2 fd adfd|ABAG FDDF|
+(3GGG BG (3FFF AF|Eeef gfed|B2 dB AGFA|BGAF GE E :|
+T: Longford Collector, The
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:G3A Bcdg|e~B3 eBdB|~G3A B2dB|ABBA GEDE|
+~G3A Bcdg|e~B3 d2ef|~g3f gedB|1ABBA GEDE:|2ABBA GEED|:
+~g3f gedg|e~B3 d2ef|~g2gf gedB|ABBA GEED|
+~g3f gedg|e~B3 d2ef|gbaf gedB|1ABBA GEED:|2ABBA GEDE|
+T: Sailor's Bonnet, The
+M: 4/4
+L: 1/8
+R: reel
+K: Dmaj
+||:A2 FA df f2|dfef dB B2| A2 FA dfec| dBAF ADD2 :|
+|:a3 a afef|afef dB B2|fb b/b/b bafa|bfaf fee2|
+bf3 afed|afef dB B2|A2 FA dfec |dBAF ADD2 :|
+T:Salamanca, The
+M:4/4
+L:1/8
+K:D
+d3|:c|AD F/E/D AD F/E/D|Adcd fedc|BEE2 BEE2|B/c/d ed Bdeg|
+fBB2 fBB2|f2ef dfag|fdec dAAG|FAEA D3:|
+a|:afdf gbeg|fdcd BAFB|Addc defg|a2 gb a2 fg|
+a3f g3e|f3e dfag|fdec dAAG|FAEA D3:|
+%%scale .7
+
+X:46
+T:Tatter Jack Walsh/ Out on the ocean/ Brian O'Linn
+T:Tatterjack Walsh
+R:jig
+M:6/8
+L:1/8
+K:Dmix
+|: fef ded | cAB c2 A | dcA GFG| Add efg |
+fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
+|: dfa afd | dfa agf | g2 a ged | ^cde gfg |
+afd fed | cAB cde | dcA GFG| Ad^c d3 :|
+T:Out on the Ocean
+K:G
+DBB BAG|BdB A2A|GED G2A|BBB AGE|DBB BAG|BdB A2A|GED G2A|1BGG G3:|2BGG GBd|:
+eee edB|eee edB|ddd def|gfe dBA|GGA BBd|eee dBA|GED G2A|1BGG GBd:|2BGG G3|
+T:Brian O'Lynn
+M: 6/8
+L: 1/8
+R: jig
+K:Ador
+B||:cAd cAG|EDE GAB|cAc BAG|EAA ~A2B|cAd cAG|EDE GAB|cde =fed|cAA A3:||:
+f-gg ged|cAB c2d|eaa age|ed^c def|gea ged|cAB cde|=fed cAG|EAA A3:||
+
+X:47
+T:Teampall an Glentáinn/ Fermoy Lasses
+T:Teampall an Glentáinn
+M:4/4
+K:D
+|:dcAG EFF2|AGG2 EFF2|1dcAG EFF2|A2GE EDD2:|2AGG2 EFF2|A2GE EDAD|:
+E/F/G AB =c3B|Add2 efed|dcAG EFGE|1A2GE EDAD:|2A2GE EDD2|
+T:Fermoy Lasses     
+M:4/4     %Meter
+L:1/8     %
+K:G 
+|GE E2 BE E2 |GE E2 BcBA |GE E2 BE E2 |AFDF AcBA |
+GE E2 BE E2 |GE E2 BcBA |G2 GF GBdB |AFDF AcBA:||:
+G2 BG dGBG |G2Bd efg2 |G2 BG dGBG |AFDF AcBA |
+G2 BG dGBG |G2 Bd efg2 |gage dedB |AFDF AcBA :|
+
+X:48
+%%scale .65
+T: Trip To Athlone/ Fasten the Leg on Her/ My Darling Asleep
+C:Can be Trip to Athlone/My Darling Asleep/ Clare Jig
+T: Trip To Athlone, The
+R: jig
+M: 6/8
+L: 1/8
+K: Dmaj
+|:ABA D2d|{e}dcA AGF|ABG ABc|dAB =cde|
+ABA D2d|{e}dcA AGF|GFG Ade|1 fdc d2d:|2 fdc d2e||
+|:fed edc|Adc Ade|fed efg|AB=c def|
+~g3 age|{a}ed=c AGF|~G3 Ade|1 fdc d2e:|2 fdc d2d||
+T: The Humours Of Ballinahulla
+T:Fasten the Leg on Her
+R: jig
+M: 6/8
+L: 1/8
+K: Gmaj
+~B3 G2D | GBd edB | ~A3 DFA | DFA cBA |
+~B3 G2D | GBd edB | ~A3 DFA |1 AGF G2A :|2 AGF G2e||
+~f3 def | ~g3 efg | fzA AFA | BAF Ade |
+~f3 def | ~g3 efg | fdB AB^c |1 dfe d2e :|2 dfe d2c ||
+T: My Darling Asleep
+R: jig
+M: 6/8
+L: 1/8
+K: Dmaj
+|:fdd cAA|BGG A2G|FAA def|gfg eaa|
+fdd cAA|BGG A2G|FAA def|gec d3:|
+FAA Add|FAA BGG|FAA def|gfg eaa|
+fdd cAA|BGG A2G|FAA def|gec d3:|
+T: Clare Jig?????
+
+X:49
+%%scale .7
+T:White Petticoat/Stan Chapman's/ Miller's Maggot (Louise's)
+C:Louise Frampton brought this set into Dunedin sessions (The Albar session plays White Petticoat with The Mooncoin)
+T:White Petticoat
+M:6/8
+L:1/8
+K:Em
+B||:Bed cBA |GFE B,EG|FBB cBB|eBB cBA|Bed cBA|GFE B,EG|FBB cBA|GEE E3:||:
+gec Gce|gfg gec|cBA EAc|Be^d eBG|FBB GBB|FBA GFE|B,EG cBA|GEE E3:||
+T:Stan Chapman's
+T:Willie's Trip To Toronto
+M:6/8
+L:1/8
+R:jig
+K:Amaj
+||:E3 EFA|B3 Bce|fea fec|ecA BAF|E3 EFA|B3 Bce|fea fec|ecA A3:||:
+e3 ece|f3 fga|ecA B3|cAE Eaf|e3 ece|f3 fga|ecA B3|1cAA Aaf:||2cAA A3|
+T:Miller's Maggot, The
+M:6/8
+L:1/8
+R:Jig
+K:G
+G2A B2A|B2A BGE|G2A B2A|Bee dBA|G2A B2A|B2A BGE|gfe dBA|Bee dBA:||:
+e2f fge|d2B BAG|e2f g3|aga bge|e2f fge|d2B BAG|A2B cBA|Bee dBA:||
