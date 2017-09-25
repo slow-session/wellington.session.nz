@@ -66,10 +66,10 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
 <table style="width:100%" id="focustunes" class="tablesorter">
 <thead>
     <tr>
-    <th style="width:20%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
     <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:55%;">Audio Player</th>
+    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
