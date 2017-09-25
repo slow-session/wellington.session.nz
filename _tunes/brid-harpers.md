@@ -1,7 +1,7 @@
 ---
 title: Brid Harper's
 titleID: brid-harpers.md
-key: Emin
+key: Dmin
 rhythm: jig
 mode:
 date: 2016-01-01
