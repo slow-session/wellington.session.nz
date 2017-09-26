@@ -3,7 +3,7 @@ title: Paddy Hudai's
 titleID: paddy-hudais.md
 key: D
 rhythm: slip jig
-date: 2017-08-07
+date: 2017-09-27
 location: Wellington Donegal
 tags:
 mp3_file: /mp3/paddy-hudais.mp3
@@ -12,7 +12,7 @@ mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
 mp3_url:
 source: Wellington
 abc_source: Jonathan Berkahn
-abc_url: 
+abc_url:
 abc: |
     X: 1
     T: Paddy Hudai's
