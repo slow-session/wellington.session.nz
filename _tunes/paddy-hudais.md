@@ -11,17 +11,17 @@ mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musicia
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
 mp3_url:
 source: Wellington
-abc_source: The Session
-abc_url: https://thesession.org/tunes/266
+abc_source: Jonathan Berkahn
+abc_url: 
 abc: |
     X: 1
-    T: James Byrne's
     T: Paddy Hudai's
+    T: James Byrne's
     R: slip jig
     M: 9/8
     L: 1/8
     K: Dmaj
-    dfa afd dcd|Bcd e/2f/2ed cBA|dfa afd dcd|1 Bcd ecA d2A:|2 Bcd ecA def||
-    |:ecA ~A3 ecA|d2e fdf agf|ecA ~A3 ecA|1 d2e fdc def:|2 d2e fdc d2A||
+    A | dfa afd dcd | Bcd efd cBA | dfa afd dcd | [1Bcd ecA d2 :|[2 Bcd ecA dgf:|
+    |: ecA ABA ecA |d2e fdf agf | ecA ABA ecA |[1 d2e fdc dgf :|[2 d2e fdc d2 |]
 
 ---
