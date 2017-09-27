@@ -4,11 +4,11 @@ titleID: farrel-ogaras.md
 key: D
 rhythm: reel
 date: 2017-09-07
-location: Wellington 
-tags: slowsession tuneoftheweek
+location: Wellington
+tags: slowsession
 mp3_file: /mp3/farrel-ogaras.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_licence: 
+mp3_licence:
 mp3_url: https://archive.comhaltas.ie/assets/tracks/HQ/CL/CL67a/wm-CL.CL67a.49.mp3/50fef485e73a8bbf1d5812cb6690f452/59b0a3fd
 source: Wellington
 abc_source: The Session

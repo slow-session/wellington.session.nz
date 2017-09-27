@@ -4,15 +4,15 @@ titleID: siobhan-odonnells.md
 key: A
 rhythm: reel
 date: 2017-09-20
-location: Wellington 
-tags: 
+location: Wellington
+tags: slowsession, tuneoftheweek
 mp3_file: /mp3/siobhan-odonnells.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1426238097472521/
 source: Wellington
-abc_source: 
-abc_url: 
+abc_source:
+abc_url:
 abc: |
     X: 1
     T: Siobhan O'Donnell's
