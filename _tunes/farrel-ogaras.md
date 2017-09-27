@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2017-09-07
 location: Wellington
-tags: slowsession
+tags: slowsession focustune
 mp3_file: /mp3/farrel-ogaras.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence:

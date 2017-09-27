@@ -5,7 +5,7 @@ key: A
 rhythm: reel
 date: 2017-09-20
 location: Wellington
-tags: slowsession, tuneoftheweek
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/siobhan-odonnells.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
