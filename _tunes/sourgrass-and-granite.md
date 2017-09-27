@@ -2,7 +2,7 @@
 title: Sourgrass and Granite
 titleID: sourgrass-and-granite.md
 key: D
-rhythm: Waltz
+rhythm: waltz
 date: 2017-08-04
 location: Wellington
 tags: slowsession focustune
