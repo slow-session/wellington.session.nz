@@ -3,14 +3,14 @@ title: Dinkey's
 titleID: dinkeys.md
 key: Amix
 rhythm: reel
-date: 2017-05-29
-location: 
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
-source: 
+date: 2017-10-02
+location:
+tags:
+mp3_file: /mp3/dinkeys.mp3
+mp3_source:  <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1436668949762769/
+source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/24
 abc: |
