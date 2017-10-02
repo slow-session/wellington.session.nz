@@ -8,9 +8,6 @@ You can find out more about the sessions in other NZ cities at:
 
   * <a href="https://www.facebook.com/groups/1461764424153462/">Auckland Irish Sessions - The Claddagh</a>
   * <a href="https://www.facebook.com/Tuesday-at-Biddys-Hamilton-134702863269582/">Hamilton</a>
-  * Raglan
-      * The Eatery - fortnightly on Thursdays at 7:30 pm
-      * Contact <a href="mailto:wilkiemac.raglan@gmail.com">wilkiemac.raglan@gmail.com</a> to confirm
   * <a href="http://wellington.session.nz">Wellington</a>
   * <a href="https://www.facebook.com/The-Arrowtown-Session-722234104591565/?fref=ts">Arrowtown</a>
 
