@@ -34,7 +34,6 @@ abc: |
     | d>f a<f g2 f>e | d>f a>b a>f e<f | d<B A>F E>D E<F | D>B, C<A, D2 D<E |
     | D>f a<f g2 f>e | d>f a>b a>f e<f | d<B A>F E>D E<F | D>B, C<A, D4 :|
     T: Molly Rankin's
-    C: John Morris Rankin
     R: reel
     M: 4/4
     L: 1/8
