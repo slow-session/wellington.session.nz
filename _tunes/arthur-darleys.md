@@ -1,12 +1,12 @@
 ---
-title: Swedish Jig
-titleID: swedish-jig.md
+title: Arthur Darley's
+titleID: arthur-darleys.md
 key: Amix
 rhythm: jig
 date: 2017-10-04
-location: Wellington 
-tags: 
-mp3_file: /mp3/swedish-jig.mp3
+location: Wellington
+tags:
+mp3_file: /mp3/arthur-darleys.mp3
 mp3_source: Alistair Cuthill and Steve McGlone
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url: https://www.facebook.com/alistairsmusic/videos/1708100742542234/
@@ -15,8 +15,8 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/417
 abc: |
     X: 1
-    T: Swedish Jig
     T: Arthur Darley's
+    T: Swedish Jig
     R: jig
     M: 6/8
     L: 1/8
@@ -28,6 +28,6 @@ abc: |
     A=ff fef | A=ff f2g | =fed ed^c | d2d d2e :|
     |: fgf edc | dAA BAD | FED EDC | DEF CDE |
     Ddd Aee | Aff Agg | fed edc | d2d d3 :|
-    
+
 
 ---
