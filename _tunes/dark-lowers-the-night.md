@@ -1,7 +1,7 @@
 ---
 title: Dark Lowers the Night
 titleID: dark-lowers-the-night.md
-key: Bm
+key: Bdor
 rhythm: 
 mode:
 date: 2016-10-27

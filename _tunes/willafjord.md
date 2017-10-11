@@ -1,7 +1,7 @@
 ---
 title: Willafjord
 titleID: willafjord.md
-key: G
+key: D
 rhythm: reel
 date: 2015-12-21
 location: Arrowtown Wellington
@@ -23,5 +23,5 @@ abc: |
     A2F A2D FA | B2G B2D GB |ABcd efge | f2d2 d2 :|
     |: de | f2d f2f df | geaf gfed |f2d f2A df | e2ce Aece|
     f2d f2f df | gdaf gfed | ABcd efge | f2d2 d2 :|
-    
+
 ---

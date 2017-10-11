@@ -1,7 +1,7 @@
 ---
 title: Humours of Castle Comer, The
 titleID: humours-of-castle-comer-the.md
-key: Em
+key: Edor
 rhythm: jig
 mode:
 date: 2016-10-27

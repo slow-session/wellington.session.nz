@@ -1,7 +1,7 @@
 ---
 title: Green Gates, The
 titleID: green-gates-the.md
-key: Gmaj
+key: G
 rhythm:  reel
 mode:
 date: 2016-10-27

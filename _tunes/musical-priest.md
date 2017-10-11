@@ -1,7 +1,7 @@
 ---
 title: Musical Priest
 titleID: musical-priest.md
-key: Bmin
+key: Bdor
 rhythm: reel
 date: 2016-10-12
 location: Arrowtown Wellington

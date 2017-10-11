@@ -1,8 +1,8 @@
 ---
 title: Troika
 titleID: troika.md
-key: Am
-rhythm: 
+key: Ador
+rhythm:
 mode:
 date: 2016-10-27
 location: Dunedin

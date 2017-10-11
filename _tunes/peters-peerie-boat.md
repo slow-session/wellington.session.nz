@@ -1,7 +1,7 @@
 ---
 title: Peter's Peerie Boat
 titleID: peters-peerie-boat.md
-key: Dmaj
+key: D
 rhythm:  jig
 mode:
 date: 2016-10-27

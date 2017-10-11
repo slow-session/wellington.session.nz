@@ -1,7 +1,7 @@
 ---
 title: Church of Dromore, The
 titleID: church-of-dromore-the.md
-key: Am
+key: Ador
 rhythm: jig
 mode:
 date: 2016-10-27

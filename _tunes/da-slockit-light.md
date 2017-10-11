@@ -1,7 +1,7 @@
 ---
 title: Da Slockit Light
 titleID: da-slockit-light.md
-key: Dmaj
+key: D
 rhythm:  reel
 mode:
 date: 2016-10-27

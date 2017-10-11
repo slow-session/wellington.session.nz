@@ -1,7 +1,7 @@
 ---
 title: The Curlew
 titleID: the-curlew.md
-key: Bm
+key: Bdor
 rhythm: reel
 date: 2017-02-09
 location: Wellington 

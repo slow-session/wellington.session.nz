@@ -1,7 +1,7 @@
 ---
 title: Finnish Polka
 titleID: finnish-polka.md
-key: Bm
+key: Bdor
 rhythm: polka
 mode:
 date: 2016-10-27

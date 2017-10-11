@@ -1,7 +1,7 @@
 ---
 title: Two Fifty to Vigo
 titleID: two-fifty-to-vigo.md
-key: Bmin
+key: Bdor
 rhythm: reel
 date: 2015-11-10
 location: Wellington

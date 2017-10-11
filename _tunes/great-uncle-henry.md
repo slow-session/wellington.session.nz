@@ -1,7 +1,7 @@
 ---
 title: Great Uncle Henry
 titleID: great-uncle-henry.md
-key: Gmaj
+key: G
 rhythm:  barndance
 mode:
 date: 2016-10-27

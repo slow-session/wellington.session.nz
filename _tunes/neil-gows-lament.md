@@ -1,7 +1,7 @@
 ---
 title: Neil Gow's Lament
 titleID: neil-gows-lament.md
-key: Dmaj
+key: D
 rhythm:
 mode:
 date: 2016-10-27

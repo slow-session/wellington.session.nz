@@ -141,21 +141,19 @@ Please think of the trees!">
       {% assign tuneID = 3000 %}
       {% assign tunes =  site.tunes | sort: 'title' %}
       {% for tune in tunes %}
-          {% if tune.location contains "Wellington" %}
-              {% assign tuneID = tuneID | plus: 1 %}
-              "{{ tuneID }}": {
-                  "title": "{{ tune.title | xml_escape }}",
-                  "tuneID": "{{ tuneID }}",
-                  "key": "{{ tune.key | xml_escape }}",
-                  "mode": "{{ tune.mode | xml_escape }}",
-                  "rhythm": "{{ tune.rhythm | xml_escape }}",
-                  "location": "{{ tune.location | xml_escape }}",
-                  "tags": "{{ tune.tags | array_to_sentence_string }}",
-                  "url": "{{ tune.url | xml_escape }}",
-                  "mp3": "",
-                  "abc": {{ tune.abc | jsonify }}
-              }{% unless forloop.last %},{% endunless %}
-          {% endif %}
+          {% assign tuneID = tuneID | plus: 1 %}
+          "{{ tuneID }}": {
+              "title": "{{ tune.title | xml_escape }}",
+              "tuneID": "{{ tuneID }}",
+              "key": "{{ tune.key | xml_escape }}",
+              "mode": "{{ tune.mode | xml_escape }}",
+              "rhythm": "{{ tune.rhythm | xml_escape }}",
+              "location": "{{ tune.location | xml_escape }}",
+              "tags": "{{ tune.tags | array_to_sentence_string }}",
+              "url": "{{ tune.url | xml_escape }}",
+              "mp3": "",
+              "abc": {{ tune.abc | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
 </script>

@@ -1,7 +1,7 @@
 ---
 title: Last Night's Fun
 titleID: last-nights-fun.md
-key: Dmaj
+key: D
 rhythm: reel
 date: 2017-07-28
 location: Wellington

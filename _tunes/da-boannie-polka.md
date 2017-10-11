@@ -1,7 +1,7 @@
 ---
 title: Da Boannie Polka
 titleID: da-boannie-polka.md
-key: Dmaj
+key: D
 rhythm:  barndance
 mode:
 date: 2016-10-27

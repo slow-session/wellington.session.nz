@@ -1,7 +1,7 @@
 ---
 title: Jack Broke Da Prison Door
 titleID: jack-broke-da-prison-door.md
-key: Gmaj
+key: G
 rhythm: reel
 mode:
 date: 2016-10-27
