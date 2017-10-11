@@ -14,14 +14,15 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/24
 abc: |
-    X: 1
+    X: 5
     T: Dinkey's
     R: reel
     M: 4/4
     L: 1/8
     K: Amix
-    |:ed|c2B2 ABcd|egfg edBd|gBBB gBaB|gBBB gfed|
-    cdBc ABcd|egfg edBd|gfgd efed|c2B2 A2:|
-    |:eg|aAAA aAbA|aAAA agef|gBBB gBaB|gBBB gfeg|
-    aAAA aAbA|aAAA agef|gfgd efed|cdBc A2:|
+    |: fed | "A"{cd}c2 Bc ABcd | "Em"egfd edBd | "G"gB B/B/B gBaB | gB B/B/B gfed |
+    "A"{cd}c2 Bc ABcd | "Em"egfd edBd | "G"{a}(gfg)e "D"dfed | "E7"cdBc "A"A :|
+    |: ef^g | "A"aA A/A/A aAbA | aA A/A/A {b}agef | "G"gB B/B/B gBaB | gB B/B/B "Em"{a}gfeg |
+    [1 "A"aA A/A/A aAbA | aA A/A/A {b}agef | "G"{a}(gfg)e "D"dfed | "E7"cdBc "A"A :|
+    [2 "A"aA A/A/A "G"gA A/A/A | "D"fA A/A/A "A"eA A/A/A | "G"{a}(gfg)e "D"dfed | "E7"cdBc "A"A |]
 ---
