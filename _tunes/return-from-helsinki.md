@@ -1,7 +1,7 @@
 ---
 title: Return From Helsinki
 titleID: return-from-helsinki.md
-key: Dmaj
+key: D
 rhythm: reel
 mode:
 date: 2016-10-27

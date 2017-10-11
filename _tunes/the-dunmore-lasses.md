@@ -1,7 +1,7 @@
 ---
 title: Dunmore Lasses
 titleID: the-dunmore-lasses.md
-key: Emin
+key: Edor
 rhythm: reel
 mode:
 date: 2016-1-26

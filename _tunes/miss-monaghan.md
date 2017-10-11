@@ -1,7 +1,7 @@
 ---
 title: Miss Monaghan
 titleID: miss-monaghan.md
-key: Dmaj
+key: D
 rhythm: reel
 date: 2017-04-24
 location: Wellington 

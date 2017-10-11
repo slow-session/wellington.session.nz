@@ -1,7 +1,7 @@
 ---
 title: Boys of Ballysodare
 titleID: boys-of-ballisodare1.md
-key: DMix
+key: Dmix
 rhythm: reel
 mode:
 date: 2016-01-01

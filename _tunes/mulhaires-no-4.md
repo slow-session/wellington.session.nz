@@ -1,7 +1,7 @@
 ---
 title: Mulhaire's No 4
 titleID: mulhaires-no-4.md
-key: Gmaj
+key: G
 rhythm: reel
 date: 2017-03-27
 location: Wellington

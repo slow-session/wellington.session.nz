@@ -1,7 +1,7 @@
 ---
 title: Maggie's Pancakes
 titleID: maggies-pancakes.md
-key: Dmaj
+key: D
 rhythm:  reel
 mode:
 date: 2016-10-27

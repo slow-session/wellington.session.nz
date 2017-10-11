@@ -1,7 +1,7 @@
 ---
 title: Luna
 titleID: luna.md
-key: Amaj
+key: A
 rhythm:
 mode:
 date: 2016-10-27

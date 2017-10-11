@@ -1,7 +1,7 @@
 ---
 title: Orkney
 titleID: orkney.md
-key: Emin
+key: Edor
 rhythm: slow air
 mode:
 date: 2016-10-27

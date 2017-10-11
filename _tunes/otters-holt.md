@@ -1,7 +1,7 @@
 ---
 title: Otter's Holt
 titleID: otters-holt.md
-key: Bm
+key: Bdor
 rhythm: reel
 date: 2016-4-11
 location: Arrowtown Wellington

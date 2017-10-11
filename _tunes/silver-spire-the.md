@@ -1,7 +1,7 @@
 ---
 title: Silver Spire, The
 titleID: silver-spire-the.md
-key: Dmaj
+key: D
 rhythm:  reel
 mode:
 date: 2016-10-27

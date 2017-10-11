@@ -1,7 +1,7 @@
 ---
 title: Mr. O'Connor
 titleID: mr-oconnor.md
-key: Em
+key: Edor
 rhythm: 
 mode:
 date: 2016-10-27

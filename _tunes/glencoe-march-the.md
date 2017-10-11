@@ -1,7 +1,7 @@
 ---
 title: Glencoe March, The
 titleID: glencoe-march-the.md
-key: Dmaj
+key: D
 rhythm:  reel
 mode:
 date: 2016-10-27

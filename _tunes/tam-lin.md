@@ -1,7 +1,7 @@
 ---
 title: Tam Lin
 titleID: tam-lin.md
-key: Dm
+key: Ddor
 rhythm: reel
 date: 2016-11-10
 location: Arrowtown Wellington

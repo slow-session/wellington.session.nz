@@ -1,7 +1,7 @@
 ---
 title: Out On the Ocean
 titleID: out-on-the-ocean.md
-key: G          
+key: G
 rhythm: jig
 mode:
 date: 2016-1-26
@@ -10,7 +10,7 @@ tags: slowsession beginner
 mp3_file: /mp3/out-on-the-ocean.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/out_on_the_ocean/ 
+mp3_url: https://comhaltas.ie/music/detail/out_on_the_ocean/
 source: Wellington
 abc_url: https://thesession.org/tunes/108
 abc: |

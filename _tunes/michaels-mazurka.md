@@ -1,7 +1,7 @@
 ---
 title: Michael's Mazurka
 titleID: michaels-mazurka.md
-key: Gmaj
+key: G
 rhythm: mazurka 
 mode:
 date: 2016-10-27

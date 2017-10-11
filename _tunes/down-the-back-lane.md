@@ -1,7 +1,7 @@
 ---
 title: Down the Back Lane
 titleID: down-the-back-lane.md
-key: Bmix (ish)
+key: Bmix
 rhythm: jig
 date: 2017-04-19
 location: Wellington

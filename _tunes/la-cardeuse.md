@@ -1,7 +1,7 @@
 ---
 title: La Cardeuse
 titleID: la-cardeuse.md
-key: Gmaj
+key: G
 rhythm: reel
 mode:
 date: 2016-10-27

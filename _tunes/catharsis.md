@@ -1,7 +1,7 @@
 ---
 title: Catharsis
 titleID: catharsis.md
-key: Gmin
+key: Gdor
 rhythm: reel
 mode:
 date: 2016-01-01
