@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-11-09
 location: Arrowtown Wellington
-tags: slowsession focustune
+tags: slowsession
 mp3_file: /mp3/jackie-colemans.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

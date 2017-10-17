@@ -46,7 +46,7 @@ var textAreas = document.getElementById("abc-textareas");
 </thead>
 
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'tuneoftheweek' | where: 'tags', 'slowsession' %}
+{% assign tunes = site.tunes | where: 'tags', 'tuneoftheweek' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 100 %}
   {% for tune in sortedtunes %}
@@ -73,7 +73,7 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
     </tr>
 </thead>
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'focustune' | where: 'tags', 'slowsession' %}
+{% assign tunes = site.tunes | where: 'tags', 'focustune' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}
@@ -85,27 +85,6 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
 </tbody>
 </table>
 
-<br />
-<table style="width:100%" id="focussets" class="tablesorter">
-<thead>
-    <tr>
-    <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:26%;">Titles</th>
-    <th style="width:45%;">Audio Player</th>
-    </tr>
-</thead>
-<tbody>
-{% assign sets = site.sets | where: 'tags', 'focusset' %}
-{% assign setid = 200 %}
-{% for set in sets %}
-{% assign setid = setid | plus: 1 %}
-<tr>
-{% include setrow.html setId=setid %}
-</tr>
-{% endfor %}
-</tbody>
-</table>
 
 NZ Sessions
 ==============
