@@ -5,39 +5,23 @@ key: D
 rhythm: jig
 date: 2016-01-01
 location: Wellington
-tags: 
+tags: focustune
 mp3_file: /mp3/frost-is-all-over.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/frost_is_all_over
-abc_url: trillian.mit.edu
 source: Wellington
+abc_source: The Session
+abc_url: https://thesession.org/tunes/448
 abc: |
-    X: 1
-    T: The Frost is All Over
-    T: The American Dwarf
-    O: Trad
-    Z: John Chambers -jc:trillian.mit.edu-
+    X: 8
+    T: The Frost Is All Over
     R: jig
     M: 6/8
     L: 1/8
-    K: D
-    A \
-    | "D"d>ef edB \
-    | "D"AFD "A7"E2D \
-    | "D"D>FA "Bm"AFA \
-    | "E7"Bee "A7"edB \
-    | "D"d>ef edB |
-    | "D"AFD "A7"E2D \
-    | "D"D>FA AFA \
-    | "G"Bdd "D"d2 \
-    :: g \
-    | "D"f>df afd \
-    | "G"g>fg "(A7)"bag |
-    | "D"f>df "Bm"afd \
-    | "Em"g>fg "A7"e2g \
-    | "D"f>df afd \
-    | "G"g>fg "(A7)"bag \
-    | "D"f>ga "A7"efg \
-    | "D"fdd d2 :|
+    K: Dmaj
+    |: A |def edB | AFD E2 D | DFA AFA | Bee edc |
+    dd/e/f edB | AFD E2 F | D2 A AFA | Bdc d2 :|
+    |: e |fef afd | gfg bag | f2 f agf | g2 g e2 g |
+    f3 afd | g3 bag | ff/g/a efg | fdc d2 :|
 ---

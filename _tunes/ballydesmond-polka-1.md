@@ -5,12 +5,12 @@ key: G
 rhythm: polka
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: 
+tags: focustune
 mp3_file: /mp3/ballydesmond-polka-1.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/ballydesmond_no_1/
-abc_url: 
+abc_url:
 source: Wellington
 abc: |
     X: 1

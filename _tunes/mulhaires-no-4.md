@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 date: 2017-03-27
 location: Wellington
-tags:
+tags: focustune
 mp3_file: /mp3/mulhaires-no-4.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
@@ -25,5 +25,5 @@ abc: |
     GB~B2 dB~B2|GABG ABGE|DEGA Bdge|dBAF G4:|
     |:~g3a gfed|Bd~d2 edBd|g2af gfed|eaab agef|
     ~g3a gfed|Bd~d2 edBd|~c3B cBAG|FDEF G4:|
-    
+
 ---
