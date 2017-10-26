@@ -31,7 +31,7 @@ Use the "Reset" button to start a new set.
 <textarea id="filename" style="display:none;"></textarea>
 
 <!-- Controls for ABC player -->
-<div id="ABCplayer" class="audioplayer_left"></div>
+<div id="ABCplayer" class="abcplayer_tunepage"></div>
 
 <!-- Allow the user to save their ABC-->
 <form>
