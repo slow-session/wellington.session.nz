@@ -21,8 +21,7 @@ abc: |
     L: 1/8
     K: Dmix
     |:Adc A3 | AGE G3 | Adc A3 | GEA GED |
-    Adc A3 | AGE G3 | AGE cde | dcA GED:||
-    K:DMaj
-    |:ABc dcd | fed efe | ABc dcd |eag edc |
-    ABc dcd | fed efg | age cde | dcA GED :||
+    Adc A3 | AGE G3 | AGE cde | dcA GED:|
+    |:AB^c d^cd | fed efe | AB^c d^cd |eag ed^c |
+    AB^c d^cd | fed efg | age ^cde | d^cA GED :|    
 ---
