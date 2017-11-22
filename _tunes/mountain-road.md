@@ -3,13 +3,13 @@ title: Mountain Road
 titleID: mountain-road.md
 key: D
 rhythm: reel
-date: 2016-1-26
+date: 2017-11-23
 location: Arrowtown Wellington
 tags: slowsession
 mp3_file: /mp3/mountain-road.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/mountain_road/
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
+mp3_source: Charlie Montgomery
+mp3_url: https://www.youtube.com/watch?v=lmIkDkn2F1o
 abc_url: https://thesession.org/tunes/68
 source: Wellington
 abc: |

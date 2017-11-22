@@ -3,13 +3,13 @@ title: Joe Cooley's
 titleID: joe-cooley-s.md
 key: Edor
 rhythm: reel
-date: 2016-1-27
+date: 2017-11-23
 location: Arrowtown Wellington
 tags: slowsession
 mp3_file: /mp3/joe-cooley-s.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/joe_cooleys/
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
+mp3_source: Charlie Montgomery
+mp3_url: https://www.youtube.com/watch?v=lmIkDkn2F1o
 abc_url: https://thesession.org/tunes/1
 source: Wellington
 abc: |
