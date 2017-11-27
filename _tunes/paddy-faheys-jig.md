@@ -1,23 +1,23 @@
 ---
-title: Paddy Fahy's Jig
-titleID: paddy-fahys-jig.md
+title: Paddy Fahey's Jig
+titleID: paddy-faheys-jig.md
 key: G
 rhythm: jig
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: 
-mp3_file: /mp3/paddy-fahys-jig.mp3
+tags:
+mp3_file: /mp3/paddy-faheys-jig.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: 
-abc_url: 
+mp3_url:
+abc_url:
 source: Wellington
 abc: |
     X: 1
-    T: Paddy Fahy's Jig #1
-    C: by Paddy Fahy
+    T: Paddy Fahey's Jig #1
+    C: by Paddy Fahey
     R: jig
-    N: (can be played starting with Em with a capo on fret 3) 
+    N: (can be played starting with Em with a capo on fret 3)
     M: 6/8
     L: 1/8
     K: G
