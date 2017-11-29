@@ -4,6 +4,14 @@ title: Venue
 permalink: /venue/
 navigation_weight: 5
 ---
+<fieldset>
+The Welsh Dragon Bar is closed due to change of ownership. Please check on
+<a href="https://www.facebook.com/groups/WellingtonSession">our Facebook page</a> for the latest info on where we're meeting. Times and venues may change at short notice.
+<br />
+<br />
+We expect things to be a bit fluid until after the New Year as we work to find a permanent home.
+</fieldset>
+<br />
 
 The Wellington Session happens on Tuesday nights from 7:30 p.m. at the Welsh Dragon Bar, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. All players of traditional Irish music are welcome. The session starts slowly, as we work through beginner and recently learnt tunes. If you are relatively new to playing, come along at the start.
 
