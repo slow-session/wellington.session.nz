@@ -50,7 +50,7 @@ facebook_user:
 facebook_app_id:                      #enter your App ID
 facebook_locale: en_US
 facebook_page: https://www.facebook.com/groups/WellingtonSession/
-facebook_image:                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+facebook_image: /images/1-line-session.jpg
 
 # Twitter Cards
 twitter_user:
