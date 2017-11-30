@@ -46,11 +46,11 @@ google_universal_analytics: UA-77351761-1
 google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
-facebook_user:
+facebook_user: WellingtonSession
 facebook_app_id:                      #enter your App ID
 facebook_locale: en_US
 facebook_page: https://www.facebook.com/groups/WellingtonSession/
-facebook_image: /images/1-line-session.jpg
+facebook_image: /images/apple-touch.jpg
 
 # Twitter Cards
 twitter_user:
