@@ -77,7 +77,7 @@ with open(optionsFile, 'w') as outfile:
                             sourceDict[cleanhtml(source.replace('"', ''))] = source
                     if line.startswith('abc_source:'):
                         abc_source = line.replace('abc_source:', '').strip()
-                        if source:
+                        if abc_source:
                             abcsourceDict[cleanhtml(abc_source.replace('"', ''))] = abc_source
 
     #
