@@ -6,4 +6,4 @@
 <meta property="og:author" content="{{ site.facebook_page }}" />
 <meta property="og:locale" content="{{ site.facebook_locale }}" />
 <meta property="og:type" content="{% if page.facebook_type %}{{ page.facebook_type }}{% else %}article{% endif %}" />
-{% if page.facebook_image %}<meta property="og:image" content="{{ site.github.url }}{{ page.facebook_image }}" />{% else %}<meta property="og:image" content="{{ site.facebook_image }}" />{% endif %}
+{% if page.facebook_image %}<meta property="og:image" content="{{ site.github.url }}{{ page.facebook_image }}" />{% else %}<meta property="og:image" content="{{ site.github.url }}{{ site.facebook_image }}" />{% endif %}
