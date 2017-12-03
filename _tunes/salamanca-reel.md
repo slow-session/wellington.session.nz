@@ -4,13 +4,13 @@ titleID: salamanca-reel.md
 key: D
 rhythm: reel
 mode:
-date: 2016-08-01
+date: 2017-12-04
 location: Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/salamanca-reel.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/salamanca/
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1494564770639853/
 abc_url: https://thesession.org/tunes/99
 source: Wellington
 abc: |
