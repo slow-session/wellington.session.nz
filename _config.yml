@@ -50,7 +50,7 @@ facebook_user: WellingtonSession
 facebook_app_id:                      #enter your App ID
 facebook_locale: en_US
 facebook_page: https://www.facebook.com/groups/WellingtonSession/
-facebook_image: /images/apple-touch.jpg
+facebook_image: /images/fiddle-tune-icon.jpg
 
 # Twitter Cards
 twitter_user:
