@@ -5,7 +5,7 @@ permalink: /venue/
 navigation_weight: 5
 ---
 <fieldset>
-The Welsh Dragon Bar is closed due to change of ownership. Please check on
+The status of the Welsh Dragon has been fluid over the last few weeks.  Please check on
 <a href="https://www.facebook.com/groups/WellingtonSession">our Facebook page</a> for the latest info on where we're meeting. Times and venues may change at short notice.
 <br />
 <br />
