@@ -175,7 +175,11 @@ Please think of the trees!">
 
         document.getElementById('ABCraw').innerHTML += abcSource + "\n";
         abcSource = abcSource.replace(regex, '');
+		
+		// Get the ABCplayer to go through each tune twice
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
+		document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
+
         document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
 
         abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
