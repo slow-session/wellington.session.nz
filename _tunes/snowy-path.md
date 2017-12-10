@@ -4,13 +4,13 @@ titleID: snowy-path.md
 key: D
 rhythm: slip jig
 mode:
-date: 2016-08-19
+date: 2017-12-11
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/snowy-path.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>
-mp3_source: Free Music Archive
-mp3_url: http://freemusicarchive.org/music/Slinte/Slinte/slinte_-_11_-_si_beag_si_mor_snowy_path
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1501653406597656/
 abc_url: https://thesession.org/tunes/104
 source: Wellington
 abc: |
