@@ -5,7 +5,7 @@ key: Edor
 rhythm: slip jig
 date: 2017-11-23
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession focustune
 mp3_file: /mp3/fig-for-a-kiss.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>

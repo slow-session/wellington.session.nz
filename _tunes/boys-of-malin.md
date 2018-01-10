@@ -5,7 +5,7 @@ key: A
 rhythm: reel
 date: 2017-10-13
 location: Wellington
-tags:
+tags: slowsession focustune
 mp3_file: /mp3/boys-of-malin.mp3
 mp3_source: Paula Doohan & Liz Doherty
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
