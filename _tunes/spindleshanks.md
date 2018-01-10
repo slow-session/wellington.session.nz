@@ -4,12 +4,12 @@ titleID: spindleshanks.md
 key: D
 rhythm: reel
 date: 2018-01-10
-location: Wellington 
-tags: 
+location: Wellington
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/spindleshanks.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/66
