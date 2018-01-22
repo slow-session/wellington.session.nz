@@ -20,9 +20,10 @@ abc: |
     M: 6/8
     L: 1/8
     K: Gmaj
-    DGG GAG|FEF Ddc|~B3 GBd|cAG FEF|
-    DGG GAG|FEF DBc|ded cAF|AGF G3:|
-    |:dgg def|dgg cBc|dgg def|GFG ABc|
-    def ~g3|agf g2e|fed cAF|AGF G3:|
+    K:Gmaj
+    |:BGG AGA|BAB GED|EAA ABA|EAA A2c|
+    BGG AGG|BAB GED|EGG GED|EGG G3:|
+    |:Bcd ABc|BAB GED|EAA ABA|EAA A2c|
+    Bcd ABc|BAB GED|EGG GED|EGG G3:|
 
 ---
