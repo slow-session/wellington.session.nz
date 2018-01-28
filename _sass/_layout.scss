@@ -71,20 +71,21 @@
   background-color: $footer-color;
 }
 
-.site-footer, .wrap:after {
-  height: $footer-height;
-}
+//.site-footer, .wrap:after {
+//  height: $footer-height;
+//}
 .site-footer {
   background: $footer-color;
-  color: $secondary-color;
-//  position:fixed;
-//  top:100%;
-//  right:0;
-//  left:0;
-//  bottom:0;
-//  margin-top: -$footer-height;
-//  z-index:9999;
-//  background-color:rgba(0,0,0,0.90);
+  margin-left: 30px;
+  //color: $secondary-color;
+  //  position:fixed;
+  //  top:100%;
+  //  right:0;
+  //  left:0;
+  //  bottom:0;
+  //  margin-top: -$footer-height;
+  //  z-index:9999;
+  //background-color:rgba(0,0,0,0.90);
 }
 
 // Styling for mobile devices
