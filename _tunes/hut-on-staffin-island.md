@@ -4,12 +4,12 @@ titleID: hut-on-staffin-island.md
 key: D
 rhythm: hornpipe
 date: 2017-09-04
-location: Wellington 
-tags: slowsession focustune
+location: Wellington
+tags: slowsession 
 mp3_file: /mp3/hut-on-staffin-island.mp3
 mp3_source: Richard Tait
 mp3_licence: "© Richard Tait. All Rights Reserved."
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2067
