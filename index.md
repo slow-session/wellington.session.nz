@@ -13,11 +13,11 @@ If you are relatively new to playing this music, come along right at the start. 
 come along after 8:30. Of course, we'd be happy to have experienced players playing **slowly**
 earlier on as well!
 
-You can see a list of some of the tunes that get played at the session including those we've been
-learning in the slow part of the session in our <a href="/tunes_archive/">Tunes Archive</a> page.
+Some of the tunes that get played at the session, including those we've been
+learning in the slow part of the session, are in our <b><a href="/tunes_archive/">Tunes Archive</a></b> page.
 
 {::nomarkdown}
-<img alt="NEW!" src="/images/new.gif" border=0 height="48" width="48"> We add new tunes reasonably often - you can check those out in our <a href="/latest/">Latest Tunes</a> page.
+<img alt="NEW!" src="/images/new.gif" border=0 height="48" width="48"> We add new tunes reasonably often - you can check those out in our <b><a href="/latest/">Latest Tunes</a></b> page.
 {:/}
 
 
@@ -58,7 +58,7 @@ var textAreas = document.getElementById("abc-textareas");
 Slow Session Tunes
 ==================
 
-Here are some of the tunes we'll be playing at a relaxed speed during the first hour.
+Recent tunes and slow session sets.
 
 <table style="width:100%" id="focustunes" class="tablesorter">
 <thead>
@@ -81,7 +81,28 @@ Here are some of the tunes we'll be playing at a relaxed speed during the first 
   {% endfor %}
 </tbody>
 </table>
-
+<br />
+<table style="width:100%" id="focussets" class="tablesorter">
+<thead>
+    <tr>
+    <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
+    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:26%;">Titles</th>
+    <th style="width:45%;">Audio Player</th>
+    </tr>
+</thead>
+<tbody>
+{% assign sets = site.sets | where: 'tags', 'focusset' %}
+{% assign setid = 200 %}
+{% for set in sets %}
+{% assign setid = setid | plus: 1 %}
+<tr>
+{% include setrow.html setId=setid %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<br />
 
 NZ Sessions
 ==============
