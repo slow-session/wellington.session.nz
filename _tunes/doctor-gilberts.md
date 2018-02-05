@@ -20,9 +20,9 @@ abc: |
     M: 4/4
     L: 1/8
     K: Em
-    gf|:eBBA A~B3|dBAc BAGF|EDB,D G2 FG|EDB,E DB,A,G,|
-    |B,E (3EEE EDB,D|GE (3EEE EFGA|(3Bcd ed Bdgb|afdf efgf:|
-    |:e~B3 g~B3|defg afdf|(3ggg bg fgaf|egfd e~B3|
-    |afdf edB^c|dBAF FEDF|EAcA Bdgb|afdf efgf:|
+    |:eBBA B2ed|BdAd BAGF|EDB,D G2 FG|EDB,E DB,A,2|
+    |B,EEF EDB,D|GEFD EFGA|Bded Bdgb|afdf e2gf:|
+    |eBB2 gBB2|defg afdf|g2 bg fgaf|egfd eBB2|
+    |afdf edB^c|dBAF AFD2|EGcA Bdgb|afdf e3 f:|
 
 ---
