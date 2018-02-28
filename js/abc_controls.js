@@ -181,12 +181,9 @@ function startABC(tune, ticks) {
     ABCtimer();
 }
 
-function simplePlayABC(tune,ticks){
-    // Magic code!!!
-    inst.setTimbre('fiddle');
-    // End of magic!!!
+function simplePlayABC(tune, ticks, instrument){
     inst.silence();
-    inst.play({tempo: ticks},tune.value);
+    inst.play({tempo: ticks, timbre: instrument},tune.value);
 }
 
 function stopABC(tune) {
