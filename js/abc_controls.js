@@ -181,6 +181,11 @@ function startABC(tune, ticks) {
     ABCtimer();
 }
 
+function simplePlayABC(tune,ticks){
+    inst.silence();
+    inst.play(tune.value);
+}
+
 function stopABC(tune) {
     clearInterval(IntervalHandle);
     abcStopped = 1;
