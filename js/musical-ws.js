@@ -1733,47 +1733,48 @@ module.exports = function(ac) {
     // shape created by hand, and apply a lowpass filter.
     piano: {
     	real: [ 0.000000,-0.000000,-0.179748,0.252497,-0.212162,0.069443,
-            -0.067304,0.006291,-0.063344,0.007604,-0.069661,0.004429,
+        	-0.067304,0.006291,-0.063344,0.007604,-0.069661,0.004429,
             -0.019030,0.000601,-0.001895,0.000841,-0.009026,0.001311,
             -0.024059,0.002217,-0.019063,0.002118,-0.048490,0.000659,
             -0.007014,0.000529,-0.003632,0.000157,-0.000265,0.000046,-0.000325,0.000503],
-    imag: [ 0.000000,0.208930,-0.000001,0.000004,-0.000005,0.000003,
+    	imag: [ 0.000000,0.208930,-0.000001,0.000004,-0.000005,0.000003,
             -0.000004,0.000000,-0.000006,0.000001,-0.000010,0.000001,
             -0.000004,0.000000,-0.000001,0.000000,-0.000003,0.000001,
             -0.000012,0.000001,-0.000011,0.000001,-0.000035,0.000001,
             -0.000006,0.000000,-0.000004,0.000000,0.000000,0.000000,0.000000,0.000001],
-            mult: [.1, .1, 0.18, 0.016, 0.01, 0.01, 0.01, 0.004,
-                      0.014, 0.02, 0.014, 0.004, 0.002, 0.01],
-            // The frequencies at which to interpolate the harmonics.
-            freq: [35, 60, 100, 135, 180, 240, 420, 800],
-            // The default filter settings to use for the piano wave.
-            // TODO: this approach attenuates low notes too much -
-            // this should be fixed.
-            defs: { wave: 'string', gain: 0.6,
-                    attack: 0.001, decay: 0.95, sustain: 0.001, release: 0.1,
-                    decayfollow: 0.005,
-                    cutoff: 2500, cutfollow: 0.1, resonance: .4, detune: 0.9994 }
-},
-fiddle: {
-    real: [ 0.0,0.9,0.8,0.6,0.0,0.5,0.4,0.2,0.0,
-    0.2,0.1,0.0,0.0,0.0,0.0,0.0,0.0,
-    0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
-    0.0,0.0,0.0,0.0,0.0,0.0,0.0],
-    imag: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
-    0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
-        0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
-        0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],// How to adjust the harmonics for the higest notes.
-      mult: [0,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1,0,0,0,0,0,0],
-      // The frequencies at which to interpolate the harmonics.
-      freq: [35, 60, 100, 135, 180, 240, 420, 800],
-      // The default filter settings to use for the piano wave.
-      // TODO: this approach attenuates low notes too much -
-      // this should be fixed.
-      defs: { wave: 'string', gain: 0.8,
-              attack: 0.4, decay: 0.15, sustain: 0.1, release: 0.1,
-              decayfollow: 0.005,
-              cutoff: 2500, cutfollow: 0.1, resonance: .3, detune: 0.9994 }
-    },
+        mult: [.1, .1, 0.18, 0.016, 0.01, 0.01, 0.01, 0.004,
+        	0.014, 0.02, 0.014, 0.004, 0.002, 0.01],
+        // The frequencies at which to interpolate the harmonics.
+        freq: [35, 60, 100, 135, 180, 240, 420, 800],
+        // The default filter settings to use for the piano wave.
+        // TODO: this approach attenuates low notes too much -
+        // this should be fixed.
+        defs: { wave: 'string', gain: 0.6,
+        	attack: 0.001, decay: 0.95, sustain: 0.001, release: 0.1,
+            decayfollow: 0.005,
+            cutoff: 2500, cutfollow: 0.1, resonance: .4, detune: 0.9994 }
+	},
+	fiddle: {
+    	real: [ 0.0,0.9,0.8,0.6,0.0,0.5,0.4,0.2,0.0,
+    		0.2,0.1,0.0,0.0,0.0,0.0,0.0,0.0,
+    		0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+    		0.0,0.0,0.0,0.0,0.0,0.0,0.0],
+    	imag: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+    		0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+        	0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+        	0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],
+		// How to adjust the harmonics for the higest notes.
+      	mult: [0,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1,0,0,0,0,0,0],
+      	// The frequencies at which to interpolate the harmonics.
+      	freq: [35, 60, 100, 135, 180, 240, 420, 800],
+      	// The default filter settings to use for the piano wave.
+      	// TODO: this approach attenuates low notes too much -
+      	// this should be fixed.
+      	defs: { wave: 'string', gain: 0.8,
+        	attack: 0.4, decay: 0.15, sustain: 0.1, release: 0.1,
+            decayfollow: 0.005,
+            cutoff: 2500, cutfollow: 0.1, resonance: .3, detune: 0.9994 }
+	},
   });
 }
 
