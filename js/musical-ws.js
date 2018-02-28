@@ -1731,8 +1731,8 @@ module.exports = function(ac) {
     // That is a terrific sound for the lowest piano tones.
     // For higher tones, interpolate to a customzed wave
     // shape created by hand, and apply a lowpass filter.
-    string: {
-/*    real: [ 0.000000,-0.000000,-0.179748,0.252497,-0.212162,0.069443,
+    piano: {
+    	real: [ 0.000000,-0.000000,-0.179748,0.252497,-0.212162,0.069443,
             -0.067304,0.006291,-0.063344,0.007604,-0.069661,0.004429,
             -0.019030,0.000601,-0.001895,0.000841,-0.009026,0.001311,
             -0.024059,0.002217,-0.019063,0.002118,-0.048490,0.000659,
@@ -1753,7 +1753,8 @@ module.exports = function(ac) {
                     attack: 0.001, decay: 0.95, sustain: 0.001, release: 0.1,
                     decayfollow: 0.005,
                     cutoff: 2500, cutfollow: 0.1, resonance: .4, detune: 0.9994 }
-*/
+},
+fiddle: {
     real: [ 0.0,0.9,0.8,0.6,0.0,0.5,0.4,0.2,0.0,
     0.2,0.1,0.0,0.0,0.0,0.0,0.0,0.0,
     0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
@@ -1772,7 +1773,7 @@ module.exports = function(ac) {
               attack: 0.4, decay: 0.15, sustain: 0.1, release: 0.1,
               decayfollow: 0.005,
               cutoff: 2500, cutfollow: 0.1, resonance: .3, detune: 0.9994 }
-    }
+    },
   });
 }
 
