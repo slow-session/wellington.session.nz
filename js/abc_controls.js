@@ -28,7 +28,15 @@ var ABCLocation;
 var ABCdurationP;
 
 // Select a timbre that sounds like an electric piano.
-var inst = new Instrument('string');
+var inst = new Instrument('piano');
+
+// Magic code!!!
+var timbre = inst.getTimbre();
+alert(timbre.wave);
+inst.setTimbre('fiddle');
+timbre = inst.getTimbre();
+alert(timbre.wave);
+// End of magic!!!
 
 function createABCplayer (tuneID, playerClass) {
     var abcPlayer = '';
