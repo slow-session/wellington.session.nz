@@ -1,17 +1,22 @@
 ---
 layout: page
 title: Note Tutor
-permalink: /noteTutor/
+permalink: /noteTutor2/
 ---
 
 Generate a set of notes for ear training. Notes will be in the normal tune range for the fiddle.
+<br>
 
+<input type="button" class="button" onclick="playNote()" value="Play Note">
+<br>
+<div id="notation"></div>
 <!-- Group the input and controls for ABC-->
-<fieldset style="display: inline-block; vertical-align: middle;">
-    <legend>Edit the ABC here:</legend>
+
+
+
 
 <!-- Read the modified ABC and play if requested -->
-<textarea name='abc' id="abc" rows="13" cols="80" style="background-color: #ebebeb" spellcheck="false">
+<textarea name='abc' id="abc" rows="13" cols="80" style="display:none;" spellcheck="false">
 X: 1
 T: Test Notes
 R: reel
@@ -26,7 +31,7 @@ K: C
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
 
-</fieldset>
+
 
 
 <!-- Draw the dots -->
@@ -44,8 +49,10 @@ K: C
 <script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
 <script type='text/javascript'>
-$(document).ready(function()
-{
+
+
+function playNote(){
+ABCJS.renderAbc(notation, "z4 |")
     // Allow sharps, naturals and flats
     var Accidentals = ['^', '', '_'];
     // Notes on the fiddle in first position
@@ -54,11 +61,11 @@ $(document).ready(function()
                 'G', 'F', 'E', 'D',
                 'C', 'B,','A,', 'G,'];
     abc.value += '|';
-
-    // generate 16 bars worth of notes
     var i = 0;
-    var accidental;
-    while (i < 16) {
+    // generate 1 bars worth of notes
+    while (i<1) {
+
+        var accidental;
         var rand=Math.random();
         if(rand > .9) {
             accidental = "^";
@@ -66,29 +73,32 @@ $(document).ready(function()
             accidental = "_";
         } else {
             accidental = "";
-    }
-        //var accidental = Accidentals[Math.floor(Math.random()*Accidentals.length)];
+        }
         var pitch = Pitches[Math.floor(Math.random()*Pitches.length)];
         // Ignore the high b sharp and low G flat
         if ((accidental == '^' && pitch == 'b') || (accidental == '_' && pitch == 'G,')) {
             continue;
         }
-        // add test note and a rest to abc
-        abc.value += accidental + pitch + '8| z8 | z8 |'
+        // add test note to abc
+        abc.value = accidental + pitch + '4|'
         i++
-        if (i % 4 == 0) {
-            abc.value += '\n';
-        }
     }
+//alert("abc.value= "+abc.value);
 
 	// Create the ABC player
-	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage');
+
+
+	// ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage');
 
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);
 
+    simplePlayABC(abc, 120);
+
 	// Display the ABC in the textbox as dots
-	abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
-});
+	// abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
+    setTimeout('ABCJS.renderAbc(notation, abc.value)', 4000);
+    //stopABC(abc);
+};
 
 </script>
