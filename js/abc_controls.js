@@ -30,14 +30,6 @@ var ABCdurationP;
 // Select a timbre that sounds like an electric piano.
 var inst = new Instrument('piano');
 
-// Magic code!!!
-var timbre = inst.getTimbre();
-alert(timbre.wave);
-inst.setTimbre('fiddle');
-timbre = inst.getTimbre();
-alert(timbre.wave);
-// End of magic!!!
-
 function createABCplayer (tuneID, playerClass) {
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
@@ -190,8 +182,11 @@ function startABC(tune, ticks) {
 }
 
 function simplePlayABC(tune,ticks){
+    // Magic code!!!
+    inst.setTimbre('fiddle');
+    // End of magic!!!
     inst.silence();
-    inst.play(tune.value);
+    inst.play({tempo: ticks},tune.value);
 }
 
 function stopABC(tune) {
