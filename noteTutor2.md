@@ -93,7 +93,7 @@ ABCJS.renderAbc(notation, "z4 |")
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);
 
-    simplePlayABC(abc, 120);
+    simplePlayABC(abc, 120, 'fiddle');
 
 	// Display the ABC in the textbox as dots
 	// abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
