@@ -69,7 +69,7 @@
          } else {
              // build the abc player for each tune
              tableRow += '<td>';
-             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow');
+             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
              tableRow += '</td></tr>';
          };
          return tableRow;

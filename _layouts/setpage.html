@@ -71,6 +71,6 @@ Type: {{ page.rhythm }}, added
 $(document).ready(function() {
     tunelist.innerHTML = tuneList.slice(0, -2);
 
-    ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage');
+    ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });
 </script>

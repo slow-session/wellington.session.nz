@@ -98,6 +98,6 @@ Use the ABC player below the music to hear the tune.
         ABCJS.renderAbc('notation', MyTune);
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage');
+        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
     });
 </script>
