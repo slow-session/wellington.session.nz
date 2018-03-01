@@ -28,9 +28,12 @@ var ABCLocation;
 var ABCdurationP;
 
 // Select a timbre that sounds like an electric piano.
-var inst = new Instrument('piano');
+var instrument;
 
-function createABCplayer (tuneID, playerClass) {
+function createABCplayer (tuneID, playerClass, timbre) {
+
+    instrument = new Instrument(timbre);
+
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
     abcPlayer += '  <div class="' + playerClass + '">';
@@ -169,8 +172,8 @@ function getABCheaderValue(key, tuneStr) {
 function startABC(tune, ticks) {
     playingNow = 1;
     abcStopped = 0;
-    inst.silence();
-    inst.play({
+    instrument.silence();
+    instrument.play({
         tempo: ticks
     }, tune.value, function() {
         playingNow = 0;
@@ -181,20 +184,22 @@ function startABC(tune, ticks) {
     ABCtimer();
 }
 
-function simplePlayABC(tune, ticks, instrument){
-    inst.silence();
-    inst.play({tempo: ticks, timbre: instrument},tune.value);
+function simplePlayABC(tune, ticks, timbre){
+    instrument = new Instrument(timbre);
+
+    instrument.silence();
+    instrument.play({tempo: ticks},tune.value);
 }
 
 function stopABC(tune) {
     clearInterval(IntervalHandle);
     abcStopped = 1;
-    inst.silence();
+    instrument.silence();
     setABCPosition(0);
 }
 
 function loopABCTune(tune, ticks) {
-    inst.silence();
+    instrument.silence();
     clearInterval(IntervalHandle);
     if ((playingNow == 0) && (abcStopped == 0)) {
         startABC(tune, ticks);

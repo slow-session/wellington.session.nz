@@ -31,7 +31,7 @@ Use the "Reset" button to start a new set.
 <textarea id="filename" style="display:none;"></textarea>
 
 <!-- Controls for ABC player -->
-<div id="ABCplayer" class="abcplayer_tunepage"></div>
+<div id="ABCplayer" ></div>
 
 <!-- Allow the user to save their ABC-->
 <form>
@@ -175,7 +175,7 @@ Please think of the trees!">
 
         document.getElementById('ABCraw').innerHTML += abcSource + "\n";
         abcSource = abcSource.replace(regex, '');
-		
+
 		// Get the ABCplayer to go through each tune twice
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
 		document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
@@ -220,6 +220,6 @@ $(document).ready(function() {
 
     $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
 
-    ABCplayer.innerHTML = createABCplayer('processed');
+    ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });
 </script>

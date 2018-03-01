@@ -5,6 +5,7 @@ author: asjl
 
 keywords: irish, traditional, music, jigs, reels, polkas, craic
 description: Irish trad tune archive
+defaultABCplayer: 'piano'
 
 # Only use this if you are serving your site via Github Pages
 github:

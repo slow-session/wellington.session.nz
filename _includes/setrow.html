@@ -34,7 +34,7 @@ showPlayer{{ setTuneID }}.innerHTML = createMP3player('{{setTuneID}}', '{{ site.
 <script>
 <!--unroll ABC to handle repeats and different endings for parts-->
 textAreas.innerHTML += '<textarea id="{{'ABC' | append: setTuneID }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
-showPlayer{{ setTuneID }}.innerHTML = createABCplayer('{{ setTuneID }}', 'abcplayer_tablerow');
+showPlayer{{ setTuneID }}.innerHTML = createABCplayer('{{ setTuneID }}', 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
 </script>
 {% endif %}
 </td></tr>

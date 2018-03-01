@@ -82,7 +82,7 @@ $(document).ready(function()
     }
 
 	// Create the ABC player
-	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage');
+	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}', 'piano');
 
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);

@@ -88,7 +88,7 @@ ABCJS.renderAbc(notation, "z4 |")
 	// Create the ABC player
 
 
-	// ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage');
+	// ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);
