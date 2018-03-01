@@ -51,6 +51,9 @@ Type: {{ page.rhythm }}, added
 
         abcSource = {{ tune.abc | jsonify }};
         abcSource = abcSource.replace(regex, '');
+        
+        // Get the ABCplayer to go through each tune twice
+        document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
 
         printTunes += document.getElementById('notation{{tuneId}}').innerHTML;
