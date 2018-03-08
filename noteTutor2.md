@@ -9,6 +9,14 @@ Generate a set of notes for ear training. Notes will be in the normal tune range
 
 <input type="button" class="button" onclick="playNote()" value="Play Note">
 <br>
+<form action="/action_page.php">
+  What insturment do you prefer?<br>
+  <input type="radio" name="instrument" value="fiddle">Fiddle<br>
+  <input type="radio" name="instrument" value="flute">Flute<br>
+  <input type="radio" name="instrument" value="flute2">Flute2<br>
+  <input type="radio" name="instrument" value="piano">Piano
+ </form>
+
 <div id="notation"></div>
 <!-- Group the input and controls for ABC-->
 
@@ -93,7 +101,15 @@ ABCJS.renderAbc(notation, "z4 |")
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);
 
-    simplePlayABC(abc, 120, 'fiddle');
+    var selectedInst = "piano"; // default
+    var instrument = document.forms[0];
+    for(i = 0; i<instrument.length; i++){
+        if(instrument[i].checked){
+            selectedInst = instrument[i].value;
+        }
+    }
+
+    simplePlayABC(abc, 120,  selectedInst);
 
 	// Display the ABC in the textbox as dots
 	// abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
