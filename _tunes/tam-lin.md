@@ -3,13 +3,13 @@ title: Tam Lin
 titleID: tam-lin.md
 key: Ddor
 rhythm: reel
-date: 2016-11-10
+date: 2018-03-10
 location: Arrowtown Wellington
-tags: 
-mp3_file:
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_source: Wellington Session
-mp3_url:
+tags:
+mp3_file: /mp3/tam-lin.mp3
+mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
+mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
+mp3_url: https://www.youtube.com/watch?v=bcx1NL8gkxQ
 source: Wellington
 abc_url:
 abc: |
