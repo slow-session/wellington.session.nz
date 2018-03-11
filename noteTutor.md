@@ -3,31 +3,19 @@ layout: page
 title: Note Tutor
 permalink: /noteTutor/
 ---
-
-Generate a set of notes for ear training. Notes will be in the normal tune range for the fiddle.
-
-<!-- Group the input and controls for ABC-->
-<fieldset style="display: inline-block; vertical-align: middle;">
-    <legend>Edit the ABC here:</legend>
-
-<!-- Read the modified ABC and play if requested -->
-<textarea name='abc' id="abc" rows="13" cols="80" style="background-color: #ebebeb" spellcheck="false">
-X: 1
-T: Test Notes
-R: reel
-M: 4/4
-L: 1/8
-K: C
-</textarea>
+Generate a set of Test Notes for ear training. These notes will be in the normal session tune range for the fiddle.
 
 <!-- Area to store unrolled ABC -->
-<textarea id="ABCprocessed" style="display:none;"></textarea>
+<textarea id="ABCgenerated" style="display:none;"></textarea>
 
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
 
-</fieldset>
+You can look at the dots for the Test Notes and generate a new practice set.
 
+<form>
+	<input type="button" value="Show Test Notes" onclick="toggle(this);">
+</form>
 
 <!-- Draw the dots -->
 <div class="output">
@@ -41,24 +29,41 @@ K: C
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
+<!-- <script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>-->
 
 <script type='text/javascript'>
-$(document).ready(function()
-{
-    // Allow sharps, naturals and flats
-    var Accidentals = ['^', '', '_'];
-    // Notes on the fiddle in first position
-    var Pitches = ['b', 'a', 'g', 'f', 'e',
-                'd', 'C', 'B', 'A',
-                'G', 'F', 'E', 'D',
-                'C', 'B,','A,', 'G,'];
-    abc.value += '|';
 
-    // generate 16 bars worth of notes
+function toggle(button) {
+    switch (button.value) {
+		case "Generate Test Notes":
+			button.value = "Show Test Notes";
+			document.getElementById('paper0').innerHTML = "";
+			document.getElementById("paper0").style.height = "0px";  
+			ABCgenerated.value = generateNotes(16);
+			break;
+        case "Show Test Notes":
+            button.value = "Generate Test Notes";
+            // Display the ABC in the textbox as dots
+            abc_editor = new window.ABCJS.Editor("ABCgenerated", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
+            break;
+    }
+}
+
+function generateNotes(count) {
+	// Allow sharps, naturals and flats
+	var Accidentals = ['^', '', '_'];
+	// Notes on the fiddle in first position
+	var Pitches = ['b', 'a', 'g', 'f', 'e',
+				'd', 'C', 'B', 'A',
+				'G', 'F', 'E', 'D',
+				'C', 'B,','A,', 'G,'];
+
+    // generate notes
     var i = 0;
     var accidental;
-    while (i < 16) {
+	var abcGenerated = 'X: 1\nT: Test Notes\n|';
+
+    while (i < count) {
         var rand=Math.random();
         if(rand > .9) {
             accidental = "^";
@@ -66,29 +71,30 @@ $(document).ready(function()
             accidental = "_";
         } else {
             accidental = "";
-    }
-        //var accidental = Accidentals[Math.floor(Math.random()*Accidentals.length)];
-        var pitch = Pitches[Math.floor(Math.random()*Pitches.length)];
+    	}
+		var pitch = Pitches[Math.floor(Math.random()*Pitches.length)];
         // Ignore the high b sharp and low G flat
         if ((accidental == '^' && pitch == 'b') || (accidental == '_' && pitch == 'G,')) {
             continue;
         }
-        // add test note and a rest to abc
-        abc.value += accidental + pitch + '8| z8 | z8 |'
+        // add test note and rests to abc
+        abcGenerated += accidental + pitch + '8| z8 | z8 |'
         i++
         if (i % 4 == 0) {
-            abc.value += '\n';
+            abcGenerated += '\n';
         }
     }
+	return abcGenerated;
+}
+
+$(document).ready(function()
+{
+	ABCgenerated.value = generateNotes(16);
 
 	// Create the ABC player
-	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+    ABCplayer.innerHTML = createABCplayer('generated', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-	// Get ready to play the initial ABC
-	ABCprocessed.value = preProcessABC(abc.value);
 
-	// Display the ABC in the textbox as dots
-	abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
 });
 
 </script>
