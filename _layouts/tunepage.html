@@ -7,6 +7,10 @@ layout: page
 <br />
 <br />
 
+<script>
+var context = new AudioContext();
+</script>
+
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
 <div id="showPlayer"></div>
@@ -88,7 +92,6 @@ Use the ABC player below the music to hear the tune.
 <script>
     $(document).ready(function() {
         var tuneId = 666;
-        var context = new AudioContext();
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
