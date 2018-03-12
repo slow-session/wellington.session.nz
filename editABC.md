@@ -72,7 +72,7 @@ $(document).ready(function()
 
     // One-liner to resume playback when user interacted with the page
     document.querySelector('button').addEventListener('click', function() {
-        context.resume().then(() => {
+        audioCtx.resume().then(() => {
             console.log('Playback button selected');
         });
     });

@@ -133,7 +133,7 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 
         // One-liner to resume playback when user interacted with the page
         document.querySelector('button').addEventListener('click', function() {
-            context.resume().then(() => {
+            audioCtx.resume().then(() => {
                 console.log('Playback button selected');
             });
         });
