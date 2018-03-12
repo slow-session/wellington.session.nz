@@ -12,9 +12,8 @@ Type: {{ page.rhythm }}, added
 </textarea>
 
 <script type="text/javascript">
-    var context = new AudioContext();
 
-    var MyFonts = "%%titlefont       Helvetica 20\n\
+var MyFonts = "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
 %%gchordfont      Helvetica 12\n\
 %%composerfont    Helvetica-Oblique 14\n\
@@ -26,18 +25,18 @@ Type: {{ page.rhythm }}, added
 %%vocalfont       Helvetica 12\n\
 %%wordsfont       Helvetica 12\n";
 
-    var tuneList = '';
-    var abcSource = '';
-    var regex = new RegExp('X:.*\n');
-    var printTunes = '';
+var tuneList = '';
+var abcSource = '';
+var regex = new RegExp('X:.*\n');
+var printTunes = '';
 
-    function printSet(printTunes) {
-        var originalContents = document.body.innerHTML;
+function printSet(printTunes) {
+    var originalContents = document.body.innerHTML;
 
-        document.body.innerHTML = printTunes;
-        window.print();
-        document.body.innerHTML = originalContents;
-   }
+    document.body.innerHTML = printTunes;
+    window.print();
+    document.body.innerHTML = originalContents;
+}
 </script>
 
 {% assign tuneId = 100 %}

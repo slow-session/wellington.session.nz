@@ -29,8 +29,6 @@ We pick one tune each week for homework, and we'll play it sometime during the f
 <div id="DEBUG"></div>
 <div id="abc-textareas"></div>
 <script>
-var context = new AudioContext();
-
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
