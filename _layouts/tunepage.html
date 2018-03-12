@@ -88,6 +88,7 @@ Use the ABC player below the music to hear the tune.
 <script>
     $(document).ready(function() {
         var tuneId = 666;
+        var context = new AudioContext();
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
@@ -99,6 +100,12 @@ Use the ABC player below the music to hear the tune.
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
-//        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', 'fiddle');
+
+        // One-liner to resume playback when user interacted with the page
+        document.querySelector('button').addEventListener('click', function() {
+            context.resume().then(() => {
+                console.log('Playback button selected');
+            });
+        });
     });
 </script>

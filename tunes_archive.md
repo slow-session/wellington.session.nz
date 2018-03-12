@@ -109,6 +109,7 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
         "location": "{{ tune.location | xml_escape }}",
         "tags": "{{ tune.tags | array_to_sentence_string }}",
         "url": "{{ tune.url | xml_escape }}",
+        "instrument": "{{ site.defaultABCplayer }}",
         {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
         "abc": ""
         {% else %}"mp3": "",
@@ -123,12 +124,21 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 
 <script>
     $(document).ready(function() {
+        var context = new AudioContext();
+
         audioPlayer.innerHTML = createAudioPlayer();
 
         /* Set initial sort order */
         $.tablesorter.defaults.sortList = [[0,0]];
 
         $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
+
+        // One-liner to resume playback when user interacted with the page
+        document.querySelector('button').addEventListener('click', function() {
+            context.resume().then(() => {
+                console.log('Playback button selected');
+            });
+        });
     });
 </script>
 

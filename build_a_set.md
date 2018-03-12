@@ -220,6 +220,15 @@ $(document).ready(function() {
 
     $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
 
+	var context = new AudioContext();
+
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+
+	// One-liner to resume playback when user interacted with the page
+	document.querySelector('button').addEventListener('click', function() {
+		context.resume().then(() => {
+	    	console.log('Playback button selected');
+	  	});
+  	});
 });
 </script>

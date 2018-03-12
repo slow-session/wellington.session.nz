@@ -71,7 +71,7 @@
                  tableRow += '<tr style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
              } else {
                  var textAreas = document.getElementById("abc-textareas");
-                 tableRow += '<tr style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', '{{ site.defaultABCplayer }}') + '</td></tr>';
+                 tableRow += '<tr style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';
                  textAreas.innerHTML += '<textarea id="ABC' + setTuneID + '" style="display:none;">' + preProcessABC(decodeURI(tuneSources[i])) + '</textarea>';
              }
          }

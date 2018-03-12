@@ -69,7 +69,8 @@
          } else {
              // build the abc player for each tune
              tableRow += '<td>';
-             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
+
+             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow', item.instrument);
              tableRow += '</td></tr>';
          };
          return tableRow;

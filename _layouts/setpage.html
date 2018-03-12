@@ -51,7 +51,7 @@ Type: {{ page.rhythm }}, added
 
         abcSource = {{ tune.abc | jsonify }};
         abcSource = abcSource.replace(regex, '');
-        
+
         // Get the ABCplayer to go through each tune twice
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
@@ -72,8 +72,17 @@ Type: {{ page.rhythm }}, added
 
 <script>
 $(document).ready(function() {
+    var context = new AudioContext();
+
     tunelist.innerHTML = tuneList.slice(0, -2);
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+
+    // One-liner to resume playback when user interacted with the page
+	document.querySelector('button').addEventListener('click', function() {
+		context.resume().then(() => {
+	    	console.log('Playback button selected');
+	  	});
+  	});
 });
 </script>

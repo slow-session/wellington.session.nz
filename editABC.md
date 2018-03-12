@@ -67,8 +67,17 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script type='text/javascript'>
 $(document).ready(function()
 {
+    var context = new AudioContext();
+
 	// Create the ABC player
 	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+
+    // One-liner to resume playback when user interacted with the page
+    document.querySelector('button').addEventListener('click', function() {
+        context.resume().then(() => {
+            console.log('Playback button selected');
+        });
+    });
 
 	// Get ready to play the initial ABC
 	ABCprocessed.value = preProcessABC(abc.value);
