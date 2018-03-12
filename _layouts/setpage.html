@@ -12,6 +12,8 @@ Type: {{ page.rhythm }}, added
 </textarea>
 
 <script type="text/javascript">
+    var context = new AudioContext();
+
     var MyFonts = "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
 %%gchordfont      Helvetica 12\n\
@@ -72,8 +74,6 @@ Type: {{ page.rhythm }}, added
 
 <script>
 $(document).ready(function() {
-    var context = new AudioContext();
-
     tunelist.innerHTML = tuneList.slice(0, -2);
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');

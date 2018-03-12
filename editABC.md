@@ -41,6 +41,10 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
 
+<script>
+var context = new AudioContext();
+</script>
+
 <!-- Allow the user to save their ABC-->
 <form>
    <span title="Download the ABC you've entered. Don't lose your work!">      
@@ -67,8 +71,6 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script type='text/javascript'>
 $(document).ready(function()
 {
-    var context = new AudioContext();
-
 	// Create the ABC player
 	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 

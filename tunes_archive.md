@@ -14,6 +14,9 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 "Slowsession" and pressing "Select".
 
 <div id="audioPlayer"></div>
+<script>
+var context = new AudioContext();
+</script>
 
 {% assign tune_rhythms = '' %}
 {% assign tune_tags = '' %}
@@ -124,8 +127,6 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 
 <script>
     $(document).ready(function() {
-        var context = new AudioContext();
-
         audioPlayer.innerHTML = createAudioPlayer();
 
         /* Set initial sort order */
