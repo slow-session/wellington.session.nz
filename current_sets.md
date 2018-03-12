@@ -59,6 +59,7 @@ If you don't find the set you're looking for you can put tunes together and try 
               "rhythm": "{{ set.rhythm | xml_escape }}",
               "location": "{{ set.location | xml_escape }}",
               "url": "{{ set.url | absolute_url }}",
+              "instrument": "{{ site.defaultABCplayer }}",
               "setTunes": "{{ set.tunes | xml_escape }}",
               "setTitles": "{% for setTune in set.tunes %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{{ tune.title | xml_escape }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
               "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
@@ -75,6 +76,8 @@ If you don't find the set you're looking for you can put tunes together and try 
 
 <script>
 $(document).ready(function() {
+    var context = new AudioContext();
+
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* Set initial sort order */
@@ -89,7 +92,14 @@ $(document).ready(function() {
                 sorter: false
             }
         }
-    });   
+    });
+
+    // One-liner to resume playback when user interacted with the page
+    document.querySelector('button').addEventListener('click', function() {
+        context.resume().then(() => {
+            console.log('Playback button selected');
+        });
+    });
 });
 </script>
 

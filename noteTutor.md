@@ -27,12 +27,8 @@ You can look at the dots for the Test Notes and generate a new practice set.
 <div id='warnings'></div>
 
 <script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<!-- <script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>-->
 
 <script type='text/javascript'>
-
 function toggle(button) {
     switch (button.value) {
 		case "Generate Test Notes":
@@ -61,7 +57,7 @@ function generateNotes(count) {
     // generate notes
     var i = 0;
     var accidental;
-	var abcGenerated = 'X: 1\nT: Test Notes\n|';
+	var abcGenerated = 'X: 1\nT: Test Notes\nM: 4/4\nL: 1/8\nK: C\n|';
 
     while (i < count) {
         var rand=Math.random();
@@ -89,12 +85,19 @@ function generateNotes(count) {
 
 $(document).ready(function()
 {
+	var context = new AudioContext();
+
+	// Generate an initial set of test notes
 	ABCgenerated.value = generateNotes(16);
 
 	// Create the ABC player
     ABCplayer.innerHTML = createABCplayer('generated', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-
+	// One-liner to resume playback when user interacted with the page
+	document.querySelector('button').addEventListener('click', function() {
+		context.resume().then(() => {
+	    	console.log('Playback button selected');
+	  	});
+  	});
 });
-
 </script>

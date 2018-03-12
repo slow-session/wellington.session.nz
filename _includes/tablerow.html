@@ -8,15 +8,33 @@
 {% endif %}
 {% if tune.mp3_file %}
 <td id="showPlayer{{ include.tuneId }}">
-   <script>
-   showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}', 'mp3player_tablerow');
-   </script>
+script>
+var context = new AudioContext();
+
+showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}', 'mp3player_tablerow');
+
+// One-liner to resume playback when user interacted with the page
+document.querySelector('button').addEventListener('click', function() {
+    context.resume().then(() => {
+        console.log('Playback button selected');
+    });
+});
+</script>
 </td>
 {% else %}
 <td id="showPlayer{{ include.tuneId }}">
-    <script>
-    showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}', 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
-    </script>
+<script>
+var context = new AudioContext();
+
+showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}', 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
+
+// One-liner to resume playback when user interacted with the page
+document.querySelector('button').addEventListener('click', function() {
+    context.resume().then(() => {
+        console.log('Playback button selected');
+    });
+});
+</script>
 </td>
 
 <!--unroll ABC to handle repeats and different endings for parts-->
