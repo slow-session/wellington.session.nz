@@ -9,9 +9,7 @@ These are the some of the sets we play at the Wellington Slow Session. These set
 If you don't find the set you're looking for you can put tunes together and try them out using our <a href="/build_a_set/">Build a Set</a> page.
 
 <div id="audioPlayer"></div>
-<script>
-var context = new AudioContext();
-</script>
+
 
 {% assign tune_rhythms = '' %}
 {% for tune in site.tunes %}

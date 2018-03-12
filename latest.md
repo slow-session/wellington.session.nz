@@ -8,9 +8,6 @@ permalink: /latest/
 These are the last 15 tunes we've added to the archive.
 
 <div id="textAreas"></div>
-<script>
-var context = new AudioContext();
-</script>
 
 <table style="width:100%" id="recenttunes" class="tablesorter">
 <thead>

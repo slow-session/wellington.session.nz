@@ -5,9 +5,7 @@ permalink: /noteTutor/
 ---
 Generate a set of Test Notes for ear training. These notes will be in the normal
 session tune range for the fiddle.
-<script>
-var context = new AudioContext();
-</script>
+
 <!-- Area to store generated ABC -->
 <textarea id="ABCgenerated" style="display:none;"></textarea>
 

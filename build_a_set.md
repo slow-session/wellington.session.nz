@@ -54,9 +54,7 @@ Please think of the trees!">
 </form>
 
 <div id="audioPlayer"></div>
-<script>
-var context = new AudioContext();
-</script>
+
 {% assign tune_rhythms = '' %}
 {% assign tune_tags = '' %}
 {% assign tune_locations = '' %}
