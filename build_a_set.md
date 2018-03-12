@@ -54,7 +54,9 @@ Please think of the trees!">
 </form>
 
 <div id="audioPlayer"></div>
-
+<script>
+var context = new AudioContext();
+</script>
 {% assign tune_rhythms = '' %}
 {% assign tune_tags = '' %}
 {% assign tune_locations = '' %}
@@ -219,8 +221,6 @@ $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[0,0]];
 
     $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
-
-	var context = new AudioContext();
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
