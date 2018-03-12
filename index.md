@@ -113,6 +113,8 @@ Find out more information in our <a href="/nz_sessions">NZ Sessions</a> page.
 
 <script>
 $(document).ready(function() {
+    var context = new AudioContext();
+
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
@@ -128,6 +130,13 @@ $(document).ready(function() {
                 sorter: false
             }
         }
+    });
+
+    // One-liner to resume playback when user interacted with the page
+    document.querySelector('button').addEventListener('click', function() {
+        context.resume().then(() => {
+            console.log('Playback button selected');
+        });
     });
 });
 </script>

@@ -37,9 +37,18 @@ These are the last 15 tunes we've added to the archive.
 
 <script>
 $(document).ready(function() {
+    var context = new AudioContext();
+
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
     $("#recenttunes").tablesorter({headers: { 3:{sorter: false}}});
+
+    // One-liner to resume playback when user interacted with the page
+    document.querySelector('button').addEventListener('click', function() {
+        context.resume().then(() => {
+            console.log('Playback button selected');
+        });
+    });
 });
 </script>
