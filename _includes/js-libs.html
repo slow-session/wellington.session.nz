@@ -2,13 +2,23 @@
 <script type="text/javascript" src="{{ site.js_host }}/js/es5-shim.min.js"></script>
 
 <script type="text/javascript">
-var AudioContext = window.AudioContext || window.webkitAudioContext;
-if (typeof AudioContext !== 'undefined') {
-    alert("AudioContext defined")
-} else {
-    alert("AudioContext undefined")
+
+var audioCtx = null, usingWebAudio = true;
+
+try {
+  if (typeof AudioContext !== 'undefined') {
+      audioCtx = new AudioContext();
+  } else if (typeof webkitAudioContext !== 'undefined') {
+      audioCtx = new webkitAudioContext();
+  } else {
+      usingWebAudio = false;
+  }
+} catch(e) {
+    usingWebAudio = false;
 }
-var audioCtx = new AudioContext();
+alert(usingWebAudio);
+
+// var audioCtx = new AudioContext();
 </script>
 
 <script type="text/javascript" src="{{ site.js_host }}/js/abcjs_basic_3.0-min.js"></script>
