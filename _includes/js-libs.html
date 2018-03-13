@@ -3,7 +3,7 @@
 
 <script type="text/javascript">
 var AudioContext = window.AudioContext || window.webkitAudioContext;
-if (AudioContext) {
+if (typeof AudioContext !== 'undefined') {
     alert("AudioContext defined")
 } else {
     alert("AudioContext undefined")
