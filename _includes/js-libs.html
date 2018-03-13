@@ -3,20 +3,12 @@
 
 <script type="text/javascript">
 
-var audioCtx = null, usingWebAudio = true;
-alert(AudioContext);
-try {
-  if (typeof AudioContext !== 'undefined') {
-      audioCtx = new AudioContext();
-  } else if (typeof webkitAudioContext !== 'undefined') {
-      audioCtx = new webkitAudioContext();
-  } else {
-      usingWebAudio = false;
-  }
-} catch(e) {
-    usingWebAudio = false;
+if (typeof AudioContext !== 'undefined') {
+    audioCtx = new AudioContext();
+    alert("Chrome");
+} else {
+    alert('Safari');
 }
-alert(usingWebAudio);
 
 // var audioCtx = new AudioContext();
 </script>
