@@ -2,7 +2,7 @@
 <script type="text/javascript" src="{{ site.js_host }}/js/es5-shim.min.js"></script>
 
 <script type="text/javascript">
-var usingWebAudio;
+var usingWebAudio = false;
 
 if (typeof AudioContext !== 'undefined') {
     audioCtx = new AudioContext();
