@@ -3,6 +3,11 @@
 
 <script type="text/javascript">
 var AudioContext = window.AudioContext || window.webkitAudioContext;
+if (AudioContext) {
+    alert("AudioContext defined")
+} else {
+    alert("AudioContext undefined")
+}
 var audioCtx = new AudioContext();
 </script>
 
