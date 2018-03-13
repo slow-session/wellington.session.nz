@@ -100,11 +100,16 @@ Use the ABC player below the music to hear the tune.
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-        // One-liner to resume playback when user interacted with the page
-        document.querySelector('button').addEventListener('click', function() {
-            audioCtx.resume().then(() => {
-                console.log('Playback button selected');
+        if (typeof AudioContext !== 'undefined') {
+            // One-liner to resume playback when user interacted with the page
+            document.querySelector('button').addEventListener('click', function() {
+                audioCtx.resume().then(() => {
+                    console.log('Playback button selected');
+                });
             });
-        });
+            alert("set listener");
+        } else {
+            alert("no listener set");
+        }
     });
 </script>
