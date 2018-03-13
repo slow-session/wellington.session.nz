@@ -1,30 +1,7 @@
 <!-- Load es5-shim first-->
 <script type="text/javascript" src="{{ site.js_host }}/js/es5-shim.min.js"></script>
 
-<script type="text/javascript">
-var usingWebAudio = false;
-
-
-if (typeof AudioContext !== 'undefined') {
-    audioCtx = new AudioContext();
-    alert("Chrome");
-    usingWebAudio = true;
-} else {
-    alert('Safari');
-    usingWebAudio = false;
-}
-
-function audioResume(button) {
-    console.log('setting audioResume');
-    document.querySelector(button).addEventListener('click', function() {
-        audioCtx.resume().then(() => {
-            console.log('Playback button selected');
-        });
-    });
-    console.log('audioResume set');
-    alert("set listener");
-}
-</script>
+<script type="text/javascript" src="{{ site.js_host }}/js/audioContext.js"></script>
 
 <script type="text/javascript" src="{{ site.js_host }}/js/abcjs_basic_3.0-min.js"></script>
 <script type="text/javascript" src="{{ site.js_host }}/js/jquery-3.1.0.min.js"></script>
