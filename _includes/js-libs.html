@@ -2,12 +2,15 @@
 <script type="text/javascript" src="{{ site.js_host }}/js/es5-shim.min.js"></script>
 
 <script type="text/javascript">
+var usingWebAudio;
 
 if (typeof AudioContext !== 'undefined') {
     audioCtx = new AudioContext();
     alert("Chrome");
+    usingWebAudio = true;
 } else {
     alert('Safari');
+    usingWebAudio = false;
 }
 
 // var audioCtx = new AudioContext();

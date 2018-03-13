@@ -100,7 +100,7 @@ Use the ABC player below the music to hear the tune.
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-        if (typeof AudioContext !== 'undefined') {
+        if (usingWebAudio) {
             // One-liner to resume playback when user interacted with the page
             document.querySelector('button').addEventListener('click', function() {
                 audioCtx.resume().then(() => {
