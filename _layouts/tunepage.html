@@ -101,7 +101,7 @@ Use the ABC player below the music to hear the tune.
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
         try {
-            if (usingWebAudio) {
+            if (typeof usingWebAudio !== 'undefined') {
                 console.log("usingWebAudio = " + usingWebAudio);
                 // One-liner to resume playback when user interacted with the page
                 audioResume('button');
