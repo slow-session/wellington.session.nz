@@ -4,6 +4,7 @@
 <script type="text/javascript">
 var usingWebAudio = false;
 
+
 if (typeof AudioContext !== 'undefined') {
     audioCtx = new AudioContext();
     alert("Chrome");
@@ -13,7 +14,16 @@ if (typeof AudioContext !== 'undefined') {
     usingWebAudio = false;
 }
 
-// var audioCtx = new AudioContext();
+function audioResume(button) {
+    console.log('setting audioResume');
+    document.querySelector(button).addEventListener('click', function() {
+        audioCtx.resume().then(() => {
+            console.log('Playback button selected');
+        });
+    });
+    console.log('audioResume set');
+    alert("set listener");
+}
 </script>
 
 <script type="text/javascript" src="{{ site.js_host }}/js/abcjs_basic_3.0-min.js"></script>
