@@ -72,8 +72,8 @@ If you don't find the set you're looking for you can put tunes together and try 
 
 </script>
 
-<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/build_sets.js"></script>
+<script src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script src="{{ site.js_host }}/js/build_sets.js"></script>
 
 <script>
 $(document).ready(function() {

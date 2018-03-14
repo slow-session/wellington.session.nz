@@ -28,9 +28,9 @@ You can look at the dots for the Test Notes and generate a new practice set.
 <br>
 <div id="warnings"></div>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
+<script src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 
-<script type="text/javascript">
+<script>
 function toggle(button) {
     switch (button.value) {
         case "Generate Test Notes":
