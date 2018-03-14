@@ -1,21 +1,27 @@
-var usingWebAudio = false;
-
-if (typeof AudioContext !== 'undefined') {
-    audioCtx = new AudioContext();
-    alert("Chrome");
-    usingWebAudio = true;
-} else {
-    alert('Safari');
-    usingWebAudio = false;
+try {
+    var audioCtx = new AudioContext();
+    console.log('AudioContext supported');
+    //alert("Chrome");
+}
+catch(err) {
+    console.log('AudioContext not supported');
+    //alert("Not Chrome - " + err);
 }
 
 function audioResume(button) {
-    console.log('setting audioResume');
-    document.querySelector(button).addEventListener('click', function() {
-        audioCtx.resume().then(() => {
-            console.log('Playback button selected');
-        });
-    });
-    console.log('audioResume set');
-    alert("set listener");
+    try {
+        if (typeof audioCtx !== 'undefined') {
+            console.log('setting audioResume()');
+            document.querySelector(button).addEventListener('click', function() {
+                audioCtx.resume().then(() => {
+                    console.log('Playback button selected');
+                });
+            });
+            console.log('audioResume() set');
+        }
+    }
+    catch(err) {
+        console.log('audioResume() - ' + err);
+        alert('audioResume() - ' + err);
+    }
 }
