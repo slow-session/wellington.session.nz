@@ -123,21 +123,21 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 <script type="text/javascript" src="{{ site.js_host }}/js/build_table.js"></script>
 
 <script>
-    $(document).ready(function() {
-        audioPlayer.innerHTML = createAudioPlayer();
+$(document).ready(function() {
+    audioPlayer.innerHTML = createAudioPlayer();
 
-        /* Set initial sort order */
-        $.tablesorter.defaults.sortList = [[0,0]];
+    /* Set initial sort order */
+    $.tablesorter.defaults.sortList = [[0,0]];
 
-        $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
+    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
 
-        // One-liner to resume playback when user interacted with the page
-        document.querySelector('button').addEventListener('click', function() {
-            audioCtx.resume().then(() => {
-                console.log('Playback button selected');
-            });
-        });
-    });
+    // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
+    // after the document received a user gesture to enable audio playback.
+    // See https://goo.gl/7K7WLu and also see /js/audioContext.js
+    // This function only sets the necessary event listener if we're running
+    // on a Chrome, Opera or Firefox browser
+    audioResume('button');
+});
 </script>
 
 <script>

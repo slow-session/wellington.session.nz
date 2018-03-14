@@ -93,11 +93,11 @@ $(document).ready(function()
     // Create the ABC player
     ABCplayer.innerHTML = createABCplayer('generated', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-    // One-liner to resume playback when user interacted with the page
-    document.querySelector('button').addEventListener('click', function() {
-        audioCtx.resume().then(() => {
-            console.log('Playback button selected');
-          });
-      });
+    // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
+    // after the document received a user gesture to enable audio playback.
+    // See https://goo.gl/7K7WLu and also see /js/audioContext.js
+    // This function only sets the necessary event listener if we're running
+    // on a Chrome, Opera or Firefox browser
+    audioResume('button');
 });
 </script>

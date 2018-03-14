@@ -86,22 +86,25 @@ Use the ABC player below the music to hear the tune.
 </script>
 
 <script>
-    $(document).ready(function() {
-        var tuneId = 666;
+$(document).ready(function() {
+    var tuneId = 666;
 
-        {% if page.mp3_file %}
-        audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
-        tuneId++;
-        {% endif %}
+    {% if page.mp3_file %}
+    audioPlayer.innerHTML = createAudioPlayer();
+    showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
+    tuneId++;
+    {% endif %}
 
-        ABCJS.renderAbc('notation', MyTune);
+    ABCJS.renderAbc('notation', MyTune);
 
-        textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+    textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
+    ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-
-        audioResume('button');
-    
-    });
+    // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
+    // after the document received a user gesture to enable audio playback.
+    // See https://goo.gl/7K7WLu and also see /js/audioContext.js
+    // This function only sets the necessary event listener if we're running
+    // on a Chrome, Opera or Firefox browser
+    audioResume('button');
+});
 </script>
