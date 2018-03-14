@@ -51,10 +51,10 @@ K: C
 <br />
 <div id='warnings'></div>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/musical-ws.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abc_controls.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
+<script src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
+<script src="{{ site.mp3_host }}/js/musical-ws.js"></script>
+<script src="{{ site.mp3_host }}/js/abc_controls.js"></script>
+<script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
 <script type='text/javascript'>
 

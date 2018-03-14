@@ -119,8 +119,8 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
     };
 </script>
 
-<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/build_table.js"></script>
+<script src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script src="{{ site.js_host }}/js/build_table.js"></script>
 
 <script>
 $(document).ready(function() {

@@ -52,9 +52,9 @@ permalink: /createMD/
 }
 </style>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
+<script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
-<script type="text/javascript">
+<script>
 function showForm(textArea, myForm) {
     var elements = document.getElementById(myForm).elements;
     var obj = {};

@@ -11,7 +11,7 @@ Type: {{ page.rhythm }}, added
 <textarea id="ABCprocessed" style="display:none;">X: 1
 </textarea>
 
-<script type="text/javascript">
+<script>
 
 var MyFonts = "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
@@ -44,7 +44,7 @@ function printSet(printTunes) {
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
     <div id="notation{{tuneId}}" class="abc"></div>
-    <script type="text/javascript">
+    <script>
         tuneList += '{{ tune.title | escape  }} ({{ tune.key}}), ';
 
         var thisTune = "%%staffwidth 540\n" + MyFonts + {{ tune.abc | jsonify }};

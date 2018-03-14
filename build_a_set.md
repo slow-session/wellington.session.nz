@@ -158,10 +158,10 @@ Please think of the trees!">
     };
 </script>
 
-<script type="text/javascript" src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
-<script type="text/javascript" src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script type="text/javascript" src="/js/build_table_abc.js"></script>
-<script type="text/javascript" src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
+<script src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
+<script src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script src="/js/build_table_abc.js"></script>
+<script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
 <script>
     function enable_button() {
