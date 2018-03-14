@@ -17,7 +17,7 @@ Some of the tunes that get played at the session, including those we've been
 learning in the slow part of the session, are in our <b><a href="/tunes_archive/">Tunes Archive</a></b> page.
 
 {::nomarkdown}
-<img alt="NEW!" src="/images/new.gif" border=0 height="48" width="48"> We add new tunes reasonably often - you can check those out in our <b><a href="/latest/">Latest Tunes</a></b> page.
+<img alt="NEW!" src="/images/new.gif"  height="48" width="48"> We add new tunes reasonably often - you can check those out in our <b><a href="/latest/">Latest Tunes</a></b> page.
 {:/}
 
 

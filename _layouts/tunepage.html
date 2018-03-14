@@ -2,7 +2,7 @@
 layout: page
 ---
 {{ page.key }} {{ page.mode }} {{ page.rhythm }}, added
-<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
+<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
 <br />Played in: {{ page.location }}
 <br />
 <br />
@@ -50,8 +50,8 @@ Use the ABC player below the music to hear the tune.
     {% endif %}
 
     {% if page.abc_source %}
-    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
-    {% endif %}</p>
+    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+    {% endif %}
 </div>
 
 <script>
