@@ -1,13 +1,18 @@
+// In Chrome/Opera/Firefox, an AudioContext must be created or resumed
+// after the document received a user gesture to enable audio playback.
+// See https://goo.gl/7K7WLu
+
 try {
+    //alert("Chrome/Opera/Firefox");
     var audioCtx = new AudioContext();
     console.log('AudioContext supported');
-    //alert("Chrome");
-}
-catch(err) {
+} catch (err) {
+    //alert("Safari - " + err);
     console.log('AudioContext not supported');
-    //alert("Not Chrome - " + err);
 }
 
+// This function only sets the event listener if we're running on a Chrome, Opera
+// or Firefox browser
 function audioResume(button) {
     try {
         if (typeof audioCtx !== 'undefined') {
@@ -19,9 +24,8 @@ function audioResume(button) {
             });
             console.log('audioResume() set');
         }
-    }
-    catch(err) {
+    } catch (err) {
         console.log('audioResume() - ' + err);
-        alert('audioResume() - ' + err);
+        //alert('audioResume() - ' + err);
     }
 }
