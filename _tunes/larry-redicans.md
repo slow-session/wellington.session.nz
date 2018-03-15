@@ -21,12 +21,9 @@ abc: |
     M: 4/4
     L: 1/8
     K: Fmaj
-    |: dc | AdcA GcAG | FDGF DGFD | CA,~A,2 CDFG | AF~F2 GABG |
-    AdcA GcAG | FDGF DGFD | CA,~A,2 CDFG |1 AcGE F2 :|2 AcGE FGAB ||
-    | c3 A BAGA | FcAF GFDF | CF~F2 dFcF | BAGF DGGA |
-    B3d cAGF | dcde fcAF | CFAF DFBd | cAGA FGAB |
-    c3 A BAGA | FcAF GFDF | CF~F2 dFcF | BAGF DGGA |
-    BABc dcde | fcAF G2FD | CFAF DFBd | cAGA F2 ||
-
+    |: dc | AdcA G2AG | FAGF DGFD | CA,~A,2 CDFG | AF~F2 GABG |
+    AdcA G2AG | FAGF DGFD | CA,~A,2 CDFG |1 AcGE F2 :|2 AcGE FGAB ||
+    |: cdc A BAGA | FGAF GFDF | CF~F2 CFAF | BAGF DGGA |
+    BABc dcde |fcAF GFFD | CF~F2 CFAd |1 cAGA FGAB :|2  cAGE F2||
 
 ---
