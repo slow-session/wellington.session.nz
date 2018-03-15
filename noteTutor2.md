@@ -56,7 +56,7 @@ K: C
 <script src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 <script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
-<script type='text/javascript'>
+<script>
 
 
 function playNote(){

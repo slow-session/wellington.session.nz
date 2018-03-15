@@ -15,7 +15,7 @@ collected and produced some different options:
 
 {::nomarkdown}
 <p>
-<img alt="Think before you print" src="/images/think-before-you-print.gif" border=0>
+<img alt="Think before you print" src="/images/think-before-you-print.gif">
 </p>
 {:/}
 
