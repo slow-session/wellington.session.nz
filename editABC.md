@@ -64,7 +64,7 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script src="{{ site.mp3_host }}/js/abc_controls.js"></script>
 <script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
-<script type='text/javascript'>
+<script>
 $(document).ready(function()
 {
 	// Create the ABC player
