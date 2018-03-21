@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wellyfest slow session
-permalink: wellyfest
+permalink: /wellyfest/
 ---
 <div id="audioPlayer"></div>
 <div id="abc-textareas"></div>
