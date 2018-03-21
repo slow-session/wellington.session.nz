@@ -64,9 +64,6 @@ QuickTime X, released with OS 10.6 Snow Leopard and later versions, is **not cap
 
 ### Other software
 
-  * Andy -> <a href="https://play.google.com/store/apps/details?id=com.smp.musicspeed">Music Speed Changer</a> (Android)
-  * Andy -> <a href="http://www.audacityteam.org/">Audacity</a> (Windows®, Mac®, GNU/Linux® and other operating systems)
-
 While the options listed above will slow down the music for you there are commercial packages for around US$30 which work better at really slow speeds (50% or slower) and also have a number of other useful options such as picking out sections to loop and saving parts of a file for later. Members of the Wellington Slow session have experience with these packages:
 
   * Ted  -> <a href="http://www.ronimusic.com/slowdown.htm">Amazing Slow Downer</a> (Windows, Mac and iOS)
