@@ -5,12 +5,12 @@ key: D
 rhythm: jig
 date: 2016-09-28
 location: Arrowtown Wellington
-tags: slowsession beginner
+tags: slowsession beginner wellyfest
 mp3_file: /mp3/my-darling-asleep.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: 
-abc_url: 
+mp3_url:
+abc_url:
 source: Wellington
 abc: |
     X: 4
@@ -23,5 +23,5 @@ abc: |
     fdd cAA|BAG A2G|FAA def|gec d2:|
     |:G|FAA B2A|FAA B2A|FAA def|gfg eag|
     fdd cAA|BAG A2G|FAA def|gec d2:|
-    
+
 ---

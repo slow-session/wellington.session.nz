@@ -5,7 +5,7 @@ key: G
 rhythm: polka
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: 
+tags: wellyfest
 mp3_file: /mp3/ballydesmond-polka-2.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
