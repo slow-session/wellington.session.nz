@@ -5,7 +5,7 @@ key: Edor
 rhythm: reel
 date: 2017-11-23
 location: Arrowtown Wellington
-tags: slowsession wellyfest-homework
+tags: slowsession wf-learn
 mp3_file: /mp3/joe-cooley-s.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_source: Charlie Montgomery

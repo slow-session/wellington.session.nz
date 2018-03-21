@@ -41,7 +41,6 @@ You will probably have recordings of your own that you'd like to do this with an
 
 ### Free software
 
-
 If you have a *Windows* desktop you can use **Windows Media Player version 10**
 
 *Instructions:*
@@ -70,7 +69,6 @@ While the options listed above will slow down the music for you there are commer
   * Andy -> <a href="http://supermegaultragroovy.com/products/capo/">Capo</a> (Mac and iOS)
   * Andy -> <a href="https://play.google.com/store/apps/details?id=com.smp.musicspeed">Music Speed Changer</a> (Android - small fee to remove ads)
   * Andy -> <a href="http://www.audacityteam.org/">Audacity</a> (Windows®, Mac®, GNU/Linux® and other operating systems - open source, yay!)
-
 
 If anyone else uses a different package and you're happy to answer questions about it, let us know. There's a very comprehensive list of software at:
 
