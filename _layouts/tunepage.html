@@ -2,19 +2,28 @@
 layout: page
 ---
 {{ page.key }} {{ page.mode }} {{ page.rhythm }}, added
-<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
+<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
 <br />Played in: {{ page.location }}
 <br />
 <br />
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
-<div id="showPlayer" class="audioplayer_left"></div>
+<div id="showPlayer"></div>
 
 {% else %}
 <!-- build the abc player for each tune-->
-<fieldset>
-    <strong>No recording available - use the ABC player below the music to hear the tune</strong>
+<fieldset style="width:800px;float:left;">
+<p>
+<strong>
+A recording for this tune is not available yet. Qualify for glory by
+providing one! Make a recording of yourself or your session playing this
+tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>.
+</strong>
+</p>
+<strong>
+Use the ABC player below the music to hear the tune.
+</strong>
 </fieldset>
 {% endif %}
 
@@ -37,7 +46,7 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 {% if page.abc contains "X:" %}
 <h2>Play the ABC version</h2>
 <div id="textAreas"></div>
-<div id="ABCplayer" class="audioplayer_left"></div>
+<div id="ABCplayer"></div>
 
 <form>
     <input type="button" value="Show ABC Source" onclick="toggle(this);">
@@ -68,11 +77,11 @@ writing the ABC for this tune using our
     {% endif %}
 
     {% if page.abc_source %}
-    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.
-    {% endif %}</p>
+    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+    {% endif %}
 </div>
 
-<script type="text/javascript">
+<script>
     var MyFonts =
         "%%titlefont       Helvetica 20\n\
 %%subtitlefont    Helvetica 16\n\
@@ -117,7 +126,14 @@ writing the ABC for this tune using our
         ABCJS.renderAbc('notation', MyTune);
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneId);
+        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
         {% endif %}
+
+        // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
+        // after the document received a user gesture to enable audio playback.
+        // See https://goo.gl/7K7WLu and also see /js/audioContext.js
+        // This function only sets the necessary event listener if we're running
+        // on a Chrome, Opera or Firefox browser
+        audioResume('button');
     });
 </script>
