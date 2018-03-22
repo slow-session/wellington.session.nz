@@ -9,7 +9,7 @@ layout: page
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
-<div id="showPlayer" class="audioplayer_left"></div>
+<div id="showPlayer"></div>
 
 {% else %}
 <!-- build the abc player for each tune-->
@@ -46,7 +46,7 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 {% if page.abc contains "X:" %}
 <h2>Play the ABC version</h2>
 <div id="textAreas"></div>
-<div id="ABCplayer" class="audioplayer_left"></div>
+<div id="ABCplayer"></div>
 
 <form>
     <input type="button" value="Show ABC Source" onclick="toggle(this);">
@@ -118,7 +118,7 @@ writing the ABC for this tune using our
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}');
+        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
         tuneId++;
         {% endif %}
 
