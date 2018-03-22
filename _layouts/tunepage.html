@@ -43,7 +43,7 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 <br />
 {% endunless %}
 
-{% if page.abc contains "X:" %}
+{% if page.abc contains "K:" %}
 <h2>Play the ABC version</h2>
 <div id="textAreas"></div>
 <div id="ABCplayer"></div>
@@ -122,7 +122,7 @@ writing the ABC for this tune using our
         tuneId++;
         {% endif %}
 
-        {% if page.abc  contains "X:" %}
+        {% if page.abc  contains "K:" %}
         ABCJS.renderAbc('notation', MyTune);
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
