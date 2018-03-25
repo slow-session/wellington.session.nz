@@ -1,5 +1,5 @@
 ---
-title: Martin Wynne's
+title: Martin Wynne's No. 2
 titleID: martin-wynnes.md
 key: D
 rhythm: reel
