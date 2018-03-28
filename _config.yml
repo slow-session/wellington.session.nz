@@ -29,7 +29,7 @@ kramdown:
 
 destination: _site
 
-gems:
+plugins:
   - jekyll-feed
 
 feed:
