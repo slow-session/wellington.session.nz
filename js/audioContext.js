@@ -13,11 +13,11 @@ try {
 
 // This function only sets the event listener if we're running on a Chrome, Opera
 // or Firefox browser
-function audioResume(button) {
+function audioResume() {
     try {
         if (typeof audioCtx !== 'undefined') {
             console.log('setting audioResume()');
-            document.querySelector(button).addEventListener('click', function() {
+            document.addEventListener('click', function() {
                 audioCtx.resume().then(() => {
                     console.log('Playback button selected');
                 });
