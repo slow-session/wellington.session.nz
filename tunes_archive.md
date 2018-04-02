@@ -136,7 +136,7 @@ $(document).ready(function() {
     // See https://goo.gl/7K7WLu and also see /js/audioContext.js
     // This function only sets the necessary event listener if we're running
     // on a Chrome, Opera or Firefox browser
-    audioResume('button');
+    audioResume();
 });
 </script>
 
