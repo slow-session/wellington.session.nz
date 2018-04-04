@@ -10,7 +10,7 @@ mp3_file: /mp3/guns-of-the-magnificent-seven.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=JcG37cR9_S0
-source: ENTER YOUR NEW SOURCE HERE
+source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/40
 abc: |
