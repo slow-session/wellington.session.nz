@@ -31,7 +31,7 @@ def cleanhtml(raw_html):
 
 rhythmDict = {}
 locationDict = {}
-mp3locationDict = {}
+mp3licenceDict = {}
 mp3sourceDict = {}
 licenceUsedBy = {}
 sourceDict = {}
@@ -46,6 +46,8 @@ with open(optionsFile, 'w') as outfile:
         if file.endswith(".md"):
             with open(tunesDir + '/' + file, 'r') as infile:
                 outline = ''
+                mp3_source_key = ''
+                mp3_licence_key = ''
                 for line in infile:
                     if line.startswith('rhythm:'):
                         rhythm = line.replace('rhythm:', '').strip()
@@ -56,21 +58,19 @@ with open(optionsFile, 'w') as outfile:
                         if locations:
                             for location in locations.split():
                                 locationDict[cleanhtml(location.replace('"', ''))] = location
-                    if line.startswith('mp3_licence:'):
-                        mp3_licence = line.replace('mp3_licence:', '').strip()
-                        if mp3_licence:
-                            mp3_licence_key = cleanhtml(mp3_licence.replace('"', ''))
-                            mp3locationDict[mp3_licence_key] = mp3_licence
                     if line.startswith('mp3_source:'):
                         mp3_source = line.replace('mp3_source:', '').strip()
                         if mp3_source:
                             mp3_source_key = cleanhtml(mp3_source.replace('"', ''))
                             mp3sourceDict[mp3_source_key] = mp3_source
-                            if mp3_source_key in licenceUsedBy:
-                                if mp3_licence_key not in licenceUsedBy[mp3_source_key]:
-                                    licenceUsedBy[mp3_source_key].append(mp3_licence_key)
-                            else:
-                                licenceUsedBy[mp3_source_key] = [mp3_licence_key,]
+
+
+
+                    if line.startswith('mp3_licence:'):
+                        mp3_licence = line.replace('mp3_licence:', '').strip()
+                        if mp3_licence:
+                            mp3_licence_key = cleanhtml(mp3_licence.replace('"', ''))
+                            mp3licenceDict[mp3_licence_key] = mp3_licence
                     if line.startswith('source:'):
                         source = line.replace('source:', '').strip()
                         if source:
@@ -79,6 +79,13 @@ with open(optionsFile, 'w') as outfile:
                         abc_source = line.replace('abc_source:', '').strip()
                         if abc_source:
                             abcsourceDict[cleanhtml(abc_source.replace('"', ''))] = abc_source
+
+                if mp3_licence_key:
+                    if mp3_source_key in licenceUsedBy:
+                        if mp3_licence_key not in licenceUsedBy[mp3_source_key]:
+                            licenceUsedBy[mp3_source_key].append(mp3_licence_key)
+                    else:
+                        licenceUsedBy[mp3_source_key] = [mp3_licence_key,]
 
     #
     # Output the form to the file
@@ -151,8 +158,8 @@ with open(optionsFile, 'w') as outfile:
     <select id="mp3_licence-box" name="mp3_licence">
         <option value="">None</option>
     """)
-    for key in sorted(mp3locationDict.keys()):
-        outfile.write('    <option value="' + cgi.escape(mp3locationDict[key], quote=True) + '">' + key + '</option>\n')
+    for key in sorted(mp3licenceDict.keys()):
+        outfile.write('    <option value="' + cgi.escape(mp3licenceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW MP3 LICENCE HERE">Other</option>
     </select>
 
