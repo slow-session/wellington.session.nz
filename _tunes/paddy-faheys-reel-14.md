@@ -9,7 +9,7 @@ location: Wellington
 tags:
 mp3_file: /mp3/paddy-faheys-reel-14.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
-mp3_source: YouTube video posted by Robert Singer
+mp3_source: YouTube video
 mp3_url: https://youtu.be/x6qxqDdq4-c
 abc_url:
 source: Wellington

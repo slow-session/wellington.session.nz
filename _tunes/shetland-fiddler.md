@@ -8,7 +8,7 @@ location: Wellington
 tags:
 mp3_file: /mp3/shetland-fiddler.mp3
 mp3_source: Paula Doohan & Liz Doherty
-mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=WzdmoghHDKM
 source: Wellington
 abc_source: The Session

@@ -4,10 +4,10 @@ titleID: guns-of-the-magnificent-seven.md
 key: Ador
 rhythm: reel
 date: 2017-11-08
-location: Wellington 
-tags: 
+location: Wellington
+tags:
 mp3_file: /mp3/guns-of-the-magnificent-seven.mp3
-mp3_source: YouTube
+mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=JcG37cR9_S0
 source: ENTER YOUR NEW SOURCE HERE
