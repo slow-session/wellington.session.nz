@@ -171,9 +171,11 @@ with open(optionsFile, 'w') as outfile:
 
     <label>Source:<sup>*</sup></label>
     <select id="source-box" name="source">
-    <option value="">None</option>
+    <option value="Wellington">Wellington</option>
     """)
     for key in sorted(sourceDict.keys()):
+        if 'Wellington' in key:
+            break
         outfile.write('    <option value="' + cgi.escape(sourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
     </select>
@@ -184,9 +186,11 @@ with open(optionsFile, 'w') as outfile:
 
     <label>ABC source:</label>
     <select id="abc_source-box" name="abc_source">
-    <option value="">None</option>
+    <option value="The Session">The Session</option>
     """)
     for key in sorted(abcsourceDict.keys()):
+        if 'The Session' in key:
+            break
         outfile.write('    <option value="' + cgi.escape(abcsourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
     </select>
