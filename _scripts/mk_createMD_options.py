@@ -20,8 +20,11 @@ else:
 # You will need to change these variables to
 # match your directory structure
 #
-tunesDir = '/Users/asjl/GitHub/' + archiveName + '/_tunes'
-optionsFile = '/Users/asjl/GitHub/' + archiveName + '/_includes/createMD_options.html'
+from pathlib import Path
+homeDir = str(Path.home())
+
+tunesDir = homeDir + '/GitHub/' + archiveName + '/_tunes'
+optionsFile = homeDir + '/GitHub/' + archiveName + '/_includes/createMD_options.html'
 
 cleanr = re.compile('<.*?>')
 
