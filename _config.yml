@@ -7,6 +7,9 @@ keywords: irish, traditional, music, jigs, reels, polkas, craic
 description: Irish trad tune archive
 defaultABCplayer: 'piano'
 
+slowsession_time: "7:30 to 8:40"
+session_time: "8:50 to late"
+
 # Only use this if you are serving your site via Github Pages
 github:
   url: "http://wellington.session.nz"
