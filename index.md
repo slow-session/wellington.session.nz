@@ -56,7 +56,7 @@ var textAreas = document.getElementById("abc-textareas");
 <a href="/nz_sessions">Other NZ Sessions</a>
 --------------
 
-There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. It’s a long, long way from Clare to here. See our <a href="/nz_sessions">NZ Sessions</a> page for more information.
+There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. <a href="https://www.youtube.com/watch?v=9B3_of9CY24">It’s a long, long way from Clare to here</a>. See our <a href="/nz_sessions">NZ Sessions</a> page for more information.
 
 <script>
 $(document).ready(function() {
