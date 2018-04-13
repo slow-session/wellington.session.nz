@@ -1,32 +1,28 @@
 ---
 layout: page
-title: The Wellington Session
+title: Wellington Irish Sessions
 ---
 <div id="audioPlayer"></div>
 
-The Wellington Session happens on Tuesday nights from 7:30 p.m. at the Welsh Dragon Bar, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. All players of traditional Irish music are welcome. The session starts slowly, as we work through new tunes and tunes we are just learning:
+Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/venue/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. Players of traditional Irish music are welcome. The evening is split into two parts with a slow session early on for those who are relatively new to Irish session music and a regular session for experienced players who are familiar with playing this music at a high standard.
 
-* TOC
-{:toc}
+<a href="/slowsession/">Slow Session</a> - {{ site.slowsession_time }}
+------------
 
-If you are relatively new to playing this music, come along right at the start. The pace usually picks up as the evening progresses, so if you are already fluent in tunes,
-come along after 8:30. Of course, we'd be happy to have experienced players playing **slowly**
-earlier on as well!
+The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments. See our <a href="/slowsession/">Slow Session</a> page for more information.
 
-Some of the tunes that get played at the session, including those we've been
-learning in the slow part of the session, are in our <b><a href="/tunes_archive/">Tunes Archive</a></b> page.
+<a href="/regularsession/">Regular Session</a> - {{ site.session_time }}
+--------------
 
-{::nomarkdown}
-<img alt="NEW!" src="/images/new.gif"  height="48" width="48"> We add new tunes reasonably often - you can check those out in our <b><a href="/latest/">Latest Tunes</a></b> page.
-{:/}
+The regular session is a different beast from the slow session that happens earlier in the evening. We want this to be an excellent Irish session with a very strong focus on the traditional melody instruments playing traditional tunes. This means that accompaniment from rhythm instruments will be limited so that the melody can shine. See our <a href="/regularsession/">Regular Session</a> page for more information.
 
+<a href="/tunes_archive/">Tunes Archive</a>
+------------
 
-Tune of the Week
-================
+Many of the tunes that get played at the sessions, including those we've been learning in the slow session, are in our <a href="/tunes_archive/">Tunes Archive</a> page. We add new tunes reasonably often - you can check those out in our <a href="/latest/">Latest Tunes</a> page.
 
-We pick one tune each week for homework, and we'll play it sometime during the first hour.
+Our Tune of the Week is:
 
-<div id="DEBUG"></div>
 <div id="abc-textareas"></div>
 <script>
 var textAreas = document.getElementById("abc-textareas");
@@ -54,81 +50,18 @@ var textAreas = document.getElementById("abc-textareas");
   {% endfor %}
 </tbody>
 </table>
-
-Slow Session Tunes
-==================
-
-Recent tunes and slow session sets.
-
-<table style="width:100%" id="focustunes" class="tablesorter">
-<thead>
-    <tr>
-    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:60%;">Audio Player</th>
-    </tr>
-</thead>
-<tbody>
-{% assign tunes = site.tunes | where: 'tags', 'focustune' %}
-{% assign sortedtunes = tunes | sort: 'title' %}
-  {% assign tuneid = 200 %}
-  {% for tune in sortedtunes %}
-      {% assign tuneid = tuneid | plus: 1 %}
-<tr>
-{% include tablerow.html tuneId=tuneid %}
-</tr>
-  {% endfor %}
-</tbody>
-</table>
-<br />
-<table style="width:100%" id="focussets" class="tablesorter">
-<thead>
-    <tr>
-    <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:26%;">Titles</th>
-    <th style="width:45%;">Audio Player</th>
-    </tr>
-</thead>
-<tbody>
-{% assign sets = site.sets | where: 'tags', 'focusset' %}
-{% assign setid = 200 %}
-{% for set in sets %}
-{% assign setid = setid | plus: 1 %}
-<tr>
-{% include setrow.html setId=setid %}
-</tr>
-{% endfor %}
-</tbody>
-</table>
 <br />
 
-NZ Sessions
-==============
 
-There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. It’s a long, long way from Clare to here.
+<a href="/nz_sessions">Other NZ Sessions</a>
+--------------
 
-Find out more information in our <a href="/nz_sessions">NZ Sessions</a> page.
+There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. It’s a long, long way from Clare to here. See our <a href="/nz_sessions">NZ Sessions</a> page for more information.
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    /* turn off sorting on last column */
-    $("#focustunes").tablesorter({headers: { 4:{sorter: false}}});
-
-    /* turn off sorting on last two columns */
-    $("#focussets").tablesorter({
-        headers: {
-            2: {
-                sorter: false
-            },  
-            3: {
-                sorter: false
-            }
-        }
-    });
     // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
     // after the document received a user gesture to enable audio playback.
     // See https://goo.gl/7K7WLu and also see /js/audioContext.js
