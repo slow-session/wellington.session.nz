@@ -1,7 +1,13 @@
 <!-- Social media content metadata -->
+{% if page.title  == site.name %}
+{% assign description = '' %}
+{% else %}
+{% assign description = site.name %}
+{% endif %}
+
 <meta property="og:url" content="{% if page.url %}{{ site.github.url }}{{ page.url }}{% else %}{{ site.github.url }}{% endif %}/" />
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
-<meta property="og:description" content="{% if page.key %}{{ page.key }} {{ page.rhythm }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:description" content="{% if page.key %}{{ page.key }} {{ page.rhythm }}{% else %}{{ description }}{% endif %}" />
 <meta property="og:image" content="{{ site.github.url }}{{ site.facebook_image }}" />
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:locale" content="{{ site.facebook_locale }}" />
