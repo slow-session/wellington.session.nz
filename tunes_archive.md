@@ -6,8 +6,15 @@ permalink: /tunes_archive/
 Many of the tunes listed here get played at the Wellington Session. There are
 also a number of tunes from other parts of the country. You can look at them all
 or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.
-
 **We're happy to add tunes from other parts of NZ.**
+
+
+{::nomarkdown}
+<p>
+<img alt="NEW!" src="/images/new.gif"  height="48" width="48"> We add new tunes reasonably often - you can check those out in our <b><a href="/latest/">Latest Tunes</a></b> page.
+</p>
+{:/}
+
 
 In Wellington, we've learned many of these tunes during the "Slow Session" part
 of the evening and you can find these by choosing the "All Tunes" option,  picking
