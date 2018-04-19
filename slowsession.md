@@ -14,7 +14,7 @@ Tune of the Week
 
 We pick one tune each week for homework, and we'll play it sometime during the first hour.
 
-<div id="DEBUG"></div>
+<div id="audioPlayer"></div>
 <div id="abc-textareas"></div>
 <script>
 var textAreas = document.getElementById("abc-textareas");
