@@ -21,6 +21,6 @@ abc: |
     M: 2/4
     L: 1/8
     K: Bmin
-    B>B Bc|dB Bd|cA Ac|d/c/B/A/ BF|B>B Bc|dB B2|ef/e/ dc|B2 B2:|
+    |:B>B Bc|dB Bd|cA Ac|d/c/B/A/ BF|B>B Bc|dB B2|ef/e/ dc|B2 B2:|
     |:f>d df|ec cd|ef/e/ dc|Bc de|f>d df|ec cd|ef/e/ dc|B2 B2:|
 ---

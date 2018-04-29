@@ -19,8 +19,8 @@ abc: |
     M: 6/8
     L: 1/8
     K: Dmix
-    "D"FAD FAD | "A7"GFG EFG | "D"FAD FAD | "A7"GEA "D"D2 D |
+    |: "D"FAD FAD | "A7"GFG EFG | "D"FAD FAD | "A7"GEA "D"D2 D |
     "D"FAD FAD | "A7"GFG EFG | "A7"fed e^cA | GEA "D"D2 A :|
-    "D"Add ded | "Am"cAB cAG | "D"Add ded | "Am"cAB c2 B|
+    |: "D"Add ded | "Am"cAB cAG | "D"Add ded | "Am"cAB c2 B|
     "D"Add ded | "Am"cAB cde | "Am"fed ecA | GEA "D"D3 :|
 ---
