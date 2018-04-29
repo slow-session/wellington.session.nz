@@ -71,7 +71,11 @@ I:abc-charset utf-8
 X:{{ count }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
 {{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
 {% endif %}{% endfor %}
-
+X: 100
+%%subtitlefont Helvetica 26
+T: The hints for sets contain first and
+T:       last two bars of the tune.
+%%subtitlefont Helvetica 16
 {% assign setid = 0 %}
 {% assign settunecount = 0 %}
 {% assign counter = 0 %}
