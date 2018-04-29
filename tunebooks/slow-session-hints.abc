@@ -23,7 +23,6 @@ I:abc-charset utf-8
 %%titlefont Helvetica-Oblique 16
 %%subtitlefont Helvetica-Oblique 13
 
-{% assign tuneCounter = 0 %}
 %%multicol start
 %%rightmargin 11.5cm
 %%leftmargin 1.5cm
@@ -33,7 +32,8 @@ I:abc-charset utf-8
 {% assign setid = 0 %}
 {% assign settunecount = 0 %}
 {% assign TOWhinttunes = site.tunes | where: 'tags', 'tuneoftheweek' %}
-{% assign Focushinttunes = site.tunes | where: 'tags', 'focustune' %}
+{% assign  temptunes = site.tunes | where: 'tags', 'focustune' %}
+{% assign Focushinttunes = temptunes | sort: 'title' %}
 {% assign sets = site.sets | where: 'tags', 'focusset' %}
 {% for set in sets %}
   {% assign setid = setid | plus: 100 %}
@@ -45,32 +45,33 @@ I:abc-charset utf-8
   {% endfor %}
 {% endfor %}
 
+{% assign tuneCounter = 0 %}
+{% assign colPos = 0 %}
 {% assign hinttunes = TOWhinttunes | concat: Focushinttunes %}
 
 {% assign count = 0 %}
 {% for tune in hinttunes %}
-{% assign count = count | plus: 1 %}
-X:{{ count }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
-{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
-{% endif %}
-{% comment %}
-{% assign ending = words.size | minus: 3 %}{{"|"}}{{ words[ending] }}{{"|"}}{% assign ending = words.size | minus: 2 %}{{ words[ending] }}{{"|"}}
-{% endcomment %}
-{% assign tuneCounter = tuneCounter | plus: 1 %}
-{% if tuneCounter == 10 %}
+    {% assign count = count | plus: 1 %}
+    {% assign tuneCounter = tuneCounter | plus: 1 %}
+    {% if tuneCounter >= 12 and colPos == 0 %}
+        {% assign colPos = 1 %}
 %%multicol new
 %%rightmargin 1.5cm
 %%leftmargin 11.5cm
-{% endif %}
-{% if tuneCounter >= 20 %}
-{% assign tuneCounter = 0 %}
+    {% endif %}
+    {% if tuneCounter >= 24 %}
+        {% assign tuneCounter = 0 %}
+        {% assign colPos = 0 %}
 %%multicol end
 %%newpage
 %%multicol start
 %%rightmargin 11.5cm
 %%leftmargin 1.5cm
+    {% endif %}
+X:{{ count }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
+{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
 {% endif %}{% endfor %}
-{% assign tuneCounter = tuneCounter | divided_by: 2 | ceil | times: 2 %}
+
 {% assign setid = 0 %}
 {% assign settunecount = 0 %}
 {% assign counter = 0 %}
@@ -83,22 +84,24 @@ X:{{ count }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value -
     {% assign Sethinttunes = Sethinttunes | concat: siteTunes %}
     {% assign settunecount = settunecount | plus: 1 %}
     {% assign tunelabel = setid | plus: settunecount %}
-X:{{ tunelabel }}{% assign temp = Sethinttunes[counter].abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
-{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
-{% endif %}{% assign ending = words.size | minus: 3 %}{{"|"}}{{ words[ending] }}{{"|"}}{% assign ending = words.size | minus: 2 %}{{ words[ending] }}{{"|"}}
-{% assign tuneCounter = tuneCounter | plus: 2 %} {% assign counter = counter | plus: 1 %}
-{% if tuneCounter == 10 %}
+    {% assign tuneCounter = tuneCounter | plus: 2 %}
+    {% if tuneCounter >= 12  and colPos == 0 %}
+        {% assign colPos = 1 %}
 %%multicol new
-%%rightmargin 1.5cm
 %%leftmargin 11.5cm
-{% endif %}
-{% if tuneCounter >= 22 %}
-{% assign tuneCounter = 0 %}
+%%rightmargin 1.5cm
+    {% endif %}
+    {% if tuneCounter >= 24 %}
+        {% assign tuneCounter = 0 %}
+        {% assign colPos = 0 %}
 %%multicol end
 %%newpage
 %%multicol start
-%%rightmargin 11.5cm
 %%leftmargin 1.5cm
-{% endif %}
-{% endfor %}{% assign settunecount = 0 %}
-{% endfor %}
+%%rightmargin 11.5cm
+    {% endif %}
+X:{{ tunelabel }}{% assign temp = Sethinttunes[counter].abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
+{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
+{% endif %}{% assign ending = words.size | minus: 3 %}{{"|"}}{{ words[ending] }}{{"|"}}{% assign ending = words.size | minus: 2 %}{{ words[ending] }}{{"|"}}
+{% assign counter = counter | plus: 1 %}
+{% endfor %}{% assign settunecount = 0 %}{% endfor %}

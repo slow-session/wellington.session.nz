@@ -2,7 +2,7 @@
 title: Air Tune, The
 titleID: air-tune-the.md
 key: D
-rhythm: jig
+rhythm: reel
 date: 2018-03-19
 location: Wellington
 tags:

@@ -1,2 +1,3 @@
-X: {{ include.xcounter }}
+{% if tune.abc contains "K:" %}X: {{ include.xcounter }}
 {{ tune.abc | lstrip | replace: 'X:',  '% Old value - X:' }}
+{% endif %}
