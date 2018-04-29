@@ -3,32 +3,27 @@ layout: null
 permalink: /tunebooks/slow-session-hints.abc
 ---
 I:abc-charset utf-8
-%%titlefont Helvetica 26
-%%subtitlefont Helvetica 16
-%%gchordfont Helvetica 12
-%%composerfont Helvetica-Oblique 14
-%%partsfont Helvetica 12
-%%printtempo 0
-%%printparts 1
-%%partsbox 1
-%%bstemdown 1
-%%dateformat \%b \%e, \%Y
-%%footer "Wellington Slow Session hintsheet	$P	$d"
-
 %%topspace 0.0cm
 %%staffsep 0.7cm
-%%titleformat T-1
-%%musiconly 1
-%%printtempo 0
-%%titlefont Helvetica-Oblique 16
-%%subtitlefont Helvetica-Oblique 13
 
 %%multicol start
 %%rightmargin 11.5cm
 %%leftmargin 1.5cm
 
-%%withxrefs 1
-%%infoline 1
+%%bstemdown 1
+%%dateformat \%b \%e, \%Y
+%%footer "Wellington Slow Session hintsheet	$P	$d"
+
+%%titleleft
+%%writefields BCDFGHNORSTWwXZ false
+%%writefields TX
+%%musiconly 1
+%%printtempo 0
+%%titlefont Helvetica 16
+%%subtitlefont Helvetica 1
+%%gchordfont Helvetica 1
+%%maxshrink 0.8
+
 {% assign setid = 0 %}
 {% assign settunecount = 0 %}
 {% assign TOWhinttunes = site.tunes | where: 'tags', 'tuneoftheweek' %}
@@ -71,11 +66,16 @@ I:abc-charset utf-8
 X:{{ count }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value - X:' | replace: '||', '|' %}{% assign words = temp | split: '|' %}
 {{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
 {% endif %}{% endfor %}
-X: 100
-%%subtitlefont Helvetica 26
-T: The hints for sets contain first and
-T:       last two bars of the tune.
+
+%%writefields X false
 %%subtitlefont Helvetica 16
+X: 100
+T: The hints for sets contain first and last two
+T: bars of the tune.
+K: C
+
+%%writefields TX
+
 {% assign setid = 0 %}
 {% assign settunecount = 0 %}
 {% assign counter = 0 %}
@@ -94,6 +94,8 @@ T:       last two bars of the tune.
 %%multicol new
 %%leftmargin 11.5cm
 %%rightmargin 1.5cm
+%%writefields TX
+%%subtitlefont Helvetica 1
     {% endif %}
     {% if tuneCounter >= 24 %}
         {% assign tuneCounter = 0 %}
@@ -109,3 +111,4 @@ X:{{ tunelabel }}{% assign temp = Sethinttunes[counter].abc | lstrip | replace: 
 {% endif %}{% assign ending = words.size | minus: 3 %}{{"|"}}{{ words[ending] }}{{"|"}}{% assign ending = words.size | minus: 2 %}{{ words[ending] }}{{"|"}}
 {% assign counter = counter | plus: 1 %}
 {% endfor %}{% assign settunecount = 0 %}{% endfor %}
+%%multicol end
