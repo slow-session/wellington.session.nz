@@ -20,7 +20,7 @@ abc: |
     M: 4/4
     L: 1/8
     K: D
-    A,D (3DDD A,DFA|BFAF EABc|d2 cA (3Bcd AF|GEFD EDB,D|
+    |:A,D (3DDD A,DFA|BFAF EABc|d2 cA (3Bcd AF|GEFD EDB,D|
     A,D (3DDD A,DFA|BFAF EABc|d2 cA (3Bcd AF|[1 GFEG FDDB,:|[2 GFEG FDD e||
     fd (3ddd fdgd|fdgf edBc|dBBA Bcde|fdgf e2 de|
     fd (3ddd fdgd|fdgf edBc|dBBA BAGF|GFEG FDD e||
