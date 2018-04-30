@@ -20,7 +20,7 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    FBAF E2FE|DB,~B,2 DB,A,2|B,E~E2 FEDE|FABc dcBA|
+    |:FBAF E2FE|DB,~B,2 DB,A,2|B,E~E2 FEDE|FABc dcBA|
     FBAF E2FE|DB,~B,2 DB,A,2|B,E~E2 FEDE|FBBA B2BA:|
     |:FBAF A2FA|(3Bcd eg fdde|~f2af egfe|dBAF BAFE|
     FBAF A2FA|(3Bcd eg fdde|~f2af (3efg fe | dBAF ~B3A:||
