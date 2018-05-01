@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wellyfest slow session
-permalink: /wf/
+permalink: /wellyfest/
 ---
 <div id="audioPlayer"></div>
 <div id="abc-textareas"></div>
@@ -9,7 +9,7 @@ permalink: /wf/
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
-During Wellyfest at Brookfield 2017 we'll be running a slow session Saturday afternoon in the Nelson Lounge from 12:30 to 2:30.
+During <a href="http://wellingtonfolkfestival.org.nz/">Wellyfest</a> at Brookfield 2017 we'll be running a slow session Saturday afternoon in the Nelson Lounge from 12:30 to 2:30.
 
 We'll be playing tunes at a slow pace. Please come along and join Andy and Ted
 for some relaxed session play.

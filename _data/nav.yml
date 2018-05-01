@@ -1,8 +1,12 @@
 - title: "home"
   href: "/"
 
-- title: "Venue"
-  href: "/venue/"
+- title: "Sessions"
+  subcategories:
+    - subtitle: "Slow Session"
+      subhref: "/slowsession/"
+    - subtitle: "Regular Session"
+      subhref: "/regularsession"
 
 - title: "Tunes"
   href: "/tunes_archive/"
