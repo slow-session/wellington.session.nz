@@ -20,7 +20,7 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    A | "D" d3 A BAFA | ABdA BAFA | ABde fded | "A" Beed egfe |
+    A |: "D" d3 A BAFA | ABdA BAFA | ABde fded | "A" Beed egfe |
     "D" d3 A BAFA | ABdA BAFA | "G" ABde fdec | "A" dAAG "D" FAD:|
     |: f | "D" a2ag fafe | dedA BAFA | ABde fded | "A" Beed e2fg |
     "D" abag fgfe | dedA BAFA | "G" ABde fdec | "A" dAAG "D" FAD :|
