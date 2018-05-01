@@ -86,24 +86,23 @@ others simply enjoyed playing tunes at a relaxed pace.
 We believe the best way to learn tunes for session play is to learn them by ear.
 The usual way to learn tunes by ear is for someone to play the tune slowly,
 playing parts of the tune over and over as you play along.  We developed a website
-to help people learn the tunes. That website
-(<a href="http://wellington.session.nz">http://wellington.session.nz</a>)
+to help people learn the tunes. This website
 is designed to provide all of the tools necessary to learn tunes by ear from MP3
 recordings of session tunes.  Sheet music is also provided for the tunes for
 folks who prefer to learn by reading music (just click the Tune Name link).
 
-We created this website for the slow sessions at Ceol Aneas in Nelson.  If you
+We created this page for the slow sessions at Ceol Aneas in Nelson.  If you
 want to look at the tunes before the slow sessions, please check out this site and
 have a listen and a play.
 
 Other tunes
 -----------
 
-Check out the <a href="http://wellington.session.nz">Wellington Session</a> page
+Check out the <a href="/slowsession/">Wellington Slow Session</a> page
 to see what we're playing there.
 
 There's also a large list of tunes including tunes played in other New Zealand sessions in the
-<a href="{{ site.mp3_host }}/archive/">NZ Archive</a> page.  Feel free to poke around.
+<a href="/tunes_archive/">Tunes Archive</a> page.  Feel free to poke around.
 
 
 <script>
