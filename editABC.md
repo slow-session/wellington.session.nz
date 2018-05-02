@@ -4,11 +4,8 @@ title: Edit ABC
 permalink: /editABC/
 ---
 
-Use this sample as a template to edit or create your own ABC files. Don't
-forget to 'Download ABC' to save your work!
-
-Check out this <a href="http://abcnotation.com/wiki/abc:standard:v2.1">ABC Notation</a>
-guide if you need more information on the format.
+Use this sample as a template to edit or create your own ABC files. A brief set of instructions is found <a href="/EditInstructions.pdf" title="PDF">here.</a>  If you'd like more information on the ABC format check out the <a href="http://abcnotation.com/wiki/abc:standard:v2.1">ABC Notation</a>
+guide.  <b> --  Don't forget to 'Download ABC' to save your work!  -- </b>
 
 <!-- Group the input and controls for ABC-->
 <fieldset style="display: inline-block; vertical-align: middle;">
