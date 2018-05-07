@@ -129,11 +129,5 @@ $(document).ready(function() {
             }
         }
     });
-    // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
-    // after the document received a user gesture to enable audio playback.
-    // See https://goo.gl/7K7WLu and also see /js/audioContext.js
-    // This function only sets the necessary event listener if we're running
-    // on a Chrome, Opera or Firefox browser
-    audioResume();
 });
 </script>

@@ -43,12 +43,12 @@ function printSet(printTunes) {
 {% for setTune in page.tunes %}
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
-    <div id="notation{{tuneId}}" class="abc"></div>
+    <div id="notation{{tuneId}}" class="abc" style="max-width: 800px;"></div>
     <script>
         tuneList += '{{ tune.title | escape  }} ({{ tune.key}}), ';
 
         var thisTune = "%%staffwidth 540\n" + MyFonts + {{ tune.abc | jsonify }};
-        ABCJS.renderAbc('notation{{tuneId}}', thisTune);
+        ABCJS.renderAbc('notation{{tuneId}}', thisTune, {}, { responsive: 'resize' }, {});
 
         abcSource = {{ tune.abc | jsonify }};
         abcSource = abcSource.replace(regex, '');
@@ -76,12 +76,5 @@ $(document).ready(function() {
     tunelist.innerHTML = tuneList.slice(0, -2);
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
-
-    // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
-    // after the document received a user gesture to enable audio playback.
-    // See https://goo.gl/7K7WLu and also see /js/audioContext.js
-    // This function only sets the necessary event listener if we're running
-    // on a Chrome, Opera or Firefox browser
-    audioResume();
 });
 </script>

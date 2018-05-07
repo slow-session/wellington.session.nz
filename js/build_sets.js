@@ -67,7 +67,9 @@
          tableRow += '</table></td><td><table style="width: 100%;">';
          for (var i = 0; i < tuneSources.length; i++) {
              var setTuneID = (item.setID * 10) + i;
-             if (tuneSources[i].includes('mp3')) {
+             // Can't use this on old javascript engines
+             // if (tuneSources[i].includes('mp3')) {
+             if (tuneSources[i].indexOf('mp3') !== -1) {
                  tableRow += '<tr style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
              } else {
                  var textAreas = document.getElementById("abc-textareas");

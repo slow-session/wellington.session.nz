@@ -30,9 +30,11 @@ var ABCdurationP;
 // Select a timbre that sounds like an electric piano.
 var instrument;
 
-function createABCplayer (tuneID, playerClass, timbre) {
-
-    instrument = new Instrument(timbre);
+function createABCplayer(tuneID, playerClass, timbre) {
+    /*
+     * Generate the HTML needed to play ABC tunes
+     */
+    instrument = makeInstrument(timbre);
 
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
@@ -59,7 +61,20 @@ function createABCplayer (tuneID, playerClass, timbre) {
     return (abcPlayer);
 }
 
+function makeInstrument(timbre) {
+    /*
+     * Some old iPads break badly running more recent Javascript
+     * We abstract this out into a separate function so that when it fails
+     * the rest of the code continues on working - Arghh!
+     */
+    var tempInstrument = new Instrument(timbre);
+    return (tempInstrument);
+}
+
 function playABC(tune, pButton, playPosition, bpm, audioposition, duration) {
+    /*
+     * Play an ABC tune when the button gets pushed
+     */
     CalculateTuneDuration(tune, bpm);
 
     var ticks;
@@ -78,9 +93,9 @@ function playABC(tune, pButton, playPosition, bpm, audioposition, duration) {
         setABCPosition(0);
     }
     lastpButton = pButton;
-    ABCLocation=audioposition; //initialise global variable
+    ABCLocation = audioposition; //initialise global variable
     ABCPosition.Ptr = playPosition;
-    ABCdurationP=duration;
+    ABCdurationP = duration;
 
     if (pButton.className == "playButton") {
         stopABC(tune);
@@ -90,14 +105,15 @@ function playABC(tune, pButton, playPosition, bpm, audioposition, duration) {
         ABCdurationP.innerHTML = ABCduration.toFixed(1);
     } else {
         stopABC(tune);
-        audioposition.innerHTML="";
-        ABCdurationP.innerHTML ="";
+        audioposition.innerHTML = "";
+        ABCdurationP.innerHTML = "";
         pButton.className = "";
         pButton.className = "playButton";
     }
 }
 
 function changeABCspeed(tune, pButton, bpm) {
+    // Change the speed of playback
     CalculateTuneDuration(tune, bpm);
 
     // The ABC L: value scales the bpm value!
@@ -154,6 +170,7 @@ function CalculateTuneDuration(tune, bpm) {
 }
 
 function getABCheaderValue(key, tuneStr) {
+    // Extract the value of one of the ABC keywords e.g. T: Out on the Ocean
     var regex = new RegExp(key);
     var lines = tuneStr.split("\n");
     var ABCvalue = '';
@@ -184,11 +201,13 @@ function startABC(tune, ticks) {
     ABCtimer();
 }
 
-function simplePlayABC(tune, ticks, timbre){
+function simplePlayABC(tune, ticks, timbre) {
     instrument = new Instrument(timbre);
 
     instrument.silence();
-    instrument.play({tempo: ticks},tune.value);
+    instrument.play({
+        tempo: ticks
+    }, tune.value);
 }
 
 function stopABC(tune) {
@@ -216,8 +235,7 @@ function nudgeABCSlider() {
     ABCCurrentTime += 0.1;
     var floatTime = (ABCCurrentTime / ABCduration) * 500;
     ABCPosition.Ptr.value = floatTime;
-    ABCLocation.innerHTML=ABCCurrentTime.toFixed(1);
-
+    ABCLocation.innerHTML = ABCCurrentTime.toFixed(1);
 }
 
 function setABCPosition(ticks) {
@@ -226,6 +244,10 @@ function setABCPosition(ticks) {
 }
 
 function preProcessABC(str) {
+    /*
+     * Our simple ABC player doesn't handle repeats well.
+     * This function unrolls the ABC so that things play better.
+     */
     var lines = str.split('\n'),
         j, header, newABCHeader = "",
         newABCNotes = "",
@@ -402,5 +424,6 @@ function preProcessABC(str) {
         }
         newBigABCNotes = newBigABCNotes.substring(0, newBigABCNotes.length - 3); //undo hack
     }
+
     return (newABCHeader + newBigABCNotes);
 }
