@@ -27,7 +27,7 @@ Use the ABC player below the music to hear the tune.
 </fieldset>
 {% endif %}
 
-<div class="abc">
+<div class="abc" style="max-width: 800px;">
     <div id="notation"></div>
 </div>
 
@@ -44,6 +44,7 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 {% endunless %}
 
 {% if page.abc contains "K:" %}
+<!--<h2>Play the ABC version</h2>-->
 <div id="textAreas"></div>
 <div id="ABCplayer"></div>
 
@@ -122,17 +123,10 @@ writing the ABC for this tune using our
         {% endif %}
 
         {% if page.abc  contains "K:" %}
-        ABCJS.renderAbc('notation', MyTune);
+        ABCJS.renderAbc('notation', MyTune, {}, { responsive: 'resize' }, {});
 
         textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
         {% endif %}
-
-        // In Chrome/Opera/Firefox, an AudioContext must be created or resumed
-        // after the document received a user gesture to enable audio playback.
-        // See https://goo.gl/7K7WLu and also see /js/audioContext.js
-        // This function only sets the necessary event listener if we're running
-        // on a Chrome, Opera or Firefox browser
-        audioResume();
     });
 </script>

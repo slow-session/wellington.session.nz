@@ -18,7 +18,7 @@ Use the "Reset" button to start a new set.
 
 <!-- Draw the dots -->
 <div class="output">
-	<div id="paper0" class="paper" ><h2>Musical Notation appears here</h2></div>
+	<div id="paper0" class="paper"  style="max-width: 800px;"><h2>Musical Notation appears here</h2></div>
 </div>
 
 <!-- Area to store ABC -->
@@ -158,10 +158,9 @@ Please think of the trees!">
     };
 </script>
 
-<script src="{{ site.mp3_host }}/js/abcjs_editor_3.0-min.js"></script>
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="/js/build_table_abc.js"></script>
-<script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
+<script src="{{ site.js_host }}/js/build_table_abc.js"></script>
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
     function enable_button() {
@@ -182,7 +181,8 @@ Please think of the trees!">
 
         document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
 
-        abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", indicate_changed: "true" });
+
+        abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
     }
 
     function Reset() {
@@ -221,12 +221,5 @@ $(document).ready(function() {
     $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
-
-	// In Chrome/Opera/Firefox, an AudioContext must be created or resumed
-	// after the document received a user gesture to enable audio playback.
-	// See https://goo.gl/7K7WLu and also see /js/audioContext.js
-	// This function only sets the necessary event listener if we're running
-	// on a Chrome, Opera or Firefox browser
-	audioResume();
 });
 </script>

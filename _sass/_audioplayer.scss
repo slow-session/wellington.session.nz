@@ -1,18 +1,24 @@
 .mp3player_tunepage {
-    width: 500px;
+    width: 85%;
+    max-width: 800px;
+    min-width: 550px;
 }
 
 .abcplayer_tunepage {
-    width: 500px;
+    width: 85%;
+    max-width: 800px;
+    min-width: 500px;
 }
 
 .mp3player_tablerow{
-    width: 500px;
+    width: 85%;
+    min-width: 550px;
     margin: 0 auto;
 }
 
 .abcplayer_tablerow {
-    width: 500px;
+    width: 85%;
+    min-width: 550px;
     margin: 0 auto;
 }
 
@@ -63,6 +69,7 @@
 }
 
 .speedControl {
+    width: 40%;
     margin-top: 12px;
     padding-left: 20px;
     float: left;

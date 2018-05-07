@@ -31,7 +31,7 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
 
     }
     //if (EndLoopTime == 0) {
-        EndLoopTime = OneAudioPlayer.duration - .25; // sampling rate is ~ every 250 ms (overshoot the end)
+    EndLoopTime = OneAudioPlayer.duration - .25; // sampling rate is ~ every 250 ms (overshoot the end)
     //}
     /*
      * Set the start and end of loop markers depending on which button was pressed
@@ -43,13 +43,13 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
             button1ID.value = BeginLoopTime.toFixed(1);
             button2ID.value = EndLoopTime.toFixed(1);
             break;
-            // Loop End button
+        // Loop End button
         case 1:
             EndLoopTime = OneAudioPlayer.currentTime;
             button1ID.value = BeginLoopTime.toFixed(1);
             button2ID.value = EndLoopTime.toFixed(1);
             break;
-            // Reset button
+        // Reset button
         case 2:
             BeginLoopTime = 0;
             EndLoopTime = OneAudioPlayer.duration - .25; // sampling rate is ~ every 250 ms (overshoot the end)
@@ -64,10 +64,11 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
     OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
     return;
 }
-function setAudioLoops(){
-  if (OneAudioPlayer.currentTime >= EndLoopTime) {
-      OneAudioPlayer.currentTime = BeginLoopTime;
-  }
+
+function setAudioLoops() {
+    if (OneAudioPlayer.currentTime >= EndLoopTime) {
+        OneAudioPlayer.currentTime = BeginLoopTime;
+    }
 }
 
 function setPlaySpeed(audioID, speed) {
