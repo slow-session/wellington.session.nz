@@ -1,5 +1,14 @@
 "use strict";
 
+function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+}
+
 function downloadFile(filename, text) {
     var pom = document.createElement('a');
     pom.setAttribute(
@@ -53,4 +62,10 @@ function toTitleCase(str) {
     return str.replace(/\w\S*/g, function (txt) {
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
+}
+
+function enable_button() {
+    submit_button.disabled = false;
+    submit_button.style.opacity=1.0;
+    submit_button.style.cursor='pointer';
 }

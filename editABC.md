@@ -50,19 +50,18 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
     </div>
 </div>
 
-
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
 
 <!-- Allow the user to save their ABC-->
-<b>Don’t forget to ‘Download ABC’ to save your work!</b>
+<h3>Don’t forget to ‘Download ABC’ to save your work</h3>
 <form>
-   <span title="Download the ABC you've entered. Don't lose your work!">
-  		<input value='Download ABC' type='button' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
-   </span>
+    <span title="Download the ABC you've entered. Don't lose your work!">
+        <input value='Download ABC' type='button' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
+    </span>
 </form>
 
-<script src="/js/webpage_tools.js"></script>
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function()

@@ -128,6 +128,7 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table.js"></script>
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -137,14 +138,5 @@ $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[0,0]];
 
     $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
-
 });
-</script>
-
-<script>
-    function enable_button() {
-        submit_button.disabled = false;
-        submit_button.style.opacity=1.0;
-        submit_button.style.cursor='pointer';
-    }
 </script>
