@@ -163,12 +163,6 @@ Please think of the trees!">
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
-    function enable_button() {
-        submit_button.disabled = false;
-        submit_button.style.opacity=1.0;
-        submit_button.style.cursor='pointer';
-    }
-
     function appendABC(abcSource) {
         var regex = new RegExp('X:.*\n');
 
@@ -203,15 +197,6 @@ Please think of the trees!">
 			}, 1);
 		window.scrollTo(scrollLeft, scrollTop-musicHeight+document.getElementById("paper0").offsetHeight);
 	}
-
-	function printDiv(divName) {
-        var printContents = document.getElementById(divName).innerHTML;
-        var originalContents = document.body.innerHTML;
-
-        document.body.innerHTML = printContents;
-        window.print();
-        document.body.innerHTML = originalContents;
-   }
 </script>
 
 <script>

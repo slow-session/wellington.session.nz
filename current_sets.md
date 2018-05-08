@@ -74,6 +74,7 @@ If you don't find the set you're looking for you can put tunes together and try 
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_sets.js"></script>
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -93,12 +94,4 @@ $(document).ready(function() {
         }
     });
 });
-</script>
-
-<script>
-    function enable_button() {
-        submit_button.disabled = false;
-        submit_button.style.opacity=1.0;
-        submit_button.style.cursor='pointer';
-    }
 </script>
