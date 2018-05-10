@@ -5,7 +5,7 @@ key: Am
 rhythm: jig
 date: 2018-02-19
 location: Wellington
-tags: slowsession focustune
+tags: slowsession 
 mp3_file: /mp3/whall-be-king-but-charlie.mp3
 mp3_source: Wellington Session
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
