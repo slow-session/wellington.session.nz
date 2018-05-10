@@ -4,8 +4,8 @@ titleID: new-mown-meadow.md
 key: Ador
 rhythm: reel
 date: 2018-04-29
-location: Wellington 
-tags: 
+location: Wellington
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/new-mown-meadow.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
