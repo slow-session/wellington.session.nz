@@ -28,17 +28,9 @@ var MyFonts = "%%titlefont       Helvetica 20\n\
 var tuneList = '';
 var abcSource = '';
 var regex = new RegExp('X:.*\n');
-var printTunes = '';
-
-function printSet(printTunes) {
-    var originalContents = document.body.innerHTML;
-
-    document.body.innerHTML = printTunes;
-    window.print();
-    document.body.innerHTML = originalContents;
-}
 </script>
 
+<div id="paper0" class="paper" style="max-width: 800px;">
 {% assign tuneId = 100 %}
 {% for setTune in page.tunes %}
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
@@ -56,12 +48,11 @@ function printSet(printTunes) {
         // Get the ABCplayer to go through each tune twice
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
-
-        printTunes += document.getElementById('notation{{tuneId}}').innerHTML;
     </script>
     {% assign tuneId = tuneId | plus: 1 %}
 {% endfor %}
 {% endfor %}
+</div>
 
 <!-- Controls for ABC player -->
 <div id="ABCplayer"></div>
@@ -69,7 +60,9 @@ function printSet(printTunes) {
 <hr>
 <p>You can print your set using this button. Please think of the trees!</p>
 
-<input class="button" type="button" class="loopButton" onclick="printSet(printTunes)" value="Print this Set" />
+<input class="button" type="button" class="loopButton" onclick="printDiv('paper0')" value="Print this Set" />
+
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function() {
