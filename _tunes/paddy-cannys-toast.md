@@ -7,7 +7,7 @@ date: 2018-05-14
 location: Wellington
 tags:
 mp3_file: /mp3/paddy-cannys-toast.mp3
-mp3_source: Ciaran Kelly
+mp3_source: Maurice Bradley and Ciaran Kelly
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url: https://www.facebook.com/ulsterfolkandtransportmuseum/videos/1847834401954804/
 source: Wellington
