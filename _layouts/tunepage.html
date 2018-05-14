@@ -27,8 +27,11 @@ Use the ABC player below the music to hear the tune.
 </fieldset>
 {% endif %}
 
-<div class="abc" style="max-width: 800px;">
-    <div id="notation"></div>
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;"></textarea>
+
+<div class="output" style="max-width: 800px;">
+    <div id="paper0" class="paper"></div>
 </div>
 
 {{ content }}
@@ -49,10 +52,29 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 <div id="ABCplayer"></div>
 
 <form>
-    <input type="button" value="Show ABC Source" onclick="toggle(this);">
+    <input type="button" class="filterButton" value="Show ABC Source" onclick="toggle(this);">
 </form>
 
-<div id="abcsource"></div>
+<div id='abcSource' style="display: none;">
+    <div class="row">
+        <div class="small-6 columns">
+            <textarea name='abcText' id="abcText" rows="13" cols="65"
+            style="background-color:#ebebeb; font-size:small; max-width:100%"
+            spellcheck="false">{{ page.abc | br_to_newline }}
+            </textarea>
+            <span title="Download the ABC you've entered. Don't lose your work!">
+    	    <input value='Download ABC' type='button' class="filterButton"
+            onclick='downloadFile(document.getElementById("filename").value,
+                    document.getElementById("abcText").value)' />
+            </span>
+        </div>
+        <div class="small-6 columns" style="max-width:100%">
+    <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.</p>
+    <p>If you feel that your changes are a closer match to the recording on the website, please save
+    your changes (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and
+    we will review the proposed changes.</p>
+        </div>
+</div>
 {% else %}
 <br />
 <fieldset>
@@ -82,35 +104,25 @@ writing the ABC for this tune using our
 </div>
 
 <script>
-    var MyFonts =
-        "%%titlefont       Helvetica 20\n\
-%%subtitlefont    Helvetica 16\n\
-%%gchordfont      Helvetica 12\n\
-%%composerfont    Helvetica-Oblique 14\n\
-%%partsfont       Helvetica 12%%\n\
-%%tempofont       Helvetica 12\n\
-%%annotationfont  Helvetica 12\n\
-%%infofont        Helvetica 12\n\
-%%textfont        Helvetica 12\n\
-%%vocalfont       Helvetica 12\n\
-%%wordsfont       Helvetica 12\n";
-
-    var MyTune = "%%staffwidth 540\n" + MyFonts + {{ page.abc | jsonify }};
-    var MyABC = "<span class='showabc' style='font-size: 12px'><br />" + {{ page.abc | newline_to_br | jsonify }} + "</span>";
-
     function toggle(button) {
         switch (button.value) {
             case "Show ABC Source":
                 button.value = "Hide ABC Source";
-                document.getElementById('abcsource').innerHTML = MyABC;
+                document.getElementById('abcSource').style.display= "block" ;
                 break;
             case "Hide ABC Source":
                 button.value = "Show ABC Source";
-                document.getElementById('abcsource').innerHTML = "";
+                document.getElementById('abcSource').style.display= "none" ;
                 break;
         }
     }
 </script>
+
+
+<!-- Show errors -->
+<div id='warnings'></div>
+
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -122,11 +134,22 @@ writing the ABC for this tune using our
         tuneId++;
         {% endif %}
 
-        {% if page.abc  contains "K:" %}
-        ABCJS.renderAbc('notation', MyTune, {}, { responsive: 'resize' }, {});
-
-        textAreas.innerHTML += '<textarea id="ABC' + tuneId + '" style="display:none;">' + preProcessABC(MyTune) + '</textarea>';
+        {% if page.abc contains "K:" %}
+        var textAreaID = 'ABC' + tuneId;
+        textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
         ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+
+        // Set the filename for downloading
+        document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';
+
+        // If the ABC changes get ready to play the revised ABC
+        $('#abcText').bind('input propertychange', function() {
+            textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
+            // Reset the filename for downloading
+            document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';
+        });
+
+        abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
         {% endif %}
     });
 </script>
