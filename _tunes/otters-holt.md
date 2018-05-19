@@ -18,10 +18,10 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    Z: Modified by Megantheviolinist
     K: Bmin
-    e|:fBBA FEFB|(3ABA FB ABde|fBBA FEFA|
-    |(3Bcd cA Bcde|fBBA FEFB|(3ABA FB ABde|
-    |faaf effe|1 dBBA ~B3e:|2 dBAF B3c||
-    |:d2fd Adfa|bfaf effe|d2fd Adfa|bfaf ~e3f|
-    ~d2fd Adfa|bfaf efde|fBBA FEFA|(3Bcd cA ~B3c:|
+    fBBA FEFB|~A2 FB ABde|fBBA FEFA|(3Bcd cA Bcde|
+    fBBA FEFB|~A2 FB ABde|faaf egfe| dBBA ~B4:|
+    |:d2fd Adfa|bfaf egfe|d2fd Adfa|bfaf ~e3f|
+    ~d2fd Adfa|bfaf efde|fBBA FEFA|(3Bcd cA ~B4:|
 ---

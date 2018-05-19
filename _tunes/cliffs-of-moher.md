@@ -13,16 +13,17 @@ mp3_url: https://comhaltas.ie/music/detail/cliffs_of_moher/
 source: Wellington
 abc_url: https://thesession.org/tunes/12
 abc: |
-  X: 1
-  T: The Cliffs Of Moher
-  R: jig
-  M: 6/8
-  L: 1/8
-  K: Ador
-  |:a3 bag| eaf ged| c2A BAG| EFG ABd|
-  eaa bag| eaf ged|c2A BAG| EFG A3:|
-  e2e dBA| e2e dBA| GAB dBA| GAB dBd|
-  e2e dBA| e2e dBA| GAB dBA| EFG A3|
-  efe dBA| efe dBA|GAB dBA| GAB dBd|
-  efe ded| cec BeB| GAB dBA| EFG A3|
+    X: 1
+    T: The Cliffs Of Moher
+    R: jig
+    M: 6/8
+    L: 1/8
+    Z: Modified by Megantheviolinist
+    K: Ador
+    |:a3 bag| eaf ged| c2A BAG| EFG ABd|
+    eaa bag| eaf ged|c2A BAG| EFG A3:|
+    ~e3 dBA| e2e dBA| GAB dBA| GAB dBd|
+    ~e3 dBA| e2e dBA| GAB dBA| EFG A3|
+    ~e3 dBA| e2e dBA|GAB dBA| GAB dBd|
+    e2e dee| cee Bee| EFG AGE| DB,G,A,3|
 ---
