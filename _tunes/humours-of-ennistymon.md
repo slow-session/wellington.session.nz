@@ -6,7 +6,7 @@ rhythm: jig
 mode:
 date: 2016-01-01
 location: Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/humours-of-ennistymon.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -19,13 +19,15 @@ abc: |
     M: 6/8
     L: 1/8
     R: jig
+    Z: Modified by Megantheviolinist
     K: Gmaj
-    A| ~B3 GBd | cBc ABc | B/c/dB GBd | cAG FGA |
-    ~B3 GBd | cBc ABc | ded cAF | AGF G2 :|
-    d |: ~f3 fed | cAG FGA | dgg gfg | afd d2 e |
-    f/g/ag fed | cAG FGA | ~B3 cAF | AGF GB :|
-    d | gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
-    gdB gdB | ecA ecA | B/c/dB GBd | cAF G2 |
-    d | gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
+    A| ~B3 GBd | ~c3 ABc | ~B3 GBd | cAG FGA |
+    ~B3 GBd | cBc ABc | ded cAF | AGF G3 :|
+    |: ~f3 fed | cAG FGA | dgg gfg | afd d2 e |
+    ~f3 fed | cAG FGA | ~B3 cAF | AGF G3 :|
+    gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
+    gdB gdB | ecA ecA | ~B3 GBd | cAF GBd |
+    gdB gdB | ecA ecA | ~B3 GBd | cAG FGA |
     ~B3 GBd | cBc ABc | ded cAF | AGF G2  ||
+
 ---
