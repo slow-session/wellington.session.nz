@@ -11,7 +11,7 @@ in the order you want to play them in the set.
 <fieldset style="display: inline-block; vertical-align: middle;">
   <legend>Enter the set MD file details:</legend>
   <div class="container">
-  <form id="createMD" method="get">
+  <form id="createSetMD" method="get">
       <label>Title: <sup>*</sup></label><br />
       <input type="text" id="title-box" name="title" value=""><br />
 
@@ -34,7 +34,7 @@ in the order you want to play them in the set.
 	  </fieldset>
 
 	  <br />
-	  <input type="button" class="button" onclick="showForm('md', 'createMD')" value="Build the MD file">
+	  <input type="button" class="button" onclick="showForm('setMD', 'createSetMD')" value="Build the MD file">
 </form>
 </div>
 </fieldset>
@@ -53,11 +53,11 @@ Use the "Reset Tunes" button to start a new set.
 <fieldset style="display: inline-block; vertical-align: middle;">
 <legend>Check the set MD file details:</legend>
 <div class="container">
-<textarea id="md" rows="11" cols="50" style="background-color: #ebebeb" spellcheck="false"></textarea>
+<textarea id="setMD" rows="11" cols="50" style="background-color: #ebebeb" spellcheck="false"></textarea>
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      
-  		<input value='Download MD file' type='button' class="button"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
+  		<input value='Download MD file' type='button' class="button"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("setMD").value)' />
    </span>
 </form>
 </div>
@@ -189,9 +189,10 @@ function appendSetTunes(mdfile, tuneID) {
 }
 
 function Reset() {
+    document.getElementById('createSetMD').reset();
 	document.getElementById('setTitles').innerHTML = '';
     document.getElementById('setTunes').innerHTML = '[';
-    document.getElementById('md').innerHTML = '';
+    document.getElementById('setMD').innerHTML = '';
 	var tLen = tuneIDs.length;
 	for (i = 0; i < tLen; i++) {
 		document.getElementById(tuneIDs[i]).style.backgroundColor = '';
@@ -258,7 +259,7 @@ function showForm(textArea, myForm) {
     document.getElementById(textArea).innerHTML += '---\n';
 
     // Set the filename for downloading
-    document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.md'
+    document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.setMD'
 }
 </script>
 
