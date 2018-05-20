@@ -19,7 +19,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    r: Modified by Megantheviolinist
+    % Modified by Megantheviolinist
     K: Gmaj
     |:G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE EDDE|
     G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE ED D2:|
