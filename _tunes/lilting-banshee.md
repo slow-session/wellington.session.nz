@@ -19,7 +19,7 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Ador
     |:EAA EAA|BAB G2A|Bee edB|dBA GED|
     EAA EAA|BAB G2A|Bee edB|dBA A3:|

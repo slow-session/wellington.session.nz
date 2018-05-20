@@ -18,7 +18,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Dmaj
     |: ~F2 AF BFAF| ~F2 AF EFDE| ~F2 AF BFAF| GEED EFGE|
     ~F2 AF BFAF|~F2  AF EFDE| ~F2 AF BAFB|ABde fd ~d2||

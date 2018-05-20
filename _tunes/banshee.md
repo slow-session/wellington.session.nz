@@ -19,7 +19,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Gmaj
     |:G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE EDDE|
     G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE ED D2:|

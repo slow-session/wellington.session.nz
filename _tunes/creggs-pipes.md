@@ -20,7 +20,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Gmaj
     |"G"~B3A BAGA | B2GB "C"AGEG |1 "G"~B3A BAGB |
     "C"AcBG "D"AGEG :|2 "G"Bded BcdB | "C"AcBG "D"AGEG ||

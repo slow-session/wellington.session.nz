@@ -18,7 +18,7 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Ador
     |:a3 bag| eaf ged| c2A BAG| EFG ABd|
     eaa bag| eaf ged|c2A BAG| EFG A3:|

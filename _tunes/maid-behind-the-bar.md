@@ -19,7 +19,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    % Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: D
     FAAB AFED|FAAB ABde|fBBA Bcde|~f2gf edBA|
     FAAB AFED|FAAB ABde|fBBA BcdB|AFEF D4:|
