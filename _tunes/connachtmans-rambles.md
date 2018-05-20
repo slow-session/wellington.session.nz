@@ -14,16 +14,14 @@ mp3_url: https://comhaltas.ie/music/detail/connactmans_rambles/
 source: Wellington
 abc_url: https://thesession.org/tunes/19
 abc: |
-    X: 1
+    X: 5
     T: The Connachtman's Rambles
     R: jig
     M: 6/8
     L: 1/8
-    K: D
-    K: Bm
-    AG|"D":FA(A d)AA|({B2d}"G"BAB) dA(G|"D"F)A(A d)fe|"G"ed(B{c}) BAG|
-    "D"FA(A d)AA|"G"BA(B "D"d)ef|"Em"gfe "D"(f2e)|1"G"dB(B{c} B)AG:|2 "G"dBB B3||
-    |:"Bm"fbb fa(a|f)ef "G"de(g|"Bm"f)bb fa(a|f)ed
-    "A7"(e2g| "Bm"f)bb fa(a|"D"f)ef "Bm"de(f|"Em"g)fe "D"dfe
-    |1 "G"dBB B2g:|2 "G"dBB ({c}B)AG|| "G"D"Tune end"BB{c}B3||
+    K: Dmaj
+    FAA dAA|BAB dAG|FAA dfe|dBB BAG|
+    FAA dAA|BAB def|gfe f2e|1 dBB BAG:|2 dBA B2 g||
+    |:fbb faa|fef deg|fbb faa|fed e2 g|
+    fbb faa|fef def|gfe dfe|1 dBA B2 g:|2 dBA BAG||
 ---
