@@ -19,9 +19,10 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    r: Modified by Megantheviolinist
     K: D
-    |:FAAB AFED|FAAB ABde|fBBA Bcde|fBBA BcdA|
+    FAAB AFED|FAAB ABde|fBBA Bcde|~f2gf edBA|
     FAAB AFED|FAAB ABde|fBBA BcdB|AFEF D4:|
-    |:faab afde|fdad fd d2|efga beef|gebe gfeg|
+    |:faag fdde|fdad fd ~d2|efga beef|gebe ge~e2|
     fgaf bfaf|defd e2 de|fBBA BcdB|AFEF D4:|
 ---

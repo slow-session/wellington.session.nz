@@ -19,7 +19,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    Z: Modified by Megantheviolinist
+    r: Modified by Megantheviolinist
     K: A
     |:ceef a2 ae|f2fe fa ae|ceef a2 ae|faec B2 A2:|
     |:cee=g fddf|ecce fBBA|cee=g fddf|e/^g/a ec B2 A2:|
