@@ -16,9 +16,12 @@ like <a href="https://sourceforge.net/projects/easyabc/">EasyABC</a>.
 
 Use the "Reset" button to start a new set.
 
+<!-- Show a header for where the dots will appear -->
+<div id="paperHeader"><h2>Musical Notation appears here</h2></div>
+
 <!-- Draw the dots -->
 <div class="output">
-	<div id="paper0" class="paper"  style="max-width: 800px;"><h2>Musical Notation appears here</h2></div>
+	<div id="paper0" class="paper"  style="max-width:800px; min-height:200px;display:none;"></div>
 </div>
 
 <!-- Area to store ABC -->
@@ -158,46 +161,9 @@ Please think of the trees!">
     };
 </script>
 
+<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_abc.js"></script>
-<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
-
-<script>
-    function appendABC(abcSource) {
-        var regex = new RegExp('X:.*\n');
-
-        document.getElementById('ABCraw').innerHTML += abcSource + "\n";
-        abcSource = abcSource.replace(regex, '');
-
-		// Get the ABCplayer to go through each tune twice
-        document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
-		document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
-
-        document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
-
-
-        abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: "paper0", midi_id:"midi", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-    }
-
-    function Reset() {
-        var scrollLeft = window.pageXOffset || (document.documentElement || document.body.parentNode || document.body).scrollLeft;
-        var scrollTop  = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-        var musicHeight=document.getElementById("paper0").offsetHeight;
-
-        document.getElementById('ABCraw').innerHTML = '';
-        document.getElementById('ABCprocessed').innerHTML = 'X: 1';
-        document.getElementById("filename").innerHTML = '';
-
-        document.getElementById("paper0").innerHTML = '<h2>Musical Notation appears here</h2>';
-		/* Hack - original height of window - can't probe until it's rendered (not worth a global variable) */
-   		document.getElementById("paper0").style.height = "50px";  
-        setTimeout(function() {
-            document.getElementById("paper0").style.height =
-				(document.getElementById("paper0").scrollHeight)+"px";
-			}, 1);
-		window.scrollTo(scrollLeft, scrollTop-musicHeight+document.getElementById("paper0").offsetHeight);
-	}
-</script>
 
 <script>
 $(document).ready(function() {
