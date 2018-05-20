@@ -18,9 +18,11 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    Z: Modified by Megantheviolinist
     K: Dmaj
-    |: F2 AF BFAF| F/A/F AF EFDE| F2 AF BFAF| G2 FG EFGE|
-    F2 AF BFAF|F/A/F AF EFDE| FA~A2 BAFB|ABde fgfe||
-    d2 dA BAFA| dcde fgfe| ~d3A BAFA| G2 FG EFGA|
-    d2 dA BAFA| dcde fgfe| dcdA BAFA| G2 FG EFGE :|
+    |: ~F2 AF BFAF| ~F2 AF EFDE| ~F2 AF BFAF| GEED EFGE|
+    ~F2 AF BFAF|~F2  AF EFDE| ~F2 AF BAFB|ABde fd ~d2||
+    dcdB ADFA| dcde fgfe| d2Bd ADFA| GEED EFGA|
+    d2 dB AF~F2| ABde fgfe| dfed BAFA| GEED EDB,D:||
+
 ---
