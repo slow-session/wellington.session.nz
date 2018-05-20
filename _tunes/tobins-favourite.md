@@ -19,9 +19,9 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
-    Z: Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Dmaj
-    DFA dcd|ecA cde|~f3 gfg|ecA GFE|
+    |DFA dcd|ecA cde|~f3 gfg|ecA GFE|
     DFA dcd|ecA cde|fef gec|edc d3:||
     |:dfa agf|efg efg|~f3 gfg|ecA GFE|
     DFA dcd|ecA cde|fef gec|edc d3:||

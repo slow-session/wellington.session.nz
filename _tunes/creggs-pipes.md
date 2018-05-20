@@ -20,11 +20,11 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    %Z: Modified by Megan Ward
     K: Gmaj
-    |: "G"~B2BA BAGA | B2GB "C"AGEG |1 "G"~B2BA BAGB |
-    "C"cABG "D"AGEG :|2 "G"Bd~d2 eBdB | "C"AcBG "D"AGEG ||
-    | DG~G2 DGBG | DGBG AGEG | DGGF GABc | d2BG ABGE |
-    "G"AG~G2 AGBG | DGBG "C"AGEG | "G"DGGF "Em"GABc | "C"dBAc "G"BG~G2 ||
-    |:"G"d2 (3Bcd edge | dGBG "C"AGEG |
-    "G"d2 (3Bcd "C"eg~g2 |1 "Am"agbg "D"ageg :|2 "Am"agab "D"aged ||
+    |"G"~B3A BAGA | B2GB "C"AGEG |1 "G"~B3A BAGB |
+    "C"AcBG "D"AGEG :|2 "G"Bded BcdB | "C"AcBG "D"AGEG ||
+    DG~G2 DGBG | DGBG AGEG | DGGF GABc | dBAc BGGE |
+    "G"DG~G2 DGBG | DGBG "C"AGEG | "G"DGGF "Em"GABc | "C"dBAc "G"BG~G2 ||
+    |:"G"d2 (3Bcd efge | d2BG "C"AGEG |"G"d2 (3Bcd "C"efge | "Am"a3b "D"aged :|
 ---
