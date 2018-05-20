@@ -93,7 +93,7 @@
       document.getElementById(textArea).innerHTML += '---\n';
 
       // Set the filename for downloading
-      document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.setMD'
+      document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.md'
   }
 
  (function() {
