@@ -1,12 +1,12 @@
 ---
-title: Martin Wynne's
-titleID: martin-wynnes.md
+title: Martin Wynne's No. 2
+titleID: martin-wynnes-no-2.md
 key: D
 rhythm: reel
 date: 2017-02-09
 location: Wellington
-tags: slowsession focustune
-mp3_file: /mp3/martin-wynnes.mp3
+tags: slowsession focustune ca
+mp3_file: /mp3/martin-wynnes-no-2.mp3
 mp3_source:  <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=4nONIILoIxw
