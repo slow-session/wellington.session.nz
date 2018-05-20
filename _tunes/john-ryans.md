@@ -18,7 +18,7 @@ abc: |
     R: polka
     M: 2/4
     L: 1/8
-    Z: Modified by Megantheviolinist
+    %Z: Modified by Megan Ward
     K: Dmaj
     |: dd B/c/d/B/ | AF AF | dd B/c/d/B/ | AF ED |
     dd B/c/d/B/ | AF Ad/e/ | fd ec |[1 d2 d2 :|[2 d2 d>e ||
