@@ -19,7 +19,7 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
-    r: Modified by Megantheviolinist
+    % Modified by Megantheviolinist
     K: Dmaj
     FAA dAA|BAB dAG|FAA dfe|dBB BAG|
     FAA dAA|BAB def|gfe f2e|1 dBB BAG:|2 dBA B2 g||
