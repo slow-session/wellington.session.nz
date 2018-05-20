@@ -19,7 +19,7 @@ abc: |
     M: 6/8
     L: 1/8
     R: jig
-    Z: Modified by Megantheviolinist
+    r: Modified by Megantheviolinist
     K: Gmaj
     A| ~B3 GBd | ~c3 ABc | ~B3 GBd | cAG FGA |
     ~B3 GBd | cBc ABc | ded cAF | AGF G3 :|

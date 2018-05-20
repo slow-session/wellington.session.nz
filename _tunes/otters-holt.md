@@ -18,7 +18,7 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    Z: Modified by Megantheviolinist
+    r: Modified by Megantheviolinist
     K: Bmin
     fBBA FEFB|~A2 FB ABde|fBBA FEFA|(3Bcd cA Bcde|
     fBBA FEFB|~A2 FB ABde|faaf egfe| dBBA ~B4:|
