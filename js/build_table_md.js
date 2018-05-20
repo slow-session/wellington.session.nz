@@ -13,6 +13,89 @@
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
   */
 
+  var tuneIDs = [];
+
+  function appendSetTunes(mdfile, tuneID) {
+  	document.getElementById('setTitles').innerHTML += mdfile + "<br />";
+  	document.getElementById('setTunes').innerHTML += mdfile + ", ";
+  	document.getElementById(tuneID).style.backgroundColor = 'Khaki';
+  	tuneIDs.push(tuneID);
+  }
+
+  function Reset() {
+      document.getElementById('createSetMD').reset();
+  	document.getElementById('setTitles').innerHTML = '';
+      document.getElementById('setTunes').innerHTML = '[';
+      document.getElementById('setMD').innerHTML = '';
+  	var tLen = tuneIDs.length;
+  	for (i = 0; i < tLen; i++) {
+  		document.getElementById(tuneIDs[i]).style.backgroundColor = '';
+  	}
+  	tuneIDs = [];
+  }
+
+  function showForm(textArea, myForm) {
+      var elements = document.getElementById(myForm).elements;
+      var obj = {};
+      var date = new Date();
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      var locationNotProcessed = 1;
+
+      document.getElementById(textArea).innerHTML = '---\n';
+      for(var i = 0 ; i < elements.length ; i++){
+          var item = elements.item(i);
+
+  		if (item.name == "") {
+  			continue;
+  		}
+          if (item.value == "Build the MD file") {
+              continue;
+          }
+
+          switch(item.name) {
+  			case 'title':
+  				if (item.value == '') {
+  					alert("'Title' is required");
+          			return false;
+  				}
+  				obj[item.name] = item.value;
+  				break;
+  			case 'rhythm':
+  				if (item.value == '') {
+  					alert("'Rhythm' is required");
+  		        	return false;
+  				}
+  				obj[item.name] = item.value;
+  				break;
+  			case 'author':
+  				if (item.value == '') {
+  					alert("'Author' is required");
+  	        		return false;
+  				}
+  				obj[item.name] = item.value;
+  				break;
+              case 'date':
+                  obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
+                  break;
+  			case 'location':
+  				obj[item.name] = 'Wellington';
+  				break;
+  			case 'tunes':
+  				obj[item.name] = document.getElementById('setTunes').value.concat(']').replace(', ]', ']');
+  				break;
+              default:
+                  obj[item.name] = item.value;
+          }
+          document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
+      }
+      document.getElementById(textArea).innerHTML += '---\n';
+
+      // Set the filename for downloading
+      document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.setMD'
+  }
+
  (function() {
      function displayTunesTable(results, store) {
          var tunesTable = document.getElementById('tunes-table');

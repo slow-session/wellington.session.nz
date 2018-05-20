@@ -13,6 +13,42 @@
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
   */
 
+  var tuneIDs = [];
+
+  function appendABC(abcSource, tuneID) {
+      var regex = new RegExp('X:.*\n');
+
+      document.getElementById('ABCraw').innerHTML += abcSource + "\n";
+      abcSource = abcSource.replace(regex, '');
+
+      document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
+      document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
+
+      document.getElementById(tuneID).style.backgroundColor = 'Khaki';
+      tuneIDs.push(tuneID);
+
+      document.getElementById('paperHeader').style.display = "none";
+      document.getElementById('paper0').style.display = "block";
+
+      abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: 'paper0', midi_id:"midi", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+  }
+
+  function Reset() {
+      document.getElementById('paperHeader').style.display = "block";
+
+      document.getElementById('ABCraw').innerHTML = '';
+      document.getElementById('ABCprocessed').innerHTML = 'X: 1';
+      document.getElementById("filename").innerHTML = '';
+
+      document.getElementById('paper0').style.display = "none";
+      
+      var tLen = tuneIDs.length;
+      for (i = 0; i < tLen; i++) {
+          document.getElementById(tuneIDs[i]).style.backgroundColor = '';
+      }
+      tuneIDs = [];
+  }
+
  (function() {
      function displayTunesTable(results, store) {
          var tunesTable = document.getElementById('tunes-table');
@@ -56,12 +92,12 @@
          var tuneID = 'ABC' + item.tuneID;
 
          // build the first three columns
-         tableRow += '<tr>';
+         tableRow += '<tr id="' + item.tuneID + '">';
          tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
          tableRow += '<td>' + item.key + '</td>';
          tableRow += '<td>' + item.rhythm + '</td>';
-         tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value)" value="Select"></td></tr>';
+         tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'' + item.tuneID + '\')" value="Select"></td></tr>';
          return tableRow;
      }
 
