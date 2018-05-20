@@ -18,10 +18,11 @@ abc: |
     R: polka
     M: 2/4
     L: 1/8
+    Z: Modified by Megantheviolinist
     K: Dmaj
     |: dd B/c/d/B/ | AF AF | dd B/c/d/B/ | AF ED |
-    dd B/c/d/B/ | AF Ad/e/ | fd ec |[1 df d2 :|[2 df dd/e/ ||
-    |: fd de/f/ | g>f ed/e/ | fd Ad | fd/f/ a>g |
-    fd- de/f/ | g/a/g/f ed/e/ | fd ed/c/ |[1 d2 d>e :|[2 d2 d2 |]
+    dd B/c/d/B/ | AF Ad/e/ | fd ec |[1 d2 d2 :|[2 d2 d>e ||
+    |: fd de/f/ | gf ed/e/ | fd Ad | fa a>g |
+    fd de/f/ | gf ed/e/ | fd e/d/c |[1 d2 d>e :|[2 d2 d2 |]
 
 ---

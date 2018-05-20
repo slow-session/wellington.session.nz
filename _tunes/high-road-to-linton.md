@@ -19,9 +19,11 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    K: Amix
-    |:ceef a2 ae|fgfe a2 ae|ceef a2 ae|faec B2 A2:|
-    |:cdeg fddf|ecce fBBf|cdeg fddf|e/^g/a ec B2 A2:|
-    |: {^g}a2 a2 efa2|efae faef|{^g}a2 a2 efae|faec B2 A2:|
-    |:cdec defd|cdec BcdB|cdec def^g|afec B2 A2:|
+    Z: Modified by Megantheviolinist
+    K: A
+    |:ceef a2 ae|f2fe fa ae|ceef a2 ae|faec B2 A2:|
+    |:cee=g fddf|ecce fBBA|cee=g fddf|e/^g/a ec B2 A2:|
+    |: {g}a2 a2 efa2|efae faef|{g}a2 a2 efae|faec B2 A2:|
+    |:cdec defd|cdec BcdB|cdec defg|afec B2 A2:|
+
 ---
