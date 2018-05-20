@@ -10,11 +10,10 @@ permalink: /ceolaneas/
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
-During <a href="http://www.irishmusic.org.nz/">Ceol Aneas 2018</a> in Nelson we'll be running a couple of slow sessions at
-the Accents YHA Hostel where many of us are staying. They'll be in the kitchen:
+During <a href="http://www.irishmusic.org.nz/">Ceol Aneas 2018</a> in Nelson we'll be running a couple of slow sessions at the Accents YHA Hostel where many of us are staying. They'll be in the kitchen:
 
- * Sat 2 June from 4 - 6pm
- * Sun 3 June from 3 - 5pm
+ * Sat 2 June from 4 - 5:30pm
+ * Sun 3 June from 4 - 5:30pm
 
 We'll be playing tunes at a slow pace. Please come along and join Andy and Ted
 for some relaxed session play.
