@@ -30,7 +30,7 @@ playing parts of the tune over and over as you play along. With that in mind
 we'll spend some time at the start on some or all of these tunes
 and if everybody knows these we'll tackle some others!
 
-<table style="width:100%" id="wf-learn" class="tablesorter">
+<table style="width:100%" id="tunestolearn" class="tablesorter">
 <thead>
     <tr>
     <th style="width:20%;">&nbsp;Tune Name&nbsp;</th>
@@ -69,7 +69,7 @@ the Slow Sessions. We probably won't play all of the tunes and may well play
 some tunes that aren't on the list, but we wanted to provide suggestions so we
 have some tunes in common.
 
-<table style="width:100%" id="wf" class="tablesorter">
+<table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
     <th style="width:20%;">Tune Name&#x25B2;&#x25BC;</th>
@@ -116,7 +116,7 @@ $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
-    $("#wf").tablesorter({
+    $("#tunes").tablesorter({
         headers: {
             4: {
                 sorter: false

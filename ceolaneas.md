@@ -28,7 +28,7 @@ the Slow Sessions. We probably won't play all of the tunes, and we might not pla
 them in these sets and may well play some tunes that aren't on the list, but we
 wanted to provide suggestions so we have some tunes in common.
 
-<table style="width:100%" id="ca-set" class="tablesorter">
+<table style="width:100%" id="sets" class="tablesorter">
 <thead>
     <tr>
     <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
@@ -49,7 +49,7 @@ wanted to provide suggestions so we have some tunes in common.
 </tbody>
 </table>
 <br />
-<table style="width:100%" id="ca" class="tablesorter">
+<table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
     <th style="width:20%;">Tune Name&#x25B2;&#x25BC;</th>
@@ -109,7 +109,7 @@ $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
-    $("#focustunes").tablesorter({
+    $("#sets").tablesorter({
         headers: {
             4: {
                 sorter: false
@@ -118,7 +118,7 @@ $(document).ready(function() {
     });
 
     /* turn off sorting on last two columns */
-    $("#focussets").tablesorter({
+    $("#tunes").tablesorter({
         headers: {
             2: {
                 sorter: false
