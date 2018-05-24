@@ -12,6 +12,7 @@ mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_url: https://www.facebook.com/video/video.php?v=1189223307840669
 source: Wellington
+abc_source: The Session
 abc_url: https://thesession.org/tunes/3440
 abc: |
     X: 1

@@ -10,6 +10,7 @@ mp3_file: /mp3/sonnys-mazurka.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: 
+abc_source: The Session
 abc_url: https://thesession.org/tunes/5476
 source: Wellington
 abc: |

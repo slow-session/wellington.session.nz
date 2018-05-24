@@ -10,7 +10,8 @@ mp3_file: /mp3/con-cassidys.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Ballyscully
 mp3_url: http://www.burginguitars.co.nz/recordings/ballyscully-live/
-abc_url: https://thesession.org
+abc_source: The Session
+abc_url: https://thesession.org/tunes/1570
 source: Wellington
 abc: |
     X: 2
@@ -24,5 +25,5 @@ abc: |
     B^AB cBc | dBg d2 g |fed cAF|1 ~G3 G2A:|2 ~G3 G2d||
     |:gGG fGG | efg d2 c | BA^G Aag | fe^d efg |
     a2 f gfe | fed ff/g/a | gfe def |1 gGG G2d:|2 gGG G2A||
-    
+
 ---

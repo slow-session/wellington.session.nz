@@ -11,6 +11,7 @@ mp3_file: /mp3/drunken-gauger.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
+abc_source: The Session
 abc_url: https://thesession.org/tunes/2180
 source: Wellington
 abc: |
