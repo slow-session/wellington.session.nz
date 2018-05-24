@@ -6,14 +6,14 @@ rhythm: barndance
 mode:
 date: 2016-4-06
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/lucy-farr-s.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/lucy_farrs_barndance/ 
+mp3_url: https://comhaltas.ie/music/detail/lucy_farrs_barndance/
 source: Wellington
 abc_source: The Session
-abc_url: https://thesession.org/tunes/NNN
+abc_url: https://thesession.org/tunes/1307
 abc: |
     X: 1
     T: The Seven Step
