@@ -10,6 +10,7 @@ mp3_file: /mp3/joe-cooley-s.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_source: Charlie Montgomery
 mp3_url: https://www.youtube.com/watch?v=lmIkDkn2F1o
+abc_source: The Session
 abc_url: https://thesession.org/tunes/1
 source: Wellington
 abc: |

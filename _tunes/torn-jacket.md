@@ -12,6 +12,7 @@ mp3_licence: "© Connie O'Connell. All Rights Reserved."
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>
 mp3_url: http://epu.ucc.ie/connieoconnell/wp-content/uploads/2014/05/45-Torn-Jacket.mp3
 source: Wellington
+abc_source: The Session
 abc_url: https://thesession.org/tunes/
 abc: |
     X: 1

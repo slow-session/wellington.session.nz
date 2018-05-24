@@ -10,6 +10,7 @@ mp3_file: /mp3/paddys-trip-to-scotland.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_462_10a_selection_of_reels
+abc_source: The Session
 abc_url: https://thesession.org/tunes/1303
 source: Wellington
 abc: |

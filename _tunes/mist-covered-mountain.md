@@ -11,6 +11,7 @@ mp3_file: /mp3/mist-covered-mountain.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/lurgadan_jig_mist_covered_mountain_eddie_moloneys_jig/
+abc_source: The Session
 abc_url: https://thesession.org/tunes/256
 source: Wellington
 abc: |
