@@ -28,6 +28,7 @@ Our Tune of the Week is:
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tuneoftheweek" class="tablesorter">
 <thead>
     <tr>
@@ -50,6 +51,7 @@ var textAreas = document.getElementById("abc-textareas");
   {% endfor %}
 </tbody>
 </table>
+</div>
 <br />
 
 
