@@ -20,6 +20,7 @@ We pick one tune each week for homework, and we'll play it sometime during the f
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tuneoftheweek" class="tablesorter">
 <thead>
     <tr>
@@ -42,10 +43,12 @@ var textAreas = document.getElementById("abc-textareas");
   {% endfor %}
 </tbody>
 </table>
+</div>
 
 Slow Session Tunes
 ------------------
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="focustunes" class="tablesorter">
 <thead>
     <tr>
@@ -67,10 +70,11 @@ Slow Session Tunes
   {% endfor %}
 </tbody>
 </table>
+</div>
 
 Slow Session Sets
 ------------------
-
+<div style="overflow-x:auto;">
 <table style="width:100%" id="focussets" class="tablesorter">
 <thead>
     <tr>
@@ -92,7 +96,7 @@ Slow Session Sets
 {% endfor %}
 </tbody>
 </table>
-
+</div>
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
