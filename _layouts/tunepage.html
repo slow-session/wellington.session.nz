@@ -9,7 +9,9 @@ layout: page
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
+<div style="overflow-x:auto;">
 <div id="showPlayer"></div>
+</div>
 
 {% else %}
 <!-- build the abc player for each tune-->
@@ -49,7 +51,9 @@ tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
 {% if page.abc contains "K:" %}
 <!--<h2>Play the ABC version</h2>-->
 <div id="textAreas"></div>
+<div style="overflow-x:auto;">
 <div id="ABCplayer"></div>
+</div>
 
 <form>
     <input type="button" class="filterButton" value="Show ABC Source" onclick="toggle(this);">
