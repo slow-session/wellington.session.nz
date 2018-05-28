@@ -24,7 +24,7 @@
       document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
       document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
 
-      document.getElementById(tuneID).style.backgroundColor = 'Khaki';
+      document.getElementById(tuneID).style.backgroundColor = 'khaki';
       tuneIDs.push(tuneID);
 
       document.getElementById('paperHeader').style.display = "none";
@@ -41,7 +41,7 @@
       document.getElementById("filename").innerHTML = '';
 
       document.getElementById('paper0').style.display = "none";
-      
+
       var tLen = tuneIDs.length;
       for (i = 0; i < tLen; i++) {
           document.getElementById(tuneIDs[i]).style.backgroundColor = '';
@@ -56,16 +56,17 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
-        <thead> \
-        <tr> \
+         var appendString = '<div style="overflow-x:auto;"> \
+         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         <thead> \
+         <tr> \
            <th style="width:50%;">Tune Name &#x25B2;&#x25BC;</th> \
            <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
            <th style="width:40%;">ABC</th> \
-        </tr> \
-        </thead> \
-        <tbody>';
+         </tr> \
+         </thead> \
+         <tbody>';
 
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
@@ -82,7 +83,7 @@
                  tunesCounter++;
              }
          }
-         appendString += '</tbody></table>';
+         appendString += '</tbody></table></div>';
          tunesTable.innerHTML = appendString;
          tunesCount.innerHTML = 'Displaying ' + tunesCounter + ' tunes';
      }
@@ -92,12 +93,12 @@
          var tuneID = 'ABC' + item.tuneID;
 
          // build the first three columns
-         tableRow += '<tr id="' + item.tuneID + '">';
+         tableRow += '<tr id="tr' + item.tuneID + '">';
          tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
          tableRow += '<td>' + item.key + '</td>';
          tableRow += '<td>' + item.rhythm + '</td>';
-         tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'' + item.tuneID + '\')" value="Select"></td></tr>';
+         tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\')" value="Select"></td></tr>';
          return tableRow;
      }
 

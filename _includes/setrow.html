@@ -1,4 +1,5 @@
 <!--build the first two columns-->
+<tr>
 <td class="setTitle"><a href="{{ set.url }}">{{ set.title }}</a></td>
 <td>{{ set.rhythm }}</td>
 
@@ -23,7 +24,7 @@
 {% assign setTuneID = setTuneID | plus: 1 %}
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
-<tr style="background-color:transparent;">
+<tr style="background-color:transparent;" id="tr{{setTuneID}}">
 {% if tune.mp3_file contains "mp3" %}
 <td id="showPlayer{{ setTuneID }}">
 <script>
@@ -42,3 +43,4 @@ showPlayer{{ setTuneID }}.innerHTML = createABCplayer('{{ setTuneID }}', 'abcpla
 {% endfor %}
 </table>
 </td>
+</tr>

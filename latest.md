@@ -25,9 +25,7 @@ These are the last 15 tunes we've added to the archive.
     {% for tune in sortedtunes %}
     {% assign tune_count = tune_count | plus: 1 %}
         {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
         {% if tune_count > 14 %}
         {% break %}
         {% endif %}

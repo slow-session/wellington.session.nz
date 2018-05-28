@@ -37,9 +37,7 @@ var textAreas = document.getElementById("abc-textareas");
   {% assign tuneid = 100 %}
   {% for tune in sortedtunes %}
       {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
   {% endfor %}
 </tbody>
 </table>
@@ -58,15 +56,14 @@ Slow Session Tunes
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
+
 <tbody>
 {% assign tunes = site.tunes | where: 'tags', 'focustune' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}
       {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
   {% endfor %}
 </tbody>
 </table>
@@ -84,19 +81,18 @@ Slow Session Sets
     <th style="width:45%;">Audio Player</th>
     </tr>
 </thead>
-<tbody>
 
+<tbody>
 {% assign sets = site.sets | where: 'tags', 'focusset' %}
 {% assign setid = 200 %}
 {% for set in sets %}
 {% assign setid = setid | plus: 1 %}
-<tr>
 {% include setrow.html setId=setid %}
-</tr>
 {% endfor %}
 </tbody>
 </table>
 </div>
+
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
