@@ -5,7 +5,7 @@ key: D
 rhythm: slide
 mode:
 date: 2016-10-27
-location: Dunedin, Wellington
+location: Dunedin Wellington
 tags:
 mp3_file: /mp3/cuil-aodha-slide.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
