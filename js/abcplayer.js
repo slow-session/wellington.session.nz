@@ -4,7 +4,7 @@
  * Version: 1.0
  * Date: 7 Dec 2016
  *
- * Developed as part of websites for http://session.nz and http://wellington.session.nz
+ * Developed as part of websites for https://wellington.session.nz
  * by Ted Cizadlo and Andy Linton
  * Code available at:
  * https://github.com/slow-session/session.nz/blob/master/js/audioID_controls.js
