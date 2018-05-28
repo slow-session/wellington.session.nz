@@ -112,9 +112,12 @@ function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration
         pButton.className = "";
         pButton.className = "stopButton";
         ABCdurationP.innerHTML = ABCduration.toFixed(1);
-        PreviousTrID = trID;
         if (document.getElementById(PreviousTrID)) {
-            document.getElementById(PreviousTrID).style.backgroundColor = 'khaki';
+            document.getElementById(PreviousTrID).style.backgroundColor = '';
+        }
+        PreviousTrID = trID;
+        if (document.getElementById(trID)) {
+            document.getElementById(trID).style.backgroundColor = 'khaki';
         }
     } else {
         stopABC(tune);
@@ -122,6 +125,7 @@ function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration
         ABCdurationP.innerHTML = "";
         pButton.className = "";
         pButton.className = "playButton";
+
         if (document.getElementById(trID)) {
             document.getElementById(trID).style.backgroundColor = '';
         }
