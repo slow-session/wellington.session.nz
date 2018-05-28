@@ -104,7 +104,7 @@ Use the "Reset Tunes" button to start a new set.
 <div id="search_controls">
 <fieldset>
     <legend>Filter from Tunes Archive:</legend>
-	Note: Filtering will reset the page - you may remove already selected tunes.
+	Note: Filtering will reset the page - you will remove already selected tunes.
     <form id="wellington" method="get">
         <br />
         <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
