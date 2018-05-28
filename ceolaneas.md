@@ -64,9 +64,7 @@ wanted to provide suggestions so we have some tunes in common.
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}
       {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
   {% endfor %}
 </tbody>
 </table>

@@ -46,17 +46,13 @@ and if everybody knows these we'll tackle some others!
 {% assign tuneid = 100 %}
 {% for tune in sortedtunes %}
     {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
 {% endfor %}
 {% assign tunes = site.tunes | where: 'tags', 'wf-learn' | where: 'rhythm', 'jig' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
 {% for tune in sortedtunes %}
     {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
 {% endfor %}
 </tbody>
 </table>
@@ -84,9 +80,7 @@ have some tunes in common.
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}
       {% assign tuneid = tuneid | plus: 1 %}
-<tr>
 {% include tablerow.html tuneId=tuneid %}
-</tr>
   {% endfor %}
 </tbody>
 </table>

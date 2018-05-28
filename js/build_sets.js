@@ -20,16 +20,17 @@
          var setsCounter = 0;
 
          // create table headers
-         var appendString = '<table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
-        <thead> \
-        <tr> \
+         var appendString = '<div style="overflow-x:auto;"> \
+         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         <thead> \
+         <tr> \
            <th style="width:20%;">Set Name &#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
            <th style="width:29%;">Titles</th> \
            <th style="width:45%;">Audio Player</th> \
-        </tr> \
-        </thead> \
-        <tbody>';
+         </tr> \
+         </thead> \
+         <tbody>';
 
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
@@ -44,7 +45,7 @@
                  setsCounter++;
              }
          }
-         appendString += '</tbody></table>';
+         appendString += '</tbody></table></div>';
          setsTable.innerHTML = appendString;
          setsCount.innerHTML = 'Displaying ' + setsCounter + ' sets';
      }
@@ -70,10 +71,10 @@
              // Can't use this on old javascript engines
              // if (tuneSources[i].includes('mp3')) {
              if (tuneSources[i].indexOf('mp3') !== -1) {
-                 tableRow += '<tr style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
+                 tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
              } else {
                  var textAreas = document.getElementById("abc-textareas");
-                 tableRow += '<tr style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';
+                 tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';
                  textAreas.innerHTML += '<textarea id="ABC' + setTuneID + '" style="display:none;">' + preProcessABC(decodeURI(tuneSources[i])) + '</textarea>';
              }
          }

@@ -26,35 +26,44 @@ var ABCduration = 0;
 var IntervalHandle;
 var ABCLocation;
 var ABCdurationP;
+var PreviousTrID = null;
 
 // Select a timbre that sounds like an electric piano.
 var instrument;
 
-function createABCplayer(tuneID, playerClass, timbre) {
+function createABCplayer (tuneID, playerClass, timbre) {
     /*
      * Generate the HTML needed to play ABC tunes
      */
     instrument = makeInstrument(timbre);
+    var trID = 'tr' + tuneID;
 
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
     abcPlayer += '  <div class="' + playerClass + '">';
+    abcPlayer += '    <div class="row" id="' + tuneID + '" style="width: 100%;min-width: 350px;">';
+    // Col 1
+    abcPlayer += '      <div class="small-1 columns">';
     abcPlayer += '      <button id="pButton' + tuneID + '" class="playButton"';
-    abcPlayer += '          onclick="playABC(ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value, APos' + tuneID + ' , Dur' + tuneID + ')">';
+    abcPlayer += '          onclick="playABC(\'' + trID + '\', ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value, APos' + tuneID + ' , Dur' + tuneID + ')">';
     abcPlayer += '          <div id="APos' + tuneID + '" class="audioPos"></div>';
     abcPlayer += '          <div id="Dur' + tuneID + '" class="durationP"></div>';
     abcPlayer += '      </button>';
-    abcPlayer += '      <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="audioControl" min="0" max="500" value="0"';
+    abcPlayer += '      </div>';
+    // Col 2
+    abcPlayer += '      <div class="small-6 columns">';
+    abcPlayer += '      <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="audioControl slider" min="0" max="500" value="0"';
     abcPlayer += '          oninput="setABCPosition(value/100)" />';
+    abcPlayer += '      <p class="audio">Playing the <i>dots</i>!</p>';
+    abcPlayer += '      </div>';
+    // Col 3
+    abcPlayer += '      <div class="small-5 columns">';
     abcPlayer += '      <div class="speedControl">';
-    abcPlayer += '          <input name="flevel" id="RS' + tuneID + '" type="range" min="50" max="120" value="100"';
-    abcPlayer += '              onchange="changeABCspeed(ABC' + tuneID + ', pButton' + tuneID + ', value)">';
-    abcPlayer += '          <output name="level">100</output>%';
+    abcPlayer += '      <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
+    abcPlayer += '          onchange="changeABCspeed(ABC' + tuneID + ', pButton' + tuneID + ', value)">';
+    abcPlayer += '      <p class="audio"><output name="level">100</output>%</p>';
     abcPlayer += '      </div>';
-    abcPlayer += '      <div class="loopControl">';
-    abcPlayer += '          <p><small>Playing the <i>dots</i>!</small></p>';
-    abcPlayer += '      </div>';
-    abcPlayer += '      <p class="clear"> </p>';
+    abcPlayer += '    </div>';
     abcPlayer += '  </div>';
     abcPlayer += '</form>';
 
@@ -71,7 +80,7 @@ function makeInstrument(timbre) {
     return (tempInstrument);
 }
 
-function playABC(tune, pButton, playPosition, bpm, audioposition, duration) {
+function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration) {
     /*
      * Play an ABC tune when the button gets pushed
      */
@@ -103,12 +112,19 @@ function playABC(tune, pButton, playPosition, bpm, audioposition, duration) {
         pButton.className = "";
         pButton.className = "stopButton";
         ABCdurationP.innerHTML = ABCduration.toFixed(1);
+        PreviousTrID = trID;
+        if (document.getElementById(PreviousTrID)) {
+            document.getElementById(PreviousTrID).style.backgroundColor = 'khaki';
+        }
     } else {
         stopABC(tune);
         audioposition.innerHTML = "";
         ABCdurationP.innerHTML = "";
         pButton.className = "";
         pButton.className = "playButton";
+        if (document.getElementById(trID)) {
+            document.getElementById(trID).style.backgroundColor = '';
+        }
     }
 }
 
