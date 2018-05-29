@@ -81,12 +81,14 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
         </select>
         &emsp;
         <select id="location-box" name="location" onChange="enable_button()">
-            <option value="">All Locations</option>
             {% for location in locations %}
-            {% if location != '' %}
-            <option value="{{ location }}">{{ location | capitalize }}</option>
+            {% if location contains 'ellington' %}
+            <option value="{{ location | downcase }}" selected>{{ location | capitalize }}</option>
+            {% else %}
+            <option value="{{ location | downcase }}">{{ location | capitalize }}</option>
             {% endif %}
             {% endfor %}
+            <option value="alltunes">All Locations</option>
         </select>
         </span>    
         &emsp;
