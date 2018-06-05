@@ -4,8 +4,8 @@ titleID: rakes-of-kildare.md
 key: Ador
 rhythm: jig
 date: 2017-02-14
-location: Wellington
-tags: slowsession 
+location: Wellington Christchurch
+tags: slowsession
 mp3_file: /mp3/rakes-of-kildare.mp3
 mp3_source: Adrian Barker and Ben Stephenson
 mp3_licence: "© Adrian Barker and Ben Stephenson. All Rights Reserved."

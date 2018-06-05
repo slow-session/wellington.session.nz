@@ -3,9 +3,8 @@ title: Tobin's Favourite
 titleID: tobins-favourite.md
 key: D
 rhythm: jig
-mode:
 date: 2016-01-01
-location: Arrowtown Wellington
+location: Arrowtown Wellington Christchurch
 tags: slowsession
 mp3_file: /mp3/tobins-favourite.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

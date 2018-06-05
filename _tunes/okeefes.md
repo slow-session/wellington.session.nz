@@ -4,7 +4,7 @@ titleID: okeefes.md
 key: Ador
 rhythm: slide
 date: 2016-12-09
-location: Wellington
+location: Wellington Christchurch
 tags:
 mp3_file: /mp3/okeefes.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

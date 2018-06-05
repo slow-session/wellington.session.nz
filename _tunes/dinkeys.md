@@ -4,8 +4,8 @@ titleID: dinkeys.md
 key: Amix
 rhythm: reel
 date: 2017-10-02
-location: Wellington
-tags: slowsession 
+location: Wellington Christchurch
+tags: slowsession
 mp3_file: /mp3/dinkeys.mp3
 mp3_source:  <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

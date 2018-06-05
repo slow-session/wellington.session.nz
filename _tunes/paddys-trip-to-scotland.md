@@ -4,7 +4,7 @@ titleID: paddys-trip-to-scotland.md
 key: D
 rhythm: reel
 date: 2016-06-02
-location: Wellington
+location: Wellington Christchurch
 tags: slowsession ca
 mp3_file: /mp3/paddys-trip-to-scotland.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

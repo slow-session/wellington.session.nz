@@ -4,12 +4,12 @@ titleID: saddle-the-pony.md
 key: G
 rhythm: jig
 date: 2017-05-15
-location: Wellington 
-tags: 
+location: Wellington Christchurch
+tags:
 mp3_file: /mp3/saddle-the-pony.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/307
@@ -24,5 +24,5 @@ abc: |
     GBA G2 B | def gfg | ege dBA | BAF G2 :|
     efe edB | def gfg | ege edB | dBA ABd |
     efe edB | def gfg | e/f/ge dBA | BAF G2 :|
-    
+
 ---

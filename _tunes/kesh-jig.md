@@ -4,8 +4,8 @@ titleID: kesh-jig.md
 key: G
 rhythm: jig
 date: 2017-05-25
-location: Wellington 
-tags: 
+location: Wellington  Christchurch
+tags:
 mp3_file: /mp3/kesh-jig.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

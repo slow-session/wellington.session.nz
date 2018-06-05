@@ -4,7 +4,7 @@ titleID: johnny-macklejohns.md
 key: D
 rhythm: reel
 date: 2016-12-16
-location: Arrowtown Wellington
+location: Arrowtown Wellington Christchurch
 tags: slowsession
 mp3_file: /mp3/johnny-macklejohns.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
