@@ -4,8 +4,8 @@ titleID: tripping-up-the-stairs.md
 key: D
 rhythm: reel
 date: 2016-12-08
-location: Wellington
-tags: 
+location: Wellington Christchurch
+tags:
 mp3_file: /mp3/tripping-up-the-stairs.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -24,5 +24,5 @@ abc: |
     FAA GBB|FAd fed|c2c ABc|dfe d2A:|
     dBB fBB|dBB fed|cAA eAA|efe edc|
     dBB fBB|fgf fed|cBc ABc|dfe d3:|
-    
+
 ---

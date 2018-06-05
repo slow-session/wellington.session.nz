@@ -4,7 +4,7 @@ titleID: my-darling-asleep.md
 key: D
 rhythm: jig
 date: 2016-09-28
-location: Arrowtown Wellington
+location: Arrowtown Wellington Christchurch
 tags: slowsession beginner wf
 mp3_file: /mp3/my-darling-asleep.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

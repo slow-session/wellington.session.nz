@@ -4,7 +4,7 @@ titleID: lilting-banshee.md
 key: Ador
 rhythm: jig
 date: 2017-05-15
-location: Arrowtown Wellington
+location: Arrowtown Wellington Christchurch
 tags: slowsession
 mp3_file: /mp3/lilting-banshee.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann

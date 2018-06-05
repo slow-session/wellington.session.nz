@@ -3,9 +3,8 @@ title: Boys of BlueHill
 titleID: boys-of-blue-hill.md
 key: D
 rhythm: hornpipe
-mode:
 date: 2016-01-01
-location: Arrowtown Wellington
+location: Arrowtown Wellington Christchurch
 tags: wf
 mp3_file: /mp3/boys-of-blue-hill.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

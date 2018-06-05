@@ -4,7 +4,7 @@ titleID: connaughtmans-rambles.md
 key: C
 rhythm: jig
 date: 2017-02-14
-location: Wellington
+location: Wellington Christchurch
 tags: slowsession
 mp3_file: /mp3/connaughtmans-rambles.mp3
 mp3_source: Adrian Barker and Ben Stephenson
