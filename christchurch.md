@@ -10,10 +10,17 @@ permalink: /christchurch/
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
-Blah Blah at time and date....
+Sessions are currently...
 
-* TOC
-{:toc}
+ - every second Wednesday in A Rolling Stone  - 579 Colombo St, Christchurch at 8pm
+ - every second Monday in Vesuvios - 4 Papanui Rd, Merivale, Christchurch at 7pm
+ - every Friday in Finnegans Irish Pub - Springs Rd 7604 Prebbleton (about 20K outside Christchurch) at 8pm
+
+Call Lorcan on 021-021565173 for more details.
+
+You'll find more information on our <a href="https://www.facebook.com/groups/2002032703369140/">Facebook page</a>
+
+You can find some of the tunes we're playing below. We hope to add more as time goes on.
 
 Slow Session Tunes
 ---------
@@ -58,11 +65,6 @@ Slow Session Tunes
   {% endfor %}
 </tbody>
 </table>
-
-Background
-----------
-
-More blah...
 
 Other tunes
 -----------
