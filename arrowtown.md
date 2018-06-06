@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Arrowtown sessions
+title: The Arrowtown Session
 permalink: /arrowtown/
 ---
 <div id="audioPlayer"></div>
@@ -13,7 +13,7 @@ var textAreas = document.getElementById("abc-textareas");
 Sessions are currently...
 
  - every Wednesday in The Fork and Tap, Arrowtown from 6:30. All trad players welcome.
- 
+
 You'll find more information on our <a href="https://www.facebook.com/The-Arrowtown-Session-722234104591565/">Facebook page</a>
 
 You can find some of the tunes we're playing below. We hope to add more as time goes on.
