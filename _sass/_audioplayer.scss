@@ -193,20 +193,26 @@ tr#no_hover:hover {
     opacity: 1;
 }
 
+// slider controls for Safari browsers
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
+    // adjust width of control button
     width: 15px;
-    height: 15px;
+    // adjust height of control button
+    height: 20px;
     border-radius: 50%;
-    background: darken($brand-color, 10%);
+    background: darken($brand-color, 20%);
     cursor: pointer;
 }
 
+// slider controls for Chrome browsers
 .slider::-moz-range-thumb {
+    // adjust width of control button
     width: 15px;
-    height: 15px;
+    // adjust height of control button
+    height: 20px;
     border-radius: 50%;
-    background: darken($brand-color, 10%);
+    background: darken($brand-color, 20%);
     cursor: pointer;
 }
