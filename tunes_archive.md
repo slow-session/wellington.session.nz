@@ -85,7 +85,9 @@ of the evening and you can find these by choosing the "All Tunes" option,  picki
             {% if location contains 'ellington' %}
             <option value="{{ location | downcase }}" selected>{{ location | capitalize }}</option>
             {% else %}
+            {% if location != '' %}
             <option value="{{ location | downcase }}">{{ location | capitalize }}</option>
+            {% endif %}
             {% endif %}
             {% endfor %}
             <option value="alltunes">All Locations</option>
