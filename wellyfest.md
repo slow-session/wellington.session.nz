@@ -30,6 +30,7 @@ playing parts of the tune over and over as you play along. With that in mind
 we'll spend some time at the start on some or all of these tunes
 and if everybody knows these we'll tackle some others!
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tunestolearn" class="tablesorter">
 <thead>
     <tr>
@@ -56,6 +57,7 @@ and if everybody knows these we'll tackle some others!
 {% endfor %}
 </tbody>
 </table>
+</div>
 
 Slow Session Tunes
 ---------
@@ -65,6 +67,7 @@ the Slow Sessions. We probably won't play all of the tunes and may well play
 some tunes that aren't on the list, but we wanted to provide suggestions so we
 have some tunes in common.
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
@@ -84,7 +87,7 @@ have some tunes in common.
   {% endfor %}
 </tbody>
 </table>
-
+</div>
 
 Background
 ----------
