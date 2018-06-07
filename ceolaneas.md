@@ -28,6 +28,7 @@ the Slow Sessions. We probably won't play all of the tunes, and we might not pla
 them in these sets and may well play some tunes that aren't on the list, but we
 wanted to provide suggestions so we have some tunes in common.
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="sets" class="tablesorter">
 <thead>
     <tr>
@@ -48,7 +49,9 @@ wanted to provide suggestions so we have some tunes in common.
 {% endfor %}
 </tbody>
 </table>
+</div>
 <br />
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
@@ -68,6 +71,7 @@ wanted to provide suggestions so we have some tunes in common.
   {% endfor %}
 </tbody>
 </table>
+</div>
 
 Background
 ----------

@@ -25,6 +25,7 @@ You can find some of the tunes we're playing below. We hope to add more as time 
 Slow Session Tunes
 ---------
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="sets" class="tablesorter">
 <thead>
     <tr>
@@ -44,7 +45,9 @@ Slow Session Tunes
 {% endfor %}
 </tbody>
 </table>
+</div>
 <br />
+<div style="overflow-x:auto;">
 <table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
@@ -65,6 +68,7 @@ Slow Session Tunes
   {% endfor %}
 </tbody>
 </table>
+</div>
 
 Other tunes
 -----------
