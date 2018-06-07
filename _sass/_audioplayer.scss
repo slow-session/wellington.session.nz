@@ -193,7 +193,8 @@ tr#no_hover:hover {
     opacity: 1;
 }
 
-// slider controls for Safari browsers
+// The slider handle (use -webkit- (Chrome, Opera, Safari, Edge)
+// and -moz- (Firefox) to override default look)
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -206,7 +207,6 @@ tr#no_hover:hover {
     cursor: pointer;
 }
 
-// slider controls for Chrome browsers
 .slider::-moz-range-thumb {
     // adjust width of control button
     width: 15px;
