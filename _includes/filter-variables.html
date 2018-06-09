@@ -1,0 +1,31 @@
+
+{% assign tune_rhythms = '' %}
+{% assign tune_tags = '' %}
+{% assign tune_locations = '' %}
+
+{% for tune in site.tunes %}
+    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+    {% for tag in tune.tags %}
+        {% assign tune_tags = tune_tags | append: tag | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
+        {% unless forloop.last %}{% assign tune_tags = tune_tags | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% for location in tune.location %}
+        {% assign tune_locations = tune_locations | append: location | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
+        {% unless forloop.last %}{% assign tune_locations = tune_locations | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% unless forloop.last %}
+        {% assign tune_rhythms = tune_rhythms | append: ':' %}
+        {% assign tune_tags = tune_tags | append: ':' %}
+        {% assign tune_locations = tune_locations | append: ':' %}
+    {% endunless %}
+{% endfor %}
+
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+
+{% assign tune_tags = tune_tags | replace: '::', ':' %}
+{% assign tags = tune_tags | split: ':' | uniq | sort %}
+
+{% assign tune_locations = tune_locations | replace: '::', ':' %}
+{% assign tune_locations = tune_locations | replace: ' ', ':' %}
+{% assign locations = tune_locations | split: ':' | uniq | sort %}
