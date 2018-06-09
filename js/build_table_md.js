@@ -69,6 +69,13 @@
   				}
   				obj[item.name] = item.value;
   				break;
+            case 'location':
+  				if (item.value == '') {
+  					alert("'Location' is required");
+  		        	return false;
+      			}
+      			obj[item.name] = item.value;
+      			break;
   			case 'author':
   				if (item.value == '') {
   					alert("'Author' is required");
@@ -76,12 +83,9 @@
   				}
   				obj[item.name] = item.value;
   				break;
-              case 'date':
-                  obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
-                  break;
-  			case 'location':
-  				obj[item.name] = 'Wellington';
-  				break;
+            case 'date':
+                obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
+                break;
   			case 'tunes':
   				obj[item.name] = document.getElementById('setTunes').value.concat(']').replace(', ]', ']');
   				break;
