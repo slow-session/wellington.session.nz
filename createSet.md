@@ -3,9 +3,16 @@ layout: page
 title: Create Set MD File
 permalink: /createSetMD/
 ---
-Fill in the details for the set title, rhythm and your name. Then find the tunes you want, and then use the "Select" button on each to choose them
-in the order you want to play them in the set.
+Fill in the details for the set title, rhythm, location and your name. Then find the tunes you want, and then use the "Select" button on each to choose them in the order you want to play them in the set.
 
+<!-- Some boilerplate that's common to a number of pages -->
+{% include filter-variables.html %}
+
+<!-- Places to store hidden data we need on the page -->
+<textarea id="filename" style="display:none;"></textarea>
+<textarea id="setTunes" style="display:none;">[</textarea>
+
+<!-- Create the input boxes for the set details -->
 <div class="row">
 <div class="small-4 columns">
 <fieldset style="display: inline-block; vertical-align: middle;">
@@ -16,10 +23,28 @@ in the order you want to play them in the set.
       <input type="text" id="title-box" name="title" value=""><br />
 
 	  <label>Rhythm:<sup>*</sup></label><br />
-	  <input type="text" id="rhythm-box" name="rhythm" value=""><br />
+      <select id="rhythm-box" name="rhythm">
+          <option value="">All Rhythms</option>
+          {% for rhythm in rhythms %}
+          {% if rhythm != '' %}
+          <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
+          {% endif %}
+          {% endfor %}
+      </select>
+      <br />
+
+      <label>Location:<sup>*</sup></label><br />
+      <select id="location-box" name="location" onChange="enable_button()">
+          <option value="">All Locations</option>
+          {% for location in locations %}
+          {% if location != '' %}
+          <option value="{{ location }}">{{ location | capitalize }}</option>
+          {% endif %}
+          {% endfor %}
+      </select>
+      <br />
 
 	  <input type="hidden" id="date-box" name="date" value="">
-	  <input type="hidden" id="location-box" name="location" value="">
 	  <input type="hidden" id="tags-box" name="tags" value="">
 	  <input type="hidden" id="tunes-box" name="tunes" value="">
 
@@ -38,16 +63,6 @@ in the order you want to play them in the set.
 </form>
 </div>
 </fieldset>
-
-<br />
-<br />
-Use the "Reset Tunes" button to start a new set.
-<form>
-<p>
-<input value='Reset Tunes' type='button' class="loopButton" onclick='Reset()' />
-</p>
-</form>
-
 </div>
 <div class="small-4 columns">
 <fieldset style="display: inline-block; vertical-align: middle;">
@@ -67,40 +82,16 @@ Use the "Reset Tunes" button to start a new set.
 </div>
 </div>
 
-<textarea id="filename" style="display:none;"></textarea>
-<textarea id="setTunes" style="display:none;">[</textarea>
+<!-- Reset button -->
+<br />
+Use the "Reset Tunes" button to start a new set.
+<form>
+<p>
+<input value='Reset Tunes' type='button' class="loopButton" onclick='Reset()' />
+</p>
+</form>
 
-{% assign tune_rhythms = '' %}
-{% assign tune_tags = '' %}
-{% assign tune_locations = '' %}
-
-{% for tune in site.tunes %}
-    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
-    {% for tag in tune.tags %}
-        {% assign tune_tags = tune_tags | append: tag | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
-        {% unless forloop.last %}{% assign tune_tags = tune_tags | append: ':' %}{% endunless %}
-    {% endfor %}
-    {% for location in tune.location %}
-        {% assign tune_locations = tune_locations | append: location | replace: '"', '' | replace: '[', '' | replace: ']', '' | strip %}
-        {% unless forloop.last %}{% assign tune_locations = tune_locations | append: ':' %}{% endunless %}
-    {% endfor %}
-    {% unless forloop.last %}
-        {% assign tune_rhythms = tune_rhythms | append: ':' %}
-        {% assign tune_tags = tune_tags | append: ':' %}
-        {% assign tune_locations = tune_locations | append: ':' %}
-    {% endunless %}
-{% endfor %}
-
-{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
-{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
-
-{% assign tune_tags = tune_tags | replace: '::', ':' %}
-{% assign tags = tune_tags | split: ':' | uniq | sort %}
-
-{% assign tune_locations = tune_locations | replace: '::', ':' %}
-{% assign tune_locations = tune_locations | replace: ' ', ':' %}
-{% assign locations = tune_locations | split: ':' | uniq | sort %}
-
+<!-- Create the search area -->
 <div id="search_controls">
 <fieldset>
     <legend>Filter from Tunes Archive:</legend>
