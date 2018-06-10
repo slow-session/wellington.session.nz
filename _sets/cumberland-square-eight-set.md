@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: 
 tunes: [tobins-favourite.md, garrett-barry-s.md]
-author: James McNamara
+contributor: James McNamara
 source: Wellington
 ---

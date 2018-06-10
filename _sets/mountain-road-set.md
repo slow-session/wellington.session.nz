@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: ca-set
 tunes: [mountain-road.md, creggs-pipes.md]
-author: Andy Linton
+contributor: Andy Linton
 source: Wellington
 ---

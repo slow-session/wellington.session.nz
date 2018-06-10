@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: ca-set focusset
 tunes: [murphys-hornpipe.md, golden-castle.md, derry-hornpipe.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

@@ -5,6 +5,6 @@ date: 2017-05-15
 location: Arrowtown
 tags: ca-set
 tunes: [otters-holt.md, the-dunmore-lasses.md, johnny-macklejohns.md]
-author: Karen Reid
+contributor: Karen Reid
 source: Wellington
 ---

@@ -5,6 +5,6 @@ date: 2018-05-21
 location: Wellington
 tags: ca-set
 tunes: [plains-of-boyle.md, home-ruler.md]
-author: Ted
+contributor: Ted Cizadlo
 source: Wellington
 ---

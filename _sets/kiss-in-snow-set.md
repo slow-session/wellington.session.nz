@@ -5,6 +5,6 @@ date: 2018-03-13
 location: Wellington
 tags: focusset ca-set
 tunes: [fig-for-a-kiss.md, snowy-path.md]
-author: Andy Linton
+contributor: Andy Linton
 source: Wellington
 ---

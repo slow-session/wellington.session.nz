@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: 
 tunes: [snowy-path.md, foxhunters.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

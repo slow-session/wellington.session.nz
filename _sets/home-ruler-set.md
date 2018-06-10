@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags:  
 tunes: [home-ruler.md, kittys-wedding.md]
-author: Andy Linton
+contributor: Andy Linton
 source: Wellington
 ---

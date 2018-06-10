@@ -5,6 +5,6 @@ date: 2018-05-21
 location: Wellington
 tags: ca-set
 tunes: [sliabh-russell.md, donnybrook-fair.md]
-author: Andy Linton
+contributor: Andy Linton
 source: Wellington
 ---

@@ -5,6 +5,6 @@ date: 2017-05-15
 location: Arrowtown
 tags: ca-set
 tunes: [joe-cooley-s.md, silver-spear.md, humours-of-tulla.md]
-author: Karen Reid
+contributor: Karen Reid
 source: Wellington
 ---
