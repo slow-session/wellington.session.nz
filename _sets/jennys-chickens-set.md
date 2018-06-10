@@ -5,6 +5,6 @@ date: 2017-06-16
 location: Wellington
 tags: 
 tunes: [musical-priest.md, jennys-chickens.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

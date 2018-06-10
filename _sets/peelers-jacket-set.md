@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: 
 tunes: [peelers-jacket.md, flooded-road-to-glenties.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

@@ -5,6 +5,6 @@ date: 2017-05-15
 location:
 tags: focusset
 tunes: [banshee.md, otters-holt.md, paddys-trip-to-scotland.md]
-author: James McNamara
+contributor: James McNamara
 source: Wellington
 ---

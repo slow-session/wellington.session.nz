@@ -5,6 +5,6 @@ date: 2018-06-06
 location: Christchurch
 tags:
 tunes: [jerrys-beaver-hat.md, rakes-of-kildare.md]
-author: Jennifer Clarke
+contributor: Jennifer Clarke
 source: Wellington
 ---

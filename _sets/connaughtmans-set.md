@@ -5,6 +5,6 @@ date: 2018-02-03
 location: Wellington
 tags: 
 tunes: [connaughtmans-rambles.md, out-on-the-ocean.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

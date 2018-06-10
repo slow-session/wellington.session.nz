@@ -14,9 +14,9 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 
 <!-- Create the input boxes for the set details -->
 <div class="row">
-<div class="small-4 columns">
+<div class="small-4 columns" style="overflow-x:auto;">
 <fieldset style="display: inline-block; vertical-align: middle;">
-  <legend>Enter the set MD file details:</legend>
+  <legend>Enter set details:</legend>
   <div class="container">
   <form id="createSetMD" method="get">
       <label>Title: <sup>*</sup></label><br />
@@ -48,8 +48,8 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 	  <input type="hidden" id="tags-box" name="tags" value="">
 	  <input type="hidden" id="tunes-box" name="tunes" value="">
 
-	  <label>Author:<sup>*</sup></label><br />
-	  <input type="text" id="author-box" name="author" value=""><br />
+	  <label>Contributed by:<sup>*</sup></label><br />
+	  <input type="text" id="contributor-box" name="contributor" value=""><br />
 
 	  <input type="hidden" id="source-box" name="source" value="Wellington"><br>
 
@@ -64,11 +64,11 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 </div>
 </fieldset>
 </div>
-<div class="small-4 columns">
+<div class="small-8 columns" style="overflow-x:auto;">
 <fieldset style="display: inline-block; vertical-align: middle;">
-<legend>Check the set MD file details:</legend>
+<legend>Check set details:</legend>
 <div class="container">
-<textarea id="setMD" rows="11" cols="50" style="background-color: #ebebeb" spellcheck="false"></textarea>
+<textarea id="setMD" rows="11" cols="35" style="background-color: #ebebeb" spellcheck="false"></textarea>
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      
@@ -77,8 +77,6 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 </form>
 </div>
 </fieldset>
-</div>
-<div class="small-4 columns">
 </div>
 </div>
 

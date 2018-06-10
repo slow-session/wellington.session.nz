@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: focusset ca-set
 tunes: [morrisons.md, humours-of-ennistymon.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

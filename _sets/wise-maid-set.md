@@ -5,6 +5,6 @@ date: 2017-05-04
 location: Wellington
 tags: ca-set
 tunes: [wise-maid.md, concertina-reel.md, the-fox-in-the-town.md]
-author: Ted Cizadlo
+contributor: Ted Cizadlo
 source: Wellington
 ---

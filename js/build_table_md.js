@@ -76,9 +76,9 @@
       			}
       			obj[item.name] = item.value;
       			break;
-  			case 'author':
+  			case 'contributor':
   				if (item.value == '') {
-  					alert("'Author' is required");
+  					alert("'Contributed by' is required");
   	        		return false;
   				}
   				obj[item.name] = item.value;
