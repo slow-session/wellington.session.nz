@@ -5,7 +5,7 @@ key: D
 rhythm: jig
 mode:
 date: 2016-01-01
-location: Wellington
+location: Wellington Christchurch
 tags:
 mp3_file: /mp3/behind-the-haystack.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
