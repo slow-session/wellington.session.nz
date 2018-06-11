@@ -4,12 +4,12 @@ titleID: i-buried-my-wife-and-danced-on-top-of-her.md
 key: Dmix
 rhythm: jig
 date: 2018-06-11
-location: Christchurch 
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
+location: Christchurch
+tags:
+mp3_file: /mp3/i-buried-my-wife-and-danced-on-top-of-her.mp3
+mp3_source: Jody Moran
+mp3_licence: "© Jody Moran. All Rights Reserved."
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/383
@@ -24,6 +24,6 @@ abc: |
     DED F2G|AdB cAF|G2B cAG|AFD D3:|
     |:d2e fed|faf gfe|d2e fed|d^cA d^cA|
     d2e fed|faf gfe|d^cA BAG|AFD D3:|
-    
+
 
 ---

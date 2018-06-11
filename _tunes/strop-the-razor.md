@@ -4,12 +4,12 @@ titleID: strop-the-razor.md
 key: G
 rhythm: jig
 date: 2018-06-11
-location: Christchurch 
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
+location: Christchurch
+tags:
+mp3_file: /mp3/strop-the-razor.mp3
+mp3_source: Jody Moran
+mp3_licence: "© Jody Moran. All Rights Reserved."
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/693
@@ -25,7 +25,7 @@ abc: |
     |:dBB cAA|dBB cAF|DGG GFG|DGG G2B|
     dBB cAA|dBB cAF|D2E F2G|ADE FGA:|
     |:BAB cBc|dcd dBd | g3 gfd|gag gdc|
-    BAB cBc|dcd d2e | f3 fde|fag fdc:|
-    
+    ~B3 ~c3|~d3 d2e| ~=f3 fde| ~=fag fdc:|
 
 ---
+Also listen to this great version by <a href="https://youtu.be/8KX4Zt4F5wo">John and James Kelly</a>
