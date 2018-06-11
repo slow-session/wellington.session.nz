@@ -2,14 +2,14 @@
 title: MacLeod's Farewelll
 titleID: macleods-farewell.md
 key: D
-rhythm: 
+rhythm: reel
 date: 2018-06-11
 location: Christchurch Wellington
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
+tags:
+mp3_file:
+mp3_source:
+mp3_licence:
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/518
