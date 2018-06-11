@@ -7,9 +7,9 @@ date: 2016-01-26
 location: Arrowtown Wellington
 tags: slowsession
 mp3_file: /mp3/banish-misfortune.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/banish_misfortune/
+mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
+mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
+mp3_url: https://www.youtube.com/watch?v=N_fXDk5HLpY
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/9
