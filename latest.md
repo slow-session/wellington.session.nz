@@ -9,6 +9,7 @@ These are the last 15 tunes we've added to the archive.
 
 <div id="textAreas"></div>
 
+<div style="overflow-x:auto;">
 <table style="width:100%" id="recenttunes" class="tablesorter">
 <thead>
     <tr>
@@ -32,6 +33,7 @@ These are the last 15 tunes we've added to the archive.
 {% endfor %}
 </tbody>
 </table>
+</div>
 
 <script>
 $(document).ready(function() {
