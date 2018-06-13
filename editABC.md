@@ -5,7 +5,7 @@ permalink: /editABC/
 ---
 
 Use this sample as a template to edit or create your own ABC files.
-A brief set of instructions is found <a href="/EditInstructions.pdf" title="PDF">here.</a>
+A brief set of instructions is found <a href="/editingABC/">here.</a>
 
 If you'd like more information on the ABC format check out the
 <a href="http://abcnotation.com/wiki/abc:standard:v2.1">ABC Notation</a>
