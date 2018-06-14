@@ -18,6 +18,7 @@ You can use this to help with the timing and you can change the values as you se
       <input type="number" id="bow-time" name="bowTime" value="30"><br />
       <br />
 	  <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
+      <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
 </form>
 </fieldset>
 <br />
