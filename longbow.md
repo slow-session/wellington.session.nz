@@ -74,17 +74,20 @@ function appendDiv (repeat, bowTime) {
 }
 
 function drawTimer(repeat, bowTime) {
-  var elem = document.getElementById("bar" + repeat);
-  var width = 0;
-  var id = setInterval(frame, 1000);
-  function frame() {
-    if (width >= 99) {
-      clearInterval(id);
-    } else {
-      width += 100 / bowTime;
-      elem.style.width = width + '%';
+    var elem = document.getElementById("bar" + repeat);
+    var width = 0;
+    elem.scrollIntoView();
+
+    var id = setInterval(frame, 1000);
+
+    function frame() {
+        if (width >= 99) {
+            clearInterval(id);
+        } else {
+            width += 100 / bowTime;
+            elem.style.width = width + '%';
+        }
     }
-  }
 }
 
 function sleep(ms) {
