@@ -12,10 +12,10 @@ You can use this to help with the timing and you can change the values as you se
 <fieldset class="fieldset-auto-width">
 <form id="parameters" method="get">
       <label>Practice time in minutes:</label><br />
-      <input type="number" id="practice-time" name="practiceTime" value="5"><br />
+      <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15"><br />
       <br />
       <label>Time for each bow in seconds:</label><br />
-      <input type="number" id="bow-time" name="bowTime" value="30"><br />
+      <input type="number" id="bow-time" name="bowTime" value="30" min="10" max="40"><br />
       <br />
 	  <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
       <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
@@ -23,7 +23,6 @@ You can use this to help with the timing and you can change the values as you se
 </fieldset>
 <br />
 <div id="main"></div>
-
 
 <style>
 .myProgress {
@@ -46,31 +45,54 @@ You can use this to help with the timing and you can change the values as you se
 </style>
 
 <script>
+var running = 0;
+
 async function bowTimer(practiceTime, bowTime) {
     var repeats = Math.ceil((practiceTime * 60)/bowTime);
     var repeat;
-
-    for (repeat=1;repeat<=repeats;repeat++) {
-        appendDiv(repeat, bowTime);
-        drawTimer(repeat, bowTime);
-        await sleep(1000 * bowTime);
+    if (running == 0) {
+        running = 1;
+        // Allow time to pick up instrument
+        document.getElementById("main").innerHTML = "Get ready.";
+        for (repeat=5;repeat>0;repeat--) {
+            document.getElementById("main").innerHTML += ".." + repeat;
+            await sleep(1000);
+        }
+        // Set up the timer bars
+        for (repeat=1;repeat<=repeats;repeat++) {
+            setupDiv(repeat);
+        }
+        // Draw the timers
+        for (repeat=1;repeat<=repeats;repeat++) {
+            drawTimer(repeat, bowTime);
+            await sleep(1000 * bowTime);
+        running = 0;
+        }
+    } else {
+        alert("already running");
     }
 }
 
-function appendDiv (repeat, bowTime) {
+function setupDiv (repeat) {
+    if (elem = document.getElementById("progress" + repeat)) {
+        document.getElementById("main").removeChild(elem);
+    }
     var divProgress = document.createElement("div");
     divProgress.id = "progress" + repeat;
     divProgress.setAttribute('class', 'myProgress');
     document.getElementById("main").appendChild(divProgress);
-    var divBar = document.createElement("div");
-    divBar.id = "bar" + repeat;
-    divBar.setAttribute('class', 'myBar');
-    if (repeat % 2) {
-        divBar.innerHTML = "Down";
-    } else {
-        divBar.innerHTML = "Up";
-    }   
-    document.getElementById("progress" + repeat).appendChild(divBar);
+
+    if (!document.getElementById("bar" + repeat)) {
+        var divBar = document.createElement("div");
+        divBar.id = "bar" + repeat;
+        divBar.setAttribute('class', 'myBar');
+        if (repeat % 2) {
+            divBar.innerHTML = "Down";
+        } else {
+            divBar.innerHTML = "Up";
+        }   
+        document.getElementById("progress" + repeat).appendChild(divBar);
+    }
 }
 
 function drawTimer(repeat, bowTime) {
