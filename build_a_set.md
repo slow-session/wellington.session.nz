@@ -20,8 +20,7 @@ Use the "Reset" button to start a new set.
 <div id="paperHeader"><h2>Musical Notation appears here</h2></div>
 
 <!-- Draw the dots -->
-<div class="output">
-	<div id="paper0" class="paper"  style="max-width:800px; min-height:200px;display:none;"></div>
+<div class="output" id='output'>
 </div>
 
 <!-- Area to store ABC -->
