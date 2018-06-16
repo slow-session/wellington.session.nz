@@ -28,7 +28,13 @@
       tuneIDs.push(tuneID);
 
       document.getElementById('paperHeader').style.display = "none";
-      document.getElementById('paper0').style.display = "block";
+      if (!document.getElementById('paper0')) {
+          var divPaper = document.createElement("div");
+          divPaper.id = 'paper0';
+          divPaper.setAttribute('class', 'paper');
+          divPaper.setAttribute('max-width', '800px');
+          document.getElementById('output').appendChild(divPaper);
+      }
 
       abc_editor = new window.ABCJS.Editor("ABCraw", { paper_id: 'paper0', midi_id:"midi", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
   }
@@ -40,7 +46,9 @@
       document.getElementById('ABCprocessed').innerHTML = 'X: 1';
       document.getElementById("filename").innerHTML = '';
 
-      document.getElementById('paper0').style.display = "none";
+      if (elem = document.getElementById('paper0')) {
+          document.getElementById("output").removeChild(elem);
+      }
 
       var tLen = tuneIDs.length;
       for (i = 0; i < tLen; i++) {
