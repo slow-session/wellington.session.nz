@@ -136,7 +136,8 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
 
 function loadStart() {
     if (AudioPosition) {
-        AudioPosition.innerHTML = "...Loading";    }
+        AudioPosition.innerHTML = "Load";
+    }
 }
 
 function loadFinish() {
