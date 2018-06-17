@@ -35,7 +35,7 @@
           var divPaper = document.createElement("div");
           divPaper.id = 'paper0';
           divPaper.setAttribute('class', 'paper');
-          divPaper.setAttribute('max-width', '800px');
+          divPaper.style.maxWidth = '800px';
           document.getElementById('output').appendChild(divPaper);
       }
 
@@ -47,12 +47,12 @@
 
       document.getElementById('ABCraw').innerHTML = '';
       document.getElementById('ABCprocessed').innerHTML = 'X: 1';
-      document.getElementById("filename").innerHTML = '';
+      document.getElementById('filename').innerHTML = '';
 
       // delete the paper for the tune dots after a reset
-      // selecting new tunes will then create new paper 
+      // selecting new tunes will then create new paper
       if (elem = document.getElementById('paper0')) {
-          document.getElementById(.output').removeChild(elem);
+          document.getElementById('output').removeChild(elem);
       }
 
       var tLen = tuneIDs.length;
