@@ -28,6 +28,9 @@
       tuneIDs.push(tuneID);
 
       document.getElementById('paperHeader').style.display = "none";
+
+      // create the paper for the tune dots each time the user selects tunes
+      // This makes sure there's no extra white space after a reset
       if (!document.getElementById('paper0')) {
           var divPaper = document.createElement("div");
           divPaper.id = 'paper0';
@@ -46,8 +49,10 @@
       document.getElementById('ABCprocessed').innerHTML = 'X: 1';
       document.getElementById("filename").innerHTML = '';
 
+      // delete the paper for the tune dots after a reset
+      // selecting new tunes will then create new paper 
       if (elem = document.getElementById('paper0')) {
-          document.getElementById("output").removeChild(elem);
+          document.getElementById(.output').removeChild(elem);
       }
 
       var tLen = tuneIDs.length;
