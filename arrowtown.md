@@ -2,6 +2,11 @@
 layout: page
 title: The Arrowtown Session
 permalink: /arrowtown/
+header: yes
+header_sm: images/arrowtown.jpg
+header_med: images/arrowtown.jpg
+header_large: images/arrowtown.jpg
+header_xl: images/arrowtown.jpg
 ---
 <div id="audioPlayer"></div>
 
