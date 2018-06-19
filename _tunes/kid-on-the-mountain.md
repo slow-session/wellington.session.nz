@@ -6,7 +6,7 @@ rhythm: slip jig
 mode:
 date: 2016-06-30
 location: Arrowtown Wellington
-tags: slowsession
+tags: vicfolk slowsession
 mp3_file: /mp3/kid-on-the-mountain.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

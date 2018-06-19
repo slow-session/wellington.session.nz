@@ -1,10 +1,10 @@
 ---
-title: Rosa Waltz
-rhythm: waltz
+title: Gay Gordons
+rhythm: march
 date: 2017-05-04
 location: Wellington
-tags: vicfolk
-tunes: [midnight-on-the-water.md]
+tags: 
+tunes: [scotland-the-brave.md, mairis-wedding.md]
 contributor: James McNamara
 source: Wellington
 ---

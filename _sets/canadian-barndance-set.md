@@ -1,10 +1,10 @@
 ---
-title: Rosa Waltz
-rhythm: waltz
+title: Canadian Barndance
+rhythm: hornpipe
 date: 2017-05-04
 location: Wellington
-tags: vicfolk
-tunes: [midnight-on-the-water.md]
+tags: 
+tunes: [nyth-y-gwcw.md, rights-of-man.md]
 contributor: James McNamara
 source: Wellington
 ---

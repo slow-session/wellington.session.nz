@@ -1,10 +1,10 @@
 ---
-title: Cumberland Square Eight
-rhythm: jig
+title: Strip the Willow
+rhythm: slip jig
 date: 2017-05-04
 location: Wellington
 tags: vicfolk
-tunes: [tobins-favourite.md, garrett-barry-s.md]
+tunes: [foxhunters.md, kid-on-the-mountain.md]
 contributor: James McNamara
 source: Wellington
 ---
