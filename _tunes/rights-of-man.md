@@ -6,7 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-5-11
 location: Arrowtown Wellington
-tags: slowsession beginner wf
+tags: vicfolk slowsession beginner wf
 mp3_file: /mp3/rights-of-man.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

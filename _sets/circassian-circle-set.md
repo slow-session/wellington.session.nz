@@ -1,10 +1,10 @@
 ---
-title: Cumberland Square Eight
+title: Circassian Circle
 rhythm: jig
 date: 2017-05-04
 location: Wellington
 tags: vicfolk
-tunes: [tobins-favourite.md, garrett-barry-s.md]
+tunes: [the-mad-piper.md, the-tenpenny-bit.md]
 contributor: James McNamara
 source: Wellington
 ---

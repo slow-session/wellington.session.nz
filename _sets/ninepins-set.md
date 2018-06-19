@@ -1,10 +1,10 @@
 ---
-title: Cumberland Square Eight
+title: Ninepins
 rhythm: jig
 date: 2017-05-04
 location: Wellington
 tags: vicfolk
-tunes: [tobins-favourite.md, garrett-barry-s.md]
+tunes: [blarney-pilgrim.md]
 contributor: James McNamara
 source: Wellington
 ---

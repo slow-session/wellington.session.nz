@@ -5,7 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2016-5-4
 location: Wellington Christchurch
-tags: slowsession
+tags: vicfolk slowsession
 mp3_file: /mp3/blarney-pilgrim.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

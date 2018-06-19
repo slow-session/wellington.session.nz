@@ -5,7 +5,7 @@ key: D
 rhythm: waltz
 date: 2017-05-25
 location: Wellington 
-tags: 
+tags: vicfolk 
 mp3_file: 
 mp3_source: 
 mp3_licence: 
