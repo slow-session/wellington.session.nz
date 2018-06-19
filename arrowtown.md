@@ -23,7 +23,7 @@ You'll find more information on our <a href="https://www.facebook.com/The-Arrowt
 
 You can find some of the tunes we're playing below. We hope to add more as time goes on.
 
-Slow Session Tunes
+Session Tunes
 ---------
 
 <div style="overflow-x:auto;">
