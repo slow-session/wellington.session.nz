@@ -4,22 +4,15 @@ title: NZ Sessions
 permalink: /nz_sessions/
 ---
 
-Other Slow sessions
--------------------
-
-During events like <a href="http://www.irishmusic.org.nz/">Ceol Aneas</a> and some
-of the various NZ folk festivals you might find a slow session or two. Check the webpages below for more info:
-
-* <a href="/ceolaneas/">Ceol Aneas slow session</a>
-* <a href="/wellyfest/">Wellington Folk Festival slow session</a>
-
-Other Regular sessions
-----------------------
 You can find out more about the sessions in other NZ cities at:
 
-  * <a href="https://www.facebook.com/groups/1461764424153462/">Auckland Irish Sessions - The Claddagh</a>
-  * <a href="https://www.facebook.com/Tuesday-at-Biddys-Hamilton-134702863269582/">Hamilton</a>
-  * <a href="/">Wellington</a>
+  * Auckland Irish Sessions - The Claddagh
+    * <a href="https://www.facebook.com/groups/1461764424153462/">Facebook</a>
+  * Tuesday at Biddys, Hamilton
+    * <a href="https://www.facebook.com/Tuesday-at-Biddys-Hamilton-134702863269582/">Facebook</a>
+  * Wellington Irish Sessions
+    * <a href="https://www.facebook.com/groups/WellingtonSession">Facebook</a>
+    * <a href="/">Tunes</a>
   * Christchurch Trad Session
     * <a href="https://www.facebook.com/groups/2002032703369140/">Facebook</a>
     * <a href="/christchurch/">Tunes</a>
@@ -29,17 +22,14 @@ You can find out more about the sessions in other NZ cities at:
 
 Please let us know at <a href="mailto:{{ site.email }}">{{ site.email }}</a> about other sessions or incorrect information on this page.
 
-There's a list of sessions at this site which **may** be current:
+Other Slow sessions
+-------------------
 
-  * <a href="http://www.kiwifolk.org.nz/sessions.html">Kiwifolk</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#auckland">Auckland</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#christchurch">Christchurch</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#dunedin">Dunedin</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#hamilton">Hamilton</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#hastings">Hastings</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#nelson">Nelson</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#palmerstonnorth">Palmerston North</a>
-      * <a href="http://www.kiwifolk.org.nz/sessions.html#tauranga">Tauranga</a>
+During events like <a href="http://www.irishmusic.org.nz/">Ceol Aneas</a> and some
+of the various NZ folk festivals you might find a slow session or two. Check the webpages below for more info:
+
+* <a href="/ceolaneas/">Ceol Aneas slow session</a>
+* <a href="/wellyfest/">Wellington Folk Festival slow session</a>
 
 Archives
 --------
