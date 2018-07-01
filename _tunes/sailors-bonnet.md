@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2016-01-01
 location: Wellington
-tags: 
+tags: slowsession tuneoftheweek
 mp3_file: /mp3/sailors-bonnet.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -23,6 +23,6 @@ abc: |
     A2 FA d~f3|dfef d~B3| A2 FA dfef|1 dBAF ADDB :|2 dBAF ADD2||
     |:~a3 a afef|afef d~B3|fb (3bbb bafa|bfaf feef|
     b~f3 afed|afef d~B3|(3ABA FA dfef |1 dBAF ADD2 :|2 dBAF ADDB||
-    
-    
+
+
 ---
