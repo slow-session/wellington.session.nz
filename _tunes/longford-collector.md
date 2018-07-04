@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 date: 2018-06-10
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession focustune
 mp3_file: /mp3/longford-collector.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
