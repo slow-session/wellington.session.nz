@@ -1,5 +1,5 @@
 ---
-title: Boys of Ballysodare
+title: Boys of Ballisodare
 titleID: boys-of-ballisodare1.md
 key: Dmix
 rhythm: reel
