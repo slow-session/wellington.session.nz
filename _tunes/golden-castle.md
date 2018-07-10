@@ -9,7 +9,7 @@ tags: slowsession
 mp3_file: /mp3/golden-castle.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: © Katie Davis Henderson. All Rights Reserved.
-mp3_url: https://www.youtube.com/watch?v=5kAjjXgnzIo&index=59&list=PLFE86023DBC2064A0
+mp3_url: https://www.youtube.com/watch?v=5kAjjXgnzIo
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2170
