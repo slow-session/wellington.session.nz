@@ -9,7 +9,7 @@ tags:
 mp3_file: /mp3/the-parting.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
-mp3_url: https://www.youtube.com/watch?v=gK2ceda8hcg&list=RDPoAvYBYjQfI&index=3
+mp3_url: https://www.youtube.com/watch?v=gK2ceda8hcg
 source: Wellington
 abc_source: The Mandolin Cafe
 abc_url: https://www.mandolincafe.com/forum/group.php?discussionid=2524&do=discuss
