@@ -5,7 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2016-01-01
 location: Wellington
-tags: 
+tags: slowsession focustune
 mp3_file: /mp3/humours-of-ballyloughlin.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
@@ -28,5 +28,5 @@ abc: |
     fdd gdd|fdd ged|^cde gag|1 ed^c d2 e:|2 ed^c d^cB||
     |:AFD ABG|~F3 GED|~E3 EFG|~E3 EFG|
     ABA dAG|~F3 GEA|DED DFA|1 DED D2 A:|2 DED D3||
-    
+
 ---
