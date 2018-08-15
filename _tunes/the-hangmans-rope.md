@@ -4,12 +4,12 @@ titleID: the-hangmans-rope.md
 key: G
 rhythm: hornpipe
 date: 2018-08-14
-location: Wellington 
-tags: 
-mp3_file: 
-mp3_source: 
-mp3_licence: 
-mp3_url: 
+location: Wellington
+tags:
+mp3_file: /mp3/the-hangmans-rope.mp3
+mp3_source: Vimeo Fair Use
+mp3_licence: <a href="https://help.vimeo.com/hc/en-us/sections/203915108-Fair-Use">Vimeo Fair Use</a>
+mp3_url: https://vimeo.com/35347746#t=1m33s
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/932
@@ -24,6 +24,6 @@ abc: |
     G2BG DGBd| g2fg d3e|fefg fdAc| B2G2 G2:|
     |:Bc|dg~g2 dgBg| dg~g2 a2ga| bgaf gdBd| cBAG A2Bc|
     dg~g2 dgBg| dg~g2 a2ga| bgag ABcd|1 B2G2 G2:|2 B2G2 G4||
-    
+
 
 ---

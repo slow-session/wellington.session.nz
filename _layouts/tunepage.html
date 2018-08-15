@@ -109,6 +109,11 @@ writing the ABC for this tune using our
             {% if page.mp3_url contains 'www.facebook.com'%}
                 {% assign url = page.mp3_url | url_encode %}
                 <iframe src="https://www.facebook.com/plugins/video.php?href={{ url }}&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            {% else %}
+                {% if page.mp3_url contains 'vimeo.com'%}
+                    {% assign urlParts = page.mp3_url | split: 'vimeo.com/'%}
+                    <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                {% endif %}
             {% endif %}
         {% endif %}
     {% endif %}
