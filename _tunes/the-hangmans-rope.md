@@ -7,7 +7,7 @@ date: 2018-08-14
 location: Wellington
 tags:
 mp3_file: /mp3/the-hangmans-rope.mp3
-mp3_source: Vimeo Fair Use
+mp3_source: <a href="https://vimeo.com/dickglasgow">Dick Glasgow</a>
 mp3_licence: <a href="https://help.vimeo.com/hc/en-us/sections/203915108-Fair-Use">Vimeo Fair Use</a>
 mp3_url: https://vimeo.com/35347746#t=1m33s
 source: Wellington
@@ -16,6 +16,7 @@ abc_url: https://thesession.org/tunes/932
 abc: |
     X: 1
     T: The Hangman's Rope
+    C: Frank McCollam
     R: hornpipe
     M: 4/4
     L: 1/8

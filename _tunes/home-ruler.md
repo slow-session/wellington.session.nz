@@ -4,19 +4,20 @@ rhythm: hornpipe
 titleID: home-ruler.md
 key: D
 mode:
-date: 2016-02-03
+date: 2018-08-16
 location: Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/home-ruler.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/home_ruler/
+mp3_source: <a href="https://vimeo.com/dickglasgow">Dick Glasgow</a>
+mp3_licence: <a href="https://help.vimeo.com/hc/en-us/sections/203915108-Fair-Use">Vimeo Fair Use</a>
+mp3_url: https://vimeo.com/35347746
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/310
 abc: |
   X: 1
   T: The Home Ruler
+  C: Frank McCollam
   R: hornpipe
   M: 4/4
   L: 1/8
