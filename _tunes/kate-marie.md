@@ -8,7 +8,7 @@ location: Wellington
 tags:
 mp3_file: /mp3/kate-marie.mp3
 mp3_source: <a href="https://vimeo.com/dickglasgow">Dick Glasgow</a>
-mp3_licence: <a href="https://help.vimeo.com/hc/en-us/sections/203915108-Fair-Use">Vimeo Fair Use</a>
+mp3_licence: "© Dick Glasgow. All Rights Reserved."
 mp3_url: https://vimeo.com/35347746#t=2m59s
 source: Wellington
 abc_source: The Session
