@@ -14,5 +14,14 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/5960
 abc: |
-
+    X: 1
+    T: Paddy From Portlaw
+    R: jig
+    M: 6/8
+    L: 1/8
+    K: Dmaj
+    dB|:AFD ~D3|AFD DdB|ABd DFA|BGE ~E2B|
+    AFD ~F2E| DFA {B}Ade| fdB ABG |1FGE D2B:|2FGE D2a||
+    {b}afd dcd|afd d2f|afd Adf|~g3 efg|
+    fga ~g2b|afd ede|fdB ABG|1 FGE D2a:|2FGE D2|]
 ---

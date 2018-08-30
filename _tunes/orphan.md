@@ -5,7 +5,7 @@ key: Em
 rhythm: jig
 date: 2017-10-30
 location: Hamilton Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession focustune
 mp3_file: /mp3/orphan.mp3
 mp3_source: Raglan Session
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
