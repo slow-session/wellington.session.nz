@@ -6,7 +6,7 @@ rhythm: jig
 date: 2018-08-31
 location: Wellington
 tags: slowsession tuneoftheweek
-mp3_file: /mp3/wheelmans-jig.mp3
+mp3_file: /mp3/whelans-jig.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=1o5-zL7TrCc
