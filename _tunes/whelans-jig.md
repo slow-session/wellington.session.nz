@@ -1,5 +1,5 @@
 ---
-title: whelan's Jig
+title: Whelan's Jig
 titleID: whelans-jig.md
 key: Edor
 rhythm: jig
