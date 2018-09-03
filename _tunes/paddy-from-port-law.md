@@ -12,7 +12,7 @@ mp3_licence: "© Richard Tait. All Rights Reserved."
 mp3_url:
 source: Wellington
 abc_source: The Session
-abc_url: https://thesession.org/tunes/5960
+abc_url: https://thesession.org/tunes/4927
 abc: |
     X: 1
     T: Paddy From Portlaw
