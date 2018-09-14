@@ -1,5 +1,5 @@
 ---
-title: MacLeod's Farewelll
+title: MacLeod's Farewell
 titleID: macleods-farewell.md
 key: D
 rhythm: reel
@@ -16,6 +16,7 @@ abc_url: https://thesession.org/tunes/518
 abc: |
     X: 6
     T: MacLeod's Farewell
+    T: Wedding Reel
     R: reel
     M: 4/4
     L: 1/8

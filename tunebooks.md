@@ -35,6 +35,10 @@ Sean Manning's Sets (Dunedin):
 
  * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
 
+Begged Borrowed and Stolen:
+
+ * [bbs.pdf](/tunebooks/other/bbs.pdf "PDF")
+
 Some tunebooks from early days of ABC i.e. the 1990s:
 
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
