@@ -4,15 +4,15 @@ titleID: knockawhinna.md
 key: Gmaj
 rhythm: jig
 date: 2018-10-09
-location: Wellington 
+location: Wellington
 tags: slowsession
 mp3_file: /mp3/knockawhinna.mp3
-mp3_source: ENTER YOUR NEW MP3 SOURCE HERE
+mp3_source: Jonathan Berkahn
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: 
+mp3_url:
 source: Wellington
 abc_source: Jonathan Berkahn
-abc_url: 
+abc_url:
 abc: |
     X: 1
     T: The Knockawhinna
@@ -27,6 +27,6 @@ abc: |
     AFA d2e | f/g/af gec | a^ga =gec |1 edc dFG :|2 edc d^c=c |]
     K: Gmaj
     B/c/dB GBd | gfg ece | d2B cBA | BAG AFD |
-    d^cd GBd | gfa gfa | gdB cAF |1 AGF G2A :|2 AGF G3|] 
+    d^cd GBd | gfa gfa | gdB cAF |1 AGF G2A :|2 AGF G3|]
 
 ---
