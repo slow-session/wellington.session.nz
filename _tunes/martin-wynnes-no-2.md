@@ -1,5 +1,5 @@
 ---
-title: Martin Wynne's No. 2
+title: Martin Wynne's No 2
 titleID: martin-wynnes-no-2.md
 key: D
 rhythm: reel
@@ -15,7 +15,7 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/359
 abc: |
     X: 1
-    T: Martin Wynne's No. 2
+    T: Martin Wynne's No 2
     R: reel
     M: 4/4
     L: 1/8
