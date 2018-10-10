@@ -5,7 +5,7 @@ key: Edor
 rhythm: jig
 date: 2018-08-31
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession focustune
 mp3_file: /mp3/whelans-jig.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."

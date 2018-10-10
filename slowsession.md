@@ -84,8 +84,9 @@ Slow Session Sets
 
 <tbody>
 {% assign sets = site.sets | where: 'tags', 'focusset' %}
+{% assign sortedsets = sets | sort: 'date' | reverse %}
 {% assign setid = 200 %}
-{% for set in sets %}
+{% for set in sortedsets %}
 {% assign setid = setid | plus: 1 %}
 {% include setrow.html setId=setid %}
 {% endfor %}
