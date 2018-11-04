@@ -5,7 +5,7 @@ key: G
 rhythm:
 date: 2018-10-28
 location: Wellington
-tags:
+tags: regtuneoftheweek
 mp3_file:
 mp3_source:
 mp3_licence:
