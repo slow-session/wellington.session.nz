@@ -5,11 +5,11 @@ key: Edor
 rhythm: reel
 date: 2017-02-07
 location: Wellington
-tags: slowsession tuneoftheweek
+tags: slowsession slowtuneoftheweek
 mp3_file: /mp3/golden-keyboard.mp3
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_426_7_marin_eleanor_gaffney/
+mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
+mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
+mp3_url: https://www.youtube.com/watch?v=_xXbI6XLOBo
 source: Wellington
 abc_source: The Session
 abc_url:
