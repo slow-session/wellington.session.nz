@@ -21,7 +21,7 @@ var textAreas = document.getElementById("abc-textareas");
 </script>
 
 <div style="overflow-x:auto;">
-<table style="width:100%" id="tuneoftheweek" class="tablesorter">
+<table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
 <thead>
     <tr>
     <th style="width:25%;">&nbsp;Tune Name&nbsp;</th>
@@ -32,7 +32,7 @@ var textAreas = document.getElementById("abc-textareas");
 </thead>
 
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'tuneoftheweek' %}
+{% assign tunes = site.tunes | where: 'tags', 'slowtuneoftheweek' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 100 %}
   {% for tune in sortedtunes %}
