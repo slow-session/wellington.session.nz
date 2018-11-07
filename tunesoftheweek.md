@@ -5,14 +5,14 @@ permalink: /tunesoftheweek/
 ---
 <div id="audioPlayer"></div>
 
-Each week we choose a couple of tunes to learn or bring back to the fore - sometimes we focus on a tune for more than a week!
-
-Our Slow Session Tune of the Week is:
-
 <div id="abc-textareas"></div>
 <script>
 var textAreas = document.getElementById("abc-textareas");
 </script>
+
+Each week we choose a couple of tunes to learn or bring back to the fore - sometimes we focus on a tune for more than a week!
+
+Our Slow Session Tune of the Week is:
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
@@ -39,11 +39,6 @@ var textAreas = document.getElementById("abc-textareas");
 <br />
 
 Our Regular Session Tune of the Week is:
-
-<div id="abc-textareas"></div>
-<script>
-var textAreas = document.getElementById("abc-textareas");
-</script>
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="regtuneoftheweek" class="tablesorter">
