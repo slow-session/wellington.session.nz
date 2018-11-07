@@ -5,6 +5,8 @@ permalink: /tunesoftheweek/
 ---
 <div id="audioPlayer"></div>
 
+Each week we choose a couple of tunes to learn or bring back to the fore - sometimes we focus on a tune for more than a week!
+
 Our Slow Session Tune of the Week is:
 
 <div id="abc-textareas"></div>
