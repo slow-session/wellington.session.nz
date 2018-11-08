@@ -8,8 +8,8 @@ location: Wellington
 tags: regtuneoftheweek
 mp3_file: /mp3/golden-eagle.mp3
 mp3_source: Pat Higgins
-mp3_licence:
-mp3_url:
+mp3_url: https://www.youtube.com/watch?v=_KLAGpgvOhk
+mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
 source: Wellington
 abc_source: Pat Higgins
 abc_url: Pat Higgins
