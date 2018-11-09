@@ -19,9 +19,11 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    %Z: Modified by Megan Ward
     K: Ador
-    |:ed|c2Ac B2GB|AGEF GEDG|EAAB cBcd|eaaf gfed|
-    |cBAc BAGB|AGEF GEDG|EAAB cded|cABG A2:|
-    |:de|eaab ageg|agbg agef|gfga gfef|gfaf gfdf|
-    |eaab ageg|agbg agef|g2ge a2ga|bgaf ge:|
+    ed|:c2Ac B2GB|AGEA GED2|EAAB cBcd|eaaf gedB|
+    cBAc BAGB|AGEA GED2|EAA^G ABcd|e2dB A2:|
+    |:cd|eaab ageg|agbg agef|g2ga gedg|bgaf gedg|
+    eaab ageg|agbg agef|g2ge a2ga|bgaf ge:|
+
 ---
