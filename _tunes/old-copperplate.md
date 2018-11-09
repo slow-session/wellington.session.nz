@@ -5,7 +5,7 @@ key: Ador
 rhythm: reel
 date: 2017-08-04
 location: Wellington
-tags: slowsession 
+tags: slowsession
 mp3_file: /mp3/old-copperplate.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -18,11 +18,12 @@ abc: |
     T:Old Copperplate, The
     M:4/4
     L:1/8
+    %Z: Modified by Megan Ward
     R:reel
     K:Ador
     A2 EA cAAe|aged cAFA|G2 DG BGBd|gedc BAGB|
     A2 EA cAAe| aged cAGB|ABcd efge|aged cA A2 :|
-    |:ageg a2 eg|aged cA A2| gfef g2 ef|gfge dBGB|
-    ageg a2 eg|aged cAGB|ABcd efge|aged cA A2 :|
+    |:ageg ~a3 b|aged cA A2| gfef ~g3f|gedc BGG2|
+    ageg ~a3 b|aged cAAG|ABcd efge|aged cA A2 :|
 
 ---

@@ -18,8 +18,11 @@ abc: |
     T: Tommy Peoples'
     R: reel
     M: 4/4
+    %Z: Modified by Megan Ward
     L: 1/8
     K: Gmaj
-    |:G2BG cGBG|ADDE FGAF|G2BG cGBG|1 Addc BGGF:|2 Addc BGGf||
-    |:g2dg egde|g2bg fgaf|g2dg egdB|1 cAdc BGGf:|2 cAdc BGGF||    
+    |:G2BG cGBG|ADDE FGAF|G2BG cGBG|1 Addc AGGF:|2 Addc AGGf||
+    |:g2dg egde|g2bg agef|g2dg egdB|1 cBAc BGGf:|2 cBAc BGGF||    
+
+
 ---

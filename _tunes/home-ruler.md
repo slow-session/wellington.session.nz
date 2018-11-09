@@ -15,15 +15,18 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/310
 abc: |
-  X: 1
-  T: The Home Ruler
-  C: Frank McCollam
-  R: hornpipe
-  M: 4/4
-  L: 1/8
-  K: Dmaj
-  AF|D2FA DAFA|dfed B2dB|A2AB AFDE|(3FED ED B,DA,B,|
-  D2FA DAFA|dfed B2dB|A2AB AFDE|F2D2 D2 :||
-  dB|Addc d3 f|afbf afed|efed BAFA|fded BdA2|
-  Addc d3 f|afbf afed|efed BAdB|AFEF D2:||
+    X: 1
+    T: The Home Ruler
+    C: Frank McCollam
+    R: hornpipe
+    M: 4/4
+    L: 1/8
+    %Z: Modified by Megan Ward
+    K: Dmaj
+    (3A,B,C|D2FA DAFA|dfed B2dB|A2AB AFDE|FDED B,A,B,C |
+    D2FA DAFA|dfed B2dB|A2AB AFDE|F2D2 D2 :||
+    (3ABc|d2dc defg|afbf afed|efed BAde|fded Bd (3ABc|
+    d2dc defg|afbf afed|efed BAdB|AFEF D2:||
+
+
 ---

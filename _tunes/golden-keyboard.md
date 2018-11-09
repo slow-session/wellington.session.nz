@@ -19,9 +19,12 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
-    K: Em
+    %Z: Modified by Megan Ward
+    K: Edor
     BGEF GFGA | B/B/B gB fBed | BGEF GBAG | F/E/D AD BDAD |
-    E^DEF GFGA | B2 gB fBeB | (3ded ^ce dBAF | DFAF GE E2 :|
-    |:Be ~e2 de^ce | Befd edB^c | dA ~A2 eA^ce | d^cde dBAF |
-    E^DEF GFGA | B2 gB fBeB | (3ded ^ce dBAF | DFAF GE E2 :|
+    EDEF GFGA | B2 gB fBeB | (3ded ce dBAF | DFAF GE E2 :|
+    |:Be ~e2 Be ~e2 | Beef edBc | dA ~A2 eAce | dcde dBAF |
+    EDEF GFGA | B2 gB fBeB | (3ded ce dBAF | DFAF GE E2 :|
+
+
 ---
