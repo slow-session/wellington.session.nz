@@ -5,7 +5,7 @@ key: G
 rhythm:
 date: 2018-10-28
 location: Wellington
-tags: regtuneoftheweek
+tags: 
 mp3_file: /mp3/golden-eagle.mp3
 mp3_source: Pat Higgins
 mp3_url:
