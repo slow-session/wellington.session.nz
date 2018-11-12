@@ -117,6 +117,11 @@ writing the ABC for this tune using our
             {% endif %}
         {% endif %}
     {% endif %}
+
+    {% if page.abc_source %}
+    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+    {% endif %}
+
     {% if page.alt_mp3_url %}
     <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
@@ -137,9 +142,6 @@ writing the ABC for this tune using our
     {% endif %}
     {% endif %}
 
-    {% if page.abc_source %}
-    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
-    {% endif %}
 </div>
 
 <script>

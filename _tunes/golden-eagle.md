@@ -5,15 +5,12 @@ key: G
 rhythm:
 date: 2018-10-28
 location: Wellington
-tags: 
+tags:
 mp3_file: /mp3/golden-eagle.mp3
 mp3_source: Pat Higgins
 mp3_url:
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-alt_mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 alt_mp3_url: https://www.youtube.com/watch?v=_KLAGpgvOhk
-alt_mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
-source: Wellington
 abc_source: Pat Higgins
 abc_url: Pat Higgins
 abc: |
