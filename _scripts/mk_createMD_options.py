@@ -67,8 +67,6 @@ with open(optionsFile, 'w') as outfile:
                             mp3_source_key = cleanhtml(mp3_source.replace('"', ''))
                             mp3sourceDict[mp3_source_key] = mp3_source
 
-
-
                     if line.startswith('mp3_licence:'):
                         mp3_licence = line.replace('mp3_licence:', '').strip()
                         if mp3_licence:
@@ -168,6 +166,8 @@ with open(optionsFile, 'w') as outfile:
 
     <label>MP3 url:</label>
     <input type="text" id="mp3_url-box" name="mp3_url" value="">
+
+    <input type="hidden" id="alt_mp3_url-box" name="alt_mp3_url" value="">
 
     <label>Source:<sup>*</sup></label>
     <select id="source-box" name="source">
