@@ -5,7 +5,7 @@ key: Amix
 rhythm: jig
 date: 2018-05-21
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 mp3_file: /mp3/black-rogue.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
