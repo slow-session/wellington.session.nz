@@ -2,7 +2,7 @@
 title: Golden Eagle
 titleID: golden-eagle.md
 key: G
-rhythm:
+rhythm: hornpipe
 date: 2018-10-28
 location: Wellington
 tags:
