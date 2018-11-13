@@ -45,8 +45,6 @@ var regex = new RegExp('X:.*\n');
         abcSource = {{ tune.abc | jsonify }};
         abcSource = abcSource.replace(regex, '');
 
-        // Get the ABCplayer to go through each tune twice
-        document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
         document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
     </script>
     {% assign tuneId = tuneId | plus: 1 %}
