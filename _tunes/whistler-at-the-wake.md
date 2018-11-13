@@ -2,7 +2,7 @@
 title: Whistler at the Wake
 titleID: whistler-at-the-wake.md
 key: D
-rhythm:
+rhythm: jig
 date: 2018-10-10
 location: Wellington
 tags: slowsession focustune
