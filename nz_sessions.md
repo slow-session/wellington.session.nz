@@ -10,6 +10,8 @@ You can find out more about the sessions in other NZ cities at:
     * <a href="https://www.facebook.com/groups/1461764424153462/">Facebook</a>
   * Tuesday at Biddys, Hamilton
     * <a href="https://www.facebook.com/Tuesday-at-Biddys-Hamilton-134702863269582/">Facebook</a>
+  * Irish music session at the Celtic - Palmerston North
+    * <a href="https://www.facebook.com/events/2213159565632734/">Facebook</a>
   * Wellington Irish Sessions
     * <a href="https://www.facebook.com/groups/WellingtonSession">Facebook</a>
     * <a href="/">Tunes</a>
