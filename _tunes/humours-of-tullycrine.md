@@ -6,6 +6,8 @@ rhythm: hornpipe
 date: 2017-03-09
 location: Wellington
 tags: slowsession slowtuneoftheweek
+regtuneoftheweek:
+slowtuneoftheweek: 2018-11-14
 mp3_file: /mp3/humours-of-tullycrine.mp3
 mp3_source: <a href="http://www.irishmusic.org.nz/">John McEvoy @ Ceol Aneas 2016</a>
 mp3_licence: "© John McEvoy. All Rights Reserved."

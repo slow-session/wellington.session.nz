@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-02-07
 location: Wellington
 tags: slowsession focustune
+regtuneoftheweek:
+slowtuneoftheweek: 2018-10-28
 mp3_file: /mp3/golden-keyboard.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."
