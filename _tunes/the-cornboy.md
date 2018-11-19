@@ -12,17 +12,17 @@ mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-
 mp3_url: https://connollymusiccollection.bc.edu/document/608
 source: Wellington
 abc_source: The Session
-abc_url: https://thesession.org/tunes/5060
+abc_url: https://thesession.org/tunes/3065
 abc: |
-    X: 2
+    X: 3
     T: The Cornboy
-    T: Francie Donnellan's
+    T: East Clare
     R: reel
     M: 4/4
     L: 1/8
     K: Dmix
-    |:DEFA d2 cA | GEED EFGc | Add^c d2 ed | cAGE EDCE |
-    DEFA d2 cA | GEED EFGc | Add^c dfed | cAGE EDD2 :|
-    |:aged c2 cd | ed B/c/d eg~g2 | aged c2cd | cAGE EDD2 |
-    ed e/f/g aged | c2 cd cAGE | =FEDE FGAB | cAGE EDCE :|
+    |:D2FA d2cA|GEED EFGB|Add^c d=cAB|cAGE EDCE|
+    D2FA d2cA|GEED EFGB|Add^c d=cAB|cAGE EDD2:|
+    |:aged cded|~c3d eg~g2|aged cded|cAGE EDD2|
+    ed e/f/g aged|dcAB cAGE|=F3E FGAB|1 cAGE EDD2:|2 cAGE EDCE|]
 ---
