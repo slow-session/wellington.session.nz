@@ -6,6 +6,8 @@ rhythm: hornpipe
 date: 2018-10-28
 location: Wellington
 tags:
+regtuneoftheweek: 2018-11-05
+slowtuneoftheweek:
 mp3_file: /mp3/golden-eagle.mp3
 mp3_source: Pat Higgins
 mp3_url:
