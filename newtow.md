@@ -59,7 +59,7 @@ Recent slow session tunes of the week
         {% continue %}
     {% endif %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 6 %}
+        {% if tune_count > 8 %}
             {% break %}
         {% endif %}
     {% endif %}
@@ -71,7 +71,7 @@ Recent slow session tunes of the week
 Regular session tune of the week
 --------
 
-<div style="overflow-x:auto;">
+<div style="overflow-x:auto;"
 <table style="width:100%" id="regtuneoftheweek" class="tablesorter">
 <thead>
     <tr>
@@ -119,7 +119,7 @@ Recent regular session tunes of the week
         {% continue %}
     {% endif %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 6 %}
+        {% if tune_count > 8 %}
             {% break %}
         {% endif %}
     {% endif %}
