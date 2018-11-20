@@ -7,26 +7,29 @@ permalink: /newtow/
 
 <div id="textAreas"></div>
 
+{% assign tuneid = 100 %}
 
 Slow session tune of the week
 --------
+
+{% include tuneoftheweek.html %}
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
 <thead>
     <tr>
-    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:25%;">&nbsp;Tune Name&nbsp;</th>
+    <th style="width:6%;">&nbsp;Key&nbsp;</th>
+    <th style="width:9%;">&nbsp;Rhythm&nbsp;</th>
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
-  {% assign tuneid = 100 %}
     {% for tune in sortedtunes %}
     {% if tune.slowtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
+        {% assign tuneid = tuneid | plus: 1 %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -50,20 +53,18 @@ Recent slow session tunes of the week
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
   {% assign tune_count = 0 %}
-  {% assign tuneid = 200 %}
-    {% for tune in sortedtunes %}
+  {% for tune in sortedtunes %}
     {% if tune.slowtuneoftheweek %}
-    {% assign tune_count = tune_count | plus: 1 %}
-    {% assign tuneid = tuneid | plus: 1 %}
-    {% if tune_count == 1 %}
-        {% continue %}
-    {% endif %}
+      {% if tune_count > 0 %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 8 %}
-            {% break %}
+        {% if tune_count == 8 %}
+          {% break %}
         {% endif %}
+        {% assign tuneid = tuneid | plus: 1 %}
+      {% endif %}
+      {% assign tune_count = tune_count | plus: 1 %}
     {% endif %}
-{% endfor %}
+  {% endfor %}
 </tbody>
 </table>
 </div>
@@ -71,22 +72,22 @@ Recent slow session tunes of the week
 Regular session tune of the week
 --------
 
-<div style="overflow-x:auto;"
+<div style="overflow-x:auto;">
 <table style="width:100%" id="regtuneoftheweek" class="tablesorter">
 <thead>
     <tr>
-    <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
-    <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    <th style="width:25%;">&nbsp;Tune Name&nbsp;</th>
+    <th style="width:6%;">&nbsp;Key&nbsp;</th>
+    <th style="width:9%;">&nbsp;Rhythm&nbsp;</th>
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
-  {% assign tuneid = 300 %}
     {% for tune in sortedtunes %}
     {% if tune.regtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
+        {% assign tuneid = tuneid | plus: 1 %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -110,33 +111,28 @@ Recent regular session tunes of the week
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
   {% assign tune_count = 0 %}
-  {% assign tuneid = 400 %}
-    {% for tune in sortedtunes %}
+  {% for tune in sortedtunes %}
     {% if tune.regtuneoftheweek %}
-    {% assign tune_count = tune_count | plus: 1 %}
-    {% assign tuneid = tuneid | plus: 1 %}
-    {% if tune_count == 1 %}
-        {% continue %}
-    {% endif %}
+      {% if tune_count > 0 %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 8 %}
-            {% break %}
+        {% if tune_count == 8 %}
+          {% break %}
         {% endif %}
+        {% assign tuneid = tuneid | plus: 1 %}
+      {% endif %}
+      {% assign tune_count = tune_count | plus: 1 %}
     {% endif %}
-{% endfor %}
+  {% endfor %}
 </tbody>
 </table>
 </div>
-
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
-    $("#slowtuneoftheweek").tablesorter({headers: { 3:{sorter: false}}});
     $("#oldslowtunesoftheweek").tablesorter({headers: { 3:{sorter: false}}});
-    $("#regtuneoftheweek").tablesorter({headers: { 3:{sorter: false}}});
     $("#oldregtunesoftheweek").tablesorter({headers: { 3:{sorter: false}}});
 
 });
