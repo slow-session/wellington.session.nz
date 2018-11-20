@@ -6,6 +6,8 @@ rhythm: hornpipe
 date: 2017-10-19
 location: Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/hey-jude.mp3
 mp3_source: De Danann
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>

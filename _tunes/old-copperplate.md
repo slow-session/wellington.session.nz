@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-08-04
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-10-18
 mp3_file: /mp3/old-copperplate.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

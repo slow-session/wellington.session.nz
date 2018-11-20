@@ -6,6 +6,8 @@ rhythm: jig
 date: 2016-11-09
 location: Wellington
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/will-you-come-home-with-me.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

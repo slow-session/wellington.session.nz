@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-05-17
 location: Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/wilton.mp3
 mp3_source: Richard Tait
 mp3_licence: "© Richard Tait. All Rights Reserved."

@@ -8,7 +8,7 @@ permalink: /newtow/
 <div id="textAreas"></div>
 
 
-Slow tune of the week
+Slow session tune of the week
 --------
 
 <div style="overflow-x:auto;">
@@ -34,7 +34,7 @@ Slow tune of the week
 </table>
 </div>
 
-Old slow tunes of the Week
+Recent slow session tunes of the week
 --------
 
 <div style="overflow-x:auto;">
@@ -59,7 +59,7 @@ Old slow tunes of the Week
         {% continue %}
     {% endif %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 5 %}
+        {% if tune_count > 6 %}
             {% break %}
         {% endif %}
     {% endif %}
@@ -68,7 +68,7 @@ Old slow tunes of the Week
 </table>
 </div>
 
-Regular tune of the week
+Regular session tune of the week
 --------
 
 <div style="overflow-x:auto;">
@@ -94,7 +94,7 @@ Regular tune of the week
 </table>
 </div>
 
-Old regular tunes of the Week
+Recent regular session tunes of the week
 --------
 
 <div style="overflow-x:auto;">
@@ -119,7 +119,7 @@ Old regular tunes of the Week
         {% continue %}
     {% endif %}
 {% include tablerow.html tuneId=tuneid %}
-        {% if tune_count > 5 %}
+        {% if tune_count > 6 %}
             {% break %}
         {% endif %}
     {% endif %}

@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-03-06
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/the-square-at-crossmaglen.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

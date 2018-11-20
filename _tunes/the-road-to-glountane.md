@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-06-11
 location: Christchurch
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/the-road-to-glountane.mp3
 mp3_source: Jody Moran
 mp3_licence: "© Jody Moran. All Rights Reserved."

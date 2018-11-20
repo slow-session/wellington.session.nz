@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-03-10
 location: Arrowtown Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/tam-lin.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."

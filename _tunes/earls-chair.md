@@ -7,6 +7,8 @@ mode:
 date: 2016-10-12
 location: Arrowtown Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-05-04
 mp3_file: /mp3/earls-chair.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

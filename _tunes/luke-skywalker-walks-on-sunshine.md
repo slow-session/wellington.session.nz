@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-05-26
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file:
 mp3_source:
 mp3_licence:

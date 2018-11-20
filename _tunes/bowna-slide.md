@@ -6,6 +6,8 @@ rhythm: slide
 date: 2018-05-22
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/bowna-slide.mp3
 mp3_source: <a href="https://www.facebook.com/ciarank1">Ciaran Kelly</a>
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>

@@ -6,6 +6,8 @@ rhythm: slide
 date: 2016-07-25
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/parnells-march.mp3
 mp3_licence: "© Four Winds. All Rights Reserved."
 mp3_source: Four Winds

@@ -6,6 +6,8 @@ rhythm: barndance
 date: 2017-10-31
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/small-feet.mp3
 mp3_source: Duncan Davidson
 mp3_licence: "© Duncan Davidson. All Rights Reserved."

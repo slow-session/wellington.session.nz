@@ -6,6 +6,8 @@ rhythm: slide
 date: 2018-05-22
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/road-to-lisdoonvarna.mp3
 mp3_source:  <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."

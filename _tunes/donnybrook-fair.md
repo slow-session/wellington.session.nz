@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-04-06
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2017-04-06
 mp3_file: /mp3/donnybrook-fair.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

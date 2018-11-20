@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-09-07
 location: Wellington
 tags: slowsession focustune
+regtuneoftheweek:
+slowtuneoftheweek: 2017-09-07
 mp3_file: /mp3/farrel-ogaras.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence:

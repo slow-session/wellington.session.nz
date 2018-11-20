@@ -6,6 +6,8 @@ rhythm: jig
 date: 2018-10-09
 location: Wellington
 tags: slowsession
+regtuneoftheweek: 2018-10-17
+slowtuneoftheweek:
 mp3_file: /mp3/knockawhinna.mp3
 mp3_source: Jonathan Berkahn
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

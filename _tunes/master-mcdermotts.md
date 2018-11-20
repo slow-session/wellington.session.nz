@@ -6,6 +6,8 @@ rhythm: reel
 date: 2016-01-01
 location:
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/master-mcdermotts.mp3
 mp3_licence: "© Cian Kissane. All Rights Reserved."
 mp3_source: <a href="http://www.irishmusic.org.nz/">Cian Kissane @ Ceol Aneas 2016</a>

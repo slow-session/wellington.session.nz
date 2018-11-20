@@ -6,6 +6,8 @@ rhythm: polka
 date: 2017-05-14
 location: Wellington
 tags: vicfolk
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/toms-blue-boat.mp3
 mp3_source: Emily Griffiths
 mp3_licence: "© Emily Griffiths. All Rights Reserved."

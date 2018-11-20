@@ -6,6 +6,8 @@ rhythm: slip jig
 date: 2017-06-29
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2017-07-14
 mp3_file: /mp3/dirty-linen.mp3
 mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

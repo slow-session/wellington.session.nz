@@ -6,6 +6,8 @@ rhythm: slide
 date: 2016-10-27
 location: Dunedin Wellington Christchurch
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/cuil-aodha-slide.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_source: Matt Crannitch

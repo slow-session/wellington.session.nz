@@ -7,6 +7,8 @@ mode:
 date: 2016-05-25
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/munster-bacon.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session

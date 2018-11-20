@@ -6,6 +6,8 @@ rhythm: slide
 date: 2018-05-24
 location: Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/the-cat-rambles-to-the-childs-saucepan.mp3
 mp3_source: Johnny Cronin & Joe Burke
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>

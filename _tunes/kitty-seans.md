@@ -6,6 +6,8 @@ rhythm: barndance
 date: 2017-08-07
 location: Wellington Donegal
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/kitty-seans.mp3
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."

@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-06-12
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/cashmere-shawl.mp3
 mp3_source:
 mp3_licence: 

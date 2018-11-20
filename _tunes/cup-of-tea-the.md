@@ -7,6 +7,8 @@ mode:
 date: 2016-10-27
 location: Arrowtown Dunedin
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file:
 abc_source: Dunedin Fiddle Orchestra
 abc_url: http://nefc.org.nz/

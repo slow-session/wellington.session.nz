@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-04-19
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/down-the-back-lane.mp3
 mp3_source: Wynton Moore
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

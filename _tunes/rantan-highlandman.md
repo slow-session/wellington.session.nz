@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-01-12
 location: Dunedin
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file:
 mp3_source:
 mp3_licence:

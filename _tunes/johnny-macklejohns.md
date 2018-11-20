@@ -6,6 +6,8 @@ rhythm: reel
 date: 2016-12-16
 location: Arrowtown Wellington Christchurch
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/johnny-macklejohns.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_source: Sean Smyth and Donogh Hennessey

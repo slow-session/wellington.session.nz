@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-05-15
 location: Arrowtown
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/hag-at-the-churn.mp3
 mp3_source: Mick Hanly and Micheal O Dhomhnaill
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>

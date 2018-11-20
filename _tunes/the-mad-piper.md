@@ -6,6 +6,8 @@ rhythm: jig
 date: 2018-03-13
 location: Wellington
 tags: vicfolk
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file:
 mp3_source:
 mp3_licence:

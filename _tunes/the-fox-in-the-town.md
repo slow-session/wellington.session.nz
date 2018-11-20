@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-02-26
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2017-04-12
 mp3_file: /mp3/the-fox-in-the-town.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: © Katie Davis Henderson. All Rights Reserved.

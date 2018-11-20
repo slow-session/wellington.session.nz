@@ -6,6 +6,8 @@ rhythm: jig
 date: 2018-06-15
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/gold-ring.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>

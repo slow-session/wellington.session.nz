@@ -7,6 +7,8 @@ mode:
 date: 2018-08-16
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/home-ruler.mp3
 mp3_source: <a href="https://vimeo.com/dickglasgow">Dick Glasgow</a>
 mp3_licence: "© Dick Glasgow. All Rights Reserved."

@@ -7,6 +7,8 @@ mode:
 date: 2016-01-01
 location: Wellington
 tags: slowsession beginner wf
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_url:
 mp3_file: /mp3/derry-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
