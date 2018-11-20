@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-11-13
 location: Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/rakish-paddy.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: © Katie Davis Henderson. All Rights Reserved.

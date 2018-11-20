@@ -6,6 +6,8 @@ rhythm: hop jig
 date: 2017-11-21
 location: Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/top-it-off.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

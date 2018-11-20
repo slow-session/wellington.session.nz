@@ -6,6 +6,8 @@ rhythm: hornpipe
 date: 2017-09-04
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/hut-on-staffin-island.mp3
 mp3_source: Richard Tait
 mp3_licence: "© Richard Tait. All Rights Reserved."

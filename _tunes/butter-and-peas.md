@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-07-27
 location: Wellington Donegal
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/butter-and-peas.mp3
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."

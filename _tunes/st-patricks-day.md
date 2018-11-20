@@ -6,6 +6,8 @@ rhythm: jig
 date: 2018-03-01
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2018-03-08
 mp3_file: /mp3/st-patricks-day.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: "© Duncan Ross Cameron. All Rights Reserved."

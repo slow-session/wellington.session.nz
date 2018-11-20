@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-05-14
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/paddy-cannys-toast.mp3
 mp3_source: Maurice Bradley and Ciaran Kelly
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

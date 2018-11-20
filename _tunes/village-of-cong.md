@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-06-12
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/village-of-cong.mp3
 mp3_licence: "© Luke Plumb. All Rights Reserved."
 mp3_source: <a href="http://www.irishmusic.org.nz/">Luke Plumb @ Ceol Aneas 2017</a>

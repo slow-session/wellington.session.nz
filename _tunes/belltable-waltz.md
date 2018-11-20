@@ -6,6 +6,8 @@ rhythm: waltz
 date: 2016-01-01
 location: Wellington
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/belltable-waltz.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

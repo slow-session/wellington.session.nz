@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-06-11
 location: Christchurch Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file:
 mp3_source:
 mp3_licence:

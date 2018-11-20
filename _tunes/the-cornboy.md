@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-11-07
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/the-cornboy.mp3
 mp3_source: <a href="https://connollymusiccollection.bc.edu/">Seamus Connolly and Boston College Libraries, 2016</a>
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

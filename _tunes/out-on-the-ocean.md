@@ -6,6 +6,8 @@ rhythm: jig
 date: 2016-1-26
 location: Arrowtown Wellington Christchurch
 tags: slowsession beginner wf
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/out-on-the-ocean.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

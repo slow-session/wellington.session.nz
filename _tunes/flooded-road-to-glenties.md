@@ -7,6 +7,8 @@ mode:
 date: 2017-01-12
 location: Arrowtown Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2017-01-18
 mp3_file: /mp3/flooded-road-to-glenties.mp3
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>

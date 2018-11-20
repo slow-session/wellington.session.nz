@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-02-01
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-02-02
 mp3_file: /mp3/morning-star.mp3
 mp3_source: Adrian Barker and Ben Stephenson
 mp3_licence: "© Adrian Barker and Ben Stephenson. All Rights Reserved."

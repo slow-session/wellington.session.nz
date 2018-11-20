@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-05-15
 location: Wellington Christchurch
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/saddle-the-pony.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

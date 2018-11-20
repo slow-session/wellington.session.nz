@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-08-16
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/kate-marie.mp3
 mp3_source: <a href="https://vimeo.com/dickglasgow">Dick Glasgow</a>
 mp3_licence: "© Dick Glasgow. All Rights Reserved."

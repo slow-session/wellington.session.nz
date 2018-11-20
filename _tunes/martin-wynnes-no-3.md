@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-09-20
 location: Wellington
 tags: slowsession focustune
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/martin-wynnes-no-3.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

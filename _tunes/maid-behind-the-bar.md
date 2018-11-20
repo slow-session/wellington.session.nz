@@ -6,6 +6,8 @@ rhythm: reel
 date: 2017-03-16
 location: Wellington Christchurch
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-03-16
 mp3_file: /mp3/maid-behind-the-bar.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

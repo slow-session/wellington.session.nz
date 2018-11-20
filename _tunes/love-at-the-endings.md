@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-03-15
 location: Wellington Christchurch
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek: 2018-04-08
 mp3_file: /mp3/love-at-the-endings.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."

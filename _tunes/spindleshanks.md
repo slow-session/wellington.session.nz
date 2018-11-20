@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-01-10
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2018-01-11
 mp3_file: /mp3/spindleshanks.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

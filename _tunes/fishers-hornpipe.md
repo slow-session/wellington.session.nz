@@ -6,6 +6,8 @@ rhythm: hornpipe
 date: 2016-01-01
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/fishers-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session

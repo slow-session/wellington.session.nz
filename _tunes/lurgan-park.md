@@ -6,6 +6,8 @@ rhythm: reel
 date: 2018-06-07
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/lurgan-park.mp3
 mp3_source: Jody Moran
 mp3_licence: "© Jody Moran. All Rights Reserved."

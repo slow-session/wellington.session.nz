@@ -6,6 +6,8 @@ rhythm: reel
 date: 2016-12-2
 location: Wellington Christchurch
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/torn-jacket.mp3
 mp3_licence: "© Connie O'Connell. All Rights Reserved."
 mp3_source: <a href="http://epu.ucc.ie/connieoconnell/">Connie O'Connell</a>

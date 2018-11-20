@@ -7,6 +7,8 @@ mode:
 date: 2016-06-08
 location: Wellington
 tags: slowsession 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/kittys-wedding.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

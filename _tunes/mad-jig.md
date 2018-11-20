@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-09-27
 location: Donegal Wellington 
 tags: 
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/mad-jig.mp3
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."

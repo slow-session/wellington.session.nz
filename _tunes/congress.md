@@ -7,6 +7,8 @@ mode:
 date: 2017-05-18
 location: Arrowtown Dunedin Wellington
 tags: vicfolk slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-08-02
 mp3_file: /mp3/congress.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC-BY-NC-3.0</a>
 mp3_source: archive.org

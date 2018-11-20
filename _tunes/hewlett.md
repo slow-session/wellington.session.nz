@@ -7,6 +7,8 @@ mode:
 date: 2016-09-28
 location: Arrowtown Wellington
 tags: slowsession beginner
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/hewlett.mp3
 mp3_licence:
 mp3_source: "© Bob Midden. All Rights Reserved."

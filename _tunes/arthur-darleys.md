@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-10-04
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/arthur-darleys.mp3
 mp3_source: Alistair Cuthill and Steve McGlone
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>

@@ -6,6 +6,8 @@ rhythm: waltz
 date: 2016-01-01
 location: Wellington
 tags: slowsession
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_url:
 mp3_licence:
 mp3_source:

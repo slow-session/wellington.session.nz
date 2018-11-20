@@ -6,12 +6,14 @@ rhythm: reel
 date: 2018-09-22
 location: Wellington
 tags:
+regtuneoftheweek: 2018-09-22
+slowtuneoftheweek:
 mp3_file: /mp3/tiger-in-the-grass.mp3
 mp3_source: Emily Griffiths
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url:
 source: Wellington
-abc_source: 
+abc_source:
 abc_url:
 abc: |
     X:1

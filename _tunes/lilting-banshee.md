@@ -6,6 +6,8 @@ rhythm: jig
 date: 2017-05-15
 location: Arrowtown Wellington Christchurch
 tags: vicfolk slowsession
+regtuneoftheweek:
+slowtuneoftheweek: 2017-07-20
 mp3_file: /mp3/lilting-banshee.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

@@ -6,6 +6,8 @@ rhythm: reel
 date: 2016-01-01
 location: Wellington
 tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_url:
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2264
