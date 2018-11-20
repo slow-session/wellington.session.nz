@@ -6,7 +6,7 @@ rhythm: jig
 date: 2018-10-10
 location: Wellington
 tags: slowsession focustune
-regtuneoftheweek:
+regtuneoftheweek: 2018-10-10
 slowtuneoftheweek:
 mp3_file: /mp3/whistler-at-the-wake.mp3
 mp3_source: Richard Tait
