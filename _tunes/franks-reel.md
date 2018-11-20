@@ -6,9 +6,9 @@ rhythm: reel
 mode:
 date: 2016-01-01
 location: Wellington
-tags: 
+tags:
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2017-01-05
 mp3_file: /mp3/franks-reel.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
