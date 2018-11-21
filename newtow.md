@@ -12,8 +12,6 @@ permalink: /newtow/
 Slow session tune of the week
 --------
 
-{% include tuneoftheweek.html %}
-
 <div style="overflow-x:auto;">
 <table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
 <thead>
@@ -26,13 +24,11 @@ Slow session tune of the week
 </thead>
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
-    {% for tune in sortedtunes %}
-    {% if tune.slowtuneoftheweek %}
+  {% assign tune = sortedtunes.first %}
+  {% if tune.slowtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
-        {% assign tuneid = tuneid | plus: 1 %}
-        {% break %}
-    {% endif %}
-{% endfor %}
+    {% assign tuneid = tuneid | plus: 1 %}
+  {% endif %}
 </tbody>
 </table>
 </div>
@@ -57,10 +53,10 @@ Recent slow session tunes of the week
     {% if tune.slowtuneoftheweek %}
       {% if tune_count > 0 %}
 {% include tablerow.html tuneId=tuneid %}
+        {% assign tuneid = tuneid | plus: 1 %}
         {% if tune_count == 8 %}
           {% break %}
         {% endif %}
-        {% assign tuneid = tuneid | plus: 1 %}
       {% endif %}
       {% assign tune_count = tune_count | plus: 1 %}
     {% endif %}
@@ -84,13 +80,11 @@ Regular session tune of the week
 </thead>
 <tbody>
   {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
-    {% for tune in sortedtunes %}
-    {% if tune.regtuneoftheweek %}
+  {% assign tune = sortedtunes.first %}
+  {% if tune.regtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
-        {% assign tuneid = tuneid | plus: 1 %}
-        {% break %}
-    {% endif %}
-{% endfor %}
+    {% assign tuneid = tuneid | plus: 1 %}
+  {% endif %}
 </tbody>
 </table>
 </div>
@@ -115,10 +109,10 @@ Recent regular session tunes of the week
     {% if tune.regtuneoftheweek %}
       {% if tune_count > 0 %}
 {% include tablerow.html tuneId=tuneid %}
+        {% assign tuneid = tuneid | plus: 1 %}
         {% if tune_count == 8 %}
           {% break %}
         {% endif %}
-        {% assign tuneid = tuneid | plus: 1 %}
       {% endif %}
       {% assign tune_count = tune_count | plus: 1 %}
     {% endif %}
