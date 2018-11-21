@@ -10,9 +10,12 @@ permalink: /tunesoftheweek/
 var textAreas = document.getElementById("abc-textareas");
 </script>
 
+{% assign tuneid = 100 %}
+
 Each week we choose a couple of tunes to learn or bring back to the fore - sometimes we focus on a tune for more than a week!
 
-Our Slow Session Tune of the Week is:
+Slow Session Tune of the Week
+-----------
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
@@ -24,21 +27,20 @@ Our Slow Session Tune of the Week is:
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
-
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'slowtuneoftheweek' %}
-{% assign sortedtunes = tunes | sort: 'title' %}
-  {% assign tuneid = 100 %}
-  {% for tune in sortedtunes %}
-      {% assign tuneid = tuneid | plus: 1 %}
+  {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+  {% assign tune = sortedtunes.first %}
+  {% if tune.slowtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
-  {% endfor %}
+    {% assign tuneid = tuneid | plus: 1 %}
+  {% endif %}
 </tbody>
 </table>
 </div>
 <br />
 
-Our Regular Session Tune of the Week is:
+Regular Session Tune of the Week
+---------
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="regtuneoftheweek" class="tablesorter">
@@ -50,15 +52,13 @@ Our Regular Session Tune of the Week is:
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
-
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'regtuneoftheweek' %}
-{% assign sortedtunes = tunes | sort: 'title' %}
-  {% assign tuneid = 200 %}
-  {% for tune in sortedtunes %}
-      {% assign tuneid = tuneid | plus: 1 %}
+  {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
+  {% assign tune = sortedtunes.first %}
+  {% if tune.regtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
-  {% endfor %}
+    {% assign tuneid = tuneid | plus: 1 %}
+  {% endif %}
 </tbody>
 </table>
 </div>
@@ -68,7 +68,5 @@ Our Regular Session Tune of the Week is:
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    /* turn off sorting on last column */
-    $("#recenttunes").tablesorter({headers: { 3:{sorter: false}}});
 });
 </script>

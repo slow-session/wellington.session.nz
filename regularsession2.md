@@ -16,6 +16,13 @@ Regular session tune of the week
 
 We often pick a tune for homework, and we'll play it sometime during the evening.
 
+<div id="audioPlayer"></div>
+<div id="abc-textareas"></div>
+<script>
+var textAreas = document.getElementById("abc-textareas");
+</script>
+
+{% assign tuneid = 100 %}
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="regtuneoftheweek" class="tablesorter">
@@ -73,6 +80,11 @@ These are the tunes we've been learning over the last couple of months.
 </table>
 </div>
 <br />
+
+Latest Tunes
+------------
+
+We add new tunes to the archive reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
 
 <script>
 $(document).ready(function() {
