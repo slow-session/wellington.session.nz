@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /tunebooks/current-alphabetical.abc
+permalink: /tunebooks/slow-favourite-alphabetical.abc
 ---
 I:abc-charset utf-8
 %%titlefont Helvetica 26
@@ -20,7 +20,7 @@ X:1
 %%textfont Helvetica 48
 %%lineskipfac 6
 %%begintext center
-%%Wellington Session Archive
+%%Wellington Slow Session Favourites
 %%endtext
 %%textfont Helvetica 36
 %%lineskipfac 2
@@ -38,7 +38,7 @@ K:C
 %%infoline 1
 {% assign count = 0 %}
 {% for tune in sortedtunes %}
-{% if tune.location contains 'Wellington' %}
+{% if tune.location contains 'Wellington' and tune.tags contains 'slow-favourite' %}
 {% assign count = count | plus: 1 %}
 {% include abc-book.html  xcounter=count %}
 {% endif %}

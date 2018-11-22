@@ -13,7 +13,7 @@ I:abc-charset utf-8
 %%partsbox 1
 %%bstemdown 1
 %%dateformat \%b \%e, \%Y
-%%footer "Wellington Session Current	$P	$d"
+%%footer "Wellington Session Current 	$P	$d"
 
 X:1
 %%withxrefs 1

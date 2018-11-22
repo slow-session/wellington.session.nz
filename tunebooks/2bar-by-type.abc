@@ -36,7 +36,7 @@ T:Jigs
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'ig' %}
+{% if tune.rhythm  contains 'ig' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -61,7 +61,7 @@ T:Reels
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'eel' %}
+{% if tune.rhythm  contains 'eel' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -86,7 +86,7 @@ T:Polkas
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'olka' %}
+{% if tune.rhythm  contains 'olka' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -111,7 +111,7 @@ T:Hornpipes
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'ornpipe' %}
+{% if tune.rhythm  contains 'ornpipe' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -136,7 +136,7 @@ T:Barndances
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'arndance' %}
+{% if tune.rhythm  contains 'arndance' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -161,7 +161,7 @@ T:Waltz
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'altz' %}
+{% if tune.rhythm  contains 'altz' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
@@ -186,7 +186,7 @@ T:March
 M:1/1
 K:C
 {% for tune in sortedtunes %}
-{% if tune.rhythm  contains 'arch' %}
+{% if tune.rhythm  contains 'arch' and tune.location contains 'Wellington' %}
 {% assign xcount = xcount | plus: 1 %}
 {% include abc-book-2bar.html xcounter=xcount  %}
 {% assign tuneCounter = tuneCounter | plus: 1 %}
