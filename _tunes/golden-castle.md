@@ -7,7 +7,7 @@ date: 2017-02-27
 location: Wellington
 tags: slowsession
 regtuneoftheweek:
-slowtuneoftheweek: 2017-03-01
+slowtuneoftheweek: 2018-11-23
 mp3_file: /mp3/golden-castle.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: © Katie Davis Henderson. All Rights Reserved.
