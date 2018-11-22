@@ -6,7 +6,7 @@ rhythm: polka
 mode:
 date: 2016-09-28
 location: Wellington
-tags: slow-favourite slowsession beginner
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/britches-full-of-stitches.mp3

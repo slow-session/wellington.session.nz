@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-09-28
 location: Arrowtown Wellington
-tags: slowsession beginner wellyfest
+tags: slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/red-haired-lass.mp3
