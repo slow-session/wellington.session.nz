@@ -6,7 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-5-11
 location: Arrowtown Wellington
-tags: vicfolk slowsession beginner wf
+tags: vicfolk slowsession beginner wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rights-of-man.mp3

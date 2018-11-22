@@ -42,14 +42,14 @@ and if everybody knows these we'll tackle some others!
 </thead>
 
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'wf-learn' | where: 'rhythm', 'reel' %}
+{% assign tunes = site.tunes | where: 'tags', 'wellyfest-learn' | where: 'rhythm', 'reel' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
 {% assign tuneid = 100 %}
 {% for tune in sortedtunes %}
     {% assign tuneid = tuneid | plus: 1 %}
 {% include tablerow.html tuneId=tuneid %}
 {% endfor %}
-{% assign tunes = site.tunes | where: 'tags', 'wf-learn' | where: 'rhythm', 'jig' %}
+{% assign tunes = site.tunes | where: 'tags', 'wellyfest-learn' | where: 'rhythm', 'jig' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
 {% for tune in sortedtunes %}
     {% assign tuneid = tuneid | plus: 1 %}
@@ -78,7 +78,7 @@ have some tunes in common.
     </tr>
 </thead>
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'wf' %}
+{% assign tunes = site.tunes | where: 'tags', 'wellyfest' %}
 {% assign sortedtunes = tunes | sort: 'rhythm' %}
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}

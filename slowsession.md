@@ -12,13 +12,15 @@ See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you ne
 Tune of the Week
 ----------------
 
-We pick one tune each week for homework, and we'll play it sometime during the first hour.
+We pick one tune for homework each week, and we'll play it sometime during the first hour.
 
 <div id="audioPlayer"></div>
 <div id="abc-textareas"></div>
 <script>
 var textAreas = document.getElementById("abc-textareas");
 </script>
+
+{% assign tuneid = 100 %}
 
 <div style="overflow-x:auto;">
 <table style="width:100%" id="slowtuneoftheweek" class="tablesorter">
@@ -30,24 +32,25 @@ var textAreas = document.getElementById("abc-textareas");
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
-
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'slowtuneoftheweek' %}
-{% assign sortedtunes = tunes | sort: 'title' %}
-  {% assign tuneid = 100 %}
-  {% for tune in sortedtunes %}
-      {% assign tuneid = tuneid | plus: 1 %}
+  {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+  {% assign tune = sortedtunes.first %}
+  {% if tune.slowtuneoftheweek %}
 {% include tablerow.html tuneId=tuneid %}
-  {% endfor %}
+    {% assign tuneid = tuneid | plus: 1 %}
+  {% endif %}
 </tbody>
 </table>
 </div>
+<br />
 
-Slow Session Tunes
-------------------
+Recent slow session tunes of the week
+--------
+
+These are the tunes we've been learning over the last couple of months.
 
 <div style="overflow-x:auto;">
-<table style="width:100%" id="focustunes" class="tablesorter">
+<table style="width:100%" id="oldslowtunesoftheweek" class="tablesorter">
 <thead>
     <tr>
     <th style="width:25%;">Tune Name&#x25B2;&#x25BC;</th>
@@ -56,61 +59,38 @@ Slow Session Tunes
     <th style="width:60%;">Audio Player</th>
     </tr>
 </thead>
-
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'focustune' %}
-{% assign sortedtunes = tunes | sort: 'title' %}
-  {% assign tuneid = 200 %}
+  {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+  {% assign tune_count = 0 %}
   {% for tune in sortedtunes %}
-      {% assign tuneid = tuneid | plus: 1 %}
+    {% if tune.slowtuneoftheweek %}
+      {% if tune_count > 0 %}
 {% include tablerow.html tuneId=tuneid %}
+        {% assign tuneid = tuneid | plus: 1 %}
+        {% if tune_count == 8 %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+      {% assign tune_count = tune_count | plus: 1 %}
+    {% endif %}
   {% endfor %}
 </tbody>
 </table>
 </div>
+<br />
 
-Slow Session Sets
-------------------
-<div style="overflow-x:auto;">
-<table style="width:100%" id="focussets" class="tablesorter">
-<thead>
-    <tr>
-    <th style="width:20%;">Set Name&#x25B2;&#x25BC;</th>
-    <th style="width:9%;">Rhythm<br />&#x25B2;&#x25BC;</th>
-    <th style="width:26%;">Titles</th>
-    <th style="width:45%;">Audio Player</th>
-    </tr>
-</thead>
+Slow session favourites
+---------
 
-<tbody>
-{% assign sets = site.sets | where: 'tags', 'focusset' %}
-{% assign sortedsets = sets | sort: 'date' | reverse %}
-{% assign setid = 200 %}
-{% for set in sortedsets %}
-{% assign setid = setid | plus: 1 %}
-{% include setrow.html setId=setid %}
-{% endfor %}
-</tbody>
-</table>
-</div>
+We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes, there's a good chance someone else will know them.
+
+<a href="/tunes_archive/?title=&rhythm=&tags=slow-favourite&location=wellington&submit=Select"><button class="filterButton">Go to Favourites</button></a>
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */
-    $("#focustunes").tablesorter({headers: { 4:{sorter: false}}});
-
-    /* turn off sorting on last two columns */
-    $("#focussets").tablesorter({
-        headers: {
-            2: {
-                sorter: false
-            },  
-            3: {
-                sorter: false
-            }
-        }
-    });
+    $("#oldslowtunesoftheweek").tablesorter({headers: { 3:{sorter: false}}});
 });
 </script>

@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 date: 2018-11-08
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-08
 mp3_file: /mp3/the-clare.mp3

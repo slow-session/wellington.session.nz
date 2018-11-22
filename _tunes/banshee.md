@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-01-26
 location: Arrowtown Wellington
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/banshee.mp3

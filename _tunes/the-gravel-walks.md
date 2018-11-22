@@ -5,7 +5,7 @@ key: Ador
 rhythm: reel
 date: 2016-1-26
 location: Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-gravel-walks.mp3

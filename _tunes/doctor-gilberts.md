@@ -5,7 +5,7 @@ key: Em
 rhythm: reel
 date: 2018-02-04
 location: Wellington
-tags: slowsession focustune
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-05
 mp3_file: /mp3/doctor-gilberts.mp3

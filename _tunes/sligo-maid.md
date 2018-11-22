@@ -5,7 +5,7 @@ key: Ador
 rhythm: reel
 date: 2016-06-08
 location: Arrowtown Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-07-15
 mp3_file: /mp3/sligo-maid.mp3

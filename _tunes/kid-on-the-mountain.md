@@ -6,7 +6,7 @@ rhythm: slip jig
 mode:
 date: 2016-06-30
 location: Arrowtown Wellington
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kid-on-the-mountain.mp3

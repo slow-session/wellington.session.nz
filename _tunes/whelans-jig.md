@@ -5,7 +5,7 @@ key: Edor
 rhythm: jig
 date: 2018-08-31
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-31
 mp3_file: /mp3/whelans-jig.mp3

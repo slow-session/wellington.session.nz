@@ -5,7 +5,7 @@ key: A
 rhythm: reel
 date: 2017-09-20
 location: Wellington
-tags: slowsession 
+tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-09-28
 mp3_file: /mp3/siobhan-odonnells.mp3

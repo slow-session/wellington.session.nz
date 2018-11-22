@@ -5,7 +5,7 @@ key: G
 rhythm: polka
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: wf
+tags: slow-favourite wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ballydesmond-polka-2.mp3

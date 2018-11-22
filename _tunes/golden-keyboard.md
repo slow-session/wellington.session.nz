@@ -5,7 +5,7 @@ key: Edor
 rhythm: reel
 date: 2017-02-07
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-10-28
 mp3_file: /mp3/golden-keyboard.mp3

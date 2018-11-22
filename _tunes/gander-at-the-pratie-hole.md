@@ -5,7 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2016-01-26
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/gander-at-the-pratie-hole.mp3

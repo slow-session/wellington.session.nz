@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2017-04-06
 location: Wellington
-tags: slowsession 
+tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-06
 mp3_file: /mp3/donnybrook-fair.mp3

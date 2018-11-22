@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2017-05-18
 location: Arrowtown Dunedin Wellington
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-08-02
 mp3_file: /mp3/congress.mp3

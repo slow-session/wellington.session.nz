@@ -6,7 +6,7 @@ rhythm: jig
 mode:
 date: 2016-02-24
 location: Arrowtown Wellington Christchurch
-tags: slowsession beginner wf-learn
+tags: slow-favourite slowsession wellyfest-learn
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jim-wards.mp3

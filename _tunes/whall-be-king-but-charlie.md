@@ -5,7 +5,7 @@ key: Am
 rhythm: jig
 date: 2018-02-19
 location: Wellington
-tags: slowsession 
+tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-19
 mp3_file: /mp3/whall-be-king-but-charlie.mp3

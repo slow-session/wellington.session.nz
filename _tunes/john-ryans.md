@@ -5,7 +5,7 @@ key: D
 rhythm: polka
 date: 2016-09-28
 location: Wellington
-tags: slowsession beginner wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/john-ryans.mp3

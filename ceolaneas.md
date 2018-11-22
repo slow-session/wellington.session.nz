@@ -39,7 +39,7 @@ wanted to provide suggestions so we have some tunes in common.
     </tr>
 </thead>
 <tbody>
-{% assign sets = site.sets | where: 'tags', 'ca-set' %}
+{% assign sets = site.sets | where: 'tags', 'ceol-aneas-set' %}
 {% assign setid = 200 %}
 {% for set in sets %}
 {% assign setid = setid | plus: 1 %}
@@ -62,7 +62,7 @@ wanted to provide suggestions so we have some tunes in common.
     </tr>
 </thead>
 <tbody>
-{% assign tunes = site.tunes | where: 'tags', 'ca' %}
+{% assign tunes = site.tunes | where: 'tags', 'ceol-aneas' %}
 {% assign sortedtunes = tunes | sort: 'title' %}
   {% assign tuneid = 200 %}
   {% for tune in sortedtunes %}

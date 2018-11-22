@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 date: 2018-06-10
 location: Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-06-20
 mp3_file: /mp3/longford-collector.mp3

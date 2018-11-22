@@ -5,7 +5,7 @@ key: Ador
 rhythm: jig
 date: 2016-02-17
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cliffs-of-moher.mp3

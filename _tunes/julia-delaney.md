@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-08-04
 location: Arrowtown Wellington
-tags: slowsession 
+tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/julia-delaney.mp3

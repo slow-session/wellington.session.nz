@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2017-11-23
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mountain-road.mp3

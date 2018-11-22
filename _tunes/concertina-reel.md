@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-01-16
 location: Arrowtown Wellington
-tags: slowsession beginner wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/concertina-reel.mp3

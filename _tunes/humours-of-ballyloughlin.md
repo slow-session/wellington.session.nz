@@ -5,7 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2016-01-01
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/humours-of-ballyloughlin.mp3

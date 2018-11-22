@@ -6,7 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-2-3
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/plains-of-boyle.mp3

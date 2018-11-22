@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2016-03-02
 location: Arrowtown Wellington Christchurch
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/silver-spear.mp3

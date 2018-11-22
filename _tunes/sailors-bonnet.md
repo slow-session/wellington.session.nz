@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2016-01-01
 location: Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-07-01
 mp3_file: /mp3/sailors-bonnet.mp3

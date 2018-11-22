@@ -5,7 +5,7 @@ key: D
 rhythm: jig
 date: 2016-03-29
 location: Wellington Christchurch
-tags: slowsession wf-learn
+tags: slow-favourite slowsession wellyfest-learn
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jerrys-beaver-hat.mp3
