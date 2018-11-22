@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-1-26
 location: Arrowtown Wellington
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-dunmore-lasses.mp3

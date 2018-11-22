@@ -6,7 +6,7 @@ rhythm: jig
 mode:
 date: 2015-11-1
 location: Arrowtown Wellington
-tags: vicfolk slowsession ca
+tags: slow-favourite vicfolk slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/connachtmans-rambles.mp3

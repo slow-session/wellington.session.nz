@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2018-09-18
 location: Wellington
-tags: regtuneoftheweek
+tags:
 regtuneoftheweek: 2018-11-10
 slowtuneoftheweek:
 mp3_file: /mp3/an-buachaill-dreoite.mp3

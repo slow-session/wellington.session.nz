@@ -5,7 +5,7 @@ key: Ador
 rhythm: jig
 date: 2017-05-15
 location: Arrowtown Wellington Christchurch
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-20
 mp3_file: /mp3/lilting-banshee.mp3

@@ -5,7 +5,7 @@ key: Edor
 rhythm: reel
 date: 2017-11-23
 location: Arrowtown Wellington
-tags: vicfolk slowsession wf-learn
+tags: slow-favourite vicfolk slowsession wellyfest-learn
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/joe-cooley-s.mp3

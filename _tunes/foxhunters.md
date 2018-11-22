@@ -6,7 +6,7 @@ rhythm: slip jig
 mode:
 date: 2016-07-13
 location: Arrowtown Wellington
-tags: vicfolk slowsession 
+tags: slow-favourite vicfolk slowsession 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/foxhunters.mp3

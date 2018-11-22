@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 date: 2016-01-01
 location: Wellington Christchurch
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-23
 mp3_file: /mp3/swinging-on-the-gate.mp3

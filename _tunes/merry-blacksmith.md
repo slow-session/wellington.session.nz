@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-3-2
 location: Arrowtown Wellington
-tags: slowsession beginner wf ca
+tags: slow-favourite slowsession wellyfest ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/merry-blacksmith.mp3

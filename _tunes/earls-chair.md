@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-10-12
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-05-04
 mp3_file: /mp3/earls-chair.mp3

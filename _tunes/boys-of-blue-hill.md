@@ -5,7 +5,7 @@ key: D
 rhythm: hornpipe
 date: 2016-01-01
 location: Arrowtown Wellington Christchurch
-tags: wf
+tags: wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/boys-of-blue-hill.mp3

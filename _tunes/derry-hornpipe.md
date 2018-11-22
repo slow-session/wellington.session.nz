@@ -6,7 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-01-01
 location: Wellington
-tags: slowsession beginner wf
+tags: slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_url:

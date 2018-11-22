@@ -5,7 +5,7 @@ key: Bdor
 rhythm: reel
 date: 2016-10-12
 location: Arrowtown Wellington
-tags: slowsession wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/musical-priest.mp3

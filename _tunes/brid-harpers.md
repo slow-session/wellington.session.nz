@@ -6,7 +6,7 @@ rhythm: jig
 mode:
 date: 2016-01-01
 location: Wellington
-tags: slowsession ca
+tags: slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/brid-harpers.mp3

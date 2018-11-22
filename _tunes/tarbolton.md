@@ -5,7 +5,7 @@ key: Edor
 rhythm: reel
 date: 2018-06-10
 location: Wellington
-tags: slowsession focustune
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-06-10
 mp3_file: /mp3/tarbolton.mp3

@@ -5,7 +5,7 @@ key: Ador
 rhythm: jig
 date: 2015-11-01
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/geese-in-the-bog.mp3

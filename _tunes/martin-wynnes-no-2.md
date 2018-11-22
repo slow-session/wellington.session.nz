@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2017-02-09
 location: Wellington
-tags: slowsession focustune ca
+tags: slow-favourite slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek: 2018-03-25
 mp3_file: /mp3/martin-wynnes-no-2.mp3

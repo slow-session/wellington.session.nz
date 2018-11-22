@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-03-08
 location: Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/creggs-pipes.mp3

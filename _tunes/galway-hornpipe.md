@@ -5,7 +5,7 @@ key: D
 rhythm: hornpipe
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: slowsession beginner
+tags: slow-favourite slowsession beginner
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/galway-hornpipe.mp3

@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2018-01-17
 location: Wellington
-tags: slowsession 
+tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-01-20
 mp3_file: /mp3/leg-of-the-duck.mp3

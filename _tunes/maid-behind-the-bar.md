@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2017-03-16
 location: Wellington Christchurch
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-16
 mp3_file: /mp3/maid-behind-the-bar.mp3

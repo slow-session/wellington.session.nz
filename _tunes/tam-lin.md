@@ -5,7 +5,7 @@ key: Ddor
 rhythm: reel
 date: 2018-03-10
 location: Arrowtown Wellington
-tags:
+tags: slow-favourite 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/tam-lin.mp3

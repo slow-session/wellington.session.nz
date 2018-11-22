@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2016-01-01
 location: Arrowtown Wellington Christchurch
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/garrett-barry-s.mp3

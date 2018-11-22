@@ -6,7 +6,7 @@ rhythm: polka
 mode:
 date: 2016-01-26
 location: Wellington
-tags: slowsession beginner 
+tags: slow-favourite slowsession beginner 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/little-diamond-polka.mp3

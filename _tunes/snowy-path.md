@@ -6,7 +6,7 @@ rhythm: slip jig
 mode:
 date: 2017-12-11
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/snowy-path.mp3

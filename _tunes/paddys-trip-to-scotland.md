@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2016-06-02
 location: Wellington Christchurch
-tags: vicfolk slowsession ca
+tags: slow-favourite vicfolk slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddys-trip-to-scotland.mp3

@@ -6,7 +6,7 @@ key: D
 mode:
 date: 2018-08-16
 location: Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/home-ruler.mp3

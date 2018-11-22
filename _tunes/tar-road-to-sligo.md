@@ -5,7 +5,7 @@ key: D
 rhythm: jig
 date: 2016-1-27
 location: Arrowtown Wellington
-tags: vicfolk slowsession
+tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/tar-road-to-sligo.mp3

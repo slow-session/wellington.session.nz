@@ -6,7 +6,7 @@ rhythm: reel
 mode:
 date: 2016-08-11
 location: Arrowtown Wellington
-tags: slowsession
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/father-kellys.mp3

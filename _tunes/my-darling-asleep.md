@@ -5,7 +5,7 @@ key: D
 rhythm: jig
 date: 2016-09-28
 location: Arrowtown Wellington Christchurch
-tags: slowsession beginner wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/my-darling-asleep.mp3

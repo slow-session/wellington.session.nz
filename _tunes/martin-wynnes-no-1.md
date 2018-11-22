@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2018-09-20
 location: Wellington
-tags: slowsession focustune
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/martin-wynnes-no-1.mp3

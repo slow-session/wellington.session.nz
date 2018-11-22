@@ -5,7 +5,7 @@ key: G
 rhythm: jig
 date: 2016-1-26
 location: Arrowtown Wellington Christchurch
-tags: slowsession beginner wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/out-on-the-ocean.mp3

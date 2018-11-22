@@ -5,7 +5,7 @@ key: D
 rhythm: reel
 date: 2018-02-22
 location: Wellington
-tags: slowsession focustune
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-22
 mp3_file: /mp3/trip-to-durrow.mp3

@@ -6,7 +6,7 @@ rhythm: jig
 mode:
 date: 2016-1-26
 location: Wellington
-tags: slowsession beginner wf
+tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/haunted-house.mp3
