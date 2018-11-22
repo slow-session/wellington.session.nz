@@ -1,7 +1,7 @@
 ---
 title: Ballydesmond No. 1
 titleID: ballydesmond-polka-1.md
-key: G
+key: Ador
 rhythm: polka
 date: 2016-01-01
 location: Arrowtown Wellington
