@@ -5,14 +5,14 @@ key: D
 rhythm: hornpipe
 date: 2016-01-01
 location: Arrowtown Wellington
-tags: slow-favourite slowsession beginner
+tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/galway-hornpipe.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: 
-abc_url: 
+mp3_url:
+abc_url:
 source: Wellington
 abc: |
     X: 1
@@ -25,5 +25,5 @@ abc: |
     D2 FA dAFD|CDEF G2FG|AdcB AGFE|D2 CE D2:|
     |:de|f2 fg fedc|BABc B2 Bd|e2 ef edcB|A2 ce a2 AB|
     d2 df edAF|GFGA BdcB|AdcB AGFE|D2 CE D2:|
-    
+
 ---
