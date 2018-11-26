@@ -5,7 +5,7 @@ key: Edor
 rhythm: reel
 mode:
 date: 2016-1-26
-location:  
+location:  Wellington
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
