@@ -8,9 +8,9 @@ location: Wellington
 tags: slow-favourite vicfolk whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
-mp3_source:
-mp3_licence:
+mp3_file: /mp3/the-mad-piper.mp3
+mp3_source: Pat Higgins
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url:
 source: Wellington
 abc_source: James McNamara
