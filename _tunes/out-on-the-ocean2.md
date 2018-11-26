@@ -4,7 +4,7 @@ titleID: out-on-the-ocean2.md
 key: G
 rhythm: jig
 date: 2016-1-26
-location:
+location: Wellington
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:

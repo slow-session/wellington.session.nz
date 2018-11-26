@@ -5,7 +5,7 @@ key: G
 rhythm: polka
 mode:
 date: 2016-09-28
-location:
+location: Wellington
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
