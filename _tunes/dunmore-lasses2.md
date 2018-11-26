@@ -1,18 +1,18 @@
 ---
-title: Dunmore Lasses
-titleID: the-dunmore-lasses.md
+title: Dunmore Lasses (whistle)
+titleID: dunmore-lasses2.md
 key: Edor
 rhythm: reel
 mode:
 date: 2016-1-26
-location:  Wellington
+location:  
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-dunmore-lasses.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://media.comhaltas.ie/audio/cl454_mp3/cl454_4.mp3
+mp3_file: /mp3/dunmore-lasses2.mp3
+mp3_source: Pat Higgins
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
+mp3_url:
 abc_source: The Session
 abc_url: https://thesession.org/tunes/462
 source: Wellington
