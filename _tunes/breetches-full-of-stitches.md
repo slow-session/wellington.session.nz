@@ -1,18 +1,18 @@
 ---
-title: Britches Full of Stitches
-titleID: britches-full-of-stitches.md
+title: Breetches Full of Stitches (whistle)
+titleID: breetches-full-of-stitches.md
 key: G
 rhythm: polka
 mode:
 date: 2016-09-28
-location: Wellington
+location:
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/britches-full-of-stitches.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/britches_full_of_stitches/
+mp3_file: /mp3/breetches-full-of-stitches.mp3
+mp3_source: Pat Higgins
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
+mp3_url:
 abc_url: https://comhaltas.ie/music/detail/
 source: Wellington
 abc: |

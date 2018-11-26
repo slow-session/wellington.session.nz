@@ -1,17 +1,17 @@
 ---
-title: Out On the Ocean
-titleID: out-on-the-ocean.md
+title: Out On the Ocean (whistle)
+titleID: out-on-the-ocean2.md
 key: G
 rhythm: jig
 date: 2016-1-26
-location: Wellington
+location:
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/out-on-the-ocean.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://comhaltas.ie/music/detail/out_on_the_ocean/
+mp3_file: /mp3/out-on-the-ocean2.mp3
+mp3_source: Pat Higgins
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
+mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/108
