@@ -12,7 +12,7 @@ mp3_file: /mp3/lads-of-laois.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url:
-alt_mp3_url:
+alt_mp3_url: https://www.youtube.com/watch?v=yWZN2Vmdft8
 source: Wellington
 abc_source: Pat Higgins
 abc_url:
