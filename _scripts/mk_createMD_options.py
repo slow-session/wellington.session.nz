@@ -125,6 +125,8 @@ with open(optionsFile, 'w') as outfile:
     outfile.write("""<br>
 
     <input type="hidden" id="tags-box" name="tags" value="">
+    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
+    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
 
     <h3>Recorded version of the tune</h3>
 
