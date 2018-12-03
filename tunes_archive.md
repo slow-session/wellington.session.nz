@@ -15,10 +15,7 @@ or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.
 </p>
 {:/}
 
-
-In Wellington, we've learned many of these tunes during the "Slow Session" part
-of the evening and you can find these by choosing the "All Tunes" option,  picking
-"Slowsession" and pressing "Select".
+We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes with us, there's a good chance someone else will know them. You can find these tunes by choosing the "All Tunes" option,  picking "Slow-favourite" and pressing "Select"
 
 <div id="audioPlayer"></div>
 
