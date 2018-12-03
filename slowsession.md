@@ -82,9 +82,12 @@ These are the tunes we've been learning over the last couple of months.
 Slow session favourites
 ---------
 
-We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes, there's a good chance someone else will know them.
+We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes with us, there's a good chance someone else will know them.
 
-<a href="/tunes_archive/?title=&rhythm=&tags=slow-favourite&location=wellington&submit=Select"><button class="filterButton">Go to Favourites</button></a>
+You can find these tunes by going to our <a href="/tunes_archive/">Tunes Archive</a> page and
+by choosing the "All Tunes" option,  picking "Slow-favourite" and pressing "Select"
+
+<a href="/tunes_archive/"><button class="filterButton">Go to Tunes Archive</button></a>
 
 <script>
 $(document).ready(function() {
