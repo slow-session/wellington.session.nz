@@ -8,7 +8,11 @@ location: Wellington
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
+mp3_file:
+mp3_source:
+mp3_licence:
 mp3_url:
+alt_mp3_url: https://www.youtube.com/watch?v=ag9qfQGsxh0
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2264
 source: Wellington
