@@ -75,7 +75,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     mp3player += '          <span title="Adjust playback speed with slider">';
     mp3player += '            <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
     mp3player += '               onchange="setPlaySpeed(audioplayer' + tuneID + ', value/100)" />';
-    mp3player += '            <p class="audio"><output name="level">100</output>%</p>';
+    mp3player += '            <p class="audio">Speed - <output name="level">100</output>%</p>';
     mp3player += '          </span>';
     mp3player += '        </div>';
     mp3player += '      </div>';
