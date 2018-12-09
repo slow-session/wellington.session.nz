@@ -105,8 +105,10 @@ writing the ABC for this tune using our
                         {% assign urlParts = page.mp3_url | split: 'vimeo.com/'%}
                         <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     {% else %}
-                        {% assign url = page.mp3_url | url_encode %}
-                        <iframe width="560" height="315" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                        {% if page.mp3_url contains 'soundcloud.com'%}
+                            {% assign url = page.mp3_url | url_encode %}
+                            <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                        {% endif %}
                     {% endif %}
                 {% endif %}
             {% endif %}
@@ -131,9 +133,11 @@ writing the ABC for this tune using our
                 {% if page.alt_mp3_url contains 'vimeo.com'%}
                     {% assign urlParts = page.alt_mp3_url | split: 'vimeo.com/'%}
                     <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    {% else %}
+                {% else %}
+                    {% if page.alt_mp3_url contains 'soundcloud.com'%}
                         {% assign url = page.alt_mp3_url | url_encode %}
-                        <iframe width="560" height="315" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                        <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                    {% endif %}
                 {% endif %}
             {% endif %}
         {% endif %}
