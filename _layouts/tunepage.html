@@ -107,7 +107,7 @@ writing the ABC for this tune using our
                     {% else %}
                         {% if page.mp3_url contains 'soundcloud.com'%}
                             {% assign url = page.mp3_url | url_encode %}
-                            <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                            <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}&hide_related=true"></iframe>
                         {% endif %}
                     {% endif %}
                 {% endif %}
@@ -136,7 +136,7 @@ writing the ABC for this tune using our
                 {% else %}
                     {% if page.alt_mp3_url contains 'soundcloud.com'%}
                         {% assign url = page.alt_mp3_url | url_encode %}
-                        <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                        <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}&hide_related=true"></iframe>
                     {% endif %}
                 {% endif %}
             {% endif %}
