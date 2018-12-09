@@ -59,9 +59,10 @@ function createABCplayer (tuneID, playerClass, timbre) {
     // Col 3
     abcPlayer += '      <div class="small-5 columns">';
     abcPlayer += '      <div class="speedControl">';
+    abcPlayer += '          <span title="Adjust playback speed with slider">';
     abcPlayer += '      <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
     abcPlayer += '          onchange="changeABCspeed(ABC' + tuneID + ', pButton' + tuneID + ', value)">';
-    abcPlayer += '      <p class="audio">Speed - <output name="level">100</output>%</p>';
+    abcPlayer += '      <p class="audio">Speed - <strong><output name="level">100</output>%</strong></p>';
     abcPlayer += '      </div>';
     abcPlayer += '    </div>';
     abcPlayer += '  </div>';
