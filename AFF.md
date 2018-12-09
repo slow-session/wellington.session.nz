@@ -12,9 +12,9 @@ var textAreas = document.getElementById("abc-textareas");
 During the Auckland Folk Festival 2019 we'll be running a Irish tune slow session.
 We'll be playing Irish tunes that are commonly played in pub sessions at a relaxed pace.
 
-This page contains a sample of tunes that are frequently played at the Wellington slow session. The slider on the right controls the speed of the playback, so that you can practice playing along with the tunes at a slower-than-session pace. We probably won't play all of the tunes and may well play some tunes that aren't on the list, but we wanted to provide suggestions so we're sure to have some tunes in common.
+This page contains a sample of tunes that are frequently played at the Wellington slow session. We probably won't play all of the tunes and may well play some tunes that aren't on the list, but we wanted to provide suggestions so we're sure to have some tunes in common.
 
-The recordings provided can be played as slowly as 50%, and particular sections can be played in a loop using the loop control buttons below the position slider. You can also click on the tune title to see the musical notation.
+The Audio Player provides tools for learning tunes by ear.  Sections of the tune can be played in a loop using the loop control buttons below the position slider. The slider on the right controls the speed of playback allowing you to slow the tune down without altering the pitch. You can also click on the tune name to see the musical notation.
 
 Please come along and join Andy and Ted
 for some relaxed session play
