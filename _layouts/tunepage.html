@@ -38,16 +38,6 @@ Use the ABC player below the music to hear the tune.
 
 {{ content }}
 
-{% unless page.mp3_file %}
-<fieldset>
-<strong>
-A recording for this tune is not available yet. Qualify for glory by
-providing one! Make a recording of yourself or your session playing this
-tune and send it to us at <a href="{{ site.email }}">{{ site.email }}</a>
-</strong></fieldset>
-<br />
-{% endunless %}
-
 {% if page.abc contains "K:" %}
 <!--<h2>Play the ABC version</h2>-->
 <div id="textAreas"></div>
@@ -91,28 +81,33 @@ writing the ABC for this tune using our
 <a href="{{ site.email }}">{{ site.email }}</a>
 </strong>
 </fieldset>
+
 {% endif %}
 
 <div class="attribution">
     <br />
     {% if page.mp3_file %}
-    <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
         Permission to use is gratefully acknowledged and the audio is made available under this licence:
         {{ page.mp3_licence }}</p>
-    {% if page.mp3_url %}
-    <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
-        <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        {% if page.mp3_url contains 'www.youtube.com'%}
-            {% assign urlParts = page.mp3_url | split: '=' %}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ urlParts[1] }}" frameborder="0" allowfullscreen></iframe>
-        {% else %}
-            {% if page.mp3_url contains 'www.facebook.com'%}
-                {% assign url = page.mp3_url | url_encode %}
-                <iframe src="https://www.facebook.com/plugins/video.php?href={{ url }}&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+        {% if page.mp3_url %}
+        <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
+            <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+            {% if page.mp3_url contains 'www.youtube.com'%}
+                {% assign urlParts = page.mp3_url | split: '=' %}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ urlParts[1] }}" frameborder="0" allowfullscreen></iframe>
             {% else %}
-                {% if page.mp3_url contains 'vimeo.com'%}
-                    {% assign urlParts = page.mp3_url | split: 'vimeo.com/'%}
-                    <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                {% if page.mp3_url contains 'www.facebook.com'%}
+                    {% assign url = page.mp3_url | url_encode %}
+                    <iframe src="https://www.facebook.com/plugins/video.php?href={{ url }}&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                {% else %}
+                    {% if page.mp3_url contains 'vimeo.com'%}
+                        {% assign urlParts = page.mp3_url | split: 'vimeo.com/'%}
+                        <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    {% else %}
+                        {% assign url = page.mp3_url | url_encode %}
+                        <iframe width="560" height="315" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
+                    {% endif %}
                 {% endif %}
             {% endif %}
         {% endif %}
@@ -123,7 +118,7 @@ writing the ABC for this tune using our
     {% endif %}
 
     {% if page.alt_mp3_url %}
-    <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
+        <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
         {% if page.alt_mp3_url contains 'www.youtube.com'%}
             {% assign urlParts = page.alt_mp3_url | split: 'v=' %}
@@ -136,12 +131,13 @@ writing the ABC for this tune using our
                 {% if page.alt_mp3_url contains 'vimeo.com'%}
                     {% assign urlParts = page.alt_mp3_url | split: 'vimeo.com/'%}
                     <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    {% else %}
+                        {% assign url = page.alt_mp3_url | url_encode %}
+                        <iframe width="560" height="315" src="https://w.soundcloud.com/player/?url={{ url }}"></iframe>
                 {% endif %}
             {% endif %}
         {% endif %}
     {% endif %}
-    {% endif %}
-
 </div>
 
 <script>

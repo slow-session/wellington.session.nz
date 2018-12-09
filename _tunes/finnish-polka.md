@@ -12,7 +12,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/finnish-polka.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_source: Soundcloud audio posted by gdae-burke
-mp3_url: https://soundcloud.com/gdae-burke
+mp3_url: https://soundcloud.com/gdae-burke/finnish-polka
 abc_source: The Session
 abc_url: https://thesession.org/tunes/418
 source: Wellington
