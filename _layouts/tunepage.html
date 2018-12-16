@@ -94,7 +94,7 @@ writing the ABC for this tune using our
         <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
             <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
             {% if page.mp3_url contains 'www.youtube.com'%}
-                {% assign urlParts = page.mp3_url | split: '=' %}
+                {% assign urlParts = page.mp3_url | split: 'v=' %}
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ urlParts[1] }}" frameborder="0" allowfullscreen></iframe>
             {% else %}
                 {% if page.mp3_url contains 'www.facebook.com'%}
