@@ -30,6 +30,7 @@ Other Slow sessions
 During events like <a href="http://www.irishmusic.org.nz/">Ceol Aneas</a> and some
 of the various NZ folk festivals you might find a slow session or two. Check the webpages below for more info:
 
+* <a href="/aff/">Auckland Folk Festival slow session</a>
 * <a href="/ceolaneas/">Ceol Aneas slow session</a>
 * <a href="/wellyfest/">Wellington Folk Festival slow session</a>
 
