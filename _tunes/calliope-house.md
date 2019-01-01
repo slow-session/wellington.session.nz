@@ -3,8 +3,7 @@ title: Calliope House
 titleID: calliope-house.md
 key: D
 rhythm: jig
-mode:
-date: 2016-10-27
+date: 2019-01-02
 location: Hamilton Arrowtown Dunedin Wellington
 tags:
 regtuneoftheweek:
