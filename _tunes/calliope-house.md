@@ -5,11 +5,13 @@ key: D
 rhythm: jig
 mode:
 date: 2016-10-27
-location: Hamilton Arrowtown Dunedin
+location: Hamilton Arrowtown Dunedin Wellington
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
+mp3_file: /mp3/calliope-house.mp3
+mp3_source: Richard Tait
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 abc_source: Dunedin Fiddle Orchestra
 abc_url: http://nefc.org.nz/
 source: Dunedin
