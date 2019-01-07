@@ -84,34 +84,37 @@ writing the ABC for this tune using our
 
 {% endif %}
 
+<script>
+function show_iframe(url) {
+    // Add other sources as needed
+    if (url.includes('www.youtube.com')) {
+        document.write('<iframe src="https://www.youtube.com/embed/' + url.split('v=')[1] + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>');
+    }
+    else if (url.includes('www.facebook.com')) {
+        document.write('<iframe src="https://www.facebook.com/plugins/video.php?href=' + encodeURI(url) + '&show_text=0&width=560&mute=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>');
+    }
+    else if (url.includes('vimeo.com')) {
+        document.write('<iframe src="https://player.vimeo.com/video/' + url.split('vimeo.com/')[1] + '" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    }
+    else if (url.includes('soundcloud.com')) {
+        document.write('<iframe src="https://w.soundcloud.com/player/?url=' + encodeURI(url) + '&hide_related=true" width="560" height="200" ></iframe>');
+    }
+}
+</script>
+
 <div class="attribution">
     <br />
     {% if page.mp3_file %}
         <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
         Permission to use is gratefully acknowledged and the audio is made available under this licence:
         {{ page.mp3_licence }}</p>
+
         {% if page.mp3_url %}
         <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
-            <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-            {% if page.mp3_url contains 'www.youtube.com'%}
-                {% assign urlParts = page.mp3_url | split: 'v=' %}
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ urlParts[1] }}" frameborder="0" allowfullscreen></iframe>
-            {% else %}
-                {% if page.mp3_url contains 'www.facebook.com'%}
-                    {% assign url = page.mp3_url | url_encode %}
-                    <iframe src="https://www.facebook.com/plugins/video.php?href={{ url }}&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                {% else %}
-                    {% if page.mp3_url contains 'vimeo.com'%}
-                        {% assign urlParts = page.mp3_url | split: 'vimeo.com/'%}
-                        <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    {% else %}
-                        {% if page.mp3_url contains 'soundcloud.com'%}
-                            {% assign url = page.mp3_url | url_encode %}
-                            <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}&hide_related=true"></iframe>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-            {% endif %}
+        <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+        <script>
+        show_iframe("{{ page.mp3_url }}");
+        </script>
         {% endif %}
     {% endif %}
 
@@ -122,25 +125,9 @@ writing the ABC for this tune using our
     {% if page.alt_mp3_url %}
         <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        {% if page.alt_mp3_url contains 'www.youtube.com'%}
-            {% assign urlParts = page.alt_mp3_url | split: 'v=' %}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ urlParts[1] }}" frameborder="0" allowfullscreen></iframe>
-        {% else %}
-            {% if page.alt_mp3_url contains 'www.facebook.com'%}
-                {% assign url = page.alt_mp3_url | url_encode %}
-                <iframe src="https://www.facebook.com/plugins/video.php?href={{ url }}&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-            {% else %}
-                {% if page.alt_mp3_url contains 'vimeo.com'%}
-                    {% assign urlParts = page.alt_mp3_url | split: 'vimeo.com/'%}
-                    <iframe src="https://player.vimeo.com/video/{{ urlParts[1] }}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                {% else %}
-                    {% if page.alt_mp3_url contains 'soundcloud.com'%}
-                        {% assign url = page.alt_mp3_url | url_encode %}
-                        <iframe width="560" height="200" src="https://w.soundcloud.com/player/?url={{ url }}&hide_related=true"></iframe>
-                    {% endif %}
-                {% endif %}
-            {% endif %}
-        {% endif %}
+        <script>
+        show_iframe("{{ page.alt_mp3_url }}");
+        </script>
     {% endif %}
 </div>
 
