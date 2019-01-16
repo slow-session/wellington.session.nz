@@ -6,7 +6,7 @@ rhythm: reel
 date: 2018-09-30
 location: Wellington
 tags:
-regtuneoftheweek:
+regtuneoftheweek: 2019-01-16
 slowtuneoftheweek:
 mp3_file: /mp3/durrow-reel.mp3
 mp3_source: Richard Tait
