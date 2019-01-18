@@ -2,8 +2,8 @@
 title: Tripping Up the Stairs
 titleID: tripping-up-the-stairs.md
 key: D
-rhythm: reel
-date: 2016-12-08
+rhythm: jig
+date: 2019-01-18
 location: Wellington Christchurch
 tags:
 regtuneoftheweek:
@@ -24,7 +24,7 @@ abc: |
     K: Dmaj
     |:FAA GBB|FAd fed|cBc ABc|dfe dAG|
     FAA GBB|FAd fed|c2c ABc|dfe d2A:|
-    dBB fBB|dBB fed|cAA eAA|efe edc|
+    |:dBB fBB|dBB fed|cAA eAA|efe edc|
     dBB fBB|fgf fed|cBc ABc|dfe d3:|
 
 ---
