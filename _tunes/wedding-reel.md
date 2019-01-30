@@ -1,24 +1,24 @@
 ---
-title: MacLeod's Farewell
-titleID: macleods-farewell.md
+title: Wedding Reel
+titleID: wedding-reel.md
 key: D
 rhythm: reel
-date: 2018-06-11
+date: 2019-01-30
 location: Christchurch Wellington
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
-mp3_source:
-mp3_licence:
-mp3_url:
+mp3_file: /mp3/wedding-reel.mp3
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_url: https://www.youtube.com/watch?v=HDjuVSWKhxU
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/518
 abc: |
     X: 6
-    T: MacLeod's Farewell
     T: Wedding Reel
+    T: MacLeod's Farewell
     R: reel
     M: 4/4
     L: 1/8
