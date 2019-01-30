@@ -6,7 +6,7 @@ rhythm: reel
 date: 2019-01-30
 location: Christchurch Wellington
 tags:
-regtuneoftheweek:
+regtuneoftheweek: 2019-01-30
 slowtuneoftheweek:
 mp3_file: /mp3/wedding-reel.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
