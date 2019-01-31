@@ -9,9 +9,10 @@ tags:
 regtuneoftheweek: 2019-01-31
 slowtuneoftheweek:
 mp3_file: /mp3/macleods-farewell.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
-mp3_licence: "© Fergal Scahill. All Rights Reserved."
-mp3_url: https://www.youtube.com/watch?v=HDjuVSWKhxU
+mp3_source: Comhaltas Ceoltóirí Éireann
+mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
+mp3_url: https://archive.comhaltas.ie/tracks/16080
+alt_mp3_url: https://www.youtube.com/watch?v=HDjuVSWKhxU
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/518
