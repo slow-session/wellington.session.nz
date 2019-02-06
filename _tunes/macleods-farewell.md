@@ -7,7 +7,7 @@ date: 2019-01-30
 location: Christchurch Wellington
 tags:
 regtuneoftheweek: 2019-01-31
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-02-07
 mp3_file: /mp3/macleods-farewell.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
