@@ -14,7 +14,7 @@ of print (I believe it was a private publication).
 
 *************************************************************
 
-X:1 
+X:1
 T:The Blessings of Silver
 C: Ed Reavy
 B: Where_The_Shannon_Rises, By Ed Reavy
@@ -23,14 +23,14 @@ M:C|
 R:Reel
 K:Gm
 E:10
-G/2A/2 | BJdBF DGGD | (3DEF CF DFCF | DGGA Bcdg |\
- {a}g^fdg fdcA | Bdce dcBA |*
+G/2A/2 | BJdBF DGGD | (3DEF CF DFCF | DGGA Bcdg |
+ {a}g^fdg fdcA | Bdce dcBA |
 E:9
 DGBG ^FDCA, | DGGA Bcdg | ^fdcA G3 ::\
-  g | bga^f gfdc | =Bcd=e fdcd | bgae ~f2 ge |*
+  g | bga^f gfdc | =Bcd=e fdcd | bgae ~f2 ge |
 E:10
-fdcA BG+GG,+g |  (3bag (3ag^f gfdc | =Bcd=e ~fefa |\
-gbag ^fag=e | =fdcA BGG :| G8||**
+fdcA BG+GG,+g |  (3bag (3ag^f gfdc | =Bcd=e ~fefa |
+gbag ^fag=e | =fdcA BGG :| G8||
 
 X:2
 T:The High Hill
@@ -40,13 +40,13 @@ M:C|
 R:Reel
 K:D
 E:10
-FG |: AD (3FED A,DDE | FGAc dcAG | AD (3fed A,DFA |\
- \GE=CE G2FG | AD (3FED A,DDE |*
+FG |: AD (3FED A,DDE | FGAc dcAG | AD (3fed A,DFA |
+ \GE=CE G2FG | AD (3FED A,DDE |
 E:9
 FGAB {=cd}cBce | dcAG FGAF | GE=CE D2FG ::\
- Addc d2cd | ed (3dcd eddc | AGAB =cBcd |*
-e=c {d}(cBc ecdc | Ad{e}d^c d2cd | ed {e}(3dcd edd=c |\
- AGAB =cded |1 =cAGE DEFG :|2 =cAGE d2 ||**
+ Addc d2cd | ed (3dcd eddc | AGAB =cBcd |
+e=c {d}(cBc ecdc | Ad{e}d^c d2cd | ed {e}(3dcd edd=c |
+ AGAB =cded |1 =cAGE DEFG :|2 =cAGE d2 ||
 
 X:3
 T:In Memory of Coleman
@@ -57,14 +57,14 @@ M:C|
 R:Reel
 K:Gm
 E:9
-F|DFBd cBGF | DF {G} (3FEF GFDF | GABc d^fga |\
- (3bag (3ag^f dgga |(3bag (3ag^f g_fdc |*
+F|DFBd cBGF | DF {G} (3FEF GFDF | GABc d^fga |
+ (3bag (3ag^f dgga |(3bag (3ag^f g_fdc |
 E:10
 (3=Bcd BG FDCD | FGBd c2Bc | c=BcA _BGG ::\
- A | B2 fB gagf | =ec {d}(3c=Bc AFFA |*
+ A | B2 fB gagf | =ec {d}(3c=Bc AFFA |
 E:9
-B2 a/2g/2f/2e/2 fdcA | FGAc BGGA | B2 fB DBfB |\
- DBfB af {G}(3F=EF | GABc dbag | fd (3cBA BG G :|**
+B2 a/2g/2f/2e/2 fdcA | FGAc BGGA | B2 fB DBfB |
+ DBfB af {G}(3F=EF | GABc dbag | fd (3cBA BG G :|
 
 X:4
 T: Love at the Endings
@@ -73,14 +73,14 @@ M:C|
 R:Reel
 K:D
 E:9
-FE | DEFA BcdB | AF (3FEF AFEF | DEFA (3BcB AF |\
- (3GFE (3FED _BEEF | DEFA BcdB |*
+FE | DEFA BcdB | AF (3FEF AFEF | DEFA (3BcB AF |
+ (3GFE (3FED _BEEF | DEFA BcdB |
 E:8
- AF {G}(3FEF ABde | fgfe dfec |1 dBAF D3e :|2 dBAF D3g |\
-fgfe defg | afbf afed | fgfe dfbf |*
+ AF {G}(3FEF ABde | fgfe dfec |1 dBAF D3e :|2 dBAF D3g |
+fgfe defg | afbf afed | fgfe dfbf |
 E:9
-afdf e2 de | fgfe dcdb | AF {G}(3FEF E2 DE |\
- FABc dfec |1 dBAF D3g :|2 dBAF D3e :|**
+afdf e2 de | fgfe dcdb | AF {G}(3FEF E2 DE |
+ FABc dfec |1 dBAF D3g :|2 dBAF D3e :|
 
 X:5
 T: The Ceilier
@@ -88,9 +88,9 @@ C: Ed Reavy
 M:C|
 R:Reel
 K:G
-Bc | d<GBd  c=FAc | BGBd gfdc | Bcde =ffeg |\
- ^fdeg c=FAc | BG{A}GF GABc | d<GBd c2 Bc |*
+Bc | d<GBd  c=FAc | BGBd gfdc | Bcde =ffeg |
+ ^fdeg c=FAc | BG{A}GF GABc | d<GBd c2 Bc |
 E:12
- dgfa gbag | fdcA G2 :| Bc | dg{a}gf g2{a}gf |\
- dgBg dcBc | de{g}fe f2 {g}fe | dfcf dcBc |\
-dg{a}gf gfga | (3bag (3agf gfde | =f2{g}fe fdeg | ^fdcA G2 :|**
+ dgfa gbag | fdcA G2 :| Bc | dg{a}gf g2{a}gf |
+ dgBg dcBc | de{g}fe f2 {g}fe | dfcf dcBc |
+dg{a}gf gfga | (3bag (3agf gfde | =f2{g}fe fdeg | ^fdcA G2 :|

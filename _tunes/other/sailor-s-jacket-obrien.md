@@ -1,0 +1,36 @@
+---
+title: Sailor's Jacket
+titleID: sailor-s-jacket-obrien.md
+key: DMix
+rhythm: reel
+date: 2019-02-12
+location: Other
+tags: obrien
+regtuneoftheweek:
+slowtuneoftheweek:
+mp3_file:
+mp3_source:
+mp3_licence:
+mp3_url:
+alt_mp3_url:
+source: Wellington
+abc_source: Wellington Tunebook Collection
+abc_url: /tunebooks/other/obrien.pdf
+abc: |
+    X:33
+    T:Sailor's Jacket
+    C:Trad, arr. Paddy O'Brien
+    R:reel
+    I:speed 350
+    M:C|
+    K:DMix
+    dfec ~A2AB|cdef gfge|dfec~A2AB|cBcG ED D2:|
+    c|~d2fd adfd|~c2 ec gcec|~d2 fd adfd|eaag edd^c|
+    defg afge|cdef ~g2fg|afge ~f2ed|eaag ed d2||
+    
+    Sailors Jacket: O'Brien writes this in 2 sharps, with all C naturals.
+    (\mulooseness FMD = 0 MD = 0 SJ = 0)
+    
+    
+
+---
