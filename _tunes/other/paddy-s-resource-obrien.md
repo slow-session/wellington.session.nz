@@ -3,7 +3,7 @@ title: Paddy's Resource
 titleID: paddy-s-resource-obrien.md
 key: G
 rhythm: jig
-date: 2019-02-12
+date: 1999-02-12
 location: Other
 tags: obrien
 regtuneoftheweek:
