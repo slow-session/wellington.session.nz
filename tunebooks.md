@@ -36,9 +36,13 @@ Sean Manning's Sets (Dunedin):
 
  * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
 
-Some tunebooks from early days of ABC i.e. the 1990s:
+Sets of tunes put together by Paddy O'Brien
 
+ * [O'Brien sets on line](/tunes_archive/?title=&rhythm=&tags=obrien&location=other&submit=Select)
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
+
+Some other tunebooks from early days of ABC i.e. the 1990s:
+
  * [reavy.pdf](/tunebooks/other/reavy.pdf "PDF")
  * [session1.pdf](/tunebooks/other/session1.pdf "PDF")
  * [session2.pdf](/tunebooks/other/session2.pdf "PDF")
