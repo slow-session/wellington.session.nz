@@ -3,7 +3,7 @@ title: O'Mahony's
 titleID: o-mahony-s-obrien.md
 key: DMix
 rhythm: jig
-date: 2019-02-12
+date: 1999-02-12
 location: Other
 tags: obrien
 regtuneoftheweek:

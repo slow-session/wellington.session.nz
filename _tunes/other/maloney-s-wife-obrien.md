@@ -3,7 +3,7 @@ title: Maloney's Wife
 titleID: maloney-s-wife-obrien.md
 key: D
 rhythm: jig
-date: 2019-02-12
+date: 1999-02-12
 location: Other
 tags: obrien
 regtuneoftheweek:
