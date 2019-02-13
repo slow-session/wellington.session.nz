@@ -17,6 +17,7 @@ source: Dunedin
 abc: |
     X:95
     T:Calliope House
+    C:Dave Richardson
     M:6/8
     L:1/8
     K:Dmaj
