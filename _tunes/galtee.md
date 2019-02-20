@@ -6,7 +6,7 @@ rhythm: reel
 date: 2019-02-21
 location: Wellington
 tags:
-regtuneoftheweek:
+regtuneoftheweek: 2019-02-21
 slowtuneoftheweek:
 mp3_file: /mp3/galtee.mp3
 mp3_source: Richard Tait
