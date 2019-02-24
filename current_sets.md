@@ -73,7 +73,7 @@ If you don't find the set you're looking for you can put tunes together and try 
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_sets.js"></script>
+<script src="{{ site.js_host }}/js/build_table_current_sets.js"></script>
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
