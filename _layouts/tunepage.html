@@ -99,6 +99,12 @@ function show_iframe(url) {
     else if (url.includes('soundcloud.com')) {
         document.write('<iframe src="https://w.soundcloud.com/player/?url=' + encodeURI(url) + '&hide_related=true" width="560" height="200" ></iframe>');
     }
+    else if (url.includes('media.comhaltas.ie/video/')) {
+        document.write('<video width="320" height="240" controls><source src="' + encodeURI(url) + '" type="video/mp4"></video>');
+    }
+    else if (url.includes('media.comhaltas.ie/audio/')) {
+        document.write('<audio width="320" height="240" controls><source src="' + encodeURI(url) + '></audio>');
+    }
 }
 </script>
 

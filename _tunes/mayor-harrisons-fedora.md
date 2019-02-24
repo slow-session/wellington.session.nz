@@ -11,8 +11,8 @@ slowtuneoftheweek:
 mp3_file: /mp3/mayor-harrisons-fedora.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_369_5_niall_o_murchu
-alt_mp3_url:
+mp3_url: https://media.comhaltas.ie/video/cl538/cl538_4.mp4#t=88
+alt_mp3_url: https://media.comhaltas.ie/video/cl369/cl369_5.mp4
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/367#setting20652
