@@ -4,14 +4,14 @@ titleID: battering-ram.md
 key: D
 rhythm: jig
 date: 2018-05-21
-location: Wellington 
-tags: 
+location: Wellington
+tags:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/battering-ram.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_268_5_siobhan_ni_chonnarain_and_donie_lyons
+mp3_url: https://media.comhaltas.ie/video/cl268/cl268_5_Med.mp4
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/382
