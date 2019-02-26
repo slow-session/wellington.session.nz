@@ -2,4 +2,4 @@
 # Replace N.N.N.N with your local IP address
 #
 github:
-  url: "http://N.N.N.N:4002"
+  url: "http://N.N.N.N:4001"
