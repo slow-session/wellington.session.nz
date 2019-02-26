@@ -5,7 +5,7 @@ key: Gmaj
 rhythm: jig
 date: 2019-02-14
 location: Wellington
-notes:
+notes: The second part of the tune comes from the fiddle playing of Thomas Power from Doonbeg in County Clare.
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
@@ -23,8 +23,6 @@ abc: |
     T: Donnybrook Fair
     R: jig
     S: https://connollymusiccollection.bc.edu/document/505
-    N: The second part of the tune comes from the fiddle playing of Thomas Power 
-    N: from Doonbeg in County Clare.
     M: 6/8
     L: 1/8
     K: Gmaj
