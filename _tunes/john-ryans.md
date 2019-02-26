@@ -5,6 +5,7 @@ key: D
 rhythm: polka
 date: 2016-09-28
 location: Wellington
+notes:
 tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:

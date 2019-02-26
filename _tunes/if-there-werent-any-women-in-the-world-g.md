@@ -5,6 +5,7 @@ key: G
 rhythm: barndance
 date: 2016-4-6
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: D
 rhythm: slide
 date: 2018-05-24
 location: Wellington 
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

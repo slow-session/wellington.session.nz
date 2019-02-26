@@ -5,6 +5,7 @@ key: Gmix
 rhythm: slip jig
 date: 2017-03-27
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: Ador
 rhythm: reel
 date: 2017-11-08
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

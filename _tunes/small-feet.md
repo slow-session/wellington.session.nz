@@ -5,6 +5,7 @@ key: F
 rhythm: barndance
 date: 2017-10-31
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

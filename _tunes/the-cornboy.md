@@ -5,6 +5,7 @@ key: Dmix
 rhythm: reel
 date: 2018-11-07
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

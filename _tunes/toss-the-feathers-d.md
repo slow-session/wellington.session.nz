@@ -5,6 +5,7 @@ key: Dmix
 rhythm: reel
 date: 2017-04-19
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-08-24

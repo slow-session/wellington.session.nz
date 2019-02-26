@@ -5,6 +5,7 @@ key: G
 rhythm: slide
 date: 2016-01-01
 location: Wellington Christchurch
+notes:
 tags: vicfolk
 regtuneoftheweek:
 slowtuneoftheweek:

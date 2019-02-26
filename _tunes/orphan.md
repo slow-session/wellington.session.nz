@@ -5,6 +5,7 @@ key: Em
 rhythm: jig
 date: 2017-10-30
 location: Hamilton Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-16

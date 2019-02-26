@@ -5,6 +5,7 @@ key: G
 rhythm: hornpipe
 date: 2016-5-11
 location: Arrowtown Wellington Christchurch
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

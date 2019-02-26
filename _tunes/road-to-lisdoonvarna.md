@@ -5,6 +5,7 @@ key: Edor
 rhythm: slide
 date: 2018-05-22
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

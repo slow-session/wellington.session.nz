@@ -5,6 +5,7 @@ key: A
 rhythm: polka
 date: 2017-05-25
 location: Wellington
+notes:
 tags: vicfolk 
 regtuneoftheweek:
 slowtuneoftheweek:

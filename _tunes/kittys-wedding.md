@@ -6,6 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-06-08
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: A
 rhythm: jig
 date: 2017-05-26
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

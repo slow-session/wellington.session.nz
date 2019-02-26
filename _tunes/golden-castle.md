@@ -5,6 +5,7 @@ key: Gdor
 rhythm: hornpipe
 date: 2017-02-27
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-23

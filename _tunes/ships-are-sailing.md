@@ -6,6 +6,7 @@ rhythm: reel
 mode:
 date: 2016-10-27
 location: Arrowtown Wellington
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

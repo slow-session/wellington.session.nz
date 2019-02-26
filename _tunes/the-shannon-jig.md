@@ -5,6 +5,7 @@ key: A
 rhythm: jig
 date: 2016-01-01
 location:
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

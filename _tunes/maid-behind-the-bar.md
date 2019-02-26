@@ -5,6 +5,7 @@ key: D
 rhythm: reel
 date: 2017-03-16
 location: Wellington Christchurch
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-16

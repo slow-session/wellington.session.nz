@@ -5,6 +5,7 @@ key: G
 rhythm: reel
 date: 2018-08-16
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

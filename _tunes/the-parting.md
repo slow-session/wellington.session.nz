@@ -5,6 +5,7 @@ key: G
 rhythm: waltz
 date: 2018-04-27
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

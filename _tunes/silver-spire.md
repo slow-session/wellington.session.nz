@@ -6,6 +6,7 @@ rhythm: reel
 mode:
 date: 2016-11-17
 location: Wellington
+notes:
 tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek:

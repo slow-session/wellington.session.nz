@@ -5,6 +5,7 @@ key: D
 rhythm: hornpipe
 date: 2017-09-04
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek:

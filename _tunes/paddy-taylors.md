@@ -5,6 +5,7 @@ key: Amix
 rhythm: reel
 date: 2018-05-12
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: Em
 rhythm: reel
 date: 2018-02-04
 location: Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-05

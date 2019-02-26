@@ -78,6 +78,7 @@ with open(tunebookDir + archiveName, 'r') as infile:
             outfile.write('rhythm: ' + rhythmDict[tuneName])
             outfile.write('date: ' + creationDate)
             outfile.write('\nlocation: Other')
+            outfile.write('\nnotes: ')
             outfile.write('\ntags: ' + archiveStub)
             outfile.write("""
 regtuneoftheweek:

@@ -5,6 +5,7 @@ key: Edor
 rhythm: jig
 date: 2016-10-26
 location: Arrowtown Wellington Christchurch
+notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

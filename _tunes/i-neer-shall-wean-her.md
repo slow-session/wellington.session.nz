@@ -5,6 +5,7 @@ key: Ador
 rhythm: jig
 date: 2016-9-27
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

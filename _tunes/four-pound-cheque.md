@@ -6,6 +6,7 @@ rhythm: polka
 mode:
 date: 2016-06-23
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: Edor
 rhythm: jig
 date: 2017-11-15
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-11-15

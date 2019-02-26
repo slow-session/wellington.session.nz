@@ -5,6 +5,7 @@ key: G
 rhythm: slow air
 date: 2018-11-27
 location: Wellington
+notes:
 tags: whistle-class
 mp3_file: /mp3/cause-of-my-sorrows.mp3
 mp3_source: Pat Higgins

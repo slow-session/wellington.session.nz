@@ -5,6 +5,7 @@ key: D
 rhythm: reel
 date: 2016-06-02
 location: Wellington Christchurch
+notes:
 tags: slow-favourite vicfolk slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:

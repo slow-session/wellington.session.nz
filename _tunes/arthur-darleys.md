@@ -5,6 +5,7 @@ key: Amix
 rhythm: jig
 date: 2017-10-04
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

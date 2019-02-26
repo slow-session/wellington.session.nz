@@ -5,6 +5,7 @@ key: G
 rhythm: barndance
 date: 2017-08-07
 location: Wellington Donegal
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

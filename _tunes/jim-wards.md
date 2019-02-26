@@ -6,6 +6,7 @@ rhythm: jig
 mode:
 date: 2016-02-24
 location: Arrowtown Wellington Christchurch
+notes:
 tags: slow-favourite slowsession wellyfest-learn
 regtuneoftheweek:
 slowtuneoftheweek:

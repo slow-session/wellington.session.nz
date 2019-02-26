@@ -5,6 +5,7 @@ key: Gdor
 rhythm: reel
 date: 2018-05-14
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

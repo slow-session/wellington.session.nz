@@ -5,6 +5,7 @@ key: Edor
 rhythm: slip jig
 date: 2017-11-23
 location: Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-12-04

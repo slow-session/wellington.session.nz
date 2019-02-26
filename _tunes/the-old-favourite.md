@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2018-06-11
 location: Christchurch Wellington 
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

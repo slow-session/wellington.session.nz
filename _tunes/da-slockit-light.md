@@ -6,6 +6,7 @@ rhythm:  reel
 mode:
 date: 2016-10-27
 location: Hamilton Dunedin
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

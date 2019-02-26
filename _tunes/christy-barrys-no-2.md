@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2016-03-29
 location: Arrowtown Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

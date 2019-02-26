@@ -5,6 +5,7 @@ key: Ador
 rhythm: hornpipe
 date: 2017-03-09
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-14

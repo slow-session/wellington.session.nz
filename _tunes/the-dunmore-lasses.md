@@ -6,6 +6,7 @@ rhythm: reel
 mode:
 date: 2016-1-26
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

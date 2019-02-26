@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2018-03-01
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-03-08

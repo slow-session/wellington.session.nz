@@ -5,6 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2016-5-4
 location: Wellington Christchurch
+notes:
 tags: vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

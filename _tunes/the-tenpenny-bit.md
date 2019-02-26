@@ -5,6 +5,7 @@ key: Ador
 rhythm: jig
 date: 2018-03-13
 location: Wellington
+notes:
 tags: slow-favourite vicfolk
 regtuneoftheweek:
 slowtuneoftheweek:

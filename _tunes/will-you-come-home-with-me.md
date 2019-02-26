@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2016-11-09
 location: Wellington
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -6,6 +6,7 @@ rhythm: reel
 mode:
 date: 2016-11-09
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession wellyfest-learn ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -6,6 +6,7 @@ rhythm:
 mode:
 date: 2016-10-27
 location: Arrowtown Dunedin
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
