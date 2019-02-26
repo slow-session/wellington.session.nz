@@ -5,6 +5,7 @@ key: Ador
 rhythm: slide
 date: 2016-12-09
 location: Wellington Christchurch
+notes:
 tags: vicfolk
 regtuneoftheweek:
 slowtuneoftheweek:

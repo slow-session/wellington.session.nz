@@ -6,6 +6,7 @@ rhythm: jig
 mode:
 date: 2016-01-01
 location: Arrowtown Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-02-08

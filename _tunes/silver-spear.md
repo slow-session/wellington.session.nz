@@ -5,6 +5,7 @@ key: D
 rhythm: reel
 date: 2016-03-02
 location: Arrowtown Wellington Christchurch
+notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

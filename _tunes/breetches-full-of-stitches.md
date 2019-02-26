@@ -6,6 +6,7 @@ rhythm: polka
 mode:
 date: 2016-09-28
 location: Wellington
+notes:
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:

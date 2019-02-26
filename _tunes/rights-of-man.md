@@ -6,6 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-5-11
 location: Arrowtown Wellington
+notes:
 tags: vicfolk slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: Bdor
 rhythm: reel
 date: 2016-10-12
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:

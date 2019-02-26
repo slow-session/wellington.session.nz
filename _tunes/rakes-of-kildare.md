@@ -5,6 +5,7 @@ key: Ador
 rhythm: jig
 date: 2017-02-14
 location: Wellington Christchurch
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-02-22

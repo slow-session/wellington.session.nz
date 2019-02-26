@@ -5,6 +5,7 @@ key: D
 rhythm: reel
 date: 2017-11-23
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

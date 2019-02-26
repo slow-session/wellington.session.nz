@@ -6,6 +6,7 @@ rhythm: polska
 mode:
 date: 2016-10-27
 location: Dunedin
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

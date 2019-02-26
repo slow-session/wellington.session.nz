@@ -5,6 +5,7 @@ key: D
 rhythm: jig
 date: 2018-10-10
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek: 2018-10-10
 slowtuneoftheweek:

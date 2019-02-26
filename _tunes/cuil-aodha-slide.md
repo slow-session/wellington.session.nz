@@ -5,6 +5,7 @@ key: D
 rhythm: slide
 date: 2016-10-27
 location: Dunedin Wellington Christchurch
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

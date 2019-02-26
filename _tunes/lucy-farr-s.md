@@ -6,6 +6,7 @@ rhythm: barndance
 mode:
 date: 2016-4-06
 location: Arrowtown Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: Edor
 rhythm: reel
 date: 2018-12-10
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2018-12-10

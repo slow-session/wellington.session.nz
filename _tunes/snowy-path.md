@@ -6,6 +6,7 @@ rhythm: slip jig
 mode:
 date: 2017-12-11
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

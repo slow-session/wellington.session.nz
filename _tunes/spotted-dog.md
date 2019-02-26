@@ -5,6 +5,7 @@ key: A
 rhythm: jig
 date: 2019-01-18
 location: Wellington 
+notes:
 tags: 
 regtuneoftheweek: 
 slowtuneoftheweek: 

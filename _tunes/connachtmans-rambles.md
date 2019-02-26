@@ -6,6 +6,7 @@ rhythm: jig
 mode:
 date: 2015-11-1
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite vicfolk slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek:

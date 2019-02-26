@@ -5,6 +5,7 @@ key: Bmin
 rhythm: jig
 date: 2019-02-13
 location: 
+notes:
 tags: 
 regtuneoftheweek: 
 slowtuneoftheweek: 

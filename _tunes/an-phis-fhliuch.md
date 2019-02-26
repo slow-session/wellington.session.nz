@@ -5,6 +5,7 @@ key: G
 rhythm: slip jig
 date: 2018-12-19
 location: Wellington 
+notes:
 tags: 
 regtuneoftheweek: 
 slowtuneoftheweek: 

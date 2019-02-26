@@ -2,9 +2,10 @@
 title: Mayor Harrison's Fedora
 titleID: mayor-harrisons-fedora.md
 key: Edor
-rhythm:
+rhythm: reel
 date: 2019-02-25
 location: Wellington
+notes: 
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

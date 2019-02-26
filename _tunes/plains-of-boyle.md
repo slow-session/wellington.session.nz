@@ -6,6 +6,7 @@ rhythm: hornpipe
 mode:
 date: 2016-2-3
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

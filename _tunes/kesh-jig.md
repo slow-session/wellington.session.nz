@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2017-05-25
 location: Wellington  Christchurch
+notes:
 tags: vicfolk
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,7 @@ key: G
 rhythm: hornpipe
 date: 2018-10-28
 location: Wellington
+notes:
 tags:
 regtuneoftheweek: 2018-11-05
 slowtuneoftheweek:

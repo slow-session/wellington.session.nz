@@ -5,6 +5,7 @@ key: Bmin
 rhythm: reel
 date: 2018-09-22
 location: Wellington
+notes:
 tags:
 regtuneoftheweek: 2018-09-22
 slowtuneoftheweek:

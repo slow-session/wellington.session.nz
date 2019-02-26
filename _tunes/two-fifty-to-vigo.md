@@ -5,6 +5,7 @@ key: Bdor
 rhythm: reel
 date: 2015-11-10
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

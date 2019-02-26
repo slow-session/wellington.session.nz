@@ -6,6 +6,7 @@ rhythm: waltz
 mode:
 date: 2016-01-12
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-01-15

@@ -5,6 +5,7 @@ key: D
 rhythm: hornpipe
 date: 2016-01-01
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

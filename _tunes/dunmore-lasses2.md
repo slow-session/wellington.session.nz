@@ -6,6 +6,7 @@ rhythm: reel
 mode:
 date: 2016-1-26
 location:  Wellington
+notes:
 tags: whistle-class
 regtuneoftheweek:
 slowtuneoftheweek:

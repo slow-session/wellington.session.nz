@@ -5,6 +5,7 @@ key: Ddor
 rhythm: reel
 date: 2018-03-10
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite 
 regtuneoftheweek:
 slowtuneoftheweek:

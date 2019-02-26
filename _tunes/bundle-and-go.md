@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2017-07-26
 location: Wellington Donegal
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-27

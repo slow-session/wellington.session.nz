@@ -6,6 +6,7 @@ rhythm: planxty
 mode:
 date: 2016-09-28
 location: Arrowtown Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

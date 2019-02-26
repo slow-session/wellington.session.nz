@@ -5,6 +5,7 @@ key: G
 rhythm: jig
 date: 2017-04-06
 location: Wellington
+notes:
 tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-06

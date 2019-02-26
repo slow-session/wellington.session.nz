@@ -5,6 +5,7 @@ key: D
 rhythm: polka
 date: 2018-07-31
 location: Wellington 
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

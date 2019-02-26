@@ -6,6 +6,7 @@ key: D
 mode:
 date: 2018-08-16
 location: Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

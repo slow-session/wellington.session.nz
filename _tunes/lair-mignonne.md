@@ -5,6 +5,7 @@ key: A
 rhythm: barndance
 date: 2017-05-26
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-07

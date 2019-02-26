@@ -5,6 +5,7 @@ key: A
 rhythm: reel
 date: 2018-06-10
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

@@ -5,6 +5,9 @@ layout: page
 Type: {{ page.rhythm }}, added
 <time datetime="{{ page.date | date_to_xmlschema }}" setTuneprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>
 <br />Played in: {{ page.location }}
+{% if page.notes %}
+<p>Notes: {{ page.notes }}</p>
+{% endif %}
 <br />
 
 <!-- Area to store unrolled ABC (style="display:none;")-->

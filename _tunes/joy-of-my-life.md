@@ -5,6 +5,7 @@ key: Gmaj
 rhythm: jig
 date: 2019-02-14
 location: Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

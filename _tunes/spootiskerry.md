@@ -5,6 +5,7 @@ key: G
 rhythm: reel
 date: 2015-12-21
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

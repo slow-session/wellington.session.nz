@@ -5,6 +5,7 @@ key: Edor
 rhythm: reel
 date: 2017-11-23
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite vicfolk slowsession wellyfest-learn
 regtuneoftheweek:
 slowtuneoftheweek:

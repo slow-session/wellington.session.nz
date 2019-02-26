@@ -5,6 +5,7 @@ key: Dmix
 rhythm: jig
 date: 2017-11-29
 location: Wellington 
+notes:
 tags: 
 regtuneoftheweek:
 slowtuneoftheweek:

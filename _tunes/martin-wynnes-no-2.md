@@ -5,6 +5,7 @@ key: D
 rhythm: reel
 date: 2017-02-09
 location: Wellington
+notes:
 tags: slow-favourite slowsession ceol-aneas
 regtuneoftheweek:
 slowtuneoftheweek: 2018-03-25

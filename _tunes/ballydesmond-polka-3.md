@@ -5,6 +5,7 @@ key: G
 rhythm: polka
 date: 2016-09-28
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite vicfolk slowsession wellyfest
 regtuneoftheweek:
 slowtuneoftheweek:

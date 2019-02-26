@@ -5,6 +5,7 @@ key: A
 rhythm: reel
 date: 2017-10-13
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

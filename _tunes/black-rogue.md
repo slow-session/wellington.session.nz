@@ -5,6 +5,7 @@ key: Amix
 rhythm: jig
 date: 2018-05-21
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

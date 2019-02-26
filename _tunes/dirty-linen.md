@@ -5,6 +5,7 @@ key: Amix
 rhythm: slip jig
 date: 2017-06-29
 location: Wellington
+notes:
 tags: slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-14

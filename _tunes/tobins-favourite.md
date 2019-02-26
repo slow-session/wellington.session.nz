@@ -5,6 +5,7 @@ key: D
 rhythm: jig
 date: 2016-01-01
 location: Arrowtown Wellington Christchurch
+notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-05-25

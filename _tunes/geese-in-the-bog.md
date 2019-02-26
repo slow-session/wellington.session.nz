@@ -5,6 +5,7 @@ key: Ador
 rhythm: jig
 date: 2015-11-01
 location: Arrowtown Wellington
+notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

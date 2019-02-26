@@ -5,6 +5,7 @@ key: D
 rhythm: jig
 date: 2017-05-15
 location: Arrowtown
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:

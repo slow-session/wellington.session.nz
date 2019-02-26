@@ -6,6 +6,7 @@ rhythm: jig
 mode:
 date: 2016-11-24
 location: Wellington
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek:

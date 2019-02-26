@@ -5,6 +5,7 @@ key: Amix
 rhythm: reel
 date: 2017-10-02
 location: Wellington Christchurch
+notes:
 tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-10-04

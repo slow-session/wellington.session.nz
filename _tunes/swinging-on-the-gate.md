@@ -5,6 +5,7 @@ key: G
 rhythm: reel
 date: 2016-01-01
 location: Wellington Christchurch
+notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-23

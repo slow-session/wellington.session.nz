@@ -5,6 +5,7 @@ key: Am
 rhythm: jig
 date: 2018-02-19
 location: Wellington
+notes:
 tags: slow-favourite slowsession 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-19

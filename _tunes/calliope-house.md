@@ -5,6 +5,7 @@ key: D
 rhythm: jig
 date: 2019-01-02
 location: Hamilton Arrowtown Dunedin Wellington
+notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
