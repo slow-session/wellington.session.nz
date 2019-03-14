@@ -20,12 +20,11 @@ abc_url: https://thesession.org/tunes/83
 abc: |
     X: 5
     T: Rights of Man
-    Z: id:dc-hornpipe-46
     M:C|
     L:1/8
     K:Em
-    GA|(3BcB (3ABA (3GAG (3FGF|EFGA B2ef|gfed edBd|cBAG A2GA|!
+    |:GA|(3BcB (3ABA (3GAG (3FGF|EFGA B2ef|gfed edBd|cBAG A2GA|!
     (3BcB (3ABA (3GAG (3FGF|EFGA B2ef|gfed Bgfg|e2E2 E2:|!
-    ga|babg efga|babg egfe|d2d^c defg|afdf a2gf|!
+    |:ga|babg efga|babg egfe|d2d^c defg|afdf a2gf|!
     edef gfga|(3bag (3agf gfef|gfed Bgfg|e2E2 E2:|!
 ---
