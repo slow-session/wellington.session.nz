@@ -23,8 +23,8 @@ abc: |
     M: 6/8
     L: 1/8
     K: Ador
-    B|"C"cEE GEE|cEE GAB|cEE "G"GED|"Am"EAA A2B|
-    "C"cEE "G"GEE|cEE GAB|cBA "G"GED|"Am"EAA A2:|:B|
-    "C"cde "G"ged|"Am"eaf ged|"C"cde "G"ged|"Am"eag ~a3|
+    |:B|"C"cEE GEE|cEE GAB|cEE "G"GED|"Am"EAA A2B|
+    "C"cEE "G"GEE|cEE GAB|cBA "G"GED|"Am"EAA A2:|
+    |:B|"C"cde "G"ged|"Am"eaf ged|"C"cde "G"ged|"Am"eag ~a3|
     "C"cde "G"ged|"Am"eaf ged|"C"cBA "G"GED|"Am"EAA A2:|
 ---
