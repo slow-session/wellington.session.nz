@@ -12,8 +12,8 @@ slowtuneoftheweek:
 mp3_file: /mp3/reconciliation.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: 
-abc_url: 
+mp3_url:
+abc_url:
 source: Wellington
 abc: |
     X: 1
@@ -30,7 +30,8 @@ abc: |
     M: C|
     L: 1/8
     K: A
-    |: "A"A2 c{B}A eAfA | eAfA "E7"ecBc | "A"A2 c{B}A eAfA | "(E)"ecBc "E7"AFEF | "A"A2 c{B}A eAfA |
-    | eAfA "E7"ecBc | "A"ABAF EAcf | "E7"ecBc "A"A4 :: "A"A2{B}ce a3f | "E7"efed cdcB |
-    | "A"A2{B}ce a3g | "Bm"fbba "E7"gefg | "A"a2ae faec | "Bm"dBcA "E7"BAFG | "A"ABAF EAcf | "E7"ecBc "A"A4 :|
+    |: "A"A2 c{B}A eAfA | eAfA "E7"ecBc | "A"A2 c{B}A eAfA | "(E)"ecBc "E7"AFEF |
+    "A"A2 c{B}A eAfA | eAfA "E7"ecBc | "A"ABAF EAcf | "E7"ecBc "A"A4 :|
+    |: "A"A2{B}ce a3f | "E7"efed cdcB | "A"A2{B}ce a3g | "Bm"fbba "E7"gefg |
+    "A"a2ae faec | "Bm"dBcA "E7"BAFG | "A"ABAF EAcf | "E7"ecBc "A"A4 :|
 ---
