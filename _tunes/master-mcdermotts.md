@@ -4,7 +4,7 @@ titleID: master-mcdermotts.md
 key: D
 rhythm: reel
 date: 2016-01-01
-location:
+location: Wellington
 notes:
 tags:
 regtuneoftheweek:

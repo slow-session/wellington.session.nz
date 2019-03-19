@@ -4,7 +4,7 @@ titleID: poll-hapenny.md
 key: Amix
 rhythm: hornpipe
 date: 2016-01-01
-location:
+location: Wellington
 notes:
 tags:
 regtuneoftheweek:

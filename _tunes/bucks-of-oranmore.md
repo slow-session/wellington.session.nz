@@ -14,6 +14,7 @@ mp3_file: /mp3/bucks-of-oranmore.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/bucks_of_oranmore/
+alt_mp3_url: https://www.youtube.com/watch?v=x80MqGX-uCY
 abc_url:
 source: Wellington
 abc: |
