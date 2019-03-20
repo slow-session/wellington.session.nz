@@ -6,7 +6,7 @@ Configuration file: /Users/asjl/GitHub/wellington.session.nz/_config.yml
  Incremental build: disabled. Enable with --incremental
       Generating... 
        Jekyll Feed: Generating feed for posts
-                    done in 21.688 seconds.
+                    done in 23.487 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
 Processing: 2bar-alphabetical.abc 2bar-by-type.abc 2bar-slow-favourite-alphabetical.abc ceolaneas-hints.abc current-alphabetical.abc current-by-type.abc slow-favourite-alphabetical.abc slow-session-hints.abc 
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:987:37: error: Line too much shrunk (327/385pt of 325pt)
@@ -19,20 +19,8 @@ Processing: 2bar-alphabetical.abc 2bar-by-type.abc 2bar-slow-favourite-alphabeti
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:4230:53: error: Line too much shrunk (334/386pt of 325pt)
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:4541:33: error: Line too much shrunk (325/383pt of 325pt)
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:6171:44: error: Line too much shrunk (329/397pt of 325pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:956:46: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:956:67: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:957:34: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:958:64: error: Bad tie
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:5184:33: warning: Line underfull (648pt of 682pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1836:46: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1836:67: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1837:34: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1838:64: error: Bad tie
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4456:33: warning: Line underfull (648pt of 682pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4514:46: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4514:67: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4515:34: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4516:64: error: Bad tie
 error: Lack of %%multicol end
 warning: No tunes written to output file
 Processing: obrien.abc reavy.abc seansSetBook1704.abc session1.abc session2.abc 
@@ -45,28 +33,13 @@ Processing: obrien.abc reavy.abc seansSetBook1704.abc session1.abc session2.abc
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/reavy.abc:44:1: error: '\' ignored
   44  \GE=CE G2FG | AD (3FED A,DDE |
       ^
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:40:18: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:369:2: error: Invalid tempo
- 369 Q:1/4
-       ^
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:366:3: error: Bad tie
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:369:0: error: Note too short
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:437:2: error: Invalid tempo
- 437 Q:1/4
-       ^
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:440:77: warning: Line overfull (650pt of 646pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:437:0: error: Note too short
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:501:82: warning: Line overfull (642pt of 641pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:504:73: error: Line too much shrunk (692/814pt of 682pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:505:74: error: Line too much shrunk (684/811pt of 682pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:573:78: warning: Line overfull (656pt of 646pt)
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:646:0: error: Bad character
- 646 1dcd ecA|dcd ecA|GEE cEE|DED D2:|
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:662:0: error: Bad character
+ 662 1dcd ecA|dcd ecA|GEE cEE|DED D2:|
      ^
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:647:0: error: Bad character
- 647 2dcA AGE|GEE D2E|GEE cEE|DED D2|
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:663:0: error: Bad character
+ 663 2dcA AGE|GEE D2E|GEE cEE|DED D2|
      ^
-/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:1035:0: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:1051:0: error: Bad tie
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:298:77: warning: Line overfull (642pt of 641pt)
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:299:78: warning: Line overfull (648pt of 641pt)
 /Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:312:88: warning: Line overfull (654pt of 646pt)

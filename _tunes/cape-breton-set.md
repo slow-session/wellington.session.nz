@@ -23,9 +23,9 @@ abc: |
     M: 4/4
     L: 1/8
     K: D Major
-    |: vF>uG | vA2 d2 F2 d2 | AFAd vf2 f<a | vg3 ue-c cAc z | dcdB A2 uF>-G |
-    A2 d2 F2 d2 | AFAd vf2 f<a | vg2 ug-e cAce | vd4 ud2 z2 :|
-    |: uf>vg z2 z4 | va3 g fdfa | vg3 e cAce | dcde fefa | gfgb a2 uf-g |
+    |: vF>uG | vA2 d2 F2 d2 | AFAd vf2 f<a | vg3 u(ec) cAc z | dcdB A2 u(F>G) |
+    A2 d2 F2 d2 | AFAd vf2 f<a | vg2 u(ge) cAce | vd4 ud2 z2 :|
+    |: uf>vg z2 z4 | va3 g fdfa | vg3 e cAce | dcde fefa | gfgb a2 u(fg) |
     [1 va3 g fdfa | g3 e cAce | dcdf eace | vd4 ud2 z2:|
     [2 (3agf ge fdec | dBAF DFAd | BGBd cAce | vd4 ud2 z2 |]
     T: Strathspey #1
