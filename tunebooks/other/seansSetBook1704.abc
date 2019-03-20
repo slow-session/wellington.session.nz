@@ -37,14 +37,14 @@ K:D
 f2df ef g/f/e|dfed cAA2|f/g/f df edc[dB]|Addcd2cd|
 eaag efge|dfed =cAG[cG]|Addc d3=c|Adde fded||
 =cAGc A3d|B3=cA2dB|=cAGB AGFG|Adde fded|
-=cAGB A3d|BGGF GBdB|-cAG2 AGFG|Addcd3e||
+=cAGB A3d|BGGF GBdB|=cAG2 AGFG|Addcd3e||
 f/e/d ad fd[Aa]d|faaf gee2|fdad faaf|gagf d=c A/B/c|
 defg a3b|agfag3e|fedf edcA|dcde fded||"last time"=cAGED4||
 
 X:3
-T:Aoibhneas Ellis Ní Cheallaigh Set
+T:Aoibhneas Ellis Nï¿½ Cheallaigh Set
 T:(Last tune is either Yellow Wattle or Hardiman)
-T:Aoibhneas Ellis Ní Cheallaigh
+T:Aoibhneas Ellis Nï¿½ Cheallaigh
 M:9/8
 L:1/8
 R:Slip Jig
@@ -52,7 +52,7 @@ K:Ador
 ||:A3 ABA AGE|A2E G2E DEG|A3 ABA AGE|G3 G2E DEG:||:
 c2A BAG AGE|cBA BGE DEG|c2A BAG AGE|G3 G2E DEG:||
 T:Taim in Arrears
-T:Máll Rua
+T:Mï¿½ll Rua
 K:G
 ||:DGG GAG FGA|BdB GAB c3|DGG GAG FGA|BdB cAF G3:||:
 ded BAG FED|ded cAB c3|ded cAG FGA|BdB cAF G3:||
@@ -86,8 +86,8 @@ B2 B>c de|f2 f2 g>a|f2 fedc|1B2 B2 a>g:|2B2 B2 d>c|
 
 X:5
 T:Budgie's Ball Jigs
-C:From Aiofe Granville's 'Sáimhín Só'
-T: Budgie's Ball (Conal O'Gráda)
+C:From Aiofe Granville's 'Sï¿½imhï¿½n Sï¿½'
+T: Budgie's Ball (Conal O'Grï¿½da)
 R: jig
 M: 6/8
 L: 1/8
@@ -140,7 +140,7 @@ K: Emin
 
 X:7
 %%scale .6
-T: Caisleán na nOg/ Bobby Casey's/ Her Long Black Hair
+T: Caisleï¿½n na nOg/ Bobby Casey's/ Her Long Black Hair
 C:First and last tunes are a Set from David Kidron
 R: hornpipe
 M: 4/4
@@ -171,7 +171,7 @@ T:Carraigaholt/ Woman of the House/O'Rourke's
 T:Humours of carraigaholt
 M:C|
 L:1/8
-K:D 
+K:D
 ||:"D"dcAF "G"G2 AG |"F#m"F2 DE "Bm"FGAB |"F"=cAAF "G"G2 FG |"D"Adde fdec |
 "etc"dcAF GBAG |F2 DE FGAB |=cAAF G2 FG |Addc d3 e :||:
 "D/A"fdde fdgf |"A/C#"edcd efge |"Bm/B"f3 d fdgf |"A/A"edcd e3 g |
@@ -184,7 +184,7 @@ GE||:DBBA B2 BA|GABd eBdB |A/B/A GB A2 B/c/d|eBB2 eBdB|
 GBBA B2BA|GA B/c/d eBdB |GABG A/B/A GA|BGAG EGD2:||:
 f3d edBd|edge dABd|f3d edBd|eaag eaa2|
 f3d edBd|g3e dcBA|GABG A/B/A GA|BGAG EGD2:||
-T:O'Rourke's     
+T:O'Rourke's
 M:4/4
 K:D
 ||:ed |cAAe fded |cAeA dfed |cAAe fded |fa ge d2 :||
@@ -361,22 +361,21 @@ M: 4/4
 L: 1/8
 R: reel
 K: Dmix
-|:D2 F/E/D FGAB | c2Bd cA G2 | Add^c d2 cd | ed^cd ed^cA | 
+|:D2 F/E/D FGAB | c2Bd cA G2 | Add^c d2 cd | ed^cd ed^cA |
 D2 F/E/D FGAB | c2 Bd cA G2 | ABAG EGAB | cAGE ED D2 :|
-|: f-ggf g2 ed | cded cA A2 |gaag a3g | eaag edcd |
+|: (fg)gf g2 ed | cded cA A2 |gaag a3g | eaag edcd |
 fggf g2 ed | cded dAAG | ABAG EGAB | cAGE ED D2 :|
 T:Rip the Calico
-Q:1/4
 M:C
 L:1/8
-K:G 
+K:G
 |:G2GF G2 GA |BA A/A/A BA A/A/A |G3 GF G2 GA |BAGE ED D2 ::
 BddB G3 A |BddB cA A2 |BddB G3 A |BAGE ED D2 ::
 GE E/E/E c3 A |BddB BA A2 |GE E/E/E c3 A |BAGE EDDE :|
 T:Trim the Velvet
 M:4/4
 L:1/8
-K:G 
+K:G
 G3 B AGFA |G2 B/c/d cAFA |G3 B AGFD |defd cAFA |
 G3 B A3 c |BcdB cAFA |DG G/G/G A[BG][cF]A |defd cAFA |
 dgeg dg g2 |dedB cAFA |dgfg dg g2 |defd cAFA |
@@ -413,9 +412,9 @@ T:First House In Connaught/Sailor's Bonnet
 T:The First House in Connaught
 M:C|
 L:1/8
-K:G 
+K:G
 ||:DG G/G/G AG G/G/G |BddB AGFE |DF F/F/F AF F/F/F |ABcA BGAF |
-DG G/G/G AG G/G/G |BddB AGFA |defg agfd |cAFA G4:||: 
+DG G/G/G AG G/G/G |BddB AGFA |defg agfd |cAFA G4:||:
 gfga gfdf |g2 bg gede |fede fgag |g2 af bfaf |
 gfga gfdf |g2 bg gfdc |defg agfd |cAFA G4 :||
 T: Sailor's Bonnet, The
@@ -434,10 +433,11 @@ M:6/8
 L:1/8
 C:Jono Lonie
 O:New Zealand
-Q:1/4
 K:G
-||:E3 B,EG|FED EFA|E3 B,EG|FED B,3|E3 B,EG|FED EFA|BdB AFE|1 FGA FED:|2 FGA FGA|
-|:BdB AFA|FBF AFE|BdB AFf|edB dBA|BdB AFA|BFB AFA|gfe dBA|1 FGA FED:|2 FGA BGF||
+||:E3 B,EG|FED EFA|E3 B,EG|FED B,3|
+E3 B,EG|FED EFA|BdB AFE|1 FGA FED:|2 FGA FGA|
+|:BdB AFA|FBF AFE|BdB AFf|edB dBA|
+BdB AFA|BFB AFA|gfe dBA|1 FGA FED:|2 FGA BGF||
 T:Perry's
 M:4/4
 C:Jono Lonie
@@ -498,11 +498,15 @@ d2f ede| fdB AFA|dcB AFD| CEC A,B,C|ABc d2f| edB AFD|FAF DEF| EDC D3|
 T:Brae Roy Road
 M:6/8
 K:D
-A,3 A,B,D|E3 EFE|DFE DdA|B3 A>Bc|d>dd c>BA|d2B A>FE|D>DD EDE|1F>EE E>DB,:|2F>DD D3|
-|:DFA DGB|Ddc d2e|f2d e2c|d2B ABc|d>dd cBA|d2B AFE|D>DD EDE|1F>EE E3:|2F>DD D3|\
+A,3 A,B,D|E3 EFE|DFE DdA|B3 A>Bc|
+d>dd c>BA|d2B A>FE|D>DD EDE|1F>EE E>DB,:|2F>DD D3|
+|:DFA DGB|Ddc d2e|f2d e2c|d2B ABc|
+d>dd cBA|d2B AFE|D>DD EDE|1F>EE E3:|2F>DD D3|\
 T:Rodney Millar's Wife (actual name unavailable)
-f3f>gf|ecA ecA|Bcd ecA|Bcd efg|f3f>gf|ecA ecA|Bcd ecA|1ABc d2A:|2ABc d2=c|:
-B3 B=cB|GBB BcB|ADD dDD|cDD =cDD|B3 B=cB|GBB BcB|ABA ABc|1d3 d2=c:|2d3 d2A|
+f3f>gf|ecA ecA|Bcd ecA|Bcd efg|
+f3f>gf|ecA ecA|Bcd ecA|1ABc d2A:|2ABc d2=c|:
+B3 B=cB|GBB BcB|ADD dDD|cDD =cDD|
+B3 B=cB|GBB BcB|ABA ABc|1d3 d2=c:|2d3 d2A|
 
 X:23
 %%scale .6
@@ -536,15 +540,19 @@ T:Humours of Kiltyclougher, The
 M: 6/8
 L: 1/8
 K: Dmix
-|:B|AGD G2E|c2E G2E|~D3 D2E|GED ~D2B|AGD G2E|c2E EFG|~A3 BGE|ABA A2:|
-B|:c2B c2d|ecA ABc|BAG GAB|dBG G2B|c2B c2d|ecA ABc|BAG dBG|ABA A2:|
+|:B|AGD G2E|c2E G2E|~D3 D2E|GED ~D2B|
+AGD G2E|c2E EFG|~A3 BGE|ABA A2:|
+B|:c2B c2d|ecA ABc|BAG GAB|dBG G2B|
+c2B c2d|ecA ABc|BAG dBG|ABA A2:|
 T: The Rolling Waves
 R: jig
 M: 6/8
 L: 1/8
 K: Dmaj
-|:F2 E EDE|F2 D DED|F2 E EFA|d2 e fdA|F2 E EDE|F2 D DED|AFE EFA|B3 d3:|
-|:ABd e2 f|d2 cB2 A|ABd e2 f|d2 A B3|ABd ede|fdB BAF|AFE EFA|B3 d3:|
+|:F2 E EDE|F2 D DED|F2 E EFA|d2 e fdA|
+F2 E EDE|F2 D DED|AFE EFA|B3 d3:|
+|:ABd e2 f|d2 cB2 A|ABd e2 f|d2 A B3|
+ABd ede|fdB BAF|AFE EFA|B3 d3:|
 
 X:25
 T:Kerfunten/ Have a Drink/ Scotsman/ Eddie Kelly's
@@ -554,23 +562,31 @@ T:Kerfunten, The
 M: 6/8
 L: 1/8
 K: Dmaj
-BBB BAG|Bcd efg|ddd edB|A3 AGA|BBB BAG|Bcd efg|ddd edB|ABA G3:|:
-ggg gab|eee ede|ggg gab|bag a3|ggg gab|eee ede|ddd gdB |ABA G3:|
+BBB BAG|Bcd efg|ddd edB|A3 AGA|
+BBB BAG|Bcd efg|ddd edB|ABA G3:|
+|:ggg gab|eee ede|ggg gab|bag a3|
+ggg gab|eee ede|ddd gdB |ABA G3:|
 T:Have a Drink with me
 K:G
-||:d/c/|BAG EGD|EGD EGD|BAG EGD|EAA ABc|BAG EGD|EGD EGD|BAG E2D|EGG G2:||:
-D|GBd e2d|dgd B2 A|GBd e2d|eaa aga|bag agf|gfe dBG|BAG EGD|EGG G2:||
+||:d/c/|BAG EGD|EGD EGD|BAG EGD|EAA ABc|
+BAG EGD|EGD EGD|BAG E2D|EGG G2:|
+|:D|GBd e2d|dgd B2 A|GBd e2d|eaa aga|
+bag agf|gfe dBG|BAG EGD|EGG G2:||
 T:Scotsman over the Border
 K:D
-||:D2D FDF|AFA d2A|BdB BAB|def edB|AD2 FDF|AFA d2A|BdB BAF|dAF E2D:||:
-dfa afa|bag fge|dfa afe|def edB|dfa afa|bag fed|B3 AFA|dAF E2D:||
+||:D2D FDF|AFA d2A|BdB BAB|def edB|
+AD2 FDF|AFA d2A|BdB BAF|dAF E2D:||:
+|:dfa afa|bag fge|dfa afe|def edB|
+dfa afa|bag fed|B3 AFA|dAF E2D:||
 T:Eddie Kelly's
 M:6/8
 L:1/8
 R:jig
 K:Em
-||:BEF G2A|Bee edc|B3 GAB|AFD AFD|BEF G2A|Bee edc|B3 GAB|AFD E3:||:
-gfe fed|Bee Bee|gfe fed|B^cd e2f|gfe fed|Bee Bee|gfe fed|1B^cd e2f:|2B^cd ed=c||
+||:BEF G2A|Bee edc|B3 GAB|AFD AFD|
+BEF G2A|Bee edc|B3 GAB|AFD E3:|
+|:gfe fed|Bee Bee|gfe fed|B^cd e2f|
+gfe fed|Bee Bee|gfe fed|1B^cd e2f:|2B^cd ed=c||
 
 X:26
 %%scale .65
@@ -580,9 +596,9 @@ R: reel
 M: 4/4
 L: 1/8
 K: Dmaj
-E|FAAB AFED|FAAB A2de|fBBA Bcde|fdgf efdB|
+|:E|FAAB AFED|FAAB A2de|fBBA Bcde|fdgf efdB|
 FAAB AFED|FAAB A2de|fBBA BcdB|AFEF D3:|
-e|faag fdde|fdad fdd2|efga beef|gebe gee2|
+|:e|faag fdde|fdad fdd2|efga beef|gebe gee2|
 faaf b2af|defd e2de|fBBA BcdB|AFEF D3:|
 T: The Sally Gardens
 R: reel
@@ -795,8 +811,8 @@ K: Ador
 %%Scale .8
 
 X:36
-T:Párraig's Jigs in A
-C:Párraig was a visitor to sessions at ceol Aneas, Chrtistchurch and Dunedin in June 2016
+T:Pï¿½rraig's Jigs in A
+C:Pï¿½rraig was a visitor to sessions at ceol Aneas, Chrtistchurch and Dunedin in June 2016
 T:The Rambler
 R: jig
 M: 6/8
@@ -841,17 +857,17 @@ eaa bag|eaf ged|c2A BAG|EFG ABd|eaa bag|eaf ged|c2A BAG|EFG A3:|:
 X:38
 T: Rakish Paddy/ Dublin Reel
 T: Rakish Paddy
-M:4/4 
-L:1/8 
-K:Dmix 
+M:4/4
+L:1/8
+K:Dmix
 AB |:"Am"c2AB c2 AB |"C"cAAG E[DG] [D2G2] |"D"Add^c d2fe |dcAG FGAB |
 "Am"c2AB c2 AB |"C"cAAG E[DG] [D2G2]|"D"DEFG ABcA |dcAG FA D2 ::
 "C"eg g2 ag g2 |eg g2 ed^cd |"Am"ea a2 ba a2 |ea a2 egdg |
 "C"eg g2 ag g2 |f3e defg |"D"afge fde^c |dcAG FD D2 :|
-T:The Dublin Reel     
+T:The Dublin Reel
 M:C|
 L:1/8
-K:D 
+K:D
 ||:dF F2 dFeF |dF F2 AFEF |[1dF ~F2 dfed |cABG AFEF :|[2d2 dc dfed |cABG AFEf |:
 eA A2 eAfA |eA A2 BAFA |[1eA A2 egfe |dBcA BAFA :|[2d2 dc dfed |cABG AFEF|:
 d2 dc dAFA |dcdA FDFA |d2 dc dfed |cABG AFEF :|
@@ -871,8 +887,8 @@ K:Bm
 bBB aBf|BbB aBf|ecB Ace|agf edc|BAB cBc|dcd ede|fBB gBf|ecA B3:||
 
 X:40
-T:Rógaire Dubh/ Girl of the Big House
-T:Rógaire Dubh, An
+T:Rï¿½gaire Dubh/ Girl of the Big House
+T:Rï¿½gaire Dubh, An
 M:6/8
 K:D
 |:d|cAA BGG|cAA AdB|c2A BAG|AFD DdB|
@@ -962,7 +978,7 @@ K:D
 FA||:d2AF D2EF|G2FG FDB,D|G,DFA d2cA|B/c/d ed cABc|
 dBAF D2EF|GEFD FDB,D|GE F/E/D EDB,G,|A,B,DE D2FA:||:
 d2de faef|dcBA F2ED|B,EE2 GFED|B,DEF GABc|
-dcde f/g/a ef|dcBA F2 EF|G/F/E FD EDB,G,|A,B,DE D2| 
+dcde f/g/a ef|dcBA F2 EF|G/F/E FD EDB,G,|A,B,DE D2|
 T:Ships are Sailing
 K:G
 ||:Beed B^cdB|AD F/E/D AD F/E/D|EDEF GFGA|Beef gfed|
@@ -1035,16 +1051,16 @@ B||:cAd cAG|EDE GAB|cAc BAG|EAA ~A2B|cAd cAG|EDE GAB|cde =fed|cAA A3:||:
 f-gg ged|cAB c2d|eaa age|ed^c def|gea ged|cAB cde|=fed cAG|EAA A3:||
 
 X:47
-T:Teampall an Glentáinn/ Fermoy Lasses
-T:Teampall an Glentáinn
+T:Teampall an Glentï¿½inn/ Fermoy Lasses
+T:Teampall an Glentï¿½inn
 M:4/4
 K:D
 |:dcAG EFF2|AGG2 EFF2|1dcAG EFF2|A2GE EDD2:|2AGG2 EFF2|A2GE EDAD|:
 E/F/G AB =c3B|Add2 efed|dcAG EFGE|1A2GE EDAD:|2A2GE EDD2|
-T:Fermoy Lasses     
+T:Fermoy Lasses
 M:4/4     %Meter
 L:1/8     %
-K:G 
+K:G
 |GE E2 BE E2 |GE E2 BcBA |GE E2 BE E2 |AFDF AcBA |
 GE E2 BE E2 |GE E2 BcBA |G2 GF GBdB |AFDF AcBA:||:
 G2 BG dGBG |G2Bd efg2 |G2 BG dGBG |AFDF AcBA |
