@@ -41,6 +41,9 @@ Sets of tunes put together by Paddy O'Brien
  * [O'Brien sets on line](/tunes_archive/?title=&rhythm=&tags=obrien&location=other&submit=Select)
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
 
+Paddy Fahey tunes:
+ * [Paddy Fahey tunes compiled by MariaHolohan](/tunebooks/other/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
+
 Some other tunebooks from early days of ABC i.e. the 1990s:
 
  * [reavy.pdf](/tunebooks/other/reavy.pdf "PDF")
