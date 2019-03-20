@@ -25,7 +25,7 @@ abc: |
     %z Modified by Ted Cizadlo & Megan Ward
     K: G
     G3A Bcdg|e~B3 eBdB|~G3A B2dB|AcBA GEDE|
-    ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+    ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:||
     |:~g3f gedg|e~B3 d2ef|~g2gf gedB|AcBA GEDE|
     ~g3f gedg|e~B3 d2ef|gbaf gedB|AcBA GEDE:||
 
