@@ -1,0 +1,166 @@
+Warning: untrusted X11 forwarding setup failed: xauth key data not generated
+Already up to date.
+Configuration file: /Users/asjl/GitHub/wellington.session.nz/_config.yml
+            Source: /Users/asjl/GitHub/wellington.session.nz
+       Destination: _site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 20.446 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+Processing: 2bar-alphabetical.abc 2bar-by-type.abc 2bar-slow-favourite-alphabetical.abc ceolaneas-hints.abc current-alphabetical.abc current-by-type.abc slow-favourite-alphabetical.abc slow-session-hints.abc 
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:987:37: error: Line too much shrunk (327/385pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:2106:38: error: Line too much shrunk (327/385pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:4545:44: error: Line too much shrunk (329/397pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:4972:53: error: Line too much shrunk (334/386pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-alphabetical.abc:5650:33: error: Line too much shrunk (325/383pt of 325pt)
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:2459:37: error: Line too much shrunk (327/385pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:2982:38: error: Line too much shrunk (327/385pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:4230:53: error: Line too much shrunk (334/386pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:4541:33: error: Line too much shrunk (325/383pt of 325pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/2bar-by-type.abc:6171:44: error: Line too much shrunk (329/397pt of 325pt)
+error: Unknown flag: -n ignored
+error: Unknown flag: -n ignored
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:956:46: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:956:67: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:957:34: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:958:64: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:3213:42: error: Not a note
+3213 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:3213:42: error: Chord not closed
+3213 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-alphabetical.abc:5184:33: warning: Line underfull (648pt of 682pt)
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1836:46: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1836:67: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1837:34: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:1838:64: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:2535:42: error: Not a note
+2535 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:2535:42: error: Chord not closed
+2535 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4456:33: warning: Line underfull (648pt of 682pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4514:46: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4514:67: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4515:34: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/current-by-type.abc:4516:64: error: Bad tie
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/slow-favourite-alphabetical.abc:1224:42: error: Not a note
+1224 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/slow-favourite-alphabetical.abc:1224:42: error: Chord not closed
+1224 ~G3A Bcdg|e~B3 d2ef|~g3f gedB|AcBA GEDE:|[
+                                               ^
+error: Unknown flag: -n ignored
+error: Lack of %%multicol end
+warning: No tunes written to output file
+Processing: obrien.abc reavy.abc seansSetBook1704.abc session1.abc session2.abc 
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/obrien.abc:343:38: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/obrien.abc:534:40: warning: Line overfull (650pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/obrien.abc:800:5: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/obrien.abc:831:8: warning: Line overfull (652pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/obrien.abc:877:10: warning: Line overfull (648pt of 646pt)
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/reavy.abc:32:12: error: Decoration !GG,! not defined
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/reavy.abc:44:1: error: '\' ignored
+  44  \GE=CE G2FG | AD (3FED A,DDE |
+      ^
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:40:18: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:369:2: error: Invalid tempo
+ 369 Q:1/4
+       ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:366:3: error: Bad tie
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:369:0: error: Note too short
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:437:2: error: Invalid tempo
+ 437 Q:1/4
+       ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:440:77: warning: Line overfull (650pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:437:0: error: Note too short
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:501:82: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:504:73: error: Line too much shrunk (692/814pt of 682pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:505:74: error: Line too much shrunk (684/811pt of 682pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:573:78: warning: Line overfull (656pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:646:0: error: Bad character
+ 646 1dcd ecA|dcd ecA|GEE cEE|DED D2:|
+     ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:647:0: error: Bad character
+ 647 2dcA AGE|GEE D2E|GEE cEE|DED D2|
+     ^
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/seansSetBook1704.abc:1035:0: error: Bad tie
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:298:77: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:299:78: warning: Line overfull (648pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:312:88: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:313:85: warning: Line overfull (653pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:322:79: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:323:76: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:331:77: warning: Line overfull (652pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:332:80: warning: Line overfull (657pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:341:89: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:342:85: warning: Line overfull (650pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:351:82: warning: Line overfull (648pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:352:71: warning: Line overfull (652pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:362:82: warning: Line overfull (660pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:373:84: warning: Line overfull (644pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:374:88: warning: Line overfull (647pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:383:94: warning: Line overfull (660pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:384:87: warning: Line overfull (648pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:395:91: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:396:91: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:407:79: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:408:80: warning: Line overfull (650pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:417:87: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:418:97: warning: Line overfull (660pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:427:89: warning: Line overfull (650pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:428:83: warning: Line overfull (655pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:438:87: warning: Line overfull (656pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:439:84: warning: Line overfull (651pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:451:83: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:461:88: warning: Line overfull (644pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:462:78: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:472:79: warning: Line overfull (653pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:474:89: warning: Line overfull (646pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:483:87: warning: Line overfull (649pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:484:77: warning: Line overfull (644pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:495:88: warning: Line overfull (658pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:496:88: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:497:93: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:506:75: warning: Line overfull (653pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:507:74: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:517:99: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:518:84: warning: Line overfull (646pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:526:84: warning: Line overfull (643pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:527:88: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:535:99: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:536:88: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:546:80: warning: Line overfull (653pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:547:83: warning: Line overfull (650pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:560:82: warning: Line overfull (644pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:561:80: warning: Line overfull (644pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:570:81: warning: Line overfull (648pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:571:91: warning: Line overfull (649pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:580:86: warning: Line overfull (651pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:581:87: warning: Line overfull (654pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:591:90: warning: Line overfull (660pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:592:73: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:601:86: warning: Line overfull (646pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:602:78: warning: Line overfull (652pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:610:85: warning: Line overfull (642pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:611:87: warning: Line overfull (647pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session1.abc:624:107: warning: Line overfull (658pt of 646pt)
+error: Unknown flag: -n ignored
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:688:40: warning: Line overfull (647pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:764:34: warning: Line overfull (641pt of 641pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:843:37: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:924:39: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:963:38: warning: Line overfull (648pt of 646pt)
+/Users/asjl/GitHub/wellington.session.nz/_site/tunebooks/other/session2.abc:966:46: warning: Line overfull (653pt of 646pt)
