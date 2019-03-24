@@ -42,7 +42,8 @@ Sets of tunes put together by Paddy O'Brien
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
 
 Paddy Fahey tunes:
- * [Paddy Fahey tunes compiled by Maria Holohan](/tunebooks/other/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
+ * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis](/tunebooks/other/Paddy_Fahey_Holohan_1995_Tune_.pdf "PDF")
+ * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/other/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
 
 Some other tunebooks from early days of ABC i.e. the 1990s:
 
