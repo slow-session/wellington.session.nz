@@ -13,7 +13,7 @@ mp3_file: /mp3/paddy-faheys-reel-1.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=4sUQnv51_EI
-alt_mp3_url:
+alt_mp3_url: http://www.capeirish.com/tune_vault/kc/sgt.mp3#t=77
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/463
