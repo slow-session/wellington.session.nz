@@ -122,22 +122,25 @@ function show_iframe(url) {
         {% if page.mp3_url %}
         <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        <script>
+        <p><script>
         show_iframe("{{ page.mp3_url }}");
         </script>
+        </p>
         {% endif %}
-    {% endif %}
-
-    {% if page.abc_source %}
-    <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
     {% endif %}
 
     {% if page.alt_mp3_url %}
         <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+        <p>
         <script>
         show_iframe("{{ page.alt_mp3_url }}");
         </script>
+        </p>
+    {% endif %}
+
+    {% if page.abc_source %}
+        <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
     {% endif %}
 </div>
 
