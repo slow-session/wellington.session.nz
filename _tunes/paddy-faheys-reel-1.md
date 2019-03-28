@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-03-28
 mp3_file: /mp3/paddy-faheys-reel-1.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
