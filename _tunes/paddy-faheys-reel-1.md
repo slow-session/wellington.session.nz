@@ -21,15 +21,14 @@ abc: |
     X: 8
     T: Paddy Fahey's
     T: AKA No. 1
+    %Z: Modified by Ted Cizadlo
     R: reel
     M: 4/4
     L: 1/8
     K: Ddor
-    D2 A,D FEFG | Ad^cA ~d3 e | ~f2 df edcA | dcAG FDCE |
-    D2 A,D FEFG | Ad^cA d3 e | f/2g/2agf edcA |1 dcAG FDCE :|2 dcAG FDdc |]
-    Ad~d2 adfd|~c3G EFGc|Ad~d2 adfd|~c3d edcA|
-    ~a2^ga ABcA|dcAG FDCE|~D2 A,D FEFG |Ad^cA d3=c|
-    Ad~d2 adfd|c2Gc EcGc|Ad~d2 Adfd|~c3d edcA|
-    ~a2^ga ABcA|dcAG FDCE|~D2 A,D FEFG |Ad^cA d3E||
+    D2 A,D FEFG | Addcd2 de | fedf edce | dcAG FDCE |
+    D2 A,D FEFG | Addc d2de| f2gf edcA |1 dcAG FDD2 :|2 dcAG FDdc |]
+    |:d2ed aded | c2Gc EcGc | d2ed aded | cBcd edce |
+    ~a2^ga ABcA|dcAG FDCE|~D2 A,D FEFG |1 Addc d3e :|2 Addcd4 |]
 
 ---
