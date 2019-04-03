@@ -7,7 +7,7 @@
   * Developed as part of websites for http://session.nz and http://wellington.session.nz
   * by Ted Cizadlo and Andy Linton
   * Code available at:
-  * https://github.com/slow-session/session.nz/blob/master/js/audioID_controls.js
+  * https://github.com/slow-session/wellington.session.nz/blob/master/js/audioID_controls.js
   * Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence.
   *
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
