@@ -4,7 +4,7 @@ titleID: mountain-road.md
 key: D
 rhythm: reel
 date: 2017-11-23
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: reconciliation.md
 key: A
 rhythm: reel
 date: 2016-08-11
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

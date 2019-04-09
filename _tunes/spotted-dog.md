@@ -4,7 +4,7 @@ titleID: spotted-dog.md
 key: A
 rhythm: jig
 date: 2019-01-18
-location: Wellington 
+location: Raglan Wellington 
 notes:
 tags: 
 regtuneoftheweek: 

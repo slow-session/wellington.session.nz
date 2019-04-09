@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 mode:
 date: 2016-09-28
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slowsession wellyfest
 regtuneoftheweek:

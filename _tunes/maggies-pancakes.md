@@ -5,7 +5,7 @@ key: D
 rhythm:  reel
 mode:
 date: 2016-10-27
-location: Dunedin
+location: Raglan Dunedin
 notes:
 tags:
 regtuneoftheweek:

@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 mode:
 date: 2016-01-26
-location: Auckland Arrowtown Wellington
+location: Raglan Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

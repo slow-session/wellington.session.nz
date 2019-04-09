@@ -4,7 +4,7 @@ titleID: calliope-house.md
 key: D
 rhythm: jig
 date: 2019-01-02
-location: Hamilton Arrowtown Dunedin Wellington
+location: Raglan Hamilton Arrowtown Dunedin Wellington
 notes:
 tags:
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: johnny-macklejohns.md
 key: D
 rhythm: reel
 date: 2016-12-16
-location: Arrowtown Wellington Christchurch
+location: Raglan Arrowtown Wellington Christchurch
 notes:
 tags: slowsession
 regtuneoftheweek:

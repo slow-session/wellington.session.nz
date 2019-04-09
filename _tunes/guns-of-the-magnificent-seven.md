@@ -4,7 +4,7 @@ titleID: guns-of-the-magnificent-seven.md
 key: Ador
 rhythm: reel
 date: 2017-11-08
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: meals-by-maurice-pt-1.md
 key: G
 rhythm: jig
 date: 2018-03-18
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

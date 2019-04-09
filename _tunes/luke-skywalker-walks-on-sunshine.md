@@ -4,7 +4,7 @@ titleID: luke-skywalker-walks-on-sunshine.md
 key: A
 rhythm: jig
 date: 2017-05-26
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

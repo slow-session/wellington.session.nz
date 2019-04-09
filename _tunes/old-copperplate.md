@@ -4,7 +4,7 @@ titleID: old-copperplate.md
 key: Ador
 rhythm: reel
 date: 2017-08-04
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

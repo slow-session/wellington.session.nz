@@ -4,7 +4,7 @@ titleID: trip-to-pakistan.md
 key: Edor
 rhythm: reel
 date: 2016-10-26
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

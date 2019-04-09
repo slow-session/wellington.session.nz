@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 mode:
 date: 2016-03-08
-location: Auckland Wellington
+location: Raglan Auckland Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: cup-of-tea.md
 key: Edor
 rhythm: reel
 date: 2016-5-4
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

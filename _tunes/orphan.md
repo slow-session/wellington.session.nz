@@ -4,7 +4,7 @@ titleID: orphan.md
 key: Em
 rhythm: jig
 date: 2017-10-30
-location: Hamilton Wellington
+location: Raglan Hamilton Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

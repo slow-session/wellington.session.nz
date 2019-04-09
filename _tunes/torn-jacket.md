@@ -4,7 +4,7 @@ titleID: torn-jacket.md
 key: D
 rhythm: reel
 date: 2016-12-2
-location: Wellington Christchurch
+location: Raglan Wellington Christchurch
 notes:
 tags: slowsession
 regtuneoftheweek:

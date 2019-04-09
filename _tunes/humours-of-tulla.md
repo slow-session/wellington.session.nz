@@ -4,7 +4,7 @@ titleID: humours-of-tulla.md
 key: D
 rhythm: reel
 date: 2017-05-15
-location: Arrowtown
+location: Raglan Arrowtown
 notes:
 tags:
 regtuneoftheweek:

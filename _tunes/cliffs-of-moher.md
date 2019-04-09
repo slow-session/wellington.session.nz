@@ -4,7 +4,7 @@ titleID: cliffs-of-moher.md
 key: Ador
 rhythm: jig
 date: 2016-02-17
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

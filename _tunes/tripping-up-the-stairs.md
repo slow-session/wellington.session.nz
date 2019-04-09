@@ -4,7 +4,7 @@ titleID: tripping-up-the-stairs.md
 key: D
 rhythm: jig
 date: 2019-01-18
-location: Auckland Wellington Christchurch
+location: Raglan Auckland Wellington Christchurch
 notes:
 tags:
 regtuneoftheweek:
