@@ -4,7 +4,7 @@ titleID: dublin-reel.md
 key: D
 rhythm: reel
 date: 2016-12-08
-location: Wellington
+location: Auckland Wellington
 notes:
 tags: slowsession 
 regtuneoftheweek:

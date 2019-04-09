@@ -5,7 +5,7 @@ key: G
 rhythm:  reel
 mode:
 date: 2016-10-27
-location: Dunedin
+location: Auckland Dunedin
 notes:
 tags:
 regtuneoftheweek:

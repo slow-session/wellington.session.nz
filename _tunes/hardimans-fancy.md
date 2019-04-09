@@ -4,7 +4,7 @@ titleID: hardimans-fancy.md
 key: Bmin
 rhythm: jig
 date: 2019-02-13
-location: Wellington
+location: Auckland Wellington
 notes:
 tags:
 regtuneoftheweek:

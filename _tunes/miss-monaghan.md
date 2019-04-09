@@ -4,7 +4,7 @@ titleID: miss-monaghan.md
 key: D
 rhythm: reel
 date: 2017-04-24
-location: Wellington 
+location: Auckland Wellington 
 notes:
 tags: 
 regtuneoftheweek:

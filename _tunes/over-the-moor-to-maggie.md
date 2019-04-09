@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 mode:
 date: 2016-03-08
-location: Arrowtown Wellington
+location: Auckland Arrowtown Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

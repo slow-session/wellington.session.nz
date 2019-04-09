@@ -4,7 +4,7 @@ titleID: maid-behind-the-bar.md
 key: D
 rhythm: reel
 date: 2017-03-16
-location: Wellington Christchurch
+location: Auckland Wellington Christchurch
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

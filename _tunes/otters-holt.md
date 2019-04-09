@@ -4,7 +4,7 @@ titleID: otters-holt.md
 key: Bdor
 rhythm: reel
 date: 2016-4-11
-location: Arrowtown Wellington Christchurch
+location: Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

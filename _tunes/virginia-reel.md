@@ -4,7 +4,7 @@ titleID: virginia-reel.md
 key: D
 rhythm: reel
 date: 2018-06-11
-location: Christchurch Wellington 
+location: Auckland Christchurch Wellington 
 notes:
 tags: 
 regtuneoftheweek:

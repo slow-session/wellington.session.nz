@@ -4,7 +4,7 @@ titleID: saddle-the-pony.md
 key: G
 rhythm: jig
 date: 2017-05-15
-location: Wellington Christchurch
+location: Auckland Wellington Christchurch
 notes:
 tags:
 regtuneoftheweek:

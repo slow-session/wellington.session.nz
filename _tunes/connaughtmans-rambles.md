@@ -4,7 +4,7 @@ titleID: connaughtmans-rambles.md
 key: C
 rhythm: jig
 date: 2017-02-14
-location: Wellington Christchurch
+location: Auckland Wellington Christchurch
 notes:
 tags: vicfolk slowsession
 regtuneoftheweek:
