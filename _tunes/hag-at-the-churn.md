@@ -4,7 +4,7 @@ titleID: hag-at-the-churn.md
 key: D
 rhythm: jig
 date: 2017-05-15
-location: Auckland Arrowtown
+location: Raglan Auckland Arrowtown
 notes:
 tags:
 regtuneoftheweek:

@@ -5,7 +5,7 @@ key: G
 rhythm: reel
 mode:
 date: 2017-05-18
-location: Arrowtown Dunedin Wellington
+location: Raglan Arrowtown Dunedin Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

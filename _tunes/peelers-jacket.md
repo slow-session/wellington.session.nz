@@ -4,7 +4,7 @@ titleID: peelers-jacket.md
 key: Gdor
 rhythm: reel
 date: 2016-01-01
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: vicfolk slowsession 
 regtuneoftheweek:

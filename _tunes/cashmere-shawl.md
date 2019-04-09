@@ -4,7 +4,7 @@ titleID: cashmere-shawl.md
 key: Ador
 rhythm: reel
 date: 2017-06-12
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

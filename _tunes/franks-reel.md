@@ -5,7 +5,7 @@ key: A
 rhythm: reel
 mode:
 date: 2016-01-01
-location: Wellington
+location: Raglan Wellington
 notes:
 tags:
 regtuneoftheweek:

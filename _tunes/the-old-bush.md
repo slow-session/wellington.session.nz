@@ -4,7 +4,7 @@ titleID: the-old-bush.md
 key: Dmix
 rhythm: reel
 date: 2016-4-27
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

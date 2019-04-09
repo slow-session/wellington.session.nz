@@ -5,7 +5,7 @@ key: Bdor
 rhythm: polka
 mode:
 date: 2016-10-27
-location: Wellington Dunedin
+location: Raglan Wellington Dunedin
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: lair-mignonne.md
 key: A
 rhythm: barndance
 date: 2017-05-26
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slowsession 
 regtuneoftheweek:

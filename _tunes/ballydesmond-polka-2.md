@@ -4,7 +4,7 @@ titleID: ballydesmond-polka-2.md
 key: Ador
 rhythm: polka
 date: 2016-01-01
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite wellyfest
 regtuneoftheweek:

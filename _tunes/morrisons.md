@@ -4,7 +4,7 @@ titleID: morrisons.md
 key: Edor
 rhythm: jig
 date: 2016-10-26
-location: Arrowtown Wellington Christchurch
+location: Raglan Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

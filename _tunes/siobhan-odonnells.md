@@ -4,7 +4,7 @@ titleID: siobhan-odonnells.md
 key: A
 rhythm: reel
 date: 2017-09-20
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slow-favourite slowsession 
 regtuneoftheweek:

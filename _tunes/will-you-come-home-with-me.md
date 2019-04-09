@@ -4,7 +4,7 @@ titleID: will-you-come-home-with-me.md
 key: G
 rhythm: jig
 date: 2016-11-09
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: 
 regtuneoftheweek:

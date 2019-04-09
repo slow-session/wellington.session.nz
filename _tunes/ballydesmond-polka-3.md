@@ -4,7 +4,7 @@ titleID: ballydesmond-polka-3.md
 key: G
 rhythm: polka
 date: 2016-09-28
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession wellyfest
 regtuneoftheweek:

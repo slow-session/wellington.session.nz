@@ -4,7 +4,7 @@ titleID: garrett-barry-s.md
 key: G
 rhythm: jig
 date: 2016-01-01
-location: Arrowtown Wellington Christchurch
+location: Raglan Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

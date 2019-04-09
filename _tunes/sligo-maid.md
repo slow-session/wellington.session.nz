@@ -4,7 +4,7 @@ titleID: sligo-maid.md
 key: Ador
 rhythm: reel
 date: 2016-06-08
-location: Arrowtown Wellington
+location: Raglan Arrowtown Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

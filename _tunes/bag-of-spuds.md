@@ -4,7 +4,7 @@ titleID: bag-of-spuds.md
 key: Ador
 rhythm: reel
 date: 2017-08-02
-location: Wellington
+location: Raglan Wellington
 notes:
 tags: slowsession 
 regtuneoftheweek:

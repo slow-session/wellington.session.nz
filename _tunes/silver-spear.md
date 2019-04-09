@@ -4,7 +4,7 @@ titleID: silver-spear.md
 key: D
 rhythm: reel
 date: 2016-03-02
-location: Auckland Arrowtown Wellington Christchurch
+location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:
