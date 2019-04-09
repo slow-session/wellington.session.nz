@@ -6,8 +6,9 @@ permalink: /nz_sessions/
 
 You can find out more about the sessions in other NZ cities at:
 
-  * Auckland Irish Sessions - The Claddagh
-    * <a href="https://www.facebook.com/groups/1461764424153462/">Facebook</a>
+  * Auckland Irish Sessions
+    * <a href="https://www.facebook.com/groups/1461764424153462/">The Claddagh</a>
+    * <a href="https://www.facebook.com/groups/723372071348737/">Tuesdays at Florrie's</a>
   * Tuesday at Biddys, Hamilton
     * <a href="https://www.facebook.com/Tuesday-at-Biddys-Hamilton-134702863269582/">Facebook</a>
   * Irish music session at the Celtic - Palmerston North
