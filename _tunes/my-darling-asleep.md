@@ -4,7 +4,7 @@ titleID: my-darling-asleep.md
 key: D
 rhythm: jig
 date: 2016-09-28
-location: Arrowtown Wellington Christchurch
+location: Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:

@@ -4,7 +4,7 @@ titleID: sliabh-russell.md
 key: Ador
 rhythm: jig
 date: 2017-04-21
-location: Wellington
+location: Auckland Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
 regtuneoftheweek:

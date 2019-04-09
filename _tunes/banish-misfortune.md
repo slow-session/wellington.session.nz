@@ -4,7 +4,7 @@ titleID: banish-misfortune.md
 key: Dmix
 rhythm: jig
 date: 2016-01-26
-location: Arrowtown Wellington
+location: Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

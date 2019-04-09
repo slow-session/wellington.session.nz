@@ -5,7 +5,7 @@ key: Edor
 rhythm: jig
 mode:
 date: 2017-01-23
-location: Wellington
+location: Auckland Wellington
 notes:
 tags:
 regtuneoftheweek:

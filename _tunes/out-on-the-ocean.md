@@ -4,7 +4,7 @@ titleID: out-on-the-ocean.md
 key: G
 rhythm: jig
 date: 2016-1-26
-location: Arrowtown Wellington Christchurch
+location: Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:
