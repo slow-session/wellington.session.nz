@@ -50,16 +50,12 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
         </select>
         &emsp;
         <select id="location-box" name="location" onChange="enable_button()">
+            <option value="">All Locations</option>
             {% for location in locations %}
-            {% if location contains 'ellington' %}
-            <option value="{{ location | downcase }}" selected>{{ location | capitalize }}</option>
-            {% else %}
             {% if location != '' %}
             <option value="{{ location | downcase }}">{{ location | capitalize }}</option>
             {% endif %}
-            {% endif %}
             {% endfor %}
-            <option value="alltunes">All Locations</option>
         </select>
         </span>    
         &emsp;

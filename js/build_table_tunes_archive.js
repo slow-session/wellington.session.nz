@@ -4,7 +4,7 @@
   * Version: 1.0
   * Date: 7 Dec 2016
   *
-  * Developed as part of websites for http://session.nz and http://wellington.session.nz
+  * Developed as part of website for http://wellington.session.nz
   * by Ted Cizadlo and Andy Linton
   * Code available at:
   * https://github.com/slow-session/wellington.session.nz/blob/master/js/audioID_controls.js
@@ -123,18 +123,13 @@
          }
      }
      var location = getQueryVariable('location');
-     // default to showing Wellington tunes
-     if (!location) {
-         location = 'wellington';
-     }
-     if (location != 'alltunes') {
+     if (location) {
          searchTerm += location;
+         var e = document.getElementById('location-box');
+         if (e) {
+             e.value = location;
+         }
      }
-     var e = document.getElementById('location-box');
-     if (e) {
-         e.value = location;
-     }
-    
      // Define the index terms for lunr search
      var tuneIndex = lunr(function() {
          this.field('id');
