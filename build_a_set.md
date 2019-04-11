@@ -3,69 +3,19 @@ layout: page
 title: Build a Set
 permalink: /build_a_set/
 ---
-You can put a set of tunes together for practicing the change over between tunes
-on this page.
-
 Find the tunes you want, and then use the "Select" button on each to choose them
 in the order you want to play them in the set. Now you can use the ABC player to
 hear the tunes played one after another.
-
-If you need the printed music you can print only that using "Print this Set"
-button and you can use the "Download ABC" button save the ABC to use in tools
-like <a href="https://sourceforge.net/projects/easyabc/">EasyABC</a>.
-
-Use the "Reset" button to start a new set.
-
-<!-- Show a header for where the dots will appear -->
-<div id="paperHeader"><h2>Musical Notation appears here</h2></div>
-
-<!-- Draw the dots -->
-<div class="output" id='output'>
-</div>
-
-<!-- Area to store ABC -->
-<textarea id="ABCraw" style="display:none;"></textarea>
-
-<!-- Area to store unrolled ABC -->
-<textarea id="ABCprocessed" style="display:none;"></textarea>
-
-<!-- Area to store filename for download -->
-<textarea id="filename" style="display:none;"></textarea>
-
-<!-- Controls for ABC player -->
-<div id="ABCplayer" ></div>
-
-<!-- Allow the user to save their ABC-->
-<form>
-<p>
-<span title="Clear the music notation to start a new set">
-    <input value='Reset' type='button' class="loopButton" onclick='Reset()' />
-</span>
-</p>
-<p>
-<span title="When you're happy with your selection you can print your set using this button.
-Please think of the trees!">
-   <input class="button" type="button" class="loopButton" onclick="printDiv('paper0')" value="Print this Set" />
-</span>
-</p>
-<p>
-<span title="Download the ABC you've entered. Don't lose your work!">      
-	 <input value='Download ABC' type='button' class="loopButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
-</span>
-</p>
-</form>
-
-<div id="audioPlayer"></div>
 
 <!-- Some boilerplate that's common to a number of pages -->
 {% include filter-variables.html %}
 
 <div id="search_controls">
 <fieldset>
-    <legend>Select from current Wellington Tunes:</legend>    
+    <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
         <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
+        <span title="Filter the Tunes Archive for tunes by title or by a rhythm such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slowsession'">        
 		<input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
         &emsp;
@@ -88,10 +38,10 @@ Please think of the trees!">
         </select>
         &emsp;
         <select id="location-box" name="location" onChange="enable_button()">
-            <option value="">All Locations</option>
+        <option value="">All Locations</option>
             {% for location in locations %}
             {% if location != '' %}
-            <option value="{{ location }}">{{ location | capitalize }}</option>
+                <option value="{{ location }}">{{ location | capitalize }}</option>
             {% endif %}
             {% endfor %}
         </select>
@@ -107,8 +57,51 @@ Please think of the trees!">
 </div>
 
 <br />
+
+<!-- Show a header for where the dots will appear -->
+<div id="paperHeader"><h1>Musical Notation will appear here</h1></div>
+
+<!-- Draw the dots -->
+<div class="output" id='output'>
+</div>
+
+<!-- Controls for ABC player -->
+<div id="ABCplayer" ></div>
+
+<!-- Allow the user to save their ABC-->
+<form>
+<div class="row" style="max-width:800px">
+    <div class="small-6 columns">
+        <span title="Clear the music notation to start a new set">
+            <input value='RESET' type='button' class="loopButton" onclick='Reset()' />
+        </span>
+    </div>
+    <div class="small-3 columns">
+        <span title="When you're happy with your selection you can print your set using this button.
+Please think of the trees!">
+            <input class="button" type="button" class="loopButton" onclick="printDiv('paper0')" value="Print this Set" />
+        </span>
+    </div>
+    <div class="small-3 columns">
+        <span title="Download the ABC you've entered. Don't lose your work!">      
+    	   <input value='Download ABC' type='button' class="loopButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
+        </span>
+    </div>
+</div>
+</form>
+
+<br />
 <div id="tunes-table"></div>
 <div id="abc-textareas"></div>
+
+<!-- Area to store ABC -->
+<textarea id="ABCraw" style="display:none;"></textarea>
+
+<!-- Area to store unrolled ABC -->
+<textarea id="ABCprocessed" style="display:none;"></textarea>
+
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;"></textarea>
 
 <script>
     window.store = {
@@ -134,13 +127,13 @@ Please think of the trees!">
 
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_table_build_a_set.js"></script>
+<script src="{{ site.js_host }}/js/build_table_build_a_set2.js"></script>
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[0,0]];
+    $.tablesorter.defaults.sortList = [[1,0]];
 
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
+    $("#search-results").tablesorter({headers: { 0:{sorter: false}}});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });
