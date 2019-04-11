@@ -38,10 +38,10 @@ hear the tunes played one after another.
         </select>
         &emsp;
         <select id="location-box" name="location" onChange="enable_button()">
-            <option value="">All Locations</option>
+        <option value="">All Locations</option>
             {% for location in locations %}
             {% if location != '' %}
-            <option value="{{ location }}">{{ location | capitalize }}</option>
+                <option value="{{ location }}">{{ location | capitalize }}</option>
             {% endif %}
             {% endfor %}
         </select>
@@ -59,7 +59,7 @@ hear the tunes played one after another.
 <br />
 
 <!-- Show a header for where the dots will appear -->
-<div id="paperHeader"><h2>Musical Notation appears here</h2></div>
+<div id="paperHeader"><h1>Musical Notation will appear here</h1></div>
 
 <!-- Draw the dots -->
 <div class="output" id='output'>
@@ -73,7 +73,7 @@ hear the tunes played one after another.
 <div class="row" style="max-width:800px">
     <div class="small-6 columns">
         <span title="Clear the music notation to start a new set">
-            <input value='Reset' type='button' class="loopButton" onclick='Reset()' />
+            <input value='RESET' type='button' class="loopButton" onclick='Reset()' />
         </span>
     </div>
     <div class="small-3 columns">
@@ -131,9 +131,9 @@ Please think of the trees!">
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[0,0]];
+    $.tablesorter.defaults.sortList = [[1,0]];
 
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
+    $("#search-results").tablesorter({headers: { 0:{sorter: false}}});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });
