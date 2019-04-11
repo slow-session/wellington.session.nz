@@ -127,7 +127,7 @@ Please think of the trees!">
 
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_table_build_a_set2.js"></script>
+<script src="{{ site.js_host }}/js/build_table_build_a_set.js"></script>
 
 <script>
 $(document).ready(function() {
