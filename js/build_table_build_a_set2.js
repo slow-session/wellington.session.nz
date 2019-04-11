@@ -73,7 +73,7 @@
          <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
          <thead> \
          <tr> \
-           <th style="width:10%;">Add tune</th> \
+           <th style="width:10%;min-width:75px;">Add tune</th> \
            <th style="width:35%;text-align:left">Tune Name &#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
            <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
