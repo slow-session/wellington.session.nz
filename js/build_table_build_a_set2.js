@@ -74,7 +74,7 @@
          <thead> \
          <tr> \
            <th style="width:8%;">Add tune</th> \
-           <th style="width:42%;" align="left">Tune Name &#x25B2;&#x25BC;</th> \
+           <th style="width:35%;text-align:left">Tune Name &#x25B2;&#x25BC;</th> \
            <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
          </tr> \
@@ -108,7 +108,7 @@
          // build the first three columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
          tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\')" value="Select"></td>';
-         tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
+         tableRow += '<td class="tuneTitle" style="text-align:left"><span title="Tune played in: ' + item.location + '">';
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
          tableRow += '<td>' + item.key + '</td>';
          tableRow += '<td>' + item.rhythm + '</td>';
