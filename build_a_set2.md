@@ -12,10 +12,10 @@ hear the tunes played one after another.
 
 <div id="search_controls">
 <fieldset>
-    <legend>Select from current Wellington Tunes:</legend>    
+    <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
         <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
+        <span title="Filter the Tunes Archive for tunes by title or by a rhythm such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slowsession'">        
 		<input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
         &emsp;
