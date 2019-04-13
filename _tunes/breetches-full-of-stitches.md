@@ -1,7 +1,7 @@
 ---
-title: Breetches Full of Stitches (whistle)
+title: Britches Full of Stitches (whistle)
 titleID: breetches-full-of-stitches.md
-key: G
+key: A
 rhythm: polka
 mode:
 date: 2016-09-28
@@ -17,14 +17,14 @@ mp3_url:
 abc_url: https://comhaltas.ie/music/detail/
 source: Wellington
 abc: |
-    X: 4
-    T: The Britches Full Of Stitches
-    R: polka
-    M: 2/4
-    L: 1/8
-    K: Gmaj
-    |: G>A BG | AG BG | G2 BG | AG E2 |
-    G>A BG | AG Bd | G>A GE | ED D2 :|
-    |: d>e dB | AG AB | d>e dB | AG E2 |
-    d>e dB | AG AB | G>A GE | ED D2 :|
+    X:4
+    T:The Britches Full Of Stitches
+    R:polka
+    M:2/4
+    L:1/8
+    K:Amaj
+    |: A>B cA | BA cA | A2 cA | BA F2 |
+    A>B cA | BA ce | A>B AF | FE E2 :|
+    |: e>f ec | BA Bc | e>f ec | BA F2 |
+    e>f ec | BA Bc | A>B AF | FE E2 :|
 ---
