@@ -131,7 +131,7 @@ Please think of the trees!">
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[1,0]];
+    $.tablesorter.defaults.sortList = [[2,0], [1,0]];
 
     $("#search-results").tablesorter({headers: { 0:{sorter: false}}});  
 

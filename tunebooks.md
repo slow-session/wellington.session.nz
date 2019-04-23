@@ -38,7 +38,7 @@ Sean Manning's Sets (Dunedin):
 
 Sets of tunes put together by Paddy O'Brien
 
- * [O'Brien sets on line](/tunes_archive/?title=&rhythm=&tags=obrien&location=other&submit=Select)
+ * [O'Brien sets on line](/othertunes/?title=&rhythm=&tags=obrien&location=other&submit=Select)
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
 
 Paddy Fahey tunes:
