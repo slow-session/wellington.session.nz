@@ -28,7 +28,7 @@ from pathlib import Path
 homeDir = str(Path.home())
 
 tunebookDir = homeDir + '/GitHub/wellington.session.nz/tunebooks/other/'
-tunesDir = homeDir + '/GitHub/wellington.session.nz/_tunes/other/'
+tunesDir = homeDir + '/GitHub/wellington.session.nz/_othertunes/obrien/'
 tunesDir = '/tmp/'
 
 #
