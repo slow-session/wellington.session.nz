@@ -1,26 +1,13 @@
 ---
 layout: page
-title: Paddy O'Brien Tunes
-permalink: /othertunes/obrien/
+title: Other Tunes
+permalink: /othertunes/
 ---
-Many of the tunes listed here get played at the Wellington Session. There are
-also a number of tunes from other parts of the country. You can look at them all
-or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.
-**We're happy to add tunes from other parts of NZ.**
-
-
-{::nomarkdown}
-<p>
-<img alt="NEW!" src="/images/new.gif"  height="48" width="48"> We add new tunes reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
-</p>
-{:/}
-
-We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes with us, there's a good chance someone else will know them. You can find these tunes by choosing the "All Tunes" option,  picking "Slow-favourite" and pressing "Select"
 
 <div id="audioPlayer"></div>
 
 <!-- Some boilerplate that's common to a number of pages -->
-{% include filter-variables.html %}
+{% include othertunes-filter-variables.html %}
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
@@ -96,7 +83,7 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_table_obrien.js"></script>
+<script src="{{ site.js_host }}/js/build_table_othertunes.js"></script>
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>

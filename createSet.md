@@ -6,7 +6,7 @@ permalink: /createSetMD/
 Fill in the details for the set title, rhythm, location and your name. Then find the tunes you want, and then use the "Select" button on each to choose them in the order you want to play them in the set.
 
 <!-- Some boilerplate that's common to a number of pages -->
-{% include filter-variables.html %}
+{% include tunes-filter-variables.html %}
 
 <!-- Places to store hidden data we need on the page -->
 <textarea id="filename" style="display:none;"></textarea>
