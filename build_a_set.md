@@ -8,7 +8,7 @@ in the order you want to play them in the set. Now you can use the ABC player to
 hear the tunes played one after another.
 
 <!-- Some boilerplate that's common to a number of pages -->
-{% include filter-variables.html %}
+{% include tunes-filter-variables.html %}
 
 <div id="search_controls">
 <fieldset>

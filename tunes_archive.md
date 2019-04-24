@@ -20,7 +20,7 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
 <div id="audioPlayer"></div>
 
 <!-- Some boilerplate that's common to a number of pages -->
-{% include filter-variables.html %}
+{% include tunes-filter-variables.html %}
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
