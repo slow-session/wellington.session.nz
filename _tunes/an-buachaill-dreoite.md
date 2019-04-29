@@ -23,9 +23,9 @@ abc: |
     M: 6/8
     L: 1/8
     K: Gmaj
-    D.G.G ~A2 G | ~A2 G G2 A | D.G.G ~A2 G | cAG FDc|
+    |:D.G.G ~A2 G | ~A2 G G2 A | D.G.G ~A2 G | cAG FDc|
     D.G.G ~A2 G | ~A2 G GBd | ~f3 gfd |1 cAD FGA :|2 cAF G3 ||
-    A| B3 cBc | .e.cA G3 | B3 GBd | cAG FGA |
+    |:A| B3 cBc | .e.cA G3 | B3 GBd | cAG FGA |
     BAB cBc | d^cd efg | .a2 f gfd | cAG G3 :|
 
 

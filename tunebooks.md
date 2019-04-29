@@ -32,6 +32,10 @@ You can also get copies of the ABC files that were used to generate these PDFs:
 Other tunebooks
 ---------------
 
+Dunedin Fiddle Orchestra:
+
+ * [Details and website ](http://www.kiwifolk.com/dfc/ "WEBSITE")
+
 Sean Manning's Sets (Dunedin):
 
  * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
@@ -44,6 +48,10 @@ Sets of tunes put together by Paddy O'Brien
 Paddy Fahey tunes:
  * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis](/tunebooks/other/Paddy_Fahey_Holohan_1995_Tune_.pdf "PDF")
  * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/other/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
+
+Begged Borrowed and Stolen:
+
+ * [bbs.pdf](/tunebooks/other/bbs.pdf "PDF")
 
 Some other tunebooks from early days of ABC i.e. the 1990s:
 
@@ -58,7 +66,3 @@ You can also get copies of the ABC files that were used to generate these PDFs:
 * [reavy.abc](/tunebooks/other/reavy.abc "ABC")
 * [session1.abc](/tunebooks/other/session1.abc "ABC")
 * [session2.abc](/tunebooks/other/session2.abc "ABC")
-
-Begged Borrowed and Stolen:
-
- * [bbs.pdf](/tunebooks/other/bbs.pdf "PDF")
