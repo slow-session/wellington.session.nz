@@ -14,6 +14,8 @@ collected and produced some different options:
 * [slow-favourite-alphabetical.pdf](/tunebooks/slow-favourite-alphabetical.pdf "PDF") - Frequently played tunes in the slow session in a tunebook
 * [2bar-slow-favourite-alphabetical.pdf](/tunebooks/2bar-slow-favourite-alphabetical.pdf "PDF") - PDF with the first two bars of frequently played slow session tunes
 
+These tunebooks were last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.
+
 {::nomarkdown}
 <p>
 <img alt="Think before you print" src="/images/think-before-you-print.gif">
