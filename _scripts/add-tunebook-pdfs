@@ -64,5 +64,5 @@ cd ${SOURCEDIR}
 # They'll get loaded next time there's an upgrade
 #
 git add .
-git commit -m "Updating Tunebook PDFs"
+git --allow-empty commit -m "Updating Tunebook PDFs"
 git push
