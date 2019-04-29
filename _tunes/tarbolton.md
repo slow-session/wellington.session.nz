@@ -4,7 +4,7 @@ titleID: tarbolton.md
 key: Edor
 rhythm: reel
 date: 2018-06-10
-location: Wellington
+location: Prebbleton Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

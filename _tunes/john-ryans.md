@@ -4,7 +4,7 @@ titleID: john-ryans.md
 key: D
 rhythm: polka
 date: 2016-09-28
-location: Wellington
+location: Prebbleton Wellington
 notes:
 tags: slow-favourite slowsession wellyfest
 regtuneoftheweek:

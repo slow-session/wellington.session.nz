@@ -5,7 +5,7 @@ key: Ddor
 rhythm: reel
 mode:
 date: 2016-08-04
-location: Auckland Arrowtown Wellington
+location: Prebbleton Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession 
 regtuneoftheweek:

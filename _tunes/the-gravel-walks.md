@@ -4,7 +4,7 @@ titleID: the-gravel-walks.md
 key: Ador
 rhythm: reel
 date: 2016-1-26
-location: Raglan Wellington
+location: Prebbleton Raglan Wellington
 notes:
 tags: slow-favourite slowsession
 regtuneoftheweek:

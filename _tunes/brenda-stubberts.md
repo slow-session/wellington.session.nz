@@ -4,7 +4,7 @@ titleID: brenda-stubberts.md
 key: Ador
 rhythm: reel
 date: 2018-06-11
-location: Raglan Christchurch Wellington 
+location: Prebbleton Raglan Christchurch Wellington 
 notes:
 tags: slow-favourite 
 regtuneoftheweek:

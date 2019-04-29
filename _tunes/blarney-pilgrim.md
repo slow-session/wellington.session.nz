@@ -4,7 +4,7 @@ titleID: blarney-pilgrim.md
 key: Dmix
 rhythm: jig
 date: 2016-5-4
-location: Raglan Wellington Christchurch
+location: Prebbleton Raglan Wellington Christchurch
 notes:
 tags: vicfolk slowsession
 regtuneoftheweek:

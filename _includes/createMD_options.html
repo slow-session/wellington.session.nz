@@ -22,17 +22,12 @@
     <option value="march">march</option>
     <option value="march/strathspey/reel">march/strathspey/reel</option>
     <option value="mazurka">mazurka</option>
-    <option value="pipe march">pipe march</option>
     <option value="planxty">planxty</option>
     <option value="polka">polka</option>
-    <option value="polska">polska</option>
     <option value="reel">reel</option>
-    <option value="reinlender">reinlender</option>
-    <option value="retreat march">retreat march</option>
     <option value="slide">slide</option>
     <option value="slip jig">slip jig</option>
     <option value="slow air">slow air</option>
-    <option value="strathspey">strathspey</option>
     <option value="waltz">waltz</option>
     <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
     </select>
@@ -42,6 +37,8 @@
     <br><label>Location:</label><br>
         <input name="location" type="checkbox" value="Arrowtown"/>
         <label for="location">Arrowtown</label><br>
+        <input name="location" type="checkbox" value="Auckland"/>
+        <label for="location">Auckland</label><br>
         <input name="location" type="checkbox" value="Christchurch"/>
         <label for="location">Christchurch</label><br>
         <input name="location" type="checkbox" value="Donegal"/>
@@ -50,6 +47,10 @@
         <label for="location">Dunedin</label><br>
         <input name="location" type="checkbox" value="Hamilton"/>
         <label for="location">Hamilton</label><br>
+        <input name="location" type="checkbox" value="Prebbleton"/>
+        <label for="location">Prebbleton</label><br>
+        <input name="location" type="checkbox" value="Raglan"/>
+        <label for="location">Raglan</label><br>
         <input name="location" type="checkbox" value="Wellington"/>
         <label for="location">Wellington</label><br>
 <br>
@@ -96,13 +97,13 @@
     <option value="&lt;a href=&quot;https://www.youtube.com/channel/UC83KeE92brBlML9UX07iQjg&quot;&gt;Gilles Poutoux&lt;/a&gt;">Gilles Poutoux</option>
     <option value="&lt;a href=&quot;https://www.facebook.com/gillianbouchermusic/&quot;&gt;Gillian Boucher&lt;/a&gt;">Gillian Boucher</option>
     <option value="Gillian Gillies">Gillian Gillies</option>
+    <option value="James McNamara">James McNamara</option>
     <option value="Jody Moran">Jody Moran</option>
     <option value="&lt;a href=&quot;http://www.irishmusic.org.nz/&quot;&gt;John McEvoy @ Ceol Aneas 2016&lt;/a&gt;">John McEvoy @ Ceol Aneas 2016</option>
     <option value="Johnny Cronin &amp; Joe Burke">Johnny Cronin & Joe Burke</option>
     <option value="Jonathan Berkahn">Jonathan Berkahn</option>
     <option value="&lt;a href=&quot;https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA&quot;&gt;Katie Davis Henderson&lt;/a&gt;">Katie Davis Henderson</option>
     <option value="&lt;a href=&quot;http://www.irishmusic.org.nz/&quot;&gt;Luke Plumb @ Ceol Aneas 2017&lt;/a&gt;">Luke Plumb @ Ceol Aneas 2017</option>
-    <option value="Matt Crannitch">Matt Crannitch</option>
     <option value="Maurice Bradley and Ciaran Kelly">Maurice Bradley and Ciaran Kelly</option>
     <option value="Mick Hanly and Micheal O Dhomhnaill">Mick Hanly and Micheal O Dhomhnaill</option>
     <option value="Pat Higgins">Pat Higgins</option>
@@ -116,7 +117,6 @@
     <option value="Wellington Session">Wellington Session</option>
     <option value="Wynton Moore">Wynton Moore</option>
     <option value="YouTube video">YouTube video</option>
-    <option value="archive.org">archive.org</option>
     <option value="&quot;© Bob Midden. All Rights Reserved.&quot;">© Bob Midden. All Rights Reserved.</option>
     <option value="ENTER YOUR NEW MP3 SOURCE HERE">Other</option>
     </select>
@@ -158,6 +158,8 @@ Fair Use </small></p>
 © Gillian Boucher. All Rights Reserved. </small></p>
 <p><small><strong>Gillian Gillies</strong> uses these licences:<br />
 CC-BY-NC-4.0 </small></p>
+<p><small><strong>James McNamara</strong> uses these licences:<br />
+CC-BY-NC-4.0 </small></p>
 <p><small><strong>Jody Moran</strong> uses these licences:<br />
 © Jody Moran. All Rights Reserved. </small></p>
 <p><small><strong>John McEvoy @ Ceol Aneas 2016</strong> uses these licences:<br />
@@ -170,8 +172,6 @@ CC-BY-NC-2.5 </small></p>
 © Katie Davis Henderson. All Rights Reserved. </small></p>
 <p><small><strong>Luke Plumb @ Ceol Aneas 2017</strong> uses these licences:<br />
 © Luke Plumb. All Rights Reserved. </small></p>
-<p><small><strong>Matt Crannitch</strong> uses these licences:<br />
-Fair Use </small></p>
 <p><small><strong>Maurice Bradley and Ciaran Kelly</strong> uses these licences:<br />
 CC-BY-NC-4.0 </small></p>
 <p><small><strong>Mick Hanly and Micheal O Dhomhnaill</strong> uses these licences:<br />
@@ -198,8 +198,6 @@ CC-BY-NC-4.0 </small></p>
 CC-BY-NC-2.5 </small></p>
 <p><small><strong>YouTube video</strong> uses these licences:<br />
 YouTube Fair Use </small></p>
-<p><small><strong>archive.org</strong> uses these licences:<br />
-CC-BY-NC-3.0 </small></p>
 <p><small><strong>© Bob Midden. All Rights Reserved.</strong> uses these licences:<br />
 Bob Midden </small></p>
 
@@ -208,7 +206,6 @@ Bob Midden </small></p>
         <option value="">None</option>
         <option value="&lt;a href=&quot;http://toraigh.com/slowsessions.html&quot;&gt;Bob Midden&lt;/a&gt;">Bob Midden</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/2.5/&quot;&gt;CC-BY-NC-2.5&lt;/a&gt;">CC-BY-NC-2.5</option>
-    <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/3.0/&quot;&gt;CC-BY-NC-3.0&lt;/a&gt;">CC-BY-NC-3.0</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;CC-BY-NC-4.0&lt;/a&gt;">CC-BY-NC-4.0</option>
     <option value="&lt;a href=&quot;https://www.youtube.com/yt/copyright/fair-use.html&quot;&gt;Fair Use&lt;/a&gt;">Fair Use</option>
     <option value="&lt;a href=&quot;https://www.youtube.com/yt/copyright/fair-use.html&quot;&gt;YouTube Fair Use&lt;/a&gt;">YouTube Fair Use</option>
@@ -241,7 +238,6 @@ Bob Midden </small></p>
     <select id="source-box" name="source">
     <option value="Wellington">Wellington</option>
         <option value="Arrowtown">Arrowtown</option>
-    <option value="Dunedin">Dunedin</option>
     <option value="Raglan">Raglan</option>
     <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
     </select>
@@ -255,7 +251,6 @@ Bob Midden </small></p>
     <option value="The Session">The Session</option>
         <option value="Connie O'Connell's website">Connie O'Connell's website</option>
     <option value="Duncan Davidson">Duncan Davidson</option>
-    <option value="Dunedin Fiddle Orchestra">Dunedin Fiddle Orchestra</option>
     <option value="Emily Griffiths">Emily Griffiths</option>
     <option value="Gillian Boucher">Gillian Boucher</option>
     <option value="James McNamara">James McNamara</option>
@@ -263,6 +258,7 @@ Bob Midden </small></p>
     <option value="Out of the box - the Blackie family collection">Out of the box - the Blackie family collection</option>
     <option value="Pat Higgins">Pat Higgins</option>
     <option value="Richard Tait">Richard Tait</option>
+    <option value="Shirley Mills">Shirley Mills</option>
     <option value="Séamus Connolly Collection">Séamus Connolly Collection</option>
     <option value="The Mandolin Cafe">The Mandolin Cafe</option>
     <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
