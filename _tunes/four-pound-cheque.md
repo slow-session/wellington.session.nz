@@ -5,7 +5,7 @@ key: D
 rhythm: polka
 mode:
 date: 2016-06-23
-location: Wellington
+location: Prebbleton Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

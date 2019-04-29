@@ -4,7 +4,7 @@ titleID: morning-star.md
 key: G
 rhythm: reel
 date: 2017-02-01
-location: Wellington
+location: Prebbleton Wellington
 notes:
 tags: slowsession
 regtuneoftheweek:

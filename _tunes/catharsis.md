@@ -5,7 +5,7 @@ key: Gdor
 rhythm: reel
 mode:
 date: 2016-01-01
-location: Raglan Wellington
+location: Prebbleton Raglan Wellington
 notes:
 tags: 
 regtuneoftheweek:

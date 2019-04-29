@@ -4,7 +4,7 @@ titleID: killavil-jig.md
 key: Edor
 rhythm: jig
 date: 2017-11-15
-location: Raglan Wellington
+location: Prebbleton Raglan Wellington
 notes:
 tags: slowsession 
 regtuneoftheweek:

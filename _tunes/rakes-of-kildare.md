@@ -4,7 +4,7 @@ titleID: rakes-of-kildare.md
 key: Ador
 rhythm: jig
 date: 2017-02-14
-location: Raglan Wellington Christchurch
+location: Prebbleton Raglan Wellington Christchurch
 notes:
 tags: slowsession
 regtuneoftheweek:

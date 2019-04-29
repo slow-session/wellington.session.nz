@@ -4,7 +4,7 @@ titleID: kesh-jig.md
 key: G
 rhythm: jig
 date: 2017-05-25
-location: Raglan Wellington  Christchurch
+location: Prebbleton Raglan Wellington  Christchurch
 notes:
 tags: vicfolk
 regtuneoftheweek:
