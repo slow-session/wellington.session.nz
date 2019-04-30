@@ -61,10 +61,9 @@ done
 cd ${SOURCEDIR}
 
 TMPFILE=$(mktemp)
-ls -l ${TMPFILE}
 sed -e "s/These tunebooks were last updated at:.*/These tunebooks were last updated at: $(date)/" tunebooks.md > ${TMPFILE}
 mv ${TMPFILE} tunebooks.md
-ls -l ${TMPFILE}
+
 #
 # Push the new PDFs to the main site
 # They'll get loaded next time there's an upgrade
