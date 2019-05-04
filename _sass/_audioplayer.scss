@@ -159,6 +159,12 @@ form
     text-align: left;
 }
 
+input {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
 th {
     background-color:$brand-color;
     color: darken($complimentary-color, 10%);
