@@ -25,16 +25,30 @@ You can use this to help with the timing and you can change the values as you se
 <div id="main"></div>
 
 <style>
-.myProgress {
+.myProgressLR {
   width: 100%;
   height: 30px;
   position: relative;
-  background-color: #ddd;
+  background-color: lightgray;
 }
 
-.myBar {
+.myProgressRL {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background-color: lightgoldenrodyellow;
+}
+
+.myBarLR {
   background-color: lightsteelblue;
   width: 0px;
+  height: 30px;
+  position: absolute;
+}
+
+.myBarRL {
+  background-color: silver;
+  width: 100%;
   height: 30px;
   position: absolute;
 }
@@ -77,18 +91,25 @@ function setupDiv (repeat) {
     if (elem = document.getElementById("progress" + repeat)) {
         document.getElementById("main").removeChild(elem);
     }
+
     var divProgress = document.createElement("div");
     divProgress.id = "progress" + repeat;
-    divProgress.setAttribute('class', 'myProgress');
+    if (repeat % 2) {
+        divProgress.setAttribute('class', 'myProgressLR');
+    } else {
+        divProgress.setAttribute('class', 'myProgressRL');
+
+    }
     document.getElementById("main").appendChild(divProgress);
 
     if (!document.getElementById("bar" + repeat)) {
         var divBar = document.createElement("div");
         divBar.id = "bar" + repeat;
-        divBar.setAttribute('class', 'myBar');
         if (repeat % 2) {
+            divBar.setAttribute('class', 'myBarLR');
             divBar.innerHTML = "Down";
         } else {
+            divBar.setAttribute('class', 'myBarRL');
             divBar.innerHTML = "Up";
         }   
         document.getElementById("progress" + repeat).appendChild(divBar);
@@ -101,13 +122,17 @@ function drawTimer(repeat, bowTime) {
     elem.scrollIntoView();
 
     var id = setInterval(frame, 1000);
-
+    
     function frame() {
         if (width >= 99) {
             clearInterval(id);
         } else {
             width += 100 / bowTime;
-            elem.style.width = width + '%';
+            if (repeat % 2) {
+                elem.style.width = width + '%';
+            } else {
+                elem.style.width = (100 - width) + '%';
+            }
         }
     }
 }
