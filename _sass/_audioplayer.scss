@@ -159,7 +159,7 @@ form
     text-align: left;
 }
 
-input, select, textarea {
+input, textarea, select {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -170,6 +170,30 @@ th {
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     text-align: center;
+}
+
+th:first-of-type {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+th:last-of-type {
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+tr:last-of-type td:first-of-type {
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-of-type td:last-of-type {
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 td {
