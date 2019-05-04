@@ -36,7 +36,7 @@ You can use this to help with the timing and you can change the values as you se
   width: 100%;
   height: 30px;
   position: relative;
-  background-color: lightgoldenrodyellow;
+  background-color: khaki;
 }
 
 .myBarLR {
@@ -122,7 +122,7 @@ function drawTimer(repeat, bowTime) {
     elem.scrollIntoView();
 
     var id = setInterval(frame, 1000);
-    
+
     function frame() {
         if (width >= 99) {
             clearInterval(id);
