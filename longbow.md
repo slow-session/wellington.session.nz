@@ -3,8 +3,8 @@ layout: page
 title: The Long Bow
 permalink: /longbow/
 ---
-In his fiddle class at Ceol Aneas 2018, Rob Zielinski suggested that practicing
-long slow up and down bows every day for 3 months. He suggested 5 minutes each
+In his fiddle class at Ceol Aneas 2018, Rob Zielinski suggested practicing
+long slow down and up bows every day for 3 months. He suggested 5 minutes each
 day and that each bow should take 30 seconds.
 
 You can use this to help with the timing and you can change the values as you see fit.
@@ -28,7 +28,9 @@ You can use this to help with the timing and you can change the values as you se
     </p>
 </form>
 </fieldset>
+
 <br />
+
 <div id="main"></div>
 
 <style>
