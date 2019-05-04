@@ -9,22 +9,39 @@ day and that each bow should take 30 seconds.
 
 You can use this to help with the timing and you can change the values as you see fit.
 
+<br />
+
 <fieldset class="fieldset-auto-width">
 <form id="parameters" method="get">
-      <label>Practice time in minutes:</label><br />
-      <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15"><br />
-      <br />
-      <label>Time for each bow in seconds:</label><br />
-      <input type="number" id="bow-time" name="bowTime" value="30" min="10" max="40"><br />
-      <br />
+    <p>
+      <label>Practice time in minutes:</label>
+      <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15">
+    </p>
+    <p>
+      <label>Time for each bow in seconds:</label>
+      <input type="number" id="bow-time" name="bowTime" value="30" min="10" max="40">
+    </p>
+    <br />
+    <p>
 	  <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
       <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
+    </p>
 </form>
 </fieldset>
 <br />
 <div id="main"></div>
 
 <style>
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+
+input[type=number] {
+  border: solid lightgray;
+  text-align: right;
+}
+
 .myProgressLR {
   width: 100%;
   height: 30px;
@@ -83,7 +100,7 @@ async function bowTimer(practiceTime, bowTime) {
         running = 0;
         }
     } else {
-        alert("already running");
+        alert("Already running - use Reset to start again!");
     }
 }
 
