@@ -32,7 +32,7 @@ Try it by copying and pasting this URL -> http://www.mandolincafe.net/mp3/hadj.m
 </p>
 
 URL: <input type="text" name="url" class="enter" value="" id="url" style="width: 400px;" >
-<input type="button" onclick="getURL()" value="Create Player">
+<input type="button" class="filterButton" onclick="getURL()" value="Create Player">
 
 </div>
 </div>

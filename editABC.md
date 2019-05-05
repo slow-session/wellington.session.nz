@@ -57,7 +57,7 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <h3>Don’t forget to ‘Download ABC’ to save your work</h3>
 <form>
     <span title="Download the ABC you've entered. Don't lose your work!">
-        <input value='Download ABC' type='button' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
+        <input value='Download ABC' type='button' class='filterButton' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
     </span>
 </form>
 

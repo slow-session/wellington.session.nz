@@ -20,7 +20,7 @@ permalink: /createMD/
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      
-  		<input value='Download MD' type='button' class="button"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
+  		<input value='Download MD' type='button' class="filterButton"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
    </span>
 </form>
 </div>
