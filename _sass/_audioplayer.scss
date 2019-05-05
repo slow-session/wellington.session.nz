@@ -121,7 +121,7 @@ p.audio {
    background: linear-gradient($Loopbutton-color1, $Loopbutton-color2);
    cursor: pointer;
    padding: 3px;
-   border-radius: 10px;
+   border-radius: 8px;
    font-size: 75%;
 }
 
@@ -130,7 +130,7 @@ p.audio {
    padding:5px 10px;
    color: darken($complimentary-color, 10%);
    cursor: pointer;
-   border-radius: 10px;
+   border-radius: 8px;
 }
 
 .filterButton.filterDisabled {
@@ -146,12 +146,13 @@ p.audio {
     padding-bottom:5px;
 }
 
-fieldset{
+fieldset {
   margin: 0 auto;
   text-align: left;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
+  border-style: solid;
 }
 
 form

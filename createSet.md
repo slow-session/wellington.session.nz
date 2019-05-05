@@ -62,7 +62,7 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 	  </fieldset>
 
 	  <br />
-	  <input type="button" class="button" onclick="showForm('setMD', 'createSetMD')" value="Build the MD file">
+	  <input type="button" class="filterButton" onclick="showForm('setMD', 'createSetMD')" value="Build the MD file">
 </form>
 </div>
 </fieldset>
@@ -75,7 +75,7 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      
-  		<input value='Download MD file' type='button' class="button"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("setMD").value)' />
+  		<input value='Download MD file' type='button' class="filterButton"      onclick='downloadFile(document.getElementById("filename").value, document.getElementById("setMD").value)' />
    </span>
 </form>
 </div>
@@ -172,8 +172,8 @@ Use the "Reset Tunes" button to start a new set.
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[0,0]];
+    $.tablesorter.defaults.sortList = [[2,0], [1,0]];
 
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});  
+    $("#search-results").tablesorter({headers: { 0:{sorter: false}}});  
 });
 </script>

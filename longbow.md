@@ -11,7 +11,8 @@ timing and you can change the values as you see fit.
 <br />
 
 <fieldset class="fieldset-auto-width">
-<form id="parameters" method="get">
+  <legend>Set the timings:</legend>
+  <form id="parameters" method="get">
     <p>
       <label>Practice time in minutes: </label>
       <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15">
@@ -25,7 +26,7 @@ timing and you can change the values as you see fit.
 	  <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
       <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
     </p>
-</form>
+  </form>
 </fieldset>
 
 <br />

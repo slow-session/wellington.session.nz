@@ -111,10 +111,10 @@
          <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
          <thead> \
          <tr> \
-           <th style="width:50%;">Tune Name &#x25B2;&#x25BC;</th> \
-           <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
+           <th style="width:10%;min-width:75px;">Add Tune</th> \
+           <th style="width:35%;">Name &#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
-           <th style="width:40%;"></th> \
+           <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
          </tr> \
          </thead> \
          <tbody>';
@@ -143,14 +143,15 @@
          var tableRow = '';
          var tuneID = 'ABC' + item.tuneID;
 
-         // build the first three columns
+         // build the columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
-         tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
-         tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
-         tableRow += '<td>' + item.key + '</td>';
-         tableRow += '<td>' + item.rhythm + '</td>';
          tableRow += '<td><input type="button" class="loopButton" ';
-         tableRow += 'onclick="appendSetTunes(\''  + item.mdFile + '\', \'tr' + item.tuneID + '\')" value="Select"></td></tr>';
+         tableRow += 'onclick="appendSetTunes(\''  + item.mdFile + '\', \'tr' + item.tuneID + '\')" value="Select">';
+         tableRow += '<td class="tuneTitle" style="text-align:left"><span title="Tune played in: ' + item.location + '">';
+         tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
+         tableRow += '<td>' + item.rhythm + '</td>';
+         tableRow += '<td>' + item.key + '</td>';
+         tableRow += '</tr>';
          return tableRow;
      }
 
