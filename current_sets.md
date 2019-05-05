@@ -6,7 +6,8 @@ permalink: /current_sets/
 
 These are the some of the sets we play at the Wellington Slow Session. These sets will get played regularly so if you know these you'll get a chance to play them.
 
-If you don't find the set you're looking for you can put tunes together and try them out using our <a href="/build_a_set/"><button class="filterButton" style="display: inline;"> Build a Set </button></a> page.
+If you don't find the set you're looking for you can put tunes together and try them out using our <a href="/build_a_set/"><button class="filterButton" style="display: inline;"> Build a Set </button></a>       <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
+page.
 
 <div id="audioPlayer"></div>
 
