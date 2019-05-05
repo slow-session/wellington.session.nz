@@ -16,7 +16,7 @@ permalink: /createMD/
 <fieldset style="display: inline-block; vertical-align: middle;">
 <legend>Check the MD file details:</legend>
 <div class="container">
-<textarea id="md" rows="30" cols="80" style="background-color: #ebebeb" spellcheck="false"></textarea>
+<textarea id="md" rows="30" cols="60" style="background-color: #ebebeb" spellcheck="false"></textarea>
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      
