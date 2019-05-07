@@ -2,7 +2,7 @@
 title: Easter Sunday
 titleID: easter-sunday.md
 key: Amin
-rhythm:
+rhythm: reel
 date: 2019-04-29
 location:
 notes:

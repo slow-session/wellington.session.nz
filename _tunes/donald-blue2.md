@@ -2,7 +2,7 @@
 title: Donald Blue
 titleID: donald-blue2.md
 key: D
-rhythm:
+rhythm: reel
 date: 2019-04-29
 location:
 notes:
