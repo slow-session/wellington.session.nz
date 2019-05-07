@@ -55,15 +55,14 @@ hear the tunes played one after another.
     <div id="tunes-count"></div>
 </fieldset>
 </div>
-
 <br />
 
 <!-- Show a header for where the dots will appear -->
 <div id="paperHeader"><h1>Musical Notation will appear here</h1></div>
-
 <!-- Draw the dots -->
-<div class="output" id='output'>
-</div>
+<div class="output" id='output' style="max-width: 800px;">
+    <div id="paper0" class="paper"></div>
+  </div>
 
 <!-- Controls for ABC player -->
 <div id="ABCplayer" ></div>
@@ -89,7 +88,6 @@ Please think of the trees!">
     </div>
 </div>
 </form>
-
 <br />
 <div id="tunes-table"></div>
 <div id="abc-textareas"></div>
