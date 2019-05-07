@@ -2,7 +2,7 @@
 title: Mouse in the cupboard
 titleID: mouse-in-the-cupboard.md
 key: G
-rhythm:
+rhythm: jig
 date: 2019-04-29
 location:
 notes:

@@ -1,15 +1,15 @@
 ---
-title: Old Raffertiy’s Apple
+title: Old Rafferty’s Apple
 titleID: old-rafferty_s-apple.md
 key: D
-rhythm:
+rhythm: reel
 date: 2019-04-29
 location:
 notes:
 tags: ca-banjo-mandolin-2019
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/old-raffety_s-apple.mp3
+mp3_file: /mp3/old-rafferty_s-apple.mp3
 mp3_source: Angela Usher
 mp3_licence: Angela Usher. All rights reserved.
 mp3_url:
@@ -19,7 +19,7 @@ abc_source: Angela Usher
 abc_url:
 abc: |
   X:4
-  T: Old Raffertiy’s Apple
+  T: Old Rafferty’s Apple
   R: jig
   M: 6/8
   K: C
