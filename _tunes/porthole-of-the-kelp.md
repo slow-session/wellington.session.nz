@@ -4,16 +4,16 @@ titleID: porthole-of-the-kelp.md
 key: Ddor
 rhythm: reel
 date: 2019-05-09
-location: Wellington 
-notes: 
-tags: 
-regtuneoftheweek: 
-slowtuneoftheweek: 
+location: Wellington
+notes:
+tags:
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/porthole-of-the-kelp.mp3
-mp3_source: <a href="https://www.facebook.com/ciarank1">Ciaran Kelly</a>
-mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
+mp3_source: <a href="https://www.facebook.com/irishharmonica/">Joel Anderson</a>
+mp3_licence: "© Joel Anderson. All Rights Reserved."
 mp3_url: https://www.facebook.com/video/video.php?v=1101672386689422
-alt_mp3_url: 
+alt_mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/263
