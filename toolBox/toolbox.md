@@ -3,7 +3,7 @@ layout: page
 title: Toolbox
 permalink: /toolbox/
 ---
-This page has links to tools that are useful for anyone wanting to work with ABC and MP3 files.
+This page has links to tools that are useful for anyone wanting to work with ABC and MP3 files and other things!
 
 [editABC](/editABC/)
 -------
@@ -43,3 +43,9 @@ we'll have a look.
 If you come across audio files on the Internet that aren't on our site you can use
 the [playMP3](/playMP3/) page to slow down a number of audio and video formats and
 play parts of them in a loop.
+
+[The Long Bow](/longbow/)
+-------
+In his fiddle class at Ceol Aneas 2018, Rob Zielinski suggested practicing
+long slow down and up bows every day for 3 months. You can use [The Long Bow](/longbow/)
+to help with the timing.

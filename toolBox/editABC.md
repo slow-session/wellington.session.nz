@@ -5,11 +5,12 @@ permalink: /editABC/
 ---
 
 Use this sample as a template to edit or create your own ABC files.
-A brief set of instructions is found <a href="/editingABC/">here.</a>
-
-If you'd like more information on the ABC format check out the
+A brief set of instructions is found <a href="/editingABC/">here.</a> If you'd like more information on the ABC format check out the
 <a href="http://abcnotation.com/wiki/abc:standard:v2.1">ABC Notation</a>
 guide.
+
+If you want to add a new tune to the archive you can use the
+[Create MD File](/createMD/) page to create the metadata needed.
 
 <!-- Area to store unrolled ABC -->
 <textarea id="ABCprocessed" style="display:none;"></textarea>
