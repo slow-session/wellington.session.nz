@@ -12,9 +12,6 @@ var textAreas = document.getElementById("abc-textareas");
 
 Angela Usher, our banjo/mandolin tutor provided 8 tunes for her Ceol Aneas students to look at in advance.
 
-* TOC
-{:toc}
-
 Some students do not learn new tunes quickly and struggle to remember the notes in the bones of a new tune when the teacher would like to be pointing out ornaments or variations.
 We offered CA-2019 Tutors an opportunity to send us a simple (mobile phone quality) recording of some of the tunes they would like to teach.
 
