@@ -11,7 +11,7 @@ regtuneoftheweek:
 slowtuneoftheweek: 
 mp3_file: /mp3/king-of-the-fairies.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UC83KeE92brBlML9UX07iQjg">Gilles Poutoux</a>
-mp3_licence: © Gilles Poutoux. All Rights Reserved.
+mp3_licence: "© Gilles Poutoux. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=IIGr1aSlp8k
 alt_mp3_url: 
 source: Wellington

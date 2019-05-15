@@ -4,9 +4,9 @@ titleID: beeswing-hornpipe-bb.md
 key: Bb
 rhythm: hornpipe
 date: 2016-01-01
-location: Wellington
+location: 
 notes:
-tags: 
+tags:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/beeswing-hornpipe-bb.mp3
@@ -32,6 +32,6 @@ abc: |
     |: u(fe) |\
     dBfd bfdB | cAfc afcA | GEBG ecdB | cABG F2(GA) |
     Bfdb Afca | EBGe DBFd | (EG)ce (dc)BA | c2B2 B2 :|
-    
-    
+
+
 ---

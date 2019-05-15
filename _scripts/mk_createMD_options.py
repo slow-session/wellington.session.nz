@@ -173,7 +173,8 @@ with open(optionsFile, 'w') as outfile:
     <label>MP3 url:</label>
     <input type="text" id="mp3_url-box" name="mp3_url" value="">
 
-    <input type="hidden" id="alt_mp3_url-box" name="alt_mp3_url" value="">
+    <label>Alternative MP3 url:</label>
+    <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="">
 
     <label>Source:<sup>*</sup></label>
     <select id="source-box" name="source">

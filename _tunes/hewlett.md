@@ -12,8 +12,8 @@ regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hewlett.mp3
 mp3_licence:
-mp3_source: "© Bob Midden. All Rights Reserved."
-mp3_licence: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
+mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
+mp3_licence: "© Bob Midden. All Rights Reserved."
 mp3_url: http://toraigh.com/slowsessions/Hewlett.mp3
 abc_url:
 source: Wellington

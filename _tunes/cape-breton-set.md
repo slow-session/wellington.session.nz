@@ -11,7 +11,7 @@ regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cape-breton-set.mp3
 mp3_source: <a href="https://www.facebook.com/gillianbouchermusic/">Gillian Boucher</a>
-mp3_licence: © Gillian Boucher. All Rights Reserved.
+mp3_licence: "© Gillian Boucher. All Rights Reserved."
 mp3_url: https://www.facebook.com/gillianbouchermusic/
 source: Wellington
 abc_source: Gillian Boucher
