@@ -16,9 +16,6 @@ Some students do not learn new tunes quickly and struggle to remember the notes 
 We offered CA-2019 Tutors an opportunity to send us a simple (mobile phone quality) recording of some of the tunes they would like to teach.
 
 <div style="overflow-x:auto;">
-</div>
-<br />
-<div style="overflow-x:auto;">
 <table style="width:100%" id="tunes" class="tablesorter">
 <thead>
     <tr>
@@ -49,19 +46,9 @@ to see what we're playing there.
 There's also a large list of tunes including tunes played in other New Zealand sessions in the
 <a href="/tunes_archive/">Tunes Archive</a> page.  Feel free to poke around.
 
-
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    /* turn off sorting on last column */
-    $("#sets").tablesorter({
-        headers: {
-            4: {
-                sorter: false
-            }
-        }
-    });
 
     /* turn off sorting on last two columns */
     $("#tunes").tablesorter({
