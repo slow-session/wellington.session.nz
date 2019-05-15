@@ -11,7 +11,7 @@ regtuneoftheweek:
 slowtuneoftheweek: 2018-11-23
 mp3_file: /mp3/golden-castle.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
-mp3_licence: © Katie Davis Henderson. All Rights Reserved.
+mp3_licence: "© Katie Davis Henderson. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=5kAjjXgnzIo
 source: Wellington
 abc_source: The Session

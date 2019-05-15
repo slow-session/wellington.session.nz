@@ -11,7 +11,7 @@ regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jamesy-gannon_s-barndance.mp3
 mp3_source: Angela Usher
-mp3_licence: © Angela Usher. All rights reserved.
+mp3_licence: "© Angela Usher. All rights reserved."
 mp3_url:
 alt_mp3_url:
 source: Ceol Aneas
