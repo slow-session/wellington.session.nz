@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-05-16
 mp3_file: /mp3/porthole-of-the-kelp.mp3
 mp3_source: <a href="https://www.facebook.com/irishharmonica/">Joel Anderson</a>
 mp3_licence: "© Joel Anderson. All Rights Reserved."
