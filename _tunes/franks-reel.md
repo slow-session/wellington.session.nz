@@ -7,7 +7,7 @@ mode:
 date: 2016-01-01
 location: Raglan Wellington
 notes:
-tags:
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2017-01-05
 mp3_file: /mp3/franks-reel.mp3

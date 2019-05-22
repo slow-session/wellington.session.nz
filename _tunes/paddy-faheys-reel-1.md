@@ -6,7 +6,7 @@ rhythm: reel
 date: 2019-03-20
 location: Wellington
 notes:
-tags:
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2019-03-28
 mp3_file: /mp3/paddy-faheys-reel-1.mp3
