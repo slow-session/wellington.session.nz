@@ -11,13 +11,17 @@ layout: page
     {% endif %}
 </div>
 <div class="small-6 columns">
-    {% if page.location contains 'Wellington' and page.slowtuneoftheweek %}
-    Slow Tune of the Week:
+    {% if page.location contains 'Wellington' %}
+    {% if page.slowtuneoftheweek %}
+    Slow Session:
     <time datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
+    {% elsif page.tags contains 'slowsession' %}
+    Slow Session: before 2017
+    {% endif %}
     <br />
     {% endif %}
     {% if page.location contains 'Wellington' and page.regtuneoftheweek %}
-    Regular Tune of the Week:
+    Regular Session:
     <time datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
     <br />
     {% endif %}
