@@ -5,7 +5,9 @@ layout: page
 <div class="small-6 columns">
     {{ page.key }} {{ page.rhythm }}, added
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    {% if page.location %}
     <br />Played in: {{ page.location }}
+    {% endif %}
     {% if page.notes %}
     <p>Notes: {{ page.notes }}</p>
     {% endif %}
