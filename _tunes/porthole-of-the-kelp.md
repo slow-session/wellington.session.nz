@@ -6,7 +6,7 @@ rhythm: reel
 date: 2019-05-09
 location: Wellington
 notes:
-tags:
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2019-05-16
 mp3_file: /mp3/porthole-of-the-kelp.mp3

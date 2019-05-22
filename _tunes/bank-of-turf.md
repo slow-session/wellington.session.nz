@@ -6,7 +6,7 @@ rhythm: jig
 date: 2019-02-05
 location: Wellington
 notes:
-tags:
+tags: slowsession
 regtuneoftheweek:
 slowtuneoftheweek: 2019-04-21
 mp3_file: /mp3/bank-of-turf.mp3
