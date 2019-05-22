@@ -1,15 +1,29 @@
 ---
 layout: page
 ---
-{{ page.key }} {{ page.rhythm }}, added
-<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-<br />Played in: {{ page.location }}
+<div class="row">
+<div class="small-6 columns">
+    {{ page.key }} {{ page.rhythm }}, added
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <br />Played in: {{ page.location }}
+    {% if page.notes %}
+    <p>Notes: {{ page.notes }}</p>
+    {% endif %}
+</div>
+<div class="small-6 columns">
+    {% if page.location contains 'Wellington' and page.slowtuneoftheweek %}
+    Slow Tune of the Week:
+    <time datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
+    <br />
+    {% endif %}
+    {% if page.location contains 'Wellington' and page.regtuneoftheweek %}
+    Regular Tune of the Week:
+    <time datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
+    <br />
+    {% endif %}
+</div>
+</div>
 <br />
-{% if page.notes %}
-<p>Notes: {{ page.notes }}</p>
-{% endif %}
-<br />
-
 
 {% if page.mp3_file %}
 <div id="audioPlayer"></div>
@@ -140,6 +154,8 @@ function show_iframe(url) {
         <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
     {% endif %}
 </div>
+
+
 
 <script>
     function toggle(button) {
