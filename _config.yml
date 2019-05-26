@@ -22,7 +22,7 @@ header_xl: images/banner-xl.jpg
 
 
 # Exclude our ruby stuff and other dirs
-exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, .last_optimized, _scripts, documentation]
+exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, .last_optimized, _scripts, documentation, archive]
 
 
 # Build settings
