@@ -24,9 +24,9 @@ abc: |
   M: 6/8
   K: C
   g|:edB AGA|BAB AGE|EGG GAB|
-  dBd e2g|EdB AGA|BAB AGE|
+  dBd e2g|edB AGA|BAB AGE|
   GGG gdB|1 ABA A3 :||2 ABA ABd||
-  |: eag e2d|EAA BGE|GGG g2d|edB BAA|
+  |: eag e2d|eAA BGE|GGG g2d|edB BAA|
   |1 eag e2d|Bde G2A|BAB dBG|ABA ABd :||
   |2 ede a2b|age deg|GGG ABd|e3 e3||
 

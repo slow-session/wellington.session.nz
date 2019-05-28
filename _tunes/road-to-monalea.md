@@ -23,9 +23,9 @@ abc: |
   R: reel
   M: 4/4
   K: C
-  |:dcAc cdde|dcAG EGD2|CAGA cded|cAGE EDD2|
+  |:dcAc cdde|dcAG EGD2|cAGA cded|cAGE EDD2|
   dcAc cdde| dcAG EGDG|EGAB cded|cAGE EDD2:||
   |:dcAc dAcd|egag egde|gede cccd|egag e2de|
-  dcAc dAcd|egag egde|cG(3GGG cded|cAGE EDD2 :||
+  dcAc dAcd|egag egde|cG (3GGG cded|cAGE EDD2 :||
 
 ---
