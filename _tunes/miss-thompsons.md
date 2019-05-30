@@ -2,7 +2,7 @@
 title: Miss Thompson's
 titleID: miss-thompsons.md
 key: D
-rhythm: reel
+rhythm: hornpipe
 date: 2016-01-01
 location: Wellington
 notes:
@@ -20,7 +20,7 @@ source: Wellington
 abc: |
     X: 2
     T: Miss Thompson's
-    R: reel
+    R: hornpipe
     M: 4/4
     L: 1/8
     K: Dmaj
