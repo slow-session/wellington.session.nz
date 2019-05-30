@@ -9,10 +9,10 @@ notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
-mp3_source:
-mp3_licence:
-mp3_url:
+mp3_file: /mp3/miss-thompsons.mp3
+mp3_source: FARNE - Folk Archive Resource North East 
+mp3_licence: Fair Use
+mp3_url: http://www.folknortheast.com/radio-farne/radio-farne/programme-eight
 alt_mp3_url: https://www.youtube.com/watch?v=ag9qfQGsxh0
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2264
