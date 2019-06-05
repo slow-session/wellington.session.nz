@@ -22,6 +22,7 @@ abc: |
     T: Paddy Fahey's 1
     T: Collected by Maria Holohan
     R: reel
+    C: Paddy Fahey
     M: 4/4
     L: 1/8
     K: F
