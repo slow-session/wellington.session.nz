@@ -9,11 +9,11 @@ notes:
 tags:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
-mp3_source:
-mp3_licence:
-mp3_url:
-alt_mp3_url: http://www.capeirish.com/tune_vault/kc/sgt.mp3#t=77
+mp3_file: /mp3/paddy-faheys-reel-1-original.mp3
+mp3_source: Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)
+mp3_licence: Fair Use
+mp3_url: http://www.clarelibrary.ie/eolas/coclare/music/live/aughrim_JH24-2.htm
+alt_mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/discussions/39185
