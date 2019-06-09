@@ -84,15 +84,6 @@ $(document).ready(function() {
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({
-        headers: {
-            2: {
-                sorter: false
-            },  
-            3: {
-                sorter: false
-            }
-        }
-    });
+    $("#search-results").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
 });
 </script>

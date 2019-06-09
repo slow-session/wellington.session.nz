@@ -131,7 +131,7 @@ Please think of the trees!">
 $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[2,0], [1,0]];
 
-    $("#search-results").tablesorter({headers: { 0:{sorter: false}}});  
+    $("#search-results").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });
