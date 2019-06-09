@@ -24,7 +24,7 @@ abc: |
   M: 4/4
   L: 1/8
   K: G
-  DG~G2 ABcA|d2ed cA~Ad|B3qG ~A3F|GBAG FGEF|
+  DG~G2 ABcA|d2ed cA~Ad|B3G ~A3F|GBAG FGEF|
   DG~G2 ABcA|d2ed cAA2|f2de fdcA|1AGFA ~G3E:|2AGFA ~G3B||
   |:dggf g2fg|abag fddc|B3G A3F|GBAG FDD2|
   |1dggf g2fg|abag fdde|f2eg fdcA|AGFA ~G3B:|
