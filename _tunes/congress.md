@@ -1,5 +1,5 @@
 ---
-title: Congress Reel, The
+title: The Congress Reel
 titleID: congress.md
 key: G
 rhythm: reel
