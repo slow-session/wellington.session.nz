@@ -93,6 +93,6 @@ $(document).ready(function() {
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({headers: { 3:{sorter: false}}});    
+    $("#search-results").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 3:{sorter: false}}});    
 });
 </script>
