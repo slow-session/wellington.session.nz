@@ -1,5 +1,5 @@
 ---
-title: Air Tune, The
+title: The Air Tune
 titleID: air-tune-the.md
 key: D
 rhythm: reel
@@ -18,7 +18,7 @@ abc_source: The Session
 abc_url:
 abc: |
     X: 3
-    T: Air Tune, The
+    T: The Air Tune
     R: reel
     M: 4/4
     L: 1/8
