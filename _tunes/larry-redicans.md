@@ -1,5 +1,5 @@
 ---
-title: Larry Redican's
+title: Larry Redican's (The Culfadda)
 titleID: larry-redicans.md
 key: F
 rhythm: reel
