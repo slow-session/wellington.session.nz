@@ -112,6 +112,7 @@ writing the ABC for this tune using our
 function show_iframe(url) {
     // Add other sources as needed
     if (url.includes('www.youtube.com')) {
+        url = url.replace('&t=', '?start=');
         document.write('<iframe src="https://www.youtube.com/embed/' + url.split('v=')[1] + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>');
     }
     else if (url.includes('www.facebook.com')) {
@@ -160,8 +161,6 @@ function show_iframe(url) {
         <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
     {% endif %}
 </div>
-
-
 
 <script>
     function toggle(button) {
