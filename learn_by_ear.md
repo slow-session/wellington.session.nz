@@ -41,7 +41,7 @@ You will probably have recordings of your own that you'd like to do this with an
 
 ### Free software
 
-If you have a *Windows* desktop you can use **Windows Media Player version 10**
+If you have a *Windows* desktop you can use **Windows Media Player version 10** (later versions may still support this)
 
 *Instructions:*
 
@@ -59,14 +59,15 @@ If you have a *Macintosh* desktop you can use **Quicktime version 7**
 
 You can download a copy of Quicktime 7 at <https://support.apple.com/en-nz/HT201288>
 
-QuickTime X, released with OS 10.6 Snow Leopard and later versions, is **not capable** of doing this. You can install QuickTime 7 alongside Quicktime X if you want to.
+QuickTime X, released with OS 10.6 Snow Leopard and later versions, is **not capable** of doing this. You can install QuickTime 7 alongside Quicktime X if you want to. This is known to work with Mac OS X Snow Leopard v10.6.3 to OS X High Sierra v10.13.6.
+
+Apple is moving to remove support for 32-bit software which means the Quicktime 7 will stop working at some stage - one alternative option is a package called IINA available at <https://iina.io/>
 
 ### Other software
 
 While the options listed above will slow down the music for you there are commercial packages for around US$30 which work better at really slow speeds (50% or slower) and also have a number of other useful options such as picking out sections to loop and saving parts of a file for later. Members of the Wellington Slow session have experience with these packages:
 
   * Ted  -> <a href="http://www.ronimusic.com/slowdown.htm">Amazing Slow Downer</a> (Windows, Mac and iOS)
-  * Andy -> <a href="http://supermegaultragroovy.com/products/capo/">Capo</a> (Mac and iOS)
   * Andy -> <a href="https://play.google.com/store/apps/details?id=com.smp.musicspeed">Music Speed Changer</a> (Android - small fee to remove ads)
   * Andy -> <a href="http://www.audacityteam.org/">Audacity</a> (Windows®, Mac®, GNU/Linux® and other operating systems - open source, yay!)
 
@@ -78,16 +79,4 @@ You can try some of the packages for free for a limited period before you buy e.
 
 ## Want to learn a tune from YouTube?
 
-These Chrome apps are really useful to slow it down and loop the video:
-
-### Youtube Playback Speed Control
-
-Control speed of the youtube playback using keyboard.
-
-<a href="https://chrome.google.com/webstore/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik">https://chrome.google.com/webstore/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik</a>
-
-### YouTurn
-
-Repeat YouTube videos automatically.
-
-<a href="https://chrome.google.com/webstore/detail/youturn/icphmmimmfdlgaaglejeokffekamhplg">https://chrome.google.com/webstore/detail/youturn/icphmmimmfdlgaaglejeokffekamhplg</a>
+There are features built into the YouTube player that allow you to slow down the recording and also to play the complete recording in a loop.
