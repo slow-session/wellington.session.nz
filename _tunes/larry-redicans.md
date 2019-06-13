@@ -12,7 +12,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/larry-redicans.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
-mp3_url: https://www.youtube.com/watch?v=8XPGscCcaMI
+mp3_url: https://www.youtube.com/watch?v=8XPGscCcaMI&t=154
 source:
 abc_source: The Session
 abc_url: https://thesession.org/tunes/1523
