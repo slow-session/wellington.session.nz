@@ -80,13 +80,24 @@
     float: left;
 }
 
-.audioPos {
+.audioPosMP3 {
     position: relative;
     font-size: 11px;
-    margin-top: 22px;
+    margin-top: 32px;
     margin-left: -12px;
     //float: right;
     text-align: center;
+    font-weight: bold;
+}
+
+.audioPosABC {
+    position: relative;
+    font-size: 11px;
+    margin-top: 26px;
+    margin-left: -12px;
+    //float: right;
+    text-align: center;
+    font-weight: bold;
 }
 
 .durationP {
@@ -96,6 +107,7 @@
     margin-left: -12px;
     //float: right;
     text-align: center;
+    font-weight: bold;
     text-decoration: overline;
 }
 
