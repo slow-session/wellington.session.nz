@@ -48,7 +48,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     mp3player += '      <div class="small-1 columns">';
     mp3player += '        <button id="pButton' + tuneID + '" class="playButton"';
     mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\', APos' + tuneID + ', Dur' + tuneID + ',  RS' + tuneID + ')">';
-    mp3player += '            <div id="APos' + tuneID + '" class="audioPos"></div>';
+    mp3player += '            <div id="APos' + tuneID + '" class="audioPosMP3"></div>';
     mp3player += '            <div id="Dur' + tuneID + '" class="durationP"></div>';
     mp3player += '        </button>';
     mp3player += '      </div>';

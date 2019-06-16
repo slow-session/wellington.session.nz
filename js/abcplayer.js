@@ -46,7 +46,7 @@ function createABCplayer (tuneID, playerClass, timbre) {
     abcPlayer += '      <div class="small-1 columns">';
     abcPlayer += '      <button id="pButton' + tuneID + '" class="playButton"';
     abcPlayer += '          onclick="playABC(\'' + trID + '\', ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value, APos' + tuneID + ' , Dur' + tuneID + ')">';
-    abcPlayer += '          <div id="APos' + tuneID + '" class="audioPos"></div>';
+    abcPlayer += '          <div id="APos' + tuneID + '" class="audioPosABC"></div>';
     abcPlayer += '          <div id="Dur' + tuneID + '" class="durationP"></div>';
     abcPlayer += '      </button>';
     abcPlayer += '      </div>';
