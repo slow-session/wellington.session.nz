@@ -60,11 +60,11 @@ page.
               "setID": "{{ setID }}",
               "rhythm": "{{ set.rhythm | xml_escape }}",
               "location": "{{ set.location | xml_escape }}",
-              "url": "{{ set.url | absolute_url }}",
+              "url": "{{ set.url | uri_escape }}",
               "instrument": "{{ site.defaultABCplayer }}",
               "setTunes": "{{ set.tunes | xml_escape }}",
               "setTitles": "{% for setTune in set.tunes %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{{ tune.title | xml_escape }}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
-              "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | absolute_url | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+              "setURLs": "{% for setTune in set.tunes %}{% assign setTuneURL = setTune | replace: 'md', 'html' | prepend: '/tunes/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}<a href=\"{{ setTuneURL | uri_escape }}\">{{ tune.title | escape }} ({{ tune.key}})</a>{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
               "tuneSources": "{% for setTune in set.tunes %}{% assign setTuneMP3 = setTune | replace: 'md', 'mp3' | prepend: '/mp3/' %}{% assign siteTunes = site.tunes | where: 'titleID', setTune %}{% for tune in siteTunes %}{% if tune.mp3_file %}{{ tune.mp3_file | prepend: site.mp3_host }}{% else %}{{ tune.abc | uri_escape }}{% endif %}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}",
           },
           {% assign setID = setID | plus: 1 %}
