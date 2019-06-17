@@ -29,5 +29,4 @@ abc: |
     |:fdd^c defg|ad~d2 adfd|eccB cdef|~g2af gfeg|
     fd~d2 ABcA|dcAd cAGE|D2FD (3EFG AB|cAGE EDDe:|
 
-
 ---
