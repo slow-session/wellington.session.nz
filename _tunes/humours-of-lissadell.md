@@ -13,7 +13,7 @@ mp3_file: /mp3/humours-of-lissadell.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_301_1_letterkenny_street_session
-alt_mp3_url: https://soundcloud.com/pat-higgins-272129392/humours-of-lissadell
+alt_mp3_url: https://www.youtube.com/watch?v=aiQrwkUFUn4
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/649
