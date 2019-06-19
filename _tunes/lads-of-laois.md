@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 regtuneoftheweek: 2018-11-29
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-06-19
 mp3_file: /mp3/lads-of-laois.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
