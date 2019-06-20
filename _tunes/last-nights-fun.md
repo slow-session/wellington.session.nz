@@ -3,19 +3,20 @@ title: Last Night's Fun
 titleID: last-nights-fun.md
 key: D
 rhythm: reel
-date: 2017-07-28
+date: 2019-06-02
 location: Wellington
 notes:
-tags:
+tags: ca-fiddle-2019
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/last-nights-fun.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
-mp3_licence: "© Fergal Scahill. All Rights Reserved."
-mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1381653431930988/
+mp3_source: Eileen O'Brien @ Ceol Aneas 2019
+mp3_licence: "© Eileen O'Brien. All Rights Reserved."
+mp3_url:
+alt_mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1381653431930988/
 source: Wellington
-abc_source: The Session
-abc_url: https://thesession.org/tunes/63
+abc_source: Eileen O'Brien @ Ceol Aneas 2019
+abc_url:
 abc: |
     X: 1
     T: Last Night's Fun
@@ -23,7 +24,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    |:ADFD A2AB|ADFD EFGB|ADFD A2 Bd| e2fe dBAB:|
-    |df (3fff af (3fff|defd e2fe| df (3fff af (3fff|egfe dBAB|
-    dff2 aff2|defd e3f| a2bf afeg|fedc BcdB|
+    AF (3FED A3B|AGFD EFGB|AF (3FED A2Bd|egfe dB~B2|
+    AF (3FED A3B|AGFD EFGB|AF (3FED A2Bd|egfe dBAB|
+    df~f2 af~f2|defd egfe|df~f af~f|egfe dBAB|
+    df~f2 af~f2|defd e2fg|afbf afeg|fedc BcdB|
 ---
