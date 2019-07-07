@@ -157,10 +157,12 @@ function createMP3player(tuneID, mp3url, playerClass) {
 function delay_load_upadate(){
   //audioSliderHandles[1].removeAttribute('disabled'); // re-enable
   audioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
+  DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
 }
 function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioposition, duration, audioSpeed) {
     if (pButton.className == "playButton") {
         if (PreviousAudioID != audioplayer) { //only load if necessary
+            OneAudioPlayer.src = audioSource;
             if (PreviousAudioID != null) { //reset previous audio player
                 //audioSlider.noUiSlider.values[1] = 0;
                 if (PreviouspButton != null) PreviouspButton.className = "playButton";
@@ -176,7 +178,7 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
                 }
                 //alert(audioplayer.id+"::"+PreviousAudioID.id+"\n"+timeline.id+"::"+Previoustimeline.id+"\n"+Eventhandler);
             }
-            OneAudioPlayer.src = audioSource;
+            //OneAudioPlayer.src = audioSource;
             PreviousAudioID = audioplayer;
             Previoustimeline = positionSlider;
             //Previousplayhead=playhead;
@@ -185,7 +187,6 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
             DurationP = duration;
             PreviousTrID = trID;
             // modify slider
-
             positionSlider.noUiSlider.updateOptions({
                 tooltips: [wNumb({decimals: 1}), false, wNumb({decimals: 1})],
                 pips: {mode: 'count', values: 6, density: 6},
@@ -194,9 +195,9 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
                 document.getElementById(trID).style.backgroundColor = 'khaki';
             }
         }
-
         audioSlider = positionSlider;
         //OneAudioPlayer.playbackRate = audioSpeed.value / 100;
+
         OneAudioPlayer.play();
         pButton.className = "";
         pButton.className = "pauseButton";
@@ -220,7 +221,7 @@ function loadStart() {
 function loadFinish() {
     if(OneAudioPlayer.currentTime>0){
       return;
-    } else {
+    } else if (AudioPosition != null){
       AudioPosition.innerHTML = "0.0";
     }
 }
@@ -257,7 +258,7 @@ function New_adjustAudioPosition(audioPositionScreenLocation, durationScreenLoca
     //if (PreviousAudioID != audioplayer) return;
     //OneAudioPlayer.removeEventListener("timeupdate", positionUpdate);
     document.getElementById(audioPositionScreenLocation).innerHTML = Number(value).toFixed(1);
-    document.getElementById(durationScreenLocation).innerHTML = OneAudioPlayer.duration.toFixed(1);
+    //document.getElementById(durationScreenLocation).innerHTML = OneAudioPlayer.duration.toFixed(1);
 }
 
 function adjustAudioPosition(audioplayer, value) {
@@ -270,17 +271,20 @@ function adjustAudioPosition(audioplayer, value) {
 
 
 
-//var hits = 0;
+var hits = 0;
 
 
 function positionUpdate() {
-    //hits++;
+    hits++;
     //document.getElementById("Hits").innerHTML = hits;
     var duration = OneAudioPlayer.duration;
     if (OneAudioPlayer.currentTime >= duration - .25) {
         OneAudioPlayer.currentTime = 0;
     }
-    audioSlider.noUiSlider.set([null,OneAudioPlayer.currentTime,null]);
+    if(hits >= 7) {
+      audioSlider.noUiSlider.set([null,OneAudioPlayer.currentTime,null]);
+      hits=0
+    }
     AudioPosition.innerHTML = OneAudioPlayer.currentTime.toFixed(1);
 
 
