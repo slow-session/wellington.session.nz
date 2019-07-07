@@ -98,7 +98,7 @@ var slowDownSliderName = RSplayABC;//HACK
   });
 
   var Handles = audioSlider.querySelectorAll('.noUi-handle');
-  alert(Handles.length);
+  //alert(Handles.length);
   var classes = ['h-1-color', 'h-2-color', 'h-3-color'];
   for (var i = 0; i < Handles.length; i++) {
       Handles[i].classList.add(classes[i]);
