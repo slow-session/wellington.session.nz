@@ -41,7 +41,7 @@ Test page for new mp3 player.
 .noUi-handle {
   border: 1px solid #D9D9D9;
   border-radius: 3px;
-  background: blue;
+  background: #455;
   cursor: default;
   box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
 }
@@ -74,7 +74,7 @@ audioSlider=document.getElementById(SliderName);
 origins = audioSlider.getElementsByClassName('noUi-origin');
   noUiSlider.create(audioSlider, {
       start: [0, 0, 400],
-      //tooltips: [wNumb({decimals: 1}), false, wNumb({decimals: 1})],
+      //tooltips: [wNumb({decimals: 1}), wNumb({decimals: 1}), wNumb({decimals: 1})],
   		connect: [false, true, true, false],
   		//pips: {mode: 'count', values: 6, density: 6},
       animate: true,
@@ -89,8 +89,8 @@ origins = audioSlider.getElementsByClassName('noUi-origin');
 var slowDownSliderName = RSplayABC;//HACK
   noUiSlider.create(slowDownSliderName, {  
       start: [100],
-      tooltips: [wNumb({decimals: 0, suffix: '%'})],
-  		pips: {mode: 'count', values: 3, density: 10, format: wNumb({decimals: 0, suffix: '%'})},
+      //tooltips: [wNumb({decimals: 0, suffix: '%'})],
+  		//pips: {mode: 'count', values: 3, density: 10, format: wNumb({decimals: 0, suffix: '%'})},
       range: {
           'min': 50,
           'max': 120
@@ -98,24 +98,24 @@ var slowDownSliderName = RSplayABC;//HACK
   });
 
   var Handles = audioSlider.querySelectorAll('.noUi-handle');
-  //alert(Handles.length);
   var classes = ['h-1-color', 'h-2-color', 'h-3-color'];
   for (var i = 0; i < Handles.length; i++) {
       Handles[i].classList.add(classes[i]);
   };
 
 
-  slowDownSliderName.noUiSlider.on('set', function(value){
+  slowDownSliderName.noUiSlider.on('update', function(value){
        setPlaySpeed(null, value/100);
+       output_level.innerHTML = "Speed - "+Number(value).toFixed(0)+" %";
   });
 
   audioSlider.noUiSlider.on('start', function (values, handle) {
     //alert("start");
 
-      var turnAudioBackOn=false; //local flag to handle audio
+
       if (OneAudioPlayer.paused==false){ // audio is currently playing.
           OneAudioPlayer.pause(); // first pause the audio
-          trunAudioBackOn = true;
+          turnAudioBackOn = true;
       }
   });
 
@@ -125,6 +125,7 @@ var slowDownSliderName = RSplayABC;//HACK
       var durationScreenLocation = 'Dur' + Tune_ID;
       New_adjustAudioPosition(audioPositionScreenLocation, durationScreenLocation, values[1]);
       //New_setAudioPosition(Tune_ID, values[1]);
+      this.target.setAttribute('data-value' + handle, values[handle]);
     }
   });
 
@@ -143,22 +144,22 @@ var slowDownSliderName = RSplayABC;//HACK
     } else if (handle === 1) {
           New_setAudioPosition(audioPositionScreenLocation, values[1]);
     }
-    if (trunAudioBackOn){ // audio was  playing when they fiddled with the sliders
+    if (turnAudioBackOn){ // audio was  playing when they fiddled with the sliders
         OneAudioPlayer.play(); // then turn it back on
-        trunAudioBackOn = false; // and reset the flag
+        turnAudioBackOn = false; // and reset the flag
     }
 
     //PreviousAudioID = audioID;
 
   });
 
-//Style position slider to be different colour
-//origins[1].setAttribute('disabled', true);
+//How to disable handles on audioslider.
+//origins[2].setAttribute('disabled', true);
 }
 
 
 function getURL() {
-    var mp3url = "../mp3/air-tune-the.mp3";
+    var mp3url = "../mp3/banshee.mp3";
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
     showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
@@ -173,7 +174,7 @@ function reloadPage() {
 
 </script>
 <style>
-.h-1-color {background: #181;}
-.h-2-color {background: #b44;}
-.h-3-color {background: #181;}
+.h-1-color {background: #455;}
+.h-2-color {background: #1A1;}
+.h-3-color {background: #455;}
 </style>
