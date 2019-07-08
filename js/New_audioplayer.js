@@ -23,7 +23,7 @@ var Tune_ID = null; // necessary??
 var PreviouspButton = null;
 //var playheadRadius=5; // diam. of playhead = 10
 var audioSlider = null;
-trunAudioBackOn = false;
+turnAudioBackOn = false;
 var AudioPosition;
 var DurationP;
 
@@ -31,7 +31,7 @@ function createAudioPlayer() {
     var pagePlayer = '';
     pagePlayer += '<!-- declare an Audio Player for this page-->';
     pagePlayer += '<audio id="OneAudioPlayer" loop onloadstart="loadStart()" oncanplaythrough="loadFinish()">';
-    pagePlayer += '    <source id="mp3Source" type="audio/mp3"></source>';
+    pagePlayer += '    <source id="mp3Source" type="audio/mp3"></source> ';
     pagePlayer += '    Your browser does not support the audio format.';
     pagePlayer += '</audio>';
 
@@ -63,28 +63,20 @@ function createMP3player_experimental(tuneID, mp3url, playerClass) {
 */
     mp3player += '            <span title="Play tune, select loop starting point, then select loop end point">';
     mp3player += '               <div id="playPosition' + tuneID + '"></div>'
-/*
-    mp3player += '               <input type="button" class="loopButton"id="B1' + tuneID + '" value=" Loop Start "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',0,B1' + tuneID + ', B2' + tuneID + ')" />';
-    mp3player += '               <input type="button" class="loopButton" id="B2' + tuneID + '" value=" Loop End "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',1,B1' + tuneID + ', B2' + tuneID + ')" />';
-    mp3player += '               <input type="button" class="loopButton" value=" Reset "';
-    mp3player += '                  onclick="SetPlayRange(audioplayer' + tuneID + ',2,B1' + tuneID + ', B2' + tuneID + ')" />';
-*/
     mp3player += '            </span>';
     mp3player += '        </div>';
     mp3player += '        <p class="audio"> </p>';
     mp3player += '      </div>';
     // Col 3
     mp3player += '      <div class="small-5 columns">';
-    mp3player += '        <div id="speedControl' + tuneID + '" class="speedControl">';
+    mp3player += '        <div id="speedControl' + tuneID + '" class="new_speedControl">';
     mp3player += '          <span title="Adjust playback speed with slider">';
     mp3player += '               <div id="RS' + tuneID + '"></div>'
 /*
     mp3player += '            <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
     mp3player += '               onchange="setPlaySpeed(audioplayer' + tuneID + ', value/100)" />';
-    mp3player += '            <p class="audio">Speed - <strong><output name="level">100</output>%</strong></p>';
 */
+    mp3player += '            <p id="output_level" class="audio">Speed - 100%</strong></p>';
     mp3player += '          </span>';
     mp3player += '        </div>';
     mp3player += '      </div>';
@@ -141,8 +133,8 @@ function createMP3player(tuneID, mp3url, playerClass) {
 /*
     mp3player += '            <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
     mp3player += '               onchange="setPlaySpeed(audioplayer' + tuneID + ', value/100)" />';
-    mp3player += '            <p class="audio">Speed - <strong><output name="level">100</output>%</strong></p>';
 */
+    mp3player += '            <p class="audio">Speed - <strong><output name="level">100</output>%</strong></p>';
     mp3player += '          </span>';
     mp3player += '        </div>';
     mp3player += '      </div>';
@@ -188,8 +180,8 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
             PreviousTrID = trID;
             // modify slider
             positionSlider.noUiSlider.updateOptions({
-                tooltips: [wNumb({decimals: 1}), false, wNumb({decimals: 1})],
-                pips: {mode: 'count', values: 6, density: 6},
+                tooltips: [wNumb({decimals: 1}), wNumb({decimals: 1}), wNumb({decimals: 1})],
+                //pips: {mode: 'count', values: 6, density: 6},
             });
             if (document.getElementById(trID)) {
                 document.getElementById(trID).style.backgroundColor = 'khaki';
