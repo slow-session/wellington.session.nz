@@ -236,9 +236,12 @@ function createMP3player_experimental(tuneID, mp3url, playerClass) {
 }
 
 function delay_load_upadate(){
+OneAudioPlayer.onloadeddata = function() {
+    CurrentAudioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
+    DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
+};
   //audioSliderHandles[1].removeAttribute('disabled'); // re-enable
-  CurrentAudioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
-  DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
+
 }
 function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioposition, duration, audioSpeed) {
 //alert(trID+", "+ audioplayer+", "+ pButton+", "+ positionSlider+", "+ audioSource+", "+ audioposition+", "+ duration+", "+ audioSpeed);
@@ -294,7 +297,7 @@ function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
         }
         New_positionUpdate(); // this puts the slider exactly where it should be.
     }
-    setTimeout(delay_load_upadate, 500);
+    delay_load_upadate();
 }
 function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioposition, duration, audioSpeed) {
     if (pButton.className == "playButton") {
