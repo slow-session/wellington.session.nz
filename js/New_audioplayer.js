@@ -36,7 +36,7 @@ var audioSlider=document.getElementById(SliderName);
 origins = audioSlider.getElementsByClassName('noUi-origin');
 
   noUiSlider.create(audioSlider, {
-      start: [0, 0, 400],
+      start: [0, 0, 100],
       //tooltips: [wNumb({decimals: 1}), wNumb({decimals: 1}), wNumb({decimals: 1})],
   		connect: [false, true, true, false],
   		//pips: {mode: 'count', values: 6, density: 6},
@@ -46,7 +46,7 @@ origins = audioSlider.getElementsByClassName('noUi-origin');
       step: 0.25,
       range: {
           'min': 0,
-          'max': 400
+          'max': 100
       }
   });
 var RSsliderName=document.getElementById(speedSlider);
@@ -238,6 +238,7 @@ function createMP3player_experimental(tuneID, mp3url, playerClass) {
 function delay_load_upadate(){
 OneAudioPlayer.onloadeddata = function() {
     CurrentAudioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
+    CurrentAudioSlider.noUiSlider.setHandle(2,Number(OneAudioPlayer.duration));
     DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
 };
   //audioSliderHandles[1].removeAttribute('disabled'); // re-enable
@@ -275,6 +276,7 @@ function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
             // modify slider
             positionSlider.noUiSlider.updateOptions({
                 tooltips: [wNumb({decimals: 1}), wNumb({decimals: 1}), wNumb({decimals: 1})],
+                //range: {'min': 0, 'max': Number(OneAudioPlayer.duration)},
                 //pips: {mode: 'count', values: 6, density: 6},
             });
             if (document.getElementById(trID)) {
