@@ -37,7 +37,7 @@ URL: <input type="text" name="url" class="enter" value="" id="url" style="width:
 </div>
 </div>
 
-<script src="{{ site.mp3_host }}/js/audioplayer.js"></script>
+<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 
 <script>
 function getURL() {

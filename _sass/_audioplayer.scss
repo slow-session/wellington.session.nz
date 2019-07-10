@@ -1,6 +1,7 @@
 .mp3player_tunepage {
     max-width: 650px;
     min-width: 450px;
+    min-height: 58px;
 }
 
 .abcplayer_tunepage {
@@ -19,16 +20,16 @@
 }
 
 .playButton {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border: none;
     background: url('/images/play-new.png');
     opacity: 0.7;
     background-size: 60% 60%;
     background-repeat: no-repeat;
     float: left;
-    margin: 10px auto auto auto;
-    outline: none;
+    padding: 1px auto 10px 1px;
+    outline: 1px;
 }
 .playButton:hover {
   opacity: 1.0;
@@ -36,25 +37,25 @@
 }
 
 .pauseButton {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border: none;
     background: url('/images/pause-new.png');
     background-size: 60% 60%;
     background-repeat: no-repeat;
     float: left;
-    margin: 10px auto auto auto;
+    padding: 1px auto 10px 1px;
     outline: none;
 }
 .stopButton {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border: none;
     background: url('/images/stop-new.png');
     background-size: 60% 60%;
     background-repeat: no-repeat;
     float: left;
-    margin: 10px auto auto auto;
+    padding: 1px auto 10px 1px;
     outline: none;
 }
 
@@ -65,7 +66,12 @@
     margin-bottom: 15px;
     float: left;
 }
-
+.new_audioControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 9px;
+    float: left;
+}
 .loopControl {
     width: 100%;
     min-width: 180px;
@@ -83,7 +89,7 @@
 .new_speedControl {
   width: 100%;
   min-width: 100px;
-  margin-top: 0px;
+  margin-top: 9px;
   padding-left: 20px;
   float: left;
 }
@@ -91,27 +97,20 @@
     position: relative;
     font-size: 11px;
     margin-top: 32px;
-    margin-left: -18px;
+    width: 35px;
+    //margin-left: -18px;
     //float: right;
     text-align: center;
     font-weight: bold;
 }
 
-.audioPosABC {
-    position: relative;
-    font-size: 11px;
-    margin-top: 30px;
-    margin-left: -18px;
-    //float: right;
-    text-align: center;
-    font-weight: bold;
-}
 
 .durationP {
     position: relative;
     font-size: 11px;
+    width: 35px;
     //margin-top: 37px;
-    margin-left: -18px;
+    //margin-left: -18px;
     //float: right;
     text-align: center;
     font-weight: bold;
