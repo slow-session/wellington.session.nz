@@ -67,96 +67,6 @@ Test page for new mp3 player.
 
 
 <script>
-var origins = null;
-
-function createSlider(SliderName){
-audioSlider=document.getElementById(SliderName);
-origins = audioSlider.getElementsByClassName('noUi-origin');
-  noUiSlider.create(audioSlider, {
-      start: [0, 0, 400],
-      //tooltips: [wNumb({decimals: 1}), wNumb({decimals: 1}), wNumb({decimals: 1})],
-  		connect: [false, true, true, false],
-  		//pips: {mode: 'count', values: 6, density: 6},
-      animate: true,
-      animationDuration: 400,
-      behaviour: 'drag',
-      step: 0.25,
-      range: {
-          'min': 0,
-          'max': 100
-      }
-  });
-var slowDownSliderName = RSplayABC;//HACK
-  noUiSlider.create(slowDownSliderName, {  
-      start: [100],
-      //tooltips: [wNumb({decimals: 0, suffix: '%'})],
-  		//pips: {mode: 'count', values: 3, density: 10, format: wNumb({decimals: 0, suffix: '%'})},
-      range: {
-          'min': 50,
-          'max': 120
-      }
-  });
-
-  var Handles = audioSlider.querySelectorAll('.noUi-handle');
-  var classes = ['h-1-color', 'h-2-color', 'h-3-color'];
-  for (var i = 0; i < Handles.length; i++) {
-      Handles[i].classList.add(classes[i]);
-  };
-
-
-  slowDownSliderName.noUiSlider.on('update', function(value){
-       setPlaySpeed(null, value/100);
-       output_level.innerHTML = "Speed - "+Number(value).toFixed(0)+" %";
-  });
-
-  audioSlider.noUiSlider.on('start', function (values, handle) {
-    //alert("start");
-
-
-      if (OneAudioPlayer.paused==false){ // audio is currently playing.
-          OneAudioPlayer.pause(); // first pause the audio
-          turnAudioBackOn = true;
-      }
-  });
-
-  audioSlider.noUiSlider.on('update', function (values, handle) {
-    if (handle === 1) {
-      var audioPositionScreenLocation = 'APos' + Tune_ID;
-      var durationScreenLocation = 'Dur' + Tune_ID;
-      New_adjustAudioPosition(audioPositionScreenLocation, durationScreenLocation, values[1]);
-      //New_setAudioPosition(Tune_ID, values[1]);
-      this.target.setAttribute('data-value' + handle, values[handle]);
-    }
-  });
-
-  audioSlider.noUiSlider.on('change', function (values, handle) {
-    var audioPositionScreenLocation = 'APos' + Tune_ID;
-    var durationScreenLocation = 'Dur' + Tune_ID;
-    //alert(audioPositionScreenLocation+", "+durationScreenLocation);
-    if (handle === 0) {
-          BeginLoopTime = values[0];
-          EndLoopTime = values[2];
-          OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
-    } else if (handle === 2) {
-          BeginLoopTime = values[0];
-          EndLoopTime = values[2];
-          OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
-    } else if (handle === 1) {
-          New_setAudioPosition(audioPositionScreenLocation, values[1]);
-    }
-    if (turnAudioBackOn){ // audio was  playing when they fiddled with the sliders
-        OneAudioPlayer.play(); // then turn it back on
-        turnAudioBackOn = false; // and reset the flag
-    }
-
-    //PreviousAudioID = audioID;
-
-  });
-
-//How to disable handles on audioslider.
-//origins[2].setAttribute('disabled', true);
-}
-
 
 function getURL() {
     var mp3url = "../mp3/banshee.mp3";
@@ -164,7 +74,7 @@ function getURL() {
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
     showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
     OneAudioPlayer.src = mp3url;
-    createSlider('playPositionplayABC');
+    createSlider('playPositionplayABC', 'RSplayABC');
     //OneAudioPlayer.pause();
 
 }

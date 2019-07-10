@@ -177,6 +177,8 @@ function show_iframe(url) {
     }
 </script>
 
+<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
+<script src="{{ site.mp3_host }}/js/wNumb.js"></script>
 
 <!-- Show errors -->
 <div id='warnings'></div>
@@ -189,7 +191,9 @@ function show_iframe(url) {
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
+        showPlayer.innerHTML = createMP3player_experimental(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
+        //OneAudioPlayer.src = '{{ site.mp3_host }}{{ page.mp3_file }}';
+        createSlider('playPosition'+tuneId, 'RS'+tuneId);
         tuneId++;
         {% endif %}
 

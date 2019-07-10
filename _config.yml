@@ -83,12 +83,10 @@ defaults:
         path: "_tunes"
     values:
         layout: "tunepage"
-
   - scope:
         path: "_othertunes"
     values:
-      layout: "tunepage"
-
+        layout: "tunepage"
   - scope:
         path: "_sets"
     values:
