@@ -1,7 +1,7 @@
 .mp3player_tunepage {
     max-width: 650px;
     min-width: 450px;
-    min-height: 58px;
+    min-height: 60px;
 }
 
 .abcplayer_tunepage {
@@ -20,14 +20,14 @@
 }
 
 .playButton {
-    height: 60px;
-    width: 60px;
+    height: 32px;
+    width:32;
     border: none;
     background: url('/images/play-new.png');
     opacity: 0.7;
-    background-size: 60% 60%;
+    background-size: contain;
     background-repeat: no-repeat;
-    float: left;
+    float: left-top;
     padding: 1px auto 10px 1px;
     outline: 1px;
 }
@@ -37,22 +37,22 @@
 }
 
 .pauseButton {
-    height: 60px;
-    width: 60px;
+    height: 32px;
+    width: 32px;
     border: none;
     background: url('/images/pause-new.png');
-    background-size: 60% 60%;
+    background-size: contain;
     background-repeat: no-repeat;
     float: left;
     padding: 1px auto 10px 1px;
     outline: none;
 }
 .stopButton {
-    height: 60px;
-    width: 60px;
+    height: 32px;
+    width: 32px;
     border: none;
     background: url('/images/stop-new.png');
-    background-size: 60% 60%;
+    background-size: contain;
     background-repeat: no-repeat;
     float: left;
     padding: 1px auto 10px 1px;
@@ -69,8 +69,8 @@
 .new_audioControl {
     width: 100%;
     min-width: 180px;
-    margin-top: 9px;
-    float: left;
+    margin-top: 27px;
+    float: center;
 }
 .loopControl {
     width: 100%;
@@ -89,7 +89,7 @@
 .new_speedControl {
   width: 100%;
   min-width: 100px;
-  margin-top: 9px;
+  margin-top: 27px;
   padding-left: 20px;
   float: left;
 }
@@ -97,13 +97,22 @@
     position: relative;
     font-size: 11px;
     margin-top: 32px;
-    width: 35px;
+    width: 32px;
     //margin-left: -18px;
     //float: right;
     text-align: center;
     font-weight: bold;
 }
-
+.audioPosABC {
+  position: relative;
+  font-size: 11px;
+  margin-top: 32px;
+  width: 32px;
+  //margin-left: -18px;
+  //float: right;
+  text-align: center;
+  font-weight: bold;  
+}
 
 .durationP {
     position: relative;
@@ -223,7 +232,7 @@ tr:nth-of-type(odd) {
       background-color:darken($complimentary-color, 6%);
 }
 tr:hover {
-    background-color: lightsteelblue;
+    background-color: darken($complimentary-color, 12%);;
 }
 tr#no_hover:hover {
     background-color: transparent;
@@ -315,14 +324,17 @@ tr#no_hover:hover {
   .noUi-vertical .noUi-handle:after {
     top: 12px;
   }
-  noUi-tooltip {
+  .noUi-tooltip {
     display: block;
     position: absolute;
-    border: 1px solid #D7D7D7;
-    border-radius: 2px;
-    background: #EEE;
+    border: 0px solid #D7D7D7;
+    border-radius: 8px;
+    background: transparent;
     color: #000;
-    padding: 5px;
+    padding-left: 2px;
+    padding-bottom: 0px;
+    padding-right: 2px;
+    padding-top: 0px;
     text-align: center;
     white-space: nowrap;
   }
@@ -333,7 +345,9 @@ tr#no_hover:hover {
     bottom: 120%;
     font-size: 12px;
     padding: 2px;
+    z-index: -1;
   }
+
   .noUi-horizontal .noUi-handle {
     width: 15px;
     height: 20px;
@@ -341,6 +355,24 @@ tr#no_hover:hover {
     //background: #455;
     cursor: pointer;
   }
+  .noUi-horizontal .noUi-handle[data-handle='1'] {
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+    //background: #455;
+    cursor: pointer;
+  }
+  .noUi-horizontal .noUi-handle[data-handle='1'] .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 20%);
+    left: 50%;
+    bottom: 120%;
+    font-size: 12px;
+    padding: 2px;
+    z-index: -1;
+  }
+
+
   .noUi-connects {
     border-radius: 3px;
   }
