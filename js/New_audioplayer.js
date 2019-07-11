@@ -33,7 +33,7 @@ var AudioSpeed=0;
 function createSlider(SliderName, speedSlider){
 //alert(SliderName+", "+speedSlider);
 var audioSlider=document.getElementById(SliderName);
-origins = audioSlider.getElementsByClassName('noUi-origin');
+//origins = audioSlider.getElementsByClassName('noUi-origin');
 
   noUiSlider.create(audioSlider, {
       start: [0, 0, 100],

@@ -98,6 +98,8 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
+<script>var sliderArray1 = [];</script>
+<script>var sliderArray2 = [];</script>
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
@@ -108,6 +110,16 @@ $(document).ready(function() {
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 3:{sorter: false}}});    
+    $("#search-results").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 3:{sorter: false}}});  
+    Create_archive_sliders();
+
 });
+function Create_archive_sliders(){
+  //alert(sliderArray1.length);
+  for(var i=0;i<sliderArray1.length;i++){
+    //alert(sliderArray[i]);
+    createSlider(sliderArray1[i],sliderArray2[i]);
+  }
+}
+
 </script>
