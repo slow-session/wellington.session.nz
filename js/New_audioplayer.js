@@ -60,13 +60,6 @@ var RSsliderName=document.getElementById(speedSlider);
       }
   });
 
-  var Handles = audioSlider.querySelectorAll('.noUi-handle');
-  var classes = ['h-1-color', 'h-2-color', 'h-3-color'];
-  for (var i = 0; i < Handles.length; i++) {
-      Handles[i].classList.add(classes[i]);
-  };
-
-
 
   audioSlider.noUiSlider.on('start', function (values, handle) {
     //alert("start");
@@ -202,7 +195,7 @@ function createMP3player_experimental(tuneID, mp3url, playerClass) {
     mp3player += '      </div>';
     // Col 2
     mp3player += '      <div class="small-6 columns">';
-    mp3player += '        <div class="loopControl">';
+    mp3player += '        <div class="audio">';
 /*
     mp3player += '        <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="audioControl slider" min="0" max="400" value="0"';
     mp3player += '            oninput="adjustAudioPosition(audioplayer' + tuneID + ', value/400)"';
