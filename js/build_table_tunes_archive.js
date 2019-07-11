@@ -43,6 +43,8 @@
              for (var key in store) { // Iterate over the original data
                  var item = store[key];
                  appendString += createTableRow(item);
+                 //createSlider('playPosition'+item.tuneID, 'RS'+item.tuneID);
+                 //alert("HERE");
                  addTextArea(item);
                  tunesCounter++;
              }
@@ -65,8 +67,10 @@
          if (item.mp3) {
              // build the audio player for each tune
              tableRow += '<td>';
-             tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
-             //tableRow += createSlider('playPosition'+item.tuneID, 'RS'+item.tuneID);
+             tableRow += createMP3player_experimental(item.tuneID, item.mp3, 'mp3player_tablerow');
+             sliderArray1.push("playPosition"+item.tuneID);
+             sliderArray2.push("RS"+item.tuneID);
+             //alert("playPosition"+item.tuneID + ", RS"+item.tuneID);
              tableRow += '</td></tr>';
          } else {
              // build the abc player for each tune
@@ -166,4 +170,5 @@
          displayTunesTable('', window.store);
      }
      return false;
+
  })();
