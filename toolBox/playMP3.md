@@ -7,6 +7,7 @@ permalink: /playMP3/
 <div id="audioPlayer"></div>
 <div id="showPlayer">
 
+
 <p>If you come across audio files on the Internet that aren't on our
 site you can use this page to slow down a number of audio and video
 formats and play parts of them in a loop.
@@ -38,16 +39,26 @@ URL: <input type="text" name="url" class="enter" value="" id="url" style="width:
 </div>
 
 <script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
+<script src="{{ site.mp3_host }}/js/wNumb.js"></script>
 
 <script>
 function getURL() {
+
     var mp3url = document.getElementById("url").value;
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
+    //showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    createSlider('playPositionplayABC','RSplayABC');
+
 
 }
 function reloadPage() {
     window.location.reload(true);
 }
 </script>
+<style>
+.h-1-color {background: #455;}
+.h-2-color {background: #1A1;}
+.h-3-color {background: #455;}
+</style>
