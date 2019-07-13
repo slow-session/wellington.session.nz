@@ -101,8 +101,8 @@ function createSegmentTable(){
   for(i=0;i<segments.length;i++){
     segmentList += '<tr><td>'+segments[i].name+'</td>';
     segmentList += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
+    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
   }
   segmentList += '</table>';
 return segmentList;
@@ -151,6 +151,8 @@ function applySegments(){
       CurrentAudioSlider.noUiSlider.setHandle(1,fullBeginLoopTime);
       CurrentAudioSlider.noUiSlider.setHandle(0,fullBeginLoopTime);
       CurrentAudioSlider.noUiSlider.setHandle(2,fullEndLoopTime);
+      BeginLoopTime = fullBeginLoopTime;
+      EndLoopTime = fullEndLoopTime;
       if (turnAudioBackOn){ // audio was  playing when they fiddled with the checkboxes
           OneAudioPlayer.play(); // then turn it back on
           turnAudioBackOn = false; // and reset the flag
