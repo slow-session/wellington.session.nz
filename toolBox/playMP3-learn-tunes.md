@@ -64,7 +64,7 @@ function reloadPage() {
 
 let segments = [
 {name: "A part",start: 0.6, end: 16.5},
-{name: "B part",start: 16.5, end: 62.1},
+{name: "B part",start: 16.5, end: 32.3},
 {name: "A-1",start: 5.0, end: 8.9},
 {name: "A-2",start: 8.9, end: 16.5},
 {name: "B-1",start: 16.5, end: 24.3},
