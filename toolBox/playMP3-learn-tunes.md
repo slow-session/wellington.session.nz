@@ -34,8 +34,18 @@ URL: <input type="text" name="url" class="enter" value="../mp3/billowing-waves.m
 <input type="button" class="filterButton" onclick="getURL()" value="Create Player">
 
 </div>
-
-
+<style>
+.upDownButton {
+  background-color: #1c2e20;
+  border: none;
+  color: white;
+  padding: 3px;
+  align: center;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+</style>
 <script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 
 <script>
@@ -91,7 +101,8 @@ function createSegmentTable(){
   for(i=0;i<segments.length;i++){
     segmentList += '<tr><td>'+segments[i].name+'</td>';
     segmentList += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-    segmentList += '<td>'+'<input type="text" id="check' + i + 'from" size="6" value='+segments[i].start+'><td><input type="text" id="check' + i + 'to" size="6" value='+segments[i].end+'></td></tr>';
+    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
+    segmentList += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
   }
   segmentList += '</table>';
 return segmentList;
@@ -99,8 +110,6 @@ return segmentList;
 
 function applySegments(){
   var text='';
-
-
     var fullBeginLoopTime = Number(OneAudioPlayer.duration);
     var fullEndLoopTime = Number(0.0);
     var numCheckedBoxes = 0;
@@ -155,8 +164,59 @@ function applySegments(){
 /*
 New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, '../mp3/billowing-waves.mp3', APosplayABC, DurplayABC,  RSSplayABC);
 */
+function Adjust_up(row, inputBox) {
+  var elName = "check"+row;
+  if(document.getElementById(elName).checked == false) return;
+  if(inputBox == 0){
+    elName += "from";
+  } else if (inputBox == 2) {
+    elName += "to";
+  }
+  target = checkBox = document.getElementById(elName);
+    NumValue=Number(target.value)
+  if(NumValue <= (OneAudioPlayer.duration - 0.25)) {
+    //alert("up "+target.value);
+    target.value = Number(NumValue + 0.25).toFixed(2);
+    if((inputBox == 0 ) & (OneAudioPlayer.currentTime < target.value)) {
+      OneAudioPlayer.currentTime = target.value;
+    }
+    CurrentAudioSlider.noUiSlider.setHandle(inputBox,target.value);
+    //alert(target.value);   
+    if(inputBox == 0){
+      BeginLoopTime = target.value;
+    } else if ( inputBox == 2){
+      EndLoopTime = target.value;
+    }
+  }
+}
+
+function Adjust_down(row, inputBox){
+  var elName = "check"+row;
+  if(document.getElementById(elName).checked == false) return;
+  if(inputBox == 0){
+    elName += "from";
+  } else if (inputBox == 2) {
+    elName += "to";
+  }
+  target = checkBox = document.getElementById(elName);
+  NumValue=Number(target.value)
+  if(NumValue >= 0.25) {
+    //alert("dn "+target.value);
+    target.value = Number(NumValue - 0.25).toFixed(2);
+    if((inputBox == 2) & (OneAudioPlayer.currentTime > target.value)) {
+      OneAudioPlayer.currentTime = target.value;
+    }
+    CurrentAudioSlider.noUiSlider.setHandle(inputBox,target.value);
+    //alert(target.value);
+    if(inputBox == 0){
+      BeginLoopTime = target.value;
+    } else if ( inputBox == 2){
+      EndLoopTime = target.value;
+    }
+  }
 
 
+}
 function New_LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioposition, duration, audioSpeed) {
 //alert(trID+", "+ audioplayer+", "+ pButton+", "+ positionSlider+", "+ audioSource+", "+ audioposition+", "+ duration+", "+ audioSpeed);
     if (pButton.className == "playButton") {
