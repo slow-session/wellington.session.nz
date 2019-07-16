@@ -5,6 +5,7 @@ permalink: /learn-a-tune/
 ---
 <div>
 <p>
+Just for Development and feedback - not very functional.<br>
 Mock up of tune learning page.  There are up to 9 loops which can be defined or automatically calculated. Neither is happening here. The list of tunes on the right will be for choosing a tune to work on. The "create player" button is just temporary.
 
 </p>
