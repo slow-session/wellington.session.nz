@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags:
+repeats: 2
+parts: 1
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/an-londubh.mp3
@@ -20,7 +22,7 @@ abc: |
     X: 1
     T: An Londubh
     T: The Blackbird
-    S: Richard Tait 
+    S: Richard Tait
     N: Recorded in Bb; transposed here to D “as played”
     R: hornpipe
     M: 4/4
@@ -30,5 +32,5 @@ abc: |
     ~B3d A2 Bc|d2 AG (3FGF D2|FGAF GBAG|(3FGF D2 DEFG|
     Addc dfeg|fded cAGB|Addc deag|(3fgf d2 d2 fe|
     dcAF G2 A/B/c|d2 AG (3FGF D2|FGAF GBAG|1 (3FGF D2 DEFG :|2 (3FGF D2 DFGA||
-    
+
 ---

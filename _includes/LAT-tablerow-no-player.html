@@ -1,0 +1,11 @@
+{% if tune.mp3_file %}
+<tr id='tr{{ include.tuneId }}'>
+<td class="tuneTitle"><button class = "tuneSelector" type="button" onclick="changeTune({{ include.tuneId }})">{{ tune.title }}</button></td>
+<td>{{ tune.key }}</td>
+<td>{{ tune.rhythm }}</td>
+<td style="display: none;"><div id='abc{{ include.tuneId }}'><!-- {{ tune.abc }}--></div></td>
+<td style="display: none;">{{ tune.mp3_file }}</td>
+<td style="display: none;">{{ tune.repeats }}</td>
+<td style="display: none;">{{ tune.parts }}</td>
+</tr>
+{% endif %}

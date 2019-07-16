@@ -8,6 +8,8 @@ date: 2017-01-23
 location: Auckland Wellington
 notes:
 tags:
+repeats: 2
+parts: 2
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/apples-in-winter.mp3
