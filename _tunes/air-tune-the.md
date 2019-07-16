@@ -7,6 +7,8 @@ date: 2018-03-19
 location: Wellington
 notes:
 tags:
+repeats: 1
+parts: 2
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/air-tune-the.mp3

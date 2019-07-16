@@ -34,8 +34,6 @@ Player controls
 <!-- ***************************************************
   rendered ABC and tune selector scrolling table
 -->
-
-
 <div class="row">
   <div class="small-8 columns">  
       <div class="output">
@@ -44,12 +42,10 @@ Player controls
   </div>
 
       <div id='abcSource' style="display: none;">
-          <div class="row">
-              <div class="small-6 columns">
-                  <textarea name='abcText' id="abcText" rows="13" cols="65"
+        <textarea name='abcText' id="abcText" rows="13" cols="65"
                   style="background-color:#ebebeb; font-size:small; max-width:100%"
                   spellcheck="false">
-X: 3
+<!-- X: 3
 T: The Air Tune
 R: reel
 M: 4/4
@@ -59,41 +55,28 @@ K: D
 Af fe f2 ed|(3fga de f2 ed|dB Be dB (3Bcd[1FAGE DEFG :|2 FAGE Defg||
 |:a2 ga fg ef|ed cd FA DA|Beed fded|BA ~A2 BAFG|
 a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
-                  </textarea>
-                  <span title="Download the ABC you've entered. Don't lose your work!">
-          	    <input value='Download ABC' type='button' class="filterButton"
-                  onclick='downloadFile(document.getElementById("filename").value,
-                          document.getElementById("abcText").value)' />
-                  </span>
-              </div>
-              <div class="small-6 columns" style="max-width:80%">
-          <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.
-          A brief set of instructions is found <a href="/editingABC/">here.</a></p>
+-->
+        </textarea>
 
-          <p>If you feel that your changes are a closer match to the recording on the website, please save
-          your changes (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and
-          we will review the proposed changes.</p>
-              </div>
-      </div></div>
+      </div>
 
-
-  <div class="small-4 columns">
-        <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px;">
+  <div class="small-4 columns" style="padding-top: 20px;">
+        <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 1px solid black; border-radius: 10px;">
         <thead>
             <tr>
-            <th style="width70%;">Tune Name&#x25B2;&#x25BC;</th>
-            <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-            <th style="width:14%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+              <th style="width70%;">Tune Name&#x25B2;&#x25BC;</th>
+              <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
+              <th style="width:14%;">Rhythm<br />&#x25B2;&#x25BC;</th>
             </tr>
         </thead>
         <tbody>
-            {% assign tunes = site.tunes | where: 'location', 'Wellington' %}
+            {% assign tunes = site.tunes %}
             {% assign sortedtunes = tunes | sort: 'titleID' %}
             {% assign tuneid = 200 %}
             {% for tune in sortedtunes %}
-            {% if tune.mp3_file  contains "mp3" %}
-              {% assign tuneid = tuneid | plus: 1 %}
-              {% include tablerow-no-player.html tuneId=tuneid %}
+              {% if tune.mp3_file  contains "mp3" %}
+                {% assign tuneid = tuneid | plus: 1 %}
+                {% include LAT-tablerow-no-player.html tuneId=tuneid %}
               {% endif %}
             {% endfor %}
         </tbody>
@@ -106,30 +89,9 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
 <!-- <div id="showPlayer"></div> -->
 <div id="ABC"></div>
 
-
-
-<div>
-
-
 <div id="showLoops"></div>
-</div>
 
 
-
-
-
-<style>
-.upDownButton {
-  background-color: #1c2e20;
-  border: none;
-  color: white;
-  padding: 3px;
-  align: center;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-}
-</style>
 <script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 
 <script>
@@ -146,6 +108,11 @@ function getURL() {
     New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
     abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 }
+
+function changeTune(tuneNumber){
+  alert(tuneNumber);
+}
+
 function reloadPage() {
     window.location.reload(true);
 }
@@ -158,17 +125,17 @@ let segments = [
 {name: "B-1",start: 16.5, end: 24.3},
 {name: "B-2",start: 24.3, end: 32.3},
 {name: "Full",start: 0.6, end: 32.3},
+{name: "User",start: 0.0, end: 69},
+{name: "User",start: 0.0, end: 69},
 ];
 
 
 function createSegmentTable(){
 
-  var segmentList0='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
-  segmentList1='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
-  segmentList2='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
+  var segmentList0='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
+  segmentList1='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
+  segmentList2='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
 
-/*  '<table style="width:40%" style="float: right"><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
-*/
   for(i=0;i<segments.length;i++){
     j=Math.floor(i/3);
     switch (j) {
@@ -193,9 +160,9 @@ function createSegmentTable(){
     }
 
   }
-    segmentList0 += '</table>';
-    segmentList1 +='</table>';
-    segmentList2 +='</table>';
+    segmentList0 += '</tbody></table>';
+    segmentList1 +='</tbody></table>';
+    segmentList2 +='</tbody></table>';
 return [segmentList0, segmentList1, segmentList2];
 }
 
@@ -355,7 +322,16 @@ function New_LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
         delay_load_upadate();
     }
 }
-
-
-
 </script>
+<style>
+.upDownButton {
+  background-color: #1c2e20;
+  border: none;
+  color: white;
+  padding: 3px;
+  align: center;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+</style>
