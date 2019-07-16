@@ -1,0 +1,29 @@
+<!--build the first three columns-->
+<tr id='tr{{ include.tuneId }}'>
+<td class="tuneTitle"><a href="{{ tune.url }}">{{ tune.title }}</a></td>
+<td>{{ tune.key }}</td>
+<td>{{ tune.rhythm }}</td>
+{% if include.showSet %}
+{% if tune.set %} {% assign tempSet = tune.set %} {% else %} {% assign tempSet = "none" %} {% endif %}
+<td>{{ tempSet }}</td>
+{% endif %}
+{% if tune.mp3_file %}
+<td id="showPlayer{{ include.tuneId }}">
+<script>
+
+</script>
+</td>
+{% else %}
+<td id="showPlayer{{ include.tuneId }}">
+<script>
+showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}', 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
+</script>
+</td>
+
+
+<!--unroll ABC to handle repeats and different endings for parts-->
+<script>
+textAreas.innerHTML += '<textarea id="{{'ABC' | append: include.tuneId }}" style="display:none;">' + preProcessABC({{ tune.abc | jsonify }}) + '</textarea>';
+</script>
+{% endif %}
+</tr>
