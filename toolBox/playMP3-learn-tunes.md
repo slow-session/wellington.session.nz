@@ -3,29 +3,7 @@ layout: page
 title: Play MP3 Learn Tunes
 permalink: /playMP3-learn-tunes/
 ---
-<div class="player">
-<div id="audioPlayer"></div>
-<div id="showPlayer"></div>
-<div id="showLoops"></div>
-
-<p>An experimental player for defining and playing loops. The positions can be re-defined, and other tunes can be loaded.
-Very little error checking as yet...
-</p>
-
-<ul>
-<li>.mp3</li>
-<li>.mp4</li>
-<li>.mov</li>
-<li>.m4a</li>
-<li>.ogg</li>
-<li>.wav</li>
-
-</ul>  
-
-<p>
-And other formats might work as well.
-</p>
-
+<div>
 <p>
 Try it by copying and pasting this URL -> http://www.mandolincafe.net/mp3/hadj.mp3
 </p>
@@ -33,7 +11,42 @@ Try it by copying and pasting this URL -> http://www.mandolincafe.net/mp3/hadj.m
 URL: <input type="text" name="url" class="enter" value="../mp3/billowing-waves.mp3" id="url" style="width: 400px;" >
 <input type="button" class="filterButton" onclick="getURL()" value="Create Player">
 
+
 </div>
+<div class="player">
+<div id="audioPlayer"></div>
+<div id="showPlayer"></div>
+<div id="ABC"></div>
+
+
+
+<div>
+
+<table style="width:35%" id="tunes" style="float: left" class="tablesorter">
+<thead>
+    <tr>
+    <th style="width20%;">Tune Name&#x25B2;&#x25BC;</th>
+    <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
+    <th style="width:12%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+    </tr>
+</thead>
+<tbody>
+{% assign tunes = site.tunes | where: 'tags', 'wellyfest' %}
+{% assign sortedtunes = tunes | sort: 'rhythm' %}
+  {% assign tuneid = 200 %}
+  {% for tune in sortedtunes %}
+      {% assign tuneid = tuneid | plus: 1 %}
+{% include tablerow-no-player.html tuneId=tuneid %}
+  {% endfor %}
+</tbody>
+</table>
+<div id="showLoops"></div>
+</div>
+
+
+
+
+
 <style>
 .upDownButton {
   background-color: #1c2e20;
@@ -72,32 +85,9 @@ let segments = [
 {name: "Full",start: 0.6, end: 32.3},
 ];
 
-/*
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
-*/
+
 function createSegmentTable(){
-  var segmentList='<table style="width:50%"><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
+  var segmentList='<table style="width:40%" style="float: right"><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr>';
   for(i=0;i<segments.length;i++){
     segmentList += '<tr><td>'+segments[i].name+'</td>';
     segmentList += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
