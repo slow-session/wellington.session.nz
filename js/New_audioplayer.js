@@ -229,7 +229,7 @@ function createMP3player_experimental(tuneID, mp3url, playerClass) {
 }
 
 function delay_load_upadate(){
-OneAudioPlayer.onloadeddata = function() {
+OneAudioPlayer.ondurationchange = function() {
     CurrentAudioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
     CurrentAudioSlider.noUiSlider.setHandle(2,Number(OneAudioPlayer.duration));
     DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
