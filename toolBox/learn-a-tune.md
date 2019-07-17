@@ -5,11 +5,10 @@ permalink: /learn-a-tune/
 ---
 <div>
 <p>
-Just for Development and feedback - not very functional.<br>
-Mock up of tune learning page.  There are up to 9 loops which can be defined or automatically calculated. Neither is happening here. The list of tunes on the right will be for choosing a tune to work on. The "create player" button is just temporary.
+Still under development.<br>
+Prototype of tune learning page.  There are up to 9 loops, some of which are automatically calculated based on tune rhythm. We assume 2 repetitions of the tune. We are guessing at the number of parts based on the ABCs. Check a box to select the section. Multiple selected sections are combined. Up/Dn buttons adjust the <b>selected</b> sections by 0.25 seconds. Your suggestions are welcome.
 
 </p>
-<input type="button" class="filterButton" onclick="getURL()" value="Create Player">
 </div>
 <!-- ***************************************************
 Player controls
@@ -21,15 +20,15 @@ Player controls
       <div id="showPlayer"></div>
     </div>
   </div>
-  <div class="small-2 large-3 columns end">...</div>
+  <div class="small-2 large-3 columns end"></div>
 </div>
 <!-- ***************************************************
   loop presets
 -->
 <div class="row" style="font-size:14px;">
-  <div class="small-4 columns" id="segments0">...</div>
-  <div class="small-4 columns" id="segments1">...</div>
-  <div class="small-4 columns" id="segments2">...</div>
+  <div class="small-4 columns" id="segments0">.</div>
+  <div class="small-4 columns" id="segments1">.</div>
+  <div class="small-4 columns" id="segments2">.</div>
 </div>
 <!-- ***************************************************
   rendered ABC and tune selector scrolling table
@@ -61,6 +60,9 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
       </div>
 
   <div class="small-4 columns" style="padding-top: 20px;">
+<p><b>
+Scroll down and select tune by clicking tune name.
+</b></p>
         <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 1px solid black; border-radius: 10px;">
         <thead>
             <tr>
@@ -95,23 +97,13 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
 <script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 
 <script>
-function getURL() {
-    var mp3url = "../mp3/air-tune-the.mp3";
-    audioPlayer.innerHTML = createAudioPlayer();
-    showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
-    createSlider('playPositionplayABC','RSplayABC');
-    var segmentArray = createSegmentTable();
-    segments0.innerHTML = segmentArray[0];
-    segments1.innerHTML = segmentArray[1];
-    segments2.innerHTML = segmentArray[2];
-    New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
-    abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-}
 
 function changeTune(tuneNumber){
 
-    document.getElementById("abcText").innerHTML = document.getElementById("abc"+tuneNumber).innerHTML;
+    var abc_text = document.getElementById("abc"+tuneNumber).innerHTML;
+    var revised_abc=abc_text.replace("<!--", "");
+    abc_text = revised_abc.replace("-->", "");
+    document.getElementById("abcText").innerHTML = abc_text;
 
     var mp3url = document.getElementById("mp3_name"+tuneNumber).innerHTML;
     audioPlayer.innerHTML = createAudioPlayer();
@@ -123,20 +115,91 @@ function changeTune(tuneNumber){
     New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
 
     abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-    //setTimeout(update_segments,1000); timing problem - doesn't know length yet.
-    OneAudioPlayer.onloadeddata = function() {
-      update_segments();
-      segmentArray = createSegmentTable();
-      segments0.innerHTML = segmentArray[0];
-      segments1.innerHTML = segmentArray[1];
-      segments2.innerHTML = segmentArray[2];
-    };
+    var total_note_count = count_bars_abc(document.getElementById("abcText").innerHTML);
 
+    OneAudioPlayer.ondurationchange = function() {delay_update_segments(tuneNumber,total_note_count)};
 
 }
-function update_segments(){
+function delay_update_segments(tuneNumber,total_note_count) {
+  update_segments(tuneNumber,total_note_count);
+  segmentArray = createSegmentTable();
+  segments0.innerHTML = segmentArray[0];
+  segments1.innerHTML = segmentArray[1];
+  segments2.innerHTML = segmentArray[2];
+  CurrentAudioSlider.noUiSlider.updateOptions({range: {'min': 0, 'max': Number(OneAudioPlayer.duration)}});
+  CurrentAudioSlider.noUiSlider.setHandle(2,Number(OneAudioPlayer.duration));
 
-Seg1 = Number(OneAudioPlayer.duration).toFixed(2);
+}
+
+function update_segments(tuneNumber,total_note_count){
+
+  var seg_full = Number(OneAudioPlayer.duration);
+  var  tune_rhythm = document.getElementById("tune_type"+tuneNumber).innerHTML;
+
+  var repeats = document.getElementById("mp3_repeats"+tuneNumber).innerHTML;
+  if (repeats < 1) { repeats = 2;} //not defined - default value = 2 possibly use total length?
+
+  parts = document.getElementById("mp3_parts"+tuneNumber).innerHTML;
+  //alert(parts);
+  if (parts < 1) {
+
+    switch(tune_rhythm) { //attempt to calculate number of parts
+    case "reel":
+    case "hornpipe":
+    case "barndance":
+      base_length = 128;
+      break;
+    case "mazurka":
+    case "waltz":
+    case "jig":
+      base_length = 96;
+      break;
+    case "slip jig":
+      base_length = 72;
+      break;
+    case "polka":
+        base_length = 128;
+        break;
+    default:
+      base_length = 128;
+    }
+    var divisions = total_note_count/base_length; // see if tune fits a pattern
+    var int_divisions = Math.floor(divisions + 0.1);
+  }
+  if((divisions-int_divisions)< 0.2){ // parts can be calculated
+    parts=int_divisions;
+  } else {
+    parts=2; // parts can't be calculated - assigned to default value=2
+  }
+  var start1=0.0;
+  var start2=0.0;
+  var end1=0.0;
+  var end2=0.0;
+  var each_part = seg_full/repeats/parts;
+  var current_segment = 0;
+  if((parts*2)<10) {
+    for(i=0;i<parts;i++){ // divide parts in half and fill in table;
+      start1=each_part*i;
+      end1=start1+each_part/2; // half of part
+      start2=end1;
+      end2=end1+each_part/2; // half of part     
+      segments[i*2].start=start1.toFixed(2);
+      segments[i*2].end=end1.toFixed(2); // half of part
+      segments[i*2].name="Part-"+(i+1)+"a";
+      segments[i*2+1].start=start2.toFixed(2);
+      segments[i*2+1].end=end2.toFixed(2); // half of part
+      segments[i*2+1].name="Part-"+(i+1)+"b";
+      current_segment+=2;
+    }
+  }
+
+  for(i=current_segment;i<9;i++){// fill in rest of table
+    segments[i].start=0.0;
+    segments[i].end=seg_full.toFixed(2);
+    segments[i].name="user-"+(i-current_segment+1);    
+  }
+/*
+  Seg1=seg_full;
 
   segments = [
   {name: "A1 ",start: 0.0, end: Seg1/8},
@@ -149,13 +212,19 @@ Seg1 = Number(OneAudioPlayer.duration).toFixed(2);
   {name: "B4 ",start: Seg1/2, end: Seg1},
   {name: "User",start: 0.0, end: Seg1},
   ];
-  createSegmentTable();
+*/
 }
 
 
 function update_segments_mess(tuneNumber){
 /*
 var  tune_rhythm = document.getElementById("tune_type"+tuneNumber).innerHTML;
+
+repeats = document.getElementById("mp3_repeats"+tuneNumber);
+if (repeats < 1) { repeats = 2;} //not defined - default value = 2 possibly use total length?
+
+parts = document.getElementById("mp3_parts"+tuneNumber);
+if (parts < 1) {
 
   switch(tune_rhythm) {
   case "reel":
@@ -176,6 +245,7 @@ var  tune_rhythm = document.getElementById("tune_type"+tuneNumber).innerHTML;
       break;
   default:
     base_length = 128;
+  }
 }
   bars=count_bars_abc(document.getElementById("abcText").innerHTML);
   divisions = bars/base_length;
@@ -234,9 +304,9 @@ let segments = [
 
 function createSegmentTable(){
 
-  var segmentList0='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
-  segmentList1='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
-  segmentList2='<table><tr><th>Loop</th><th col width="3">Show</th><th>From</th><th>To</th></tr><tbody>';
+  var segmentList0='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
+  segmentList1='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
+  segmentList2='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
 
   for(i=0;i<segments.length;i++){
     j=Math.floor(i/3);
@@ -244,20 +314,20 @@ function createSegmentTable(){
       case 0:
           segmentList0 += '<tr><td>'+segments[i].name+'</td>';
           segmentList0 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
+          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
         break;
       case 1:
           segmentList1 += '<tr><td>'+segments[i].name+'</td>';
           segmentList1 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
+          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
         break;
       case 2:
           segmentList2 += '<tr><td>'+segments[i].name+'</td>';
           segmentList2 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">UP</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
+          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
         break;
     }
 
@@ -641,6 +711,20 @@ function count_bars_abc(str) {
 */
     return (count);
 }
+
+  $(document).ready(function() {
+    var mp3url = "../mp3/air-tune-the.mp3";
+    audioPlayer.innerHTML = createAudioPlayer();
+    showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
+    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    createSlider('playPositionplayABC','RSplayABC');
+    var segmentArray = createSegmentTable();
+    segments0.innerHTML = segmentArray[0];
+    segments1.innerHTML = segmentArray[1];
+    segments2.innerHTML = segmentArray[2];
+    New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
+    abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+  });
 </script>
 <style>
 .upDownButton {
