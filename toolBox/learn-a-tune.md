@@ -110,7 +110,109 @@ function getURL() {
 }
 
 function changeTune(tuneNumber){
-  alert(tuneNumber);
+
+    document.getElementById("abcText").innerHTML = document.getElementById("abc"+tuneNumber).innerHTML;
+
+    var mp3url = document.getElementById("mp3_name"+tuneNumber).innerHTML;
+    audioPlayer.innerHTML = createAudioPlayer();
+    showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
+    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+
+    createSlider('playPositionplayABC','RSplayABC');
+
+    New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
+
+    abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+    //setTimeout(update_segments,1000); timing problem - doesn't know length yet.
+    OneAudioPlayer.onloadeddata = function() {
+      update_segments();
+      segmentArray = createSegmentTable();
+      segments0.innerHTML = segmentArray[0];
+      segments1.innerHTML = segmentArray[1];
+      segments2.innerHTML = segmentArray[2];
+    };
+
+
+}
+function update_segments(){
+
+Seg1 = Number(OneAudioPlayer.duration).toFixed(2);
+
+  segments = [
+  {name: "A1 ",start: 0.0, end: Seg1/8},
+  {name: "A2 ",start: Seg1/8, end: Seg1/4},
+  {name: "A3 ",start: Seg1/4, end: Seg1/2},
+  {name: "A4 ",start: Seg1/2, end: Seg1},
+  {name: "B1 ",start: 16.5, end: 24.3},
+  {name: "B2 ",start: 24.3, end: 32.3},
+  {name: "B3 ",start: 0.0, end: Seg1/2},
+  {name: "B4 ",start: Seg1/2, end: Seg1},
+  {name: "User",start: 0.0, end: Seg1},
+  ];
+  createSegmentTable();
+}
+
+
+function update_segments_mess(tuneNumber){
+/*
+var  tune_rhythm = document.getElementById("tune_type"+tuneNumber).innerHTML;
+
+  switch(tune_rhythm) {
+  case "reel":
+  case "hornpipe":
+  case "barndance":
+    base_length = 128;
+    break;
+  case "mazurka":
+  case "waltz":
+  case "jig":
+    base_length = 96;
+    break;
+  case "slip jig":
+    base_length = 72;
+    break;
+  case "polka":
+      base_length = 128;
+      break;
+  default:
+    base_length = 128;
+}
+  bars=count_bars_abc(document.getElementById("abcText").innerHTML);
+  divisions = bars/base_length;
+  var quotient = Math.floor(bars/base_length);
+  var remainder = divisions - quotient ;
+  var divisions = 0;
+  if (remainder < 0){ remainder *= -1}
+  if(remainder < .2) { divisions = math.floor(divisions+.4) } // close enough
+
+
+
+  repeats = document.getElementById("mp3_repeats"+tuneNumber);
+  if (repeats < 1) { repeats = 2;} //not defined - default value = 2 possibly use total length?
+  parts = document.getElementById("mp3_parts"+tuneNumber);
+  if (parts < 1) {
+    if (divisions ==0 ){
+      parts = 2; //not defined - default value = 2
+    } else {
+      parts = divisions;
+    }
+  }
+
+  */
+
+    alert(DurationP);
+  Once_through=Number(OneAudioPlayer.duration)/2;
+  Each_part = Once_through/2;
+
+  alert(OneAudioPlayer.duration);
+
+return;
+  for(i=0;i<parts;i++){
+    segments[i].start=i;
+    segments[i].end=Each_part*(i+1);
+  }
+  if(parts == 1){
+    segment[1].name=""}
 }
 
 function reloadPage() {
@@ -221,9 +323,7 @@ function applySegments(){
 
 //alert("checked "+ this.id + "loop:  "+ this.value);
 }
-/*
-New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, '../mp3/billowing-waves.mp3', APosplayABC, DurplayABC,  RSSplayABC);
-*/
+
 function Adjust_up(row, inputBox) {
   var elName = "check"+row;
   if(document.getElementById(elName).checked == false) return;
@@ -321,6 +421,225 @@ function New_LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
         OneAudioPlayer.addEventListener("timeupdate", New_positionUpdate);
         delay_load_upadate();
     }
+}
+
+function count_bars_abc(str) {
+    /*
+     * Our simple ABC player doesn't handle repeats well.
+     * This function unrolls the ABC so that things play better.
+     */
+    var lines = str.split('\n'),
+        j, header, newABCHeader = "",
+        newABCNotes = "",
+        tempStr = "",
+        index = 0,
+        res = "";
+    var tokens = "";
+    for (j = 0; j < lines.length; ++j) {
+        header = ABCheader.exec(lines[j]);
+        if (header) {
+            // put the header lines back in place
+            newABCHeader += lines[j] + "\n"; // consider special case of a keychange header K: in the middle
+        } else if (/^\s*(?:%.*)?$/.test(lines[j])) {
+            // Skip blank and comment lines.
+            continue;
+        } else {
+            // Parse the notes.
+            newABCNotes += lines[j];
+        }
+    }
+
+    /*
+     * Regular expression used to parse ABC - https://regex101.com/ was very helpful in decoding
+     *
+
+    ABCString = (?:\[[A-Za-z]:[^\]]*\])|\s+|%[^\n]*|![^\s!:|\[\]]*!|\+[^+|!]*\+|[_<>@^]?"[^"]*"|\[|\]|>+|<+|(?:(?:\^+|_+|=|)[A-Ga-g](?:,+|'+|))|\(\d+(?::\d+){0,2}|\d*\/\d+|\d+\/?|\/+|[xzXZ]|\[?\|:\]?|:?\|:?|::|.
+
+    (?:\[[A-Za-z]:[^\]]*\]) matches nothing
+    \s+|%[^\n]* matches spaces
+    ![^\s!:|\[\]]*! no matches
+    \+[^+|!]*\+ no matches
+    [_<>@^]?"[^"]*" matches chords
+    \[|\] matches [ or ]
+    [_<>@^]?{[^"]*} matches grace note phrases {...}
+    :?\|:? matches :| or |:
+    (?:(?:\^+|_+|=|)[A-Ga-g](?:,+|'+|)) matches letters A-Ga-g in or out of chords and other words
+    \(\d+(?::\d+){0,2} matches triplet, or quad symbol (3
+    \d*\/\d+ matches fractions i.e. 4/4 1/8 etc
+    \d+\/? matches all single digits
+    \[\d+|\|\d+ matches first and second endings
+    \|\||\|\] matches double bars either || or |]
+    (\|\|)|(\|\])|:\||\|:|\[\d+|\|\d+ matches first and second endings, double bars, and right and left repeats
+
+    */
+
+    var fEnding = /\|1/g,
+        sEnding = /\|2/g,
+        lRepeat = /\|:/g,
+        rRepeat = /:\|/g,
+        dblBar = /\|\|/g,
+        firstBar = /\|/g;
+    var fEnding2 = /\[1/g,
+        sEnding2 = /\[2/g,
+        dblBar2 = /\|\]/g;
+    var match, fBarPos = [],
+        fEndPos = [],
+        sEndPos = [],
+        lRepPos = [],
+        rRepPos = [],
+        dblBarPos = [];
+    var firstRepeat = 0,
+        tokenString = [],
+        tokenLocations = [],
+        tokenCount = 0,
+        sortedTokens = [],
+        sortedTokenLocations = [];
+    var pos = 0,
+        endPos = 0,
+        i = 0,
+        k = 0,
+        l = 0,
+        m = 0,
+        ntokenString = [];
+    var bigABCNotes = "";
+
+
+    while ((match = firstBar.exec(newABCNotes)) != null) {
+        fBarPos.push(match.index);
+    }
+    tokenString[tokenCount] = "fb";
+    if (fBarPos[0] > 6) {
+        fBarPos[0] = 0;
+    }
+    tokenLocations[tokenCount++] = fBarPos[0]; // first bar
+    while (((match = fEnding.exec(newABCNotes)) || (match = fEnding2.exec(newABCNotes))) != null) {
+        fEndPos.push(match.index);
+        tokenString[tokenCount] = "fe";
+        tokenLocations[tokenCount++] = match.index; // first endings
+    }
+    while (((match = sEnding.exec(newABCNotes)) || (match = sEnding2.exec(newABCNotes))) != null) {
+        sEndPos.push(match.index);
+        tokenString[tokenCount] = "se";
+        tokenLocations[tokenCount++] = match.index; // second endings
+    }
+    while ((match = rRepeat.exec(newABCNotes)) != null) {
+        rRepPos.push(match.index);
+        tokenString[tokenCount] = "rr";
+        tokenLocations[tokenCount++] = match.index; // right repeats
+    }
+    while ((match = lRepeat.exec(newABCNotes)) != null) {
+        lRepPos.push(match.index);
+        tokenString[tokenCount] = "lr";
+        tokenLocations[tokenCount++] = match.index; // left repeats
+    }
+    while (((match = dblBar.exec(newABCNotes)) || (match = dblBar2.exec(newABCNotes))) != null) {
+        dblBarPos.push(match.index);
+        tokenString[tokenCount] = "db";
+        tokenLocations[tokenCount++] = match.index; // double bars
+    }
+    tokenString[tokenCount] = "lb";
+    tokenLocations[tokenCount++] = fBarPos[fBarPos.length - 1]; // last bar
+
+
+    var indices = tokenLocations.map(function(elem, index) {
+        return index;
+    });
+    indices.sort(function(a, b) {
+        return tokenLocations[a] - tokenLocations[b];
+    });
+
+    for (j = 0; j < tokenLocations.length; j++) {
+        sortedTokens[j] = tokenString[indices[j]];
+        sortedTokenLocations[j] = tokenLocations[indices[j]];
+    }
+    pos = 0;
+    for (i = 0; i < sortedTokens.length; i++) {
+        if (bigABCNotes.length > 1000) {
+            break; //safety check
+        }
+        if ((sortedTokens[i] == "rr") || (sortedTokens[i] == "se")) { //find next repeat or second ending
+            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[i] - pos); //notes from last location to rr or se
+            for (k = i - 1; k >= 0; k--) { //march backward from there
+                // check for likely loop point
+                if ((sortedTokens[k] == "se") || (sortedTokens[k] == "rr") || (sortedTokens[k] == "fb") || (sortedTokens[k] == "lr")) {
+                    pos = sortedTokenLocations[k]; // mark loop beginning point
+                    for (j = k + 1; j < sortedTokens.length; j++) { //walk forward from there
+                        if ((sortedTokens[j] == "fe") || (sortedTokens[j] == "rr")) { // walk to likely stopping point (first ending or repeat)
+                            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[j] - pos);
+                            pos = sortedTokenLocations[j]; // mark last position encountered
+                            i = j + 1; //consume tokens from big loop
+                            if (sortedTokens[j] == "fe") { //if we got to a first ending we have to skip it...
+                                for (l = j; l < sortedTokens.length; l++) { //walk forward from here until the second ending
+                                    if (sortedTokens[l] == "se") {
+                                        for (m = l; m < sortedTokens.length; m++) { //look for end of second ending
+                                            if (sortedTokens[m] == "db") { //a double bar marks the end of a second ending
+                                                bigABCNotes += newABCNotes.substr(sortedTokenLocations[l],
+                                                    sortedTokenLocations[m] - sortedTokenLocations[l]); //record second ending
+                                                pos = sortedTokenLocations[m]; //mark most forward progress
+                                                i = m + 1; //consume the tokens from the main loop
+                                                break; //quit looking
+                                            }
+                                        } //for m
+                                        i = l + 1; //consume tokens TED: CHECK THIS
+                                        break; //quit looking
+                                    }
+                                } //for l
+                            }
+                            break;
+                        }
+                    } //for j
+                    break;
+                } //if
+            } //for k
+        } //if
+    } //for i
+
+    bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[sortedTokens.length - 1] - pos);
+    bigABCNotes += "\""; //hack to make sure the newBigABCNotes gets fills when there are not quotes
+
+    var newBigABCNotes = "";
+    for (j = 0; j < bigABCNotes.length; j++) {
+        if (bigABCNotes[j] == "\"") {
+            newBigABCNotes = [bigABCNotes.slice(0, j), "\\\"", bigABCNotes.slice(j)].join('');
+        }
+        newBigABCNotes = newBigABCNotes.substring(0, newBigABCNotes.length - 3); //undo hack
+    }
+    tempABCNotes = newBigABCNotes.toLowerCase();
+    tempABCNotes = tempABCNotes.replace(/(?=[(])/g, 'z');
+
+    var count = (tempABCNotes.match(/a/g) || []).length;
+        count += (tempABCNotes.match(/b/g) || []).length;
+        count += (tempABCNotes.match(/c/g) || []).length;
+        count += (tempABCNotes.match(/d/g) || []).length;
+        count += (tempABCNotes.match(/e/g) || []).length;
+        count += (tempABCNotes.match(/f/g) || []).length;
+        count += (tempABCNotes.match(/g/g) || []).length;
+        count += (tempABCNotes.match(/2/g) || []).length; // note already counted so +1
+        count += (tempABCNotes.match(/3/g) || []).length*2; // note + 2
+        count += (tempABCNotes.match(/4/g) || []).length*3; // note + 3
+        count -= (tempABCNotes.match(/z/g) || []).length*3; //remove triplets (confusing, but correct)
+/*  count is the total number of beats,
+    A 16 bar A part reel = 128 beats,
+    A 16 bar A part jig = 96 beats,
+    for a normal AA BB reel, count should be ~256.
+    For a normal AA BB jig, ~192.
+    if count ~ 384 it is probably an AA BB CC reel
+    if count ~ 288 it is probably an AA BB CC jig
+    For normally structured tunes (e.g. AA BB) using various values of count,
+    and tune type (jig/reel) we can guess at the structure.
+    We know the tune duration, but not the number of repeats of the tune
+    on the recording.  If we knew that we could approximate the timing loops.
+    We could guess most tunes have 2 full repeats...
+    We should add one or two values to the tune.md files:
+        number of times tune is repeated (needed)
+        and number of parts e.g. 2 if A and B parts, 3 if A B C, etc,
+        perhaps it could be in the form of AABB, AABBCC, ABCDE, etc.
+    If a 2 part (A&B) reel is repeated 3 times
+    duration (found when mp3 file is read) / 3 = time for 1 full loop;
+    From 0 to (duration / 3) / 2 = A part.
+    From (duration / 3) / 2 to (duration / 3) = B part, etc.
+*/
+    return (count);
 }
 </script>
 <style>
