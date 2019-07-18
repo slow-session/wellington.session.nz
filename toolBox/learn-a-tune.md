@@ -60,15 +60,17 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
       </div>
 
   <div class="small-4 columns" style="padding-top: 20px;">
-<p><b>
-Scroll down and select tune by clicking tune name.
-</b></p>
-        <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 2px solid LightGrey; border-radius: 10px;">
+
+<div class="tableSlider">
+  <p><b>Select Tune by clicking name</b></p>
+  <input type="range" min="0" max="100" value="0" id="tableSlider" style="width: 94%;" oninput="scrollTable(value)">
+</div>
+        <table id="tunes" class="tuneSelect"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 2px solid LightGrey; border-radius: 10px;" onscroll="scroll_indicator()">
         <thead>
             <tr>
-              <th style="width70%;">Tune Name&#x25B2;&#x25BC;</th>
-              <th style="width:6%;">Key<br />&#x25B2;&#x25BC;</th>
-              <th style="width:14%;">Rhythm<br />&#x25B2;&#x25BC;</th>
+              <th style="width70%;">Tune Name</th>
+              <th style="width:6%;">Key</th>
+              <th style="width:14%;">Rhythm</th>
             </tr>
         </thead>
         <tbody>
@@ -743,6 +745,20 @@ function count_bars_abc(str) {
     New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);
     abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
   });
+
+  function scroll_indicator() {
+    var elmnt = document.getElementById("tunes");
+    var tuneScroll = elmnt.scrollTop;
+    var height = elmnt.scrollHeight - elmnt.clientHeight;
+    var scrolled = (tuneScroll / height) * 100;
+    document.getElementById("tableSlider").value = scrolled;
+  }  
+  function scrollTable(value) {
+    var elmnt = document.getElementById("tunes");
+    //var tuneScroll = elmnt.scrollTop;
+    var height = elmnt.scrollHeight - elmnt.clientHeight
+    elmnt.scrollTop=(height*value/100);
+  }
 </script>
 <style>
 .upDownButton {
@@ -755,4 +771,13 @@ function count_bars_abc(str) {
   font-size: 13px;
   cursor: pointer;
 }
+
+.tableSlider {
+  width: 94%;
+  padding: 0 3%;
+}
+.tuneSelect {
+  width: 90%;
+}
+
 </style>
