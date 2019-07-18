@@ -63,7 +63,7 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
 <p><b>
 Scroll down and select tune by clicking tune name.
 </b></p>
-        <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 1px solid black; border-radius: 10px;">
+        <table id="tunes" class="tablesorter"  style="display: block; height: 500px; overflow-y: scroll; font-size:14px; border: 2px solid LightGrey; border-radius: 10px;">
         <thead>
             <tr>
               <th style="width70%;">Tune Name&#x25B2;&#x25BC;</th>
@@ -315,19 +315,19 @@ function createSegmentTable(){
           segmentList0 += '<tr><td>'+segments[i].name+'</td>';
           segmentList0 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
           segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList0 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
         break;
       case 1:
           segmentList1 += '<tr><td>'+segments[i].name+'</td>';
           segmentList1 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
           segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList1 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
         break;
       case 2:
           segmentList2 += '<tr><td>'+segments[i].name+'</td>';
           segmentList2 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
           segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button></td></tr>';
+          segmentList2 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
         break;
     }
 
@@ -385,10 +385,10 @@ function applySegments(){
     }
 
     if(numCheckedBoxes > 0){ // do nothing unless at least one box is checked
-      if (OneAudioPlayer.paused==false){ // audio is currently playing.
+      /*if (OneAudioPlayer.paused==false){ // audio is currently playing.
           OneAudioPlayer.pause(); // first pause the audio
           turnAudioBackOn = true;
-      }
+      }*/
       OneAudioPlayer.currentTime = fullBeginLoopTime;
       OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
       // first reset to ends, then reposition
