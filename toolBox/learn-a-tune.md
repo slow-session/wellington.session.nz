@@ -338,6 +338,24 @@ function createSegmentTable(){
 return [segmentList0, segmentList1, segmentList2];
 }
 
+function adjust_segment_controls(values, handle){
+
+  var checked_slider = -1;
+  var multiple_sliders = 0;
+  for(i=0;i<9;i++){
+    document.getElementById("check" + i).checked;
+    if(document.getElementById("check" + i).checked){
+      checked_slider = i;
+      multiple_sliders++;
+    }
+  }
+  //alert(checked_slider+", "+multiple_sliders);
+  if(multiple_sliders>1){return;} //quit if more than one slider is checked
+  //alert(checked_slider+", "+document.getElementById("check" + checked_slider + "from").value +", "+document.getElementById("check" + checked_slider + 'to").value);
+  document.getElementById("check" + checked_slider + "from").value = values[0];
+  document.getElementById("check" + checked_slider + "to").value = values[2];
+}
+
 function applySegments(){
   var text='';
     var fullBeginLoopTime = Number(OneAudioPlayer.duration);
