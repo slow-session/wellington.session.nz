@@ -60,7 +60,7 @@ var RSsliderName=document.getElementById(speedSlider);
       }
   });
 
-
+/*
   audioSlider.noUiSlider.on('start', function (values, handle) {
     //alert("start");
 
@@ -69,7 +69,7 @@ var RSsliderName=document.getElementById(speedSlider);
           turnAudioBackOn = true;
       }
   });
-
+*/
 
   audioSlider.noUiSlider.on('update', function (values, handle) {
     //alert("Play");
@@ -100,11 +100,11 @@ var RSsliderName=document.getElementById(speedSlider);
           New_setAudioPosition(audioPositionScreenLocation, values[1]);
           //alert("audioslider change");
     }
-    if (turnAudioBackOn){ // audio was  playing when they fiddled with the sliders
+/*    if (turnAudioBackOn){ // audio was  playing when they fiddled with the sliders
         OneAudioPlayer.play(); // then turn it back on
         turnAudioBackOn = false; // and reset the flag
     }
-
+*/
     //PreviousAudioID = audioID;
 
   });
