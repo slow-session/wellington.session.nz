@@ -5,7 +5,7 @@ permalink: /learn-a-tune/
 ---
 <div>
 <p>
-Still under development.<br>
+This page is under development.<br>
 Prototype of tune learning page.  There are up to 9 loops, some of which are automatically calculated based on tune rhythm. We assume 2 repetitions of the tune. We are guessing at the number of parts based on the ABCs. Check a box to select the section. Multiple selected sections are combined. Up/Dn buttons adjust the <b>selected</b> sections by 0.25 seconds. Your suggestions are welcome.
 
 </p>
