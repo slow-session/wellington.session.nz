@@ -90,10 +90,12 @@ var RSsliderName=document.getElementById(speedSlider);
           BeginLoopTime = values[0];
           EndLoopTime = values[2];
           OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+          adjust_segment_controls(values,handle);
     } else if (handle === 2) {
           BeginLoopTime = values[0];
           EndLoopTime = values[2];
           OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+          adjust_segment_controls(values,handle);
     } else if (handle === 1) {
           New_setAudioPosition(audioPositionScreenLocation, values[1]);
           //alert("audioslider change");
