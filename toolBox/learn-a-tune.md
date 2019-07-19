@@ -14,13 +14,19 @@ Prototype of tune learning page.  There are up to 9 loops, some of which are aut
 Player controls
 -->
 <div class="row">
-  <div class="small-10 large-9 columns">
+  <div class="small-8 columns">
     <div class="player">
       <div id="audioPlayer"></div>
       <div id="showPlayer"></div>
     </div>
   </div>
-  <div class="small-2 large-3 columns end"></div>
+  <div class="small-3 columns">
+    <div  style="text-align: center;">
+      <a href="javascript:void(0);" id="HideShowDots" class="HideShowDotsButton" onclick="HideShowDots()">Hide the Dots</a>
+    </div>
+  </div>
+  <div class="small-1 columns end">
+  </div>
 </div>
 <!-- ***************************************************
   loop presets
@@ -41,6 +47,14 @@ Player controls
   </div>
 
       <div id='abcSource' style="display: none;">
+      <textarea name='abcText' id="FAKEabcText" rows="13" cols="65"
+                style="background-color:#ebebeb; font-size:small; max-width:100%"
+                spellcheck="false">
+X: 3
+T: The notes are hidden
+T: Click the [Show the Dots] button to display the music
+T: Playing by ear is the best!
+        </textarea>
         <textarea name='abcText' id="abcText" rows="13" cols="65"
                   style="background-color:#ebebeb; font-size:small; max-width:100%"
                   spellcheck="false">
@@ -97,7 +111,6 @@ a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
 
 
 <script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
-
 <script>
 
 function changeTune(tuneNumber){
@@ -404,7 +417,10 @@ function applySegments(){
       BeginLoopTime = fullBeginLoopTime;
       EndLoopTime = fullEndLoopTime;
       if (turnAudioBackOn){ // audio was  playing when they fiddled with the checkboxes
-          OneAudioPlayer.play(); // then turn it back on
+          var promise = OneAudioPlayer.play(); // then turn it back on
+          if (promise) {
+            promise.catch(function(error) { console.error(error); });
+          }
           turnAudioBackOn = false; // and reset the flag
       }
        //alert("checked "+ i + "loops:  "+ fromId.value+" to "+ toId.value);
@@ -759,6 +775,16 @@ function count_bars_abc(str) {
     var height = elmnt.scrollHeight - elmnt.clientHeight
     elmnt.scrollTop=(height*value/100);
   }
+
+  function HideShowDots(){
+        if(document.getElementById("HideShowDots").innerHTML=="Hide the Dots"){
+          abc_editor = new window.ABCJS.Editor('FAKEabcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+          document.getElementById("HideShowDots").innerHTML="Show the Dots";
+        } else{
+          abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+          document.getElementById("HideShowDots").innerHTML="Hide the Dots";
+        }
+  }
 </script>
 <style>
 .upDownButton {
@@ -779,5 +805,44 @@ function count_bars_abc(str) {
 .tuneSelect {
   width: 90%;
 }
-
+.HideShowDotsButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #61cc04), color-stop(1, #55ab0f));
+	background:-moz-linear-gradient(top, #61cc04 5%, #55ab0f 100%);
+	background:-webkit-linear-gradient(top, #61cc04 5%, #55ab0f 100%);
+	background:-o-linear-gradient(top, #61cc04 5%, #55ab0f 100%);
+	background:-ms-linear-gradient(top, #61cc04 5%, #55ab0f 100%);
+	background:linear-gradient(to bottom, #61cc04 5%, #55ab0f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#61cc04', endColorstr='#55ab0f',GradientType=0);
+	background-color:#61cc04;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:7px 33px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.HideShowDotsButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #55ab0f), color-stop(1, #61cc04));
+	background:-moz-linear-gradient(top, #55ab0f 5%, #61cc04 100%);
+	background:-webkit-linear-gradient(top, #55ab0f 5%, #61cc04 100%);
+	background:-o-linear-gradient(top, #55ab0f 5%, #61cc04 100%);
+	background:-ms-linear-gradient(top, #55ab0f 5%, #61cc04 100%);
+	background:linear-gradient(to bottom, #55ab0f 5%, #61cc04 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#55ab0f', endColorstr='#61cc04',GradientType=0);
+	background-color:#55ab0f;
+}
+.HideShowDotsButton:active {
+	position:relative;
+	top:1px;
+}
 </style>
