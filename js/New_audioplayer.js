@@ -100,11 +100,7 @@ var RSsliderName=document.getElementById(speedSlider);
           New_setAudioPosition(audioPositionScreenLocation, values[1]);
           //alert("audioslider change");
     }
-/*    if (turnAudioBackOn){ // audio was  playing when they fiddled with the sliders
-        OneAudioPlayer.play(); // then turn it back on
-        turnAudioBackOn = false; // and reset the flag
-    }
-*/
+
     //PreviousAudioID = audioID;
 
   });
@@ -279,9 +275,11 @@ function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
             }
         }
         CurrentAudioSlider = positionSlider;
-        //OneAudioPlayer.playbackRate = audioSpeed.value / 100;
 
-        OneAudioPlayer.play();
+        var promise = OneAudioPlayer.play();
+        if (promise) {
+          promise.catch(function(error) { console.error(error); });
+        }
         pButton.className = "";
         pButton.className = "pauseButton";
         OneAudioPlayer.addEventListener("timeupdate", New_positionUpdate);
@@ -329,7 +327,10 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
 
         audioSlider = positionSlider;
         OneAudioPlayer.playbackRate = audioSpeed.value / 100;
-        OneAudioPlayer.play();
+        var promise = OneAudioPlayer.play();
+        if(promise){
+          promise.catch(function(error) { console.error(error); });
+        }
         pButton.className = "";
         pButton.className = "pauseButton";
         OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
