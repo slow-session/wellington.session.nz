@@ -192,6 +192,7 @@ function update_segments(tuneNumber,total_note_count){
   var end2=0.0;
   var each_part = seg_full/repeats/parts;
   var current_segment = 0;
+  var part_names = ["A", "B", "C", "D"]
   if((parts*2)<10) {
     for(i=0;i<parts;i++){ // divide parts in half and fill in table;
       start1=each_part*i;
@@ -200,10 +201,10 @@ function update_segments(tuneNumber,total_note_count){
       end2=end1+each_part/2; // half of part     
       segments[i*2].start=start1.toFixed(2);
       segments[i*2].end=end1.toFixed(2); // half of part
-      segments[i*2].name="Part-"+(i+1)+"a";
+      segments[i*2].name="Part-"+(part_names[i])+"1";
       segments[i*2+1].start=start2.toFixed(2);
       segments[i*2+1].end=end2.toFixed(2); // half of part
-      segments[i*2+1].name="Part-"+(i+1)+"b";
+      segments[i*2+1].name="Part-"+(part_names[i])+"2";
       current_segment+=2;
     }
   }
