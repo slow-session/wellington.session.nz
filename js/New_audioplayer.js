@@ -463,7 +463,7 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
 }
 
 function setAudioLoops() {
-    if (OneAudioPlayer.currentTime >= EndLoopTime) {
+    if ((OneAudioPlayer.currentTime >= EndLoopTime)&&(EndLoopTime>0)) {
         OneAudioPlayer.currentTime = BeginLoopTime;
     }
 }
