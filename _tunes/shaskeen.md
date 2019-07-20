@@ -7,8 +7,10 @@ date: 2019-06-05
 location: Wellington
 notes:
 tags:
+repeats: 2
+parts: 2
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-07-20
 mp3_file: /mp3/shaskeen.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
