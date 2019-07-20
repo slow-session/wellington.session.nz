@@ -4,11 +4,13 @@ titleID: an-phis-fhliuch.md
 key: G
 rhythm: slip jig
 date: 2018-12-19
-location: Wellington 
+location: Wellington
 notes:
-tags: 
-regtuneoftheweek: 
-slowtuneoftheweek: 
+tags:
+repeats: 3
+parts: 5
+regtuneoftheweek:
+slowtuneoftheweek:
 mp3_file: /mp3/an-phis-fhliuch.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
@@ -30,5 +32,5 @@ abc: |
     |:FGA AFd AFd|AFd AFd GED|FGA AFA c2A|BAG FAF GED:|
     |:~D3 ~D3 c3|c2B c2A GEA|~D3 ~D3 d2A|dfe dcA GED:|
     |:d^cd ege =c2A|d^cd fdf ~g3|~a ged c2A|BAG FAF GED:|
- 
+
 ---
