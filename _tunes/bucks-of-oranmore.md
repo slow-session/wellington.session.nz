@@ -8,6 +8,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags:
+repeats: 2
+parts: 5
 regtuneoftheweek:
 slowtuneoftheweek: 2019-06-05
 mp3_file: /mp3/bucks-of-oranmore.mp3

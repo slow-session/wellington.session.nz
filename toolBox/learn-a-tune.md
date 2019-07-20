@@ -5,33 +5,28 @@ permalink: /learn-a-tune/
 ---
 <div>
 <p>
-This page is under development.<br>
-Prototype of tune learning page.  There are up to 9 loops, some of which are automatically calculated based on tune rhythm. We assume 2 repetitions of the tune. We are guessing at the number of parts based on the ABCs. Check a box to select the section. Multiple selected sections are combined. Up/Dn buttons adjust the <b>selected</b> sections by 0.25 seconds. Your suggestions are welcome.
-
+Click on tune name to select the tune to learn. You can define up to 9 practice loops. Some are automatically estimated based on tune rhythm. Check a box to select the section. Multiple selected sections are combined. Up/Dn buttons adjust a <b>selected</b> section by 0.25 seconds. Green slider handle is the tune position and the two others mark start and end of loop.
 </p>
-</div>
 <!-- ***************************************************
 Player controls
 -->
 <div class="row">
-  <div class="small-8 columns">
+  <div class="small-6 medium-8 large-9 columns">
     <div class="player">
       <div id="audioPlayer"></div>
       <div id="showPlayer"></div>
     </div>
   </div>
-  <div class="small-3 columns">
-    <div  style="text-align: center;">
+  <div class="small-6 medium-4 large-3 columns">
+    <div  style="float: left;">
       <a href="javascript:void(0);" id="HideShowDots" class="HideShowDotsButton" onclick="HideShowDots()">Hide the Dots</a>
     </div>
-  </div>
-  <div class="small-1 columns end">
   </div>
 </div>
 <!-- ***************************************************
   loop presets
 -->
-<div class="row" style="font-size:14px;">
+<div class="row" style="font-size:14px;" min-width="300px">
   <div class="small-4 columns" id="segments0">.</div>
   <div class="small-4 columns" id="segments1">.</div>
   <div class="small-4 columns" id="segments2">.</div>
@@ -156,7 +151,7 @@ function update_segments(tuneNumber,total_note_count){
 
   parts = document.getElementById("mp3_parts"+tuneNumber).innerHTML;
   //alert(parts);
-  if (parts < 1) {
+  if (parts < 1) { // parts is not in md file
 
     switch(tune_rhythm) { //attempt to calculate number of parts
     case "reel":
@@ -180,19 +175,20 @@ function update_segments(tuneNumber,total_note_count){
     }
     var divisions = total_note_count/base_length; // see if tune fits a pattern
     var int_divisions = Math.floor(divisions + 0.1);
-  }
-  if((divisions-int_divisions)< 0.2){ // parts can be calculated
-    parts=int_divisions;
-  } else {
-    parts=2; // parts can't be calculated - assigned to default value=2
-  }
+
+    if((divisions-int_divisions)< 0.2){ // parts can be calculated
+      parts=int_divisions;
+    } else {
+      parts=2; // parts can't be calculated - assigned to default value=2
+    }
+  }  
   var start1=0.0;
   var start2=0.0;
   var end1=0.0;
   var end2=0.0;
   var each_part = seg_full/repeats/parts;
   var current_segment = 0;
-  var part_names = ["A", "B", "C", "D"]
+  var part_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
   if((parts*2)<10) {
     for(i=0;i<parts;i++){ // divide parts in half and fill in table;
       start1=each_part*i;
@@ -206,6 +202,15 @@ function update_segments(tuneNumber,total_note_count){
       segments[i*2+1].end=end2.toFixed(2); // half of part
       segments[i*2+1].name="Part-"+(part_names[i])+"2";
       current_segment+=2;
+    }
+  } else if(parts <10){
+    for(i=0;i<parts;i++){ // single division per part
+      start1=each_part*i
+      end1=start1+each_part;       
+      segments[i].start=start1.toFixed(2);
+      segments[i].end=end1.toFixed(2);
+      segments[i].name="Part-"+(part_names[i]);
+      current_segment+=1;
     }
   }
 
@@ -306,44 +311,52 @@ function reloadPage() {
 }
 
 let segments = [
-{name: "A part",start: 0.6, end: 16.5},
-{name: "B part",start: 16.5, end: 32.3},
-{name: "A-1",start: 5.0, end: 8.9},
-{name: "A-2",start: 8.9, end: 16.5},
-{name: "B-1",start: 16.5, end: 24.3},
-{name: "B-2",start: 24.3, end: 32.3},
-{name: "Full",start: 0.6, end: 32.3},
-{name: "User",start: 0.0, end: 69},
-{name: "User",start: 0.0, end: 69},
+{name: "Part-A1",start: 0.6, end: 17.25},
+{name: "Part-A2",start: 17.25, end: 34.51},
+{name: "Part-B1",start: 34.51, end: 51.76},
+{name: "Part-B2",start: 51.76, end: 69.02},
+{name: "user-1",start: 0, end: 69.02},
+{name: "user-2",start: 0, end: 69.02},
+{name: "user-3",start: 0, end: 69.02},
+{name: "user-4",start: 0, end: 69.02},
+{name: "user-5",start: 0, end: 69.02},
 ];
-
-
+function MoveFromSlider(){
+  CurrentAudioSlider.noUiSlider.setHandle(0,OneAudioPlayer.currentTime);
+  BeginLoopTime = OneAudioPlayer.currentTime;
+  OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+}
+function MoveToSlider(){
+  CurrentAudioSlider.noUiSlider.setHandle(2,OneAudioPlayer.currentTime);
+  EndLoopTime = OneAudioPlayer.currentTime;
+  OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+}
 function createSegmentTable(){
 
-  var segmentList0='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
-  segmentList1='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
-  segmentList2='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th>From</th><th>To</th></tr><tbody>';
+  var segmentList0='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th><a href="javascript:void(0);" onclick="MoveFromSlider()"><span title="Click to mark loop beginning">From</a></th><th><a href="javascript:void(0);" onclick="MoveToSlider()"><span title="Click to mark loop end">To</a></th></tr><tbody>';
+  var segmentList1='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th><a href="javascript:void(0);" onclick="MoveFromSlider()"><span title="Click to mark loop beginning">From</a></th><th><a href="javascript:void(0);" onclick="MoveToSlider()"><span title="Click to mark loop end">To</a></th></tr><tbody>';
+  var segmentList2='<table><tr><th>&nbspLoop</th><th col width="3">&nbspShow</th><th><a href="javascript:void(0);" onclick="MoveFromSlider()"><span title="Click to mark loop beginning">From</a></th><th><a href="javascript:void(0);" onclick="MoveToSlider()"><span title="Click to mark loop end">To</a></th></tr><tbody>';
 
   for(i=0;i<segments.length;i++){
     j=Math.floor(i/3);
     switch (j) {
       case 0:
           segmentList0 += '<tr><td>'+segments[i].name+'</td>';
-          segmentList0 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList0 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList0 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
+          segmentList0 += '<td>'+'<input class="loopClass" type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
+          segmentList0 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value='+segments[i].start+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)"><span title=" - 1/4 second">Dn</a></td>';
+          segmentList0 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value='+segments[i].end+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)"><span title=" - 1/4 second">Dn</a></td></tr>';
         break;
       case 1:
           segmentList1 += '<tr><td>'+segments[i].name+'</td>';
-          segmentList1 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList1 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList1 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
+          segmentList1 += '<td>'+'<input class="loopClass" type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
+          segmentList1 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value='+segments[i].start+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)"><span title=" - 1/4 second">Dn</a></td>';
+          segmentList1 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value='+segments[i].end+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)"><span title=" - 1/4 second">Dn</a></td></tr>';
         break;
       case 2:
           segmentList2 += '<tr><td>'+segments[i].name+'</td>';
-          segmentList2 += '<td>'+'<input type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
-          segmentList2 += '<td>'+  '<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'from" size="6" value='+segments[i].start+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)">Dn</button></td>';
-          segmentList2 += '<td>'+  '&nbsp&nbsp<button class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)">Up</button><input type="text" onchange="applySegments()" id="check' + i + 'to" size="6" value='+segments[i].end+'><button class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)">Dn</button>&nbsp</td></tr>';
+          segmentList2 += '<td>'+'<input class="loopClass" type="checkbox" onclick="applySegments()" id='+ "check"+i + '>'+'</td>';
+          segmentList2 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 0)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value='+segments[i].start+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 0)"><span title=" - 1/4 second">Dn</a></td>';
+          segmentList2 += '<td>'+  '<a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'up" onclick="Adjust_up('+i+', 2)"><span title=" + 1/4 second">Up</a><input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value='+segments[i].end+'><a href="javascript:void(0);" class = "upDownButton" type="button" id= "button' +i + 'Dn" onclick="Adjust_down('+i+', 2)"><span title=" - 1/4 second">Dn</a></td></tr>';
         break;
     }
 
@@ -366,8 +379,8 @@ function adjust_segment_controls(values, handle){
     }
   }
   //alert(checked_slider+", "+multiple_sliders);
-  if(multiple_sliders>1){return;} //quit if more than one slider is checked
-  //alert(checked_slider+", "+document.getElementById("check" + checked_slider + "from").value +", "+document.getElementById("check" + checked_slider + 'to").value);
+  if((multiple_sliders>1)||(multiple_sliders==0)) {return;} //quit if more than one slider is checked
+
   document.getElementById("check" + checked_slider + "from").value = values[0];
   document.getElementById("check" + checked_slider + "to").value = values[2];
 }
@@ -790,21 +803,28 @@ function count_bars_abc(str) {
 <style>
 .upDownButton {
   background-color: #1c2e20;
-  border: none;
+  border: 1px solid white;
   color: white;
-  padding: 3px;
+  padding: 1px;
   align: center;
   text-align: center;
   font-size: 13px;
   cursor: pointer;
 }
-
+.loopClass {
+  font-size: 14px;
+  border-radius: 2px;
+  width: 45px;
+}
 .tableSlider {
   width: 94%;
   padding: 0 3%;
 }
 .tuneSelect {
   width: 90%;
+}
+a {
+  color: #f0f0f0;
 }
 .HideShowDotsButton {
   -moz-box-shadow:inset 0px 1px 0px 0px #caefab;

@@ -7,6 +7,8 @@ date: 2016-01-26
 location: Prebbleton Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 2
+parts: 3
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/banish-misfortune.mp3

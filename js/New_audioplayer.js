@@ -356,6 +356,7 @@ function loadFinish() {
     } else if (AudioPosition != null){
       AudioPosition.innerHTML = "0.0";
       DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
+      EndLoopTime=OneAudioPlayer.duration;
     }
 }
 
