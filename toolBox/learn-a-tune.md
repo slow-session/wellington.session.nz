@@ -319,9 +319,11 @@ function adjust_segment_controls(values, handle){
 
 function applySegments(){
   var text='';
-    var fullBeginLoopTime = OneAudioPlayer.duration;
+    var fullBeginLoopTime = parseFloat(OneAudioPlayer.duration);
     var fullEndLoopTime = 0.0;
-    var numCheckedBoxes = 0;
+    var numCheckedBoxes = 0.0;
+    var tempBeginLoopTime=0.0;
+    var tempEndLoopTime = 0.0;
     for(i=0;i<segments.length;i++){
 
       checkBox = document.getElementById("check"+i);
@@ -330,21 +332,22 @@ function applySegments(){
 
       if (checkBox.checked == true){
           numCheckedBoxes++;
-          BeginLoopTime = fromId.value;
-          EndLoopTime = toId.value;
-
-          if(fullBeginLoopTime > BeginLoopTime) {
+          tempBeginLoopTime = parseFloat(fromId.value);
+          tempEndLoopTime = parseFloat(toId.value);
+//alert("Is "+fullBeginLoopTime+" greater than "+tempBeginLoopTime);
+          if(fullBeginLoopTime > tempBeginLoopTime) {
             //alert("A, "+BeginLoopTime+", "+fullBeginLoopTime);
-            fullBeginLoopTime = BeginLoopTime;
+            fullBeginLoopTime = tempBeginLoopTime;
           }
-          if(fullEndLoopTime < EndLoopTime) {
-            //alert("B, "+EndLoopTime+", "+fullEndLoopTime);
-            fullEndLoopTime = EndLoopTime;
+//alert("Is "+fullEndLoopTime+" less than "+tempEndLoopTime);          
+          if(fullEndLoopTime < tempEndLoopTime) {
+            //alert("B, "+tempEndLoopTime+", "+fullEndLoopTime);
+            fullEndLoopTime = tempEndLoopTime;
           }
           //alert(i+", "+BeginLoopTime+", "+EndLoopTime+", "+fullBeginLoopTime+", "+fullEndLoopTime);
         }
     }
-
+//alert(fullBeginLoopTime+", "+fullEndLoopTime);
     if(numCheckedBoxes > 0){ // do nothing unless at least one box is checked
       /*if (OneAudioPlayer.paused==false){ // audio is currently playing.
           OneAudioPlayer.pause(); // first pause the audio
