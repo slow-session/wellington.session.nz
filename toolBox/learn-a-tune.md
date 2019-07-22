@@ -319,8 +319,8 @@ function adjust_segment_controls(values, handle){
 
 function applySegments(){
   var text='';
-    var fullBeginLoopTime = Number(OneAudioPlayer.duration);
-    var fullEndLoopTime = Number(0.0);
+    var fullBeginLoopTime = OneAudioPlayer.duration;
+    var fullEndLoopTime = 0.0;
     var numCheckedBoxes = 0;
     for(i=0;i<segments.length;i++){
 
@@ -330,8 +330,8 @@ function applySegments(){
 
       if (checkBox.checked == true){
           numCheckedBoxes++;
-          BeginLoopTime = Number(fromId.value);
-          EndLoopTime = Number(toId.value);
+          BeginLoopTime = fromId.value;
+          EndLoopTime = toId.value;
 
           if(fullBeginLoopTime > BeginLoopTime) {
             //alert("A, "+BeginLoopTime+", "+fullBeginLoopTime);
@@ -362,6 +362,7 @@ function applySegments(){
       CurrentAudioSlider.noUiSlider.setHandle(2,fullEndLoopTime);
       BeginLoopTime = fullBeginLoopTime;
       EndLoopTime = fullEndLoopTime;
+      OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
       if (turnAudioBackOn){ // audio was  playing when they fiddled with the checkboxes
           var promise = OneAudioPlayer.play(); // then turn it back on
           if (promise) {
@@ -371,8 +372,6 @@ function applySegments(){
       }
        //alert("checked "+ i + "loops:  "+ fromId.value+" to "+ toId.value);
    }
-
-
 //alert("checked "+ this.id + "loop:  "+ this.value);
 }
 

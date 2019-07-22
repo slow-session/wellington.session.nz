@@ -237,7 +237,7 @@ OneAudioPlayer.ondurationchange = function() {
 }
 function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioposition, duration, audioSpeed) {
 //alert(trID+", "+ audioplayer+", "+ pButton+", "+ positionSlider+", "+ audioSource+", "+ audioposition+", "+ duration+", "+ audioSpeed);
-    if (pButton.className == "playButton") {
+        if (pButton.className == "playButton") {
         if (PreviousAudioID != audioplayer) { //only load if necessary
             OneAudioPlayer.src = audioSource;
             if (PreviousAudioID != null) { //reset previous audio player
@@ -282,7 +282,8 @@ function New_playAudio(trID, audioplayer, pButton, positionSlider, audioSource, 
         }
         pButton.className = "";
         pButton.className = "pauseButton";
-        OneAudioPlayer.addEventListener("timeupdate", New_positionUpdate);
+
+          OneAudioPlayer.addEventListener("timeupdate", New_positionUpdate);
     } else {
         OneAudioPlayer.pause();
         pButton.className = "";
@@ -356,8 +357,9 @@ function loadFinish() {
     } else if (AudioPosition != null){
       AudioPosition.innerHTML = "0.0";
       DurationP.innerHTML = OneAudioPlayer.duration.toFixed(1);
-      EndLoopTime=OneAudioPlayer.duration;
+      if(EndLoopTime==0){ EndLoopTime=OneAudioPlayer.duration; } //initialise if needed
     }
+
 }
 
 
@@ -463,7 +465,7 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
 }
 //var hits=0;
 function setAudioLoops() {
-//    document.getElementById("debug").innerHTML=hits++ +" Begin: "+BeginLoopTime+" End: "+EndLoopTime;
+   //document.getElementById("debug").innerHTML=hits++ +" Begin: "+BeginLoopTime+" End: "+EndLoopTime;
 
     if ((OneAudioPlayer.currentTime >= (OneAudioPlayer.duration-.25))||(OneAudioPlayer.currentTime >= EndLoopTime)) {
         OneAudioPlayer.currentTime = BeginLoopTime;
