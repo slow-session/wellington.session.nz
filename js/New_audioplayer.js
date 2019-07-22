@@ -406,8 +406,8 @@ function adjustAudioPosition(audioplayer, value) {
 
 function New_positionUpdate() {
     var duration = OneAudioPlayer.duration;
-    if (OneAudioPlayer.currentTime >= duration - .25) {
-        OneAudioPlayer.currentTime = 0;
+    if (OneAudioPlayer.currentTime >= (duration - .25)) {
+        OneAudioPlayer.currentTime = BeginLoopTime;
     }
     CurrentAudioSlider.noUiSlider.setHandle(1,OneAudioPlayer.currentTime);
     AudioPosition.innerHTML = OneAudioPlayer.currentTime.toFixed(1);
@@ -415,7 +415,7 @@ function New_positionUpdate() {
 function positionUpdate() {
     var duration = OneAudioPlayer.duration;
     audioSlider.value = (OneAudioPlayer.currentTime / duration) * 400;
-    if (OneAudioPlayer.currentTime >= duration - .25) {
+    if (OneAudioPlayer.currentTime >= (duration - .25)) {
         OneAudioPlayer.currentTime = 0;
     }
     AudioPosition.innerHTML = OneAudioPlayer.currentTime.toFixed(1);
@@ -461,10 +461,13 @@ function SetPlayRange(audioID, ButtonEvent, button1ID, button2ID) {
     OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
     return;
 }
-
+//var hits=0;
 function setAudioLoops() {
-    if ((OneAudioPlayer.currentTime >= EndLoopTime)&&(EndLoopTime>0)) {
+//    document.getElementById("debug").innerHTML=hits++ +" Begin: "+BeginLoopTime+" End: "+EndLoopTime;
+
+    if ((OneAudioPlayer.currentTime >= (OneAudioPlayer.duration-.25))||(OneAudioPlayer.currentTime >= EndLoopTime)) {
         OneAudioPlayer.currentTime = BeginLoopTime;
+
     }
 }
 

@@ -7,6 +7,7 @@ permalink: /learn-a-tune/
 <p>
 Click on tune name to select the tune to learn. You can define up to 9 practice loops. Some are automatically estimated based on tune rhythm. Check a box to select the section. Multiple selected sections are combined. Up/Dn buttons adjust a <b>selected</b> section by 0.25 seconds. Green slider handle is the tune position and the two others mark start and end of loop.
 </p>
+<div id="debug"></div>
 <!-- ***************************************************
 Player controls
 -->
@@ -236,76 +237,6 @@ function update_segments(tuneNumber,total_note_count){
 */
 }
 
-
-function update_segments_mess(tuneNumber){
-/*
-var  tune_rhythm = document.getElementById("tune_type"+tuneNumber).innerHTML;
-
-repeats = document.getElementById("mp3_repeats"+tuneNumber);
-if (repeats < 1) { repeats = 2;} //not defined - default value = 2 possibly use total length?
-
-parts = document.getElementById("mp3_parts"+tuneNumber);
-if (parts < 1) {
-
-  switch(tune_rhythm) {
-  case "reel":
-  case "hornpipe":
-  case "barndance":
-    base_length = 128;
-    break;
-  case "mazurka":
-  case "waltz":
-  case "jig":
-    base_length = 96;
-    break;
-  case "slip jig":
-    base_length = 72;
-    break;
-  case "polka":
-      base_length = 128;
-      break;
-  default:
-    base_length = 128;
-  }
-}
-  bars=count_bars_abc(document.getElementById("abcText").innerHTML);
-  divisions = bars/base_length;
-  var quotient = Math.floor(bars/base_length);
-  var remainder = divisions - quotient ;
-  var divisions = 0;
-  if (remainder < 0){ remainder *= -1}
-  if(remainder < .2) { divisions = math.floor(divisions+.4) } // close enough
-
-
-
-  repeats = document.getElementById("mp3_repeats"+tuneNumber);
-  if (repeats < 1) { repeats = 2;} //not defined - default value = 2 possibly use total length?
-  parts = document.getElementById("mp3_parts"+tuneNumber);
-  if (parts < 1) {
-    if (divisions ==0 ){
-      parts = 2; //not defined - default value = 2
-    } else {
-      parts = divisions;
-    }
-  }
-
-  */
-
-    alert(DurationP);
-  Once_through=Number(OneAudioPlayer.duration)/2;
-  Each_part = Once_through/2;
-
-  alert(OneAudioPlayer.duration);
-
-return;
-  for(i=0;i<parts;i++){
-    segments[i].start=i;
-    segments[i].end=Each_part*(i+1);
-  }
-  if(parts == 1){
-    segment[1].name=""}
-}
-
 function reloadPage() {
     window.location.reload(true);
 }
@@ -324,7 +255,8 @@ let segments = [
 function MoveFromSlider(){
   CurrentAudioSlider.noUiSlider.setHandle(0,OneAudioPlayer.currentTime);
   BeginLoopTime = OneAudioPlayer.currentTime;
-  OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+  //OneAudioPlayer.addEventListener("timeupdate", setAudioLoops);
+  //alert(BeginLoopTime);
 }
 function MoveToSlider(){
   CurrentAudioSlider.noUiSlider.setHandle(2,OneAudioPlayer.currentTime);
