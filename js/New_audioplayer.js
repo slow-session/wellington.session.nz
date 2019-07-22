@@ -112,6 +112,30 @@ var RSsliderName=document.getElementById(speedSlider);
   });
 //How to disable handles on audioslider.
 //origins[2].setAttribute('disabled', true);
+  RSsliderName.noUiSlider.on ('start', function(value){
+    if (OneAudioPlayer.paused==false){ // audio is currently playing.
+      OneAudioPlayer.pause(); // first pause the audio
+      turnAudioBackOn = true;
+    }
+  });
+  RSsliderName.noUiSlider.on ('end', function(value){
+    if (turnAudioBackOn){ // audio is currently playing.
+      OneAudioPlayer.play(); // first pause the audio
+      turnAudioBackOn = false;
+    }
+  });
+  audioSlider.noUiSlider.on ('start', function(value){
+    if (OneAudioPlayer.paused==false){ // audio is currently playing.
+      OneAudioPlayer.pause(); // first pause the audio
+      turnAudioBackOn = true;
+    }
+  });
+  audioSlider.noUiSlider.on ('end', function(value){
+    if (turnAudioBackOn){ // audio is currently playing.
+      OneAudioPlayer.play(); // first pause the audio
+      turnAudioBackOn = false;
+    }
+  });
 }
 
 function createAudioPlayer() {
