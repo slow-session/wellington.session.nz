@@ -11,7 +11,7 @@ or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.
 
 {::nomarkdown}
 <p>
-<img alt="NEW!" src="/images/new.gif"  height="48" width="48"> We add new tunes reasonably often - you can check those out in our
+<img alt="NEW!" src="/images/new2.gif"  height="48" width="48">Try out our new <button class="filterButton" onclick="window.location.href = '/learn-a-tune/';">Learn a tune</button> page, also you can check our newly added tunes on our
 <button class="filterButton" onclick="window.location.href = '/latest/';">Latest Tunes</button>
 page.
 </p>

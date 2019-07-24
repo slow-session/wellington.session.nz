@@ -7,7 +7,7 @@ We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/drag
 
 The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments.
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information.
+See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out our <img alt="NEW!" src="/images/new2.gif"  height="48" width="48"> <button class="filterButton" onclick="window.location.href = '/learn-a-tune/';">Learn a tune</button> page.
 
 Tune of the Week
 ----------------
