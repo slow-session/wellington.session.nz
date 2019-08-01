@@ -15,7 +15,7 @@ mp3_file: /mp3/tatter-jack-walsh.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=_HPiU946P6Q
-alt_mp3_url: https://www.youtube.com/watch?v=_HPiU946P6Q
+alt_mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/1638
