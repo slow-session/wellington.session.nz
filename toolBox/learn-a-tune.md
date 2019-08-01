@@ -55,15 +55,16 @@ T: Playing by ear is the best!
                   style="background-color:#ebebeb; font-size:small; max-width:100%"
                   spellcheck="false">
 <!-- X: 3
-T: The Air Tune
-R: reel
-M: 4/4
+X: 1
+T: Tatter Jack Walsh
+R: jig
+M: 6/8
 L: 1/8
-K: D
-|:Af fe f2 ed|(3fga de f2 ed|Be ed fd ed|BA (3Bcd BAFG|
-Af fe f2 ed|(3fga de f2 ed|dB Be dB (3Bcd[1FAGE DEFG :|2 FAGE Defg||
-|:a2 ga fg ef|ed cd FA DA|Beed fded|BA ~A2 BAFG|
-a2 ga fg ef|ed cd FA DA|GBBA BdBA |[1 ef fe de fg :|2 EF FE D3||
+K: Dmix
+|: fef ded | cAB c2 A | dcA GFG| Add efg |
+fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
+|: dfa afd | dfa agf | g2 a ged | ^cde gfg |
+afd fed | cAB cde | dcA GFG| Ad^c d3 :|
 -->
         </textarea>
 
@@ -242,15 +243,15 @@ function reloadPage() {
 }
 
 let segments = [
-{name: "Part-A1",start: 0.6, end: 17.25},
-{name: "Part-A2",start: 17.25, end: 34.51},
-{name: "Part-B1",start: 34.51, end: 51.76},
-{name: "Part-B2",start: 51.76, end: 69.02},
-{name: "user-1",start: 0, end: 69.02},
-{name: "user-2",start: 0, end: 69.02},
-{name: "user-3",start: 0, end: 69.02},
-{name: "user-4",start: 0, end: 69.02},
-{name: "user-5",start: 0, end: 69.02},
+{name: "Part-A1",start: 0.0, end: 7.5},
+{name: "Part-A2",start: 7.5, end: 15.0},
+{name: "Part-B1",start: 15.0, end: 22.6},
+{name: "Part-B2",start: 22.6, end: 30.1},
+{name: "user-1",start: 0, end: 60.29},
+{name: "user-2",start: 0, end: 60.29},
+{name: "user-3",start: 0, end: 60.29},
+{name: "user-4",start: 0, end: 60.29},
+{name: "user-5",start: 0, end: 60.29},
 ];
 function MoveFromSlider(){
   CurrentAudioSlider.noUiSlider.setHandle(0,OneAudioPlayer.currentTime);
@@ -697,7 +698,7 @@ function count_bars_abc(str) {
 }
 
   $(document).ready(function() {
-    var mp3url = "../mp3/air-tune-the.mp3";
+    var mp3url = "../mp3/tatter-jack-walsh.mp3";
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
     showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
