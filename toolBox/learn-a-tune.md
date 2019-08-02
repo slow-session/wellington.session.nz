@@ -63,7 +63,7 @@ L: 1/8
 K: Dmix
 |: fef ded | cAB c2 A | dcA GFG| Add efg |
 fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
-|: dfa afd | dfa agf | g2 a ged | ^cde gfg |
+|: dfa afd | dfa agf | gef gea | gef gfe |
 afd fed | cAB cde | dcA GFG| Ad^c d3 :|
 -->
         </textarea>
