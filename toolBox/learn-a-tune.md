@@ -54,17 +54,17 @@ T: Playing by ear is the best!
         <textarea name='abcText' id="abcText" rows="13" cols="65"
                   style="background-color:#ebebeb; font-size:small; max-width:100%"
                   spellcheck="false">
-<!-- X: 3
+<!--
 X: 1
 T: Tatter Jack Walsh
 R: jig
 M: 6/8
 L: 1/8
 K: Dmix
-|: fef ded | cAB c2 A | dcA GFG| Add efg |
+|: fef ded | cAB c2 A | dcA GFG| AdA ^cde |
 fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
-|: dfa afd | dfa agf | gef gea | gef gfe |
-afd fed | cAB cde | dcA GFG| Ad^c d3 :|
+|: dfa afe | dfa agf | gef gea | gef gfg |
+afd fed | cAB BcA | dcA GFG| Ad^c d3 :|
 -->
         </textarea>
 

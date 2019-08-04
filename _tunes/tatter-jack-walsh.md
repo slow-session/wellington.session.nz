@@ -25,10 +25,11 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
+    %Z: Modified by Megan Ward    
     K: Dmix
-    |: fef ded | cAB c2 A | dcA GFG| Add efg |
+    |: fef ded | cAB c2 A | dcA GFG| AdA ^cde |
     fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
-    |: dfa afd | dfa agf | gef gea | gef gfe |
-    afd fed | cAB cde | dcA GFG| Ad^c d3 :|
+    |: dfa afe | dfa agf | gef gea | gef gfg |
+    afd fed | cAB BcA | dcA GFG| Ad^c d3 :|
 
 ---
