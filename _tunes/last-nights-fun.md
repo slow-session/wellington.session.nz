@@ -23,9 +23,10 @@ abc: |
     R: reel
     M: 4/4
     L: 1/8
+    %Z: Modified by Megan Ward    
     K: Dmaj
-    AF (3FED A3B|AGFD EFGB|AF (3FED A2Bd|egfe dB~B2|
-    AF (3FED A3B|AGFD EFGB|AF (3FED A2Bd|egfe dBAB|
-    df~f2 af~f2|defd egfe|df~f af~f|egfe dBAB|
+    AD~ED A3B|ADFD EFGB|AD~ED A2Bd|egfe dB~B2|
+    AD~ED A3B|ADFD EFGB|AD~ED A2Bd|egfe dBAB|
+    df~f2 af~f2|defd egfe|df~f2 af~f2|egfe dBAB|
     df~f2 af~f2|defd e2fg|afbf afeg|fedc BcdB|
 ---
