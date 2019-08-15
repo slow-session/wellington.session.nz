@@ -55,16 +55,18 @@ T: Playing by ear is the best!
                   style="background-color:#ebebeb; font-size:small; max-width:100%"
                   spellcheck="false">
 <!--
-X: 1
-T: Tatter Jack Walsh
-R: jig
-M: 6/8
+X: 2
+T: The Boys Of Ballisodare
+R: reel
+M: 4/4
 L: 1/8
-K: Dmix
-|: fef ded | cAB c2 A | dcA GFG| AdA ^cde |
-fef ded | cAB c2 A | dcA GFG | Ad^c d3 :|
-|: dfa afe | dfa agf | gef gea | gef gfg |
-afd fed | cAB BcA | dcA GFG| Ad^c d3 :|
+K: Gmaj
+e|dG~G2 dGeG|dBGA BAAe|dGGB dedB|AcBA GED2|
+dG~G2 dGeG|dBGA BAAd|Bdd2 eBdB|AcBA GED|]
+f|g3a bgaf|gfga bgef|g3a bgaf|gfed Bdef|
+g3a bgaf|gfga bgeg|bgaf gedB|AcBA GEDd|]
+Bdd2 Bdgd|Bdgd BAAc|Bddg eBdB|AcBA GEDd|
+Bdd2 Bdgd|Bdgd BABd|eB~B2 eBdB|AcBA GED|]
 -->
         </textarea>
 
@@ -243,12 +245,12 @@ function reloadPage() {
 }
 
 let segments = [
-{name: "Part-A1",start: 0.0, end: 7.5},
-{name: "Part-A2",start: 7.5, end: 15.0},
-{name: "Part-B1",start: 15.0, end: 22.6},
-{name: "Part-B2",start: 22.6, end: 30.1},
-{name: "user-1",start: 0, end: 60.29},
-{name: "user-2",start: 0, end: 60.29},
+{name: "Part-A1",start: 0.0, end: 5.1},
+{name: "Part-A2",start: 5.1, end: 10.3},
+{name: "Part-B1",start: 10.3, end: 15.4},
+{name: "Part-B2",start: 15.4, end: 20.5},
+{name: "Part-C1",start: 20.5, end: 25.6},
+{name: "Part-C2",start: 25.6, end: 30.8},
 {name: "user-3",start: 0, end: 60.29},
 {name: "user-4",start: 0, end: 60.29},
 {name: "user-5",start: 0, end: 60.29},

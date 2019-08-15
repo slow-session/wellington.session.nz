@@ -7,8 +7,10 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags:
+repeats: 2
+parts: 3
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-08-16
 mp3_file: /mp3/boys-of-ballisodare1.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
