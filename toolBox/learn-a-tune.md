@@ -700,7 +700,7 @@ function count_bars_abc(str) {
 }
 
   $(document).ready(function() {
-    var mp3url = "../mp3/tatter-jack-walsh.mp3";
+    var mp3url = "../mp3/boys-of-ballisodare1.mp3";
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
     showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
