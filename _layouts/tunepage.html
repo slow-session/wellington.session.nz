@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<div class="row">
+<div class="row small-up-1 medium-up-2 large-up-2">
 <div class="small-6 columns">
     {{ page.key }} {{ page.rhythm }}, added
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
@@ -56,7 +56,7 @@ Use the ABC player below the music to hear the tune.
 <!-- Area to store filename for download -->
 <textarea id="filename" style="display:none;"></textarea>
 
-<div class="output" style="max-width: 800px;">
+<div class="output" style="max-width: 650px;">
     <div id="paper0" class="paper"></div>
 </div>
 
@@ -187,8 +187,7 @@ function show_iframe(url) {
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
         showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
-        //OneAudioPlayer.src = '{{ site.mp3_host }}{{ page.mp3_file }}';
-        createSlider('playPosition'+tuneId, 'RS'+tuneId);
+        createSlider('playPosition' + tuneId, 'RS' + tuneId);
         tuneId++;
         {% endif %}
 
