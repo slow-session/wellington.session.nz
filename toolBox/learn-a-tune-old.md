@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learn a tune
-permalink: /learn-a-tune/
+permalink: /learn-a-tune-old/
 ---
 <div>
 <p>
