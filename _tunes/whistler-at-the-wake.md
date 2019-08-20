@@ -7,6 +7,8 @@ date: 2018-10-10
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek: 2018-10-10
 slowtuneoftheweek:
 mp3_file: /mp3/whistler-at-the-wake.mp3

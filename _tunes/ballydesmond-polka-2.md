@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ballydesmond-polka-2.mp3

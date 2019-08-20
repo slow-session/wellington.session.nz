@@ -8,6 +8,8 @@ date: 2016-1-26
 location:  Wellington
 notes:
 tags: whistle-class
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/dunmore-lasses2.mp3

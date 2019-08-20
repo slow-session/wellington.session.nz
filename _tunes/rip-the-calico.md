@@ -7,6 +7,8 @@ date: 2018-07-05
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rip-the-calico.mp3

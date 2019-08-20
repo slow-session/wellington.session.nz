@@ -8,6 +8,8 @@ date: 2016-01-26
 location: Raglan Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/banshee.mp3

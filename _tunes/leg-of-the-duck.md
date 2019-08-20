@@ -7,6 +7,8 @@ date: 2018-01-17
 location: Wellington
 notes:
 tags: slow-favourite slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-01-20
 mp3_file: /mp3/leg-of-the-duck.mp3

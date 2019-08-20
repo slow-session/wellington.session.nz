@@ -8,6 +8,8 @@ date: 2016-10-27
 location: Raglan Wellington Dunedin
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/finnish-polka.mp3

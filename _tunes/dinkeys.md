@@ -7,6 +7,8 @@ date: 2017-10-02
 location: Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-10-04
 mp3_file: /mp3/dinkeys.mp3

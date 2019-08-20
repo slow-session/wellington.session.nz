@@ -7,6 +7,8 @@ date: 2017-04-19
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/down-the-back-lane-d.mp3

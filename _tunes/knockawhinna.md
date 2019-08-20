@@ -7,6 +7,8 @@ date: 2018-10-09
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek: 2018-10-17
 slowtuneoftheweek:
 mp3_file: /mp3/knockawhinna.mp3

@@ -7,6 +7,8 @@ date: 2019-05-23
 location:
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/trip-to-the-cottage.mp3

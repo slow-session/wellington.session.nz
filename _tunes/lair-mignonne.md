@@ -7,6 +7,8 @@ date: 2017-05-26
 location: Raglan Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-07
 mp3_file: /mp3/lair-mignonne.mp3

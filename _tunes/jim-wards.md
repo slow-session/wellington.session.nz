@@ -8,6 +8,8 @@ date: 2016-02-24
 location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite slowsession wellyfest-learn
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jim-wards.mp3

@@ -7,6 +7,8 @@ date: 2019-06-17
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek: 2019-06-17
 slowtuneoftheweek:
 mp3_file: /mp3/dinny-obriens.mp3

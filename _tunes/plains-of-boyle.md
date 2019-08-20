@@ -8,6 +8,8 @@ date: 2016-2-3
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/plains-of-boyle.mp3

@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-23
 mp3_file: /mp3/swinging-on-the-gate.mp3

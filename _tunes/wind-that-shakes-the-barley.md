@@ -7,6 +7,8 @@ date: 2016-12-08
 location: Arrowtown Wellington
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/wind-that-shakes-the-barley.mp3

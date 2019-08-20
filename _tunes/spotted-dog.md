@@ -7,6 +7,8 @@ date: 2019-01-18
 location: Raglan Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/spotted-dog.mp3

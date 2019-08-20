@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 1
-parts: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/air-tune-the.mp3

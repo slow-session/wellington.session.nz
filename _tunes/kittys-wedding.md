@@ -8,6 +8,8 @@ date: 2016-06-08
 location: Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kittys-wedding.mp3

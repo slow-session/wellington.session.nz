@@ -7,6 +7,8 @@ date: 2016-04-18
 location: Raglan Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/toss-the-feathers-em.mp3

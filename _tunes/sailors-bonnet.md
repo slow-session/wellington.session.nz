@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-07-01
 mp3_file: /mp3/sailors-bonnet.mp3

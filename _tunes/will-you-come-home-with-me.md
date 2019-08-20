@@ -7,6 +7,8 @@ date: 2016-11-09
 location: Raglan Wellington
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/will-you-come-home-with-me.mp3

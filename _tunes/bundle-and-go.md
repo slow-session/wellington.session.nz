@@ -7,6 +7,8 @@ date: 2017-07-26
 location: Wellington Donegal
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-27
 mp3_file: /mp3/bundle-and-go.mp3

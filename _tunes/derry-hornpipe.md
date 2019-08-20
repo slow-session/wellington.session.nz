@@ -8,6 +8,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags: slowsession wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_url:

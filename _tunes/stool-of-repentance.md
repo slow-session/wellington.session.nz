@@ -7,6 +7,8 @@ date: 2015-11-10
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/stool-of-repentance.mp3

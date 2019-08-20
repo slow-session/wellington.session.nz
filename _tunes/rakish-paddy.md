@@ -7,6 +7,8 @@ date: 2018-11-13
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rakish-paddy.mp3

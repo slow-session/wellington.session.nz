@@ -7,6 +7,8 @@ date: 2017-10-13
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/shetland-fiddler.mp3

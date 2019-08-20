@@ -7,6 +7,8 @@ date: 2018-06-15
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/gold-ring.mp3

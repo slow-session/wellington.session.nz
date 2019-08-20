@@ -7,6 +7,8 @@ date: 2018-11-16
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/eileen-currans.mp3

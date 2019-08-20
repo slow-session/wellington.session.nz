@@ -7,6 +7,8 @@ date: 2017-05-26
 location: Raglan Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file:

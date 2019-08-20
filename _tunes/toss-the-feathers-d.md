@@ -7,6 +7,8 @@ date: 2017-04-19
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-08-24
 mp3_file: /mp3/toss-the-feathers-d.mp3

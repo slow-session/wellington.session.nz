@@ -7,6 +7,8 @@ date: 2017-09-27
 location: Donegal Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/low-highland.mp3

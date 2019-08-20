@@ -7,6 +7,8 @@ date: 2017-06-29
 location: Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-14
 mp3_file: /mp3/dirty-linen.mp3

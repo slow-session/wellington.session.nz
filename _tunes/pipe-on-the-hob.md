@@ -7,6 +7,8 @@ date: 2017-02-23
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/pipe-on-the-hob.mp3

@@ -7,6 +7,8 @@ date: 2017-10-13
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/boys-of-malin.mp3

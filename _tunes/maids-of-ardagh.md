@@ -7,6 +7,8 @@ date: 2018-07-31
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/maids-of-ardagh.mp3

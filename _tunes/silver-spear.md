@@ -7,6 +7,8 @@ date: 2016-03-02
 location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/silver-spear.mp3

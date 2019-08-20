@@ -7,6 +7,8 @@ date: 2019-03-20
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/crib-of-perches.mp3

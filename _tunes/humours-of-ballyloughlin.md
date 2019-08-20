@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/humours-of-ballyloughlin.mp3

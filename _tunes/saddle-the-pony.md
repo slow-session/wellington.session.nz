@@ -7,6 +7,8 @@ date: 2017-05-15
 location: Auckland Wellington Christchurch
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/saddle-the-pony.mp3

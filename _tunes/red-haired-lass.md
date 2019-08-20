@@ -8,6 +8,8 @@ date: 2016-09-28
 location: Raglan Arrowtown Wellington
 notes:
 tags: slowsession wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/red-haired-lass.mp3

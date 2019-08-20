@@ -7,6 +7,8 @@ date: 2018-01-12
 location: Dunedin
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file:

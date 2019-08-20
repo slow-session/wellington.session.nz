@@ -7,6 +7,8 @@ date: 2017-03-09
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-14
 mp3_file: /mp3/humours-of-tullycrine.mp3

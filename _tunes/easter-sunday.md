@@ -7,6 +7,8 @@ date: 2019-04-29
 location:
 notes:
 tags: ca-banjo-mandolin-2019
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/easter-sunday.mp3

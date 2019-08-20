@@ -7,6 +7,8 @@ date: 2016-08-11
 location: Raglan Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/reconciliation.mp3

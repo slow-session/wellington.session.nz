@@ -7,6 +7,8 @@ date: 2017-11-23
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-12-04
 mp3_file: /mp3/fig-for-a-kiss.mp3

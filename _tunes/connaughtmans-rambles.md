@@ -7,6 +7,8 @@ date: 2017-02-14
 location: Auckland Wellington Christchurch
 notes:
 tags: vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/connaughtmans-rambles.mp3

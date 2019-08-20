@@ -7,6 +7,8 @@ date: 2019-05-07
 location: Wellington 
 notes: 
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/john-dohertys-mazurka.mp3

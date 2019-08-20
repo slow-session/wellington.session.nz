@@ -8,6 +8,8 @@ date: 2016-12-7
 location: Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/caileach-an-airgid.mp3

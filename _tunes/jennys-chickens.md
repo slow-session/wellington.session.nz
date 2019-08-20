@@ -7,6 +7,8 @@ date: 2017-06-14
 location: Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-06-14
 mp3_file: /mp3/jennys-chickens.mp3

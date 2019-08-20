@@ -7,6 +7,8 @@ date: 2018-02-04
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-05
 mp3_file: /mp3/doctor-gilberts.mp3

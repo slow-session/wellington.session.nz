@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Raglan Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/garrett-barry-s.mp3

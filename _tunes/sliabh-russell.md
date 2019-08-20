@@ -7,6 +7,8 @@ date: 2017-04-21
 location: Raglan Auckland Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-06-23
 mp3_file: /mp3/sliabh-russell.mp3

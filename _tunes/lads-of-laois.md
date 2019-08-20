@@ -7,6 +7,8 @@ date: 2018-11-29
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek: 2018-11-29
 slowtuneoftheweek: 2019-06-19
 mp3_file: /mp3/lads-of-laois.mp3

@@ -7,6 +7,8 @@ date: 2019-01-30
 location: Christchurch Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek: 2019-01-31
 slowtuneoftheweek: 2019-02-07
 mp3_file: /mp3/macleods-farewell.mp3

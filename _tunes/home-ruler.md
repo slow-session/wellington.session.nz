@@ -8,6 +8,8 @@ date: 2018-08-16
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/home-ruler.mp3

@@ -8,7 +8,7 @@ location: Prebbleton Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
 repeats: 2
-parts: 3
+parts: AABBCC
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/banish-misfortune.mp3

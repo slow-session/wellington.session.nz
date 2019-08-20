@@ -7,6 +7,8 @@ date: 2019-02-21
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek: 2019-02-21
 slowtuneoftheweek:
 mp3_file: /mp3/galtee.mp3

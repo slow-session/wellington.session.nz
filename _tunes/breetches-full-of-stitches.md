@@ -8,6 +8,8 @@ date: 2016-09-28
 location: Wellington
 notes:
 tags: whistle-class
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/breetches-full-of-stitches.mp3

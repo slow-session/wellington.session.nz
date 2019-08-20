@@ -7,6 +7,8 @@ date: 2017-09-07
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-09-07
 mp3_file: /mp3/farrel-ogaras.mp3

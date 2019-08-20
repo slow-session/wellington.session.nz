@@ -7,6 +7,8 @@ date: 2016-9-27
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/i-neer-shall-wean-her.mp3

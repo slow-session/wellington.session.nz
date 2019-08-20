@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 2
-parts: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-08-02
 mp3_file: /mp3/tatter-jack-walsh.mp3

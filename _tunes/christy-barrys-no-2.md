@@ -7,6 +7,8 @@ date: 2016-03-29
 location: Arrowtown Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/christy-barrys-no-2.mp3

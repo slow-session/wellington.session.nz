@@ -7,6 +7,8 @@ date: 2017-05-15
 location: Raglan Auckland Arrowtown
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hag-at-the-churn.mp3
