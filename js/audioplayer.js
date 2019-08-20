@@ -22,7 +22,6 @@ var PreviouspButton = null;
 var CurrentAudioSlider = null;
 var turnAudioBackOn = false;
 var origins = null;
-var AudioSpeed = 0;
 var sliderArray1 = [];
 var sliderArray2 = [];
 
@@ -49,7 +48,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     // Col 1
     mp3player += '      <div class="small-2 columns">';
     mp3player += '        <button id="pButton' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\', RSS' + tuneID + ')">';
+    mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\')">';
     mp3player += '        </button>';
     mp3player += '      </div>';
     // Col 2
@@ -75,7 +74,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     mp3player += '            <div id="speedControl' + tuneID + '" class="mp3SpeedControl">';
     mp3player += '              <span title="Adjust playback speed with slider">';
     mp3player += '                <div id="RS' + tuneID + '"></div>'
-    mp3player += '                <p id="RSS' + tuneID + '" class="audioLabel">Speed - 100%</p>';
+    mp3player += '                <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>';
     mp3player += '              </span>';
     mp3player += '            </div>';
     mp3player += '          </div>';
@@ -116,6 +115,7 @@ function createSlider(SliderName, speedSlider) {
     var RSsliderName = document.getElementById(speedSlider);
     noUiSlider.create(RSsliderName, {
         start: [100],
+        tooltips: [wNumb({decimals: 0, postfix: ' %'})],
         range: {
             'min': 50,
             'max': 120
@@ -150,7 +150,6 @@ function createSlider(SliderName, speedSlider) {
     });
     RSsliderName.noUiSlider.on('update', function(value) {
         setPlaySpeed(value / 100);
-        AudioSpeed.innerHTML = "Speed - " + Number(value).toFixed(0) + " %";
     });
     //How to disable handles on audioslider.
     RSsliderName.noUiSlider.on('start', function(value) {
@@ -191,7 +190,7 @@ function delay_load_update() {
     };
 }
 
-function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioSpeed) {
+function playAudio(trID, audioplayer, pButton, positionSlider, audioSource) {
     if (pButton.className == "playButton") {
         if (PreviousAudioID != audioplayer) { //only load if necessary
             OneAudioPlayer.src = audioSource;
@@ -212,7 +211,6 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
             Previoustimeline = positionSlider;
             PreviouspButton = pButton;
             PreviousTrID = trID;
-            AudioSpeed = audioSpeed;
             // modify slider
             positionSlider.noUiSlider.updateOptions({
                 tooltips: [wNumb({

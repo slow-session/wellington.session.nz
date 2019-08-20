@@ -14,7 +14,7 @@ function changeTune(tuneNumber) {
     // make the player
     showPlayer.innerHTML = createMP3player('playABC', item.mp3, 'mp3player_tunepage');
     createSlider('playPositionplayABC', 'RSplayABC');
-    LoadAudio('playABC', audioplayerplayABC, pButtonplayABC, playPositionplayABC, item.mp3, RSSplayABC);
+    LoadAudio('playABC', audioplayerplayABC, pButtonplayABC, playPositionplayABC, item.mp3);
     // Show the button that allows show/hide of dots
     document.getElementById('dotsForm').style.display = "block";
     // Get the current paper state
@@ -421,7 +421,7 @@ function Adjust_down(row, inputBox) {
     }
 }
 
-function LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, audioSpeed) {
+function LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource) {
     if (pButton.className == "playButton") {
         if (PreviousAudioID != audioplayer) { //only load if necessary
             OneAudioPlayer.src = audioSource;
@@ -443,7 +443,6 @@ function LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
             Previoustimeline = positionSlider;
             PreviouspButton = pButton;
             PreviousTrID = trID;
-            AudioSpeed = audioSpeed;
             // modify slider
             positionSlider.noUiSlider.updateOptions({
                 tooltips: [wNumb({
@@ -459,7 +458,6 @@ function LoadAudio(trID, audioplayer, pButton, positionSlider, audioSource, audi
             }
         }
         CurrentAudioSlider = positionSlider;
-        //OneAudioPlayer.playbackRate = audioSpeed.value / 100;
         OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
         delay_load_update();
     }
