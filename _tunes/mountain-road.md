@@ -7,6 +7,8 @@ date: 2017-11-23
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 3
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mountain-road.mp3

@@ -7,6 +7,8 @@ date: 2018-05-14
 location: Wellington
 notes:
 tags:
+repeats: 3
+parts: ABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-cannys-toast.mp3

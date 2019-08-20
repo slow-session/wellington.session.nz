@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 2
-parts: 3
+parts: ABC
 regtuneoftheweek:
 slowtuneoftheweek: 2019-08-16
 mp3_file: /mp3/boys-of-ballisodare1.mp3
