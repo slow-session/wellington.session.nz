@@ -8,6 +8,8 @@ date: 2016-09-20
 location: Prebbleton Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 2
+parts: ABCD
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/high-road-to-linton.mp3

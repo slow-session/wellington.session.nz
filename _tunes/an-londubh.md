@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 2
-parts: 1
+parts: AA
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/an-londubh.mp3

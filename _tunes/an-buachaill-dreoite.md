@@ -7,6 +7,8 @@ date: 2018-09-18
 location: Wellington
 notes:
 tags:
+repeats: 3
+parts: AABB
 regtuneoftheweek: 2018-11-10
 slowtuneoftheweek:
 mp3_file: /mp3/an-buachaill-dreoite.mp3

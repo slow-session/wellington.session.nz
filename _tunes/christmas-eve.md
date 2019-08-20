@@ -8,6 +8,8 @@ date: 2016-12-7
 location: Wellington
 notes:
 tags: slowsession
+repeats: 2
+parts: AABBCC
 regtuneoftheweek:
 slowtuneoftheweek: 2017-01-04
 mp3_file: /mp3/christmas-eve.mp3

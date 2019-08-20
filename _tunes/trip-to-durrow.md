@@ -7,6 +7,8 @@ date: 2018-02-22
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 2
+parts: AABCBC
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-22
 mp3_file: /mp3/trip-to-durrow.mp3
