@@ -107,7 +107,6 @@ afd fed | cAB BcA | dcA GFG| Ad^c d3 :|
 <div id="showLoops"></div>
 
 
-<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 <script>
 
 function changeTune(tuneNumber){
@@ -120,7 +119,7 @@ function changeTune(tuneNumber){
     var mp3url = document.getElementById("mp3_name"+tuneNumber).innerHTML;
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
 
     createSlider('playPositionplayABC','RSplayABC');
 
@@ -701,7 +700,7 @@ function count_bars_abc(str) {
     var mp3url = "../mp3/tatter-jack-walsh.mp3";
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
     createSlider('playPositionplayABC','RSplayABC');
     var segmentArray = createSegmentTable();
     segments0.innerHTML = segmentArray[0];

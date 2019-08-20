@@ -1,139 +1,114 @@
 .mp3player_tunepage {
     max-width: 650px;
-    min-width: 450px;
-    min-height: 60px;
+    width: 90%;
+    //min-width: 450px;
+    //min-height: 60px;
 }
 
 .abcplayer_tunepage {
     max-width: 650px;
-    min-width: 450px;
+    width: 90%;
 }
 
-.mp3player_tablerow{
-    min-width: 450px;
+.mp3player_tablerow {
+    max-width: 650px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .abcplayer_tablerow {
-    min-width: 450px;
+    max-width: 650px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .playButton {
-    height: 32px;
-    width:32;
+    height: 40px;
+    width: 40px;
     border: none;
-    background: url('/images/play-new.png');
-    opacity: 0.7;
+    background: url("/images/play.png");
     background-size: contain;
     background-repeat: no-repeat;
-    float: left-top;
-    padding: 1px auto 10px 1px;
-    outline: 1px;
-}
-.playButton:hover {
-  opacity: 1.0;
-  transition: all 250ms linear;
+    float: center;
+    margin-top: 10px;
+    padding: 0;
+    outline: none;
 }
 
 .pauseButton {
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
     border: none;
-    background: url('/images/pause-new.png');
+    background: url("/images/pause.png");
     background-size: contain;
     background-repeat: no-repeat;
-    float: left;
-    padding: 1px auto 10px 1px;
-    outline: none;
-}
-.stopButton {
-    height: 32px;
-    width: 32px;
-    border: none;
-    background: url('/images/stop-new.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    float: left;
-    padding: 1px auto 10px 1px;
+    float: center;
+    margin-top: 10px;
+    padding: 0;
     outline: none;
 }
 
-.audioControl {
+.stopButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: url("/images/stop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: center;
+    margin-top: 10px;
+    padding: 0;
+    outline: none;
+}
+
+.abcAudioControl {
     width: 100%;
     min-width: 180px;
-    margin-top: 18px;
+    margin-top: 22px;
     margin-bottom: 15px;
     float: left;
 }
-.new_audioControl {
+
+.mp3AudioControl {
     width: 100%;
     min-width: 180px;
-    margin-top: 27px;
+    margin-top: 22px;
     float: center;
 }
-.loopControl {
+
+.mp3LoopControl {
+    margin-top: 20px;
+    margin-left: 25px;
     width: 100%;
     min-width: 180px;
-    float: left;
+    float: center;
 }
 
-.speedControl {
+.abcSpeedControl {
     width: 100%;
     min-width: 100px;
-    margin-top: 8px;
+    margin-top: 12px;
     padding-left: 20px;
     float: left;
 }
 
-.new_speedControl {
-  width: 100%;
-  min-width: 100px;
-  margin-top: 27px;
-  padding-left: 20px;
-  float: left;
-}
-.audioPosMP3 {
-    position: relative;
-    font-size: 11px;
-    margin-top: 32px;
-    width: 32px;
-    //margin-left: -18px;
-    //float: right;
-    text-align: center;
-    font-weight: bold;
-}
-.audioPosABC {
-  position: relative;
-  font-size: 11px;
-  margin-top: 32px;
-  width: 32px;
-  //margin-left: -18px;
-  //float: right;
-  text-align: center;
-  font-weight: bold;  
+.mp3SpeedControl {
+    width: 100%;
+    min-width: 100px;
+    margin-top: 22px;
+    padding-left: 20px;
+    float: left;
 }
 
-.durationP {
-    position: relative;
-    font-size: 11px;
-    width: 35px;
-    //margin-top: 37px;
-    //margin-left: -18px;
-    //float: right;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: overline;
-}
-
-p.audio {
+p.audioLabel {
     clear: left;
     font-size: small;
     text-align: center;
 }
 
 .tuneTitle {
-    font-size: 110%;
+    //font-size: 110%;
+    line-height: 1;
 }
 .player audio {
     width: 70%;
@@ -144,60 +119,64 @@ p.audio {
 }
 
 .loopButton {
-   background-color: lighten($brand-color, 40%);
-   background: linear-gradient($Loopbutton-color1, $Loopbutton-color2);
-   cursor: pointer;
-   padding: 3px;
-   border-radius: 8px;
-   font-size: 75%;
+    background-color: lighten($brand-color, 40%);
+    background: linear-gradient($Loopbutton-color1, $Loopbutton-color2);
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 75%;
 }
 
 .filterButton {
-   background-color:$brand-color;
-   padding:5px 10px;
-   color: darken($complimentary-color, 10%);
-   cursor: pointer;
-   border-radius: 8px;
+    background-color: $brand-color;
+    padding: 5px 10px;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 75%;
 }
 
 .filterButton.filterDisabled {
-  opacity: 0.55;
-  cursor: not-allowed;
+    opacity: 0.55;
+    cursor: not-allowed;
 }
 
 .sep {
-    border-bottom:1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .sep td {
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 
 fieldset {
-  margin: 0 auto;
-  text-align: left;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  border-style: solid;
+    margin: 0 auto;
+    text-align: left;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border-style: solid;
 }
 
-form
-{
+form {
     text-align: left;
 }
 
-input, textarea, select {
+input,
+select,
+textarea {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
 
 th {
-    background-color:$brand-color;
+    background-color: $brand-color;
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 th:first-of-type {
@@ -219,9 +198,9 @@ tr:last-of-type td:first-of-type {
 }
 
 tr:last-of-type td:last-of-type {
-  -webkit-border-bottom-right-radius: 8px;
-  -moz-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 td {
@@ -229,11 +208,13 @@ td {
 }
 
 tr:nth-of-type(odd) {
-      background-color:darken($complimentary-color, 6%);
+    background-color: darken($complimentary-color, 6%);
 }
+
 tr:hover {
-    background-color: darken($complimentary-color, 12%);;
+    background-color: darken($complimentary-color, 12%);
 }
+
 tr#no_hover:hover {
     background-color: transparent;
 }
@@ -246,16 +227,16 @@ tr#no_hover:hover {
     background: #a0a0a0;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider:hover {
     opacity: 1;
 }
-
 // The slider handle (use -webkit- (Chrome, Opera, Safari, Edge)
 // and -moz- (Firefox) to override default look)
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -278,116 +259,99 @@ tr#no_hover:hover {
     cursor: pointer;
 }
 
-  .noUi-horizontal { // track height
-    height: 10px;
-    border-radius: 50%;
-    background: lighten($brand-color, 20%);
-  }
-  .noUi-horizontal .noUi-handle {
-    width: 16px;
-    height: 22px;
-    left: -8px;
-    top: -6px;
-  }
-  .noUi-vertical .noUi-handle {
-    width: 28px;
-    height: 16px;
-    left: -6px;
-    top: -8px;
-  }
-  html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-    right: -10px;
-    left: auto;
-  }
-  .noUi-handle {
-    border: 1px solid #D9D9D9;
-    border-radius: 3px;
-    background: #669;
-    cursor: default;
-    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-  }
-  .noUi-handle:before,
-  .noUi-handle:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 6px;
-    width: 1px;
-    background: #E8E7E6;
-    left: 4px;
-    top: 6px;
-  }
-
-  .noUi-handle:after {
-    left: 8px;
-  }
-  .noUi-vertical .noUi-handle:after {
-    top: 12px;
-  }
-  .noUi-tooltip {
-    display: block;
-    position: absolute;
-    border: 0px solid #D7D7D7;
-    border-radius: 8px;
-    background: transparent;
-    color: #000;
-    padding-left: 2px;
-    padding-bottom: 0px;
-    padding-right: 2px;
-    padding-top: 0px;
+.upButton {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
+    padding: 1px;
+    align: center;
     text-align: center;
-    white-space: nowrap;
-  }
-  .noUi-horizontal .noUi-tooltip {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 190%);
-    left: 50%;
-    bottom: 120%;
-    font-size: 12px;
-    padding: 2px;
-    z-index: -1;
-  }
+    font-size: 90%;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
-  .noUi-horizontal .noUi-handle {
-    width: 15px;
-    height: 20px;
-    border-radius: 50%;
-    //background: #455;
+.downButton {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
     cursor: pointer;
-  }
-  .noUi-horizontal .noUi-handle[data-handle='1'] {
+    padding: 1px;
+    align: center;
+    text-align: center;
+    font-size: 90%;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.loopClass {
+    font-size: 14px;
+    border-radius: 2px;
+    width: 45px;
+}
+
+.tableSlider {
+    height: 94%;
+    padding:  0;
+    height: 280px;
     width: 15px;
-    height: 20px;
-    border-radius: 50%;
-    //background: #455;
-    cursor: pointer;
-  }
-  .noUi-horizontal .noUi-handle[data-handle='1'] .noUi-tooltip {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 20%);
-    left: 50%;
-    bottom: 120%;
-    font-size: 12px;
-    padding: 2px;
-    z-index: -1;
-  }
+    bottom: -10px;
+    left: -10px;
+}
 
+.tuneSelect {
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+    font-size: 14px;
+    border: 2px solid $complimentary-color;
+    border-radius: 8px;
+}
 
-  .noUi-connects {
-    border-radius: 3px;
-  }
-  .noUi-connect {
-    background: darken($brand-color, 20%);
-  }
+.outputABC {
+    max-width: 650px;
+}
 
-  .noUi-connect {
-    border-radius: 50%;
-  }
+.loop-container {
+    max-width: 650px;
+    padding-left: 20px;
+    display: block;
+    border: 2px solid $complimentary-color;
+    //width: 75%;
+}
 
+.rowTuneTable {
+    font-size: 14px;
+    min-width: 300px;
+    //width: 75%;
+}
 
-  //.noUi-tooltip {
-  //  display: none;
-  //}
-  //.noUi-active .noUi-tooltip {
-  //  display: block;
-  //}
+.row-title {
+    color: darken($complimentary-color, 10%);
+    background-color: $brand-color;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.row-even {
+    background-color: lighten($brand-color, 40%);
+}
+
+.row-odd {
+    background-color: lighten($brand-color, 60%);
+}
+
+.a {
+    color: #f0f0f0;
+}

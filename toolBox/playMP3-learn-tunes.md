@@ -59,14 +59,13 @@ URL: <input type="text" name="url" class="enter" value="../mp3/billowing-waves.m
   cursor: pointer;
 }
 </style>
-<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
 
 <script>
 function getURL() {
     var mp3url = document.getElementById("url").value;
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
     createSlider('playPositionplayABC','RSplayABC');
     showLoops.innerHTML = createSegmentTable();
     New_LoadAudio('trplayABC', audioplayerplayABC, pButtonplayABC,  playPositionplayABC, mp3url, APosplayABC, DurplayABC,  RSSplayABC);

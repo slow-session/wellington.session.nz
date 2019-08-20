@@ -72,6 +72,9 @@
              // if (tuneSources[i].includes('mp3')) {
              if (tuneSources[i].indexOf('mp3') !== -1) {
                  tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
+                 console.log("Sliders for: " + setTuneID);
+                 sliderArray1.push("playPosition" + setTuneID);
+                 sliderArray2.push("RS" + setTuneID);
              } else {
                  var textAreas = document.getElementById("abc-textareas");
                  tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';

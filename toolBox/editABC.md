@@ -18,12 +18,15 @@ If you want to add a new tune to the archive you can use the
 <!-- Area to store filename for download -->
 <textarea id="filename" style="display:none;"></textarea>
 
-<div class="row">
+<div class="row small-up-1 medium-up-2 large-up-2">
     <div class="small-7 columns">
         <!-- Draw the dots -->
         <div class="output">
             <div id="paper0" class="paper"></div>
         </div>
+
+        <!-- Controls for ABC player -->
+        <div id="ABCplayer"></div>
     </div>
     <div class="small-5 columns">
         <!-- Group the input and controls for ABC-->
@@ -48,19 +51,17 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
         </textarea>
         <!-- Show errors -->
         <div id='warnings'></div>
+
+        <!-- Allow the user to save their ABC-->
+        <h3>Don’t forget to ‘Download ABC’ to save your work</h3>
+        <form>
+            <span title="Download the ABC you've entered. Don't lose your work!">
+                <input value='Download ABC' type='button' class='filterButton' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
+            </span>
+        </form>
     </div>
 </div>
 
-<!-- Controls for ABC player -->
-<div id="ABCplayer"></div>
-
-<!-- Allow the user to save their ABC-->
-<h3>Don’t forget to ‘Download ABC’ to save your work</h3>
-<form>
-    <span title="Download the ABC you've entered. Don't lose your work!">
-        <input value='Download ABC' type='button' class='filterButton' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
-    </span>
-</form>
 
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 

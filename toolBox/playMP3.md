@@ -38,9 +38,6 @@ URL: <input type="text" name="url" class="enter" value="" id="url" style="width:
 </div>
 </div>
 
-<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
-<script src="{{ site.mp3_host }}/js/wNumb.js"></script>
-
 <script>
 function getURL() {
 
@@ -48,7 +45,7 @@ function getURL() {
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
     //showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
     createSlider('playPositionplayABC','RSplayABC');
 
 

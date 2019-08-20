@@ -66,7 +66,7 @@
              // build the audio player for each tune
              tableRow += '<td>';
              //tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
-             tableRow += createMP3player_experimental(item.tuneID, item.mp3, 'mp3player_tablerow');
+             tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
              tableRow += createSlider('playPosition'+item.tuneID, 'RS'+item.tuneID);
              tableRow += '</td></tr>';
          } else {
