@@ -3,6 +3,7 @@ layout: page
 title: Learn a tune
 permalink: /learn_a_tune/
 ---
+
 <p>
 Play a tune now using the <strong>Play</strong> button or use the
 <strong>Tune Page</strong> button for a more traditional view.
@@ -20,6 +21,7 @@ Play a tune now using the <strong>Play</strong> button or use the
 <button id="myBtn"></button>
 
 <!-- The Modal -->
+
 <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -113,13 +115,19 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    if (OneAudioPlayer.paused == false) { // audio is currently playing.
+        OneAudioPlayer.pause();
+    }
+    modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+      if (OneAudioPlayer.paused == false) { // audio is currently playing.
+          OneAudioPlayer.pause();
+      }
+      modal.style.display = "none";
   }
 }
 </script>
