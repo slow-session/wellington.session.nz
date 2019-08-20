@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: page
 permalink: /learn-a-tune/
 ---
 <script type="text/javascript">
