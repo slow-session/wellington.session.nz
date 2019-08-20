@@ -7,6 +7,8 @@ date: 2017-09-27
 location: Wellington Donegal
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-hudais.mp3

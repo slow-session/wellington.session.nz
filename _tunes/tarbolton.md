@@ -7,6 +7,8 @@ date: 2018-06-10
 location: Prebbleton Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-06-10
 mp3_file: /mp3/tarbolton.mp3

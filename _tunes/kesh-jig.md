@@ -7,6 +7,8 @@ date: 2017-05-25
 location: Prebbleton Raglan Wellington  Christchurch
 notes:
 tags: vicfolk
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kesh-jig.mp3

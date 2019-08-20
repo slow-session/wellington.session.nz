@@ -7,6 +7,8 @@ date: 2017-10-02
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/green-mountain.mp3

@@ -7,6 +7,8 @@ date: 2017-05-15
 location: Raglan Arrowtown
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/humours-of-tulla.mp3

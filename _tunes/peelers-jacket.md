@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Raglan Wellington
 notes:
 tags: vicfolk slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-10-10
 mp3_file: /mp3/peelers-jacket.mp3

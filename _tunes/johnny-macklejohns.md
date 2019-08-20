@@ -7,6 +7,8 @@ date: 2016-12-16
 location: Raglan Arrowtown Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/johnny-macklejohns.mp3

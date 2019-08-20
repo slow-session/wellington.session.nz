@@ -7,6 +7,8 @@ date: 2017-03-06
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-square-at-crossmaglen.mp3

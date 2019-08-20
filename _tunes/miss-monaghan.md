@@ -7,6 +7,8 @@ date: 2017-04-24
 location: Auckland Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/miss-monaghan.mp3

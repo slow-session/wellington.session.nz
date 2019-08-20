@@ -7,6 +7,8 @@ date: 2016-09-28
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ballydesmond-polka-3.mp3

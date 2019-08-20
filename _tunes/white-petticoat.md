@@ -7,6 +7,8 @@ date: 2019-04-22
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek: 2019-04-22
 slowtuneoftheweek: 2019-05-01
 mp3_file: /mp3/white-petticoat.mp3

@@ -7,6 +7,8 @@ date: 2017-04-05
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/skylark.mp3

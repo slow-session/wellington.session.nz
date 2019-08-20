@@ -7,6 +7,8 @@ date: 2015-12-21
 location: Prebbleton Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/willafjord.mp3

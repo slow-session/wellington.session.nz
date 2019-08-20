@@ -8,6 +8,8 @@ date: 2016-1-26
 location: Wellington
 notes:
 tags: slow-favourite slowsession wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/haunted-house.mp3

@@ -8,6 +8,8 @@ date: 2016-11-09
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession wellyfest-learn ceol-aneas
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jackie-colemans.mp3

@@ -7,6 +7,8 @@ date: 2017-08-04
 location: Raglan Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-10-18
 mp3_file: /mp3/old-copperplate.mp3

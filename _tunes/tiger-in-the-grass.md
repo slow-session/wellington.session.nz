@@ -7,6 +7,8 @@ date: 2018-09-22
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek: 2018-09-22
 slowtuneoftheweek:
 mp3_file: /mp3/tiger-in-the-grass.mp3

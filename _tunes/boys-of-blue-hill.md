@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Arrowtown Wellington Christchurch
 notes:
 tags: wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/boys-of-blue-hill.mp3

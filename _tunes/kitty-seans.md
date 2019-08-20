@@ -7,6 +7,8 @@ date: 2017-08-07
 location: Wellington Donegal
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kitty-seans.mp3

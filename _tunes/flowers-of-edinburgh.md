@@ -7,6 +7,8 @@ date: 2018-08-20
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/flowers-of-edinburgh.mp3

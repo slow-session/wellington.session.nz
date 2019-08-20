@@ -7,6 +7,8 @@ date: 2017-02-14
 location: Prebbleton Raglan Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-02-22
 mp3_file: /mp3/rakes-of-kildare.mp3

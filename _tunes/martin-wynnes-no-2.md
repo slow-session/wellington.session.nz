@@ -7,6 +7,8 @@ date: 2017-02-09
 location: Wellington
 notes:
 tags: slow-favourite slowsession ceol-aneas
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-03-25
 mp3_file: /mp3/martin-wynnes-no-2.mp3

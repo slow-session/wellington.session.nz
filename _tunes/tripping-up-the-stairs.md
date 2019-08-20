@@ -7,6 +7,8 @@ date: 2019-01-18
 location: Raglan Auckland Wellington Christchurch
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/tripping-up-the-stairs.mp3

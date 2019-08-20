@@ -7,6 +7,8 @@ date: 2017-03-16
 location: Auckland Wellington Christchurch
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-03-16
 mp3_file: /mp3/maid-behind-the-bar.mp3

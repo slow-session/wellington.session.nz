@@ -7,6 +7,8 @@ date: 2017-11-08
 location: Raglan Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/guns-of-the-magnificent-seven.mp3

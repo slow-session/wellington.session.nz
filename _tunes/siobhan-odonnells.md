@@ -7,6 +7,8 @@ date: 2017-09-20
 location: Raglan Wellington
 notes:
 tags: slow-favourite slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-09-28
 mp3_file: /mp3/siobhan-odonnells.mp3

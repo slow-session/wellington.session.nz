@@ -7,6 +7,8 @@ date: 2018-06-11
 location: Christchurch Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-old-favourite.mp3

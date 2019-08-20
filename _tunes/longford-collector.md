@@ -7,6 +7,8 @@ date: 2018-06-10
 location: Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-06-20
 mp3_file: /mp3/longford-collector.mp3

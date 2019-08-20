@@ -7,6 +7,8 @@ date: 2016-07-25
 location: Arrowtown Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/con-cassidys.mp3

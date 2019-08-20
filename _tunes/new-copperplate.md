@@ -7,6 +7,8 @@ date: 2017-08-04
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-11-04
 mp3_file: /mp3/new-copperplate.mp3

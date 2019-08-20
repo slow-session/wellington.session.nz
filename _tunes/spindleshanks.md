@@ -7,6 +7,8 @@ date: 2018-01-10
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-01-11
 mp3_file: /mp3/spindleshanks.mp3

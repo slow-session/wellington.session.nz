@@ -7,6 +7,8 @@ date: 2016-5-11
 location: Arrowtown Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/off-to-california.mp3

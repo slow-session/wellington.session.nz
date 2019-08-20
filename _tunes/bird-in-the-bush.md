@@ -7,6 +7,8 @@ date: 2016-06-02
 location: Wellington
 notes:
 tags: slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/bird-in-the-bush.mp3

@@ -8,6 +8,8 @@ date: 2016-09-14
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/leslies-march.mp3

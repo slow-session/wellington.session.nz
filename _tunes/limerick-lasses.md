@@ -7,6 +7,8 @@ date: 2018-12-11
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/limerick-lasses.mp3

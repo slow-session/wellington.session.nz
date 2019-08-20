@@ -7,6 +7,8 @@ date: 2016-12-2
 location: Raglan Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/torn-jacket.mp3

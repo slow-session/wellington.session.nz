@@ -7,6 +7,8 @@ date: 2016-5-4
 location: Prebbleton Raglan Wellington Christchurch
 notes:
 tags: vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/blarney-pilgrim.mp3

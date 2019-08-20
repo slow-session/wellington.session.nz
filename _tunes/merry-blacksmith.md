@@ -8,6 +8,8 @@ date: 2016-3-2
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession wellyfest ceol-aneas
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/merry-blacksmith.mp3

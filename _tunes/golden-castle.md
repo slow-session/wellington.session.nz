@@ -7,6 +7,8 @@ date: 2017-02-27
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-23
 mp3_file: /mp3/golden-castle.mp3

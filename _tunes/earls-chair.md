@@ -8,6 +8,8 @@ date: 2016-10-12
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-05-04
 mp3_file: /mp3/earls-chair.mp3

@@ -8,6 +8,8 @@ date: 2016-01-16
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession wellyfest
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/concertina-reel.mp3

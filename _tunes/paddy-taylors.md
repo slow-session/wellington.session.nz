@@ -7,6 +7,8 @@ date: 2018-05-12
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-taylors.mp3

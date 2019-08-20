@@ -7,6 +7,8 @@ date: 2018-11-07
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-cornboy.mp3

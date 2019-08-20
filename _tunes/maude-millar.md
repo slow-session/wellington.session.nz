@@ -7,6 +7,8 @@ date: 2019-02-07
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2019-02-13
 mp3_file: /mp3/maude-millar.mp3

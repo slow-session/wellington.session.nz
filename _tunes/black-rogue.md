@@ -7,6 +7,8 @@ date: 2018-05-21
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/black-rogue.mp3

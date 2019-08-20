@@ -7,6 +7,8 @@ date: 2017-10-19
 location: Wellington 
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hey-jude.mp3

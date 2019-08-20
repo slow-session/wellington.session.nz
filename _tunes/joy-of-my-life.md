@@ -7,6 +7,8 @@ date: 2019-02-14
 location: Wellington
 notes: The second part of the tune comes from the fiddle playing of Thomas Power from Doonbeg in County Clare.
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/joy-of-my-life.mp3

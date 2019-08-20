@@ -8,6 +8,8 @@ date: 2016-10-27
 location: Arrowtown Wellington
 notes:
 tags: 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ships-are-sailing.mp3

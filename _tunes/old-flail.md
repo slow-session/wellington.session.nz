@@ -7,6 +7,8 @@ date: 2019-04-10
 location: Wellington
 notes: Often played after Whistler at the Wake
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/old-flail.mp3

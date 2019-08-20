@@ -8,6 +8,8 @@ date: 2016-01-26
 location: Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession 
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/wise-maid.mp3

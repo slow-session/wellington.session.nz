@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Wellington Christchurch
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-04-27
 mp3_file: /mp3/star-of-munster.mp3

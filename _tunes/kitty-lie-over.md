@@ -7,6 +7,8 @@ date: 2016-07-25
 location: Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kitty-lie-over.mp3

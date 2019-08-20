@@ -7,6 +7,8 @@ date: 2019-02-25
 location: Wellington
 notes: 
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mayor-harrisons-fedora.mp3

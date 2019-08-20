@@ -7,6 +7,8 @@ date: 2019-02-28
 location: Wellington
 notes: Part of Da Auld Five Reels set, frae Shirley Mills, Shetland
 tags: shetland
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file:

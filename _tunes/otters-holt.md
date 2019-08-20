@@ -7,6 +7,8 @@ date: 2016-4-11
 location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/otters-holt.mp3

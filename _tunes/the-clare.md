@@ -7,6 +7,8 @@ date: 2018-11-08
 location: Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-08
 mp3_file: /mp3/the-clare.mp3

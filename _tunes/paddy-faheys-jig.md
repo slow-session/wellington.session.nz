@@ -7,6 +7,8 @@ date: 2016-01-01
 location: Arrowtown Wellington
 notes:
 tags:
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-faheys-jig.mp3

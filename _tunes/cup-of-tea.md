@@ -7,6 +7,8 @@ date: 2016-5-4
 location: Raglan Arrowtown Wellington
 notes:
 tags: slowsession
+repeats: 
+parts: 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cup-of-tea.mp3
