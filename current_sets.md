@@ -75,7 +75,6 @@ page.
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_current_sets.js"></script>
-<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -85,5 +84,7 @@ $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[0,0]];
 
     $("#search-results").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
+    Create_archive_sliders();
+
 });
 </script>

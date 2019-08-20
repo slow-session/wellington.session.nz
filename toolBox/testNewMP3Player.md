@@ -33,8 +33,6 @@ Test page for new mp3 player.
 </div>
 </div>
 <div id="Hits"></div>
-<script src="{{ site.mp3_host }}/js/New_audioplayer.js"></script>
-<script src="{{ site.mp3_host }}/js/wNumb.js"></script>
 
 
 <style>
@@ -72,7 +70,7 @@ function getURL() {
     var mp3url = "../mp3/banshee.mp3";
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    showPlayer.innerHTML += createMP3player_experimental('playABC', mp3url, 'mp3player_tunepage');
+    showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
     OneAudioPlayer.src = mp3url;
     createSlider('playPositionplayABC', 'RSplayABC');
     //OneAudioPlayer.pause();

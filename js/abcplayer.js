@@ -24,8 +24,6 @@ var lastpButton;
 var ABCCurrentTime = 0;
 var ABCduration = 0;
 var IntervalHandle;
-var ABCLocation;
-var ABCdurationP;
 var PreviousTrID = null;
 
 // Select a timbre that sounds like an electric piano.
@@ -41,28 +39,31 @@ function createABCplayer (tuneID, playerClass, timbre) {
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
     abcPlayer += '  <div class="' + playerClass + '">';
-    abcPlayer += '    <div class="row" id="' + tuneID + '" style="width: 100%;min-width: 350px;">';
+    abcPlayer += '    <div class="row" id="' + tuneID + '">';
     // Col 1
-    abcPlayer += '      <div class="small-1 columns">';
+    abcPlayer += '      <div class="small-2 columns">';
     abcPlayer += '      <button id="pButton' + tuneID + '" class="playButton"';
-    abcPlayer += '          onclick="playABC(\'' + trID + '\', ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value, APos' + tuneID + ' , Dur' + tuneID + ')">';
-    abcPlayer += '          <div id="APos' + tuneID + '" class="audioPosABC"></div>';
-    abcPlayer += '          <div id="Dur' + tuneID + '" class="durationP"></div>';
+    abcPlayer += '          onclick="playABC(\'' + trID + '\', ABC' + tuneID + ', pButton' + tuneID + ', playPosition' + tuneID + ', RS' + tuneID + '.value)">';
     abcPlayer += '      </button>';
     abcPlayer += '      </div>';
     // Col 2
-    abcPlayer += '      <div class="small-6 columns">';
-    abcPlayer += '      <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="audioControl slider" min="0" max="500" value="0"';
-    abcPlayer += '          oninput="setABCPosition(value/100)" />';
-    abcPlayer += '      <p class="audio">Playing the <i>dots</i>!</p>';
-    abcPlayer += '      </div>';
+    abcPlayer += '      <div class="small-10 columns">';
+    abcPlayer += '        <div class="row small-up-1 medium-up-2 large-up-2">';
+    abcPlayer += '          <div class="small-6 columns">';
+    abcPlayer += '            <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="abcAudioControl slider" min="0" max="500" value="0"';
+    abcPlayer += '            oninput="setABCPosition(value/100)" />';
+    abcPlayer += '            <p class="audioLabel">Playing the <i>dots</i>!</p>';
+    abcPlayer += '          </div>';
     // Col 3
-    abcPlayer += '      <div class="small-5 columns">';
-    abcPlayer += '      <div class="speedControl">';
-    abcPlayer += '          <span title="Adjust playback speed with slider">';
-    abcPlayer += '      <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
-    abcPlayer += '          onchange="changeABCspeed(ABC' + tuneID + ', pButton' + tuneID + ', value)">';
-    abcPlayer += '      <p class="audio">Speed - <strong><output name="level">100</output>%</strong></p>';
+    abcPlayer += '          <div class="small-6 columns">';
+    abcPlayer += '            <div class="abcSpeedControl">';
+    abcPlayer += '              <span title="Adjust playback speed with slider">';
+    abcPlayer += '                <input name="flevel" id="RS' + tuneID + '" class="slider" type="range" min="50" max="120" value="100"';
+    abcPlayer += '                onchange="changeABCspeed(ABC' + tuneID + ', pButton' + tuneID + ', value)">';
+    abcPlayer += '                <p class="audioLabel">Speed - <strong><output name="level">100</output>%</strong></p>';
+    abcPlayer += '            </div>';
+    abcPlayer += '          </div>';
+    abcPlayer += '        </div>';
     abcPlayer += '      </div>';
     abcPlayer += '    </div>';
     abcPlayer += '  </div>';
@@ -81,7 +82,7 @@ function makeInstrument(timbre) {
     return (tempInstrument);
 }
 
-function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration) {
+function playABC(trID, tune, pButton, playPosition, bpm) {
     /*
      * Play an ABC tune when the button gets pushed
      */
@@ -103,16 +104,13 @@ function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration
         setABCPosition(0);
     }
     lastpButton = pButton;
-    ABCLocation = audioposition; //initialise global variable
     ABCPosition.Ptr = playPosition;
-    ABCdurationP = duration;
 
     if (pButton.className == "playButton") {
         stopABC(tune);
         startABC(tune, ticks);
         pButton.className = "";
         pButton.className = "stopButton";
-        ABCdurationP.innerHTML = ABCduration.toFixed(1);
         if (document.getElementById(PreviousTrID)) {
             document.getElementById(PreviousTrID).style.backgroundColor = '';
         }
@@ -122,8 +120,6 @@ function playABC(trID, tune, pButton, playPosition, bpm, audioposition, duration
         }
     } else {
         stopABC(tune);
-        audioposition.innerHTML = "";
-        ABCdurationP.innerHTML = "";
         pButton.className = "";
         pButton.className = "playButton";
 
@@ -256,7 +252,6 @@ function nudgeABCSlider() {
     ABCCurrentTime += 0.1;
     var floatTime = (ABCCurrentTime / ABCduration) * 500;
     ABCPosition.Ptr.value = floatTime;
-    ABCLocation.innerHTML = ABCCurrentTime.toFixed(1);
 }
 
 function setABCPosition(ticks) {
