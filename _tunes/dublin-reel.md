@@ -6,9 +6,9 @@ rhythm: reel
 date: 2016-12-08
 location: Auckland Wellington
 notes:
-tags: slowsession 
-repeats: 
-parts: 
+tags: slowsession
+repeats: 2
+parts: ABC
 regtuneoftheweek:
 slowtuneoftheweek: 2017-08-09
 mp3_file: /mp3/dublin-reel.mp3
