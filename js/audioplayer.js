@@ -148,7 +148,7 @@ function createSlider(SliderName, speedSlider) {
         }
 
     });
-    RSsliderName.noUiSlider.on('update', function(value) {
+    RSsliderName.noUiSlider.on('change', function(value) {
         setPlaySpeed(value / 100);
     });
     //How to disable handles on audioslider.
