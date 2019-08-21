@@ -48,7 +48,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     // Col 1
     mp3player += '      <div class="small-2 columns">';
     mp3player += '        <button id="pButton' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', \'' + mp3url + '\')">';
+    mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', pButton' + tuneID + ',  playPosition' + tuneID + ', RS'+tuneID + ', \'' + mp3url + '\')">';
     mp3player += '        </button>';
     mp3player += '      </div>';
     // Col 2
@@ -148,7 +148,7 @@ function createSlider(SliderName, speedSlider) {
         }
 
     });
-    RSsliderName.noUiSlider.on('update', function(value) {
+    RSsliderName.noUiSlider.on('change', function(value) {
         setPlaySpeed(value / 100);
     });
     //How to disable handles on audioslider.
@@ -190,7 +190,7 @@ function delay_load_update() {
     };
 }
 
-function playAudio(trID, audioplayer, pButton, positionSlider, audioSource) {
+function playAudio(trID, audioplayer, pButton, positionSlider, speedSlider, audioSource) {
     if (pButton.className == "playButton") {
         if (PreviousAudioID != audioplayer) { //only load if necessary
             OneAudioPlayer.src = audioSource;
@@ -247,6 +247,7 @@ function playAudio(trID, audioplayer, pButton, positionSlider, audioSource) {
         positionUpdate(); // this puts the slider exactly where it should be.
     }
     delay_load_update();
+    OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get()/100;
 }
 
 function loadFinish() {
