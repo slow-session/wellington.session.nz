@@ -7,9 +7,9 @@ mode:
 date: 2016-07-13
 location: Arrowtown Wellington
 notes:
-tags: slow-favourite vicfolk slowsession 
-repeats: 
-parts: 
+tags: slow-favourite vicfolk slowsession
+repeats: 2 
+parts: AABBCCDD
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/foxhunters.mp3
