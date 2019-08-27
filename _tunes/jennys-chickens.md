@@ -6,11 +6,11 @@ rhythm: reel
 date: 2017-06-14
 location: Wellington
 notes:
-tags: slowsession 
-repeats: 
-parts: 
+tags: slowsession
+repeats: 2
+parts: ABC
 regtuneoftheweek:
-slowtuneoftheweek: 2017-06-14
+slowtuneoftheweek: 2019-08-28
 mp3_file: /mp3/jennys-chickens.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
