@@ -55,7 +55,9 @@ hear the tunes played one after another.
     <div id="tunes-count"></div>
 </fieldset>
 </div>
-<br />
+
+<div class="row"></div>
+
 
 <!-- Show a header for where the dots will appear -->
 <div id="paperHeader"><h1>Musical Notation will appear here</h1></div>
@@ -131,7 +133,7 @@ Please think of the trees!">
 $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[2,0], [1,0]];
 
-    $("#search-results").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});  
+    $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 });

@@ -3,33 +3,27 @@ layout: page
 title: Tunes Archive
 permalink: /tunes_archive/
 ---
-Many of the tunes listed here get played at the Wellington Session. There are
-also a number of tunes from other parts of the country. You can look at them all
-or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.
-**We're happy to add tunes from other parts of NZ.**
-
-
-{::nomarkdown}
 <p>
-<img alt="NEW!" src="/images/new2.gif"  height="48" width="48">Try out our new <button class="filterButton" onclick="window.location.href = '/learn-a-tune/';">Learn a tune</button> page, also you can check our newly added tunes on our
-<button class="filterButton" onclick="window.location.href = '/latest/';">Latest Tunes</button>
-page.
+We liked our experiment with the <strong>Learn a Tune</strong> page so much we
+decided to replace our <strong>Tunes Archive</strong> page with it. We've kept
+the old page at
+<button class="filterButton" onclick="window.location.href='/tunes_archive_old/';">
+Tunes Archive - Old</button> 
+so that you can continue to use it for a while.
 </p>
-{:/}
 
-We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes with us, there's a good chance someone else will know them. You can find these tunes by choosing the "All Tunes" option,  picking "Slow-favourite" and pressing "Select"
+<p>
+Play a tune now using the <strong>Play</strong> button or use the
+<strong>Tune Page</strong> button for a more traditional view.
+</p>
 
-<div id="audioPlayer"></div>
-
-<!-- Some boilerplate that's common to a number of pages -->
 {% include tunes-filter-variables.html %}
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
         <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'. You can also look for 'tags' such as 'Slowsession, 'Beginner'">  
-
+        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'.">  
         <input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
         &emsp;
@@ -41,57 +35,83 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
-        <select id="tags-box" name="tags" onChange="enable_button()">
-            <option value="">All Tunes</option>
-            {% for tag in tags %}
-            {% if tag != '' %}
-            <option value="{{ tag }}">{{ tag | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-        &emsp;
-        <select id="location-box" name="location" onChange="enable_button()">
-            <option value="">All Locations</option>
-            {% for location in locations %}
-            {% if location != '' %}
-            <option value="{{ location | downcase }}">{{ location | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
         </span>    
         &emsp;
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
         </span>      
+        <div class="popup filterButton" onclick="helpFunction()">
+        Help
+            <span class="popuptext" id="helpPopup">
+                Run the filter with the default settings to see the whole list
+            </span>
+        </div>
     </form>
     <p></p>
     <div id="tunes-count"></div>
 </fieldset>
 
-<br />
-<div id="tunes-table"></div>
-<div id="abc-textareas"></div>
+
+<div class="row rowTuneTable">
+  <div class="small-11 columns" id="tuneTable">
+    <div id="tunes-table"></div>
+  </div>
+  <div class="small-1 columns tableSlider" id="tableSlider"></div>
+</div>
+
+<!-- Trigger/Open The Modal -->
+
+<button id="myBtn"></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">×</span>
+        <!-- *** Player controls *** -->
+        <div id="tuneTitle"></div>
+        <br />
+        <div class="player">
+            <div id="audioPlayer"></div>
+            <div id="showPlayer"></div>
+        </div>
+        <!-- *** loop presets *** -->
+        <form id="loopForm" style="display: none;">
+            <input type="button" class="filterButton" value="Show Preset Loops" onclick="toggleLoops(this);">
+        </form>
+        <div id="loopPresetControls" style="display: none;">.</div>
+        <!-- *** rendered ABC and tune selector scrolling table *** -->
+        <form id="dotsForm" style="display: none;">
+            <input type="button" class="filterButton" value="Show the Dots" onclick="toggleTheDots(this);">
+        </form>
+        <div class="outputABC">
+        <div id="paper0" style="display: none;"></div>
+        <div id='abcSource' style="display: none;">
+            <textarea name='abcText' id="abcText"></textarea>
+        </div>
+    </div>
+</div>
+
+<div id="debug"></div>
 
 <script>
     window.store = {
-      {% assign tuneID = 3000 %}
-      {% assign tunes =  site.tunes | sort: 'title' %}
-      {% for tune in tunes %}
+
+      {% assign tunes = site.tunes %}
+      {% assign sortedtunes = tunes | sort: 'titleID' %}
+      {% assign tuneID = 200 %}
+      {% for tune in sortedtunes %}
         {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
         "key": "{{ tune.key | xml_escape }}",
         "rhythm": "{{ tune.rhythm | xml_escape }}",
-        "location": "{{ tune.location | xml_escape }}",
-        "tags": "{{ tune.tags | array_to_sentence_string }}",
         "url": "{{ tune.url | xml_escape }}",
-        "instrument": "{{ site.defaultABCplayer }}",
-        {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-        "abc": ""
-        {% else %}"mp3": "",
-        "abc": {{ tune.abc | jsonify }}{% endif %}
+        "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+        "repeats": "{{ tune.repeats }}",
+        "parts": "{{ tune.parts }}",
+        "abc": {{ tune.abc | jsonify }}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
@@ -100,18 +120,57 @@ We've got a number of tunes that we know well at the Slow Session. We don't play
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
+
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 3:{sorter: false}}});  
+    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});  
 
-    // Draw the sliders on the MP3 players
-    Create_archive_sliders();
+    createArchiveSlider('tableSlider');
+    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
+  });
+</script>
 
-});
+<script>
+// When the user clicks on <div>, open the popup
+function helpFunction() {
+  var popup = document.getElementById("helpPopup");
+  popup.classList.toggle("show");
+}
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    if (OneAudioPlayer.paused == false) { // audio is currently playing.
+        OneAudioPlayer.pause();
+    }
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      if (OneAudioPlayer.paused == false) { // audio is currently playing.
+          OneAudioPlayer.pause();
+      }
+      modal.style.display = "none";
+  }
+}
 </script>

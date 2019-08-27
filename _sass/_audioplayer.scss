@@ -1,8 +1,6 @@
 .mp3player_tunepage {
     max-width: 650px;
     width: 90%;
-    //min-width: 450px;
-    //min-height: 60px;
 }
 
 .abcplayer_tunepage {
@@ -11,14 +9,12 @@
 }
 
 .mp3player_tablerow {
-    max-width: 650px;
-    width: 90%;
+    min-width: 450px;
     margin: 0 auto;
 }
 
 .abcplayer_tablerow {
-    max-width: 650px;
-    width: 90%;
+    min-width: 450px;
     margin: 0 auto;
 }
 
@@ -29,8 +25,10 @@
     background: url("/images/play.png");
     background-size: contain;
     background-repeat: no-repeat;
-    float: center;
-    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     padding: 0;
     outline: none;
 }
@@ -42,8 +40,10 @@
     background: url("/images/pause.png");
     background-size: contain;
     background-repeat: no-repeat;
-    float: center;
-    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     padding: 0;
     outline: none;
 }
@@ -55,49 +55,58 @@
     background: url("/images/stop.png");
     background-size: contain;
     background-repeat: no-repeat;
-    float: center;
-    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     padding: 0;
     outline: none;
-}
-
-.abcAudioControl {
-    width: 100%;
-    min-width: 180px;
-    margin-top: 22px;
-    margin-bottom: 15px;
-    float: left;
 }
 
 .mp3AudioControl {
     width: 100%;
     min-width: 180px;
-    margin-top: 22px;
+    margin-top: 27px;
     float: center;
 }
 
 .mp3LoopControl {
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 20px;
     width: 100%;
     min-width: 180px;
     float: center;
 }
 
-.abcSpeedControl {
+.mp3SpeedControl {
     width: 100%;
     min-width: 100px;
-    margin-top: 12px;
+    margin-top: 27px;
     padding-left: 20px;
     float: left;
 }
 
-.mp3SpeedControl {
+.abcAudioControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.abcSpeedControl {
     width: 100%;
     min-width: 100px;
-    margin-top: 22px;
+    margin-top: 27px;
+    margin-bottom: 15px;
     padding-left: 20px;
     float: left;
+}
+
+p.audioLabel {
+    clear: left;
+    font-size: small;
+    text-align: center;
 }
 
 p.mp3SpeedLabel {
@@ -107,16 +116,14 @@ p.mp3SpeedLabel {
     text-align: center;
 }
 
-p.audioLabel {
-    clear: left;
-    font-size: small;
-    text-align: center;
+p.attribution {
+    max-width: 650px;
 }
 
 .tuneTitle {
-    //font-size: 110%;
-    line-height: 1;
+    font-size: 110%;
 }
+
 .player audio {
     width: 70%;
 }
@@ -156,7 +163,13 @@ p.audioLabel {
     padding-bottom: 5px;
 }
 
+h2 span {
+    display:inline;
+}
+
 fieldset {
+    max-width: 650px;
+    float:left;
     margin: 0 auto;
     text-align: left;
     -webkit-border-radius: 8px;
@@ -208,6 +221,12 @@ tr:last-of-type td:last-of-type {
     -webkit-border-bottom-right-radius: 8px;
     -moz-border-bottom-right-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.tdArchive {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
 td {
@@ -327,7 +346,7 @@ tr#no_hover:hover {
 }
 
 .loop-container {
-    max-width: 650px;
+    max-width: 625px;
     padding-left: 20px;
     display: block;
     border: 2px solid $complimentary-color;
@@ -361,4 +380,56 @@ tr#no_hover:hover {
 
 .a {
     color: #f0f0f0;
+}
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

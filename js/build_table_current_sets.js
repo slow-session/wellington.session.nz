@@ -21,7 +21,7 @@
 
          // create table headers
          var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:20%;">Set Name &#x25B2;&#x25BC;</th> \
@@ -72,9 +72,9 @@
              // if (tuneSources[i].includes('mp3')) {
              if (tuneSources[i].indexOf('mp3') !== -1) {
                  tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
-                 console.log("Sliders for: " + setTuneID);
-                 sliderArray1.push("playPosition" + setTuneID);
-                 sliderArray2.push("RS" + setTuneID);
+                 // create an array with the tuneIDs so we can build the sliders at
+                 // run time
+                 sliderArray.push(setTuneID);
              } else {
                  var textAreas = document.getElementById("abc-textareas");
                  tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';

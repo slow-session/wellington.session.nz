@@ -14,7 +14,7 @@ collected and produced some different options:
 * [slow-favourite-alphabetical.pdf](/tunebooks/slow-favourite-alphabetical.pdf "PDF") - Frequently played tunes in the slow session in a tunebook
 * [2bar-slow-favourite-alphabetical.pdf](/tunebooks/2bar-slow-favourite-alphabetical.pdf "PDF") - PDF with the first two bars of frequently played slow session tunes
 
-These tunebooks were last updated at: Thu 20 Jun 2019 19:16:51 NZST
+These tunebooks were last updated at: Thu 22 Aug 2019 16:07:37 NZST
 
 {::nomarkdown}
 <p>

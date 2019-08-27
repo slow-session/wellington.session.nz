@@ -140,7 +140,8 @@ Use the "Reset Tunes" button to start a new set.
 </fieldset>
 </div>
 
-<br />
+<div class="row"></div>
+
 <div id="tunes-table"></div>
 <div id="abc-textareas"></div>
 
@@ -172,8 +173,8 @@ Use the "Reset Tunes" button to start a new set.
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[2,0], [1,0]];
+    $.tablesorter.defaults.sortList = [[1,0];
 
-    $("#search-results").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});
+    $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});
 });
 </script>

@@ -20,14 +20,15 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         var appendString = '<div> \
+         <table id="tunes" class="tuneSelect tablesorter"> \
          <thead> \
          <tr> \
-           <th style="width:25%;">Tune Name &#x25B2;&#x25BC;</th> \
-           <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
-           <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
-           <th style="width:65%;">Audio Player</th> \
+            <th style="width: 50%;">Tune Name &#x25B2;&#x25BC;</th> \
+            <th style="width: 15%;">Play Now</th> \
+            <th style="width: 15%;">Tune Page</th> \
+            <th style="width: 7%;">Key &#x25B2;&#x25BC;</th> \
+            <th style="width: 13%;">Rhythm &#x25B2;&#x25BC;</th> \
          </tr> \
          </thead> \
          <tbody>';
@@ -36,14 +37,12 @@
              for (var i = 0; i < results.length; i++) { // Iterate over the results
                  var item = store[results[i].ref];
                  appendString += createTableRow(item);
-                 addTextArea(item);
                  tunesCounter++;
              }
          } else {
              for (var key in store) { // Iterate over the original data
                  var item = store[key];
                  appendString += createTableRow(item);
-                 addTextArea(item);
                  tunesCounter++;
              }
          }
@@ -54,119 +53,97 @@
 
      function createTableRow(item) {
          var tableRow = '';
-
-         // build the first three columns
+         // build the four columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
-         tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
-         tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
+         tableRow += '<td class="tdArchive">' + item.title + '</td>';
+         tableRow += '<td><input class="filterButton" type="button" onclick="changeTune(' + item.tuneID + ');" value="Play" /></td>';
+         tableRow += '<td><input class="filterButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Tune Page" /></td>';
          tableRow += '<td>' + item.key + '</td>';
          tableRow += '<td>' + item.rhythm + '</td>';
+         tableRow += '</tr>';
 
-         if (item.mp3) {
-             // build the audio player for each tune
-             tableRow += '<td>';
-             tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
-             sliderArray1.push("playPosition"+item.tuneID);
-             sliderArray2.push("RS"+item.tuneID);
-             //alert("playPosition"+item.tuneID + ", RS"+item.tuneID);
-             tableRow += '</td></tr>';
-         } else {
-             // build the abc player for each tune
-             tableRow += '<td>';
-
-             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow', item.instrument);
-             tableRow += '</td></tr>';
-         };
          return tableRow;
      }
 
-     function addTextArea(item) {
-         var textAreas = document.getElementById("abc-textareas");
 
-         if (!item.mp3) {
-             // unroll ABC to handle repeats and different endings for parts
-             textAreas.innerHTML += '<textarea id="ABC' + item.tuneID + '" style="display:none;">' + preProcessABC(item.abc) + '</textarea>';
-         }
-     }
+          function getQueryVariable(variable) {
+              var query = window.location.search.substring(1);
+              var vars = query.split('&');
 
-     function getQueryVariable(variable) {
-         var query = window.location.search.substring(1);
-         var vars = query.split('&');
+              for (var i = 0; i < vars.length; i++) {
+                  var pair = vars[i].split('=');
 
-         for (var i = 0; i < vars.length; i++) {
-             var pair = vars[i].split('=');
+                  if (pair[0] === variable) {
+                      return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+                  }
+              }
+          }
 
-             if (pair[0] === variable) {
-                 return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-             }
-         }
-     }
+          // create the searchTerm from the form data and reflect the values chosen in the form
+          var searchTerm = '';
+          var title = getQueryVariable('title');
+          if (title) {
+              searchTerm = title + ' ';
+              document.getElementById('title-box').setAttribute("value", title);
+          }
+          var rhythm = getQueryVariable('rhythm');
+          if (rhythm) {
+              searchTerm += rhythm + ' ';
+              var e = document.getElementById('rhythm-box');
+              if (e) {
+                  e.value = rhythm;
+              }
+          }
+          var tags = getQueryVariable('tags');
+          if (tags) {
+              searchTerm += tags + ' ';
+              var e = document.getElementById('tags-box');
+              if (e) {
+                  e.value = tags;
+              }
+          }
+          var location = getQueryVariable('location');
+          if (location) {
+              searchTerm += location;
+              var e = document.getElementById('location-box');
+              if (e) {
+                  e.value = location;
+              }
+          }
+          // Define the index terms for lunr search
+          var tuneIndex = lunr(function() {
+              this.field('id');
+              this.field('title', {
+                  boost: 10
+              });
+              this.field('rhythm');
+              this.field('tags');
+              this.field('location');
+          });
 
-     // create the searchTerm from the form data and reflect the values chosen in the form
-     var searchTerm = '';
-     var title = getQueryVariable('title');
-     if (title) {
-         searchTerm = title + ' ';
-         document.getElementById('title-box').setAttribute("value", title);
-     }
-     var rhythm = getQueryVariable('rhythm');
-     if (rhythm) {
-         searchTerm += rhythm + ' ';
-         var e = document.getElementById('rhythm-box');
-         if (e) {
-             e.value = rhythm;
-         }
-     }
-     var tags = getQueryVariable('tags');
-     if (tags) {
-         searchTerm += tags + ' ';
-         var e = document.getElementById('tags-box');
-         if (e) {
-             e.value = tags;
-         }
-     }
-     var location = getQueryVariable('location');
-     if (location) {
-         searchTerm += location;
-         var e = document.getElementById('location-box');
-         if (e) {
-             e.value = location;
-         }
-     }
-     // Define the index terms for lunr search
-     var tuneIndex = lunr(function() {
-         this.field('id');
-         this.field('title', {
-             boost: 10
-         });
-         this.field('rhythm');
-         this.field('tags');
-         this.field('location');
-     });
+          // Add the search items to the search index
+          for (var key in window.store) { // Add the data to lunr
+              tuneIndex.add({
+                  'id': key,
+                  'title': window.store[key].title,
+                  'rhythm': window.store[key].rhythm,
+                  'tags': window.store[key].tags,
+                  'location': window.store[key].location
+              });
+          }
 
-     // Add the search items to the search index
-     for (var key in window.store) { // Add the data to lunr
-         tuneIndex.add({
-             'id': key,
-             'title': window.store[key].title,
-             'rhythm': window.store[key].rhythm,
-             'tags': window.store[key].tags,
-             'location': window.store[key].location
-         });
-     }
+          // Get results
+          if (searchTerm) {
+              var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
 
-     // Get results
-     if (searchTerm) {
-         var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
-
-         if (results.length) {
-             displayTunesTable(results, window.store);
-         } else {
-             document.getElementById('tunes-table').innerHTML = '<strong>No results found!</strong>';
-         }
-     } else {
-         displayTunesTable('', window.store);
-     }
-     return false;
+              if (results.length) {
+                  displayTunesTable(results, window.store);
+              } else {
+                  document.getElementById('tunes-table').innerHTML = '<strong>No results found!</strong>';
+              }
+          } else {
+              displayTunesTable('', window.store);
+          }
+          return false;
 
  })();

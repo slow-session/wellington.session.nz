@@ -11,7 +11,7 @@
 <td id="showPlayer{{ include.tuneId }}">
 <script>
 showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}', 'mp3player_tablerow');
-createSlider('playPosition'+{{ include.tuneId }}, 'RS'+{{ include.tuneId }});
+createSliders({{ include.tuneId }});
 </script>
 </td>
 {% else %}

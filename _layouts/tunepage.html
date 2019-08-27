@@ -39,7 +39,7 @@ layout: page
 
 {% else %}
 <!-- build the abc player for each tune-->
-<fieldset style="float:left;max-width: 800px;">
+<fieldset>
 <p>
 <strong>
 A recording for this tune is not available yet. Qualify for glory by
@@ -97,7 +97,7 @@ Use the ABC player below the music to hear the tune.
 </div></div>
 {% else %}
 <br />
-<fieldset style="float:left;max-width: 800px;">
+<fieldset>
 <strong>
 The ABC notation for this tune is not available yet. Qualify for glory by
 writing the ABC for this tune using our
@@ -133,7 +133,7 @@ function show_iframe(url) {
 <div class="attribution">
     <br />
     {% if page.mp3_file %}
-        <p>The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        <p class="attribution">The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
         Permission to use is gratefully acknowledged and the audio is made available under this licence:
         {{ page.mp3_licence }}</p>
 
@@ -182,19 +182,19 @@ function show_iframe(url) {
 
 <script>
     $(document).ready(function() {
-        var tuneId = 666;
+        var tuneID = 666;
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3player(tuneId, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
-        createSlider('playPosition' + tuneId, 'RS' + tuneId);
-        tuneId++;
+        showPlayer.innerHTML = createMP3player(tuneID, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
+        createSliders(tuneID);
+        tuneID++;
         {% endif %}
 
         {% if page.abc contains "K:" %}
-        var textAreaID = 'ABC' + tuneId;
+        var textAreaID = 'ABC' + tuneID;
         textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneId, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+        ABCplayer.innerHTML = createABCplayer(tuneID, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
         // Set the filename for downloading
         document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';

@@ -4,7 +4,7 @@
   * Version: 1.0
   * Date: 7 Dec 2016
   *
-  * Developed as part of websites for https://wellington.session.nz
+  * Developed as part of website for http://wellington.session.nz
   * by Ted Cizadlo and Andy Linton
   * Code available at:
   * https://github.com/slow-session/wellington.session.nz/blob/master/js/audioID_controls.js
@@ -12,93 +12,6 @@
   *
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
   */
-
-  var tuneIDs = [];
-
-  function appendSetTunes(mdfile, tuneID) {
-  	document.getElementById('setTitles').innerHTML += mdfile + "<br />";
-  	document.getElementById('setTunes').innerHTML += mdfile + ", ";
-  	document.getElementById(tuneID).style.backgroundColor = 'khaki';
-  	tuneIDs.push(tuneID);
-  }
-
-  function Reset() {
-      document.getElementById('createSetMD').reset();
-  	document.getElementById('setTitles').innerHTML = '';
-      document.getElementById('setTunes').innerHTML = '[';
-      document.getElementById('setMD').innerHTML = '';
-  	var tLen = tuneIDs.length;
-  	for (i = 0; i < tLen; i++) {
-  		document.getElementById(tuneIDs[i]).style.backgroundColor = '';
-  	}
-  	tuneIDs = [];
-  }
-
-  function showForm(textArea, myForm) {
-      var elements = document.getElementById(myForm).elements;
-      var obj = {};
-      var date = new Date();
-      var day = date.getDate();
-      var month = date.getMonth() + 1;
-      var year = date.getFullYear();
-      var locationNotProcessed = 1;
-
-      document.getElementById(textArea).innerHTML = '---\n';
-      for(var i = 0 ; i < elements.length ; i++){
-          var item = elements.item(i);
-
-  		if (item.name == "") {
-  			continue;
-  		}
-          if (item.value == "Build the MD file") {
-              continue;
-          }
-
-          switch(item.name) {
-  			case 'title':
-  				if (item.value == '') {
-  					alert("'Title' is required");
-          			return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-  			case 'rhythm':
-  				if (item.value == '') {
-  					alert("'Rhythm' is required");
-  		        	return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-            case 'location':
-  				if (item.value == '') {
-  					alert("'Location' is required");
-  		        	return false;
-      			}
-      			obj[item.name] = item.value;
-      			break;
-  			case 'contributor':
-  				if (item.value == '') {
-  					alert("'Contributed by' is required");
-  	        		return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-            case 'date':
-                obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
-                break;
-  			case 'tunes':
-  				obj[item.name] = document.getElementById('setTunes').value.concat(']').replace(', ]', ']');
-  				break;
-              default:
-                  obj[item.name] = item.value;
-          }
-          document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
-      }
-      document.getElementById(textArea).innerHTML += '---\n';
-
-      // Set the filename for downloading
-      document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.md'
-  }
 
  (function() {
      function displayTunesTable(results, store) {
@@ -111,10 +24,10 @@
          <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
          <thead> \
          <tr> \
-           <th style="width:10%;min-width:75px;">Add Tune</th> \
-           <th style="width:35%;">Name &#x25B2;&#x25BC;</th> \
-           <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
+           <th style="width:25%;">Tune Name &#x25B2;&#x25BC;</th> \
            <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
+           <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
+           <th style="width:65%;">Audio Player</th> \
          </tr> \
          </thead> \
          <tbody>';
@@ -141,24 +54,38 @@
 
      function createTableRow(item) {
          var tableRow = '';
-         var tuneID = 'ABC' + item.tuneID;
 
-         // build the columns
+         // build the first three columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
-         tableRow += '<td><input type="button" class="loopButton" ';
-         tableRow += 'onclick="appendSetTunes(\''  + item.mdFile + '\', \'tr' + item.tuneID + '\')" value="Select">';
-         tableRow += '<td class="tuneTitle" style="text-align:left"><span title="Tune played in: ' + item.location + '">';
+         tableRow += '<td class="tuneTitle"><span title="Tune played in: ' + item.location + '">';
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
-         tableRow += '<td>' + item.rhythm + '</td>';
          tableRow += '<td>' + item.key + '</td>';
-         tableRow += '</tr>';
+         tableRow += '<td>' + item.rhythm + '</td>';
+
+         if (item.mp3) {
+             // build the audio player for each tune
+             tableRow += '<td>';
+             tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
+             tableRow += '</td></tr>';
+             // create an array with the tuneIDs so we can build the sliders at
+             // run time
+             sliderArray.push(item.tuneID);
+         } else {
+             // build the abc player for each tune
+             tableRow += '<td>';
+             tableRow += createABCplayer(item.tuneID, 'abcplayer_tablerow', item.instrument);
+             tableRow += '</td></tr>';
+         };
          return tableRow;
      }
 
      function addTextArea(item) {
          var textAreas = document.getElementById("abc-textareas");
-         // unroll ABC to handle repeats and different endings for parts
-         textAreas.innerHTML += '<textarea id="ABC' + item.tuneID + '" style="display:none;">' + item.abc + '</textarea>';
+
+         if (!item.mp3) {
+             // unroll ABC to handle repeats and different endings for parts
+             textAreas.innerHTML += '<textarea id="ABC' + item.tuneID + '" style="display:none;">' + preProcessABC(item.abc) + '</textarea>';
+         }
      }
 
      function getQueryVariable(variable) {
@@ -181,31 +108,30 @@
          searchTerm = title + ' ';
          document.getElementById('title-box').setAttribute("value", title);
      }
-     var rhythm = getQueryVariable('tune-rhythm');
+     var rhythm = getQueryVariable('rhythm');
      if (rhythm) {
          searchTerm += rhythm + ' ';
-         var e = document.getElementById('tune-rhythm-box');
+         var e = document.getElementById('rhythm-box');
          if (e) {
              e.value = rhythm;
          }
      }
-     var tags = getQueryVariable('tune-tags');
+     var tags = getQueryVariable('tags');
      if (tags) {
          searchTerm += tags + ' ';
-         var e = document.getElementById('tune-tags-box');
+         var e = document.getElementById('tags-box');
          if (e) {
              e.value = tags;
          }
      }
-     var location = getQueryVariable('tune-location');
+     var location = getQueryVariable('location');
      if (location) {
          searchTerm += location;
-         var e = document.getElementById('tune-location-box');
+         var e = document.getElementById('location-box');
          if (e) {
              e.value = location;
          }
      }
-
      // Define the index terms for lunr search
      var tuneIndex = lunr(function() {
          this.field('id');
@@ -241,4 +167,5 @@
          displayTunesTable('', window.store);
      }
      return false;
+
  })();
