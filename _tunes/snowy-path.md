@@ -8,8 +8,8 @@ date: 2017-12-11
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 4
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/snowy-path.mp3

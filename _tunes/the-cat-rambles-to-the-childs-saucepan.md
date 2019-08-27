@@ -4,11 +4,11 @@ titleID: the-cat-rambles-to-the-childs-saucepan.md
 key: D
 rhythm: slide
 date: 2018-05-24
-location: Wellington 
+location: Wellington
 notes:
-tags: 
-repeats: 
-parts: 
+tags:
+repeats: 3
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-cat-rambles-to-the-childs-saucepan.mp3
@@ -29,6 +29,6 @@ abc: |
     |d2 ef2 e dcd ~B3|g2 A cBA d3 d2 A:|
     |:d2 ef2 a baf a2 f|e2 A cBA efe cBA|
     |d2 ef2 a baf a2 f|e2 A cBA d3 d2 A:|
-    
+
 
 ---
