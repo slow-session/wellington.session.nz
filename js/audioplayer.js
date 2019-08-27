@@ -190,6 +190,7 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
             EndLoopTime = OneAudioPlayer.duration;
         }
         CurrentAudioSlider = playPosition;
+        OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
         var promise = OneAudioPlayer.play();
         if (promise) {
             promise.catch(function(error) {
@@ -214,6 +215,7 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
     };
     // make the speed slider work on the tunes page before you start playing
     OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get() / 100;
+    //console.log("1 begin:"+BeginLoopTime+", end:"+EndLoopTime);
 }
 
 function changeTune(tuneNumber) {
@@ -291,15 +293,18 @@ function initialiseAudioSlider() {
             'max': Number(OneAudioPlayer.duration)
         }
     });
-    CurrentAudioSlider.noUiSlider.setHandle(2, Number(OneAudioPlayer.duration));
+    //console.log('initialiseAudioSlider: ' + BeginLoopTime + ', '+ EndLoopTime+ ', '+ OneAudioPlayer.currentTime);
+    //CurrentAudioSlider.noUiSlider.setHandle(2, Number(OneAudioPlayer.duration));
 }
 
 function positionUpdate() {
+    //console.log('positionUpdate: ' + BeginLoopTime + ', '+ EndLoopTime+ ', '+ OneAudioPlayer.currentTime);
     if ((OneAudioPlayer.currentTime >= (OneAudioPlayer.duration - .25)) ||
         (OneAudioPlayer.currentTime >= EndLoopTime)) {
         OneAudioPlayer.currentTime = BeginLoopTime;
     }
     CurrentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
+
 }
 
 // We'll build a segments structure on the fly for each tune
@@ -556,7 +561,7 @@ function applySegments() {
     }
     if (numCheckedBoxes > 0) {
         // do nothing unless at least one box is checked
-        if (isIOS) { // iOS audio player workaround for initial call to OneAudioPlayr.currentTime
+        if (isIOS) { // iOS audio player workaround for initial call to OneAudioPlayer.currentTime
             OneAudioPlayer.oncanplaythrough = function() { // could add logic to only do this the first time ?
                 OneAudioPlayer.currentTime = fullBeginLoopTime;
             }
