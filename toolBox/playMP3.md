@@ -38,15 +38,15 @@ URL: <input type="text" name="url" class="enter" value="" id="url" style="width:
 </div>
 </div>
 
+
 <script>
 function getURL() {
 
     var mp3url = document.getElementById("url").value;
     audioPlayer.innerHTML = createAudioPlayer();
     showPlayer.innerHTML = '<h4>Playing ' + mp3url + '</h4>';
-    //showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
     showPlayer.innerHTML += createMP3player('playABC', mp3url, 'mp3player_tunepage');
-    createSlider('playPositionplayABC','RSplayABC');
+    createSliders('playABC');
 
 
 }

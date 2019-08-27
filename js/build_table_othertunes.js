@@ -21,7 +21,7 @@
 
          // create table headers
          var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:25%;">Tune Name &#x25B2;&#x25BC;</th> \
@@ -67,7 +67,7 @@
              tableRow += '<td>';
              //tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
              tableRow += createMP3player(item.tuneID, item.mp3, 'mp3player_tablerow');
-             tableRow += createSlider('playPosition'+item.tuneID, 'RS'+item.tuneID);
+             tableRow += createSliders(item.tuneID);
              tableRow += '</td></tr>';
          } else {
              // build the abc player for each tune

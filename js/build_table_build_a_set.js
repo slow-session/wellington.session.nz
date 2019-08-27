@@ -70,7 +70,7 @@
 
          // create table headers
          var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="search-results" class="tablesorter"> \
+         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:10%;min-width:75px;">Add Tune</th> \

@@ -11,7 +11,7 @@ permalink: /createMD/
   </div>
 </fieldset>
 
-<br />
+<div class="row"></div>
 
 <fieldset style="display: inline-block; vertical-align: middle;">
 <legend>Check the MD file details:</legend>
@@ -25,6 +25,8 @@ permalink: /createMD/
 </form>
 </div>
 </fieldset>
+
+<div class="row"></div>
 
 <textarea id="filename" style="display:none;"></textarea>
 

@@ -47,7 +47,8 @@ page.
     <div id="sets-count"></div>
 </fieldset>
 
-<br />
+<div class="row"></div>
+
 <div id="sets-table"></div>
 <div id="abc-textareas"></div>
 
@@ -83,7 +84,7 @@ $(document).ready(function() {
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#search-results").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
+    $("#tunes").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
     Create_archive_sliders();
 
 });

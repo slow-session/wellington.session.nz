@@ -29,7 +29,7 @@ timing and you can change the values as you see fit.
   </form>
 </fieldset>
 
-<br />
+<div class="row"></div>
 
 <div id="main"></div>
 
