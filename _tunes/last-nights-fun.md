@@ -7,8 +7,8 @@ date: 2019-06-02
 location: Wellington
 notes:
 tags: ca-fiddle-2019
-repeats: 
-parts: 
+repeats: 3
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/last-nights-fun.mp3

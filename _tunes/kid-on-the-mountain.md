@@ -8,8 +8,8 @@ date: 2016-06-30
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 2
+parts: AABBCCDDEE
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kid-on-the-mountain.mp3
