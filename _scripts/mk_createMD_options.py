@@ -98,7 +98,7 @@ with open(optionsFile, 'w') as outfile:
     <label>Title:<sup>*</sup></label>
     <input type="text" id="title-box" name="title" value="">
 
-    <input type="hidden" id="titleID-box" name="titleID" value=""><br>
+    <input type="hidden" id="titleID-box" name="titleID" value=""><br />
 
     <label>Key:<sup>*</sup></label>
     <input type="text" id="key-box" name="key" value="">
@@ -114,21 +114,29 @@ with open(optionsFile, 'w') as outfile:
     outfile.write("""    <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
     </select>
 
-    <input type="hidden" id="date-box" name="date" value=""><br>
+    <input type="hidden" id="date-box" name="date" value=""><br />
 
-    <br><label>Location:</label><br>\n""")
+    <br /><label>Location:</label><br />\n""")
 
     for key in sorted(locationDict.keys()):
         outfile.write('        <input name="location" type="checkbox" value="' + key + '"/>\n');
-        outfile.write('        <label for="location">' + key + '</label><br>\n');
+        outfile.write('        <label for="location">' + key + '</label><br />\n');
 
-    outfile.write("""<br>
+    outfile.write("""<br />
 
     <label>Notes:</label>
     <input type="text" id="notes-box" name="notes" value="">
-    <br>
+    <br />
 
     <input type="hidden" id="tags-box" name="tags" value="">
+
+    <label>Repeats:</label>
+    <input type="text" id="repeats-box" name="repeats" value="">
+    <br />
+
+    <label>Parts:</label>
+    <input type="text" id="parts-box" name="parts" value="">
+    <br />
     <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
     <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
 
