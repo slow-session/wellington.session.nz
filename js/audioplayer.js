@@ -18,6 +18,7 @@ var PreviouspButton = null;
 var CurrentAudioSlider = null;
 
 var isIOS = testForIOS();
+console.log("isIOS: " + isIOS);
 
 function createAudioPlayer() {
     var pagePlayer = '';
@@ -121,12 +122,13 @@ function createSliders(tuneID) {
         }
     });
     speedSlider.noUiSlider.on('change', function(value) {
+        console.log("playbackRate: " + value / 100);
         OneAudioPlayer.playbackRate = value / 100;
     });
     //How to disable handles on audioslider.
     speedSlider.noUiSlider.on('start', function(value) {
         OneAudioPlayer.onplaying = function() {
-            OneAudioPlayer.pause();
+                OneAudioPlayer.pause();
         };
     });
     speedSlider.noUiSlider.on('end', function(value) {
@@ -158,7 +160,8 @@ function Create_archive_sliders() {
 
 function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, audioSource) {
     if (playButton.className == "playButton") {
-        if (OneAudioPlayer.src != audioSource) {
+        console.log(OneAudioPlayer.src + ', ' + audioSource);
+        if (!OneAudioPlayer.src.includes(audioSource)) {
             if (OneAudioPlayer.src != null) { //reset previous audio player
                 //audioSlider.noUiSlider.values[1] = 0;
                 if (PreviouspButton != null) {
@@ -168,29 +171,29 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
                     document.getElementById(PreviousTrID).style.backgroundColor = '';
                 }
             }
-            OneAudioPlayer.src = audioSource;
             PreviouspButton = playButton;
             PreviousTrID = trID;
-            // modify slider
-            playPosition.noUiSlider.updateOptions({
-                tooltips: [wNumb({
-                    decimals: 1
-                }), wNumb({
-                    decimals: 1
-                }), wNumb({
-                    decimals: 1
-                })],
-            });
             if (document.getElementById(trID)) {
                 document.getElementById(trID).style.backgroundColor = 'khaki';
             }
+
+            LoadAudio(audioSource, playPosition);
+
+            OneAudioPlayer.onloadedmetadata = function() {
+                initialiseAudioSlider();
+            };
         }
         // Initialise the loop and audioSlider
         if (!EndLoopTime) {
             EndLoopTime = OneAudioPlayer.duration;
         }
-        CurrentAudioSlider = playPosition;
+
+        // This event listener keeps track of the cursor and restarts the loops
+        // when needed - we don't need to set it elsewhere
         OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
+
+        OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get() / 100;
+
         var promise = OneAudioPlayer.play();
         if (promise) {
             promise.catch(function(error) {
@@ -199,9 +202,7 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
         }
         playButton.className = "";
         playButton.className = "pauseButton";
-        // This event listener keeps track of the cursor and restarts the loops
-        // when needed - we don't need to set it elsewhere
-        OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
+
     } else {
         OneAudioPlayer.pause();
         playButton.className = "";
@@ -210,34 +211,38 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
             document.getElementById(trID).style.backgroundColor = '';
         }
     }
-    OneAudioPlayer.ondurationchange = function() {
-        initialiseAudioSlider();
-    };
-    // make the speed slider work on the tunes page before you start playing
-    OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get() / 100;
-    //console.log("1 begin:"+BeginLoopTime+", end:"+EndLoopTime);
+
 }
 
 function changeTune(tuneNumber) {
     var item = store[tuneNumber];
     document.getElementById("abcText").innerHTML = item.abc;
 
+    // Clear the loop preset display
+    loopPresetControls.innerHTML = '';
+
     // If we have a modal make it visible
     var modal = document.getElementById('myModal');
     if (modal) {
         modal.style.display = "block";
     }
+
     // Add info to page
     document.getElementById("tuneTitle").innerHTML = '<h2>' + item.title + '<span style="font-size:16px;"> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
     if (item.mp3.includes('mp3')) {
         // make the MP3 player
         showPlayer.innerHTML = createMP3player(tuneNumber, item.mp3, 'mp3player_tunepage');
         createSliders(tuneNumber);
-        LoadAudio(tuneNumber, item.mp3);
+
+        var playPosition = document.getElementById('playPosition' + tuneNumber);
+        LoadAudio(item.mp3, playPosition);
+
         // calculate segments and set up preset loops
-        OneAudioPlayer.ondurationchange = function() {
+        OneAudioPlayer.onloadedmetadata = function() {
+            console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
             setupPresetLoops(tuneNumber);
         };
+
         // Show the button that allows show/hide of dots
         document.getElementById('dotsForm').style.display = "block";
         // Get the current paper state
@@ -264,9 +269,8 @@ function changeTune(tuneNumber) {
     }
 }
 
-function LoadAudio(tuneID, audioSource) {
-    var playPosition = document.getElementById('playPosition' + tuneID);
-
+function LoadAudio(audioSource, playPosition) {
+    console.log("Loading: " + audioSource)
     OneAudioPlayer.src = audioSource;
     playPosition.noUiSlider.updateOptions({
         tooltips: [wNumb({
@@ -281,30 +285,29 @@ function LoadAudio(tuneID, audioSource) {
 }
 
 function setupPresetLoops(tuneNumber) {
+    console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
     buildSegments(tuneNumber);
     loopPresetControls.innerHTML = createLoopControlsContainer();
     initialiseAudioSlider();
 }
 
 function initialiseAudioSlider() {
+    console.log('initialiseAudioSlider: ' + OneAudioPlayer.duration);
     CurrentAudioSlider.noUiSlider.updateOptions({
         range: {
             'min': 0,
             'max': Number(OneAudioPlayer.duration)
         }
     });
-    //console.log('initialiseAudioSlider: ' + BeginLoopTime + ', '+ EndLoopTime+ ', '+ OneAudioPlayer.currentTime);
     //CurrentAudioSlider.noUiSlider.setHandle(2, Number(OneAudioPlayer.duration));
 }
 
 function positionUpdate() {
-    //console.log('positionUpdate: ' + BeginLoopTime + ', '+ EndLoopTime+ ', '+ OneAudioPlayer.currentTime);
     if ((OneAudioPlayer.currentTime >= (OneAudioPlayer.duration - .25)) ||
         (OneAudioPlayer.currentTime >= EndLoopTime)) {
         OneAudioPlayer.currentTime = BeginLoopTime;
     }
     CurrentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
-
 }
 
 // We'll build a segments structure on the fly for each tune
@@ -322,6 +325,7 @@ function buildSegments(tuneNumber) {
     if (!parts) {
         parts = calculateParts(item.rhythm, item.abc);
     }
+    //console.log('Parts: ' + parts);
 
     // if repeats is not defined - default value = 2 possibly use total length?
     if (!repeats) {
@@ -445,6 +449,7 @@ function calculateParts(tune_rhythm, abcText) {
     } else {
         parts = 2; // parts can't be calculated - assigned to default value=2
     }
+    //console.log("calculated parts: " + parts);
     return (parts);
 }
 
@@ -551,17 +556,23 @@ function applySegments() {
             numCheckedBoxes++;
             tempBeginLoopTime = parseFloat(fromId.value);
             tempEndLoopTime = parseFloat(toId.value);
+            //console.log("Is " + fullBeginLoopTime + " greater than " + tempBeginLoopTime);
             if (fullBeginLoopTime > tempBeginLoopTime) {
+                //console.log("A, " + BeginLoopTime + ", " + fullBeginLoopTime);
                 fullBeginLoopTime = tempBeginLoopTime;
             }
+            //console.log("Is " + fullEndLoopTime + " less than " + tempEndLoopTime);
             if (fullEndLoopTime < tempEndLoopTime) {
+                //console.log("B, "+tempEndLoopTime+", "+fullEndLoopTime);
                 fullEndLoopTime = tempEndLoopTime;
             }
+            //console.log(i + ", " + BeginLoopTime + ", "+ EndLoopTime + ", " + fullBeginLoopTime + ", " + fullEndLoopTime);
         }
     }
+    //console.log(fullBeginLoopTime + ", " + fullEndLoopTime);
     if (numCheckedBoxes > 0) {
         // do nothing unless at least one box is checked
-        if (isIOS) { // iOS audio player workaround for initial call to OneAudioPlayer.currentTime
+        if (isIOS) { // iOS audio player workaround for initial call to OneAudioPlayr.currentTime
             OneAudioPlayer.oncanplaythrough = function() { // could add logic to only do this the first time ?
                 OneAudioPlayer.currentTime = fullBeginLoopTime;
             }
