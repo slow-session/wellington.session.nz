@@ -6,8 +6,9 @@ rhythm: reel
 date: 2019-08-28
 location:
 notes: Recorded in a tent on rainy day in Drumshanbo, July 2019
-tags: 2
-repeats: AABB
+tags:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/giants-causeway.mp3
