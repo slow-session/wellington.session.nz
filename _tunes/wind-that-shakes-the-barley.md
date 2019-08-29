@@ -6,9 +6,9 @@ rhythm: reel
 date: 2016-12-08
 location: Arrowtown Wellington
 notes:
-tags: 
-repeats: 
-parts: 
+tags:
+repeats: 4
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/wind-that-shakes-the-barley.mp3
@@ -29,5 +29,5 @@ abc: |
     A2AB AFED|B2BA BcdB|A2AB AFED|gfed Bcde|
     |f2fd g2ge|f2fd Bcde|f2fd g2fg|afed Bcde|
     f2fd g2ge|f2fd Bcde|f2ae g2be|afed BcdB|
-    
+
 ---

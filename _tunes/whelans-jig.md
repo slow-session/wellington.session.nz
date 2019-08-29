@@ -7,8 +7,8 @@ date: 2018-08-31
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-31
 mp3_file: /mp3/whelans-jig.mp3

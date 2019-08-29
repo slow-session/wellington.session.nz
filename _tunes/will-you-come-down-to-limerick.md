@@ -7,8 +7,8 @@ date: 2017-03-27
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3
+parts: ABC
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/will-you-come-down-to-limerick.mp3
