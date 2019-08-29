@@ -6,9 +6,9 @@ rhythm: jig
 date: 2018-02-19
 location: Wellington
 notes:
-tags: slow-favourite slowsession 
-repeats: 
-parts: 
+tags: slow-favourite slowsession
+repeats: 1
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-19
 mp3_file: /mp3/whall-be-king-but-charlie.mp3

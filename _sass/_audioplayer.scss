@@ -67,7 +67,7 @@
     width: 100%;
     min-width: 180px;
     margin-top: 27px;
-    float: center;
+    float: left;
 }
 
 .mp3LoopControl {
@@ -75,7 +75,7 @@
     margin-left: 20px;
     width: 100%;
     min-width: 180px;
-    float: center;
+    float: left;
 }
 
 .mp3SpeedControl {
@@ -172,8 +172,6 @@ fieldset {
     float:left;
     margin: 0 auto;
     text-align: left;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     border-radius: 8px;
     border-style: solid;
 }
@@ -185,8 +183,6 @@ form {
 input,
 select,
 textarea {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     border-radius: 8px;
 }
 
@@ -200,26 +196,18 @@ th {
 }
 
 th:first-of-type {
-    -webkit-border-top-left-radius: 8px;
-    -moz-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
 }
 
 th:last-of-type {
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-top-right-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 tr:last-of-type td:first-of-type {
-    -webkit-border-bottom-left-radius: 8px;
-    -moz-border-bottom-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
 tr:last-of-type td:last-of-type {
-    -webkit-border-bottom-right-radius: 8px;
-    -moz-border-bottom-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
@@ -290,14 +278,9 @@ tr#no_hover:hover {
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     padding: 1px;
-    align: center;
     text-align: center;
     font-size: 90%;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-top-right-radius: 5px;
     border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
@@ -306,14 +289,9 @@ tr#no_hover:hover {
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     padding: 1px;
-    align: center;
     text-align: center;
     font-size: 90%;
-    -webkit-border-top-left-radius: 5px;
-    -moz-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-bottom-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
@@ -362,11 +340,7 @@ tr#no_hover:hover {
 .row-title {
     color: darken($complimentary-color, 10%);
     background-color: $brand-color;
-    -webkit-border-top-left-radius: 8px;
-    -moz-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-top-right-radius: 8px;
     border-top-right-radius: 8px;
 }
 
