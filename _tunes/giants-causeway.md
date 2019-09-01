@@ -30,6 +30,6 @@ abc: |
     |:D2FB ADFA|defd e2 ed|(cA)AB (cd)ed|(cA)GE (A,B,C)E|
     D2FB ADFA|defd e2 ed|(cA)AB (cd)ed|(cA)GE (FD) D2 :|
     |:d2fd adfd|g(afg) e2 (fg)|(3agf (ge) (fg)ed|(cd)ed cABc|
-    d2 fd (3fga fd|(gaf)g e2 (fg)|(aba)f (gba)g| fded (Ad) d2 :|
+    d2 fd (3fga fd|(gaf)g e2 (fg)|(aba)f (gba)g| fdec (Ad) d2 :|
 
 ---
