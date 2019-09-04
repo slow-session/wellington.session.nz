@@ -13,18 +13,22 @@ permalink: /createMD/
 
 <div class="row"></div>
 
-<fieldset style="display: inline-block; vertical-align: middle;">
-<legend>Check the MD file details:</legend>
-<div class="container">
-<textarea id="md" rows="30" cols="60" style="background-color: #ebebeb" spellcheck="false"></textarea>
-<!-- Allow the user to save their MD-->
-<form>
-   <span title="Download the MD data you've entered. Don't lose your work!">      
-  		<input value='Download MD' type='button' class="filterButton"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
-   </span>
-</form>
+<div id="mdModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">×</span>
+        <h2>Check the MD file details:</h2>
+        <div class="container">
+            <textarea id="md" rows="20" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
+            <!-- Allow the user to save their MD-->
+            <form>
+                <span title="Download the MD data you've entered. Don't lose your work!">      
+                    <input value='Download MD' type='button' class="filterButton"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
+                </span>
+            </form>
+        </div>
+    </div>
 </div>
-</fieldset>
 
 <div class="row"></div>
 
@@ -51,12 +55,30 @@ permalink: /createMD/
         margin-bottom: 5px;
         clear: both;
     }
-}
+
 </style>
 
 <script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
 
 <script>
+// Get the modal
+var modal = document.getElementById("mdModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 function showForm(textArea, myForm) {
     var elements = document.getElementById(myForm).elements;
     var obj = {};
@@ -65,6 +87,9 @@ function showForm(textArea, myForm) {
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
     var locationNotProcessed = 1;
+
+    // Display the output in the modal area
+    modal.style.display = "block";
 
     document.getElementById(textArea).innerHTML = '---\n';
     for(var i = 0 ; i < elements.length ; i++){
