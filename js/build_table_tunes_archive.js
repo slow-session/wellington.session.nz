@@ -25,10 +25,9 @@
          <thead> \
          <tr> \
             <th style="width: 50%;">Tune Name &#x25B2;&#x25BC;</th> \
-            <th style="width: 15%;">Play Now</th> \
-            <th style="width: 15%;">Tune Page</th> \
-            <th style="width: 7%;">Key &#x25B2;&#x25BC;</th> \
-            <th style="width: 13%;">Rhythm &#x25B2;&#x25BC;</th> \
+            <th style="width: 20%;">Play Now</th> \
+            <th style="width: 10%;">Key &#x25B2;&#x25BC;</th> \
+            <th style="width: 20%;">Rhythm &#x25B2;&#x25BC;</th> \
          </tr> \
          </thead> \
          <tbody>';
@@ -55,9 +54,10 @@
          var tableRow = '';
          // build the four columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
-         tableRow += '<td class="tdArchive">' + item.title + '</td>';
-         tableRow += '<td><input class="filterButton" type="button" onclick="changeTune(' + item.tuneID + ');" value="Play" /></td>';
-         tableRow += '<td><input class="filterButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Tune Page" /></td>';
+         tableRow += '<td class="tdArchive"><span title="Go to Tunepage">';
+         tableRow += '<a href="' + item.url + '">' + item.title + '</a>';
+         tableRow += '</span></td>';
+         tableRow += '<td><input class="filterButton" type="button" onclick="changeTune(' + item.tuneID + ');" value="Play Now" /></td>';
          tableRow += '<td>' + item.key + '</td>';
          tableRow += '<td>' + item.rhythm + '</td>';
          tableRow += '</tr>';
