@@ -192,6 +192,7 @@ th {
     cursor: pointer;
     text-align: center;
     position: sticky;
+    -webkit-position: sticky;
     top: 0;
 }
 
@@ -301,6 +302,21 @@ tr#no_hover:hover {
     width: 45px;
 }
 
+.tuneTable{
+  height: 300px;
+  overflow: hidden;
+}
+
+.tuneSelect {
+  height: 100%;
+  margin-right: -50px; /* maximum width of scrollbar */
+  padding-right: 50px; /* maximum width of scrollbar */
+  overflow-y: scroll;
+  display: block;
+  border: 2px solid $complimentary-color;
+  border-radius: 8px;
+}
+
 .tableSlider {
     height: 94%;
     padding:  0;
@@ -308,15 +324,6 @@ tr#no_hover:hover {
     width: 15px;
     bottom: -10px;
     left: -10px;
-}
-
-.tuneSelect {
-    display: block;
-    height: 300px;
-    overflow-y: scroll;
-    font-size: 14px;
-    border: 2px solid $complimentary-color;
-    border-radius: 8px;
 }
 
 .outputABC {
@@ -334,7 +341,7 @@ tr#no_hover:hover {
 .rowTuneTable {
     font-size: 14px;
     min-width: 300px;
-    //width: 75%;
+    max-width: 700px;
 }
 
 .row-title {

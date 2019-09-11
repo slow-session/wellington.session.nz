@@ -15,13 +15,12 @@
 
  (function() {
      function displayTunesTable(results, store) {
-         var tunesTable = document.getElementById('tunes-table');
+         var tunesTable = document.getElementById('tuneTable');
          var tunesCount = document.getElementById('tunes-count');
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<div> \
-         <table id="tunes" class="tuneSelect tablesorter"> \
+         var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
          <thead> \
          <tr> \
             <th style="width: 50%;">Tune Name &#x25B2;&#x25BC;</th> \
@@ -45,7 +44,7 @@
                  tunesCounter++;
              }
          }
-         appendString += '</tbody></table></div>';
+         appendString += '</tbody></table>';
          tunesTable.innerHTML = appendString;
          tunesCount.innerHTML = 'Displaying ' + tunesCounter + ' tunes';
      }
@@ -139,7 +138,7 @@
               if (results.length) {
                   displayTunesTable(results, window.store);
               } else {
-                  document.getElementById('tunes-table').innerHTML = '<strong>No results found!</strong>';
+                  document.getElementById('tuneTable').innerHTML = '<strong>No results found!</strong>';
               }
           } else {
               displayTunesTable('', window.store);
