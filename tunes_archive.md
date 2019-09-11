@@ -8,7 +8,7 @@ We liked our experiment with the <strong>Learn a Tune</strong> page so much we
 decided to replace our <strong>Tunes Archive</strong> page with it. We've kept
 the old page at
 <button class="filterButton" onclick="window.location.href='/tunes_archive_old/';">
-Tunes Archive - Old</button> 
+Tunes Archive - Old</button>
 so that you can continue to use it for a while.
 </p>
 
@@ -53,9 +53,7 @@ Play a tune now using the <strong>Play</strong> button or use the
 
 
 <div class="row rowTuneTable">
-  <div class="small-11 columns" id="tuneTable">
-    <div id="tunes-table"></div>
-  </div>
+  <div class="small-11 columns tuneTable" id="tuneTable"></div>
   <div class="small-1 columns tableSlider" id="tableSlider"></div>
 </div>
 
