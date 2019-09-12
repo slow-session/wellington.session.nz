@@ -264,15 +264,25 @@ function changeTune(tuneNumber) {
         var currentPaperState = document.getElementById('paper0').style.display;
         // Set the paper state to 'block'
         document.getElementById('paper0').style.display = "block";
-        // Draw the dots
-        abc_editor = new window.ABCJS.Editor('abcText', {
-            paper_id: "paper0",
-            warnings_id: "warnings",
-            render_options: {
-                responsive: 'resize'
-            },
-            indicate_changed: "true"
-        });
+        if (item.abc) {
+            // Draw the dots
+            abc_editor = new window.ABCJS.Editor('abcText', {
+                paper_id: "paper0",
+                warnings_id: "warnings",
+                render_options: {
+                    responsive: 'resize'
+                },
+                indicate_changed: "true"
+            });
+        } else {
+            document.getElementById('paper0').style.paddingBottom = '0px';
+            document.getElementById('paper0').style.overflow = 'auto';
+            document.getElementById('paper0').innerHTML = '<fieldset><strong> \
+            The ABC notation for this tune is not available yet. Qualify for glory by \
+            writing the ABC for this tune using our <a href="/editABC/">editABC</a> page \
+            (or write out the dots) and send it to us. \
+            </strong></fieldset>';
+        }
         // Reset paper state to original value
         document.getElementById('paper0').style.display = currentPaperState;
     } else {
@@ -301,8 +311,11 @@ function LoadAudio(audioSource, playPosition) {
 
 function setupPresetLoops(tuneNumber) {
     myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
-    buildSegments(tuneNumber);
-    loopPresetControls.innerHTML = createLoopControlsContainer();
+    var item = store[tuneNumber];
+    if (item.abc) {
+        buildSegments(tuneNumber);
+        loopPresetControls.innerHTML = createLoopControlsContainer();
+    }
     initialiseAudioSlider();
 }
 
