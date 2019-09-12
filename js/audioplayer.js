@@ -240,6 +240,10 @@ function changeTune(tuneNumber) {
 
     // Add info to page
     document.getElementById("tuneTitle").innerHTML = '<h2>' + item.title + '<span style="font-size:16px;"> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
+    if (item.mp3_source) {
+        document.getElementById("tuneInfo").innerHTML = 'Source: ' + item.mp3_source;
+    }
+
     if (item.mp3.includes('mp3')) {
         // make the MP3 player
         showPlayer.innerHTML = createMP3player(tuneNumber, item.mp3, 'mp3player_tunepage');
