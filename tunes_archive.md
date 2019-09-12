@@ -68,6 +68,7 @@ Play a tune now using the <strong>Play</strong> button or use the
         <span class="close">×</span>
         <!-- *** Player controls *** -->
         <div id="tuneTitle"></div>
+        <div id="tuneInfo"></div>
         <br />
         <div class="player">
             <div id="audioPlayer"></div>
@@ -107,6 +108,7 @@ Play a tune now using the <strong>Play</strong> button or use the
         "rhythm": "{{ tune.rhythm | xml_escape }}",
         "url": "{{ tune.url | xml_escape }}",
         "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+        "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
         "repeats": "{{ tune.repeats }}",
         "parts": "{{ tune.parts }}",
         "abc": {{ tune.abc | jsonify }}
