@@ -310,9 +310,9 @@ function LoadAudio(audioSource, playPosition) {
 }
 
 function setupPresetLoops(tuneNumber) {
-    myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
     var item = store[tuneNumber];
     if (item.abc) {
+        myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
         buildSegments(tuneNumber);
         loopPresetControls.innerHTML = createLoopControlsContainer();
     }
