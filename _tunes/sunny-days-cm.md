@@ -1,8 +1,8 @@
 ---
 title: Sunny Days
 titleID: sunny-days-cm.md
-key:
-rhythm:
+key: G
+rhythm: hornpipe
 notes:
 date: 2019-09-13
 location:

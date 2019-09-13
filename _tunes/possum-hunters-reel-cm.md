@@ -1,8 +1,8 @@
 ---
 title: Possum Hunter's Reel
 titleID: possum-hunters-reel-cm.md
-key:
-rhythm:
+key: C
+rhythm: reel
 notes:
 date: 2019-09-13
 location:

@@ -1,8 +1,8 @@
 ---
 title: Patricia's
 titleID: patricias-cm.md
-key:
-rhythm:
+key: D
+rhythm: waltz
 notes:
 date: 2019-09-13
 location:

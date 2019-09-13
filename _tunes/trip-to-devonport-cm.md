@@ -1,8 +1,8 @@
 ---
 title: Trip To Devonport
 titleID: trip-to-devonport-cm.md
-key:
-rhythm:
+key: G
+rhythm: hornpipe
 notes:
 date: 2019-09-13
 location:

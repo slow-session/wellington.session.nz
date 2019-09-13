@@ -1,8 +1,8 @@
 ---
 title: Spuds For Dinner
 titleID: spuds-for-dinner-cm.md
-key:
-rhythm:
+key: G
+rhythm: reel
 notes:
 date: 2019-09-13
 location:

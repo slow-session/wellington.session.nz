@@ -1,8 +1,8 @@
 ---
 title: NZ Hornpipe
 titleID: nz-hornpipe-cm.md
-key:
-rhythm:
+key: G
+rhythm: hornpipe
 notes:
 date: 2019-09-13
 location:

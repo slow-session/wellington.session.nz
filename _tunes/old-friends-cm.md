@@ -1,8 +1,8 @@
 ---
 title: Old Friends
 titleID: old-friends-cm.md
-key:
-rhythm:
+key: D
+rhythm: air
 notes:
 date: 2019-09-13
 location:

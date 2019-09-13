@@ -1,8 +1,8 @@
 ---
 title: Montgomery's March
 titleID: montgomerys-march-cm.md
-key:
-rhythm:
+key: D
+rhythm: march
 notes:
 date: 2019-09-13
 location:

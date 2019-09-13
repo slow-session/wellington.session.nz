@@ -1,8 +1,8 @@
 ---
 title: Caroline's Favourite
 titleID: carolines-favourite-cm.md
-key:
-rhythm:
+key: D
+rhythm: reel
 notes:
 date: 2019-09-13
 location:
