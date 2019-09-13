@@ -327,7 +327,7 @@ function initialiseAudioSlider() {
             'max': Number(OneAudioPlayer.duration)
         }
     });
-    //CurrentAudioSlider.noUiSlider.setHandle(2, Number(OneAudioPlayer.duration));
+    resetFromToSliders();
 }
 
 function positionUpdate() {
