@@ -3,11 +3,11 @@ layout: page
 title: Charlie Montgomery
 permalink: /cugeenben/
 ---
-<div class="row">
-<div class="small-3 columns">
+<div class="row small-up-1 medium-up-2 large-up-2">
+<div class="small-4 columns">
 <img alt="Charlie Montgomery" src="/images/charliemontgomery.jpg" style="border:1px solid black;float:left;">
 </div>
-<div class="small-9 columns">
+<div class="small-8 columns">
 <p>
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on this page as well as him playing some old favourites.
 </p>
@@ -18,10 +18,13 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 </div>
 
 <br />
+<hr />
+<br />
+
 <p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 
-
 {% include tunes-filter-variables.html %}
+
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
@@ -54,6 +57,7 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     <p></p>
     <div id="tunes-count"></div>
 </fieldset>
+
 
 <div class="row rowTuneTable">
   <div class="small-11 columns tuneTable" id="tuneTable"></div>
