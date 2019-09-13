@@ -4,13 +4,11 @@ titleID: jinny-turnip-cm.md
 key: G
 rhythm: jig
 notes:
-repeats:
-parts:
+repeats: 2
+parts: AABB
 date: 2019-09-12
 location:
 tags: cm
-repeats:
-parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/jinny-turnip-cm.mp3

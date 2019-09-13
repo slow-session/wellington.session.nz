@@ -231,6 +231,7 @@ function changeTune(tuneNumber) {
 
     // Clear the loop preset display
     loopPresetControls.innerHTML = '';
+    document.getElementById('loopForm').style.display = "none";
 
     // If we have a modal make it visible
     var modal = document.getElementById('myModal');
@@ -255,7 +256,12 @@ function changeTune(tuneNumber) {
         // calculate segments and set up preset loops
         OneAudioPlayer.onloadedmetadata = function() {
             myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
-            setupPresetLoops(tuneNumber);
+            if ((item.repeats && item.parts) || item.abc) {
+                myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
+                buildSegments(tuneNumber);
+                loopPresetControls.innerHTML = createLoopControlsContainer();
+            }
+            initialiseAudioSlider();
         };
 
         // Show the button that allows show/hide of dots
@@ -307,16 +313,6 @@ function LoadAudio(audioSource, playPosition) {
         })],
     });
     CurrentAudioSlider = playPosition;
-}
-
-function setupPresetLoops(tuneNumber) {
-    var item = store[tuneNumber];
-    if (item.abc) {
-        myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
-        buildSegments(tuneNumber);
-        loopPresetControls.innerHTML = createLoopControlsContainer();
-    }
-    initialiseAudioSlider();
 }
 
 function initialiseAudioSlider() {
