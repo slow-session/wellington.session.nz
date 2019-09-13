@@ -1,8 +1,8 @@
 ---
 title: Hobby Horse
 titleID: hobby-horse-cm.md
-key:
-rhythm:
+key: D
+rhythm: jig
 notes:
 date: 2019-09-13
 location:

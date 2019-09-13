@@ -1,8 +1,8 @@
 ---
 title: Goodbye Snoopy
 titleID: goodbye-snoopy-cm.md
-key:
-rhythm:
+key: G 
+rhythm: waltz
 notes:
 date: 2019-09-13
 location:

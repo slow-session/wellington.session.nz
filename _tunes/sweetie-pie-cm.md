@@ -1,8 +1,8 @@
 ---
 title: Sweetie Pie
 titleID: sweetie-pie-cm.md
-key:
-rhythm:
+key: A 
+rhythm: reel
 notes:
 date: 2019-09-13
 location:

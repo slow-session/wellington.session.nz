@@ -1,8 +1,8 @@
 ---
 title: Off To Australia Reel
 titleID: off-to-australia-reel-cm.md
-key:
-rhythm:
+key: G
+rhythm: reel 
 notes:
 date: 2019-09-13
 location:

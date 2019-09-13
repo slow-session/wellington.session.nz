@@ -1,8 +1,8 @@
 ---
 title: Memories Of Farmanagh
 titleID: memories-of-farmanagh-cm.md
-key:
-rhythm:
+key: D 
+rhythm: air
 notes:
 date: 2019-09-13
 location:

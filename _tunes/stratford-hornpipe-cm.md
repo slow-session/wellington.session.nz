@@ -1,8 +1,8 @@
 ---
 title: Stratford Hornpipe
 titleID: stratford-hornpipe-cm.md
-key:
-rhythm:
+key: D 
+rhythm: hornpipe
 notes:
 date: 2019-09-13
 location:
