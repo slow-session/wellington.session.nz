@@ -8,13 +8,13 @@ repeats:
 parts:
 date: 2019-09-12
 location:
-tags: cm 
+tags: cm
 repeats:
 parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/jinny-turnip-cm.mp3
-mp3_source: Charlie Montgomery @ Old Friends
+mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
