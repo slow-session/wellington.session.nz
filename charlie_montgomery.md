@@ -59,6 +59,7 @@ Go to the Tune Page by selecting the link in the first column or play a tune now
 <button id="myBtn"></button>
 
 <!-- The Modal -->
+
 <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -117,8 +118,8 @@ Go to the Tune Page by selecting the link in the first column or play a tune now
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
+<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
 <script>
   $(document).ready(function() {
