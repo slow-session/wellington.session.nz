@@ -16,8 +16,20 @@ mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
+abc: |
+    X: 1
+    T: Jinny Turnip
+    R: jig
+    C: Charlie Montgomery
+    L: 1/8
+    K: Gmaj
+    Bc|:dBG AGE|DB,G, B,DG|cBc AFA|DFA cBA|
+    GBd gdB|cag fed|dfe dAF|AGF GBc:|
+    d2 g gfg|Bcd bag|d^cd f2 g|agf agf|
+    Bcd g2 a|bag agf|gdB cAF|DBA GBc|
+    d2 g gfg|Bcd bag|d^cd f2 g|agf agf|
+    bag agf|gdB cAF|DFA cAF|AGF G2|]
 
 ---
