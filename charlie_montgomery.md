@@ -5,7 +5,7 @@ permalink: /cugeenben/
 ---
 <div class="row small-up-1 medium-up-2 large-up-2">
 <div class="small-4 columns">
-<img alt="Charlie Montgomery" src="/images/charliemontgomery.jpg" style="border:1px solid black;float:left;">
+<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
 </div>
 <div class="small-8 columns">
 <p>
@@ -17,9 +17,7 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 </div>
 </div>
 
-<br />
-<hr />
-<br />
+<hr style="margin-top:10px;margin-bottom:10px;" />
 
 <p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 
