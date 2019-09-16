@@ -16,6 +16,7 @@ mp3_file: /mp3/apples-in-winter.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_264_6_roscommon_trio/
+alt_mp3_url: https://www.youtube.com/watch?v=GvuIrsNd-CU
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/299
