@@ -1,8 +1,8 @@
 ---
 title: Ship in Full Sail, Connaughtmans, Calliope House
 titleID: ship-in-full-sail-connaughtmans-calliope-house-cm.md
-key:
-rhythm:
+key: G,D,D
+rhythm: jig
 notes:
 date: 2019-09-13
 location:

@@ -1,14 +1,14 @@
 ---
 title: Charlie's Jig
 titleID: charlies-jig-cm.md
-key:
-rhythm:
+key: D
+rhythm: jig
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/charlies-jig-cm.mp3

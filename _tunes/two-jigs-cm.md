@@ -1,8 +1,8 @@
 ---
-title: Track 26 Charlie
-titleID: track-26-charlie-cm.md
+title: Two Jigs
+titleID: two-jigs-cm.md
 key:
-rhythm:
+rhythm: jig
 notes:
 date: 2019-09-13
 location:
@@ -11,7 +11,7 @@ repeats:
 parts:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/cm/track-26-charlie-cm.mp3
+mp3_file: /mp3/cm/two-jigs-cm.mp3
 mp3_source: Charlie Montgomery, House recording
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:

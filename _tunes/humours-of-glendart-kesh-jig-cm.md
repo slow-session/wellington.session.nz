@@ -1,8 +1,8 @@
 ---
 title: Humours of Glendart, Kesh Jig
 titleID: humours-of-glendart-kesh-jig-cm.md
-key:
-rhythm:
+key: D,G
+rhythm: jig
 notes:
 date: 2019-09-13
 location:

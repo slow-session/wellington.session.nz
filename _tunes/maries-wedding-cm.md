@@ -1,14 +1,14 @@
 ---
 title: Maries Wedding
 titleID: maries-wedding-cm.md
-key:
-rhythm:
+key: G
+rhythm: polka
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/maries-wedding-cm.mp3

@@ -1,8 +1,8 @@
 ---
-title: Maid behind the bar, reel
-titleID: maid-behind-the-bar-reel-cm.md
-key:
-rhythm:
+title: Slow Air, Hornpipe
+titleID: slow-air-hornpipe-cm.md
+key: C,G
+rhythm: air,hornpipe
 notes:
 date: 2019-09-13
 location:
@@ -11,7 +11,7 @@ repeats:
 parts:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/cm/maid-behind-the-bar-reel-cm.mp3
+mp3_file: /mp3/cm/slow-air-hornpipe-cm.mp3
 mp3_source: Charlie Montgomery, House recording
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
