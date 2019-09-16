@@ -10,10 +10,6 @@ permalink: /latest-modal/
   <div class="small-1 columns tableSlider" id="tableSlider"></div>
 </div>
 
-<!-- Trigger/Open The Modal -->
-
-<button id="myBtn"></button>
-
 <!-- The Modal -->
 
 <div id="myModal" class="modal">
@@ -89,12 +85,6 @@ $(document).ready(function() {
 </script>
 
 <script>
-// When the user clicks on <div>, open the popup
-function helpFunction() {
-  var popup = document.getElementById("helpPopup");
-  popup.classList.toggle("show");
-}
-
 // Get the modal
 var modal = document.getElementById("myModal");
 

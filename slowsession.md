@@ -7,7 +7,7 @@ We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/drag
 
 The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments.
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes on our <img alt="NEW!" src="/images/new2.gif"  height="48" width="48"> <button class="filterButton" onclick="window.location.href = '/tunes_archive/';">Tunes Archive</button> page.
+See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option on our <button class="filterButton" onclick="window.location.href = '/tunes_archive/';">Tunes Archive</button> page.
 
 Tune of the Week
 ----------------
@@ -78,16 +78,6 @@ These are the tunes we've been learning over the last couple of months.
 </table>
 </div>
 <br />
-
-Slow session favourites
----------
-
-We've got a number of tunes that we know well at the Slow Session. We don't play all of these every week but if you're at our session and want to play some of these tunes with us, there's a good chance someone else will know them.
-
-You can find these tunes by going to our <a href="/tunes_archive/">Tunes Archive</a> page and
-by choosing the "All Tunes" option,  picking "Slow-favourite" and pressing "Select"
-
-<a href="/tunes_archive/"><button class="filterButton">Go to Tunes Archive</button></a>
 
 <script>
 $(document).ready(function() {
