@@ -64,8 +64,8 @@
 
  (function() {
      function displayTunesTable(results, store) {
-         var tunesTable = document.getElementById('tunes-table');
-         var tunesCount = document.getElementById('tunes-count');
+         var tunesTable = document.getElementById('tunesTable');
+         var tunesCount = document.getElementById('tunesCount');
          var tunesCounter = 0;
 
          // create table headers
@@ -196,7 +196,7 @@
          if (results.length) {
              displayTunesTable(results, window.store);
          } else {
-             document.getElementById('tunes-table').innerHTML = '<strong>No results found!</strong>';
+             document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
          displayTunesTable('', window.store);

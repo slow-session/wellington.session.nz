@@ -136,13 +136,13 @@ Use the "Reset Tunes" button to start a new set.
         </span>      
     </form>
     <p></p>
-    <div id="tunes-count"></div>
+    Displaying <span id="tunesCount"></span> tunes
 </fieldset>
 </div>
 
 <div class="row"></div>
 
-<div id="tunes-table"></div>
+<div id="tunesTable"></div>
 <div id="abc-textareas"></div>
 
 <script>
