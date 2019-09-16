@@ -27,9 +27,10 @@ abc: |
     M: 6/8
     L: 1/8
     K: Edor
-    G/2A/2|BEE dEE|BAG FGE|DA,D FDF|ABc ded|
-    BEE BAB|def ~g2 e|fdB AGF|GEE E2:|
-    d|efe edB|e/f/ge fdB|dec dAF|DFA def|
-    [1efe edB|def ~g2a|bgb afa|gee e2:|
-    [2edB def|gba ~g2e|fdB AGF|GEE E2||
+    ed|BEE eEE|BAF GFE|DAD FDF|ABc ded|
+    BEE BAB|def ~g2 e|fdB AGF|GED E2:|
+    |:d|efe edB|e/f/ge fdB|ded dAF|DFA def|
+    [1efe edB|def ~g2a|bgb afa|ged e2:|
+    [2edB def|gba ~g2e|fdB AGF|GED E2||
+
 ---
