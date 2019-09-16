@@ -1,14 +1,14 @@
 ---
 title: Drowsy Maggie
 titleID: drowsy-maggie-cm.md
-key:
-rhythm:
+key: Edor
+rhythm: reel
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/drowsy-maggie-cm.mp3

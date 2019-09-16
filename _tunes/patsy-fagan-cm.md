@@ -1,14 +1,14 @@
 ---
 title: Patsy Fagan
 titleID: patsy-fagan-cm.md
-key:
-rhythm:
+key: D
+rhythm: polka
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 3
+parts: AB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/patsy-fagan-cm.mp3

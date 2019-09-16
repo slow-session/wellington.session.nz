@@ -1,14 +1,14 @@
 ---
 title: Foxhunter
 titleID: foxhunter-cm.md
-key:
-rhythm:
+key: A
+rhythm: reel
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: ABCDE
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/foxhunter-cm.mp3

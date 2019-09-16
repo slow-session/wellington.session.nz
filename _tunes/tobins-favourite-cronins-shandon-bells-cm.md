@@ -1,8 +1,8 @@
 ---
 title: Tobins Favourite, Cronins, Shandon Bells
 titleID: tobins-favourite-cronins-shandon-bells-cm.md
-key:
-rhythm:
+key: D,Ador,D
+rhythm: jig
 notes:
 date: 2019-09-13
 location:

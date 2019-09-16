@@ -1,14 +1,14 @@
 ---
 title: Kelly the boy from Killane
 titleID: kelly-the-boy-from-killane-cm.md
-key:
-rhythm:
+key: D
+rhythm: march
 notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/kelly-the-boy-from-killane-cm.mp3

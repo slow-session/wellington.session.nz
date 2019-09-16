@@ -1,8 +1,8 @@
 ---
 title: Siege of Ennis
 titleID: siege-of-ennis-cm.md
-key:
-rhythm:
+key: G
+rhythm: polka
 notes:
 date: 2019-09-13
 location:
