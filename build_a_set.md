@@ -52,7 +52,7 @@ hear the tunes played one after another.
         </span>      
     </form>
     <p></p>
-    <div id="tunes-count"></div>
+    Displaying <span id="tunesCount"></span> tunes
 </fieldset>
 </div>
 
@@ -91,7 +91,7 @@ Please think of the trees!">
 </div>
 </form>
 <br />
-<div id="tunes-table"></div>
+<div id="tunesTable"></div>
 <div id="abc-textareas"></div>
 
 <!-- Area to store ABC -->

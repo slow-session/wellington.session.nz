@@ -15,8 +15,8 @@
 
  (function() {
      function displayTunesTable(results, store) {
-         var tunesTable = document.getElementById('tuneTable');
-         var tunesCount = document.getElementById('tunes-count');
+         var tunesTable = document.getElementById('tunesTable');
+         var tunesCount = document.getElementById('tunesCount');
          var tunesCounter = 0;
 
          // create table headers
@@ -40,17 +40,21 @@
          } else {
              for (var key in store) { // Iterate over the original data
                  var item = store[key];
+                 if (item.tuneID < 200) {
+                     continue;
+                 }
                  appendString += createTableRow(item);
                  tunesCounter++;
              }
          }
          appendString += '</tbody></table>';
          tunesTable.innerHTML = appendString;
-         tunesCount.innerHTML = 'Displaying ' + tunesCounter + ' tunes';
+         tunesCount.innerHTML = tunesCounter;
      }
 
      function createTableRow(item) {
          var tableRow = '';
+
          // build the four columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
          tableRow += '<td class="tdArchive"><span title="Go to Tunepage">';
@@ -120,7 +124,7 @@
               if (results.length) {
                   displayTunesTable(results, window.store);
               } else {
-                  document.getElementById('tuneTable').innerHTML = '<strong>No results found!</strong>';
+                  document.getElementById('tunesCount').innerHTML = 0;
               }
           } else {
               displayTunesTable('', window.store);

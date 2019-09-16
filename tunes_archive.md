@@ -48,12 +48,12 @@ Play a tune now using the <strong>Play</strong> button or use the
         </div>
     </form>
     <p></p>
-    <div id="tunes-count"></div>
+    Displaying <span id="tunesCount"></span> tunes
 </fieldset>
 
 
 <div class="row rowTuneTable">
-  <div class="small-11 columns tuneTable" id="tuneTable"></div>
+  <div class="small-11 columns tunesTable" id="tunesTable"></div>
   <div class="small-1 columns tableSlider" id="tableSlider"></div>
 </div>
 
