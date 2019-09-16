@@ -102,7 +102,6 @@ These are the <span id="tunesCount"></span> tunes we've been learning over the l
         {% endfor %}
     };
     $.extend(window.store, singleTune);
-    console.log(window.store);
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
