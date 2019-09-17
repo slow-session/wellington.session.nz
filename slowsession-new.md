@@ -32,9 +32,9 @@ It's a {{ tune.rhythm }} in the key of {{ tune.key }}.
 
 Or:
 
-<fieldset class="fieldsetSingleTune">
+<fieldset>
 <legend>Tune of the week:</legend>
-<div class="row small-up-2 medium-up-3 large-up-3">
+<div class="row">
     <div class="small-4 columns">
         <span title="Go to Tunepage">
             <a href="{{ tune.url }}">{{ tune.title }}</a>
@@ -68,7 +68,6 @@ singleTune = {
 };
 
 </script>
-{% assign tuneID = tuneID | plus: 1 %}
 {% endif %}
 
 <br />
@@ -83,31 +82,33 @@ These are the <span id="tunesCount"></span> tunes we've been learning over the l
 </div>
 
 <script>
-    window.store = {
+window.store = {
+{% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+{% assign tune_count = 0 %}
+{% assign tuneID = 200 %}
+{% for tune in sortedtunes %}
+    {% if tune_count > 0 %}
+        "{{ tuneID }}": {
+            "title": "{{ tune.title | xml_escape }}",
+            "tuneID": "{{ tuneID }}",
+            "key": "{{ tune.key | xml_escape }}",
+            "rhythm": "{{ tune.rhythm | xml_escape }}",
+            "url": "{{ tune.url | xml_escape }}",
+            "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+            "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
+            "repeats": "{{ tune.repeats }}",
+            "parts": "{{ tune.parts }}",
+            "abc": {{ tune.abc | jsonify }}
+        }{% if tune_count <= 9 %},{% else %}{% break %}{% endif %}
+    {% endif %}
+    {% assign tune_count = tune_count | plus: 1 %}
+    {% assign tuneID = tuneID | plus: 1 %}
+{% endfor %}
+};
 
-        {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
-        {% assign tune_count = 0 %}
-        {% assign tuneID = 200 %}
-        {% for tune in sortedtunes %}
-            {% if tune_count > 0 %}
-                "{{ tuneID }}": {
-                    "title": "{{ tune.title | xml_escape }}",
-                    "tuneID": "{{ tuneID }}",
-                    "key": "{{ tune.key | xml_escape }}",
-                    "rhythm": "{{ tune.rhythm | xml_escape }}",
-                    "url": "{{ tune.url | xml_escape }}",
-                    "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-                    "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
-                    "repeats": "{{ tune.repeats }}",
-                    "parts": "{{ tune.parts }}",
-                    "abc": {{ tune.abc | jsonify }}
-                }{% if tune_count <= 9 %},{% else %}{% break %}{% endif %}
-            {% endif %}
-            {% assign tune_count = tune_count | plus: 1 %}
-            {% assign tuneID = tuneID | plus: 1 %}
-        {% endfor %}
-    };
-    $.extend(window.store, singleTune);
+// Add tune of the week into the window.store
+$.extend(window.store, singleTune);
+
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
