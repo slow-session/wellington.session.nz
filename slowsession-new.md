@@ -17,18 +17,24 @@ melody instruments.
 
 See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option on our <button class="filterButton" onclick="window.location.href = '/tunes_archive/';">Tunes Archive</button> page.
 
-Tune of the Week
-----------------
-
-We pick one tune for homework each week, and we'll play it sometime during the first hour.
-
 
 {% assign tuneID = 100 %}
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
 
-<div class="row rowSingleTune row-even">
+Tune of the Week
+----------------
+
+We pick one tune for homework each week, and we'll play it sometime during the first hour. Our current tune is <a href="{{ tune.url }}">{{ tune.title }}</a> and you can listen to it and start learning it using the <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" /> button.
+
+It's a {{ tune.rhythm }} in the key of {{ tune.key }}.
+
+Or:
+
+<fieldset class="fieldsetSingleTune">
+<legend>Tune of the week:</legend>
+<div class="row small-up-2 medium-up-3 large-up-3">
     <div class="small-4 columns">
         <span title="Go to Tunepage">
             <a href="{{ tune.url }}">{{ tune.title }}</a>
@@ -37,13 +43,13 @@ We pick one tune for homework each week, and we'll play it sometime during the f
     <div class="small-3 columns">
         <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
     </div>
-    <div class="small-2 columns">
-        {{ tune.key }}
-    </div>
-    <div class="small-2 columns end">
-        {{ tune.rhythm }}
+    <div class="small-3 columns">
+        {{ tune.key }} {{ tune.rhythm }}
     </div>
 </div>
+</fieldset>
+
+<div class="row"></div>
 
 <script>
 singleTune = {
