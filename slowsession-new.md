@@ -26,7 +26,9 @@ See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you ne
 Tune of the Week
 ----------------
 
-We pick one tune for homework each week, and we'll play it sometime during the first hour. Our current tune is <a href="{{ tune.url }}">{{ tune.title }}</a> and you can listen to it and start learning it using the <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" /> button.
+We pick one tune for homework each week, and we'll play it sometime during the first hour.
+
+Our current tune is <a href="{{ tune.url }}">{{ tune.title }}</a> and you can listen to it and start learning it using the <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" /> button.
 
 It's a {{ tune.rhythm }} in the key of {{ tune.key }}.
 

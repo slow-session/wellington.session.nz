@@ -57,10 +57,6 @@ Play a tune now using the <strong>Play</strong> button or use the
   <div class="small-1 columns tableSlider" id="tableSlider"></div>
 </div>
 
-<!-- Trigger/Open The Modal -->
-
-<button id="myBtn"></button>
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <!-- Modal content -->
@@ -145,16 +141,8 @@ function helpFunction() {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
