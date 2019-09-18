@@ -21,6 +21,7 @@
 {% endfor %}
 
 {% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign tune_rhythms = tune_rhythms | replace: '/', ':' %}
 {% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
 
 {% assign tune_tags = tune_tags | replace: '::', ':' %}

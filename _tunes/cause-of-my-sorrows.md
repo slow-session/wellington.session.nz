@@ -2,7 +2,7 @@
 title: Cause of my Sorrows
 titleID: cause-of-my-sorrows.md
 key: G
-rhythm: slow air
+rhythm: air
 date: 2018-11-27
 location: Wellington
 notes:

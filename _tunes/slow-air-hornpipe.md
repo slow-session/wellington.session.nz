@@ -2,7 +2,7 @@
 title: Slow Air, Hornpipe
 titleID: slow-air-hornpipe-cm.md
 key: C,G
-rhythm: air,hornpipe
+rhythm: air/hornpipe
 notes:
 date: 2019-09-13
 location:
