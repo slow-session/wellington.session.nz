@@ -12,7 +12,7 @@ Slow Session Tune of the Week
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
-<fieldset>
+<fieldset class="fieldset-auto-width">
 <legend>Slow tune of the week:</legend>
 <div class="row">
     <div class="small-5 columns">
@@ -57,10 +57,10 @@ Regular Session Tune of the Week
 {% assign tuneID = tuneID | plus: 1 %}
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
-<fieldset>
+<fieldset class="fieldset-auto-width">
 <legend>Regular tune of the week:</legend>
 <div class="row">
-    <div class="small-4 columns">
+    <div class="small-5 columns">
         <span title="Go to Tunepage">
             <a href="{{ tune.url }}">{{ tune.title }}</a>
         </span>

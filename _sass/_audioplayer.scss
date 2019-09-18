@@ -176,6 +176,13 @@ fieldset {
     border-style: solid;
 }
 
+.fieldset-auto-width {
+    //display: inline-block;
+    min-width: 0;
+    max-width: 80%;
+    width: 80%;
+}
+
 form {
     text-align: left;
 }
