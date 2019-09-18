@@ -23,7 +23,7 @@ We often pick a tune for homework, and we'll play it sometime during the evening
 <fieldset>
 <legend>Regular tune of the week:</legend>
 <div class="row">
-    <div class="small-6 columns">
+    <div class="small-5 columns">
         <span title="Go to Tunepage">
             <a href="{{ tune.url }}">{{ tune.title }}</a>
         </span>
