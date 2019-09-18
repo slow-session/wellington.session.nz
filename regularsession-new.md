@@ -1,34 +1,27 @@
 ---
 layout: page
-title: Wellington Slow Session
-permalink: /slowsession-new/
+title: Wellington Irish Session
+permalink: /regularsession-new/
 ---
+We meet on Tuesday nights from {{ site.session_time }} at the <a href="/dragon/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. Experienced players of traditional Irish music are welcome. If you’re new in town or just visiting, we’d love to have you join us to play or just listen!
 
-We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
-Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
-Players who want to play traditional Irish music at a relaxed pace are welcome.
+Many of the tunes that get played at the session are in the <a href="/tunes_archive/">Tunes Archive</a> page but other tunes that are firmly in the traditional mould are very welcome.
 
-The slow session is an opportunity for players who are starting out with Irish
-traditional music and want an opportunity to play tunes that they're learning
-or have already learnt with others in a supportive environment.
-We don't teach tunes directly in this session but it's a great chance to practice
-playing with others. There's some scope for accompaniment but the focus is on the
-melody instruments.
+We believe that Irish traditional music played in a session can be a fantastic musical and social experience. We think that when there’s a very strong focus on traditional melody instruments playing traditional tunes we set the scene for great sessions.
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option on our <button class="filterButton" onclick="window.location.href = '/tunes_archive/';">Tunes Archive</button> page.
+Getting a great session humming requires some attention to certain ground rules. See our <a href="/regularguidelines/">Guidelines for the Wellington Irish Session</a> if you need more information.
 
+Regular session tune of the week
+--------
+
+We often pick a tune for homework, and we'll play it sometime during the evening.
 
 {% assign tuneID = 100 %}
-{% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+{% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
-{% if tune.slowtuneoftheweek %}
-
-Tune of the Week
-----------------
-We pick one tune for homework each week, and we’ll play it sometime during the first hour.
-
+{% if tune.regtuneoftheweek %}
 <fieldset>
-<legend>Tune of the week:</legend>
+<legend>Regular tune of the week:</legend>
 <div class="row">
     <div class="small-6 columns">
         <span title="Go to Tunepage">
@@ -61,13 +54,12 @@ tuneOfTheWeek = {
         "abc": {{ tune.abc | jsonify }}
     },
 };
-
 </script>
 {% endif %}
 
 <br />
 
-Recent slow session tunes of the week
+Recent regular session tunes of the week
 --------
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last couple of months.
@@ -78,7 +70,7 @@ These are the <span id="tunesCount"></span> tunes we've been learning over the l
 
 <script>
 window.store = {
-{% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+{% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
 {% assign tune_count = 0 %}
 {% assign tuneID = 200 %}
 {% for tune in sortedtunes %}
@@ -104,6 +96,14 @@ window.store = {
 // Add tune of the week into the window.store
 $.extend(window.store, tuneOfTheWeek);
 </script>
+
+<br />
+
+Latest Tunes
+------------
+
+We add new tunes to the archive reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
+These are the <span id="tunesCount"></span> tunes we've been learning over the last couple of months.
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
 
