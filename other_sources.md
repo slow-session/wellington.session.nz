@@ -3,7 +3,8 @@ layout: page
 title: Other Sources
 permalink: /other_sources/
 ---
-Here's some other sources of tunes you might find useful. If you look at nothing else make sure you check out Charlie Montomery's tunes on this website. 
+Here's some other sources of tunes you might find useful. If you look at nothing
+else make sure you check out Charlie Montomery's tunes on this website. 
 
 Charlie Montgomery:
 
