@@ -235,7 +235,7 @@ function changeTune(tuneNumber) {
     segments = [];
 
     // If we have a modal make it visible
-    var modal = document.getElementById('myModal');
+    var modal = document.getElementById('tuneModal');
     if (modal) {
         modal.style.display = "block";
     }

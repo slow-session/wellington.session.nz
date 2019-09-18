@@ -177,10 +177,10 @@ fieldset {
 }
 
 .fieldset-auto-width {
-    //display: inline-block;
-    min-width: 0;
-    max-width: 80%;
-    width: 80%;
+    min-width: 300px;
+    max-width: 60%;
+    width: 60%;
+    text-align: center;
 }
 
 form {

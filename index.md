@@ -33,7 +33,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 <div class="row"></div>
 
 <script>
-slowTuneOfTheWeek = {
+tuneOfTheWeek = {
     "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -97,7 +97,7 @@ window.store = {
 };
 
 // Add slow tune of the week into the window.store
-$.extend(window.store, slowTuneOfTheWeek);
+$.extend(window.store, tuneOfTheWeek);
 </script>
 
 {% endif %}
@@ -115,67 +115,10 @@ Many of the tunes that get played at the sessions, including those we've been le
 
 There are a number of Irish Music sessions around New Zealand but the number of musicians is relatively small. <a href="https://www.youtube.com/watch?v=9B3_of9CY24">It’s a long, long way from Clare to here</a>. See our <a href="/nz_sessions">NZ Sessions</a> page for more information.
 
-
-<!-- The Modal -->
-
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">×</span>
-        <!-- *** Player controls *** -->
-        <div id="tuneTitle"></div>
-        <div id="tuneInfo"></div>
-        <br />
-        <div class="player">
-            <div id="audioPlayer"></div>
-            <div id="showPlayer"></div>
-        </div>
-        <!-- *** loop presets *** -->
-        <form id="loopForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show Preset Loops" onclick="toggleLoops(this);">
-        </form>
-        <div id="loopPresetControls" style="display: none;">.</div>
-        <!-- *** rendered ABC and tune selector scrolling table *** -->
-        <form id="dotsForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show the Dots" onclick="toggleTheDots(this);">
-        </form>
-        <div class="outputABC">
-        <div id="paper0" style="display: none;"></div>
-        <div id='abcSource' style="display: none;">
-            <textarea name='abcText' id="abcText"></textarea>
-        </div>
-    </div>
-</div>
+{% include tuneModal.html%}
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
 });
-</script>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    if (OneAudioPlayer.paused == false) { // audio is currently playing.
-        OneAudioPlayer.pause();
-    }
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      if (OneAudioPlayer.paused == false) { // audio is currently playing.
-          OneAudioPlayer.pause();
-      }
-      modal.style.display = "none";
-  }
-}
 </script>

@@ -15,7 +15,7 @@ We don't teach tunes directly in this session but it's a great chance to practic
 playing with others. There's some scope for accompaniment but the focus is on the
 melody instruments.
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option on our <button class="filterButton" onclick="window.location.href = '/tunes_archive/';">Tunes Archive</button> page.
+See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option.
 
 
 {% assign tuneID = 100 %}
@@ -70,7 +70,7 @@ tuneOfTheWeek = {
 Recent slow session tunes of the week
 --------
 
-These are the <span id="tunesCount"></span> tunes we've been learning over the last couple of months.
+These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
 
 <div class="row rowTuneTable">
   <div class="small-12 columns tunesTable" id="tunesTable"></div>
@@ -109,67 +109,12 @@ $.extend(window.store, tuneOfTheWeek);
 
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
+{% include tuneModal.html%}
+
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});
 });
-</script>
-
-<!-- The Modal -->
-
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">×</span>
-        <!-- *** Player controls *** -->
-        <div id="tuneTitle"></div>
-        <div id="tuneInfo"></div>
-        <br />
-        <div class="player">
-            <div id="audioPlayer"></div>
-            <div id="showPlayer"></div>
-        </div>
-        <!-- *** loop presets *** -->
-        <form id="loopForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show Preset Loops" onclick="toggleLoops(this);">
-        </form>
-        <div id="loopPresetControls" style="display: none;">.</div>
-        <!-- *** rendered ABC and tune selector scrolling table *** -->
-        <form id="dotsForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show the Dots" onclick="toggleTheDots(this);">
-        </form>
-        <div class="outputABC">
-        <div id="paper0" style="display: none;"></div>
-        <div id='abcSource' style="display: none;">
-            <textarea name='abcText' id="abcText"></textarea>
-        </div>
-    </div>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    if (OneAudioPlayer.paused == false) { // audio is currently playing.
-        OneAudioPlayer.pause();
-    }
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      if (OneAudioPlayer.paused == false) { // audio is currently playing.
-          OneAudioPlayer.pause();
-      }
-      modal.style.display = "none";
-  }
-}
 </script>
