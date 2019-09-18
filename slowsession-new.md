@@ -54,7 +54,7 @@ Or:
 <div class="row"></div>
 
 <script>
-singleTune = {
+tuneOfTheWeek = {
     "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -109,8 +109,9 @@ window.store = {
 };
 
 // Add tune of the week into the window.store
-$.extend(window.store, singleTune);
+$.extend(window.store, tuneOfTheWeek);
 
+console.log(window.store);
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
