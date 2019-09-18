@@ -3,6 +3,16 @@ layout: page
 title: Tunes Archive - Old
 permalink: /tunes_archive_old/
 ---
+
+<fieldset>
+<legend>IMPORTANT NOTICE:</legend>
+We're going to discontinue displaying the Tunes Archive in this format on 10 October 2019.
+If you have some compelling reason why we shouldn't send us an email at <a href="mailto:{{ site.email }}">{{ site.email }}</a> explaining why.
+</fieldset>
+
+<div class="row"></div>
+<br/>
+
 Many of the tunes listed here get played at the Wellington Session. There are
 also a number of tunes from other parts of the country. You can look at them all
 or you can select by area such as Hamilton, Wellington, Arrowtown, Dunedin etc.

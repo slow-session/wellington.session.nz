@@ -62,43 +62,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
   <div class="small-1 columns tableSlider" id="tableSlider"></div>
 </div>
 
-<!-- Trigger/Open The Modal -->
-
-<button id="myBtn"></button>
-
-<!-- The Modal -->
-
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">×</span>
-        <!-- *** Player controls *** -->
-        <div id="tuneTitle"></div>
-        <div id="tuneInfo"></div>
-        <br />
-        <div class="player">
-            <div id="audioPlayer"></div>
-            <div id="showPlayer"></div>
-        </div>
-        <!-- *** loop presets *** -->
-        <form id="loopForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show Preset Loops" onclick="toggleLoops(this);">
-        </form>
-        <div id="loopPresetControls" style="display: none;">.</div>
-        <!-- *** rendered ABC and tune selector scrolling table *** -->
-        <form id="dotsForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show the Dots" onclick="toggleTheDots(this);">
-        </form>
-        <div class="outputABC">
-        <div id="paper0" style="display: none;"></div>
-        <div id='abcSource' style="display: none;">
-            <textarea name='abcText' id="abcText"></textarea>
-        </div>
-    </div>
-</div>
-
-<div id="debug"></div>
-
 <script>
     window.store = {
 
@@ -129,6 +92,8 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
+{% include tuneModal.html%}
+
 <script>
   $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
@@ -148,37 +113,5 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 function helpFunction() {
   var popup = document.getElementById("helpPopup");
   popup.classList.toggle("show");
-}
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    if (OneAudioPlayer.paused == false) { // audio is currently playing.
-        OneAudioPlayer.pause();
-    }
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      if (OneAudioPlayer.paused == false) { // audio is currently playing.
-          OneAudioPlayer.pause();
-      }
-      modal.style.display = "none";
-  }
 }
 </script>
