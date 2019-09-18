@@ -232,6 +232,7 @@ function changeTune(tuneNumber) {
     // Clear the loop preset display
     loopPresetControls.innerHTML = '';
     document.getElementById('loopForm').style.display = "none";
+    segments = [];
 
     // If we have a modal make it visible
     var modal = document.getElementById('myModal');
