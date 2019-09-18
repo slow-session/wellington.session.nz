@@ -16,7 +16,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 <fieldset>
 <legend>Slow tune of the week:</legend>
 <div class="row">
-    <div class="small-6 columns">
+    <div class="small-5 columns">
         <span title="Go to Tunepage">
             <a href="{{ tune.url }}">{{ tune.title }}</a>
         </span>
