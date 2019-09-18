@@ -160,6 +160,9 @@ with open(optionsFile, 'w') as outfile:
         outfile.write('    <option value="' + cgi.escape(mp3sourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW MP3 SOURCE HERE">Other</option>
     </select>
+
+    <div class="licenceUsed">
+    <h3>Licences Used</h3>
     """)
 
     for key in sorted(licenceUsedBy.keys()):
@@ -169,6 +172,7 @@ with open(optionsFile, 'w') as outfile:
         outfile.write('</small></p>\n')
 
     outfile.write("""
+    </div>
     <label>MP3 licence:</label>
     <select id="mp3_licence-box" name="mp3_licence">
         <option value="">None</option>
