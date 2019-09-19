@@ -11,7 +11,6 @@ page.
 
 <div id="audioPlayer"></div>
 
-
 {% assign tune_rhythms = '' %}
 {% for tune in site.tunes %}
 {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
@@ -44,12 +43,15 @@ page.
         </span>      
     </form>
     <p></p>
-    <div id="sets-count"></div>
+    Displaying <span id="tunesCount"></span> sets
 </fieldset>
 
 <div class="row"></div>
 
-<div id="sets-table"></div>
+<div class="row">
+  <div class="small-12 columns" id="tunesTable"></div>
+</div>
+
 <div id="abc-textareas"></div>
 
 <script>
@@ -86,6 +88,5 @@ $(document).ready(function() {
 
     $("#tunes").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
     Create_archive_sliders();
-
 });
 </script>
