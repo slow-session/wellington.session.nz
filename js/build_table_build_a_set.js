@@ -35,7 +35,7 @@
           var divPaper = document.createElement("div");
           divPaper.id = 'paper0';
           divPaper.setAttribute('class', 'paper');
-          divPaper.style.maxWidth = '800px';
+          divPaper.style.maxWidth = '650px';
           document.getElementById('output').appendChild(divPaper);
       }
 
@@ -69,8 +69,7 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
+         var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:10%;min-width:75px;">Add Tune</th> \
@@ -84,16 +83,20 @@
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
                  var item = store[results[i].ref];
-                 appendString += createTableRow(item);
-                 addTextArea(item);
-                 tunesCounter++;
+                 if (item.abc) {
+                     appendString += createTableRow(item);
+                     addTextArea(item);
+                     tunesCounter++;
+                 }
              }
          } else {
              for (var key in store) { // Iterate over the original data
                  var item = store[key];
-                 appendString += createTableRow(item);
-                 addTextArea(item);
-                 tunesCounter++;
+                 if (item.abc) {
+                     appendString += createTableRow(item);
+                     addTextArea(item);
+                     tunesCounter++;
+                 }
              }
          }
          appendString += '</tbody></table></div>';
