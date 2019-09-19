@@ -62,7 +62,7 @@ hear the tunes played one after another.
 <!-- Show a header for where the dots will appear -->
 <div id="paperHeader"><h1>Musical Notation will appear here</h1></div>
 <!-- Draw the dots -->
-<div class="output" id='output' style="max-width: 800px;">
+<div class="output" id='output' style="max-width: 650px;">
     <div id="paper0" class="paper"></div>
   </div>
 
@@ -71,7 +71,7 @@ hear the tunes played one after another.
 
 <!-- Allow the user to save their ABC-->
 <form>
-<div class="row" style="max-width:800px">
+<div class="row" style="max-width:650px">
     <div class="small-6 columns">
         <span title="Clear the music notation to start a new set">
             <input value='RESET' type='button' class="loopButton" onclick='Reset()' />
@@ -91,7 +91,12 @@ Please think of the trees!">
 </div>
 </form>
 <br />
-<div id="tunesTable"></div>
+
+<div class="row rowTuneTable">
+  <div class="small-11 columns tunesTable" id="tunesTable"></div>
+  <div class="small-1 columns tableSlider" id="tableSlider"></div>
+</div>
+
 <div id="abc-textareas"></div>
 
 <!-- Area to store ABC -->
@@ -136,5 +141,8 @@ $(document).ready(function() {
     $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});  
 
     ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+
+    createArchiveSlider('tableSlider');
+    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
