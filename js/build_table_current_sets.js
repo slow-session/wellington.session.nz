@@ -15,8 +15,8 @@
 
  (function() {
      function displaySetsTable(results, store) {
-         var setsTable = document.getElementById('sets-table');
-         var setsCount = document.getElementById('sets-count');
+         var setsTable = document.getElementById('tunesTable');
+         var setsCount = document.getElementById('tunesCount');
          var setsCounter = 0;
 
          // create table headers
@@ -47,7 +47,7 @@
          }
          appendString += '</tbody></table></div>';
          setsTable.innerHTML = appendString;
-         setsCount.innerHTML = 'Displaying ' + setsCounter + ' sets';
+         setsCount.innerHTML = setsCounter;
      }
 
      function createTableRow(item) {
@@ -146,7 +146,7 @@
          if (results.length) {
              displaySetsTable(results, window.store);
          } else {
-             document.getElementById('sets-table').innerHTML = '<strong>No results found!</strong>';
+             document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
          displaySetsTable('', window.store);
