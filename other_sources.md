@@ -4,7 +4,7 @@ title: Other Sources
 permalink: /other_sources/
 ---
 Here's some other sources of tunes you might find useful. If you look at nothing
-else make sure you check out Charlie Montomery's tunes on this website. 
+else make sure you check out Charlie Montomery's tunes on this website.
 
 Charlie Montgomery:
 
@@ -38,8 +38,6 @@ collected and produced some different options:
 * [current-alphabetical.pdf](/tunebooks/current-alphabetical.pdf "PDF") - PDF containing the Wellington Session tunes in alphabetical order
 * [2bar-by-type.pdf](/tunebooks/2bar-by-type.pdf "PDF") - PDF with just the first two bars of the tunes
 * [2bar-alphabetical.pdf](/tunebooks/2bar-alphabetical.pdf "PDF") - PDF with just the first two bars of the tunes in alphabetical order
-* [slow-favourite-alphabetical.pdf](/tunebooks/slow-favourite-alphabetical.pdf "PDF") - Frequently played tunes in the slow session in a tunebook
-* [2bar-slow-favourite-alphabetical.pdf](/tunebooks/2bar-slow-favourite-alphabetical.pdf "PDF") - PDF with the first two bars of frequently played slow session tunes
 
 These tunebooks were last updated at: Thu 22 Aug 2019 16:07:37 NZST
 
@@ -48,15 +46,6 @@ These tunebooks were last updated at: Thu 22 Aug 2019 16:07:37 NZST
 <img alt="Think before you print" src="/images/think-before-you-print.gif">
 </p>
 {:/}
-
-You can also get copies of the ABC files that were used to generate these PDFs:
-
-* [current-by-type.abc](/tunebooks/current-by-type.abc "ABC")
-* [current-alphabetical.abc](/tunebooks/current-alphabetical.abc "ABC")
-* [2bar-by-type.abc](/tunebooks/2bar-by-type.abc "ABC")
-* [2bar-alphabetical.abc](/tunebooks/2bar-alphabetical.abc "ABC")
-* [slow-favourite-alphabetical.abc](/tunebooks/slow-favourite-alphabetical.abc "ABC")
-* [2bar-slow-favourite-alphabetical.abc](/tunebooks/2bar-slow-favourite-alphabetical.abc "ABC")
 
 Other tunebooks
 ---------------
@@ -71,10 +60,14 @@ Some other tunebooks from early days of ABC i.e. the 1990s:
  * [session1.pdf](/tunebooks/other/session1.pdf "PDF")
  * [session2.pdf](/tunebooks/other/session2.pdf "PDF")
 
-You can also get copies of the ABC files that were used to generate these PDFs:
+ You can also get copies of the ABC files that were used to generate some of these PDFs:
 
-* [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
-* [obrien.abc](/tunebooks/other/obrien.abc "ABC")
-* [reavy.abc](/tunebooks/other/reavy.abc "ABC")
-* [session1.abc](/tunebooks/other/session1.abc "ABC")
-* [session2.abc](/tunebooks/other/session2.abc "ABC")
+ * [current-by-type.abc](/tunebooks/current-by-type.abc "ABC")
+ * [current-alphabetical.abc](/tunebooks/current-alphabetical.abc "ABC")
+ * [2bar-by-type.abc](/tunebooks/2bar-by-type.abc "ABC")
+ * [2bar-alphabetical.abc](/tunebooks/2bar-alphabetical.abc "ABC")
+ * [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
+ * [obrien.abc](/tunebooks/other/obrien.abc "ABC")
+ * [reavy.abc](/tunebooks/other/reavy.abc "ABC")
+ * [session1.abc](/tunebooks/other/session1.abc "ABC")
+ * [session2.abc](/tunebooks/other/session2.abc "ABC")
