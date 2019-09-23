@@ -1,5 +1,5 @@
 ---
-title: Jinny Turnip
+title: Jinny Turnip *
 titleID: jinny-turnip-cm.md
 key: G
 rhythm: jig

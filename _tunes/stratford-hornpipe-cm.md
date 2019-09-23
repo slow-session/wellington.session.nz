@@ -1,7 +1,7 @@
 ---
-title: Stratford Hornpipe
+title: Stratford Hornpipe *
 titleID: stratford-hornpipe-cm.md
-key: D 
+key: D
 rhythm: hornpipe
 notes:
 date: 2019-09-13

@@ -54,6 +54,8 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> tunes
+    <p></p>
+    Charlie's compositions tagged with <strong>*</strong>
 </fieldset>
 
 

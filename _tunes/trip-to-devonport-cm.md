@@ -1,5 +1,5 @@
 ---
-title: Trip To Devonport
+title: Trip To Devonport *
 titleID: trip-to-devonport-cm.md
 key: G
 rhythm: hornpipe
@@ -16,8 +16,18 @@ mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
-
+abc: |
+    X:1
+    T: Trip to Devonport
+    R: jig
+    C: Charlie Montgomery
+    L: 1/8
+    M: 6/8
+    K: G
+    |: G2 B BAB | cBA BAG | FEF D2 D | FDF AFD |
+    G2 B BAB | cBA BAG | FEF dAF | AGF G2 D :|
+    |: GBd g2 g | fed ecA | FEF D2 D | FDF AFD |
+    GBd g2 g | fed ecA | FEF DFA | DFA G3 :| 
 ---

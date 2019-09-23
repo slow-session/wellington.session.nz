@@ -1,7 +1,7 @@
 ---
-title: Finlay's Jig
+title: Finlay's Jig *
 titleID: finlays-jig-cm.md
-key: A 
+key: A
 rhythm: jig
 notes:
 date: 2019-09-13

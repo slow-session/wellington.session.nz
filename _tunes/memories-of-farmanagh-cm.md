@@ -1,7 +1,7 @@
 ---
-title: Memories Of Farmanagh
+title: Memories Of Farmanagh *
 titleID: memories-of-farmanagh-cm.md
-key: D 
+key: D
 rhythm: air
 notes:
 date: 2019-09-13
