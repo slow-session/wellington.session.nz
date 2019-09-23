@@ -7,22 +7,22 @@ date: 2016-10-26
 location: Raglan Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats:
+parts:
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file:
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url:
-abc_url:
+mp3_file: /mp3/trip-to-pakistan.mp3
+mp3_licence: "© Niall Kenny. All Rights Reserved."
+mp3_source: Niall Kenny
+mp3_url: https://www.youtube.com/watch?v=RsY0eod7eQM&t=512
 source: Wellington
+abc_source: The Session
+abc_url: https://thesession.org/tunes/112
 abc: |
     X:1
     T:The Trip to Pakistan
     R:Reel
     L:1/8
-    %Q:350
     M:C
     K:Em
     EGBE ~G3 B | A2 AG FGAF | EGBE ~G3 B | AGFG ~E3 B :||
