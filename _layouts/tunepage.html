@@ -133,7 +133,12 @@ function show_iframe(url) {
 <div class="attribution">
     <br />
     {% if page.mp3_file %}
-        <p class="attribution">The audio for {{ page.title }} is sourced from <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        <p class="attribution">The audio for {{ page.title }} is sourced from
+        {% if page.mp3_url %}
+            <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        {% else %}
+            {{ page.mp3_source }}.
+        {% endif %}
         Permission to use is gratefully acknowledged and the audio is made available under this licence:
         {{ page.mp3_licence }}</p>
 
@@ -158,7 +163,12 @@ function show_iframe(url) {
     {% endif %}
 
     {% if page.abc_source %}
-        <p>The music notation was derived from <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+        <p>The music notation was derived from
+        {% if page.abc_url %}
+            <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+        {% else %}
+            {{ page.abc_source }}
+        {% endif %}
     {% endif %}
 </div>
 
