@@ -16,8 +16,20 @@ mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
-
+abc: |
+    X: 1
+    T: Finlay's Jig
+    R: jig
+    C: Charlie Montgomery
+    M: 6/8
+    L: 1/8
+    K: Amaj
+    |:F|EFE EFA|Bdc BAF|fed cdB|cAF FEC|
+    EFE EFA|Bdc BAF|fed cdB|cAA A2:|
+    cd|e2 A cAA|aAA fec|fga ecB|cBA Bcd|
+    eAA cAA|aAA fec|fga ecB|cBA Bcd|
+    e3 c3|Ace aec|fga ecB|cBA BAF|
+    EFE EFA|Bdc BAF|fed cdB|cAA A2|]
 ---

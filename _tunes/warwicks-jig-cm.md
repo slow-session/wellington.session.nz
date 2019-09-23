@@ -16,8 +16,18 @@ mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
-
+abc: |
+    X: 1
+    T: Warwick's Jig
+    R: jig
+    C: Charlie Montgomery
+    M: 6/8
+    L: 1/8
+    K: Gmaj
+    |:B2 B BAG|AGE DB,D|B2 B BAB|d^cd ed=c|
+    BcB BAG|AGE DB,D|EDB, G,B,D|EGG G2:|
+    |:D|GBd dBd|ece gfe|ded BdB| ABA AFD|
+    GBd dBd|ece gfe|dBG AGA|BGG G2:|
 ---
