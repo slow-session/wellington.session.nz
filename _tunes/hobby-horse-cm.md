@@ -1,5 +1,5 @@
 ---
-title: Hobby Horse
+title: Hobby Horse *
 titleID: hobby-horse-cm.md
 key: D
 rhythm: jig

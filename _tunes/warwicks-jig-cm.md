@@ -1,8 +1,8 @@
 ---
-title: Warwick's Jig
+title: Warwick's Jig *
 titleID: warwicks-jig-cm.md
 key: G
-rhythm: jig 
+rhythm: jig
 notes:
 date: 2019-09-13
 location:

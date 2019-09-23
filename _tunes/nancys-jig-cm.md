@@ -1,5 +1,5 @@
 ---
-title: Nancy's Jig
+title: Nancy's Jig *
 titleID: nancys-jig-cm.md
 key: G
 rhythm: jig
@@ -16,8 +16,19 @@ mp3_source: Charlie Montgomery, Old Friends
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  Old Friends
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
+abc: |
+    X: 1
+    T: Nancy's Jig
+    R: jig
+    C: Charlie Montgomery
+    M: 6/8
+    L: 1/8
+    K: Gmaj
+    |: G,B,D GBd|gfg dBG|G,B,D GBd|cBc AFD|
+    G,B,D GBd|gfg dBG|cAF dAF|AGF G2:|
+    |:Bc|d2 g gfg|dgg dcB|d2 f fef|ABc edc|
+    dgg bgg|dgg fdB|c2 c AFD|AGF G2 :|
 
 ---

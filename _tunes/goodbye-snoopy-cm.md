@@ -1,7 +1,7 @@
 ---
-title: Goodbye Snoopy
+title: Goodbye Snoopy *
 titleID: goodbye-snoopy-cm.md
-key: G 
+key: G
 rhythm: waltz
 notes:
 date: 2019-09-13

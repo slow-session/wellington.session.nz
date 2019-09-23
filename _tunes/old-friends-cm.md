@@ -1,5 +1,5 @@
 ---
-title: Old Friends
+title: Old Friends *
 titleID: old-friends-cm.md
 key: D
 rhythm: air

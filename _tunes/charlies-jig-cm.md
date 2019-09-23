@@ -1,5 +1,5 @@
 ---
-title: Charlie's Jig
+title: Charlie's Jig *
 titleID: charlies-jig-cm.md
 key: D
 rhythm: jig
@@ -16,8 +16,18 @@ mp3_source: Charlie Montgomery, House recording
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  House recording
-abc_source:
+abc_source: Charlie Montgomery
 abc_url:
-abc:
-
+abc: |
+    X:1
+    T:Charlie's jig
+    C:Charlie Montgomery
+    R:jig
+    L:1/8
+    M:6/8
+    K:D
+    |: AFA DFA | BGB DGB | cBc Ace | fge fdB |
+    AFA DFA | BGB DGB | cBc Ace | fge d2 B :|
+    |: Aff fed | Bgg gfe | Ace a^ga | baf afd |
+    Aff fed | Bgg gfg | Ace gec | edc d3 :|
 ---

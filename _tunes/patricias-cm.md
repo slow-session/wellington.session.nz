@@ -1,5 +1,5 @@
 ---
-title: Patricia's
+title: Patricia's *
 titleID: patricias-cm.md
 key: D
 rhythm: waltz
