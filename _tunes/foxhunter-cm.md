@@ -12,7 +12,7 @@ parts: ABCDE
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/foxhunter-cm.mp3
-mp3_source: Charlie Montgomery, House recording
+mp3_source: Charlie Montgomery
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
 source:  House recording
