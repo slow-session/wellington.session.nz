@@ -39,7 +39,7 @@ collected and produced some different options:
 * [2bar-by-type.pdf](/tunebooks/2bar-by-type.pdf "PDF") - PDF with just the first two bars of the tunes
 * [2bar-alphabetical.pdf](/tunebooks/2bar-alphabetical.pdf "PDF") - PDF with just the first two bars of the tunes in alphabetical order
 
-These tunebooks were last updated at: Thu 22 Aug 2019 16:07:37 NZST
+These tunebooks were last updated at: Sat 21 Sep 2019 14:12:09 NZST
 
 {::nomarkdown}
 <p>

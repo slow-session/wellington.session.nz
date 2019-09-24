@@ -4,6 +4,18 @@ title: Wellington Irish Sessions
 ---
 Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/dragon/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. Players of traditional Irish music are welcome. The evening is split into two parts with a slow session early on for those who are relatively new to Irish session music and a regular session for experienced players who are familiar with playing this music at a high standard.
 
+But first a public service announcement:
+
+<div class="licenceUsed">
+<h2>Charlie Montgomery</h2>
+<p>
+Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on <a href="/charlie_montgomery/">this page</a> as well as him playing some old favourites.
+</p>
+<p>
+We'd like to thank Charlie very much for giving us the privilege of being able to post these recordings. We hope you'll enjoy listening and learning these tunes from his playing.
+</p>
+</div>
+
 <a href="/slowsession/">Slow Session</a> - {{ site.slowsession_time }}
 ------------
 
