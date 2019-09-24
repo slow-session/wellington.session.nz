@@ -26,6 +26,7 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
+    %Z: Modified by Megan Ward
     K: Edor
     ed|BEE eEE|BAF GFE|DAD FDF|ABc ded|
     BEE BAB|def ~g2 e|fdB AGF|GED E2:|
