@@ -3,7 +3,7 @@ title: Two Jigs
 titleID: two-jigs-cm.md
 key:
 rhythm: jig
-notes:
+notes: Names for these would be appreciated!
 date: 2019-09-13
 location:
 tags: cm

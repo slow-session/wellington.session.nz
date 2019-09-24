@@ -18,6 +18,19 @@ mp3_url:
 source:  House recording
 abc_source:
 abc_url:
-abc:
+abc: |
+    X: 1
+    T: The Siege Of Ennis
+    R: polka
+    M: 2/4
+    L: 1/8
+    K: Gmaj
+    D>E DC|B,D GA|Bd/B/ AB/A/|GE EG|
+    D>E DC|B,D GA|Bd/B/ AB/A/|1G2 GE:|2G2 GA||
+    |Bd dB|ce ed|Bd/B/ AB/A/|GE EG|
+    Bd dB|ce e>f|g/f/e fd|e2 ef|
+    ge fd|ed BA|Bd/B/ AB/A/|GE EG|
+    D>E DC|B,D GA|Bd/B/ AB/A/|G4 G2||
+
 
 ---
