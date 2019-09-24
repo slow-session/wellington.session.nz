@@ -10,7 +10,7 @@ timing and you can change the values as you see fit.
 
 <br />
 
-<fieldset class="fieldset-auto-width">
+<fieldset>
   <legend>Set the timings:</legend>
   <form id="parameters" method="get">
     <p>
