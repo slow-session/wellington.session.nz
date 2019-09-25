@@ -101,7 +101,7 @@
          }
          appendString += '</tbody></table></div>';
          tunesTable.innerHTML = appendString;
-         tunesCount.innerHTML = 'Displaying ' + tunesCounter + ' tunes';
+         tunesCount.innerHTML = tunesCounter;
      }
 
      function createTableRow(item) {
