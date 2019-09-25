@@ -14,35 +14,33 @@
   */
 
  (function() {
-     function displaySetsTable(results, setStore) {
+     function displaySetsTable(results, store) {
          var setsTable = document.getElementById('tunesTable');
          var setsCount = document.getElementById('tunesCount');
          var setsCounter = 0;
 
-         // Find the tuneIDs that correspond to each set
-         mapSetToTuneIDs();
-
          // create table headers
-         var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
+         var appendString = '<div style="overflow-x:auto;"> \
+         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:20%;">Set Name &#x25B2;&#x25BC;</th> \
            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
            <th style="width:29%;">Titles</th> \
-           <th style="width:45%;">Play Now</th> \
+           <th style="width:45%;">Audio Player</th> \
          </tr> \
          </thead> \
          <tbody>';
 
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
-                 var item = setStore[results[i].ref];
+                 var item = store[results[i].ref];
                  appendString += createTableRow(item);
                  setsCounter++;
              }
          } else {
-             for (var key in setStore) { // Iterate over the original data
-                 var item = setStore[key];
+             for (var key in store) { // Iterate over the original data
+                 var item = store[key];
                  appendString += createTableRow(item);
                  setsCounter++;
              }
@@ -55,7 +53,8 @@
      function createTableRow(item) {
          var tableRow = '';
          var setID = 'ABC' + item.setID;
-         var tuneIDs = item.tuneIDs.split(',');
+         var tuneSources = item.tuneSources.split(',');
+         var setURLs = item.setURLs.split(',');
 
          // build the first three columns
          tableRow += '<tr>';
@@ -63,45 +62,28 @@
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
          tableRow += '<td>' + item.rhythm + '</td>';
          tableRow += '<td><table style="width: 100%;">';
-         for (var i = 0; i < tuneIDs.length; i++) {
-             var url = store[tuneIDs[i]].url;
-             var title = store[tuneIDs[i]].title;
-
-             tableRow += '<tr class="tdArchive" style="background-color:transparent;">';
-             tableRow += '<td  style="vertical-align: center;">';
-             tableRow += '<a href="'+ url + '">' +  title + '</a>';
-             tableRow += '</td></tr>';
+         for (var i = 0; i < setURLs.length; i++) {
+             tableRow += '<tr style="height: 77px; background-color:transparent;"><td  style="vertical-align: center;">' + setURLs[i] + '</td></tr>';
          }
-         tableRow += '</table></td>';
-         tableRow += '<td><table style="width: 100%;">';
-         for (var i = 0; i < tuneIDs.length; i++) {
-             var tuneID = tuneIDs[i];
-
-             tableRow += '<tr class="tdArchive" style="background-color:transparent;">';
-             tableRow += '<td style="vertical-align: center;">';
-             tableRow += '<td><input class="filterButton" type="button" onclick="changeTune(' + tuneID + ');" value="Play Now" /></td>';
-             tableRow += '</tr>';
+         tableRow += '</table></td><td><table style="width: 100%;">';
+         for (var i = 0; i < tuneSources.length; i++) {
+             var setTuneID = (item.setID * 10) + i;
+             // Can't use this on old javascript engines
+             // if (tuneSources[i].includes('mp3')) {
+             if (tuneSources[i].indexOf('mp3') !== -1) {
+                 tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createMP3player(setTuneID, tuneSources[i], 'mp3player_tablerow') + '</td></tr>';
+                 // create an array with the tuneIDs so we can build the sliders at
+                 // run time
+                 sliderArray.push(setTuneID);
+             } else {
+                 var textAreas = document.getElementById("abc-textareas");
+                 tableRow += '<tr id="tr' + setTuneID + '" style="background-color:transparent;"><td>' + createABCplayer(setTuneID, 'abcplayer_tablerow', item.instrument) + '</td></tr>';
+                 textAreas.innerHTML += '<textarea id="ABC' + setTuneID + '" style="display:none;">' + preProcessABC(decodeURI(tuneSources[i])) + '</textarea>';
+             }
          }
          tableRow += '</table></td></tr>';
 
          return tableRow;
-     }
-
-     function mapSetToTuneIDs() {
-         var SetToTuneIDs = {};
-         for (var setKey in setStore) {
-              var setTunes = setStore[setKey].setTunes;
-              for (var i = 0; i < setTunes.length; i++) {
-                  for (var tuneKey in store) {
-                      var tune = store[tuneKey];
-                      if (setTunes[i] == tune.tuneID) {
-                          setStore[setKey].tuneIDs += tuneKey + ',';
-                      }
-                  }
-              }
-              // Strip off trailing ','
-              setStore[setKey].tuneIDs = setStore[setKey].tuneIDs.slice(0, -1);
-         }
      }
 
      function getQueryVariable(variable) {
@@ -143,15 +125,17 @@
          this.field('title', {
              boost: 10
          });
+         this.field('setTitles');
          this.field('rhythm');
      });
 
      // Add the search items to the search index
-     for (var key in window.setStore) { // Add the data to lunr
+     for (var key in window.store) { // Add the data to lunr
          setIndex.add({
              'id': key,
-             'title': window.setStore[key].title,
-             'rhythm': window.setStore[key].rhythm,
+             'title': window.store[key].title,
+             'setTitles': window.store[key].setTitles.replace(/\'/g, ''),
+             'rhythm': window.store[key].rhythm,
          });
      }
 
@@ -160,12 +144,12 @@
          var results = setIndex.search(searchTerm); // Get lunr to perform a search
 
          if (results.length) {
-             displaySetsTable(results, window.setStore);
+             displaySetsTable(results, window.store);
          } else {
              document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
-         displaySetsTable('', window.setStore);
+         displaySetsTable('', window.store);
      }
      return false;
  })();
