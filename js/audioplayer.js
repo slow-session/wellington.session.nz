@@ -231,6 +231,7 @@ function changeTune(tuneNumber) {
 
     // Clear the loop preset display
     loopPresetControls.innerHTML = '';
+    tuneInfo.innerHTML = '';
     document.getElementById('loopForm').style.display = "none";
     segments = [];
 
@@ -712,12 +713,14 @@ function countBarsABC(str) {
         index = 0,
         res = "";
     var tokens = "";
+    var headerRegex = /^([A-Za-z]):\s*(.*)$/;
+    var blankRegex = /^\s*(?:%.*)?$/;
     for (j = 0; j < lines.length; ++j) {
-        header = ABCheader.exec(lines[j]);
+        header = headerRegex.exec(lines[j]);
         if (header) {
             // put the header lines back in place
             newABCHeader += lines[j] + "\n"; // consider special case of a keychange header K: in the middle
-        } else if (/^\s*(?:%.*)?$/.test(lines[j])) {
+        } else if (blankRegex.test(lines[j])) {
             // Skip blank and comment lines.
             continue;
         } else {
