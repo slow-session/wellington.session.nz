@@ -7,8 +7,8 @@ date: 2019-04-29
 location:
 notes:
 tags: ca-banjo-mandolin-2019
-repeats: 
-parts: 
+repeats:
+parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jamesy-gannon_s-barndance.mp3
@@ -22,7 +22,7 @@ abc_url:
 abc: |
   X:3
   T: Jamesy Gannon’s Barndance
-  R: bardance
+  R: barndance
   M: 4/4
   K: D
   |GE|:D2GA BddB|A2GA Bddg|

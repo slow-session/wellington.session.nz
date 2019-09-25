@@ -14,9 +14,8 @@
 
 var playingNow = 0;
 var abcStopped = 0;
-var mp3Available = 1;
-var ABCTuneName = "tune";
-var ABCheader = /^([A-Za-z]):\s*(.*)$/;
+//var mp3Available = 1;
+//var ABCTuneName = "tune";
 var ABCPosition = {
     Ptr: 0
 };
@@ -257,32 +256,56 @@ function setABCPosition(ticks) {
     ABCPosition.Ptr.value = ticks;
 }
 
+function getABCheader(str) {
+
+}
+
 function preProcessABC(str) {
     /*
      * Our simple ABC player doesn't handle repeats well.
      * This function unrolls the ABC so that things play better.
      */
-    var lines = str.split('\n'),
-        j, header, newABCHeader = "",
-        newABCNotes = "",
-        tempStr = "",
-        index = 0,
-        res = "";
-    var tokens = "";
-    for (j = 0; j < lines.length; ++j) {
-        header = ABCheader.exec(lines[j]);
-        if (header) {
+    var lines = str.split('\n');
+    var ABCHeader = [""];
+    var ABCNotes = [""];
+    var headerRegex = /^([A-Za-z]):\s*(.*)$/;
+    var blankRegex = /^\s*(?:%.*)?$/;
+    var tuneIndex = 0;
+    var endOfHeaderFound = false;
+    var processedABC = "";
+    for (var j = 0; j < lines.length; ++j) {
+        if (headerRegex.exec(lines[j])) {
+            if (endOfHeaderFound) {
+                endOfHeaderFound = false;
+                tuneIndex++;
+                ABCHeader[tuneIndex] = "";
+                ABCNotes[tuneIndex] = "";
+                if (lines[j].startsWith('X:')) {
+                    continue;
+                }
+            }
             // put the header lines back in place
-            newABCHeader += lines[j] + "\n"; // consider special case of a keychange header K: in the middle
-        } else if (/^\s*(?:%.*)?$/.test(lines[j])) {
+            ABCHeader[tuneIndex] += lines[j] + "\n";
+            //
+            if (lines[j].startsWith('K:')) {
+                endOfHeaderFound = true;
+            }
+        } else if (blankRegex.test(lines[j])) {
             // Skip blank and comment lines.
             continue;
         } else {
-            // Parse the notes.
-            newABCNotes += lines[j];
+            // Notes to parse
+            ABCNotes[tuneIndex] += lines[j];
         }
     }
+    for (i = 0; i < ABCHeader.length; ++i) {
+        processedABC += ABCHeader[i] + unRollABC(ABCNotes[i]) + "\n";;
+    }
+    return (processedABC);
+}
 
+function unRollABC(ABCNotes) {
+    var index = 0;
     /*
      * Regular expression used to parse ABC - https://regex101.com/ was very helpful in decoding
      *
@@ -337,8 +360,7 @@ function preProcessABC(str) {
         ntokenString = [];
     var bigABCNotes = "";
 
-
-    while ((match = firstBar.exec(newABCNotes)) != null) {
+    while ((match = firstBar.exec(ABCNotes)) != null) {
         fBarPos.push(match.index);
     }
     tokenString[tokenCount] = "fb";
@@ -346,27 +368,27 @@ function preProcessABC(str) {
         fBarPos[0] = 0;
     }
     tokenLocations[tokenCount++] = fBarPos[0]; // first bar
-    while (((match = fEnding.exec(newABCNotes)) || (match = fEnding2.exec(newABCNotes))) != null) {
+    while (((match = fEnding.exec(ABCNotes)) || (match = fEnding2.exec(ABCNotes))) != null) {
         fEndPos.push(match.index);
         tokenString[tokenCount] = "fe";
         tokenLocations[tokenCount++] = match.index; // first endings
     }
-    while (((match = sEnding.exec(newABCNotes)) || (match = sEnding2.exec(newABCNotes))) != null) {
+    while (((match = sEnding.exec(ABCNotes)) || (match = sEnding2.exec(ABCNotes))) != null) {
         sEndPos.push(match.index);
         tokenString[tokenCount] = "se";
         tokenLocations[tokenCount++] = match.index; // second endings
     }
-    while ((match = rRepeat.exec(newABCNotes)) != null) {
+    while ((match = rRepeat.exec(ABCNotes)) != null) {
         rRepPos.push(match.index);
         tokenString[tokenCount] = "rr";
         tokenLocations[tokenCount++] = match.index; // right repeats
     }
-    while ((match = lRepeat.exec(newABCNotes)) != null) {
+    while ((match = lRepeat.exec(ABCNotes)) != null) {
         lRepPos.push(match.index);
         tokenString[tokenCount] = "lr";
         tokenLocations[tokenCount++] = match.index; // left repeats
     }
-    while (((match = dblBar.exec(newABCNotes)) || (match = dblBar2.exec(newABCNotes))) != null) {
+    while (((match = dblBar.exec(ABCNotes)) || (match = dblBar2.exec(ABCNotes))) != null) {
         dblBarPos.push(match.index);
         tokenString[tokenCount] = "db";
         tokenLocations[tokenCount++] = match.index; // double bars
@@ -392,14 +414,14 @@ function preProcessABC(str) {
             break; //safety check
         }
         if ((sortedTokens[i] == "rr") || (sortedTokens[i] == "se")) { //find next repeat or second ending
-            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[i] - pos); //notes from last location to rr or se
+            bigABCNotes += ABCNotes.substr(pos, sortedTokenLocations[i] - pos); //notes from last location to rr or se
             for (k = i - 1; k >= 0; k--) { //march backward from there
                 // check for likely loop point
                 if ((sortedTokens[k] == "se") || (sortedTokens[k] == "rr") || (sortedTokens[k] == "fb") || (sortedTokens[k] == "lr")) {
                     pos = sortedTokenLocations[k]; // mark loop beginning point
                     for (j = k + 1; j < sortedTokens.length; j++) { //walk forward from there
                         if ((sortedTokens[j] == "fe") || (sortedTokens[j] == "rr")) { // walk to likely stopping point (first ending or repeat)
-                            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[j] - pos);
+                            bigABCNotes += ABCNotes.substr(pos, sortedTokenLocations[j] - pos);
                             pos = sortedTokenLocations[j]; // mark last position encountered
                             i = j + 1; //consume tokens from big loop
                             if (sortedTokens[j] == "fe") { //if we got to a first ending we have to skip it...
@@ -407,7 +429,7 @@ function preProcessABC(str) {
                                     if (sortedTokens[l] == "se") {
                                         for (m = l; m < sortedTokens.length; m++) { //look for end of second ending
                                             if (sortedTokens[m] == "db") { //a double bar marks the end of a second ending
-                                                bigABCNotes += newABCNotes.substr(sortedTokenLocations[l],
+                                                bigABCNotes += ABCNotes.substr(sortedTokenLocations[l],
                                                     sortedTokenLocations[m] - sortedTokenLocations[l]); //record second ending
                                                 pos = sortedTokenLocations[m]; //mark most forward progress
                                                 i = m + 1; //consume the tokens from the main loop
@@ -428,7 +450,7 @@ function preProcessABC(str) {
         } //if
     } //for i
 
-    bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[sortedTokens.length - 1] - pos);
+    bigABCNotes += ABCNotes.substr(pos, sortedTokenLocations[sortedTokens.length - 1] - pos);
     bigABCNotes += "\""; //hack to make sure the newBigABCNotes gets fills when there are not quotes
 
     var newBigABCNotes = "";
@@ -473,5 +495,5 @@ function preProcessABC(str) {
     From 0 to (duration / 3) / 2 = A part.
     From (duration / 3) / 2 to (duration / 3) = B part, etc.
 */
-    return (newABCHeader + newBigABCNotes);
+    return (newBigABCNotes);
 }
