@@ -9,15 +9,7 @@ These are the some of the sets we play at the Wellington Slow Session. These set
 If you don't find the set you're looking for you can put tunes together and try them out using our <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
 page.
 
-{% assign tune_rhythms = '' %}
-{% for tune in site.tunes %}
-{% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
-{% unless forloop.last %}
-{% assign tune_rhythms = tune_rhythms | append: ':' %}
-{% endunless %}
-{% endfor %}
-{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
-{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+{% include tunes-filter-variables.html %}
 
 <fieldset>
     <legend>Select from current Wellington Sets:</legend>    
