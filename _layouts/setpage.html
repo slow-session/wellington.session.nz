@@ -33,12 +33,12 @@ var abcSource = '';
 var regex = new RegExp('X:.*\n');
 </script>
 
-<div id="paper0" class="paper" style="max-width: 800px;">
+<div id="paper0" class="paper" style="max-width: 650px;">
 {% assign tuneId = 100 %}
 {% for setTune in page.tunes %}
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
-    <div id="notation{{tuneId}}" class="abc" style="max-width: 800px;"></div>
+    <div id="notation{{tuneId}}" class="abc" style="max-width: 650px;"></div>
     <script>
         tuneList += '{{ tune.title | escape  }} ({{ tune.key}}), ';
 
