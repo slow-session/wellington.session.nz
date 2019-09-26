@@ -85,7 +85,7 @@ window.store = {
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});  
+    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});  
 
     createArchiveSlider('tableSlider');
     document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
