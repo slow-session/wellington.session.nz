@@ -66,10 +66,10 @@
          for (var i = 0; i < tuneIDs.length; i++) {
              var url = store[tuneIDs[i]].url;
              var title = store[tuneIDs[i]].title;
+             var key = store[tuneIDs[i]].key;
 
-             tableRow += '<tr class="tdArchive" style="background-color:transparent;">';
-             tableRow += '<td  style="vertical-align: center;">';
-             tableRow += '<a href="'+ url + '">' +  title + '</a>';
+             tableRow += '<tr class="tdArchive" style="background-color:transparent;"><td>';
+             tableRow += '<a href="'+ url + '">' +  title + ' (' + key + ')</a>';
              tableRow += '</td></tr>';
          }
          tableRow += '</table></td>';
@@ -77,10 +77,9 @@
          for (var i = 0; i < tuneIDs.length; i++) {
              var tuneID = tuneIDs[i];
 
-             tableRow += '<tr class="tdArchive" style="background-color:transparent;">';
-             tableRow += '<td style="vertical-align: center;">';
-             tableRow += '<td><input class="filterButton" type="button" onclick="changeTune(' + tuneID + ');" value="Play Now" /></td>';
-             tableRow += '</tr>';
+             tableRow += '<tr class="tdArchive" style="background-color:transparent;"><td>';
+             tableRow += '<input class="filterButton" type="button" onclick="changeTune(' + tuneID + ');" value="Play Now" />';
+             tableRow += '</td></tr>';
          }
          tableRow += '</table></td></tr>';
 
