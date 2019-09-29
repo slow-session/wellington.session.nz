@@ -10,7 +10,7 @@ tags: slowsession
 repeats:
 parts:
 regtuneoftheweek:
-slowtuneoftheweek: 2019-12-28
+slowtuneoftheweek: 2019-09-28
 mp3_file: /mp3/bag-of-spuds.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>

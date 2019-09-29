@@ -10,7 +10,7 @@ tags: slowsession
 repeats: 3
 parts: ABC 
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2019-09-29
 mp3_file: /mp3/boys-of-malin.mp3
 mp3_source: Paula Doohan & Liz Doherty
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
