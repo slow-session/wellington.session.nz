@@ -3,8 +3,9 @@ layout: page
 title: Play Local Audio
 permalink: /playLocalAudio/
 ---
+Use this to play local MP3 files.
 
-<input type="file" id="files" name="files[]"  accept="audio/*"/>
+<input type="file" id="files" name="files[]"  accept="audio/mp3"/>
 <output id="fileInfo"></output>
 
 <div class="player">
