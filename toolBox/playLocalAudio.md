@@ -3,13 +3,14 @@ layout: page
 title: Play Local Audio
 permalink: /playLocalAudio/
 ---
+Play local MP3 files
 
 <fieldset>
-<legend>Play local MP3 files</legend>
 <input type="file" id="files" name="files[]"  accept="audio/mp3"/>
 </fieldset>
 
 <div class="row"></div>
+<output id="fileInfo"></output>
 
 <div class="player">
 <div id="audioPlayer"></div>
@@ -29,6 +30,7 @@ function handleFileSelect(evt) {
     // files is a FileList of File objects. List some properties.
     for (var i = 0, f; f = files[i]; i++) {
         if (f.type.indexOf('audio') == 0) {
+            fileInfo.innerHTML = '<h2>' + f.name + '<h2>';
             showPlayer.innerHTML = '';
         } else {
             audioPlayer.innerHTML = '';
