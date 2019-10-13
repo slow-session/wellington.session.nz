@@ -3,7 +3,8 @@ layout: page
 title: Play Local Audio
 permalink: /playLocalAudio/
 ---
-<div id="drop_zone">Drop files here</div>
+
+<input type="file" id="files" name="files[]"  accept="audio/*"/>
 <output id="fileInfo"></output>
 
 <div class="player">
@@ -15,7 +16,7 @@ function handleFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
 
-    var files = evt.dataTransfer.files; // FileList object.
+    var files = evt.target.files; // FileList object.
     var fileInfo = document.getElementById('fileInfo');
     var audioPlayer = document.getElementById('audioPlayer');
     var showPlayer = document.getElementById('showPlayer');
@@ -29,7 +30,7 @@ function handleFileSelect(evt) {
         } else {
             audioPlayer.innerHTML = '';
             showPlayer.innerHTML = '';
-            fileInfo.innerHTML = '<h2>' + f.name + ' is not an audio file</h2>';
+            fileInfo.innerHTML = '<h2>' + f.name + ' is not a supported audio file</h2>';
             continue;
         }       
         var reader = new FileReader();
@@ -42,18 +43,9 @@ function handleFileSelect(evt) {
     }
 }
 
-function handleDragOver(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
-}
-
 // Check for the various File API support.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
-    // Setup the dnd listeners.
-    var dropZone = document.getElementById('drop_zone');
-    dropZone.addEventListener('dragover', handleDragOver, false);
-    dropZone.addEventListener('drop', handleFileSelect, false);
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
 } else {
     alert('The File APIs are not fully supported in this browser.');
 }
