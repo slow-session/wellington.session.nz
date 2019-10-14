@@ -4,18 +4,18 @@ titleID: king-of-the-fairies.md
 key: Edor
 rhythm: hornpipe
 date: 2019-03-13
-location: Wellington 
-notes: 
-tags: 
-repeats: 
-parts: 
-regtuneoftheweek: 
+location: Wellington
+notes:
+tags:
+repeats: 2
+parts: AABCBC
+regtuneoftheweek:
 slowtuneoftheweek: 2019-10-13
 mp3_file: /mp3/king-of-the-fairies.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UC83KeE92brBlML9UX07iQjg">Gilles Poutoux</a>
 mp3_licence: "© Gilles Poutoux. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=IIGr1aSlp8k
-alt_mp3_url: 
+alt_mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/475
