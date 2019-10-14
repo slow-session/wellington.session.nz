@@ -115,6 +115,6 @@ $.extend(window.store, tuneOfTheWeek);
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});
+    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});
 });
 </script>
