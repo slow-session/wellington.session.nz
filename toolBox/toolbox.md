@@ -38,11 +38,11 @@ If you want to help us add a new set to the archive you can use the
 Send your set suggestion to <a href="{{ site.email }}">{{ site.email }}</a> and
 we'll have a look.
 
-[playMP3](/playMP3/)
+[Play Local Audio](/playLocalAudio/)
 -------
-If you come across audio files on the Internet that aren't on our site you can use
-the [playMP3](/playMP3/) page to slow down a number of audio and video formats and
-play parts of them in a loop.
+If you audio files on your own computer you can use the
+[Play Local Audio](/playLocalAudio/) page to slow down a number of audio and
+video formats and play parts of them in a loop.
 
 [The Long Bow](/longbow/)
 -------

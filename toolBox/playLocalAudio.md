@@ -3,10 +3,16 @@ layout: page
 title: Play Local Audio
 permalink: /playLocalAudio/
 ---
-Play local MP3 files
+You can use this page to slow down a number of audio and video formats and play parts of them in a loop. These types of file should work fine:
+
+    .mp3, .m4a, .ogg, .wav
+
+And other formats might work as well.
+
+You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-converter/">YouTube to MP3 Converter</a> to extract the audio from YouTube and Facebook videos and store MP3 files locally.
 
 <fieldset>
-<input type="file" id="files" name="files[]"  accept="audio/mp3"/>
+<input type="file" id="files" name="files[]"  accept="audio/x-m4a, audio/mpeg, audio/ogg, audio/wav"/>
 </fieldset>
 
 <div class="row"></div>
@@ -33,6 +39,7 @@ function handleFileSelect(evt) {
             fileInfo.innerHTML = '<h2>' + f.name + '<h2>';
             showPlayer.innerHTML = '';
         } else {
+            fileInfo.innerHTML = f.name + ' - unsupported file type';
             audioPlayer.innerHTML = '';
             showPlayer.innerHTML = '';
             continue;
