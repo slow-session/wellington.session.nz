@@ -47,6 +47,8 @@ Want to learn a tune from YouTube?
 
 There are features built into the YouTube player that allow you to slow down the recording and also to play the complete recording in a loop.
 
+You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-converter/">YouTube to MP3 Converter</a> to extract the audio from YouTube and Facebook videos and store MP3 files locally and then you can use our [Play Local Audio](/playLocalAudio/) page.
+
 Other software
 --------------
 
