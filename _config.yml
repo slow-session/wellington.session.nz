@@ -52,7 +52,8 @@ google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
 facebook_user: WellingtonSession
-facebook_app_id:                      #enter your App ID
+# default FB id
+facebook_app_id: 966242223397117
 facebook_locale: en_US
 facebook_page: https://www.facebook.com/groups/WellingtonSession/
 facebook_image: /images/pubscene-small.jpg
