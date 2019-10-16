@@ -84,14 +84,14 @@ defaults:
         path: "_tunes"
     values:
         layout: "tunepage"
-        permalink: /:path:output_ext
+        permalink: /tunes/:title:output_ext
   - scope:
         path: "_othertunes"
     values:
         layout: "tunepage"
-        permalink: /:path:output_ext
+        permalink: /othertunes/:title:output_ext
   - scope:
         path: "_sets"
     values:
         layout: "setpage"
-        permalink: /:path:output_ext
+        permalink: /sets/:title:output_ext
