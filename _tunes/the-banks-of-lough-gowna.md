@@ -12,10 +12,10 @@ parts: 2
 regtuneoftheweek:
 slowtuneoftheweek: 2019-10-16
 mp3_file: /mp3/the-banks-of-lough-gowna.mp3
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_235_4_allow_ceili_band_jigs_at_the_2007_all_ireland/
-alt_mp3_url:
+mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
+mp3_licence: "© Bob Midden. All Rights Reserved."
+mp3_url: http://toraigh.com/slowsessions/BanksLoughGowna.mp3
+alt_mp3_url: https://www.youtube.com/watch?v=B0HB0FQyesY
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/775
@@ -26,7 +26,7 @@ abc: |
   M: 6/8
   L: 1/8
   K: Bmin
-  BcB BAF|FEF DFA|BcB BAF|d2e fed|
+  |:BcB BAF|FEF DFA|BcB BAF|d2e fed|
   BcB BAF|FEF DFA|def geg|1 fdB Bdc:|2 fdB ~B3||
   |:def ~a3|afb afe|dFA def|geg fdB|
   def ~a3|afb afe|def geg|1 fdB ~B3:|2 fdB Bdc||
