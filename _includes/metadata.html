@@ -4,12 +4,8 @@
 {% else %}
 {% assign description = page.title %}
 {% endif %}
-{{ page.title }}
-{{ page.url }}
 
-<!--
 <meta property="og:url" content="{% if page.url %}{{ site.github.url }}{{ page.url }}{% else %}{{ site.github.url }}{% endif %}/" />
--->
 <meta property="og:title" content="{{ description }}" />
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:locale" content="{{ site.facebook_locale }}" />
