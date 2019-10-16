@@ -8,12 +8,11 @@ date: 2016-09-28
 location: Arrowtown Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats:
+parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hewlett.mp3
-mp3_licence:
 mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
 mp3_licence: "© Bob Midden. All Rights Reserved."
 mp3_url: http://toraigh.com/slowsessions/Hewlett.mp3
