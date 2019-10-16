@@ -24,12 +24,12 @@ abc: |
     I:speed 300
     M:6/8
     K:G
-    GA|BAG ~E2D|EGD E2D|BAG ~E2D|EAA ABc|
+    |:GA|BAG ~E2D|EGD E2D|BAG ~E2D|EAA ABc|
     BAG ~E2D|EGD ~E2D|DEG AGA|BGF G2:|
-    D|GBd ~e2d|egd BAB|GBd ~e2d|eaa aga|
+    |:D|GBd ~e2d|egd BAB|GBd ~e2d|eaa aga|
     bgg age|gfe dBA|BAG ~E2D|EGF G2:|
-    
-    
-    
+
+
+
 
 ---
