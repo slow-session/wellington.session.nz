@@ -13,7 +13,7 @@ Slow Session Tune of the Week
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
 <fieldset class="fieldset-auto-width">
-<legend>Slow tune of the week:</legend>
+<legend>Slow tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">
         <span title="Go to Tunepage">
@@ -58,7 +58,7 @@ Regular Session Tune of the Week
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
 <fieldset class="fieldset-auto-width">
-<legend>Regular tune of the week:</legend>
+<legend>Regular tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">
         <span title="Go to Tunepage">
