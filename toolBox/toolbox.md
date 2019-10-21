@@ -7,7 +7,7 @@ This page has links to tools that are useful for anyone wanting to work with ABC
 
 [Play Local Audio](/playLocalAudio/)
 -------
-If you audio files on your own computer you can use the
+If you have audio files on your own computer you can use the
 [Play Local Audio](/playLocalAudio/) page to slow down a number of audio and
 video formats and play parts of them in a loop.
 
