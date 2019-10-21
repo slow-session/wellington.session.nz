@@ -16,6 +16,7 @@ You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-conver
 </fieldset>
 
 <div class="row"></div>
+<br />
 <output id="fileInfo"></output>
 
 <div class="player">
