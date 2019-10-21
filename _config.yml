@@ -1,14 +1,14 @@
 # Site settings
 name: Wellington Irish Sessions
 email: admin@session.nz
-author: asjl
-
+author: admin@session.nz
 keywords: irish, traditional, music, jigs, reels, polkas, craic
 description: Irish trad tune archive
-defaultABCplayer: 'piano'
 
+# Parameters embedded in site
 slowsession_time: "7:30 to 8:40"
 session_time: "8:50 to late"
+defaultABCplayer: 'piano'
 
 # Only use this if you are serving your site via Github Pages
 github:
