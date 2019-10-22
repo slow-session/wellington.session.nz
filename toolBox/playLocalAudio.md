@@ -21,7 +21,8 @@ You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-conver
 
 <div class="player">
 <div id="audioPlayer"></div>
-<div id="showPlayer">
+<div id="showPlayer"></div>
+</div>
 
 <script>
 function handleFileSelect(evt) {
@@ -62,7 +63,3 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
     alert('The File APIs are not fully supported in this browser.');
 }
 </script>
-
-
-</div>
-</div>
