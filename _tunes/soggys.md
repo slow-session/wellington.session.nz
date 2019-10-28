@@ -12,7 +12,7 @@ parts: 2
 regtuneoftheweek:
 slowtuneoftheweek: 2019-10-28
 mp3_file: /mp3/soggys.mp3
-mp3_source:
+mp3_source: <a href="https://www.youtube.com/channel/UClYVRYfxWN1TCLSnkMsLo-Q">Björn Persmats</a>
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=at-3fx6b0tg
 alt_mp3_url: https://www.youtube.com/watch?v=OwZn9tM70Jc
