@@ -23,6 +23,7 @@ abc: |
   X: 1
   T: Soggy's
   R: slip jig
+  C: Seán Óg Graham
   M: 9/8
   L: 1/8
   K: A
