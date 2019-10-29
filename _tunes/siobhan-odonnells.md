@@ -12,7 +12,7 @@ parts:
 regtuneoftheweek:
 slowtuneoftheweek: 2017-09-28
 mp3_file: /mp3/siobhan-odonnells.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1426238097472521/
 source: Wellington

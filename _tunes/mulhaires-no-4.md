@@ -12,7 +12,7 @@ parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mulhaires-no-4.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1252632001499799/
 source: Wellington

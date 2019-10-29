@@ -12,7 +12,7 @@ parts:
 regtuneoftheweek:
 slowtuneoftheweek: 2018-04-08
 mp3_file: /mp3/love-at-the-endings.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=nDVWO01ZWqs
 source: Wellington

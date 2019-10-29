@@ -12,7 +12,7 @@ parts:
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/limerick-lasses.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=npQ7Gon0H8U
 alt_mp3_url: 
