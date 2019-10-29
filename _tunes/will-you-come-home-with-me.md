@@ -7,14 +7,14 @@ date: 2016-11-09
 location: Raglan Wellington
 notes:
 tags:
-repeats: 3
+repeats: 2
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/will-you-come-home-with-me.mp3
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: https://archive.comhaltas.ie/tracks/14265
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
+mp3_source: Zoe Conway & Meabh O'Hare
+mp3_url: https://www.youtube.com/watch?v=Hzi7OhSzysw&t=126
 abc_url:
 source: Wellington
 abc: |
