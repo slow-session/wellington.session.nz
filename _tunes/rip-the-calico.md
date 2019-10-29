@@ -7,12 +7,12 @@ date: 2018-07-05
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats:
+parts:
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rip-the-calico.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>, member of <a href="http://www.webanjo3.com/">We Banjo 3</a>
+mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=fLXZ4FxFuJY
 source: Wellington
