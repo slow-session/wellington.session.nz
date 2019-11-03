@@ -31,6 +31,6 @@ abc: |
     |:d^cd ege =c2A|d^cd faf ~g3|afa ged c2A|BAG FAF GED:|
     |:FGA AFd AFd|AFd AFd GED|FGA AFA c2A|BAG FAF GED:|
     |:~D3 ~D3 c3|c2B c2A GEA|~D3 ~D3 d2A|dfe dcA GED:|
-    |:d^cd ege =c2A|d^cd fdf ~g3|~a ged c2A|BAG FAF GED:|
+    |:d^cd ege =c2A|d^cd fdf ~g3|~a3 ged c2A|BAG FAF GED:|
 
 ---
