@@ -256,10 +256,6 @@ function setABCPosition(ticks) {
     ABCPosition.Ptr.value = ticks;
 }
 
-function getABCheader(str) {
-
-}
-
 function preProcessABC(str) {
     /*
      * Our simple ABC player doesn't handle repeats well.
