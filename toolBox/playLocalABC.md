@@ -6,12 +6,11 @@ permalink: /playLocalABC/
 You can use this page to play an ABC file you've stored locally.
 
 <fieldset>
-<input type="file" id="files" name="files[]" accept="text/vnd.abc"/>
+<input type="file" id="files" name="files[]" accept=".abc"/>
 </fieldset>
 
 <div class="row"></div>
 <br />
-<output id="fileInfo"></output>
 
 <textarea id="abc" style="display:none;"></textarea>
 <!-- Area to store unrolled ABC -->
@@ -21,8 +20,8 @@ You can use this page to play an ABC file you've stored locally.
 </div>
 
 <div class="player">
-<div id="audioPlayer"></div>
-<div id="showPlayer">
+<div id="showPlayer"></div>
+</div>
 
 <script>
 function handleFileSelect(evt) {
@@ -30,30 +29,21 @@ function handleFileSelect(evt) {
     evt.preventDefault();
 
     var files = evt.target.files; // FileList object.
-    var fileInfo = document.getElementById('fileInfo');
-    var audioPlayer = document.getElementById('audioPlayer');
-    var showPlayer = document.getElementById('showPlayer');
-    audioPlayer.innerHTML = createAudioPlayer();
 
     // files is a FileList of File objects. List some properties.
     for (var i = 0, f; f = files[i]; i++) {
-        console.log(f.name);
-        showPlayer.innerHTML = '';
-        if (f.name.endsWith('.abc') == false) {
-            fileInfo.innerHTML = '<h2>Choose a <i>.abc</i> file<h2>';
-            continue;
-        }
-
         var reader = new FileReader();
-        reader.onload = function(e) {
-            //fileInfo.innerHTML = '<h2>' + getABCheaderValue("T:", this.result) + '<h2>';
 
+        reader.onload = function(e) {
             abc.value = this.result;
             // Display the ABC in the textbox as dots
             abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 
-            // Get ready to play the initial ABC
             ABCprocessed.value = preProcessABC(this.result);            
+            if (showPlayer.innerHTML.includes("playABC")) {
+                // already loaded a tune which might be playing
+                stopABC("ABCprocessed");
+            }
             showPlayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
         };
         reader.readAsText(f);
@@ -62,11 +52,10 @@ function handleFileSelect(evt) {
 
 // Check for the various File API support.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
+    var showPlayer = document.getElementById('showPlayer');
+
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
 } else {
     alert('The File APIs are not fully supported in this browser.');
 }
 </script>
-
-</div>
-</div>
