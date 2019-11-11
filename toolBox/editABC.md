@@ -30,8 +30,7 @@ If you want to add a new tune to the archive you can use the
     </div>
     <div class="small-5 columns">
         <!-- Group the input and controls for ABC-->
-        <br />
-        <h3><b>Edit the ABC here:</b></h3>
+        <h3>Edit this sample ABC:</h3>
         <!-- Read the modified ABC and play if requested -->
         <textarea name='abc' id="abc" rows="13" cols="55"
         style="background-color:#ebebeb; font-size:small; max-width:100%;"
@@ -52,6 +51,11 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
         <!-- Show errors -->
         <div id='warnings'></div>
 
+        <h3>Or load an ABC file:</h3>
+        <input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
+        <output id="fileInfo"></output>
+        <br />
+        <br />
         <!-- Allow the user to save their ABC-->
         <h3>Don’t forget to ‘Download ABC’ to save your work</h3>
         <form>
@@ -68,24 +72,67 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
 <script>
 $(document).ready(function()
 {
+    // Check for the various File API support.
+    var fileInfo = document.getElementById('fileInfo');
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+    } else {
+        fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
+    }
+
 	// Create the ABC player
 	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
 
-	// Get ready to play the initial ABC
-	ABCprocessed.value = preProcessABC(abc.value);
-
-	// Set the filename for downloading
-	document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCprocessed.value)) + '.abc';
+    processABCchange(abc);
 
 	// If the ABC changes get ready to play the revised ABC
-	$('#abc').bind('input propertychange', function() {
-		ABCprocessed.value = preProcessABC(abc.value);
-
-		// Reset the filename for downloading
-	    document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCprocessed.value)) + '.abc';
+	$('#abc').change(function() {
+        processABCchange(abc);
 	});
+});
+
+function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    var files = evt.target.files; // FileList object.
+
+    // files is a FileList of File objects. List some properties.
+    for (var i = 0, f; f = files[i]; i++) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            // Is ABC file valid?
+            if ((getABCheaderValue("X:", this.result) == '')
+                || (getABCheaderValue("T:", this.result) == '')
+                || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
+                return (1);
+            }
+
+            // stop tune currently playing
+            if (playButtonprocessed.className == "stopButton") {
+                stopABC("ABCprocessed");
+                playButtonprocessed.className = "";
+                playButtonprocessed.className = "playButton";
+            }
+
+            // Load the new dots
+            abc.value = this.result;
+
+            processABCchange(abc);
+        };
+        reader.readAsText(f);
+    }
+}
+
+function processABCchange(abc) {
+    // Unroll the ABC to make repeats work properly
+    ABCprocessed.value = preProcessABC(abc.value);
+
+    // Reset the filename for downloading
+    document.getElementById("filename").innerHTML = slugify(getABCtitle(abc.value)) + '.abc';
 
     // Display the ABC in the textbox as dots
     abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-});
+}
 </script>

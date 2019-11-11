@@ -42,7 +42,7 @@ function getABCtitle(tuneStr) {
 
     for (i = 0; i < lines.length; i += 1) {
         if (lines[i].match(/^T:/)) {
-            title = lines[i].replace(/T:\s+/, '');
+            title = lines[i].replace(/T:\s?/, '');
             break;
         }
     }
