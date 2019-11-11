@@ -5,12 +5,8 @@ permalink: /playLocalABC/
 ---
 You can use this page to play an ABC file you've stored locally.
 
-<fieldset>
-<input type="file" id="files" name="files[]" accept=".abc"/>
-</fieldset>
+<input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
 
-<div class="row"></div>
-<br />
 <output id="fileInfo"></output>
 
 <textarea id="abc" style="display:none;"></textarea>
@@ -42,7 +38,7 @@ function handleFileSelect(evt) {
                 || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
                 return (1);
             }
-            
+
             // Show the dots
             abc.value = this.result;
             // Display the ABC in the textbox as dots
