@@ -11,6 +11,7 @@ You can use this page to play an ABC file you've stored locally.
 
 <div class="row"></div>
 <br />
+<output id="fileInfo"></output>
 
 <textarea id="abc" style="display:none;"></textarea>
 <!-- Area to store unrolled ABC -->
@@ -35,10 +36,19 @@ function handleFileSelect(evt) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
+            // Is ABC file valid?
+            if ((getABCheaderValue("X:", this.result) == '')
+                || (getABCheaderValue("T:", this.result) == '')
+                || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
+                return (1);
+            }
+            
+            // Show the dots
             abc.value = this.result;
             // Display the ABC in the textbox as dots
             abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 
+            // set up player
             ABCprocessed.value = preProcessABC(this.result);            
             if (showPlayer.innerHTML.includes("playABC")) {
                 // already loaded a tune which might be playing
@@ -52,6 +62,7 @@ function handleFileSelect(evt) {
 
 // Check for the various File API support.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
+    var fileInfo = document.getElementById('fileInfo');
     var showPlayer = document.getElementById('showPlayer');
 
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
