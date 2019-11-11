@@ -11,12 +11,9 @@ And other formats might work as well.
 
 You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-converter/">YouTube to MP3 Converter</a> to extract the audio from YouTube and Facebook videos and store MP3 files locally.
 
-<fieldset>
-<input type="file" id="files" name="files[]"  accept="audio/x-m4a, audio/mpeg, audio/ogg, audio/wav"/>
-</fieldset>
 
-<div class="row"></div>
-<br />
+<input type="file" id="files" class='filterButton' name="files[]"  accept="audio/x-m4a, audio/mpeg, audio/ogg, audio/wav"/>
+
 <output id="fileInfo"></output>
 
 <div class="player">
