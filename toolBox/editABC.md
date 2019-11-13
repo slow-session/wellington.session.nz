@@ -110,7 +110,8 @@ function handleFileSelect(evt) {
             }
 
             // stop tune currently playing
-            if (playButtonprocessed.className == "stopButton") {
+            if (typeof playButtonprocessed !== 'undefined'
+                && playButtonprocessed.className == "stopButton") {
                 stopABC("ABCprocessed");
                 playButtonprocessed.className = "";
                 playButtonprocessed.className = "playButton";
