@@ -45,11 +45,15 @@ function handleFileSelect(evt) {
             abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 
             // set up player
-            ABCprocessed.value = preProcessABC(this.result);            
-            if (showPlayer.innerHTML.includes("playABC")) {
-                // already loaded a tune which might be playing
+            ABCprocessed.value = preProcessABC(this.result);
+
+            // stop tune currently playing
+            if (typeof playButtonprocessed !== 'undefined'
+                && playButtonprocessed.className == "stopButton") {
                 stopABC("ABCprocessed");
-            }
+                playButtonprocessed.className = "";
+                playButtonprocessed.className = "playButton";
+            }   
             showPlayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
         };
         reader.readAsText(f);
