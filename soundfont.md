@@ -10,7 +10,10 @@ permalink: /soundfont/
     <option>Choose an instrument</option>
   </select>
 </form>
-
+<br />
+<p>
+See <a href="https://github.com/danigb/soundfont-player">https://github.com/danigb/soundfont-player</a> for more info.
+</p>
 
 <script src="/js/soundfont-player.min.js"></script>
 <script>
@@ -188,4 +191,5 @@ function getOption() {
     console.log('Loading ' + instrument);
     playInstrument(instrument);
 }
+
 </script>
