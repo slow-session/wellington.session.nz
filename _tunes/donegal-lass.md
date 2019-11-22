@@ -4,13 +4,13 @@ titleID: donegal-lass.md
 key: Amix
 rhythm: jig
 date: 2019-11-21
-location: Wellington 
-notes: 
-tags: 
+location: Wellington
+notes:
+tags:
 repeats: 2
 parts: 2
-regtuneoftheweek: 
-slowtuneoftheweek: 
+regtuneoftheweek: 2019-11-22
+slowtuneoftheweek:
 mp3_file: /mp3/donegal-lass.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: "© Katie Davis Henderson. All Rights Reserved."
