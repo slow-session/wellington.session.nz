@@ -15,7 +15,7 @@ mp3_file: /mp3/last-nights-fun.mp3
 mp3_source: Eileen O'Brien @ Ceol Aneas 2019
 mp3_licence: "© Eileen O'Brien. All Rights Reserved."
 mp3_url:
-alt_mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1381653431930988/
+alt_mp3_url: https://www.youtube.com/watch?v=oGNY40rg4VA
 source: Wellington
 abc_source: Eileen O'Brien @ Ceol Aneas 2019
 abc_url:
