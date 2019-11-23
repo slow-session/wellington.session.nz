@@ -8,13 +8,17 @@ permalink: /demo/
 <p>You are in control of the look of the cursor. Two different techniques are demonstrated: highlighting the note being played and putting a cursor on the page. The class CursorControl must be supplied by your program.</p>
 <p>As the piece is playing, there are callbacks when the note changes. The info returned in the callback is printed to the page as it is received.</p>
 <p>The visual control for playing music can look different. In this example, the abcjs-audio.css file has been loaded. You can supply your own css.</p>
+
 <button class="next filterButton">Next Tune</button>
 <button class="start filterButton">Start/Pause</button>
 <button class="download filterButton" style="display: none;">Download</button>
+
 <div id="paper"></div>
 <div id="audio"></div>
 <p class="beat"></p>
+
 <p class="click-explanation" style="display:none;">Click on a note to play that note.</p>
+
 <pre class="clicked-info"></pre>
 <pre class="feedback"></pre>
 
@@ -50,7 +54,6 @@ main {
 }
 </style>
 
-<script src="/js/abcjs_basic_5.10.2-min.js" type="text/javascript"></script>
 <script type="text/javascript">
 function CursorControl() {
     var self = this;
