@@ -19,7 +19,7 @@
  ################################################################################
 */
 function myDebug(message){
-    console.log(message);
+    //console.log(message);
 }
 
 var BeginLoopTime = 0;
