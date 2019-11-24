@@ -22,6 +22,7 @@ abc_url: https://thesession.org/tunes/1288#setting30533
 abc: |
     X: 1
     T: Abbeyleix, The
+    C: Sean Ryan
     Z: benhockenberry
     S: https://thesession.org/tunes/1288#setting30533
     R: reel
