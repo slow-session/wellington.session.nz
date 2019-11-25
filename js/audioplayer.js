@@ -157,16 +157,6 @@ function createSliders(tuneID) {
     });
 }
 
-// If/when move away from the old style tables like the original tunes_archive layout
-// we won't need this
-var sliderArray = [];
-
-function Create_archive_sliders() {
-    for (var i = 0; i < sliderArray.length; i++) {
-        createSliders(sliderArray[i]);
-    }
-}
-
 function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSource) {
     if (playButton.className == "playButton") {
         //myDebug(OneAudioPlayer.src + ', ' + audioSource);
@@ -970,7 +960,7 @@ function assignEndLoopTime(endLoopValue) {
     if (endLoopValue > OneAudioPlayer.duration) {
         endLoopValue = OneAudioPlayer.duration;
     }
-    return(endLoopValue);
+    return (endLoopValue);
 }
 
 function testForIOS() {
