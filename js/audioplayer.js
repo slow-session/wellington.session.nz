@@ -319,16 +319,16 @@ function initialiseAudioSlider() {
 
 function positionUpdate() {
     if (OneAudioPlayer.currentTime >= EndLoopTime) {
-        console.log("Current time: " + OneAudioPlayer.currentTime);
+        myDebug("Current time: " + OneAudioPlayer.currentTime);
         OneAudioPlayer.currentTime = BeginLoopTime;
-        console.log("Reset loop start to: " + OneAudioPlayer.currentTime);
+        myDebug("Reset loop start to: " + OneAudioPlayer.currentTime);
     }
     CurrentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
 }
 
 function restartLoop() {
     OneAudioPlayer.currentTime = BeginLoopTime;
-    console.log("Restarting loop at: " + OneAudioPlayer.currentTime);
+    myDebug("Restarting loop at: " + OneAudioPlayer.currentTime);
     OneAudioPlayer.play();
 }
 
