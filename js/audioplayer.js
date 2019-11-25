@@ -19,12 +19,11 @@
  ################################################################################
 */
 function myDebug(message){
-    //console.log(message);
+    console.log(message);
 }
 
 var BeginLoopTime = 0;
 var EndLoopTime = 0;
-var PreviousTrID = null;
 var PreviouspButton = null;
 var CurrentAudioSlider = null;
 
@@ -34,7 +33,7 @@ myDebug("isIOS: " + isIOS);
 function createAudioPlayer() {
     var pagePlayer = '';
     pagePlayer += '<!-- declare an Audio Player for this page-->';
-    pagePlayer += '<audio id="OneAudioPlayer" loop">';
+    pagePlayer += '<audio id="OneAudioPlayer">';
     pagePlayer += '    <source id="mp3Source" type="audio/mp3"></source> ';
     pagePlayer += '    Your browser does not support the audio format.';
     pagePlayer += '</audio>';
@@ -44,7 +43,6 @@ function createAudioPlayer() {
 
 function createMP3player(tuneID, mp3url, playerClass) {
     var mp3player = '';
-    var trID = 'tr' + tuneID;
     // build the MP3 player for each tune
 
     mp3player += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
@@ -53,7 +51,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     // Col 1 - play button
     mp3player += '      <div class="small-2 columns">';
     mp3player += '        <button id="playButton' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(\'' + trID + '\', audioplayer' + tuneID + ', playButton' + tuneID + ',  playPosition' + tuneID + ', speedSlider' + tuneID + ', \'' + mp3url + '\')">';
+    mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', playButton' + tuneID + ',  playPosition' + tuneID + ', speedSlider' + tuneID + ', \'' + mp3url + '\')">';
     mp3player += '        </button>';
     mp3player += '      </div>';
     // Nested row in second column
@@ -122,11 +120,11 @@ function createSliders(tuneID) {
     audioSlider.noUiSlider.on('change', function(values, handle) {
         if (handle === 0) {
             BeginLoopTime = values[0];
-            EndLoopTime = values[2];
+            EndLoopTime = assignEndLoopTime(values[2]);
             saveUserLoop(values);
         } else if (handle === 2) {
             BeginLoopTime = values[0];
-            EndLoopTime = values[2];
+            EndLoopTime = assignEndLoopTime(values[2]);
             saveUserLoop(values);
         } else if (handle === 1) {
             OneAudioPlayer.currentTime = values[1];
@@ -169,24 +167,17 @@ function Create_archive_sliders() {
     }
 }
 
-function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, audioSource) {
+function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSource) {
     if (playButton.className == "playButton") {
-        myDebug(OneAudioPlayer.src + ', ' + audioSource);
+        //myDebug(OneAudioPlayer.src + ', ' + audioSource);
         if (!OneAudioPlayer.src.includes(audioSource)) {
             if (OneAudioPlayer.src != null) { //reset previous audio player
                 //audioSlider.noUiSlider.values[1] = 0;
                 if (PreviouspButton != null) {
                     PreviouspButton.className = "playButton";
                 }
-                if (document.getElementById(PreviousTrID)) {
-                    document.getElementById(PreviousTrID).style.backgroundColor = '';
-                }
             }
             PreviouspButton = playButton;
-            PreviousTrID = trID;
-            if (document.getElementById(trID)) {
-                document.getElementById(trID).style.backgroundColor = 'khaki';
-            }
 
             LoadAudio(audioSource, playPosition);
 
@@ -202,6 +193,7 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
         // This event listener keeps track of the cursor and restarts the loops
         // when needed - we don't need to set it elsewhere
         OneAudioPlayer.addEventListener("timeupdate", positionUpdate);
+        OneAudioPlayer.addEventListener("ended", restartLoop);
 
         OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get() / 100;
 
@@ -218,9 +210,6 @@ function playAudio(trID, audioplayer, playButton, playPosition, speedSlider, aud
         OneAudioPlayer.pause();
         playButton.className = "";
         playButton.className = "playButton";
-        if (document.getElementById(trID)) {
-            document.getElementById(trID).style.backgroundColor = '';
-        }
     }
 
 }
@@ -303,7 +292,7 @@ function changeTune(tuneNumber) {
 }
 
 function LoadAudio(audioSource, playPosition) {
-    myDebug("Loading: " + audioSource)
+    //myDebug("Loading: " + audioSource)
     OneAudioPlayer.src = audioSource;
     playPosition.noUiSlider.updateOptions({
         tooltips: [wNumb({
@@ -322,18 +311,25 @@ function initialiseAudioSlider() {
     CurrentAudioSlider.noUiSlider.updateOptions({
         range: {
             'min': 0,
-            'max': Number(OneAudioPlayer.duration)
+            'max': OneAudioPlayer.duration
         }
     });
     resetFromToSliders();
 }
 
 function positionUpdate() {
-    if ((OneAudioPlayer.currentTime >= (OneAudioPlayer.duration - .25)) ||
-        (OneAudioPlayer.currentTime >= EndLoopTime)) {
+    if (OneAudioPlayer.currentTime >= EndLoopTime) {
+        console.log("Current time: " + OneAudioPlayer.currentTime);
         OneAudioPlayer.currentTime = BeginLoopTime;
+        console.log("Reset loop start to: " + OneAudioPlayer.currentTime);
     }
     CurrentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
+}
+
+function restartLoop() {
+    OneAudioPlayer.currentTime = BeginLoopTime;
+    console.log("Restarting loop at: " + OneAudioPlayer.currentTime);
+    OneAudioPlayer.play();
 }
 
 // We'll build a segments structure on the fly for each tune
@@ -613,7 +609,7 @@ function applySegments() {
         CurrentAudioSlider.noUiSlider.setHandle(0, fullBeginLoopTime);
         CurrentAudioSlider.noUiSlider.setHandle(2, fullEndLoopTime);
         BeginLoopTime = fullBeginLoopTime;
-        EndLoopTime = fullEndLoopTime;
+        EndLoopTime = assignEndLoopTime(fullEndLoopTime);
         if (OneAudioPlayer.paused == false) {
             // audio was  playing when they fiddled with the checkboxes
             var promise = OneAudioPlayer.play();
@@ -660,7 +656,7 @@ function Adjust_up(row, inputBox) {
         if (inputBox == 0) {
             BeginLoopTime = checkBox.value;
         } else if (inputBox == 2) {
-            EndLoopTime = checkBox.value;
+            EndLoopTime = assignEndLoopTime(checkBox.value);
         }
     }
 }
@@ -695,7 +691,7 @@ function Adjust_down(row, inputBox) {
         if (inputBox == 0) {
             BeginLoopTime = checkBox.value;
         } else if (inputBox == 2) {
-            EndLoopTime = checkBox.value;
+            EndLoopTime = assignEndLoopTime(checkBox.value);
         }
 
     }
@@ -961,12 +957,20 @@ function setToSlider() {
 function resetFromToSliders() {
     CurrentAudioSlider.noUiSlider.setHandle(0, 0);
     BeginLoopTime = 0;
-    CurrentAudioSlider.noUiSlider.setHandle(2, Number(OneAudioPlayer.duration));
-    EndLoopTime = Number(OneAudioPlayer.duration);
+    CurrentAudioSlider.noUiSlider.setHandle(2, OneAudioPlayer.duration);
+    EndLoopTime = OneAudioPlayer.duration;
     // Uncheck all the checkboxes in the Preset Loops
     for (i = 0; i < segments.length; i++) {
         document.getElementById("check" + i).checked = false;
     }
+}
+
+function assignEndLoopTime(endLoopValue) {
+    // Don't allow EndLoopTime to be >= OneAudioPlayer.duration
+    if (endLoopValue > OneAudioPlayer.duration) {
+        endLoopValue = OneAudioPlayer.duration;
+    }
+    return(endLoopValue);
 }
 
 function testForIOS() {
