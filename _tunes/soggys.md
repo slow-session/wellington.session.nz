@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 2
-parts: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-10-28
 mp3_file: /mp3/soggys.mp3

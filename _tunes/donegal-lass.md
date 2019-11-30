@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 2
-parts: 2
+parts: AABB
 regtuneoftheweek: 2019-11-22
 slowtuneoftheweek:
 mp3_file: /mp3/donegal-lass.mp3
