@@ -19,15 +19,7 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<table id="tunes"> \
-         <thead> \
-         <tr> \
-            <th style="width: 50%;">File Name</th> \
-            <th style="width: 10%;">Parts</th> \
-            <th style="width: 20%;">Repeats</th> \
-         </tr> \
-         </thead> \
-         <tbody>';
+         var appendString = '';
 
 
         for (var key in store) { // Iterate over the original data
@@ -41,8 +33,6 @@
             appendString += createTableRow(item);
             tunesCounter++;
         }
-
-         appendString += '</tbody></table>';
          tunesTable.innerHTML = appendString;
      }
 
@@ -50,12 +40,11 @@
          var tableRow = '<tr>';
 
          // build the four columns
-         tableRow += '<td>' + item.titleID + '</td>';
+         tableRow += item.titleID + ':';
          if (item.repeats && item.parts) {
-             tableRow += '<td>' + item.parts + '</td>';
-             tableRow += '<td>' + item.repeats + '</td>';
+             tableRow += ':' + item.parts + ':'+ item.repeats + '<br />';
          } else {
-             var parts = '';
+             var parts = '>:';
              if (item.abc) {
                  var partCount = calculateParts(item.rhythm, item.abc);
                  var partName = 'A';
@@ -64,14 +53,11 @@
                      partName = nextChar(partName);
                  }
              } else {
-                 parts = 'AABB';
+                 parts += 'AABB';
              }
              var repeats = calculateRepeats();
-             tableRow += '<td>' + parts + '</td>';
-             tableRow += '<td>' + repeats + '</td>';
+             tableRow += parts + ':' + repeats + '<br />';
          }
-
-         tableRow += '</tr>';
 
          return tableRow;
      }
