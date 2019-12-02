@@ -7,8 +7,8 @@ date: 2017-11-23
 location: Prebbleton Raglan Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession wellyfest-learn
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/joe-cooley-s.mp3

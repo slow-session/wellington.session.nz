@@ -7,8 +7,8 @@ date: 2018-06-11
 location: Raglan Christchurch
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-road-to-glountane.mp3

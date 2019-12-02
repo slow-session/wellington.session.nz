@@ -8,8 +8,8 @@ date: 2016-01-12
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-01-15
 mp3_file: /mp3/josefins-waltz.mp3

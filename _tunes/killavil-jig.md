@@ -7,8 +7,8 @@ date: 2017-11-15
 location: Prebbleton Raglan Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-11-15
 mp3_file: /mp3/killavil-jig.mp3

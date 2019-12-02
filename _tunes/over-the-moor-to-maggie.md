@@ -8,8 +8,8 @@ date: 2016-03-08
 location: Auckland Arrowtown Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABBCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/over-the-moor-to-maggie.mp3

@@ -7,8 +7,8 @@ date: 2018-06-11
 location: Prebbleton Raglan Christchurch Wellington 
 notes:
 tags: slow-favourite 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/brenda-stubberts.mp3

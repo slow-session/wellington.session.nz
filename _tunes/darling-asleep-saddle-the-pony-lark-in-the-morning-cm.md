@@ -7,8 +7,8 @@ notes: Sean Connolly, whistle
 date: 2019-09-24
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AABBCCDDEEFFGGHH
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/darling-asleep-saddle-the-pony-lark-in-the-morning-cm.mp3

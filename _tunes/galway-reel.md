@@ -7,8 +7,8 @@ date: 2017-02-09
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/galway-reel.mp3

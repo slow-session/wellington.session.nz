@@ -7,8 +7,8 @@ date: 2017-10-18
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/glen-allen.mp3

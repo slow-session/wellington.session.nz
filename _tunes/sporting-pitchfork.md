@@ -7,8 +7,8 @@ date: 2017-11-20
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/sporting-pitchfork.mp3

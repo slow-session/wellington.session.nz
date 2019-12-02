@@ -7,8 +7,8 @@ date: 2017-08-02
 location: Raglan Wellington
 notes:
 tags: slowsession
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-09-28
 mp3_file: /mp3/bag-of-spuds.mp3

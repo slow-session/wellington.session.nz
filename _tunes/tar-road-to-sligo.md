@@ -7,8 +7,8 @@ date: 2016-1-27
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/tar-road-to-sligo.mp3

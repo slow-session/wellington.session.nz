@@ -7,8 +7,8 @@ date: 2015-12-21
 location: Prebbleton Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/spootiskerry.mp3

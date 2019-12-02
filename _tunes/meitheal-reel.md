@@ -8,8 +8,8 @@ date: 2016-12-5
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/meitheal-reel.mp3

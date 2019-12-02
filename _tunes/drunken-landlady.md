@@ -7,8 +7,8 @@ date: 2019-04-03
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/drunken-landlady.mp3

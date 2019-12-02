@@ -7,8 +7,8 @@ date: 2016-10-12
 location: Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession wellyfest
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/musical-priest.mp3

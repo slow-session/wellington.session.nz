@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-05-25
 mp3_file: /mp3/tobins-favourite.mp3

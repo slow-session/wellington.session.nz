@@ -7,8 +7,8 @@ notes: Sean Connolly, whistle
 date: 2019-09-24
 location:
 tags: cm
-repeats:
-parts:
+repeats: 1
+parts: AABBCCDDEEFF
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/silver-spear-swallows-tail-the-boyne-hunt-cm.mp3

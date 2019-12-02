@@ -7,8 +7,8 @@ date: 2019-04-29
 location:
 notes:
 tags: ca-banjo-mandolin-2019
-repeats: 
-parts: 
+repeats: 9 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/donald-blue2.mp3

@@ -7,8 +7,8 @@ date: 2018-05-22
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/bowna-slide.mp3

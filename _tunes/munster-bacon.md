@@ -8,8 +8,8 @@ date: 2016-05-25
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/munster-bacon.mp3

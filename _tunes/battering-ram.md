@@ -7,8 +7,8 @@ date: 2018-05-21
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABBCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/battering-ram.mp3

@@ -7,8 +7,8 @@ date: 2016-01-01
 location: 
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/beeswing-hornpipe-bb.mp3

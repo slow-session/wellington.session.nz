@@ -7,8 +7,8 @@ date: 2018-03-15
 location: Wellington Christchurch
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-04-08
 mp3_file: /mp3/love-at-the-endings.mp3

@@ -8,8 +8,8 @@ date: 2016-01-01
 location: Arrowtown Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-02-08
 mp3_file: /mp3/blackthorn-stick.mp3

@@ -7,8 +7,8 @@ date: 2017-09-27
 location: Donegal Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 1 
+parts: AABBCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mad-jig.mp3

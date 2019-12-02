@@ -7,8 +7,8 @@ date: 2019-02-13
 location: Auckland Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hardimans-fancy.mp3

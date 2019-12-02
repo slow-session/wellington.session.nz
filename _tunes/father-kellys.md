@@ -8,8 +8,8 @@ date: 2016-08-11
 location: Raglan Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/father-kellys.mp3

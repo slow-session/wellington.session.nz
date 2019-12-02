@@ -7,8 +7,8 @@ date: 2016-09-28
 location: Auckland Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite slowsession wellyfest
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/my-darling-asleep.mp3

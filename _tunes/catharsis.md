@@ -8,8 +8,8 @@ date: 2016-01-01
 location: Prebbleton Raglan Wellington
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/catharsis.mp3

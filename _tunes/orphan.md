@@ -7,8 +7,8 @@ date: 2017-10-30
 location: Raglan Hamilton Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-16
 mp3_file: /mp3/orphan.mp3

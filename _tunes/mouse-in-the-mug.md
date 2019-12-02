@@ -8,8 +8,8 @@ date: 2016-05-25
 location: Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mouse-in-the-mug.mp3

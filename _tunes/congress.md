@@ -8,8 +8,8 @@ date: 2017-05-18
 location: Raglan Arrowtown Dunedin Wellington
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-08-02
 mp3_file: /mp3/congress.mp3

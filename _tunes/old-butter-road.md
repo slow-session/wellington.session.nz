@@ -7,8 +7,8 @@ date: 2017-02-13
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/old-butter-road.mp3

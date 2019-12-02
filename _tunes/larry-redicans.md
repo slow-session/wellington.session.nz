@@ -7,8 +7,8 @@ date: 2018-01-28
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/larry-redicans.mp3

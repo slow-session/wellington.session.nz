@@ -7,8 +7,8 @@ date: 2015-11-01
 location: Raglan Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/geese-in-the-bog.mp3

@@ -8,8 +8,8 @@ date: 2017-01-12
 location: Arrowtown Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-01-18
 mp3_file: /mp3/flooded-road-to-glenties.mp3

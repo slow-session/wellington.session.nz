@@ -8,8 +8,8 @@ date: 2016-11-24
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 1 
+parts: AABBCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/drunken-gauger.mp3

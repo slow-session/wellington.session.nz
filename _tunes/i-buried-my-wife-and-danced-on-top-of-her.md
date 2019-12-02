@@ -7,8 +7,8 @@ date: 2018-06-11
 location: Christchurch
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/i-buried-my-wife-and-danced-on-top-of-her.mp3

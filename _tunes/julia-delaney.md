@@ -8,8 +8,8 @@ date: 2016-08-04
 location: Prebbleton Auckland Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/julia-delaney.mp3

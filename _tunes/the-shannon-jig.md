@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Raglan Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-shannon-jig.mp3

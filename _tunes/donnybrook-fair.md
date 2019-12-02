@@ -7,8 +7,8 @@ date: 2017-04-06
 location: Wellington
 notes:
 tags: slow-favourite slowsession 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-06
 mp3_file: /mp3/donnybrook-fair.mp3

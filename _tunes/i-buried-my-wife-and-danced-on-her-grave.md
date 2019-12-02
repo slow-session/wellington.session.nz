@@ -7,8 +7,8 @@ date: 2018-12-19
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/i-buried-my-wife-and-danced-on-her-grave.mp3

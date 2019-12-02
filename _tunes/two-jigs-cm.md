@@ -7,8 +7,8 @@ notes: Names for these would be appreciated!
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 4
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/two-jigs-cm.mp3

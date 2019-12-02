@@ -7,8 +7,8 @@ date: 2015-11-10
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 1 
+parts: AABBCCDDEE 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/two-fifty-to-vigo.mp3

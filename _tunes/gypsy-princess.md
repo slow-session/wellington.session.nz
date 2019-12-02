@@ -7,8 +7,8 @@ date: 2019-06-06
 location: 
 notes: 
 tags: 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek: 
 slowtuneoftheweek: 
 mp3_file: /mp3/gypsy-princess.mp3

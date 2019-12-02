@@ -8,8 +8,8 @@ date: 2016-03-08
 location: Raglan Auckland Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/creggs-pipes.mp3

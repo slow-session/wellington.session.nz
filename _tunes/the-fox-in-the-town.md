@@ -7,8 +7,8 @@ date: 2017-02-26
 location: Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-12
 mp3_file: /mp3/the-fox-in-the-town.mp3

@@ -7,8 +7,8 @@ date: 2016-06-02
 location: Auckland Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession ceol-aneas
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddys-trip-to-scotland.mp3

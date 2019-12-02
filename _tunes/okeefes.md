@@ -7,8 +7,8 @@ date: 2016-12-09
 location: Wellington Christchurch
 notes:
 tags: vicfolk
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/okeefes.mp3

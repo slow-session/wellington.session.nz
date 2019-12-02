@@ -7,8 +7,8 @@ date: 2016-4-27
 location: Raglan Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-old-bush.mp3

@@ -7,8 +7,8 @@ date: 2019-04-03
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-faheys-reel-1-original.mp3

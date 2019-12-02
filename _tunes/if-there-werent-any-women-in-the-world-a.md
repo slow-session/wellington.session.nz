@@ -7,8 +7,8 @@ date: 2016-4-6
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/if-there-werent-any-women-in-the-world-a.mp3

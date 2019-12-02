@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/miss-thompsons.mp3

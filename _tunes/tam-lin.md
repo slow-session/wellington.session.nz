@@ -7,8 +7,8 @@ date: 2018-03-10
 location: Prebbleton Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite 
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/tam-lin.mp3

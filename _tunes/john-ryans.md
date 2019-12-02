@@ -7,8 +7,8 @@ date: 2016-09-28
 location: Prebbleton Wellington
 notes:
 tags: slow-favourite slowsession wellyfest
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/john-ryans.mp3

@@ -7,8 +7,8 @@ date: 2017-07-27
 location: Wellington Donegal
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/butter-and-peas.mp3

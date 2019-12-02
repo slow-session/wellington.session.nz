@@ -8,8 +8,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags: slow-favourite slowsession wellyfest ceol-aneas
-repeats: 
-parts: 
+repeats: 1 
+parts: AABBCCDD 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-20
 mp3_file: /mp3/rose-in-the-heather.mp3

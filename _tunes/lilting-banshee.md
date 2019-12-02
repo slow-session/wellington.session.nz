@@ -7,8 +7,8 @@ date: 2017-05-15
 location: Prebbleton Arrowtown Wellington Christchurch
 notes:
 tags: slow-favourite vicfolk slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-20
 mp3_file: /mp3/lilting-banshee.mp3

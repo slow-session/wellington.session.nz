@@ -7,8 +7,8 @@ date: 2018-03-18
 location: Raglan Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/meals-by-maurice-pt-1.mp3

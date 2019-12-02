@@ -7,8 +7,8 @@ date: 2018-06-11
 location: Christchurch
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AABBCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/strop-the-razor.mp3

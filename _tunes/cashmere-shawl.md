@@ -7,8 +7,8 @@ date: 2017-06-12
 location: Raglan Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 1 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cashmere-shawl.mp3

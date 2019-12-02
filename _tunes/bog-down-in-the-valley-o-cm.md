@@ -7,8 +7,8 @@ notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 3
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/bog-down-in-the-valley-o-cm.mp3

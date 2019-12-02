@@ -7,8 +7,8 @@ date: 2018-09-20
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/martin-wynnes-no-3.mp3
