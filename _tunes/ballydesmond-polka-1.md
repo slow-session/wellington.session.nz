@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite vicfolk wellyfest
-repeats: 3 
-parts: AABB 
+repeats: 2 
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ballydesmond-polka-1.mp3

@@ -7,8 +7,8 @@ date: 2017-05-14
 location: Wellington
 notes:
 tags: vicfolk
-repeats: 3 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/toms-blue-boat.mp3

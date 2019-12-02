@@ -8,8 +8,8 @@ date: 2016-06-23
 location: Prebbleton Wellington
 notes:
 tags: slowsession
-repeats: 3 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/four-pound-cheque.mp3

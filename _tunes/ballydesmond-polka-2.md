@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite wellyfest
-repeats: 3 
-parts: AABB 
+repeats: 2 
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/ballydesmond-polka-2.mp3
@@ -29,5 +29,5 @@ abc: |
     |"Am"EA AB|B1/2c1/2d ef|"G"g1/2f1/2e"Em" dB|"Am"A2 A2:|
     |:"Am"a>g ab|ag ef|"G"g>f ga|ge d2|
     |"Am"ea ab|ag ef|"G"ge "E7"dB|"Am"A2 A2:|
-    
+
 ---
