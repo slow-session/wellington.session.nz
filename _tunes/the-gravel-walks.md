@@ -7,8 +7,8 @@ date: 2016-1-26
 location: Prebbleton Raglan Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 3 
-parts: AABB 
+repeats: 2
+parts: ABCDD
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-gravel-walks.mp3
