@@ -4,11 +4,11 @@ titleID: maids-of-ardagh.md
 key: D
 rhythm: polka
 date: 2018-07-31
-location: Wellington 
+location: Wellington
 notes:
-tags: 
-repeats: 3 
-parts: AABB 
+tags:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/maids-of-ardagh.mp3

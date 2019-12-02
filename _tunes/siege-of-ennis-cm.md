@@ -7,7 +7,7 @@ notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats: 3
+repeats: 2
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:

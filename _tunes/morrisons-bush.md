@@ -3,19 +3,19 @@ title: Morrison's Bush
 titleID: morrisons-bush.md
 key: D
 rhythm: polka
-date: 2016-11-02 
+date: 2016-11-02
 location: Wellington
 notes:
 tags: slowsession
-repeats: 3 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/morrisons-bush.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_source: Wellington Session
 mp3_url: https://www.facebook.com/groups/WellingtonSession
-abc_url: 
+abc_url:
 source: Wellington
 abc: |
     X: 1
@@ -31,5 +31,5 @@ abc: |
     "D"d3A F2D2|"Em"e3d c2A2|"G"g3e "A7"c2A2|"D"d6 A2|
     "D"d3A F2D2|"Em"e3d c2A2|"F#m"f3e d2f2|"A"ef ec B2A2|
     "D"D2D2 d2cB|A2F2 E2D2|"Em"E2FG "A7"A2c2|"D"d6 |
-    
+
 ---
