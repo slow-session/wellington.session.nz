@@ -26,7 +26,6 @@ var BeginLoopTime = 0;
 var EndLoopTime = 0;
 var PreviouspButton = null;
 var CurrentAudioSlider = null;
-var presetLoopSegments = [];
 
 var isIOS = testForIOS();
 myDebug("isIOS: " + isIOS);
@@ -213,7 +212,7 @@ function changeTune(tuneNumber) {
     loopPresetControls.innerHTML = '';
     tuneInfo.innerHTML = '';
     document.getElementById('loopForm').style.display = "none";
-    presetLoopSegments = [];
+    segments = [];
 
     // If we have a modal make it visible
     var modal = document.getElementById('tuneModal');
@@ -235,15 +234,13 @@ function changeTune(tuneNumber) {
         var playPosition = document.getElementById('playPosition' + tuneNumber);
         LoadAudio(item.mp3, playPosition);
 
-        // calculate presetLoopSegments and set up preset loops
+        // calculate segments and set up preset loops
         OneAudioPlayer.onloadedmetadata = function() {
             myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
-            if (item.repeats && item.parts) {
+            if ((item.repeats && item.parts) || item.abc) {
                 myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
                 buildSegments(tuneNumber);
-                if (presetLoopSegments.length){
-                    loopPresetControls.innerHTML = createLoopControlsContainer();
-                }
+                loopPresetControls.innerHTML = createLoopControlsContainer();
             }
             initialiseAudioSlider();
         };
@@ -325,13 +322,26 @@ function restartLoop() {
     OneAudioPlayer.play();
 }
 
+// We'll build a segments structure on the fly for each tune
+var segments = [];
+
 function buildSegments(tuneNumber) {
     var item = store[tuneNumber];
     var parts = item.parts;
     var repeats = item.repeats;
-    var mySegment;
 
-    presetLoopSegments = [];
+    var mySegment;
+    segments = [];
+
+    // If parts is not defined then attempt to infer it
+    if (!parts) {
+        parts = calculateParts(item.rhythm, item.abc);
+    }
+
+    // if repeats is not defined - default value = 2 possibly use total length?
+    if (!repeats) {
+        repeats = calculateRepeats();
+    }
 
     // If tune MD file has AABB notation use that
     if (parts.toString().includes('A')) {
@@ -350,19 +360,39 @@ function buildSegments(tuneNumber) {
                 repeatCount = 1;
             }
             mySegment.name = part_names[i] + ' Repeat ' + repeatCount;
-            presetLoopSegments.push(mySegment);
+            segments.push(mySegment);
             lastPart = part_names[i];
         }
-        // Insert the values
-        var start = 0.0;
-        var end = 0.0;
-        var each_part = OneAudioPlayer.duration / repeats / presetLoopSegments.length;
-        for (var key in presetLoopSegments) {
-            start = each_part * key
-            end = start + each_part;
-            presetLoopSegments[key].start = start.toFixed(1);
-            presetLoopSegments[key].end = end.toFixed(1);
+    } else {
+        // We'll default to an AABB(CC) structure if we don't know
+        var partName = 'A';
+        for (i = 0; i < parts; i++) {
+            mySegment = {
+                name: 0,
+                start: 0,
+                end: 0
+            };
+            mySegment.name = partName + ' Repeat 1';
+            segments.push(mySegment);
+            mySegment = {
+                name: 0,
+                start: 0,
+                end: 0
+            };
+            mySegment.name = partName + ' Repeat 2';
+            segments.push(mySegment);
+            partName = nextChar(partName);
         }
+    }
+    // Insert the values
+    var start = 0.0;
+    var end = 0.0;
+    var each_part = OneAudioPlayer.duration / repeats / segments.length;
+    for (var key in segments) {
+        start = each_part * key
+        end = start + each_part;
+        segments[key].start = start.toFixed(1);
+        segments[key].end = end.toFixed(1);
     }
     // Add segment for user-defined use
     mySegment = {
@@ -372,7 +402,7 @@ function buildSegments(tuneNumber) {
     };
     mySegment.name = 'User-1';
     mySegment.end = OneAudioPlayer.duration.toFixed(1);
-    presetLoopSegments.push(mySegment);
+    segments.push(mySegment);
 }
 
 function createLoopControlsContainer() {
@@ -385,18 +415,18 @@ function createLoopControlsContainer() {
     loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"><strong>Finish</strong></div>';
     loopControlsContainer += '</div>';
 
-    for (i = 0; i < presetLoopSegments.length; i++) {
+    for (i = 0; i < segments.length; i++) {
         if (i % 2) {
             loopControlsContainer += '<div class="row row-even">';
         } else {
             loopControlsContainer += '<div class="row row-odd">';
         }
-        loopControlsContainer += '<div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="applySegments()" id="check' + i + '">' + presetLoopSegments[i].name + '</div>';
+        loopControlsContainer += '<div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="applySegments()" id="check' + i + '">' + segments[i].name + '</div>';
         loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"> \
         <a href="javascript:void(0);" \
         class = "downButton" type="button" id= "button' + i + 'dn" onclick="Adjust_down(' + i + ', 0)"> \
         <span title=" - 1/5 second">&lt;&lt;</a> \
-        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value=' + presetLoopSegments[i].start + '> \
+        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value=' + segments[i].start + '> \
         <a href="javascript:void(0);" \
         class = "upButton" type="button" id= "button' + i + 'up" onclick="Adjust_up(' + i + ', 0)"> \
         <span title=" + 1/5 second">&gt;&gt;</a> \
@@ -405,7 +435,7 @@ function createLoopControlsContainer() {
         <a href="javascript:void(0);" \
         class = "downButton" type="button" id= "button' + i + 'Dn" onclick="Adjust_down(' + i + ', 2)"> \
         <span title=" - 1/5 second">&lt;&lt;</a> \
-        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value=' + presetLoopSegments[i].end + '> \
+        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value=' + segments[i].end + '> \
         <a href="javascript:void(0);" \
         class = "upButton" type="button" id= "button' + i + 'up" onclick="Adjust_up(' + i + ', 2)"> \
         <span title=" + 1/5 second">&gt;&gt;</a> \
@@ -415,6 +445,58 @@ function createLoopControlsContainer() {
     loopControlsContainer += '</div>'
 
     return (loopControlsContainer);
+}
+
+function calculateParts(tune_rhythm, abcText) {
+    var parts;
+    var total_note_count = countBarsABC(abcText);
+    var base_length = calculateBaseLength(tune_rhythm);
+
+    var divisions = total_note_count / base_length; // see if tune fits a pattern
+    var int_divisions = Math.floor(divisions + 0.1);
+
+    if ((divisions - int_divisions) < 0.2) { // parts can be calculated
+        parts = int_divisions;
+    } else {
+        parts = 2; // parts can't be calculated - assigned to default value=2
+    }
+    return (parts);
+}
+
+function calculateRepeats() {
+    var repeats;
+
+    // some smarts needed here!
+    repeats = 2;
+
+    return (repeats);
+}
+
+function calculateBaseLength(tune_rhythm) {
+    var base_length;
+
+    //attempt to calculate number of parts
+    switch (tune_rhythm) {
+        case "reel":
+        case "hornpipe":
+        case "barndance":
+            base_length = 128;
+            break;
+        case "mazurka":
+        case "waltz":
+        case "jig":
+            base_length = 96;
+            break;
+        case "slip jig":
+            base_length = 72;
+            break;
+        case "polka":
+            base_length = 64;
+            break;
+        default:
+            base_length = 128;
+    }
+    return (base_length);
 }
 
 function createArchiveSlider(tableSlider) {
@@ -456,9 +538,9 @@ function scrollTable(value) { // when dragging the slider
 }
 
 function saveUserLoop(values) {
-    if (presetLoopSegments.length) {
+    if (segments.length) {
         // Preset loop 'User-1' is always the last segment
-        var lastSegment = presetLoopSegments.length - 1;
+        var lastSegment = segments.length - 1;
 
         if (document.getElementById("check" + lastSegment).checked) {
             document.getElementById("check" + lastSegment + "from").value = Number(values[0]).toFixed(1);
@@ -475,7 +557,7 @@ function applySegments() {
     var tempEndLoopTime = 0.0;
     var checkBox, fromId, toId;
 
-    for (i = 0; i < presetLoopSegments.length; i++) {
+    for (i = 0; i < segments.length; i++) {
         checkBox = document.getElementById("check" + i);
         fromId = document.getElementById("check" + i + "from");
         toId = document.getElementById("check" + i + "to");
@@ -605,6 +687,227 @@ function Adjust_down(row, inputBox) {
     }
 }
 
+function countBarsABC(str) {
+    /*
+     * Our simple ABC player doesn't handle repeats well.
+     * This function unrolls the ABC so that things play better.
+     */
+    var lines = str.split('\n'),
+        j, header, newABCHeader = "",
+        newABCNotes = "",
+        tempStr = "",
+        index = 0,
+        res = "";
+    var tokens = "";
+    var headerRegex = /^([A-Za-z]):\s*(.*)$/;
+    var blankRegex = /^\s*(?:%.*)?$/;
+    for (j = 0; j < lines.length; ++j) {
+        header = headerRegex.exec(lines[j]);
+        if (header) {
+            // put the header lines back in place
+            newABCHeader += lines[j] + "\n"; // consider special case of a keychange header K: in the middle
+        } else if (blankRegex.test(lines[j])) {
+            // Skip blank and comment lines.
+            continue;
+        } else {
+            // Parse the notes.
+            newABCNotes += lines[j];
+        }
+    }
+
+    /*
+     * Regular expression used to parse ABC - https://regex101.com/ was very helpful in decoding
+     *
+
+    ABCString = (?:\[[A-Za-z]:[^\]]*\])|\s+|%[^\n]*|![^\s!:|\[\]]*!|\+[^+|!]*\+|[_<>@^]?"[^"]*"|\[|\]|>+|<+|(?:(?:\^+|_+|=|)[A-Ga-g](?:,+|'+|))|\(\d+(?::\d+){0,2}|\d*\/\d+|\d+\/?|\/+|[xzXZ]|\[?\|:\]?|:?\|:?|::|.
+
+    (?:\[[A-Za-z]:[^\]]*\]) matches nothing
+    \s+|%[^\n]* matches spaces
+    ![^\s!:|\[\]]*! no matches
+    \+[^+|!]*\+ no matches
+    [_<>@^]?"[^"]*" matches chords
+    \[|\] matches [ or ]
+    [_<>@^]?{[^"]*} matches grace note phrases {...}
+    :?\|:? matches :| or |:
+    (?:(?:\^+|_+|=|)[A-Ga-g](?:,+|'+|)) matches letters A-Ga-g in or out of chords and other words
+    \(\d+(?::\d+){0,2} matches triplet, or quad symbol (3
+    \d*\/\d+ matches fractions i.e. 4/4 1/8 etc
+    \d+\/? matches all single digits
+    \[\d+|\|\d+ matches first and second endings
+    \|\||\|\] matches double bars either || or |]
+    (\|\|)|(\|\])|:\||\|:|\[\d+|\|\d+ matches first and second endings, double bars, and right and left repeats
+
+    */
+
+    var fEnding = /\|1/g,
+        sEnding = /\|2/g,
+        lRepeat = /\|:/g,
+        rRepeat = /:\|/g,
+        dblBar = /\|\|/g,
+        firstBar = /\|/g;
+    var fEnding2 = /\[1/g,
+        sEnding2 = /\[2/g,
+        dblBar2 = /\|\]/g;
+    var match, fBarPos = [],
+        fEndPos = [],
+        sEndPos = [],
+        lRepPos = [],
+        rRepPos = [],
+        dblBarPos = [];
+    var firstRepeat = 0,
+        tokenString = [],
+        tokenLocations = [],
+        tokenCount = 0,
+        sortedTokens = [],
+        sortedTokenLocations = [];
+    var pos = 0,
+        endPos = 0,
+        i = 0,
+        k = 0,
+        l = 0,
+        m = 0,
+        ntokenString = [];
+    var bigABCNotes = "";
+
+
+    while ((match = firstBar.exec(newABCNotes)) != null) {
+        fBarPos.push(match.index);
+    }
+    tokenString[tokenCount] = "fb";
+    if (fBarPos[0] > 6) {
+        fBarPos[0] = 0;
+    }
+    tokenLocations[tokenCount++] = fBarPos[0]; // first bar
+    while (((match = fEnding.exec(newABCNotes)) || (match = fEnding2.exec(newABCNotes))) != null) {
+        fEndPos.push(match.index);
+        tokenString[tokenCount] = "fe";
+        tokenLocations[tokenCount++] = match.index; // first endings
+    }
+    while (((match = sEnding.exec(newABCNotes)) || (match = sEnding2.exec(newABCNotes))) != null) {
+        sEndPos.push(match.index);
+        tokenString[tokenCount] = "se";
+        tokenLocations[tokenCount++] = match.index; // second endings
+    }
+    while ((match = rRepeat.exec(newABCNotes)) != null) {
+        rRepPos.push(match.index);
+        tokenString[tokenCount] = "rr";
+        tokenLocations[tokenCount++] = match.index; // right repeats
+    }
+    while ((match = lRepeat.exec(newABCNotes)) != null) {
+        lRepPos.push(match.index);
+        tokenString[tokenCount] = "lr";
+        tokenLocations[tokenCount++] = match.index; // left repeats
+    }
+    while (((match = dblBar.exec(newABCNotes)) || (match = dblBar2.exec(newABCNotes))) != null) {
+        dblBarPos.push(match.index);
+        tokenString[tokenCount] = "db";
+        tokenLocations[tokenCount++] = match.index; // double bars
+    }
+    tokenString[tokenCount] = "lb";
+    tokenLocations[tokenCount++] = fBarPos[fBarPos.length - 1]; // last bar
+
+
+    var indices = tokenLocations.map(function(elem, index) {
+        return index;
+    });
+    indices.sort(function(a, b) {
+        return tokenLocations[a] - tokenLocations[b];
+    });
+
+    for (j = 0; j < tokenLocations.length; j++) {
+        sortedTokens[j] = tokenString[indices[j]];
+        sortedTokenLocations[j] = tokenLocations[indices[j]];
+    }
+    pos = 0;
+    for (i = 0; i < sortedTokens.length; i++) {
+        if (bigABCNotes.length > 1000) {
+            break; //safety check
+        }
+        if ((sortedTokens[i] == "rr") || (sortedTokens[i] == "se")) { //find next repeat or second ending
+            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[i] - pos); //notes from last location to rr or se
+            for (k = i - 1; k >= 0; k--) { //march backward from there
+                // check for likely loop point
+                if ((sortedTokens[k] == "se") || (sortedTokens[k] == "rr") || (sortedTokens[k] == "fb") || (sortedTokens[k] == "lr")) {
+                    pos = sortedTokenLocations[k]; // mark loop beginning point
+                    for (j = k + 1; j < sortedTokens.length; j++) { //walk forward from there
+                        if ((sortedTokens[j] == "fe") || (sortedTokens[j] == "rr")) { // walk to likely stopping point (first ending or repeat)
+                            bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[j] - pos);
+                            pos = sortedTokenLocations[j]; // mark last position encountered
+                            i = j + 1; //consume tokens from big loop
+                            if (sortedTokens[j] == "fe") { //if we got to a first ending we have to skip it...
+                                for (l = j; l < sortedTokens.length; l++) { //walk forward from here until the second ending
+                                    if (sortedTokens[l] == "se") {
+                                        for (m = l; m < sortedTokens.length; m++) { //look for end of second ending
+                                            if (sortedTokens[m] == "db") { //a double bar marks the end of a second ending
+                                                bigABCNotes += newABCNotes.substr(sortedTokenLocations[l],
+                                                    sortedTokenLocations[m] - sortedTokenLocations[l]); //record second ending
+                                                pos = sortedTokenLocations[m]; //mark most forward progress
+                                                i = m + 1; //consume the tokens from the main loop
+                                                break; //quit looking
+                                            }
+                                        } //for m
+                                        i = l + 1; //consume tokens TED: CHECK THIS
+                                        break; //quit looking
+                                    }
+                                } //for l
+                            }
+                            break;
+                        }
+                    } //for j
+                    break;
+                } //if
+            } //for k
+        } //if
+    } //for i
+
+    bigABCNotes += newABCNotes.substr(pos, sortedTokenLocations[sortedTokens.length - 1] - pos);
+    bigABCNotes += "\""; //hack to make sure the newBigABCNotes gets fills when there are not quotes
+
+    var newBigABCNotes = "";
+    for (j = 0; j < bigABCNotes.length; j++) {
+        if (bigABCNotes[j] == "\"") {
+            newBigABCNotes = [bigABCNotes.slice(0, j), "\\\"", bigABCNotes.slice(j)].join('');
+        }
+        newBigABCNotes = newBigABCNotes.substring(0, newBigABCNotes.length - 3); //undo hack
+    }
+    tempABCNotes = newBigABCNotes.toLowerCase();
+    tempABCNotes = tempABCNotes.replace(/(?=[(])/g, 'z');
+
+    var count = (tempABCNotes.match(/a/g) || []).length;
+    count += (tempABCNotes.match(/b/g) || []).length;
+    count += (tempABCNotes.match(/c/g) || []).length;
+    count += (tempABCNotes.match(/d/g) || []).length;
+    count += (tempABCNotes.match(/e/g) || []).length;
+    count += (tempABCNotes.match(/f/g) || []).length;
+    count += (tempABCNotes.match(/g/g) || []).length;
+    count += (tempABCNotes.match(/2/g) || []).length; // note already counted so +1
+    count += (tempABCNotes.match(/3/g) || []).length * 2; // note + 2
+    count += (tempABCNotes.match(/4/g) || []).length * 3; // note + 3
+    count -= (tempABCNotes.match(/z/g) || []).length * 3; //remove triplets (confusing, but correct)
+    /*  count is the total number of beats,
+        A 16 bar A part reel = 128 beats,
+        A 16 bar A part jig = 96 beats,
+        for a normal AA BB reel, count should be ~256.
+        For a normal AA BB jig, ~192.
+        if count ~ 384 it is probably an AA BB CC reel
+        if count ~ 288 it is probably an AA BB CC jig
+        For normally structured tunes (e.g. AA BB) using various values of count,
+        and tune type (jig/reel) we can guess at the structure.
+        We know the tune duration, but not the number of repeats of the tune
+        on the recording.  If we knew that we could approximate the timing loops.
+        We could guess most tunes have 2 full repeats...
+        We should add one or two values to the tune.md files:
+            number of times tune is repeated (needed)
+            and number of parts e.g. 2 if A and B parts, 3 if A B C, etc,
+            perhaps it could be in the form of AABB, AABBCC, ABCDE, etc.
+        If a 2 part (A&B) reel is repeated 3 times
+        duration (found when mp3 file is read) / 3 = time for 1 full loop;
+        From 0 to (duration / 3) / 2 = A part.
+        From (duration / 3) / 2 to (duration / 3) = B part, etc.
+    */
+    return (count);
+}
+
 function toggleLoops(button) {
     switch (button.value) {
         case "Show Preset Loops":
@@ -647,7 +950,7 @@ function resetFromToSliders() {
     CurrentAudioSlider.noUiSlider.setHandle(2, OneAudioPlayer.duration);
     EndLoopTime = OneAudioPlayer.duration;
     // Uncheck all the checkboxes in the Preset Loops
-    for (i = 0; i < presetLoopSegments.length; i++) {
+    for (i = 0; i < segments.length; i++) {
         document.getElementById("check" + i).checked = false;
     }
 }
