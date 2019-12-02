@@ -34,7 +34,13 @@
     <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
     </select>
 
+    <label>Notes:</label>
+    <input type="text" id="notes-box" name="notes" value="">
+
     <input type="hidden" id="date-box" name="date" value=""><br />
+    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
+    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
+    <input type="hidden" id="tags-box" name="tags" value="">
 
     <br /><label>Location:</label><br />
         <input name="location" type="checkbox" value="Arrowtown"/>
@@ -57,22 +63,6 @@
         <label for="location">Wellington</label><br />
 <br />
 
-    <label>Notes:</label>
-    <input type="text" id="notes-box" name="notes" value="">
-    <br />
-
-    <input type="hidden" id="tags-box" name="tags" value="">
-
-    <label>Repeats:</label>
-    <input type="text" id="repeats-box" name="repeats" value="">
-    <br />
-
-    <label>Parts:</label>
-    <input type="text" id="parts-box" name="parts" value="">
-    <br />
-    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
-    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
-
     <h3>Recorded version of the tune</h3>
 
     <label>MP3 file:</label>
@@ -84,6 +74,14 @@
     <p></p>
 
     <p>If an MP3 version of the tune is available, please provide these details:</p>
+
+    <label>Repeats:</label>
+    <input type="text" id="repeats-box" name="repeats" value="">
+    <br />
+
+    <label>Parts:</label>
+    <input type="text" id="parts-box" name="parts" value="">
+    <br />
 
     <label>MP3 source:</label>
     <select id="mp3_source-box" name="mp3_source">
@@ -183,7 +181,7 @@ Fair Use </small></p>
 <p><small><strong>FARNE - Folk Archive Resource North East</strong> uses these licences:<br />
 Fair Use </small></p>
 <p><small><strong>Fergal Scahill</strong> uses these licences:<br />
-© Fergal Scahill. All Rights Reserved. </small></p>
+© Fergal Scahill. All Rights Reserved. '© Fergal Scahill. All Rights Reserved.' </small></p>
 <p><small><strong>Four Winds</strong> uses these licences:<br />
 © Four Winds. All Rights Reserved. </small></p>
 <p><small><strong>Francine Gagnon</strong> uses these licences:<br />
@@ -251,7 +249,8 @@ CC-BY-NC-3.0 </small></p>
     <label>MP3 licence:</label>
     <select id="mp3_licence-box" name="mp3_licence">
         <option value="">None</option>
-        <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/2.5/&quot;&gt;CC-BY-NC-2.5&lt;/a&gt;">CC-BY-NC-2.5</option>
+        <option value="'© Fergal Scahill. All Rights Reserved.'">'© Fergal Scahill. All Rights Reserved.'</option>
+    <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/2.5/&quot;&gt;CC-BY-NC-2.5&lt;/a&gt;">CC-BY-NC-2.5</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/3.0/&quot;&gt;CC-BY-NC-3.0&lt;/a&gt;">CC-BY-NC-3.0</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;CC-BY-NC-4.0&lt;/a&gt;">CC-BY-NC-4.0</option>
     <option value="&lt;a href=&quot;https://www.youtube.com/yt/copyright/fair-use.html&quot;&gt;Fair Use&lt;/a&gt;">Fair Use</option>
