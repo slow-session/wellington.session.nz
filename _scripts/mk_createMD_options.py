@@ -114,7 +114,13 @@ with open(optionsFile, 'w') as outfile:
     outfile.write("""    <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
     </select>
 
+    <label>Notes:</label>
+    <input type="text" id="notes-box" name="notes" value="">
+
     <input type="hidden" id="date-box" name="date" value=""><br />
+    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
+    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
+    <input type="hidden" id="tags-box" name="tags" value="">
 
     <br /><label>Location:</label><br />\n""")
 
@@ -123,22 +129,6 @@ with open(optionsFile, 'w') as outfile:
         outfile.write('        <label for="location">' + key + '</label><br />\n');
 
     outfile.write("""<br />
-
-    <label>Notes:</label>
-    <input type="text" id="notes-box" name="notes" value="">
-    <br />
-
-    <input type="hidden" id="tags-box" name="tags" value="">
-
-    <label>Repeats:</label>
-    <input type="text" id="repeats-box" name="repeats" value="">
-    <br />
-
-    <label>Parts:</label>
-    <input type="text" id="parts-box" name="parts" value="">
-    <br />
-    <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
-    <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
 
     <h3>Recorded version of the tune</h3>
 
@@ -151,6 +141,14 @@ with open(optionsFile, 'w') as outfile:
     <p></p>
 
     <p>If an MP3 version of the tune is available, please provide these details:</p>
+
+    <label>Repeats:</label>
+    <input type="text" id="repeats-box" name="repeats" value="">
+    <br />
+
+    <label>Parts:</label>
+    <input type="text" id="parts-box" name="parts" value="">
+    <br />
 
     <label>MP3 source:</label>
     <select id="mp3_source-box" name="mp3_source">
