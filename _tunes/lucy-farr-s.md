@@ -8,8 +8,8 @@ date: 2016-4-06
 location: Arrowtown Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/lucy-farr-s.mp3

@@ -7,8 +7,8 @@ date: 2019-02-05
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2019-04-21
 mp3_file: /mp3/bank-of-turf.mp3

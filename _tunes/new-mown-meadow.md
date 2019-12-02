@@ -7,8 +7,8 @@ date: 2018-04-29
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-05-11
 mp3_file: /mp3/new-mown-meadow.mp3

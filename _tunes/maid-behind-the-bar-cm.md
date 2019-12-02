@@ -7,8 +7,8 @@ notes: Charlie names this "The Bar Maid"
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/maid-behind-the-bar-cm.mp3

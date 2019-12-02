@@ -7,8 +7,8 @@ date: 2016-10-26
 location: Raglan Wellington
 notes:
 tags:
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/trip-to-pakistan.mp3

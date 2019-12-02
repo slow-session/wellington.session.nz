@@ -7,8 +7,8 @@ date: 2016-09-07
 location: Raglan Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 3 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-05
 mp3_file: /mp3/tommy-peoples.mp3

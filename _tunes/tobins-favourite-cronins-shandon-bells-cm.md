@@ -7,8 +7,8 @@ notes:
 date: 2019-09-13
 location:
 tags: cm
-repeats:
-parts:
+repeats: 1
+parts: AABBCCDDEEFF
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cm/tobins-favourite-cronins-shandon-bells-cm.mp3

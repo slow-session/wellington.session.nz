@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Parts and Repeats
 permalink: /parts_repeats/
 ---
 

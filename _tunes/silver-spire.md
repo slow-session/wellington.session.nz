@@ -8,8 +8,8 @@ date: 2016-11-17
 location: Wellington
 notes:
 tags: slow-favourite slowsession 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/silver-spire.mp3

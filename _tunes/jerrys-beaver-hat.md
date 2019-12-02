@@ -7,8 +7,8 @@ date: 2016-03-29
 location: Wellington Christchurch
 notes:
 tags: slow-favourite slowsession wellyfest-learn
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/jerrys-beaver-hat.mp3

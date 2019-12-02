@@ -7,8 +7,8 @@ date: 2018-09-13
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek: 2018-09-13
 slowtuneoftheweek:
 mp3_file: /mp3/mrs-galvins-jig.mp3

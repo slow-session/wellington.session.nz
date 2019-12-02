@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Wellington Christchurch
 notes:
 tags: vicfolk
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/brosna-slide.mp3

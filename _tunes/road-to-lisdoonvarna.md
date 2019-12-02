@@ -7,8 +7,8 @@ date: 2018-05-22
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/road-to-lisdoonvarna.mp3

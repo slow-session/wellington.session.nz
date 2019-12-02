@@ -7,8 +7,8 @@ date: 2018-03-01
 location: Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-03-08
 mp3_file: /mp3/st-patricks-day.mp3

@@ -7,8 +7,8 @@ date: 2018-03-13
 location: Wellington
 notes:
 tags: slow-favourite vicfolk whistle-class
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-mad-piper.mp3

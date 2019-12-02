@@ -7,8 +7,8 @@ date: 2016-02-17
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/cliffs-of-moher.mp3

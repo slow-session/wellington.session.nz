@@ -7,8 +7,8 @@ date: 2017-10-31
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/small-feet.mp3

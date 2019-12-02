@@ -7,8 +7,8 @@ date: 2017-07-31
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/crock-of-gold.mp3

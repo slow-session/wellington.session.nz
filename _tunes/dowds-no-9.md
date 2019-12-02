@@ -8,8 +8,8 @@ date: 2017-01-12
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/dowds-no-9.mp3

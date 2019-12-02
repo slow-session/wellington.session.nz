@@ -7,8 +7,8 @@ date: 2019-04-29
 location:
 notes:
 tags: ca-banjo-mandolin-2019
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mouse-in-the-cupboard.mp3

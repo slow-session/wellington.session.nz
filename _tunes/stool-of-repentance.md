@@ -7,8 +7,8 @@ date: 2015-11-10
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/stool-of-repentance.mp3

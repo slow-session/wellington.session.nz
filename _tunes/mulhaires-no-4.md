@@ -7,8 +7,8 @@ date: 2017-03-27
 location: Wellington
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/mulhaires-no-4.mp3

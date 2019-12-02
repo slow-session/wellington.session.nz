@@ -7,8 +7,8 @@ date: 2017-09-04
 location: Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 1 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hut-on-staffin-island.mp3

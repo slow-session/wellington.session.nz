@@ -8,8 +8,8 @@ date: 2016-01-26
 location: Wellington
 notes:
 tags: slowsession 
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/murroe-polka.mp3

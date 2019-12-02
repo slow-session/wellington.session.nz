@@ -7,8 +7,8 @@ date: 2017-02-07
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2018-10-28
 mp3_file: /mp3/golden-keyboard.mp3

@@ -7,8 +7,8 @@ date: 2016-01-01
 location: Wellington
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 3 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/blackberry-blossom.mp3

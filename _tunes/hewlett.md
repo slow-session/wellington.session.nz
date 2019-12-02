@@ -8,8 +8,8 @@ date: 2016-09-28
 location: Arrowtown Wellington
 notes:
 tags: slowsession
-repeats:
-parts:
+repeats: 4
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hewlett.mp3

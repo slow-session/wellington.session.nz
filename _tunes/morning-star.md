@@ -7,8 +7,8 @@ date: 2017-02-01
 location: Prebbleton Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 3 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-02-02
 mp3_file: /mp3/morning-star.mp3

@@ -7,8 +7,8 @@ date: 2018-04-27
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 6 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-parting.mp3

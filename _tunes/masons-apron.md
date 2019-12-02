@@ -7,8 +7,8 @@ date: 2018-06-10
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 4 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/masons-apron.mp3

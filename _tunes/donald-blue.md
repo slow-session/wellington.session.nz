@@ -7,8 +7,8 @@ date: 2017-02-09
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/donald-blue.mp3

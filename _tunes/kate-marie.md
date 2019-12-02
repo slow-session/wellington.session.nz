@@ -7,8 +7,8 @@ date: 2018-08-16
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/kate-marie.mp3

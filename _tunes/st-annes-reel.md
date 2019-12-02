@@ -7,8 +7,8 @@ date: 2016-4-11
 location: Arrowtown Wellington Christchurch
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/st-annes-reel.mp3

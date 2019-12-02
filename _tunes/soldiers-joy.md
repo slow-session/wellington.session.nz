@@ -7,8 +7,8 @@ date: 2019-09-20
 location:
 notes: Soldier's Joy starts around 2 minutes into the video
 tags:
-repeats:
-parts:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/soldiers-joy.mp3

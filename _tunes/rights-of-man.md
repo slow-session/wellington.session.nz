@@ -8,8 +8,8 @@ date: 2016-5-11
 location: Arrowtown Wellington
 notes:
 tags: vicfolk slowsession wellyfest
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rights-of-man.mp3

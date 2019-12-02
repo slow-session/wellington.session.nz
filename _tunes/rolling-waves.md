@@ -7,8 +7,8 @@ date: 2017-06-29
 location: Wellington 
 notes:
 tags: 
-repeats: 
-parts: 
+repeats: 2 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/rolling-waves.mp3

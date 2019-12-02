@@ -7,8 +7,8 @@ date: 2019-03-13
 location: Wellington
 notes:
 tags: slowsession
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2019-03-13
 mp3_file: /mp3/na-ceannabhain-bhana.mp3

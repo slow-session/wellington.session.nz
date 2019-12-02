@@ -7,8 +7,8 @@ date: 2018-10-28
 location: Wellington
 notes:
 tags:
-repeats: 
-parts: 
+repeats: 3 
+parts: AABB 
 regtuneoftheweek: 2018-11-05
 slowtuneoftheweek:
 mp3_file: /mp3/golden-eagle.mp3
