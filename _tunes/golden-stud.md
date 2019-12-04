@@ -15,7 +15,7 @@ parts: AABB
 mp3_source: Hannah Harris
 mp3_licence: "© Hannah Harris. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=e4pCUG5lbgs&t=146
-alt_mp3_url:
+alt_mp3_url: https://www.facebook.com/100010917466155/videos/956624468044793/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/4740
