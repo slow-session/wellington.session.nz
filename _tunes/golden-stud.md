@@ -14,7 +14,7 @@ repeats: 2
 parts: AABB
 mp3_source: Hannah Harris
 mp3_licence: "© Hannah Harris. All Rights Reserved."
-mp3_url: https://www.youtube.com/watch?v=e4pCUG5lbgs
+mp3_url: https://www.youtube.com/watch?v=e4pCUG5lbgs&t=146
 alt_mp3_url:
 source: Wellington
 abc_source: The Session
