@@ -14,11 +14,12 @@ hear the tunes played one after another.
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
-        <br />
-        <span title="Filter the Tunes Archive for tunes by title or by a rhythm such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slowsession'">        
+    <div class="formParent">
+    <div class="formChild">
 		<input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
@@ -27,7 +28,8 @@ hear the tunes played one after another.
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="tags-box" name="tags" onChange="enable_button()">
             <option value="">All Tunes</option>
             {% for tag in tags %}
@@ -36,7 +38,8 @@ hear the tunes played one after another.
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="location-box" name="location" onChange="enable_button()">
         <option value="">All Locations</option>
             {% for location in locations %}
@@ -45,11 +48,15 @@ hear the tunes played one after another.
             {% endif %}
             {% endfor %}
         </select>
-        </span>    
-        &emsp;
+    </div>
+    </div>
+    <div class="formParent">
+    <div class="formChild">
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-        </span>      
+        </span>  
+    </div>
+    </div>
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> tunes

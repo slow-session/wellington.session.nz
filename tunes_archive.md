@@ -13,29 +13,36 @@ link to the Tune Page for a more traditional view.
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
-        <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'.">  
-        <input type="text" id="title-box" name="title" placeholder='Search'
+        <div class="formParent">
+        <div class="formChild">
+            <input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
-        &emsp;
-        <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+        </div>
+        <div class="formChild">
+            <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
             {% if rhythm != '' %}
             <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
             {% endif %}
             {% endfor %}
-        </select>
-        </span>    
-        &emsp;
-        <span title="Run the filter with the default settings to see the whole list">
-        <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-        </span>      
-        <div class="popup filterButton" onclick="helpFunction()">
-        Help
-            <span class="popuptext" id="helpPopup">
-                Run the filter with the default settings to see the whole list
+            </select>
+        </div>
+        </div>
+        <div class="formParent">
+        <div class="formChild">
+            <span title="Run the filter with the default settings to see the whole list">
+            <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
             </span>
+        </div>
+        <div class="formChild">      
+            <div class="popup filterButton" onclick="helpFunction()">
+            Help
+                <span class="popuptext" id="helpPopup">
+                    Run the filter with the default settings to see the whole list
+                </span>
+            </div>
+        </div>
         </div>
     </form>
     <p></p>

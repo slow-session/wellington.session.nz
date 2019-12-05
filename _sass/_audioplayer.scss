@@ -183,6 +183,18 @@ fieldset {
     text-align: center;
 }
 
+.formParent {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formChild {
+    flex: 1;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
 form {
     text-align: left;
 }
@@ -425,8 +437,10 @@ tr#no_hover:hover {
 .charliepic {
     border:1px solid black;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-right: 1rem;
     padding: 10px;
+    width: 400px;
+    float: left;
 }
 
 .licenceUsed {
