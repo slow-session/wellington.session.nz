@@ -6,18 +6,16 @@ Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/drago
 
 But first a public service announcement:
 
-<div class="charliepic">
-<a href="/charlie_montgomery/"><h2>Charlie Montgomery</h2></a>
 <p>
+<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on <a href="/charlie_montgomery/">this page</a> as well as him playing some old favourites.
 </p>
 <p>
 We'd like to thank Charlie very much for giving us the privilege of being able to post these recordings. We hope you'll enjoy listening and learning these tunes from his playing.
 </p>
-</div>
 
 <a href="/slowsession/">Slow Session</a> - {{ site.slowsession_time }}
-------------
+----------
 
 The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments. See our <a href="/slowsession/">Slow Session</a> page for more information.
 
@@ -42,7 +40,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 </div>
 </fieldset>
 
-<div class="row"></div>
+<div class="row">
 
 <script>
 tuneOfTheWeek = {
@@ -61,7 +59,7 @@ tuneOfTheWeek = {
 };
 </script>
 {% endif %}
-
+</div>
 <br />
 
 <a href="/regularsession/">Regular Session</a> - {{ site.session_time }}
