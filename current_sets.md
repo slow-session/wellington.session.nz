@@ -14,10 +14,11 @@ page.
 <fieldset>
     <legend>Select from current Wellington Sets:</legend>    
     <form id="wellington" method="get">
-        <br />
-        <span title="Filter the Sets Archive for sets by title or by type such as 'reel', 'jig', 'polka'.">        
+    <div class="formParent">
+    <div class="formChild">           
         <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="enable_button()">
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">Any Rhythm</option>
             {% for rhythm in rhythms %}
@@ -25,12 +26,16 @@ page.
             <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
             {% endif %}
             {% endfor %}
-        </select>
-        </span>    
-        &emsp;
+        </select>    
+    </div>
+    </div>
+    <div class="formParent">
+    <div class="formChild">
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-        </span>      
+        </span>
+    </div>
+    </div>     
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> sets

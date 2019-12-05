@@ -17,7 +17,7 @@ Paddy Fahey tunes:
 
 Sets of tunes put together by Paddy O'Brien:
 
- * [O'Brien sets on line](/othertunes/?title=&rhythm=&tags=obrien&location=other&submit=Select)
+ * [O'Brien sets on line](/obrientunes/)
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
 
 Dunedin Fiddle Orchestra:

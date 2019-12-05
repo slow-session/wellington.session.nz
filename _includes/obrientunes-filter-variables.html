@@ -1,0 +1,11 @@
+{% assign tune_rhythms = '' %}
+
+{% for tune in site.obrientunes %}
+    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+    {% unless forloop.last %}
+        {% assign tune_rhythms = tune_rhythms | append: ':' %}
+    {% endunless %}
+{% endfor %}
+
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}

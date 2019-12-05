@@ -73,7 +73,7 @@ collections:
   tunes:
     output: true
 
-  othertunes:
+  obrientunes:
     output: true
 
   sets:
@@ -86,10 +86,10 @@ defaults:
         layout: "tunepage"
         permalink: /tunes/:title:output_ext
   - scope:
-        path: "_othertunes"
+        path: "_obrientunes"
     values:
         layout: "tunepage"
-        permalink: /othertunes/:title:output_ext
+        permalink: /obrientunes/:title:output_ext
   - scope:
         path: "_sets"
     values:

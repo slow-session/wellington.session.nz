@@ -3,35 +3,31 @@ layout: page
 title: Charlie Montgomery
 permalink: /charlie_montgomery/
 ---
-<div class="row small-up-1 medium-up-2 large-up-2">
-<div class="small-4 columns">
-<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
-</div>
-<div class="small-8 columns">
+<div class="row">
 <p>
+<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on this page as well as him playing some old favourites.
 </p>
 <p>
 We'd like to thank Charlie very much for giving us the privilege of being able to post these recordings. We hope you'll enjoy listening and learning these tunes from his playing.
 </p>
 </div>
+<div class="row">
+<hr style="margin-top:1rem; margin-bottom:1rem;" />
+<p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 </div>
 
-<hr style="margin-top:10px;margin-bottom:10px;" />
-
-<p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
-
 {% include tunes-filter-variables.html %}
-
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
     <form id="wellington" method="get">
-        <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'.">  
+    <div class="formParent">
+    <div class="formChild">   
         <input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
@@ -40,17 +36,23 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
             {% endif %}
             {% endfor %}
         </select>
-        </span>    
-        &emsp;
+    </div>
+    </div>
+    <div class="formParent">
+    <div class="formChild">
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-        </span>      
+        </span>
+    </div>
+    <div class="formChild">     
         <div class="popup filterButton" onclick="helpFunction()">
         Help
             <span class="popuptext" id="helpPopup">
                 Run the filter with the default settings to see the whole list
             </span>
         </div>
+    </div>
+    </div>
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> tunes

@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Other Tunes
-permalink: /othertunes/
+title: Paddy O'Brien Tunes
+permalink: /obrientunes/
 ---
 
 <div id="audioPlayer"></div>
 
 <!-- Some boilerplate that's common to a number of pages -->
-{% include othertunes-filter-variables.html %}
+{% include obrientunes-filter-variables.html %}
 
 <fieldset>
     <legend>Select from the Tunes Archive:</legend>    
     <form id="obrien" method="get">
-        <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'Reel', 'Jig', 'Polka'. You can also look for 'tags' such as 'Slowsession, 'Beginner'">  
-
+    <div class="formParent">
+    <div class="formChild">
         <input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
@@ -26,29 +26,15 @@ permalink: /othertunes/
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
-        <select id="tags-box" name="tags" onChange="enable_button()">
-            <option value="">All Tunes</option>
-            {% for tag in tags %}
-            {% if tag != '' %}
-            <option value="{{ tag }}">{{ tag | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-        &emsp;
-        <select id="location-box" name="location" onChange="enable_button()">
-            <option value="">All Locations</option>
-            {% for location in locations %}
-            {% if location != '' %}
-            <option value="{{ location | downcase }}">{{ location | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-        </span>    
-        &emsp;
+    </div>
+    </div>
+    <div class="formParent">
+    <div class="formChild">
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-        </span>      
+        </span>
+    </div>
+    </div>     
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> tunes
@@ -62,7 +48,7 @@ permalink: /othertunes/
 <script>
     window.store = {
       {% assign tuneID = 3000 %}
-      {% assign tunes =  site.othertunes | sort: 'title' %}
+      {% assign tunes =  site.obrientunes | sort: 'title' %}
       {% for tune in tunes %}
         {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
@@ -84,7 +70,7 @@ permalink: /othertunes/
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-<script src="{{ site.js_host }}/js/build_table_othertunes.js"></script>
+<script src="{{ site.js_host }}/js/build_table_obrientunes.js"></script>
 <script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>

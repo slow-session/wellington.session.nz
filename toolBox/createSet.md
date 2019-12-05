@@ -13,8 +13,8 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 <textarea id="setTunes" style="display:none;">[</textarea>
 
 <!-- Create the input boxes for the set details -->
-<div class="row">
-<div class="small-4 columns" style="overflow-x:auto;">
+<div class="formParent" style="max-width: 650px;">
+<div class="formChild">
 <fieldset style="display: inline-block; vertical-align: middle;">
   <legend>Enter set details:</legend>
   <div class="container">
@@ -67,7 +67,7 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 </div>
 </fieldset>
 </div>
-<div class="small-8 columns" style="overflow-x:auto;">
+<div class="formChild">
 <fieldset style="display: inline-block; vertical-align: middle;">
 <legend>Check set details:</legend>
 <div class="container">
@@ -98,11 +98,12 @@ Use the "Reset Tunes" button to start a new set.
     <legend>Filter from Tunes Archive:</legend>
 	Note: Filtering will reset the page - you will remove already selected tunes.
     <form id="wellington" method="get">
-        <br />
-        <span title="Filter the Tunes Archive for tunes by title or by type such as 'reel', 'jig', 'polka'. You can also look for 'tags' such as 'Slow Session, 'Beginner'">        
+    <div class="formParent">
+    <div class="formChild">        
 		<input type="text" id="title-box" name="title" placeholder='Search'
             value='' onkeydown="enable_button()">
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="tune-rhythm-box" name="tune-rhythm"  onChange="enable_button()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
@@ -111,7 +112,8 @@ Use the "Reset Tunes" button to start a new set.
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="tune-tags-box" name="tune-tags" onChange="enable_button()">
             <option value="">All Tunes</option>
             {% for tag in tags %}
@@ -120,7 +122,8 @@ Use the "Reset Tunes" button to start a new set.
             {% endif %}
             {% endfor %}
         </select>
-        &emsp;
+    </div>
+    <div class="formChild">
         <select id="tune-location-box" name="tune-location" onChange="enable_button()">
             <option value="">All Locations</option>
             {% for location in locations %}
@@ -128,12 +131,16 @@ Use the "Reset Tunes" button to start a new set.
             <option value="{{ location }}">{{ location | capitalize }}</option>
             {% endif %}
             {% endfor %}
-        </select>
-        </span>    
-        &emsp;
+        </select>   
+    </div>
+    </div>
+    <div class="formParent">
+    <div class="formChild">
         <span title="Run the filter with the default settings to see the whole list">
         <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Filter" disabled>
-        </span>      
+        </span>
+    </div>
+    </div>     
     </form>
     <p></p>
     Displaying <span id="tunesCount"></span> tunes

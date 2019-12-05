@@ -116,22 +116,7 @@
              e.value = rhythm;
          }
      }
-     var tags = getQueryVariable('tags');
-     if (tags) {
-         searchTerm += tags + ' ';
-         var e = document.getElementById('tags-box');
-         if (e) {
-             e.value = tags;
-         }
-     }
-     var location = getQueryVariable('location');
-     if (location) {
-         searchTerm += location;
-         var e = document.getElementById('location-box');
-         if (e) {
-             e.value = location;
-         }
-     }
+     
      // Define the index terms for lunr search
      var tuneIndex = lunr(function() {
          this.field('id');
@@ -139,8 +124,6 @@
              boost: 10
          });
          this.field('rhythm');
-         this.field('tags');
-         this.field('location');
      });
 
      // Add the search items to the search index
@@ -149,8 +132,6 @@
              'id': key,
              'title': window.store[key].title,
              'rhythm': window.store[key].rhythm,
-             'tags': window.store[key].tags,
-             'location': window.store[key].location
          });
      }
 
