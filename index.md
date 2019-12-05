@@ -6,8 +6,9 @@ Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/drago
 
 But first a public service announcement:
 
+<a href="/charlie_montgomery/">Charlie Montgomery</a>
+------
 <p>
-<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on <a href="/charlie_montgomery/">this page</a> as well as him playing some old favourites.
 </p>
 <p>
@@ -40,7 +41,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 </div>
 </fieldset>
 
-<div class="row">
+<div class="row"></div>
 
 <script>
 tuneOfTheWeek = {
@@ -59,8 +60,6 @@ tuneOfTheWeek = {
 };
 </script>
 {% endif %}
-</div>
-<br />
 
 <a href="/regularsession/">Regular Session</a> - {{ site.session_time }}
 --------------
@@ -111,8 +110,6 @@ $.extend(window.store, tuneOfTheWeek);
 </script>
 
 {% endif %}
-
-<br />
 
 <a href="/tunes_archive/">Tunes Archive</a>
 ------------
