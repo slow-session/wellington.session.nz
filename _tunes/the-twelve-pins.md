@@ -14,7 +14,7 @@ repeats: 2
 parts: AABB
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: '© Fergal Scahill. All Rights Reserved.'
-mp3_url: https://youtu.be/dfUBAUkuLA0
+mp3_url: https://www.youtube.com/watch?v=dfUBAUkuLA0
 alt_mp3_url:
 source: Wellington
 abc_source: Henrik Norbeck's ABC Tunes
