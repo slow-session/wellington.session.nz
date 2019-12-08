@@ -46,7 +46,7 @@ function handleFileSelect(evt) {
         var reader = new FileReader();
         reader.onload = function(e) {
             //showPlayer.src = this.result;
-            showPlayer.innerHTML = createMP3player('playABC', this.result, 'mp3player_tunepage');
+            showPlayer.innerHTML = createMP3player('playABC', this.result);
             createSliders('playABC');
         };
         reader.readAsDataURL(f);

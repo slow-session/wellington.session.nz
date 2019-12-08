@@ -147,7 +147,7 @@ $(document).ready(function() {
 
     $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});  
 
-    ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+    ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
 
     createArchiveSlider('tableSlider');
     document.getElementById("tunes").addEventListener("scroll", scroll_indicator);

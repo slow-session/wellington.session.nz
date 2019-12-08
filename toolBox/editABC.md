@@ -81,7 +81,7 @@ $(document).ready(function()
     }
 
 	// Create the ABC player
-	ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+	ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
 
     processABCchange(abc);
 

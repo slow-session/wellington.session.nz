@@ -71,6 +71,6 @@ var regex = new RegExp('X:.*\n');
 $(document).ready(function() {
     tunelist.innerHTML = tuneList.slice(0, -2);
 
-    ABCplayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+    ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
 });
 </script>

@@ -1,21 +1,58 @@
-.mp3player_tunepage {
-    max-width: 650px;
-    width: 90%;
+.audioParentOuter {
+    display: inline-flex;
 }
 
-.abcplayer_tunepage {
-    max-width: 650px;
-    width: 90%;
+.audioParentInner {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.mp3player_tablerow {
-    min-width: 450px;
-    margin: 0 auto;
+.audioChildOuter {
+    flex: 1 auto;
 }
 
-.abcplayer_tablerow {
-    min-width: 450px;
-    margin: 0 auto;
+.audioChildInner {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mp3AudioControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    float: left;
+}
+
+.mp3LoopControl {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 180px;
+    float: left;
+}
+
+.mp3SpeedControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    float: left;
+}
+
+.abcAudioControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.abcSpeedControl {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    float: left;
 }
 
 .playButton {
@@ -28,7 +65,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 1rem;
     padding: 0;
     outline: none;
 }
@@ -43,7 +80,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 1rem;
     padding: 0;
     outline: none;
 }
@@ -58,49 +95,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 1rem;
     padding: 0;
     outline: none;
-}
-
-.mp3AudioControl {
-    width: 100%;
-    min-width: 180px;
-    margin-top: 27px;
-    float: left;
-}
-
-.mp3LoopControl {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 100%;
-    min-width: 180px;
-    float: left;
-}
-
-.mp3SpeedControl {
-    width: 100%;
-    min-width: 100px;
-    margin-top: 27px;
-    padding-left: 20px;
-    float: left;
-}
-
-.abcAudioControl {
-    width: 100%;
-    min-width: 180px;
-    margin-top: 27px;
-    margin-bottom: 15px;
-    float: left;
-}
-
-.abcSpeedControl {
-    width: 100%;
-    min-width: 100px;
-    margin-top: 27px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    float: left;
 }
 
 p.audioLabel {
@@ -182,6 +179,15 @@ fieldset {
     width: 70%;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.tableParent {
+    display: flex;
+    width: 100%;
+}
+
+.tableChild {
+    padding: 0rem;
 }
 
 .formParent {
@@ -371,17 +377,15 @@ tr#no_hover:hover {
     border-top-right-radius: 8px;
 }
 
-.row-even {
-    background-color: lighten($brand-color, 40%);
-}
-
 .row-odd {
-    background-color: lighten($brand-color, 60%);
+    //background-color: lighten($brand-color, 40%);
+    background-color: darken($complimentary-color, 10%);
 }
 
 .a {
     color: #f0f0f0;
 }
+
 /* Popup container */
 .popup {
   position: relative;
@@ -436,7 +440,7 @@ tr#no_hover:hover {
 }
 
 .charliepic {
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 8px;
     margin-right: 1rem;
     padding: 10px;
@@ -447,7 +451,7 @@ tr#no_hover:hover {
 .licenceUsed {
     overflow-y: scroll;
      height: 200px;
-     border:1px solid black;
+     border: 1px solid black;
      border-radius: 8px;
      margin: 10px;
      padding: 10px;
