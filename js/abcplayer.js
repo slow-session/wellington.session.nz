@@ -11,11 +11,9 @@
  * Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence.
  */
 
-
 var playingNow = 0;
 var abcStopped = 0;
-//var mp3Available = 1;
-//var ABCTuneName = "tune";
+var ABCheader = /^([A-Za-z]):\s*(.*)$/;
 var ABCPosition = {
     Ptr: 0
 };
@@ -23,39 +21,37 @@ var lastplayButton;
 var ABCCurrentTime = 0;
 var ABCduration = 0;
 var IntervalHandle;
-var PreviousTrID = null;
 
 // Select a timbre that sounds like an electric piano.
 var instrument;
 
-function createABCplayer (tuneID, playerClass, timbre) {
+
+function createABCplayer (tuneID, timbre) {
     /*
      * Generate the HTML needed to play ABC tunes
      */
     instrument = makeInstrument(timbre);
-    var trID = 'tr' + tuneID;
 
     var abcPlayer = '';
     abcPlayer += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    abcPlayer += '  <div class="' + playerClass + '">';
-    abcPlayer += '    <div class="row" id="' + tuneID + '" style="width: 100%;min-width: 350px;">';
+    abcPlayer += '    <div class="audioParentOuter" id="' + tuneID + '">';
     // Col 1
-    abcPlayer += '      <div class="small-2 columns">';
+    abcPlayer += '      <div class="audioChildOuter">';
     abcPlayer += '      <button id="playButton' + tuneID + '" class="playButton"';
-    abcPlayer += '          onclick="playABC(\'' + trID + '\', ABC' + tuneID + ', playButton' + tuneID + ', playPosition' + tuneID + ', speedSlider' + tuneID + '.value)">';
+    abcPlayer += '          onclick="playABC(ABC' + tuneID + ', playButton' + tuneID + ', playPosition' + tuneID + ', speedSlider' + tuneID + '.value)">';
     abcPlayer += '      </button>';
     abcPlayer += '      </div>';
     // Nested row in second column
-    abcPlayer += '      <div class="small-9 columns end">';
-    abcPlayer += '        <div class="row small-up-1 medium-up-2 large-up-2">';
+    abcPlayer += '      <div class="audioChildOuter">';
+    abcPlayer += '        <div class="audioParentInner">';
     // Col 2
-    abcPlayer += '         <div class="small-6 columns">';
+    abcPlayer += '         <div class="audioChildInner">';
     abcPlayer += '           <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="abcAudioControl slider" min="0" max="500" value="0"';
     abcPlayer += '             oninput="setABCPosition(value/100)" />';
     abcPlayer += '           <p class="audioLabel">Playing the <i>dots</i>!</p>';
     abcPlayer += '         </div>';
     // Col 3
-    abcPlayer += '         <div class="small-6 columns">';
+    abcPlayer += '         <div class="audioChildInner">';
     abcPlayer += '           <span title="Adjust playback speed with slider">';
     abcPlayer += '              <input name="flevel" id="speedSlider' + tuneID + '" class="abcSpeedControl slider" type="range" min="50" max="120" value="100"';
     abcPlayer += '                  onchange="changeABCspeed(ABC' + tuneID + ', playButton' + tuneID + ', value)">';
@@ -63,7 +59,6 @@ function createABCplayer (tuneID, playerClass, timbre) {
     abcPlayer += '          </span>';
     abcPlayer += '         </div>';
     abcPlayer += '      </div>';
-    abcPlayer += '  </div>';
     abcPlayer += '</form>';
 
     return (abcPlayer);
@@ -79,7 +74,7 @@ function makeInstrument(timbre) {
     return (tempInstrument);
 }
 
-function playABC(trID, tune, playButton, playPosition, bpm) {
+function playABC(tune, playButton, playPosition, bpm) {
     /*
      * Play an ABC tune when the button gets pushed
      */
@@ -108,21 +103,10 @@ function playABC(trID, tune, playButton, playPosition, bpm) {
         startABC(tune, ticks);
         playButton.className = "";
         playButton.className = "stopButton";
-        if (document.getElementById(PreviousTrID)) {
-            document.getElementById(PreviousTrID).style.backgroundColor = '';
-        }
-        PreviousTrID = trID;
-        if (document.getElementById(trID)) {
-            document.getElementById(trID).style.backgroundColor = 'khaki';
-        }
     } else {
         stopABC(tune);
         playButton.className = "";
         playButton.className = "playButton";
-
-        if (document.getElementById(trID)) {
-            document.getElementById(trID).style.backgroundColor = '';
-        }
     }
 }
 

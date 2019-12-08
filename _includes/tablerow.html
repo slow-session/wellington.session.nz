@@ -10,14 +10,14 @@
 {% if tune.mp3_file %}
 <td id="showPlayer{{ include.tuneId }}">
 <script>
-showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}', 'mp3player_tablerow');
+showPlayer{{ include.tuneId }}.innerHTML = createMP3player('{{ include.tuneId }}', '{{ site.mp3_host }}{{ tune.mp3_file }}');
 createSliders({{ include.tuneId }});
 </script>
 </td>
 {% else %}
 <td id="showPlayer{{ include.tuneId }}">
 <script>
-showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}', 'abcplayer_tablerow', '{{ site.defaultABCplayer }}');
+showPlayer{{ include.tuneId }}.innerHTML = createABCplayer('{{ include.tuneId }}', '{{ site.defaultABCplayer }}');
 </script>
 </td>
 

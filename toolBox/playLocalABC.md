@@ -54,7 +54,7 @@ function handleFileSelect(evt) {
                 playButtonprocessed.className = "";
                 playButtonprocessed.className = "playButton";
             }   
-            showPlayer.innerHTML = createABCplayer('processed', 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+            showPlayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
         };
         reader.readAsText(f);
     }

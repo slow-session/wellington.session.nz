@@ -42,24 +42,24 @@ function createAudioPlayer() {
     return (pagePlayer);
 }
 
-function createMP3player(tuneID, mp3url, playerClass) {
+function createMP3player(tuneID, mp3url) {
     var mp3player = '';
     // build the MP3 player for each tune
 
     mp3player += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    mp3player += '    <div id="audioplayer' + tuneID + '" class="' + playerClass + '">';
-    mp3player += '    <div class="row">';
+    mp3player += '    <div id="audioplayer' + tuneID + '">';
+    mp3player += '    <div class="audioParentOuter">';
     // Col 1 - play button
-    mp3player += '      <div class="small-2 columns">';
+    mp3player += '      <div class="audioChildOuter">';
     mp3player += '        <button id="playButton' + tuneID + '" class="playButton"';
     mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', playButton' + tuneID + ',  playPosition' + tuneID + ', speedSlider' + tuneID + ', \'' + mp3url + '\')">';
     mp3player += '        </button>';
     mp3player += '      </div>';
     // Nested row in second column
-    mp3player += '      <div class="small-9 columns end">';
-    mp3player += '        <div class="row small-up-1 medium-up-2 large-up-2">';
+    mp3player += '      <div class="audioChildOuter">';
+    mp3player += '        <div class="audioParentInner">';
     // Col 2 - audio slider
-    mp3player += '          <div class="small-6 columns">';
+    mp3player += '          <div class="audioChildInner">';
     mp3player += '            <div class="audio">';
     mp3player += '              <span title="Play tune, select loop starting point, then select loop end point">';
     mp3player += '                <div id="playPosition' + tuneID + '" class="mp3AudioControl"></div>'
@@ -74,7 +74,7 @@ function createMP3player(tuneID, mp3url, playerClass) {
     mp3player += '            </div>';
     mp3player += '          </div>';
     // Col 3 - speed slider
-    mp3player += '          <div class="small-6 columns end">';
+    mp3player += '          <div class="audioChildInner">';
     mp3player += '            <div id="speedControl' + tuneID + '" class="mp3SpeedControl">';
     mp3player += '              <span title="Adjust playback speed with slider">';
     mp3player += '                <div id="speedSlider' + tuneID + '"></div>'
@@ -229,7 +229,7 @@ function changeTune(tuneNumber) {
 
     if (item.mp3.includes('mp3')) {
         // make the MP3 player
-        showPlayer.innerHTML = createMP3player(tuneNumber, item.mp3, 'mp3player_tunepage');
+        showPlayer.innerHTML = createMP3player(tuneNumber, item.mp3);
         createSliders(tuneNumber);
 
         var playPosition = document.getElementById('playPosition' + tuneNumber);
@@ -387,9 +387,9 @@ function createLoopControlsContainer() {
 
     for (i = 0; i < presetLoopSegments.length; i++) {
         if (i % 2) {
-            loopControlsContainer += '<div class="row row-even">';
-        } else {
             loopControlsContainer += '<div class="row row-odd">';
+        } else {
+            loopControlsContainer += '<div class="row">';
         }
         loopControlsContainer += '<div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="applySegments()" id="check' + i + '">' + presetLoopSegments[i].name + '</div>';
         loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"> \

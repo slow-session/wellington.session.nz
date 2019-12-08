@@ -198,7 +198,7 @@ function show_iframe(url) {
 
         {% if page.mp3_file %}
         audioPlayer.innerHTML = createAudioPlayer();
-        showPlayer.innerHTML = createMP3player(tuneID, '{{ site.mp3_host }}{{ page.mp3_file }}', 'mp3player_tunepage');
+        showPlayer.innerHTML = createMP3player(tuneID, '{{ site.mp3_host }}{{ page.mp3_file }}');
         createSliders(tuneID);
         tuneID++;
         {% endif %}
@@ -206,7 +206,7 @@ function show_iframe(url) {
         {% if page.abc contains "K:" %}
         var textAreaID = 'ABC' + tuneID;
         textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
-        ABCplayer.innerHTML = createABCplayer(tuneID, 'abcplayer_tunepage', '{{ site.defaultABCplayer }}');
+        ABCplayer.innerHTML = createABCplayer(tuneID, '{{ site.defaultABCplayer }}');
 
         // Set the filename for downloading
         document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';
