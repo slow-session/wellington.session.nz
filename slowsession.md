@@ -72,9 +72,12 @@ Recent slow session tunes of the week
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
 
+<div class="tunesTable" id="tunesTable"></div>
+<!--
 <div class="tableParent">
   <div class="tableChild tunesTable" id="tunesTable"></div>
 </div>
+-->
 
 <script>
 window.store = {

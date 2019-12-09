@@ -5,10 +5,7 @@ permalink: /latest/
 ---
 These are the last <span id="tunesCount"></span> tunes we’ve added to the <a href="/tunes_archive/">Tunes Archive</a>.
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
+<div class="tunesTable" id="tunesTable"></div>
 
 <script>
 window.store = {
@@ -32,7 +29,7 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count <= 14 %},{% else %}{% break %}{% endif %}
+        }{% if tune_count <= 9 %},{% else %}{% break %}{% endif %}
     {% endfor %}
 };
 </script>
@@ -49,7 +46,5 @@ $(document).ready(function() {
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});  
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
