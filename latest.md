@@ -5,9 +5,9 @@ permalink: /latest/
 ---
 These are the last <span id="tunesCount"></span> tunes we’ve added to the <a href="/tunes_archive/">Tunes Archive</a>.
 
-<div class="row rowTuneTable">
-  <div class="small-11 columns tunesTable" id="tunesTable"></div>
-  <div class="small-1 columns tableSlider" id="tableSlider"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
 <script>

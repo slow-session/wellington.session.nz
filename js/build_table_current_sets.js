@@ -26,10 +26,10 @@
          var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
          <thead> \
          <tr> \
-           <th style="width:20%;">Set Name &#x25B2;&#x25BC;</th> \
-           <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
-           <th style="width:29%;">Titles</th> \
-           <th style="width:45%;">Play Now</th> \
+            <th style="width:25%;">Set Name &#x25B2;&#x25BC;</th> \
+            <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
+            <th style="width:29%;">Titles</th> \
+            <th>Play Now</th> \
          </tr> \
          </thead> \
          <tbody>';
