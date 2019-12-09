@@ -26,7 +26,7 @@
             <th style="width: 50%;">Tune Name &#x25B2;&#x25BC;</th> \
             <th style="width: 20%;">Play Now</th> \
             <th style="width: 10%;">Key &#x25B2;&#x25BC;</th> \
-            <th style="width: 20%;">Rhythm &#x25B2;&#x25BC;</th> \
+            <th>Rhythm &#x25B2;&#x25BC;</th> \
          </tr> \
          </thead> \
          <tbody>';

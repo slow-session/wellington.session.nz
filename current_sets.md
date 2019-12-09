@@ -43,9 +43,9 @@ page.
 
 <div class="row"></div>
 
-<div class="row rowTuneTable">
-  <div class="small-11 columns tunesTable" id="tunesTable"></div>
-  <div class="small-1 columns tableSlider" id="tableSlider"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
 {% assign tuneID = 200 %}

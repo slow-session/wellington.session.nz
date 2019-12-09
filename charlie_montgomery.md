@@ -60,10 +60,9 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     Charlie's compositions tagged with <strong>*</strong>
 </fieldset>
 
-
-<div class="row rowTuneTable">
-  <div class="small-11 columns tunesTable" id="tunesTable"></div>
-  <div class="small-1 columns tableSlider" id="tableSlider"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
 <script>
