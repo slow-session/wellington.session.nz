@@ -17,14 +17,13 @@ melody instruments.
 
 See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option.
 
-
 {% assign tuneID = 100 %}
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
 
-Tune of the Week
-----------------
+## Tune of the Week
+
 We pick one tune for homework each week, and we’ll play it sometime during the first hour.
 
 <fieldset class="fieldset-auto-width">
@@ -63,12 +62,12 @@ tuneOfTheWeek = {
 };
 
 </script>
+
 {% endif %}
 
 <br />
 
-Recent slow session tunes of the week
---------
+## Recent slow session tunes of the week
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
 
@@ -92,7 +91,7 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count <= 9 %},{% else %}{% break %}{% endif %}
+        }{% if tune_count <= 19 %},{% else %}{% break %}{% endif %}
     {% endif %}
     {% assign tune_count = tune_count | plus: 1 %}
     {% assign tuneID = tuneID | plus: 1 %}
