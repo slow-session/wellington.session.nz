@@ -15,6 +15,7 @@ mp3_file: /mp3/arthur-darleys.mp3
 mp3_source: Alistair Cuthill and Steve McGlone
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url: https://www.facebook.com/alistairsmusic/videos/1708100742542234/
+alt_mp3_url: https://www.facebook.com/FergalScahillMusic/videos/2319160444995164/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/417
