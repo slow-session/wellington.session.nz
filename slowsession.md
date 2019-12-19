@@ -71,7 +71,10 @@ tuneOfTheWeek = {
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
 
-<div class="tunesTable" id="tunesTable"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
+</div>
 
 <script>
 window.store = {
@@ -103,7 +106,6 @@ $.extend(window.store, tuneOfTheWeek);
 </script>
 
 <script src="{{ site.js_host }}/js/lunr.min.js"></script>
-
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
 {% include tuneModal.html%}
@@ -113,5 +115,8 @@ $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});
+
+    createArchiveSlider('tableSlider');
+    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
