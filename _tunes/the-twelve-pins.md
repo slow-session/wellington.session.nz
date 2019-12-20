@@ -24,20 +24,13 @@ abc: |
   T:Twelve Pins, The
   R:reel
   C:Charlie Lennon
-  Z:id:hn-reel-108
+  Z: Megan Ward
   M:C|
   K:G
-  dB~B2 dBGB | dA~A2 dAFA | DEFG ABcA | defg afge |
-  dB~B2 dBGB | dA~A2 dAFA | DEFG ABcA | d2Bd AGG2 :|
-  ~f3e defg | a2ge cAAB | ~c3B c2AB | cedB cAG2 |
-  ~f3e defg | afge cAAB | c2cB c2AB | c2dc AGG2 |
-  ~f3e defg | a2ge cAAB | c2AB cdef | abag edd2 |
-  ~f3g ~a3g | f2fe dB~B2 | c2cB cBAB | c2dc AGG2 ||
-  P:variations
-  |: dB~B2 dBGB | dA~A2 dAFA | DEFG ABcA | dfab afge |
-  dB~B2 dBGB | dA~A2 dAFA | DEFG ABcA | d2cd AGG2 :|
-  ~f3e defg | adfd cAAB | ~c3B c2AB | cedB cAA2 |
-  ~f3e defg | adfd cAAB | c2cB cBAB | cedc AGG2 |
-  ~f3e defg | adfd cAAB | c2AB cdeg | abag fdde |
-  ~f3g ~a3g | ~f3e dcAB | c2cB c2AB | cAdc AGG2 ||
+  dB~B2 dBGB | dA~A2 dAFE | DEFG ABcA | defg agfe |
+  dB~B2 dBGB | dA~A2 dAFE | DEFG ABcA | d2cA BGG2 :|
+  ~f3e d2fg | a2dc dcAB | ~c3B cBAB | cedc BAG2 |
+  ~f3e defg | addc dcAB | c2cB cedc | ~B2~A2 GABd|
+  ~f3e d2fg | a2dc dcAB | ~c3B cdef | afge fede |
+  ~f3g gffe | fdec dcAB | c2cB cedc | ~B2~A2 GABc ||
 ---

@@ -19,17 +19,16 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/42
 source: Wellington
 abc: |
-    X: 1
-    T: The Gravel Walks
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Ador
-    |:A2 eA (3cBA eA|A2 eA BAGB|A2 eA (3Bcd ef|gedc BAGB:|
-    A2 aA gAfA|A2 eA BAGB|A2 aA gAfA|gedc BAGB|
-    A2 aA gAfA|A2 eA BAGB|ABcd efga|gedc BAGB|
-    |:(3cBA BG A2 AB|cAAd BAGB|(3cBA BG ABcd|efge dBGB:|
-    K:Cmaj
-    |:c2 gc acgc|c2 gc BAGB|c2 gc acga|gedc BAGB|
-    c2 gc acgc|c2 gc BAGB|ABcd efga|gedc BAGB:|
+  X: 1
+  T: The Gravel Walks
+  R: reel
+  M: 4/4
+  L: 1/8
+  K: Ador
+  |:A2 eA (3cBA eA|A2 eA BAGB|A2 eA (3Bcd ef|gedc BAGB:|
+  A2 aA gAfA|A2 eA BAGB|A2 aA gAfA|gedc BAGB|
+  A2 aA gAfA|A2 eA BAGB|ABcd efga|gedc BAGB|
+  |:(3cBA BG A2 AB|cAAd BAGB|(3cBA BG ABcd|efge dBGB:|
+  |:c2 gc acgc|c2 gc BAGB|c2 gc acga|gedc BAGB|
+  c2 gc acgc|c2 gc BAGB|ABcd efga|gedc BAGB:|
 ---
