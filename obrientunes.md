@@ -3,6 +3,10 @@ layout: page
 title: Paddy O'Brien Tunes
 permalink: /obrientunes/
 ---
+The ABC for these tunes is from the same source that produced this tunebook:
+<a href="http://www.ceolas.org/pub/tunes/tunes.pdf/POB.pdf">Tune Sets Arranged by Paddy O'Brien, Co. Tipperary</a>
+
+This collection was one of the very early uses of ABC to capture and transmit Irish trad tunes on the net.
 
 <!-- Some boilerplate that's common to a number of pages -->
 {% include obrientunes-filter-variables.html %}
@@ -45,8 +49,6 @@ permalink: /obrientunes/
   <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
-<div id="abc-textareas"></div>
-
 <script>
     window.store = {
       {% assign tuneID = 3000 %}
@@ -58,14 +60,7 @@ permalink: /obrientunes/
         "tuneID": "{{ tuneID }}",
         "key": "{{ tune.key | xml_escape }}",
         "rhythm": "{{ tune.rhythm | xml_escape }}",
-        "location": "{{ tune.location | xml_escape }}",
-        "tags": "{{ tune.tags | array_to_sentence_string }}",
         "url": "{{ tune.url | xml_escape }}",
-        "instrument": "{{ site.defaultABCplayer }}",
-        {% if tune.mp3_file %}"mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-        "abc": ""
-        {% else %}"mp3": "",
-        "abc": {{ tune.abc | jsonify }}{% endif %}
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
