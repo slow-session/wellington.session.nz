@@ -5,7 +5,9 @@ permalink: /latest/
 ---
 These are the last <span id="tunesCount"></span> tunes we’ve added to the <a href="/tunes_archive/">Tunes Archive</a>.
 
-<div class="tunesTable" id="tunesTable"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+</div>
 
 <script>
 window.store = {
@@ -33,8 +35,6 @@ window.store = {
     {% endfor %}
 };
 </script>
-
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
 
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 

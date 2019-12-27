@@ -105,7 +105,6 @@ window.store = {
 $.extend(window.store, tuneOfTheWeek);
 </script>
 
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
 {% include tuneModal.html%}
@@ -117,6 +116,7 @@ $(document).ready(function() {
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});
 
     createArchiveSlider('tableSlider');
+    console.log('tableSlider');
     document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>

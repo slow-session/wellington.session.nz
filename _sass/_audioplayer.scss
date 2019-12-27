@@ -165,7 +165,7 @@ h2 span {
 }
 
 fieldset {
-    max-width: 650px;
+    max-width: 565px;
     float:left;
     margin: 0 auto;
     text-align: left;
@@ -175,7 +175,7 @@ fieldset {
 
 .fieldset-auto-width {
     min-width: 300px;
-    max-width: 70%;
+    max-width: 565px;
     width: 70%;
     text-align: center;
     margin-bottom: 1rem;
@@ -328,10 +328,21 @@ tr#no_hover:hover {
     width: 45px;
 }
 
+//if the tunesTable height is 320px we can get 10 tunes in the table and no
+// need for a tableSlider
 .tunesTable{
-  height: 300px;
+  height: 320px;
   width: 565px;
   overflow: auto;
+}
+
+// height + margin-top + margin-bottom = tunesTable.height
+.tableSlider {
+    height: 270px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding:  0;
 }
 
 .tuneSelect {
@@ -344,15 +355,7 @@ tr#no_hover:hover {
   padding-right: 12px; /* maximum width of scrollbar */
   font-size: 14px;
   min-width: 300px;
-  max-width: 900px;
-}
-
-.tableSlider {
-    padding:  0;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    height: 280px;
+  //max-width: 900px;
 }
 
 .outputABC {

@@ -69,9 +69,7 @@ permalink: /obrientunes/
     };
 </script>
 
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_obrientunes.js"></script>
-<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
 
 <script>
 $(document).ready(function() {

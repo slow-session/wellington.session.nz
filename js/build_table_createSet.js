@@ -107,8 +107,7 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<div style="overflow-x:auto;"> \
-         <table style="width:100%"  align="center" id="tunes" class="tablesorter"> \
+         var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
          <thead> \
          <tr> \
            <th style="width:10%;min-width:75px;">Add Tune</th> \
@@ -134,7 +133,7 @@
                  tunesCounter++;
              }
          }
-         appendString += '</tbody></table></div>';
+         appendString += '</tbody></table>';
          tunesTable.innerHTML = appendString;
          tunesCount.innerHTML = tunesCounter;
      }

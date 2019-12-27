@@ -66,9 +66,6 @@ DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
     </div>
 </div>
 
-
-<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
-
 <script>
 $(document).ready(function()
 {

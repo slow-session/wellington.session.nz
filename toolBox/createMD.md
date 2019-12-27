@@ -58,8 +58,6 @@ permalink: /createMD/
 
 </style>
 
-<script src="{{ site.mp3_host }}/js/webpage_tools.js"></script>
-
 <script>
 // Get the modal
 var modal = document.getElementById("mdModal");
