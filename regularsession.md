@@ -64,7 +64,9 @@ Recent regular session tunes of the week
 
 These are the <span id="tunesCount"></span> tunes we've added over the last few months.
 
-<div class="tunesTable" id="tunesTable"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+</div>
 
 <script>
 window.store = {
@@ -102,8 +104,6 @@ Latest Tunes
 
 We add new tunes to the archive reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
 These are the <span id="tunesCount"></span> tunes we've been learning over the last couple of months.
-
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
 
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 

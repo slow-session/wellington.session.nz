@@ -149,7 +149,11 @@ Use the "Reset Tunes" button to start a new set.
 
 <div class="row"></div>
 
-<div id="tunesTable"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
+</div>
+
 <div id="abc-textareas"></div>
 
 <script>
@@ -173,15 +177,14 @@ Use the "Reset Tunes" button to start a new set.
     };
 </script>
 
-<script src="{{ site.js_host }}/js/webpage_tools.js"></script>
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
 <script src="{{ site.js_host }}/js/build_table_createSet.js"></script>
-
 
 <script>
 $(document).ready(function() {
-    $.tablesorter.defaults.sortList = [[1,0];
 
     $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});
+
+    createArchiveSlider('tableSlider');
+    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>

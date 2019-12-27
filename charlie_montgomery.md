@@ -91,8 +91,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     };
 </script>
 
-<script src="{{ site.js_host }}/js/lunr.min.js"></script>
-
 <script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
 {% include tuneModal.html%}
