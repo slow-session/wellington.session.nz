@@ -1,0 +1,156 @@
+---
+layout: page
+---
+<div class="output" style="max-width: 650px;">
+    <div id="paper0" class="paper"></div>
+</div>
+
+<div style="overflow-x:auto;">
+<div id="ABCplayer"></div>
+</div>
+
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;"></textarea>
+<div id="textAreas"></div>
+
+{{ content }}
+
+<form>
+    <input type="button" class="filterButton" value="Show ABC Source" onclick="toggle(this);">
+</form>
+
+<div id='abcSource' style="display: none;">
+    <div class="row">
+        <div class="small-6 columns">
+            <textarea name='abcText' id="abcText" rows="13" cols="65"
+            style="background-color:#ebebeb; font-size:small; max-width:100%"
+            spellcheck="false">{{ page.abc | br_to_newline }}
+            </textarea>
+            <span title="Download the ABC you've entered. Don't lose your work!">
+    	    <input value='Download ABC' type='button' class="filterButton"
+            onclick='downloadFile(document.getElementById("filename").value,
+                    document.getElementById("abcText").value)' />
+            </span>
+        </div>
+        <div class="small-6 columns" style="max-width:100%">
+    <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.
+    A brief set of instructions is found <a href="/editingABC/">here.</a></p>
+
+    <p>You can save your changes using the <b>Download ABC</b> button</p>
+        </div>
+</div></div>
+
+<script>
+function show_iframe(url) {
+    // Add other sources as needed
+    if (url.includes('www.youtube.com')) {
+        url = url.replace('&t=', '?start=');
+        document.write('<iframe src="https://www.youtube.com/embed/' + url.split('v=')[1] + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>');
+    }
+    else if (url.includes('www.facebook.com')) {
+        document.write('<iframe src="https://www.facebook.com/plugins/video.php?href=' + encodeURI(url) + '&show_text=0&width=560&mute=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>');
+    }
+    else if (url.includes('vimeo.com')) {
+        document.write('<iframe src="https://player.vimeo.com/video/' + url.split('vimeo.com/')[1] + '" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    }
+    else if (url.includes('soundcloud.com')) {
+        document.write('<iframe src="https://w.soundcloud.com/player/?url=' + encodeURI(url) + '&hide_related=true" width="560" height="200" ></iframe>');
+    }
+    else if (url.includes('media.comhaltas.ie/video/')) {
+        document.write('<video width="320" height="240" controls><source src="' + encodeURI(url) + '" type="video/mp4"></video>');
+    }
+}
+</script>
+
+<div class="attribution">
+    <br />
+    {% if page.mp3_file %}
+        <p class="attribution">The audio for {{ page.title }} is sourced from
+        {% if page.mp3_url %}
+            <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        {% else %}
+            {{ page.mp3_source }}.
+        {% endif %}
+        Permission to use is gratefully acknowledged and the audio is made available under this licence:
+        {{ page.mp3_licence }}</p>
+
+        {% if page.mp3_url %}
+        <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
+        <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+        <p><script>
+        show_iframe("{{ page.mp3_url }}");
+        </script>
+        </p>
+        {% endif %}
+    {% endif %}
+
+    {% if page.alt_mp3_url %}
+        <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
+        <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+        <p>
+        <script>
+        show_iframe("{{ page.alt_mp3_url }}");
+        </script>
+        </p>
+    {% endif %}
+
+    {% if page.abc_source %}
+        <p>The music notation was derived from
+        {% if page.abc_url %}
+            <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+        {% else %}
+            {{ page.abc_source }}
+        {% endif %}
+    {% endif %}
+</div>
+
+<div id="debug"></div>
+
+<script>
+    function toggle(button) {
+        switch (button.value) {
+            case "Show ABC Source":
+                button.value = "Hide ABC Source";
+                document.getElementById('abcSource').style.display= "block" ;
+                break;
+            case "Hide ABC Source":
+                button.value = "Show ABC Source";
+                document.getElementById('abcSource').style.display= "none" ;
+                break;
+        }
+    }
+</script>
+
+<!-- Show errors -->
+<div id='warnings'></div>
+
+<script>
+    $(document).ready(function() {
+        var tuneID = 666;
+
+        {% if page.mp3_file %}
+        audioPlayer.innerHTML = createAudioPlayer();
+        showPlayer.innerHTML = createMP3player(tuneID, '{{ site.mp3_host }}{{ page.mp3_file }}');
+        createSliders(tuneID);
+        tuneID++;
+        {% endif %}
+
+        {% if page.abc contains "K:" %}
+        var textAreaID = 'ABC' + tuneID;
+        textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
+        ABCplayer.innerHTML = createABCplayer(tuneID, '{{ site.defaultABCplayer }}');
+
+        // Set the filename for downloading
+        document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';
+
+        // If the ABC changes get ready to play the revised ABC
+        $('#abcText').bind('input propertychange', function() {
+            textAreas.innerHTML = '<textarea id="' + textAreaID + '" style="display:none;">' + preProcessABC(abcText.value) + '</textarea>';
+            // Reset the filename for downloading
+            document.getElementById("filename").innerHTML = slugify(getABCtitle(abcText.value)) + '.abc';
+        });
+
+        abc_editor = new window.ABCJS.Editor('abcText', { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+        {% endif %}
+    });
+</script>

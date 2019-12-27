@@ -86,7 +86,7 @@ defaults:
   - scope:
         path: "_obrientunes"
     values:
-        layout: "tunepage"
+        layout: "tunepage-obrien"
         permalink: /obrientunes/:title:output_ext
   - scope:
         path: "_sets"

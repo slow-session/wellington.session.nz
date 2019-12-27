@@ -4,8 +4,6 @@ title: Paddy O'Brien Tunes
 permalink: /obrientunes/
 ---
 
-<div id="audioPlayer"></div>
-
 <!-- Some boilerplate that's common to a number of pages -->
 {% include obrientunes-filter-variables.html %}
 
@@ -42,7 +40,11 @@ permalink: /obrientunes/
 
 <div class="row"></div>
 
-<div id="tunesTable"></div>
+<div class="tableParent">
+  <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
+</div>
+
 <div id="abc-textareas"></div>
 
 <script>
@@ -73,11 +75,13 @@ permalink: /obrientunes/
 
 <script>
 $(document).ready(function() {
-    audioPlayer.innerHTML = createAudioPlayer();
 
     /* Set initial sort order */
     $.tablesorter.defaults.sortList = [[0,0]];
 
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 3:{sorter: false}}});    
+    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}}});
+
+    createArchiveSlider('tableSlider');
+    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);   
 });
 </script>

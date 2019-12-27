@@ -181,6 +181,8 @@ Use the "Reset Tunes" button to start a new set.
 
 <script>
 $(document).ready(function() {
+    /* Set initial sort order */
+    $.tablesorter.defaults.sortList = [[1,0]];
 
     $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});
 
