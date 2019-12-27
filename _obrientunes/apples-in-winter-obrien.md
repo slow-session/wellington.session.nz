@@ -21,14 +21,13 @@ abc: |
     T:Apples in Winter
     C:Trad, arr. Paddy O'Brien
     R:jig
-    I:speed 350
     M:6/8
     K:D
-    G/2A/2|BEE dEE|BAG FGE|~D2D FDF|ABc ded|
+    |:G/2A/2|BEE dEE|BAG FGE|~D2D FDF|ABc ded|
     BEE BAB|def ~g2 e|fdB AGF|GEE E2:|
-    d|efe edB|ege fdB|dec dAF|DFA def|1\
-    efe edB|def ~g2a|bgb afa|gee e2:|2\
-    edB def|gba ~g2e|fdB AGF|GEE E2||
-    
+    |:d|efe edB|ege fdB|dec dAF|DFA def|
+    |1 efe edB|def ~g2a|bgb afa|gee e2:|
+    |2 edB def|gba ~g2e|fdB AGF|GEE E2||
+
 
 ---
