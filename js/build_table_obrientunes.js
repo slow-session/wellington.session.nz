@@ -70,66 +70,64 @@
      }
 
 
-          function getQueryVariable(variable) {
-              var query = window.location.search.substring(1);
-              var vars = query.split('&');
+     function getQueryVariable(variable) {
+         var query = window.location.search.substring(1);
+         var vars = query.split('&');
 
-              for (var i = 0; i < vars.length; i++) {
-                  var pair = vars[i].split('=');
+         for (var i = 0; i < vars.length; i++) {
+             var pair = vars[i].split('=');
 
-                  if (pair[0] === variable) {
-                      return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-                  }
-              }
-          }
+             if (pair[0] === variable) {
+                 return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+             }
+         }
+     }
 
-          // create the searchTerm from the form data and reflect the values chosen in the form
-          var searchTerm = '';
-          var title = getQueryVariable('title');
-          if (title) {
-              searchTerm = title + ' ';
-              document.getElementById('title-box').setAttribute("value", title);
-          }
-          var rhythm = getQueryVariable('rhythm');
-          if (rhythm) {
-              searchTerm += rhythm + ' ';
-              var e = document.getElementById('rhythm-box');
-              if (e) {
-                  e.value = rhythm;
-              }
-          }
-          // Define the index terms for lunr search
-          var tuneIndex = lunr(function() {
-              this.field('id');
-              this.field('title', {
-                  boost: 10
-              });
-              this.field('rhythm');
-              this.field('mp3_source');
-          });
+     // create the searchTerm from the form data and reflect the values chosen in the form
+     var searchTerm = '';
+     var title = getQueryVariable('title');
+     if (title) {
+         searchTerm = title + ' ';
+         document.getElementById('title-box').setAttribute("value", title);
+     }
+     var rhythm = getQueryVariable('rhythm');
+     if (rhythm) {
+         searchTerm += rhythm + ' ';
+         var e = document.getElementById('rhythm-box');
+         if (e) {
+             e.value = rhythm;
+         }
+     }
+     // Define the index terms for lunr search
+     var tuneIndex = lunr(function() {
+         this.field('id');
+         this.field('title', {
+             boost: 10
+         });
+         this.field('rhythm');
+     });
 
-          // Add the search items to the search index
-          for (var key in window.store) { // Add the data to lunr
-              tuneIndex.add({
-                  'id': key,
-                  'title': window.store[key].title,
-                  'rhythm': window.store[key].rhythm,
-                  'mp3_source': window.store[key].mp3_source,
-              });
-          }
+     // Add the search items to the search index
+     for (var key in window.store) { // Add the data to lunr
+         tuneIndex.add({
+             'id': key,
+             'title': window.store[key].title,
+             'rhythm': window.store[key].rhythm,
+         });
+     }
 
-          // Get results
-          if (searchTerm) {
-              var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
+     // Get results
+     if (searchTerm) {
+         var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
 
-              if (results.length) {
-                  displayTunesTable(results, window.store);
-              } else {
-                  document.getElementById('tunesCount').innerHTML = 0;
-              }
-          } else {
-              displayTunesTable('', window.store);
-          }
-          return false;
+         if (results.length) {
+             displayTunesTable(results, window.store);
+         } else {
+             document.getElementById('tunesCount').innerHTML = 0;
+         }
+     } else {
+         displayTunesTable('', window.store);
+     }
+     return false;
 
  })();
