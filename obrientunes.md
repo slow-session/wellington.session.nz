@@ -75,8 +75,6 @@ $(document).ready(function() {
     $.tablesorter.defaults.sortList = [[0,0]];
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}}});
-
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);   
+ 
 });
 </script>
