@@ -104,8 +104,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});  
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
   });
 </script>
 

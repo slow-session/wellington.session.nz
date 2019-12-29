@@ -66,6 +66,7 @@ These are the <span id="tunesCount"></span> tunes we've added over the last few 
 
 <div class="tableParent">
   <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
 <script>
