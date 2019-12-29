@@ -109,7 +109,5 @@ $(document).ready(function() {
 
     $("#tunes").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
