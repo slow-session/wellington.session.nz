@@ -92,8 +92,6 @@ window.store = {
 
     $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});  
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
   });
 </script>
 

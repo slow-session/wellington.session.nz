@@ -7,6 +7,7 @@ These are the last <span id="tunesCount"></span> tunes we’ve added to the <a h
 
 <div class="tableParent">
   <div class="tableChild tunesTable" id="tunesTable"></div>
+  <div class="tableChild tableSlider" id="tableSlider"></div>
 </div>
 
 <script>
