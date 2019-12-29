@@ -160,11 +160,19 @@
 
          if (results.length) {
              displaySetsTable(results, window.setStore);
+             if (results.length > 10) {
+                createArchiveSlider('tableSlider');
+                document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
+            }
          } else {
              document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
          displaySetsTable('', window.setStore);
+         if (Object.keys(store).length > 10) {
+            createArchiveSlider('tableSlider');
+            document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
+        }
      }
      return false;
  })();
