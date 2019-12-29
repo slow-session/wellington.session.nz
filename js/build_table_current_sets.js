@@ -160,7 +160,7 @@
 
          if (results.length) {
              displaySetsTable(results, window.setStore);
-             if (results.length > 10) {
+             if (results.length > 3) {
                 createArchiveSlider('tableSlider');
                 document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
             }
@@ -169,7 +169,7 @@
          }
      } else {
          displaySetsTable('', window.setStore);
-         if (Object.keys(store).length > 10) {
+         if (Object.keys(store).length > 3) {
             createArchiveSlider('tableSlider');
             document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
         }
