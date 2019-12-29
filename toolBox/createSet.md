@@ -186,7 +186,5 @@ $(document).ready(function() {
 
     $("#tunes").tablesorter({headers: { 0:{sorter: false}, 1:{sorter: 'ignoreArticles'} }});
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
