@@ -147,7 +147,5 @@ $(document).ready(function() {
 
     ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
 
-    createArchiveSlider('tableSlider');
-    document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
 });
 </script>
