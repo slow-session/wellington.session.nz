@@ -19,15 +19,16 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/3065
 abc: |
-    X: 3
-    T: The Cornboy
+    X: 4
     T: East Clare
     R: reel
     M: 4/4
     L: 1/8
     K: Dmix
-    |:D2FA d2cA|GEED EFGB|Add^c d=cAB|cAGE EDCE|
-    D2FA d2cA|GEED EFGB|Add^c d=cAB|cAGE EDD2:|
-    |:aged cded|~c3d eg~g2|aged cded|cAGE EDD2|
-    ed e/f/g aged|dcAB cAGE|=F3E FGAB|1 cAGE EDD2:|2 cAGE EDCE|]
+    |:D2 FA d2 cA|GEED EFGB|Ad d2 dcAB|cAGE EDCE|
+    DEFA d2 cA|GEED EFGB|Ad d2 dcAB|1 cAGE EDCE:|2 cAGE ED D2||
+    |:aged c2 ed|c3 d eg g2|aged cded|cAGE EDDg
+    ed (3efg aged|d^cAB =cAGc|AcGE =FGAB|1 cAGE ED D2:|
+    |2 cAGE EDCE ||["Final Ending" cAGE ED D2 |]
+
 ---
