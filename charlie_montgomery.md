@@ -5,7 +5,7 @@ permalink: /charlie_montgomery/
 ---
 <div class="row">
 <p>
-<img class="charliepic" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
+<img class="featurePicture" alt="Charlie Montgomery" src="/images/charliemontgomery.jpg">
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. Charlie has also composed many tunes and you can find them on this page as well as him playing some old favourites.
 </p>
 <p>
