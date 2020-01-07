@@ -4,7 +4,7 @@
 import sys
 import re
 import os
-import cgi
+import html
 
 def usage():
     print ("Usage: " + sys.argv[0] + " <archive_name>")
@@ -109,7 +109,7 @@ with open(optionsFile, 'w') as outfile:
     """)
 
     for key in sorted(rhythmDict.keys()):
-        outfile.write('    <option value="' + cgi.escape(rhythmDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('    <option value="' + html.escape(rhythmDict[key], quote=True) + '">' + key + '</option>\n')
 
     outfile.write("""    <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
     </select>
@@ -155,7 +155,7 @@ with open(optionsFile, 'w') as outfile:
     <option value="">None</option>
     """)
     for key in sorted(mp3sourceDict.keys()):
-        outfile.write('    <option value="' + cgi.escape(mp3sourceDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('    <option value="' + html.escape(mp3sourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW MP3 SOURCE HERE">Other</option>
     </select>
 
@@ -176,7 +176,7 @@ with open(optionsFile, 'w') as outfile:
         <option value="">None</option>
     """)
     for key in sorted(mp3licenceDict.keys()):
-        outfile.write('    <option value="' + cgi.escape(mp3licenceDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('    <option value="' + html.escape(mp3licenceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW MP3 LICENCE HERE">Other</option>
     </select>
 
@@ -193,7 +193,7 @@ with open(optionsFile, 'w') as outfile:
     for key in sorted(sourceDict.keys()):
         if 'Wellington' in key:
             break
-        outfile.write('    <option value="' + cgi.escape(sourceDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('    <option value="' + html.escape(sourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
     </select>
 
@@ -208,7 +208,7 @@ with open(optionsFile, 'w') as outfile:
     for key in sorted(abcsourceDict.keys()):
         if 'The Session' in key:
             break
-        outfile.write('    <option value="' + cgi.escape(abcsourceDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('    <option value="' + html.escape(abcsourceDict[key], quote=True) + '">' + key + '</option>\n')
     outfile.write("""    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
     </select>
 
