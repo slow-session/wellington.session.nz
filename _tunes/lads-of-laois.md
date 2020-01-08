@@ -7,7 +7,7 @@ date: 2018-11-29
 location: Wellington
 notes:
 tags:
-repeats: 2
+repeats: 3
 parts: AABB
 regtuneoftheweek: 2018-11-29
 slowtuneoftheweek: 2020-01-08
