@@ -7,18 +7,18 @@ date: 2018-11-29
 location: Wellington
 notes:
 tags:
-repeats: 3 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek: 2018-11-29
 slowtuneoftheweek: 2019-06-19
 mp3_file: /mp3/lads-of-laois.mp3
-mp3_source: Pat Higgins
-mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_url:
+mp3_source: Séan Ryan, Denis Ryan & Conor Moriarty
+mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
+mp3_url: https://www.youtube.com/watch?v=QrUoPdakmtM
 alt_mp3_url: https://www.youtube.com/watch?v=yWZN2Vmdft8
 source: Wellington
-abc_source: Pat Higgins
-abc_url:
+abc_source: The Session
+abc_url: https://thesession.org/tunes/58
 abc: |
     X:1
     T: The Lads Of Laois
