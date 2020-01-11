@@ -51,8 +51,8 @@ function createMP3player(tuneID, mp3url) {
     mp3player += '    <div class="audioParentOuter">';
     // Col 1 - play button
     mp3player += '      <div class="audioChildOuter">';
-    mp3player += '        <button id="playButton' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', playButton' + tuneID + ',  playPosition' + tuneID + ', speedSlider' + tuneID + ', \'' + mp3url + '\')">';
+    mp3player += '        <button id="playMP3' + tuneID + '" class="playButton"';
+    mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', playMP3' + tuneID + ',  positionMP3' + tuneID + ', speedSliderMP3' + tuneID + ', \'' + mp3url + '\')">';
     mp3player += '        </button>';
     mp3player += '      </div>';
     // Nested row in second column
@@ -62,7 +62,7 @@ function createMP3player(tuneID, mp3url) {
     mp3player += '          <div class="audioChildInner">';
     mp3player += '            <div class="audio">';
     mp3player += '              <span title="Play tune, select loop starting point, then select loop end point">';
-    mp3player += '                <div id="playPosition' + tuneID + '" class="mp3AudioControl"></div>'
+    mp3player += '                <div id="positionMP3' + tuneID + '" class="mp3AudioControl"></div>'
     mp3player += '              </span>';
     mp3player += '            </div>';
     mp3player += '            <div class="mp3LoopControl">';
@@ -77,7 +77,7 @@ function createMP3player(tuneID, mp3url) {
     mp3player += '          <div class="audioChildInner">';
     mp3player += '            <div id="speedControl' + tuneID + '" class="mp3SpeedControl">';
     mp3player += '              <span title="Adjust playback speed with slider">';
-    mp3player += '                <div id="speedSlider' + tuneID + '"></div>'
+    mp3player += '                <div id="speedSliderMP3' + tuneID + '"></div>'
     mp3player += '                <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>';
     mp3player += '              </span>';
     mp3player += '            </div>';
@@ -92,8 +92,8 @@ function createMP3player(tuneID, mp3url) {
 }
 
 function createSliders(tuneID) {
-    var audioSlider = document.getElementById('playPosition' + tuneID);
-    var speedSlider = document.getElementById('speedSlider' + tuneID);
+    var audioSlider = document.getElementById('positionMP3' + tuneID);
+    var speedSlider = document.getElementById('speedSliderMP3' + tuneID);
 
     noUiSlider.create(audioSlider, {
         start: [0, 0, 100],
@@ -205,13 +205,16 @@ function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSour
 
 }
 
-function changeTune(tuneNumber) {
-    var item = store[tuneNumber];
+function changeTune(tuneID) {
+    var item = store[tuneID];
     document.getElementById("abcText").innerHTML = item.abc;
 
     // Clear the loop preset display
     loopPresetControls.innerHTML = '';
-    tuneInfo.innerHTML = '';
+    var tuneInfo = document.getElementById("tuneInfo");
+    if (tuneInfo) {
+        tuneInfo.innerHTML = '';
+    }
     document.getElementById('loopForm').style.display = "none";
     presetLoopSegments = [];
 
@@ -221,18 +224,23 @@ function changeTune(tuneNumber) {
         modal.style.display = "block";
     }
 
-    // Add info to page
-    document.getElementById("tuneTitle").innerHTML = '<h2>' + item.title + '<span style="font-size:16px;"> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
-    if (item.mp3_source) {
-        document.getElementById("tuneInfo").innerHTML = 'Source: ' + item.mp3_source;
+    // Add info to page if needed
+    var tuneTitle = document.getElementById("tuneTitle");
+    if (tuneTitle) {
+        tuneTitle.innerHTML = '<h2>' + item.title + '<span style="font-size:16px;"> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
+    }
+    var tuneInfo = document.getElementById("tuneInfo");
+    if (tuneInfo && item.mp3_source) {
+        tuneInfo.innerHTML = 'Source: ' + item.mp3_source;
     }
 
+    var dotsForm = document.getElementById('dotsForm');
     if (item.mp3.includes('mp3')) {
         // make the MP3 player
-        showPlayer.innerHTML = createMP3player(tuneNumber, item.mp3);
-        createSliders(tuneNumber);
+        showPlayer.innerHTML = createMP3player(tuneID, item.mp3);
+        createSliders(tuneID);
 
-        var playPosition = document.getElementById('playPosition' + tuneNumber);
+        var playPosition = document.getElementById('positionMP3' + tuneID);
         LoadAudio(item.mp3, playPosition);
 
         // calculate presetLoopSegments and set up preset loops
@@ -240,7 +248,7 @@ function changeTune(tuneNumber) {
             myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
             if (item.repeats && item.parts) {
                 myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
-                buildSegments(tuneNumber);
+                buildSegments(tuneID);
                 if (presetLoopSegments.length){
                     loopPresetControls.innerHTML = createLoopControlsContainer();
                 }
@@ -249,7 +257,9 @@ function changeTune(tuneNumber) {
         };
 
         // Show the button that allows show/hide of dots
-        document.getElementById('dotsForm').style.display = "block";
+        if (dotsForm) {
+            dotsForm.style.display = "block";
+        }
         // Get the current paper state
         var currentPaperState = document.getElementById('paper0').style.display;
         // Set the paper state to 'block'
@@ -272,15 +282,28 @@ function changeTune(tuneNumber) {
             writing the ABC for this tune using our <a href="/editABC/">editABC</a> page \
             (or write out the dots) and send it to us. \
             </strong></fieldset>';
+            var showABCform = document.getElementById('showABCform');
+            if (showABCform) {
+                showABCform.style.display= "none" ;
+            }
         }
         // Reset paper state to original value
         document.getElementById('paper0').style.display = currentPaperState;
     } else {
         // show ABC player
         document.getElementById('loopForm').style.display = "none";
-        document.getElementById('dotsForm').style.display = "none";
-        showPlayer.innerHTML = '<p>A recording for this tune is not available.</p>';
-        showPlayer.innerHTML += '<input class="loopButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Go to Tune Page" />'
+
+        if (dotsForm) {
+            dotsForm.style.display = "none";
+        }
+        var recordingMessage = '<fieldset><strong> \
+        A recording for this tune is not available.';
+        if (modal) {
+            recordingMessage += '<br /><input class="filterButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Go to Tune Page" />'
+        }
+        recordingMessage += '</strong></fieldset>';
+        document.getElementById('showPlayer').style.overflow = 'auto';
+        document.getElementById('showPlayer').innerHTML = recordingMessage;
     }
 }
 
@@ -325,8 +348,8 @@ function restartLoop() {
     OneAudioPlayer.play();
 }
 
-function buildSegments(tuneNumber) {
-    var item = store[tuneNumber];
+function buildSegments(tuneID) {
+    var item = store[tuneID];
     var parts = item.parts;
     var repeats = item.repeats;
     var mySegment;

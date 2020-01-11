@@ -37,8 +37,8 @@ function createABCplayer (tuneID, timbre) {
     abcPlayer += '    <div class="audioParentOuter" id="' + tuneID + '">';
     // Col 1
     abcPlayer += '      <div class="audioChildOuter">';
-    abcPlayer += '      <button id="playButton' + tuneID + '" class="playButton"';
-    abcPlayer += '          onclick="playABC(ABC' + tuneID + ', playButton' + tuneID + ', playPosition' + tuneID + ', speedSlider' + tuneID + '.value)">';
+    abcPlayer += '      <button id="playABC' + tuneID + '" class="playButton"';
+    abcPlayer += '          onclick="playABC(ABC' + tuneID + ', playABC' + tuneID + ', positionABC' + tuneID + ', speedSliderABC' + tuneID + '.value)">';
     abcPlayer += '      </button>';
     abcPlayer += '      </div>';
     // Nested row in second column
@@ -46,15 +46,15 @@ function createABCplayer (tuneID, timbre) {
     abcPlayer += '        <div class="audioParentInner">';
     // Col 2
     abcPlayer += '         <div class="audioChildInner">';
-    abcPlayer += '           <input name="playPosition' + tuneID + '" id="playPosition' + tuneID + '" type="range" class="abcAudioControl slider" min="0" max="500" value="0"';
+    abcPlayer += '           <input name="positionABC' + tuneID + '" id="positionABC' + tuneID + '" type="range" class="abcAudioControl slider" min="0" max="500" value="0"';
     abcPlayer += '             oninput="setABCPosition(value/100)" />';
     abcPlayer += '           <p class="audioLabel">Playing the <i>dots</i>!</p>';
     abcPlayer += '         </div>';
     // Col 3
     abcPlayer += '         <div class="audioChildInner">';
     abcPlayer += '           <span title="Adjust playback speed with slider">';
-    abcPlayer += '              <input name="flevel" id="speedSlider' + tuneID + '" class="abcSpeedControl slider" type="range" min="50" max="120" value="100"';
-    abcPlayer += '                  onchange="changeABCspeed(ABC' + tuneID + ', playButton' + tuneID + ', value)">';
+    abcPlayer += '              <input name="flevel" id="speedSliderABC' + tuneID + '" class="abcSpeedControl slider" type="range" min="50" max="120" value="100"';
+    abcPlayer += '                  onchange="changeABCspeed(ABC' + tuneID + ', playABC' + tuneID + ', value)">';
     abcPlayer += '              <p class="audioLabel">Speed - <strong><output name="level">100</output>%</strong></p>';
     abcPlayer += '          </span>';
     abcPlayer += '         </div>';
