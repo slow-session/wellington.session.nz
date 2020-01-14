@@ -14,7 +14,7 @@
 /*
  ################################################################################
  #
- # Comment in line with "console.log" to turn on console logging
+ # Comment out the line with "console.log" to turn off console logging
  #
  ################################################################################
 */
@@ -207,10 +207,10 @@ function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSour
 
 function changeTune(tuneID) {
     var item = store[tuneID];
-    document.getElementById("abcText").innerHTML = item.abc;
+    document.getElementById('abcText').innerHTML = item.abc;
 
     // Clear the loop preset display
-    loopPresetControls.innerHTML = '';
+    document.getElementById('loopPresetControls').innerHTML = '';
     var tuneInfo = document.getElementById("tuneInfo");
     if (tuneInfo) {
         tuneInfo.innerHTML = '';
@@ -237,7 +237,7 @@ function changeTune(tuneID) {
     var dotsForm = document.getElementById('dotsForm');
     if (item.mp3.includes('mp3')) {
         // make the MP3 player
-        showPlayer.innerHTML = createMP3player(tuneID, item.mp3);
+        document.getElementById('showPlayer').innerHTML = createMP3player(tuneID, item.mp3);
         createSliders(tuneID);
 
         var playPosition = document.getElementById('positionMP3' + tuneID);
@@ -250,7 +250,7 @@ function changeTune(tuneID) {
                 myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
                 buildSegments(tuneID);
                 if (presetLoopSegments.length){
-                    loopPresetControls.innerHTML = createLoopControlsContainer();
+                    document.getElementById('loopPresetControls').innerHTML = createLoopControlsContainer();
                 }
             }
             initialiseAudioSlider();
@@ -290,7 +290,7 @@ function changeTune(tuneID) {
         // Reset paper state to original value
         document.getElementById('paper0').style.display = currentPaperState;
     } else {
-        // show ABC player
+        // no recording available
         document.getElementById('loopForm').style.display = "none";
 
         if (dotsForm) {
