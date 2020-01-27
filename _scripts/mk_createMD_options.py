@@ -6,15 +6,7 @@ import re
 import os
 import html
 
-def usage():
-    print ("Usage: " + sys.argv[0] + " <archive_name>")
-
-
-if len(sys.argv) == 2:
-    archiveName = sys.argv[1]
-else:
-    usage()
-    sys.exit()
+archiveName = 'wellington.session.nz'
 
 #
 # You will need to change these variables to
@@ -218,7 +210,7 @@ with open(optionsFile, 'w') as outfile:
     <label>ABC:<sup>*</sup></label>
     <textarea id="abc-box" name="abc" rows="13" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
 
-    <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Select">
+    <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
     </form>
     """)
 
