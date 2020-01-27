@@ -42,6 +42,8 @@ You will probably have recordings of your own that you'd like to do this with an
 
 You can can use our [Play Local Audio](/playLocalAudio/) page to slow down a number of audio and video formats and play parts of them in a loop. If you've used the audio player on this site you'll find a familiar interface.
 
+You could also try this nice tool - [TimeStretch Player](https://29a.ch/timestretch/)
+
 Want to learn a tune from YouTube?
 ----------------------------------
 
