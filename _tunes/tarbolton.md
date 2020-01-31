@@ -1,5 +1,5 @@
 ---
-title: Tarbolton
+title: The Tarbolton
 titleID: tarbolton.md
 key: Edor
 rhythm: reel
