@@ -14,7 +14,7 @@ slowtuneoftheweek: 2020-01-31
 mp3_file: /mp3/tarbolton.mp3
 mp3_source: <a href="https://www.youtube.com/watch?v=wIYHCpSmuVE">Duncan Ross Cameron</a>
 mp3_licence: '© Duncan Ross Cameron. All Rights Reserved.'
-mp3_url: https://comhaltas.ie/music/detail/tarbolton/
+mp3_url: https://www.youtube.com/watch?v=wIYHCpSmuVE
 alt_mp3_url: https://www.youtube.com/watch?v=qQM5qiiaOjQ
 source: Wellington
 abc_source: The Session
