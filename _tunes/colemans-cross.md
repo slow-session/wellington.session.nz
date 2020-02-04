@@ -12,7 +12,7 @@ location:
 mp3_file: /mp3/colemans-cross.mp3
 repeats: 2
 parts: AABB
-mp3_source: ENTER YOUR NEW MP3 SOURCE HERE
+mp3_source: <a href="https://www.facebook.com/ucctradsoc/?__tn__=%2CdkCH-R-R&eid=ARCkGupN3IEMe-tHN2NvPALgvG9p8Yx0bsxAaHr61YOh8YittaCbcAZiF-mPLyPuTrqjA4FAW_KskfJG&hc_ref=ARTT5ofu7EdbQzlS46826laPi46AHmhORvE2ioGrR7G9oLve8vUb-NgDfn-292MnJqU&hc_location=group"UCC TradSoc</a>
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_url: https://www.facebook.com/video/video.php?v=524831698389535
 alt_mp3_url:
