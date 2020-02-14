@@ -1,5 +1,5 @@
 ---
-title: The Cornboy
+title: The Cornboy aka McGreevy's
 titleID: the-cornboy.md
 key: Dmix
 rhythm: reel
