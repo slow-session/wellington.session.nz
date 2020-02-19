@@ -351,8 +351,8 @@ tr#no_hover:hover {
   display: block;
   border: 2px solid $complimentary-color;
   border-radius: 8px;
-  margin-right: -12px; /* maximum width of scrollbar */
-  padding-right: 12px; /* maximum width of scrollbar */
+  margin-right: -15px; /* maximum width of scrollbar */
+  //padding-right: 12px; /* maximum width of scrollbar */
   font-size: 14px;
   min-width: 300px;
 }
