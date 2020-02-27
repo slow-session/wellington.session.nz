@@ -93,7 +93,7 @@ function showForm(textArea, myForm) {
     for(var i = 0 ; i < elements.length ; i++){
         var item = elements.item(i);
 
-        if (item.value == "Select") {
+        if (item.value == "Show MD File") {
             continue;
         }
         switch(item.name) {
