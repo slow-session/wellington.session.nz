@@ -20,6 +20,10 @@ Sets of tunes put together by Paddy O'Brien:
  * [O'Brien sets on line](/obrientunes/)
  * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
 
+ The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
+
+ * [The Northern Fiddler](/tunebooks/other/The_Northern_Fiddler.pdf) 
+
 Dunedin Fiddle Orchestra:
 
  * [Details and website ](http://www.kiwifolk.com/dfc/ "WEBSITE")
