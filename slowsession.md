@@ -3,6 +3,14 @@ layout: page
 title: Wellington Slow Session
 permalink: /slowsession/
 ---
+<fieldset class="fieldset-auto-width">
+<strong>Covid-19 precautions</strong>
+
+<p>See our <a href="https://www.facebook.com/groups/WellingtonSession">Facebook</a> page for the most up to date information about sessions in Wellington.
+</p>
+</fieldset>
+
+<div class="row"></div>
 
 We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
 Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
