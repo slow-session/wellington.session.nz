@@ -4,7 +4,10 @@ title: Wellington Irish Sessions
 ---
 {% include covid-19.html %}
 
+
+<!--
 Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/dragon/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. Players of traditional Irish music are welcome. The evening is split into two parts with a slow session early on for those who are relatively new to Irish session music and a regular session for experienced players who are familiar with playing this music at a high standard.
+-->
 
 ## <a href="/slowsession/">Slow Session</a> - {{ site.slowsession_time }}
 
@@ -14,7 +17,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
-<fieldset class="fieldset-auto-width">
+<fieldset class="fieldset-auto-width">XS
 <legend>Slow tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">
