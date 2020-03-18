@@ -5,10 +5,11 @@ permalink: /slowsession/
 ---
 {% include covid-19.html %}
 
-
+<!--
 We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
 Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 Players who want to play traditional Irish music at a relaxed pace are welcome.
+-->
 
 The slow session is an opportunity for players who are starting out with Irish
 traditional music and want an opportunity to play tunes that they're learning
