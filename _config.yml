@@ -6,8 +6,10 @@ keywords: irish, traditional, music, jigs, reels, polkas, craic
 description: Irish trad tune archive
 
 # Parameters embedded in site
-slowsession_time: "7:30 to 8:40"
-session_time: "8:50 to late"
+#slowsession_time: "7:30 to 8:40"
+slowsession_time: "Please call back when the world is normal!"
+#session_time: "8:50 to late"
+session_time: "Please call back when the world is normal!"
 defaultABCplayer: 'piano'
 
 # Only use this if you are serving your site via Github Pages
