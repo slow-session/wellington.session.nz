@@ -17,7 +17,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
-<fieldset class="fieldset-auto-width">XS
+<fieldset class="fieldset-auto-width">
 <legend>Slow tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">
