@@ -3,7 +3,6 @@ layout: page
 title: Wellington Slow Session
 permalink: /slowsession/
 ---
-{% include covid-19.html %}
 
 <!--
 We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
