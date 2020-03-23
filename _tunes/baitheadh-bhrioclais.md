@@ -3,19 +3,19 @@ title: Baitheadh Bhrioclais
 titleID: baitheadh-bhrioclais.md
 key: Gmaj
 rhythm: jig
-notes: 
+notes: For more info see <a href="https://www.duchas.ie/en/cbes/4428300/4392699">The Great Drowning at Bruckless</a>
 date: 2019-12-23
-regtuneoftheweek: 
-slowtuneoftheweek: 
-tags: 
-location: 
+regtuneoftheweek:
+slowtuneoftheweek:
+tags:
+location:
 mp3_file: /mp3/baitheadh-bhrioclais.mp3
 repeats: 2
 parts: AABB
 mp3_source: <a href="https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)">Paul O'Shaughnessy @ Ceol na Coille 2017</a>
 mp3_licence: "© Paul O'Shaughnessy. All Rights Reserved."
-mp3_url: 
-alt_mp3_url: 
+mp3_url:
+alt_mp3_url:
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/12173
