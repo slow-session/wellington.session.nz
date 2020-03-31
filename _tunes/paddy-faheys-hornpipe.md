@@ -10,8 +10,8 @@ slowtuneoftheweek:
 tags:
 location:
 mp3_file: /mp3/paddy-faheys-hornpipe.mp3
-repeats:
-parts:
+repeats: 2
+parts: AABB
 mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url: https://www.facebook.com/richard.tait.1428/videos/10159478484693222/
