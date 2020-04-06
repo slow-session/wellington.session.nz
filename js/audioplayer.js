@@ -277,11 +277,14 @@ function changeTune(tuneID) {
         } else {
             document.getElementById('paper0').style.paddingBottom = '0px';
             document.getElementById('paper0').style.overflow = 'auto';
+            var urlSessionSearch = 'https://thesession.org/tunes/search?type=' + item.rhythm + '&q=' + item.title.replace(/\s+/g, '+');
             document.getElementById('paper0').innerHTML = '<fieldset><strong> \
-            The ABC notation for this tune is not available yet. Qualify for glory by \
-            writing the ABC for this tune using our <a href="/editABC/">editABC</a> page \
-            (or write out the dots) and send it to us. \
+            <p>We don\'t have dots for this tune. If you find a version of the tune that\'s a good match, send \
+            us a copy of the ABC and we\'ll get it added to the site. You might find it on The Session \
+            at this link:</p>\
+            <a href="' + urlSessionSearch + '">' + urlSessionSearch + '</a>\
             </strong></fieldset>';
+
             var showABCform = document.getElementById('showABCform');
             if (showABCform) {
                 showABCform.style.display= "none" ;
