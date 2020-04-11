@@ -1,6 +1,6 @@
 ---
-title: The Kilmovee No1
-titleID: the-kilmovee-no1.md
+title: The Kilmovee
+titleID: the-kilmovee.md
 key: Gmaj
 rhythm: jig
 notes:
@@ -9,13 +9,13 @@ regtuneoftheweek:
 slowtuneoftheweek:
 tags:
 location:
-mp3_file: /mp3/the-kilmovee-no1.mp3
+mp3_file: /mp3/the-kilmovee.mp3
 repeats: 2
 parts: AABB
 mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url:
-alt_mp3_url: https://www.youtube.com/watch?v=Z07VrjbXFCQ
+alt_mp3_url: https://www.youtube.com/watch?v=YGKpf-gueAU
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2973
