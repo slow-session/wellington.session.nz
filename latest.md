@@ -32,7 +32,7 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count <= 19 %},{% else %}{% break %}{% endif %}
+        }{% if tune_count < site.latest_tunes_max %},{% else %}{% break %}{% endif %}
     {% endfor %}
 };
 </script>
