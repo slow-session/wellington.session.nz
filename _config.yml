@@ -11,6 +11,10 @@ slowsession_time: "Please check back when the world is normal!"
 #session_time: "8:50 to late"
 session_time: "Please check back when the world is normal!"
 defaultABCplayer: 'piano'
+# no of tunes to show in latest.md etc
+latest_tunes_max: 20
+slow_tunes_max: 20
+reg_tunes_max: 20
 
 # Only use this if you are serving your site via Github Pages
 github:

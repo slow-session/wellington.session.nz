@@ -90,7 +90,7 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count <= 9 %},{% else %}{% break %}{% endif %}
+        }{% if tune_count < site.reg_tunes_max %},{% else %}{% break %}{% endif %}
     {% endif %}
     {% assign tune_count = tune_count | plus: 1 %}
     {% assign tuneID = tuneID | plus: 1 %}
