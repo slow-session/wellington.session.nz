@@ -1,6 +1,6 @@
 ---
-title: Colonel Fraser
-titleID: colonel-fraser.md
+title: Colonel Fraser (Banjo)
+titleID: colonel-fraser-banjo.md
 key: G
 rhythm: reel
 notes:
@@ -9,13 +9,13 @@ regtuneoftheweek:
 slowtuneoftheweek:
 tags:
 location: Wellington
-mp3_file: /mp3/colonel-fraser.mp3
-repeats: 2
+mp3_file: /mp3/colonel-fraser-banjo.mp3
+repeats: 1
 parts: AABBCCDDEE
-mp3_source: Pat Higgins
+mp3_source: Richard Tait
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_url: https://www.youtube.com/watch?v=zKDzv7U5o_w
-alt_mp3_url: /mp3/colonel-fraser-banjo.mp3
+mp3_url:
+alt_mp3_url: https://www.youtube.com/watch?v=zKDzv7U5o_w
 source: Wellington
 abc_source: Pat Higgins
 abc_url:
