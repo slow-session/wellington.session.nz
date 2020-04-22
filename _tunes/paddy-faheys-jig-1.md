@@ -20,6 +20,7 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/124
 abc: |
   X: 3
+  Z: Modified
   T: Paddy Fahey's
   R: jig
   M: 6/8
