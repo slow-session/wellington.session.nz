@@ -7,8 +7,8 @@ date: 2017-11-29
 location: Wellington
 notes:
 tags:
-repeats: 5 
-parts: AABB 
+repeats: 4
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-faheys-jig-1.mp3
