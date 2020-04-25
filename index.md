@@ -7,6 +7,12 @@ title: Wellington Irish Sessions
 Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/dragon/">Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand. Players of traditional Irish music are welcome. The evening is split into two parts with a slow session early on for those who are relatively new to Irish session music and a regular session for experienced players who are familiar with playing this music at a high standard.
 -->
 
+## <a href="/tunes_archive/">Tunes Archive</a>
+
+Many of the tunes that get played at the sessions, including those we've been learning in the slow session, are in our <a href="/tunes_archive/"><button class="filterButton" style="display: inline;">Tunes Archive</button></a> page. We add new tunes reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;">Latest Tunes</button></a> page.
+
+Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. We've got a <a href="/charlie_montgomery/"><button class="filterButton" style="display: inline;">Charlie Montgomery</button></a> page where you can hear him playing his own compositions as well as some old favourites.
+
 ## <a href="/slowsession/">Slow Session</a> - {{ site.slowsession_time }}
 
 The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments. See our <a href="/slowsession/"><button class="filterButton" style="display: inline;">Slow Session</button></a> page for more information.
@@ -101,12 +107,6 @@ $.extend(window.store, tuneOfTheWeek);
 
 {% endif %}
 
-<a href="/tunes_archive/">Tunes Archive</a>
-------------
-
-Many of the tunes that get played at the sessions, including those we've been learning in the slow session, are in our <a href="/tunes_archive/"><button class="filterButton" style="display: inline;">Tunes Archive</button></a> page. We add new tunes reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;">Latest Tunes</button></a> page.
-
-Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. We've got a <a href="/charlie_montgomery/"><button class="filterButton" style="display: inline;">Charlie Montgomery</button></a> page where you can hear him playing his own compositions as well as some old favourites.
 
 ## <a href="/nz_sessions">Other NZ Sessions</a>
 
