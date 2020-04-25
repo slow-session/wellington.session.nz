@@ -3,7 +3,7 @@ title: Cedars of Lebanon (Andy Dickson's Reel)
 titleID: cedars-of-lebanon.md
 key: Dmaj
 rhythm: reel
-notes: <a href="/images/CedarsOfLebanon.jpg">Hand manuscript of notation</a>
+notes: Kara Dawson's 50th birthday present
 date: 2020-04-25
 regtuneoftheweek:
 slowtuneoftheweek:
@@ -15,10 +15,10 @@ parts: AABB
 mp3_source: <a href="https://www.facebook.com/ciarank1">Ciaran Kelly</a>
 mp3_licence: "© Duncan Davidson. All Rights Reserved."
 mp3_url: https://www.facebook.com/video/video.php?v=10157506476529125
-alt_mp3_url:
+alt_mp3_url: 
 source: Wellington
-abc_source: The Session
-abc_url: https://thesession.org/tunes/2268
+abc_source: this manuscript
+abc_url: /images/CedarsOfLebanon.jpg
 abc: |
     X: 1
     T: Cedars of Lebanon
