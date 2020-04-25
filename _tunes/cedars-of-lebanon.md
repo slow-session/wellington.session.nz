@@ -13,9 +13,9 @@ mp3_file: /mp3/cedars-of-lebanon.mp3
 repeats: 2
 parts: AABB
 mp3_source: <a href="https://www.facebook.com/ciarank1">Ciaran Kelly</a>
-mp3_licence: "© Duncan Davidson. All Rights Reserved."
+mp3_licence: "© Ciaran Kelly. All Rights Reserved."
 mp3_url: https://www.facebook.com/video/video.php?v=10157506476529125
-alt_mp3_url: 
+alt_mp3_url:
 source: Wellington
 abc_source: this manuscript
 abc_url: /images/CedarsOfLebanon.jpg
