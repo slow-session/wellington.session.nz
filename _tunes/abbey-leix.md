@@ -20,20 +20,18 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/1288#setting30533
 abc: |
-    X: 1
-    T: Abbeyleix, The
-    C: Sean Ryan
-    Z: benhockenberry
-    S: https://thesession.org/tunes/1288#setting30533
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Ddor
-    |:A,|D2ED CA,A,2|FEFG ABcA|d2ed cedc|AcGE EDCA,|
-    D2ED CA,A,A,|FEFG ABcA|d2ed cedc|AcGE EDD:|
-    K:D
-    |:A|d2fd adfd|gAfA eAce|dDcD BDAF|GEFD EA,CE|
-    d2fd adfd|gAfA eAce|dDcD BDAF|GBAG FDD:|
-
-
+  X: 1
+  T: Abbeyleix, The
+  C: Sean Ryan
+  Z: benhocken berry
+  S: https://thesession.org/tunes/1288#setting30533
+  R: reel
+  M: 4/4
+  L: 1/8
+  K: Ddor
+  |:A,|D2ED CA,A,2|FEFG ABcA|d2ed cedc|AcGE EDCA,|
+  D2ED CA,A,A,|FEFG ABcA|d2ed cedc|AcGE EDD:|
+  K:D
+  |:A|d2fd adfd|gAfA eAce|dDcD BDAF|GEFD EA,CE|
+  d2fd adfd|gAfA eAce|dDcD BDAF|GBAG FDD:|
 ---
