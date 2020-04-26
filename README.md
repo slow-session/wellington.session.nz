@@ -13,8 +13,7 @@ A static website
 This is a static website that use Jekyll to process files and generate the
 website. Each tune is included as a markdown file in the `_tunes` collection.
 
-An example of the front-matter for Flooded Road to Glenties, in the file
-`_tunes/flooded-road-to-glenties.md`, is given below:
+An example of the front-matter for Flooded Road to Glenties, in the file `_tunes/flooded-road-to-glenties.md`, is given below:
 
 ```
 ---
