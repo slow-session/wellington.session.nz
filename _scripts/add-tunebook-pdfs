@@ -1,18 +1,9 @@
 #!/bin/sh
-
-if [ $# -ne 1 ]
-then
-    echo "Usage: $0 <archive_directory>"
-    exit
-fi
-
-ARCHIVEDIR=$1
-
 #
-# You may need to change the SOURCEDIR variable to
-# match your directory structure i.e. the "GitHub"
-# part
+# You may need to change ARCHIVEDIR and/or SOURCEDIR variables
+# to match your directory structure 
 #
+ARCHIVEDIR='wellington.session.nz'
 SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
 SITEDIR="${SOURCEDIR}/_site"
 
