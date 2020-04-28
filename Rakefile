@@ -63,13 +63,15 @@ end
 
 ####################
 # createMD options #
-####################
+#################### 
 
 # Build the options
 
 desc "build the createMD option"
 task :createMD do
-    system "_scripts/mk_createMD_options.py #{site}"
+    system "_scripts/github-pull.sh"
+    system "_scripts/mk_createMD_options.py"
+    system "_scripts/github-push.sh"
 end
 
 ##############
