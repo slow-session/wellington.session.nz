@@ -7,14 +7,14 @@ date: 2017-11-29
 location: Wellington
 notes:
 tags:
-repeats: 4
+repeats: 3
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/paddy-faheys-jig-1.mp3
-mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
-mp3_licence: '© Fergal Scahill. All Rights Reserved.'
-mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1487068618056135/
+mp3_source: Richard Tait
+mp3_licence: '© Richard Tait. All Rights Reserved.'
+alt_mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1487068618056135/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/124
