@@ -7,8 +7,8 @@ date: 2019-03-20
 location: Wellington
 notes:
 tags: slowsession
-repeats: 3 
-parts: AABB 
+repeats: 3
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-03-28
 mp3_file: /mp3/paddy-faheys-reel-1.mp3
@@ -20,17 +20,16 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/463
 abc: |
-    X: 8
-    T: Paddy Fahey's
-    T: AKA No. 1
-    %Z: Modified by Ted Cizadlo
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Ddor
-    D2 A,D FEFG | Addcd2 de | fedf edce | dcAG FDCE |
-    D2 A,D FEFG | Addc d2de| f2gf edcA |1 dcAG FDD2 :|2 dcAG FDdc |]
-    |:d2ed aded | c2Gc EcGc | d2ed aded | cBcd edce |
-    ~a2^ga ABcA|dcAG FDCE|~D2 A,D FEFG |1 Addc d3e :|2 Addcd4 |]
-
+  X: 8
+  T: Paddy Fahey's
+  T: AKA No. 1
+  %Z: Modified by Megan Ward
+  R: reel
+  M: 4/4
+  L: 1/8
+  K: Ddor
+  D2 A,D FEFG | Ad^cAd2 de | fedf edcA | dcAG FDCE |
+  D2 A,D FEFG | Ad^cA d2de| f2gf edcA | dcAG FDD2 :|
+  |:d2ed aded | c2Gc EcGc | d2ed aded | cBcd ed~d2 |
+  ~a2^ga ABcA|dcAG FDCE|~D2 A,D FEFG | Ad^cAd4 :|]
 ---
