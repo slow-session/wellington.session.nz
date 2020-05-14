@@ -11,4 +11,4 @@ images/image_optim_cache.yml
 .DS_Store
 _config_localnet.yml
 .vs
-*.~
+*~
