@@ -10,3 +10,4 @@ images/image_optim_cache.yml
 .directory
 .DS_Store
 _config_localnet.yml
+.vs
