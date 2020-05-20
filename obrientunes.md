@@ -44,11 +44,6 @@ This collection was one of the very early uses of ABC to capture and transmit Ir
 
 <div class="row"></div>
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 <script>
     window.store = {
       {% assign tuneID = 3000 %}
@@ -66,15 +61,10 @@ This collection was one of the very early uses of ABC to capture and transmit Ir
     };
 </script>
 
-<script src="{{ site.js_host }}/js/build_table_obrientunes.js"></script>
+{% include tunesObrienGrid.html%}
 
 <script>
 $(document).ready(function() {
 
-    /* Set initial sort order */
-    $.tablesorter.defaults.sortList = [[0,0]];
-
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}}});
- 
 });
 </script>

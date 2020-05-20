@@ -73,11 +73,6 @@ tuneOfTheWeek = {
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 <script>
 window.store = {
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
@@ -107,15 +102,12 @@ window.store = {
 $.extend(window.store, tuneOfTheWeek);
 </script>
 
-<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
+{% include tunesArchiveGrid.html%}
 
 {% include tuneModal.html%}
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});
-
 });
 </script>

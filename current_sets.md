@@ -43,11 +43,6 @@ page.
 
 <div class="row"></div>
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 {% assign tuneID = 200 %}
 {% assign setID = 200 %}
 {% for set in site.sets %}
@@ -80,7 +75,9 @@ window.store = {
 };
 
 window.setStore = {
-{% for set in site.sets %}
+{% assign sets = site.sets %}
+{% assign sortedsets = sets | sort: 'url' %}
+{% for set in sortedsets %}
     {% assign tuneList = set.tunes | split: ", " %}
 "{{ setID }}": {
     "title": "{{ set.title | xml_escape }}",
@@ -96,6 +93,11 @@ window.setStore = {
 };
 </script>
 
+<div class="tableParent">
+  <div class="tableChild" id="tunesTable"></div>
+  <div class="tableChild tableSlider hide-for-small-mobiles" id="tableSlider"></div>
+</div>
+
 <script src="{{ site.js_host }}/js/build_table_current_sets.js"></script>
 
 {% include tuneModal.html%}
@@ -103,11 +105,5 @@ window.setStore = {
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    /* Set initial sort order */
-    $.tablesorter.defaults.sortList = [[0,0]];
-
-    $("#tunes").tablesorter({headers: {0: {sorter: 'ignoreArticles'}, 2: {sorter: false}, 3: {sorter: false}}});
-
 });
 </script>

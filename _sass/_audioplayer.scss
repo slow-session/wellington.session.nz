@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .audioParentOuter {
     display: inline-flex;
 }
@@ -19,7 +23,6 @@
 
 .mp3AudioControl {
     width: 100%;
-    min-width: 180px;
     margin-top: 28px;
     float: left;
 }
@@ -27,13 +30,13 @@
 .mp3LoopControl {
     margin-top: 20px;
     width: 100%;
-    min-width: 180px;
+    min-width: 160px;
     float: left;
 }
 
 .mp3SpeedControl {
     width: 100%;
-    min-width: 200px;
+    min-width: 180px;
     margin-top: 28px;
     float: left;
 }
@@ -183,6 +186,7 @@ fieldset {
 
 .fieldset-covid {
   margin-bottom: 1rem;
+  background-color: #f7c501;
 }
 
 .tableParent {
@@ -192,6 +196,26 @@ fieldset {
 
 .tableChild {
     padding: 0rem;
+}
+
+.tuneSelect {
+    height: 320px;
+    max-width: 600px;
+    display: block;
+    border: 2px solid $complimentary-color;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tuneSelect {
+    /* This is the magic bit for Firefox */
+    scrollbar-width: none;
+}
+  
+.tuneSelect::-webkit-scrollbar {
+    /* This is the magic bit for WebKit */
+    display: none;
 }
 
 .formParent {
@@ -332,35 +356,6 @@ tr#no_hover:hover {
     width: 45px;
 }
 
-//if the tunesTable height is 320px we can get 10 tunes in the table and no
-// need for a tableSlider
-.tunesTable{
-  height: 320px;
-  width: 565px;
-  overflow: auto;
-}
-
-// height + margin-top + margin-bottom = tunesTable.height
-.tableSlider {
-    height: 270px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding:  0;
-}
-
-.tuneSelect {
-  height: 100%;
-  overflow-y: scroll;
-  display: block;
-  border: 2px solid $complimentary-color;
-  border-radius: 8px;
-  margin-right: -15px; /* maximum width of scrollbar */
-  //padding-right: 12px; /* maximum width of scrollbar */
-  font-size: 14px;
-  min-width: 300px;
-}
-
 .outputABC {
     max-width: 650px;
 }
@@ -459,3 +454,117 @@ tr#no_hover:hover {
      margin: 10px;
      padding: 10px;
 }
+
+// START: CSS for managing the "tunes" grids that appear on a number of pages
+.gridParent {
+    display: flex;
+    width: 100%;
+}
+
+.gridChild {
+    padding: 0rem;
+}
+
+//if the tunesLayout height is 320px we can get 10 tunes in the table and no
+// need for a tableSlider
+.tunesArchiveLayout{
+    display: grid;
+    height: 320px;
+    //max-width: 600px;
+    grid-template-columns: minmax(100px, 350px) 2fr minmax(0, 90px);
+    grid-auto-rows: fit-content(1em);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+.tunesArchiveLayout {
+    /* This is the magic bit for Firefox */
+    scrollbar-width: none;
+}
+  
+.tunesArchiveLayout::-webkit-scrollbar {
+    /* This is the magic bit for WebKit */
+    display: none;
+}
+
+.tunesArchiveLayout > span {
+    display: flex;
+    padding: 4px 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tunesArchiveLayout > span:nth-child(6n+4),
+.tunesArchiveLayout > span:nth-child(6n+5),
+.tunesArchiveLayout > span:nth-child(6n+6) {
+    background-color: darken($complimentary-color, 6%);
+}
+
+//if the tunesLayout height is 320px we can get 10 tunes in the table and no
+// need for a tableSlider
+.tunesObrienLayout{
+    display: grid;
+    height: 320px;
+    max-width: 600px;
+    grid-template-columns: minmax(200px, 300px) minmax(60px, 90px);
+    grid-auto-rows: fit-content(1em);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+.tunesObrienLayout {
+    /* This is the magic bit for Firefox */
+    scrollbar-width: none;
+}
+  
+.tunesObrienLayout::-webkit-scrollbar {
+    /* This is the magic bit for WebKit */
+    display: none;
+}
+
+.tunesObrienLayout > span {
+    display: flex;
+    padding: 4px 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tunesObrienLayout > span:nth-child(4n+3),
+.tunesObrienLayout > span:nth-child(4n+4) {
+    background-color: darken($complimentary-color, 6%);
+}
+
+.titleSpanLeft {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    border-top-left-radius: 8px;
+}
+
+.titleSpan {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+}
+
+.titleSpanRight {
+    background-color: $brand-color;
+    color: darken($complimentary-color, 10%);
+    border-top-right-radius: 8px;
+}
+
+// height + margin-top + margin-bottom = tunesTable.height
+.tableSlider {
+    height: 290px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .hide-for-small-mobiles {
+      display: none;
+    }
+}
+
+// END: CSS for managing the "tunes" grids that appear on a number of pages

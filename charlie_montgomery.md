@@ -60,11 +60,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     Charlie's compositions tagged with <strong>*</strong>
 </fieldset>
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 <script>
     window.store = {
 
@@ -91,19 +86,13 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     };
 </script>
 
-<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
+{% include tunesArchiveGrid.html%}
 
 {% include tuneModal.html%}
 
 <script>
   $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    /* Set initial sort order */
-    $.tablesorter.defaults.sortList = [[0,0]];
-
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}, 2:{sorter: false}}});  
-
   });
 </script>
 

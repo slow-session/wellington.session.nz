@@ -1,8 +1,8 @@
 ---
 title: Idle Road
 titleID: idle-road-cm2.md
-key:
-rhythm:
+key: G
+rhythm: reel
 notes:
 tags: cm
 repeats:
