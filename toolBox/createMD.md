@@ -19,7 +19,7 @@ permalink: /createMD/
         <span class="close">×</span>
         <h2>Check the MD file details:</h2>
         <div class="container">
-            <textarea id="md" rows="20" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
+            <textarea id="md" rows="20" cols="54" style="background-color: #ebebeb" spellcheck="false"></textarea>
             <!-- Allow the user to save their MD-->
             <form>
                 <span title="Download the MD data you've entered. Don't lose your work!">      

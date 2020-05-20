@@ -2,7 +2,7 @@
 title: Cape Breton Set
 titleID: cape-breton-set.md
 key: D
-rhythm: march/strathspey/reel
+rhythm: march, strathspey, reel
 date: 2017-10-06
 location: Wellington
 notes:

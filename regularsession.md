@@ -67,11 +67,6 @@ Recent regular session tunes of the week
 
 These are the <span id="tunesCount"></span> tunes we've added over the last few months.
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 <script>
 window.store = {
 {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
@@ -101,22 +96,19 @@ window.store = {
 $.extend(window.store, tuneOfTheWeek);
 </script>
 
+{% include tunesArchiveGrid.html%}
+
 <br />
 
 Latest Tunes
 ------------
 
 We add new tunes to the archive reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
-These are the <span id="tunesCount"></span> tunes we've been learning over the last couple of months.
-
-<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
 
 {% include tuneModal.html%}
 
 <script>
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});
 });
 </script>

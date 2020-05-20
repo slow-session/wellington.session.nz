@@ -2,7 +2,7 @@
 title: Morrisons jig, Drowsy Maggie
 titleID: morrisons-jig-drowsy-maggie-cm.md
 key: Edor
-rhythm: jig/reel
+rhythm: jig, reel
 notes:
 date: 2019-09-13
 location:

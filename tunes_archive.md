@@ -49,11 +49,6 @@ link to the Tune Page for a more traditional view.
     Displaying <span id="tunesCount"></span> tunes
 </fieldset>
 
-<div class="tableParent">
-  <div class="tableChild tunesTable" id="tunesTable"></div>
-  <div class="tableChild tableSlider" id="tableSlider"></div>
-</div>
-
 <div id="debug"></div>
 
 <script>
@@ -79,19 +74,13 @@ window.store = {
     };
 </script>
 
-<script src="{{ site.js_host }}/js/build_table_tunes_archive.js"></script>
+{% include tunesArchiveGrid.html%}
 
 {% include tuneModal.html%}
 
 <script>
   $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
-
-    /* Set initial sort order */
-    $.tablesorter.defaults.sortList = [[0,0]];
-
-    $("#tunes").tablesorter({headers: { 0:{sorter: 'ignoreArticles'}, 1:{sorter: false}}});  
-
   });
 </script>
 
