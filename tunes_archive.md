@@ -5,7 +5,8 @@ permalink: /tunes_archive/
 ---
 <p>
 Play a tune now using the <strong>Play Now</strong> button or use the
-link to the Tune Page for a more traditional view.
+link to the Tune Page for a more traditional view. We add new tunes to the archive reasonably often.
+You can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
 </p>
 
 {% include tunes-filter-variables.html %}
