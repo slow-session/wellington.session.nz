@@ -4,10 +4,10 @@
   * Version: 1.0
   * Date: 7 Dec 2016
   *
-  * Developed as part of websites for https://wellington.session.nz
+  * Developed as part of websites for https://dev.session.nz
   * by Ted Cizadlo and Andy Linton
   * Code available at:
-  * https://github.com/slow-session/wellington.session.nz/blob/master/js/audioID_controls.js
+  * https://github.com/slow-session/dev.session.nz/blob/master/js/audioID_controls.js
   * Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence.
   *
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
@@ -107,8 +107,13 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<table id="tunes" class="tuneSelect tablesorter"> \
-         <thead> \
+         if (testForMobile()) {
+             var appendString = '<table id="tunes" class="tuneSelect tablesorter mobileScrolling">';
+         } else {
+             var appendString = '<table id="tunes" class="tuneSelect tablesorter">';            
+         }
+ 
+         appendString += '<thead> \
          <tr> \
            <th style="width:10%;min-width:75px;">Add Tune</th> \
            <th style="width:35%;">Name &#x25B2;&#x25BC;</th> \

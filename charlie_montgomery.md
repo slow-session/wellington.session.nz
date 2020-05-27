@@ -45,19 +45,16 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
         </span>
     </div>
     <div class="formChild">     
-        <div class="popup filterButton" onclick="helpFunction()">
-        Help
-            <span class="popuptext" id="helpPopup">
-                Run the filter with the default settings to see the whole list
-            </span>
+        <div class="tooltip filterButton"><em>Help</em>
+                <span class="tooltiptext">Run the filter with the default settings to see the whole list</span>
         </div>
     </div>
     </div>
     </form>
     <p></p>
-    Displaying <span id="tunesCount"></span> tunes
+    Charlie's compositions tagged with <strong>*</strong>    
     <p></p>
-    Charlie's compositions tagged with <strong>*</strong>
+    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
 </fieldset>
 
 <script>

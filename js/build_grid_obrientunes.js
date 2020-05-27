@@ -20,10 +20,12 @@
          var tunesCounter = 0;
 
          // create table headers
-         var appendString = '<div id="tunes" class="tunesObrienLayout"> \
-         <span class="titleSpanLeft"><strong>Tune Name</strong></span> \
-         <span class="titleSpanRight"><strong>Key & Rhythm</strong></span>';
-
+         if (testForMobile()) {
+            var appendString = '<div id="tunes" class="tunesObrienLayout mobileScrolling">';
+        } else {
+            var appendString = '<div id="tunes" class="tunesObrienLayout">';
+        }
+ 
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
                  var item = store[results[i].ref];
@@ -110,20 +112,12 @@
 
          if (results.length) {
              displayTunesGrid(results, window.store);
-             if (results.length > 10) {
-                createArchiveSlider('tableSlider');
-                document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
-            }
          } else {
              document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
          displayTunesGrid('', window.store);
-         if (Object.keys(store).length > 10) {
-        createArchiveSlider('tableSlider');
-        document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
     }
-     }
      return false;
 
  })();

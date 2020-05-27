@@ -151,7 +151,6 @@ Use the "Reset Tunes" button to start a new set.
 
 <div class="tableParent">
   <div class="tableChild" id="tunesTable"></div>
-  <div class="tableChild tableSlider hide-for-small-mobiles" id="tableSlider"></div>
 </div>
 
 <div id="abc-textareas"></div>

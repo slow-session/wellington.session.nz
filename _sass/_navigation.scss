@@ -161,10 +161,10 @@
 
 
 // Styling for mobile devices
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $navbar-menu-width) {
 	#nav .primary-nav{
 		width: 100%;
-		max-width: 768px;
+		max-width: $navbar-menu-width;
 		height: auto;
 		background: $navbar-color;
 	}

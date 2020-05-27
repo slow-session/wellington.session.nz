@@ -38,7 +38,7 @@ page.
     </div>     
     </form>
     <p></p>
-    Displaying <span id="tunesCount"></span> sets
+    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
 </fieldset>
 
 <div class="row"></div>
@@ -95,7 +95,6 @@ window.setStore = {
 
 <div class="tableParent">
   <div class="tableChild" id="tunesTable"></div>
-  <div class="tableChild tableSlider hide-for-small-mobiles" id="tableSlider"></div>
 </div>
 
 <script src="{{ site.js_host }}/js/build_table_current_sets.js"></script>
