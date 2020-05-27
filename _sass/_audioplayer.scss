@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+// START: controls for audio and ABC players
 .audioParentOuter {
     display: inline-flex;
 }
@@ -128,8 +129,13 @@ p.attribution {
     width: 70%;
 }
 
+
 .abctext {
     display: none;
+}
+
+.outputABC {
+    max-width: 650px;
 }
 
 .loopButton {
@@ -140,6 +146,7 @@ p.attribution {
     border-radius: 8px;
     font-size: 75%;
 }
+// END: controls for audio and ABC players
 
 .filterButton {
     background-color: $brand-color;
@@ -173,10 +180,12 @@ fieldset {
     margin: 0 auto;
     text-align: left;
     border-radius: 8px;
+    border-color: $brand-color;
     border-style: solid;
+    background-color: $complimentary-color;
 }
 
-.fieldset-auto-width {
+.fieldset-tune-of-the-week {
     min-width: 300px;
     max-width: 565px;
     width: 70%;
@@ -185,44 +194,17 @@ fieldset {
 }
 
 .fieldset-covid {
-  margin-bottom: 1rem;
-  background-color: #f7c501;
-  padding-bottom: 0;
-}
-
-.tableParent {
-    display: flex;
-    width: 100%;
-}
-
-.tableChild {
-    padding: 0rem;
-}
-
-.tuneSelect {
-    height: 320px;
-    max-width: 600px;
-    display: block;
-    border: 2px solid $complimentary-color;
-    font-size: 14px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.tuneSelect {
-    /* This is the magic bit for Firefox */
-    scrollbar-width: none;
-}
-  
-.tuneSelect::-webkit-scrollbar {
-    /* This is the magic bit for WebKit */
-    display: none;
+    max-width: none;
+    margin-bottom: 1rem;
+    background-color: #f7c501;
+    padding-bottom: 0; 
 }
 
 .formParent {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    max-width: 565px;
 }
 
 .formChild {
@@ -289,6 +271,7 @@ tr#no_hover:hover {
     background-color: transparent;
 }
 
+// START: sliders used in ABCplayer
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -328,7 +311,9 @@ tr#no_hover:hover {
     background: darken($brand-color, 20%);
     cursor: pointer;
 }
+// END: sliders used in ABCplayer
 
+// START: used for Preset Loops
 .upButton {
     background-color: $brand-color;
     color: darken($complimentary-color, 10%);
@@ -357,16 +342,11 @@ tr#no_hover:hover {
     width: 45px;
 }
 
-.outputABC {
-    max-width: 650px;
-}
-
 .loop-container {
     max-width: 625px;
     padding-left: 20px;
     display: block;
     border: 2px solid $complimentary-color;
-    //width: 75%;
 }
 
 .row-title {
@@ -380,36 +360,38 @@ tr#no_hover:hover {
     //background-color: lighten($brand-color, 40%);
     background-color: darken($complimentary-color, 10%);
 }
+// END: used for Preset Loops
 
+// ????
 .a {
     color: #f0f0f0;
 }
 
-/* Popup container */
-.popup {
+// START: tooltip is used on the Help button in the Search box in Tunes Archive
+.tooltip {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  border-bottom: 1px dotted black;
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
+.tooltip .tooltiptext {
   visibility: hidden;
-  width: 160px;
+  width: 120px;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 5px 0;
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
+.tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -420,23 +402,11 @@ tr#no_hover:hover {
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+.tooltip:hover .tooltiptext {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  opacity: 1;
 }
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
+// END: tooltip is used on the Help button in the Search box in Tunes Archive
 
 .featurePicture {
     border: 1px solid black;
@@ -456,6 +426,27 @@ tr#no_hover:hover {
      padding: 10px;
 }
 
+// START: CSS for managing 'tables' on set pages
+.tableParent {
+    display: flex;
+    width: 100%;
+}
+
+.tableChild {
+    padding: 0rem;
+}
+
+.tuneSelect {
+    height: 320px;
+    max-width: 600px;
+    display: block;
+    border: 2px solid $complimentary-color;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+// END: CSS for managing 'tables' on set pages
+
 // START: CSS for managing the "tunes" grids that appear on a number of pages
 .gridParent {
     display: flex;
@@ -466,26 +457,14 @@ tr#no_hover:hover {
     padding: 0rem;
 }
 
-//if the tunesLayout height is 320px we can get 10 tunes in the table and no
-// need for a tableSlider
+// if the height is 320px we show 10 tunes in the table 
 .tunesArchiveLayout{
     display: grid;
     height: 320px;
-    //max-width: 600px;
-    grid-template-columns: minmax(100px, 350px) 2fr minmax(0, 90px);
+    grid-template-columns: minmax(100px, 350px) 2fr minmax(50px, 90px);
     grid-auto-rows: fit-content(1em);
     overflow-x: hidden;
     overflow-y: auto;
-}
-  
-.tunesArchiveLayout {
-    /* This is the magic bit for Firefox */
-    scrollbar-width: none;
-}
-  
-.tunesArchiveLayout::-webkit-scrollbar {
-    /* This is the magic bit for WebKit */
-    display: none;
 }
 
 .tunesArchiveLayout > span {
@@ -496,14 +475,13 @@ tr#no_hover:hover {
     align-items: center;
 }
 
-.tunesArchiveLayout > span:nth-child(6n+4),
-.tunesArchiveLayout > span:nth-child(6n+5),
-.tunesArchiveLayout > span:nth-child(6n+6) {
+.tunesArchiveLayout > span:nth-child(6n+1),
+.tunesArchiveLayout > span:nth-child(6n+2),
+.tunesArchiveLayout > span:nth-child(6n+3) {
     background-color: darken($complimentary-color, 6%);
 }
 
-//if the tunesLayout height is 320px we can get 10 tunes in the table and no
-// need for a tableSlider
+// if the height is 320px we show 10 tunes in the table
 .tunesObrienLayout{
     display: grid;
     height: 320px;
@@ -512,16 +490,6 @@ tr#no_hover:hover {
     grid-auto-rows: fit-content(1em);
     overflow-x: hidden;
     overflow-y: auto;
-}
-  
-.tunesObrienLayout {
-    /* This is the magic bit for Firefox */
-    scrollbar-width: none;
-}
-  
-.tunesObrienLayout::-webkit-scrollbar {
-    /* This is the magic bit for WebKit */
-    display: none;
 }
 
 .tunesObrienLayout > span {
@@ -532,8 +500,8 @@ tr#no_hover:hover {
     align-items: center;
 }
 
-.tunesObrienLayout > span:nth-child(4n+3),
-.tunesObrienLayout > span:nth-child(4n+4) {
+.tunesObrienLayout > span:nth-child(4n+1),
+.tunesObrienLayout > span:nth-child(4n+2) {
     background-color: darken($complimentary-color, 6%);
 }
 
@@ -546,6 +514,7 @@ tr#no_hover:hover {
 .titleSpan {
     background-color: $brand-color;
     color: darken($complimentary-color, 10%);
+    
 }
 
 .titleSpanRight {
@@ -554,18 +523,67 @@ tr#no_hover:hover {
     border-top-right-radius: 8px;
 }
 
-// height + margin-top + margin-bottom = tunesTable.height
-.tableSlider {
-    height: 290px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+
+::-webkit-scrollbar {
+    /* style scrollbar for WebKit */
+    width: 15px;
 }
 
-@media screen and (max-width: 640px) {
-    .hide-for-small-mobiles {
-      display: none;
-    }
+::-webkit-scrollbar-track {    
+    /* style scrollbar track for WebKit */
+    background: $complimentary-color ;
+}
+
+::-webkit-scrollbar-thumb {    
+    /* style scrollbar thumb for WebKit */
+    background-color: darken($brand-color, 20%);
+    /* border color matches track background */
+    border: 3px solid $complimentary-color;
+    border-radius: 8px;
+    /* this sets minumum height */
+    height: 40px;
+}
+
+// mobileScrolling is enables via a test in the javascript that draws the grid
+.mobileScrolling {
+    scrollbar-width: none;
+    border-color: $brand-color;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.mobileScrolling::-webkit-scrollbar {
+    display: none;
 }
 
 // END: CSS for managing the "tunes" grids that appear on a number of pages
+
+// START: LongBow
+.longBowProgressLR {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: lightgray;
+  }
+  
+  .longBowProgressRL {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: khaki;
+  }
+  
+  .longBowBarLR {
+    background-color: lightsteelblue;
+    width: 0px;
+    height: 30px;
+    position: absolute;
+  }
+  
+  .longBowBarRL {
+    background-color: silver;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+  }
+  // END: LongBow

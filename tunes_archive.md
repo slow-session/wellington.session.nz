@@ -9,10 +9,33 @@ link to the Tune Page for a more traditional view. We add new tunes to the archi
 You can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
 </p>
 
+<script>
+window.store = {
+    {% assign tunes = site.tunes %}
+    {% assign sortedtunes = tunes | sort: 'titleID' %}
+    {% assign tuneID = 200 %}
+    {% for tune in sortedtunes %}
+    {% assign tuneID = tuneID | plus: 1 %}
+        "{{ tuneID }}": {
+            "title": "{{ tune.title | xml_escape }}",
+            "tuneID": "{{ tuneID }}",
+            "key": "{{ tune.key | xml_escape }}",
+            "rhythm": "{{ tune.rhythm | xml_escape }}",
+            "url": "{{ tune.url | xml_escape }}",
+            "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+            "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
+            "repeats": "{{ tune.repeats }}",
+            "parts": "{{ tune.parts }}",
+            "abc": {{ tune.abc | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    };
+</script>
+
 {% include tunes-filter-variables.html %}
 
 <fieldset>
-    <legend>Select from the Tunes Archive:</legend>    
+    <legend>Select from the Tunes Archive:</legend>
     <form id="wellington" method="get">
         <div class="formParent">
         <div class="formChild">
@@ -37,45 +60,19 @@ You can check those out in our <a href="/latest/"><button class="filterButton" s
             </span>
         </div>
         <div class="formChild">      
-            <div class="popup filterButton" onclick="helpFunction()">
-            Help
-                <span class="popuptext" id="helpPopup">
-                    Run the filter with the default settings to see the whole list
-                </span>
+            <div class="tooltip filterButton"><em>Help</em>
+                <span class="tooltiptext">Run the filter with the default settings to see the whole list</span>
             </div>
         </div>
         </div>
     </form>
     <p></p>
-    Displaying <span id="tunesCount"></span> tunes
+    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
 </fieldset>
 
-<div id="debug"></div>
-
-<script>
-window.store = {
-    {% assign tunes = site.tunes %}
-    {% assign sortedtunes = tunes | sort: 'titleID' %}
-    {% assign tuneID = 200 %}
-    {% for tune in sortedtunes %}
-    {% assign tuneID = tuneID | plus: 1 %}
-        "{{ tuneID }}": {
-            "title": "{{ tune.title | xml_escape }}",
-            "tuneID": "{{ tuneID }}",
-            "key": "{{ tune.key | xml_escape }}",
-            "rhythm": "{{ tune.rhythm | xml_escape }}",
-            "url": "{{ tune.url | xml_escape }}",
-            "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-            "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
-            "repeats": "{{ tune.repeats }}",
-            "parts": "{{ tune.parts }}",
-            "abc": {{ tune.abc | jsonify }}
-            }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    };
-</script>
-
 {% include tunesArchiveGrid.html%}
+
+<div class="row"></div>
 
 {% include tuneModal.html%}
 

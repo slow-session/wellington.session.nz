@@ -78,21 +78,21 @@ hear the tunes played one after another.
 
 <!-- Allow the user to save their ABC-->
 <form>
-<div class="row" style="max-width:650px">
-    <div class="small-6 columns">
+<div class="formParent">
+    <div class="formChild">
         <span title="Clear the music notation to start a new set">
             <input value='RESET' type='button' class="loopButton" onclick='Reset()' />
         </span>
     </div>
-    <div class="small-3 columns">
+    <div class="formChild">
         <span title="When you're happy with your selection you can print your set using this button.
 Please think of the trees!">
             <input class="button" type="button" class="loopButton" onclick="printDiv('paper0')" value="Print this Set" />
         </span>
     </div>
-    <div class="small-3 columns">
+    <div class="formChild">
         <span title="Download the ABC you've entered. Don't lose your work!">      
-    	   <input value='Download ABC' type='button' class="loopButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
+            <input value='Download ABC' type='button' class="loopButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
         </span>
     </div>
 </div>
@@ -101,7 +101,6 @@ Please think of the trees!">
 
 <div class="tableParent">
   <div class="tableChild" id="tunesTable"></div>
-  <div class="tableChild tableSlider hide-for-small-mobiles" id="tableSlider"></div>
 </div>
 
 <div id="abc-textareas"></div>

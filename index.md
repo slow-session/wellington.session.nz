@@ -12,7 +12,7 @@ The slow session is an opportunity for players who are starting out with Irish t
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
-<fieldset class="fieldset-auto-width">
+<fieldset class="fieldset-tune-of-the-week">
 <legend>Slow tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">
@@ -57,7 +57,7 @@ The regular session is a different beast from the slow session that happens earl
 {% assign tuneID = tuneID | plus: 1 %}
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
-<fieldset class="fieldset-auto-width">
+<fieldset class="fieldset-tune-of-the-week">
 <legend>Regular tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">

@@ -4,10 +4,10 @@
  * Version: 2.0
  * Date: 11 Jan 2017
  *
- * Developed as part of websites for https://wellington.session.nz
+ * Developed as part of websites for https://dev.session.nz
  * by Ted Cizadlo and Andy Linton
  * Code available at:
- * https://github.com/slow-session/wellington.session.nz/blob/master/js/audioID_controls.js
+ * https://github.com/slow-session/dev.session.nz/blob/master/js/audioID_controls.js
  * Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Licence.
  */
 
@@ -443,44 +443,6 @@ function createLoopControlsContainer() {
     return (loopControlsContainer);
 }
 
-function createArchiveSlider(tableSlider) {
-
-    var ArchiveSlider = document.getElementById(tableSlider);
-    noUiSlider.create(ArchiveSlider, {
-        start: 0,
-        orientation: 'vertical',
-        range: {
-            'min': 0,
-            'max': 100
-        }
-    });
-
-    ArchiveSlider.noUiSlider.on('slide', function(value) {
-        document.getElementById("tunes").removeEventListener("scroll", scroll_indicator);
-        scrollTable(value);
-    });
-    ArchiveSlider.noUiSlider.on('end', function(value) {
-        document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
-        scrollTable(value);
-    });
-
-}
-
-function scroll_indicator() {
-    var elmnt = document.getElementById("tunes");
-    var tuneScroll = elmnt.scrollTop;
-    var height = elmnt.scrollHeight - elmnt.clientHeight;
-    var scrolled = (tuneScroll / height) * 100;
-    document.getElementById('tableSlider').noUiSlider.set(scrolled);
-    scrollTable(scrolled);
-}
-
-function scrollTable(value) { // when dragging the slider
-    var elmnt = document.getElementById("tunes");
-    var height = elmnt.scrollHeight - elmnt.clientHeight
-    elmnt.scrollTop = (height * value / 100);
-}
-
 function saveUserLoop(values) {
     if (presetLoopSegments.length) {
         // Preset loop 'User-1' is always the last segment
@@ -695,6 +657,17 @@ function testForIOS() {
     }
 }
 
-function nextChar(c) {
-    return (String.fromCharCode(c.charCodeAt(0) + 1));
+function testForMobile() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (userAgent.match(/iPad/i) 
+        || userAgent.match(/iPhone/i) 
+        || userAgent.match(/iPod/i) 
+        || userAgent.match(/Android/i)) 
+    {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+

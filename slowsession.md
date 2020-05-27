@@ -28,7 +28,7 @@ See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you ne
 
 We pick one tune for homework each week, and we’ll play it sometime during the first hour.
 
-<fieldset class="fieldset-auto-width">
+<fieldset class="fieldset-tune-of-the-week">
 <legend>Tune of the week</legend>
 <div class="row">
     <div class="small-5 columns">

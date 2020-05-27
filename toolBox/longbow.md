@@ -43,39 +43,6 @@ input[type=number] {
   border: solid lightgray;
   text-align: right;
 }
-
-.myProgressLR {
-  width: 100%;
-  height: 30px;
-  position: relative;
-  background-color: lightgray;
-}
-
-.myProgressRL {
-  width: 100%;
-  height: 30px;
-  position: relative;
-  background-color: khaki;
-}
-
-.myBarLR {
-  background-color: lightsteelblue;
-  width: 0px;
-  height: 30px;
-  position: absolute;
-}
-
-.myBarRL {
-  background-color: silver;
-  width: 100%;
-  height: 30px;
-  position: absolute;
-}
-
-.fieldset-auto-width {
-    display: inline-block;
-    border-radius: 8px;
-}
 </style>
 
 <script>
@@ -115,9 +82,9 @@ function setupDiv (repeat) {
     var divProgress = document.createElement("div");
     divProgress.id = "progress" + repeat;
     if (repeat % 2) {
-        divProgress.setAttribute('class', 'myProgressLR');
+        divProgress.setAttribute('class', 'longBowProgressLR');
     } else {
-        divProgress.setAttribute('class', 'myProgressRL');
+        divProgress.setAttribute('class', 'longBowProgressRL');
 
     }
     document.getElementById("main").appendChild(divProgress);
@@ -126,10 +93,10 @@ function setupDiv (repeat) {
         var divBar = document.createElement("div");
         divBar.id = "bar" + repeat;
         if (repeat % 2) {
-            divBar.setAttribute('class', 'myBarLR');
+            divBar.setAttribute('class', 'longBowBarLR');
             divBar.innerHTML = "Down";
         } else {
-            divBar.setAttribute('class', 'myBarRL');
+            divBar.setAttribute('class', 'longBowBarRL');
             divBar.innerHTML = "Up";
         }   
         document.getElementById("progress" + repeat).appendChild(divBar);
