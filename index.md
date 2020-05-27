@@ -2,11 +2,13 @@
 layout: page
 title: Wellington Irish Sessions
 ---
-## <a href="/tunes_archive/">Tunes Archive</a>
+## Tunes Archives
 
-Many of the tunes that get played at the sessions, including those we've been learning in the slow session, are in our <a href="/tunes_archive/"><button class="filterButton" style="display: inline;">Tunes Archive</button></a> page. We add new tunes reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;">Latest Tunes</button></a> page.
+Many of the tunes that get played at our sessions, including those we've been learning in our slow session, are in our <a href="/tunes_archive/"><button class="filterButton" style="display: inline;">Tunes Archive</button></a> page. We add new tunes reasonably often - you can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;">Latest Tunes</button></a> page.
 
 Charlie Montgomery is a traditional fiddle player from Co Fermanagh who has lived in Auckland, New Zealand for over 60 years. He has been an inspiration for many years to people in New Zealand who have had the privilege of hearing him play. We've got a <a href="/charlie_montgomery/"><button class="filterButton" style="display: inline;">Charlie Montgomery</button></a> page where you can hear him playing his own compositions as well as some old favourites.
+
+We've also got some tunes from other sources - mostly tunebooks in ABC or PDF format. See our <a href="/other_sources/"><button class="filterButton" style="display: inline;">Other Sources</button></a> page.
 
 ## Sessions
 
