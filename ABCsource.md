@@ -39,8 +39,7 @@ window.store = {
 
 <span title="Download the ABC you've entered. Don't lose your work!">
 <input value='Download ABC' type='button' class="filterButton"
-    onclick='downloadFile(document.getElementById("filename").value, 
-    document.getElementById("abcText").value)' />
+    onclick='downloadFile("WellingtonIrishSessions.abc", document.getElementById("abcText").value)' />
 </span>
 
 <!-- Area to store filename for download -->
