@@ -42,9 +42,6 @@ window.store = {
     onclick='downloadFile("WellingtonIrishSessions.abc", document.getElementById("abcText").value)' />
 </span>
 
-<!-- Area to store filename for download -->
-<textarea id="filename" style="display:none;">WellingtonIrishSessions.abc</textarea>
-
 <script src="{{ site.js_host }}/js/build_abc_source.js"></script>
 
 <div class="row"></div>

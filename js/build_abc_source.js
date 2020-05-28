@@ -18,9 +18,11 @@ function displayABCsource() {
         var abcText = document.getElementById('abcText');
                 
         // create table headers
-        var appendString = '';
+        var appendString = '% \n% File generated on: ' + new Date() + '\n%\n';
         var tuneIDoffset = 0;
                 
+        
+        
         for (var key in store) { // Iterate over the original data
             var item = store[key];
             if (!tuneIDoffset) {
