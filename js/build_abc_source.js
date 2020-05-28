@@ -15,7 +15,7 @@
 
 
 function displayABCsource() {
-        var tunesGrid = document.getElementById('abcText');
+        var abcText = document.getElementById('abcText');
                 
         // create table headers
         var appendString = '';
@@ -29,7 +29,7 @@ function displayABCsource() {
             appendString += createABCitem(item, tuneIDoffset);
         }
 
-        tunesGrid.innerHTML = appendString;
+        abcText.innerHTML = appendString;
     }
 
     function createABCitem(item, tuneIDoffset) {
