@@ -21,7 +21,7 @@ function displayABCsource() {
         var appendString = '';
         var tuneIDoffset = 0;
                 
-        for (var key in window.store) { // Iterate over the original data
+        for (var key in store) { // Iterate over the original data
             var item = store[key];
             if (!tuneIDoffset) {
                 tuneIDoffset = item.tuneID
