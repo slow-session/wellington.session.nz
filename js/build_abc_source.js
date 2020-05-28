@@ -15,7 +15,7 @@
 
 
 function displayABCsource() {
-        var tunesGrid = document.getElementById('tunesGrid');
+        var tunesGrid = document.getElementById('abcText');
                 
         // create table headers
         var appendString = '';
@@ -35,13 +35,11 @@ function displayABCsource() {
     function createABCitem(item, tuneIDoffset) {
         var gridRow = '';
 
-        // build the three columns
+        // build the ABC item
         var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
         
         if (newABC) {
             gridRow += newABC + '\n';
-        } else {
-            gridRow += '% ABC not available for ' + item.title  + '\n\n';
         }
         
         return gridRow;

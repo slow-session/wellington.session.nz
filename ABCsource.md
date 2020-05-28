@@ -32,8 +32,21 @@ window.store = {
 
 <input class="filterButton" type="button" onclick="displayABCsource();" value="Build Now" />
 
-{% include tunesABCsource.html%}
+<div>
+    <textarea id="abcText" rows="13" cols="65" style="background-color:#ebebeb; font-size:small; max-width:100%" spellcheck="false" readonly></textarea>
+</div>
 
+
+<span title="Download the ABC you've entered. Don't lose your work!">
+<input value='Download ABC' type='button' class="filterButton"
+    onclick='downloadFile(document.getElementById("filename").value, 
+    document.getElementById("abcText").value)' />
+</span>
+
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;">WellingtonIrishSessions.abc</textarea>
+
+<script src="{{ site.js_host }}/js/build_abc_source.js"></script>
 
 <div class="row"></div>
 
