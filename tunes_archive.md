@@ -81,11 +81,3 @@ window.store = {
     audioPlayer.innerHTML = createAudioPlayer();
   });
 </script>
-
-<script>
-// When the user clicks on <div>, open the popup
-function helpFunction() {
-  var popup = document.getElementById("helpPopup");
-  popup.classList.toggle("show");
-}
-</script>

@@ -92,11 +92,3 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
     audioPlayer.innerHTML = createAudioPlayer();
   });
 </script>
-
-<script>
-// When the user clicks on <div>, open the popup
-function helpFunction() {
-  var popup = document.getElementById("helpPopup");
-  popup.classList.toggle("show");
-}
-</script>
