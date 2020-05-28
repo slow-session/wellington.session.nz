@@ -38,7 +38,8 @@ function displayABCsource() {
         var gridRow = '';
 
         // build the ABC item
-        var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
+        var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
+        //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
         
         if (newABC) {
             gridRow += newABC + '\n';

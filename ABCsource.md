@@ -11,7 +11,7 @@ Use this page to generate all the ABCs used in our tune pages!
 window.store = {
     {% assign tunes = site.tunes %}
     {% assign sortedtunes = tunes | sort: 'titleID' %}
-    {% assign tuneID = 200 %}
+    {% assign tuneID = 100 %}
     {% for tune in sortedtunes %}
     {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
