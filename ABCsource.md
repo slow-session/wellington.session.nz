@@ -36,8 +36,7 @@ window.store = {
     <textarea id="abcText" rows="13" cols="65" style="background-color:#ebebeb; font-size:small; max-width:100%" spellcheck="false" readonly></textarea>
 </div>
 
-
-<span title="Download the ABC you've entered. Don't lose your work!">
+<span title="Download the ABC you've generated. Don't lose your work!">
 <input value='Download ABC' type='button' class="filterButton"
     onclick='downloadFile("WellingtonIrishSessions.abc", document.getElementById("abcText").value)' />
 </span>
