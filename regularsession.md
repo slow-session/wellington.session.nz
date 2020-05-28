@@ -103,7 +103,7 @@ $.extend(window.store, tuneOfTheWeek);
 Latest Tunes
 ------------
 
-We add new tunes to the archive reasonably often. You can check those out in our <a href="/latest/"><button class="filterButton" style="display: inline;"> Latest Tunes</button></a> page.
+We add new tunes to the archive reasonably often. You can check those out in our <a href="/latest/"><button class="filterButton"> Latest Tunes</button></a> page.
 
 {% include tuneModal.html%}
 

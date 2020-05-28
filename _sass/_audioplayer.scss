@@ -150,11 +150,14 @@ p.attribution {
 
 .filterButton {
     background-color: $brand-color;
-    padding: 5px 10px;
+    padding: 7px 5px 4px 5px;
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     border-radius: 8px;
     font-size: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darken($brand-color, 10%)
 }
 
 .filterButton.filterDisabled {
