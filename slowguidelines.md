@@ -5,7 +5,7 @@ permalink: /slowguidelines/
 ---
 The Wellington Slow Session is an Irish traditional music session designed to
 give musicians an opportunity to play session tunes at a pace much slower than
-in a "regular session".  We play the tunes on the <a href="/slowsession/"><i>Slow Session page</i></a>, typically beginning with the <a href="/slowsession/#slow-session-sets"> <i>Sets</i></a>, and then we review some of the <a href="/slowsession/#slow-session-tunes"> <i>Tunes we've learnt recently</i></a>, and usually conclude with the <a href="/slowsession/#tune-of-the-week"> <i>Tune of the week</i></a>.
+in a "regular session".  We play a mix of old favourites, some of the <a href="/slowsession/#recent-slow-session-tunes-of-the-week"> <i>Tunes we've learnt recently</i></a>, and usually conclude with the <a href="/slowsession/#tune-of-the-week"> <i>Tune of the week</i></a>.
 
 We don't teach tunes during the session, but rather provide tools on this website to help players learn the tunes - see our notes on <a href="/learn_by_ear/">Learning by Ear</a>. This music is part of an oral tradition and it's very hard to write down the nuances of the style - you need to listen to this music get the subtle details.
 
