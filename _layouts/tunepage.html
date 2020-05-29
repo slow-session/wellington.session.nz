@@ -42,6 +42,7 @@ layout: page
 </form>
 <div id="loopPresetControls" style="display: none;"></div>
 
+
 <div class="outputABC">
     <div id="paper0" style="display: block;"></div>
     {% if page.abc contains "K:" %}
@@ -54,7 +55,8 @@ layout: page
     <div id='abcSource' class="abcSource">
         <div class="row">
             <div class="small-7 columns">
-                <textarea name='abcText' id="abcText" class="abcText"
+
+               <textarea name='abcText' id="abcText" class="abcText"
                 rows="16" spellcheck="false">{{ page.abc | br_to_newline }}
                 </textarea>
 
