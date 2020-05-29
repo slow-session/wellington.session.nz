@@ -19,12 +19,11 @@ layout: page
     <input type="button" class="filterButton" value="Show ABC Source" onclick="toggle(this);">
 </form>
 
-<div id='abcSource' style="display: none;">
+<div id='abcSource' class="abcSource">
     <div class="row">
-        <div class="small-6 columns">
-            <textarea name='abcText' id="abcText" rows="13" cols="65"
-            style="background-color:#ebebeb; font-size:small; max-width:100%"
-            spellcheck="false">{{ page.abc | br_to_newline }}
+        <div class="small-7 columns">
+            <textarea name='abcText' id="abcText" class="abcText"
+            rows="16"spellcheck="false">{{ page.abc | br_to_newline }}
             </textarea>
             <span title="Download the ABC you've entered. Don't lose your work!">
     	    <input value='Download ABC' type='button' class="filterButton"
@@ -32,7 +31,7 @@ layout: page
                     document.getElementById("abcText").value)' />
             </span>
         </div>
-        <div class="small-6 columns" style="max-width:100%">
+        <div class="small-5 columns" style="max-width:100%">
     <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.
     A brief set of instructions is found <a href="/editingABC/">here.</a></p>
 
