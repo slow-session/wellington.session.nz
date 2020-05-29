@@ -61,12 +61,11 @@ There are a number of tools you can use to read this file and print copies of tu
     <input type="button" class="filterButton" value="Show ABC File" onclick="toggle(this);">
 </form>
 
-<div class="formParent">
+<div class="formParent abcSource">
     <div id='abcSource' class="abcSource formChild">
         <div class="row">
-            <textarea name='abcText' id="abcText" rows="13" cols="65"
-                style="background-color:#ebebeb; font-size:small; max-width:100%"
-                spellcheck="false">{{ page.abc | br_to_newline }}</textarea>
+            <textarea name='abcText' id="abcText" class="abcText"
+                rows="16" spellcheck="false"></textarea>
         </div>
         <div class="row">
             <span title="Download the ABC you've entered. Don't lose your work!">
