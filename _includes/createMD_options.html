@@ -15,15 +15,15 @@
     <select id="rhythm-box" name="rhythm">
         <option value="">None</option>
         <option value="air">air</option>
-    <option value="air/hornpipe">air/hornpipe</option>
+    <option value="air, hornpipe">air, hornpipe</option>
     <option value="barndance">barndance</option>
     <option value="highland">highland</option>
     <option value="hop jig">hop jig</option>
     <option value="hornpipe">hornpipe</option>
     <option value="jig">jig</option>
-    <option value="jig/reel">jig/reel</option>
+    <option value="jig, reel">jig, reel</option>
     <option value="march">march</option>
-    <option value="march/strathspey/reel">march/strathspey/reel</option>
+    <option value="march, strathspey, reel">march, strathspey, reel</option>
     <option value="mazurka">mazurka</option>
     <option value="planxty">planxty</option>
     <option value="polka">polka</option>
@@ -237,7 +237,7 @@ YouTube Fair Use </small></p>
 <p><small><strong>Raglan Session</strong> uses these licences:<br />
 CC-BY-NC-4.0 </small></p>
 <p><small><strong>Richard Tait</strong> uses these licences:<br />
-CC-BY-NC-4.0 © Richard Tait. All Rights Reserved. </small></p>
+CC-BY-NC-4.0 © Richard Tait. All Rights Reserved. '© Richard Tait. All Rights Reserved.' </small></p>
 <p><small><strong>Ruairidh Morrison and Melanie Brown</strong> uses these licences:<br />
 CC-BY-NC-4.0 </small></p>
 <p><small><strong>Sarah and Catherine Brown</strong> uses these licences:<br />
@@ -269,6 +269,7 @@ CC-BY-NC-3.0 </small></p>
         <option value="">None</option>
         <option value="&#x27;© Duncan Ross Cameron. All Rights Reserved.&#x27;">'© Duncan Ross Cameron. All Rights Reserved.'</option>
     <option value="&#x27;© Fergal Scahill. All Rights Reserved.&#x27;">'© Fergal Scahill. All Rights Reserved.'</option>
+    <option value="&#x27;© Richard Tait. All Rights Reserved.&#x27;">'© Richard Tait. All Rights Reserved.'</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/2.5/&quot;&gt;CC-BY-NC-2.5&lt;/a&gt;">CC-BY-NC-2.5</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/3.0/&quot;&gt;CC-BY-NC-3.0&lt;/a&gt;">CC-BY-NC-3.0</option>
     <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;CC-BY-NC-4.0&lt;/a&gt;">CC-BY-NC-4.0</option>
@@ -355,7 +356,9 @@ CC-BY-NC-3.0 </small></p>
     <input type="text" id="abc_url-box" name="abc_url" value="">
 
     <label>ABC:<sup>*</sup></label>
-    <textarea id="abc-box" name="abc" rows="13" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
+    <textarea id="abc-box" name="abc" class="abcText"
+        rows="13" spellcheck="false">
+    </textarea>
 
     <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
     </form>

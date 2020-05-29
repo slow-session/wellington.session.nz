@@ -208,7 +208,9 @@ with open(optionsFile, 'w') as outfile:
     <input type="text" id="abc_url-box" name="abc_url" value="">
 
     <label>ABC:<sup>*</sup></label>
-    <textarea id="abc-box" name="abc" rows="13" cols="58" style="background-color: #ebebeb" spellcheck="false"></textarea>
+    <textarea id="abc-box" name="abc" class="abcText"
+        rows="13" spellcheck="false">
+    </textarea>
 
     <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
     </form>

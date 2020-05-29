@@ -134,7 +134,7 @@ p.attribution {
 }
 
 .abcText {
-    background-color:#ebebeb;
+    background-color: darken($complimentary-color, 6%);
     font-size:small; 
     max-width:100%;
     -webkit-box-sizing: border-box;
@@ -189,7 +189,7 @@ h2 span {
 fieldset {
     max-width: 565px;
     float:left;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
     text-align: left;
     border-radius: 8px;
     border-color: $brand-color;
