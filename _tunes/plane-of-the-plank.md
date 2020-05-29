@@ -20,7 +20,7 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/9800
 abc: |
-    X:9800
+    X: 1
     T:Plane Of The Plank, The
     M:4/4
     L:1/8

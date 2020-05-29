@@ -19,7 +19,7 @@ source: Wellington
 abc_source:
 abc_url:
 abc: |
-    X:1
+    X: 1
     T: Tiger in the Grass
     M:4/4
     R:Reel

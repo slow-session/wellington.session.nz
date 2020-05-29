@@ -41,7 +41,7 @@ abc: |
     |:eaag abag|edef gedB|(3GFG BG dGBG|cdef g2fg|
     eaag abag|edef g2fg|afge dBGB|AcBG A2 gf:|
 
-    X:3
+    X: 3
     T:The Boyne Hunt
     R:reel
     C:Trad.

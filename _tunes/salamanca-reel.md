@@ -20,7 +20,7 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/99
 source: Wellington
 abc: |
-  X: 73
+  X: 1
   T:Salamanca Reel, The
   R:reel
   D:Bothy Band 1975.

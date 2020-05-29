@@ -17,7 +17,7 @@ mp3_source:
 abc_url: http://slowplayers.org/wp-content/uploads/Crested-Hens.txt
 source: Wellington
 abc: |
-    X:6
+    X: 6
     T:Crested Hens
     T:Les Poules Huppees
     M:3/4

@@ -19,7 +19,7 @@ mp3_url:
 abc_url:
 source: Wellington
 abc: |
-    X:52
+    X: 52
     T:Murphy's Hornpipe
     R:hornpipe
     Z:id:hn-hornpipe-52

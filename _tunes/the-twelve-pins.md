@@ -20,7 +20,7 @@ source: Wellington
 abc_source: Henrik Norbeck's ABC Tunes
 abc_url: http://www.norbeck.nu/abc/i/hnr1.abc
 abc: |
-  X:108
+  X: 1
   T:Twelve Pins, The
   R:reel
   C:Charlie Lennon

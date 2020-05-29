@@ -19,7 +19,7 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/433
 abc: |
-    X:433
+    X: 1
     T:Crock Of Gold, The
     M:4/4
     L:1/8
