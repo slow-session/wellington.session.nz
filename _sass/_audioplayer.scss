@@ -194,7 +194,8 @@ fieldset {
     border-radius: 8px;
     border-color: $brand-color;
     border-style: solid;
-    background-color: $complimentary-color;
+    //background-color: $complimentary-color;
+    background-color: darken($complimentary-color, 3%);
 }
 
 .fieldset-tune-of-the-week {
@@ -203,6 +204,7 @@ fieldset {
     width: 70%;
     text-align: center;
     margin-bottom: 1rem;
+    background-color: darken($complimentary-color, 3%);
 }
 
 .fieldset-covid {
