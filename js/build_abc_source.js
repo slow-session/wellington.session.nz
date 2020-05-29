@@ -17,8 +17,9 @@
 function displayABCsource() {
         var abcText = document.getElementById('abcText');
                 
-        // create table headers
-        var appendString = '% \n% File generated on: ' + new Date() + '\n%\n';
+        // create file headers
+        var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
+        appendString += '% Generated on: ' + new Date() + '\n%\n';
         var tuneIDoffset = 0;
                 
         

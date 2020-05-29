@@ -32,28 +32,6 @@ Sean Manning's Sets (Dunedin):
 
  * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
 
-Tunebooks for this site
----------
-
-Some of you like to have printable copies of the music. We've taken all tunes we've
-collected and produced some different options:
-
-* [current-by-type.pdf](/tunebooks/current-by-type.pdf "PDF") - PDF containing the Wellington Session tunes
-* [current-alphabetical.pdf](/tunebooks/current-alphabetical.pdf "PDF") - PDF containing the Wellington Session tunes in alphabetical order
-* [2bar-by-type.pdf](/tunebooks/2bar-by-type.pdf "PDF") - PDF with just the first two bars of the tunes
-* [2bar-alphabetical.pdf](/tunebooks/2bar-alphabetical.pdf "PDF") - PDF with just the first two bars of the tunes in alphabetical order
-
-These tunebooks were last updated at: Sat 21 Sep 2019 14:12:09 NZST
-
-{::nomarkdown}
-<p>
-<img alt="Think before you print" src="/images/think-before-you-print.gif">
-</p>
-{:/}
-
-Other tunebooks
----------------
-
 Begged Borrowed and Stolen:
 
  * [bbs.pdf](/tunebooks/other/bbs.pdf "PDF")
@@ -66,12 +44,81 @@ Some other tunebooks from early days of ABC i.e. the 1990s:
 
  You can also get copies of the ABC files that were used to generate some of these PDFs:
 
- * [current-by-type.abc](/tunebooks/current-by-type.abc "ABC")
- * [current-alphabetical.abc](/tunebooks/current-alphabetical.abc "ABC")
- * [2bar-by-type.abc](/tunebooks/2bar-by-type.abc "ABC")
- * [2bar-alphabetical.abc](/tunebooks/2bar-alphabetical.abc "ABC")
- * [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
  * [obrien.abc](/tunebooks/other/obrien.abc "ABC")
+ * [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
  * [reavy.abc](/tunebooks/other/reavy.abc "ABC")
  * [session1.abc](/tunebooks/other/session1.abc "ABC")
  * [session2.abc](/tunebooks/other/session2.abc "ABC")
+
+Tunebooks for this site
+---------
+
+We've decided to stop producing PDF versions of tunebooks for this site as it was difficult for us to maintain and we felt it led to people printing copies which meant trees were being cut down. You can download a file containing all the ABCs used on this site.
+
+There are a number of tools you can use to read this file and print copies of tunes from it. We've used EasyABC in the past.
+
+<form id="ABCform">
+    <input type="button" class="filterButton" value="Show ABC File" onclick="toggle(this);">
+</form>
+
+<div class="formParent">
+    <div id='abcSource' class="abcSource formChild">
+        <div class="row">
+            <textarea name='abcText' id="abcText" rows="13" cols="65"
+                style="background-color:#ebebeb; font-size:small; max-width:100%"
+                spellcheck="false">{{ page.abc | br_to_newline }}</textarea>
+        </div>
+        <div class="row">
+            <span title="Download the ABC you've entered. Don't lose your work!">
+        	    <input value='Download ABC File' type='button' class="filterButton"
+                onclick='downloadFile("WellingtonIrishSessions.abc", 
+                        document.getElementById("abcText").value)' />
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+window.store = {
+    {% assign tunes = site.tunes %}
+    {% assign sortedtunes = tunes | sort: 'titleID' %}
+    {% assign tuneID = 100 %}
+    {% for tune in sortedtunes %}
+    {% assign tuneID = tuneID | plus: 1 %}
+        "{{ tuneID }}": {
+            "title": "{{ tune.title | xml_escape }}",
+            "tuneID": "{{ tuneID }}",
+            "key": "{{ tune.key | xml_escape }}",
+            "rhythm": "{{ tune.rhythm | xml_escape }}",
+            "url": "{{ tune.url | xml_escape }}",
+            "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+            "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
+            "repeats": "{{ tune.repeats }}",
+            "parts": "{{ tune.parts }}",
+            "abc": "{{ tune.abc | uri_escape }}"
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    };
+</script>
+
+<script src="{{ site.js_host }}/js/build_abc_source.js"></script>
+
+<script>
+function toggle(button) {
+    switch (button.value) {
+        case "Show ABC File":
+            button.value = "Hide ABC File";
+            displayABCsource();      
+            document.getElementById('abcSource').style.display= "block" ;
+            break;
+        case "Hide ABC File":
+            button.value = "Show ABC File";
+            document.getElementById('abcText').innerHTML = '';
+            document.getElementById('abcSource').style.display= "none" ;
+            break;
+    }
+}
+</script>
+
+
+
