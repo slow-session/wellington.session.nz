@@ -15,7 +15,7 @@ mp3_url:
 alt_mp3_url:
 source: Wellington
 abc_source: Wellington Tunebook Collection
-abc_url: /tunebooks/other/obrien.pdf
+abc_url: /tunebooks/obrien.pdf
 abc: |
     X:4
     T:Crooked Road to Dublin

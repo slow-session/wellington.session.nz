@@ -1,12 +1,39 @@
 ---
 layout: page
 ---
-<div class="output" style="max-width: 650px;">
-    <div id="paper0" class="paper"></div>
-</div>
+<div class="outputABC">
+    <div id="paper0" style="display: block;"></div>
+    {% if page.abc contains "K:" %}
+    <!--<h2>Play the ABC version</h2>-->
+    <div id="textAreas"></div>
+    <div style="overflow-x:auto;">
+    <div id="ABCplayer"></div>
+    </div>
+    {% endif %}
+    <div id='abcSource' class="abcSource">
+        <div class="row">
+            <div class="small-7 columns">
 
-<div style="overflow-x:auto;">
-<div id="ABCplayer"></div>
+               <textarea name='abcText' id="abcText" class="abcText"
+                rows="16" spellcheck="false">{{ page.abc | br_to_newline }}
+                </textarea>
+
+                <span title="Download the ABC you've entered. Don't lose your work!">
+        	    <input value='Download ABC' type='button' class="filterButton"
+                onclick='downloadFile(document.getElementById("filename").value,
+                        document.getElementById("abcText").value)' />
+                </span>
+            </div>
+            <div class="small-5 columns" style="max-width:100%">
+        <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.
+        A brief set of instructions is found <a href="/editingABC/">here.</a></p>
+
+        <p>If you feel that your changes are a closer match to the recording on the website, please save
+        your changes (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and
+        we will review the proposed changes.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Area to store filename for download -->
@@ -19,25 +46,6 @@ layout: page
     <input type="button" class="filterButton" value="Show ABC Source" onclick="toggle(this);">
 </form>
 
-<div id='abcSource' class="abcSource">
-    <div class="row">
-        <div class="small-7 columns">
-            <textarea name='abcText' id="abcText" class="abcText"
-            rows="16"spellcheck="false">{{ page.abc | br_to_newline }}
-            </textarea>
-            <span title="Download the ABC you've entered. Don't lose your work!">
-    	    <input value='Download ABC' type='button' class="filterButton"
-            onclick='downloadFile(document.getElementById("filename").value,
-                    document.getElementById("abcText").value)' />
-            </span>
-        </div>
-        <div class="small-5 columns" style="max-width:100%">
-    <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly.
-    A brief set of instructions is found <a href="/editingABC/">here.</a></p>
-
-    <p>You can save your changes using the <b>Download ABC</b> button</p>
-        </div>
-</div></div>
 
 <div class="attribution">
     <br />
