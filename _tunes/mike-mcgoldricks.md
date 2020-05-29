@@ -19,7 +19,7 @@ abc_source: The Session
 abc_url: https://thesession.org/tunes/628
 source: Wellington
 abc: |
-    X:5
+    X: 5
     T:Mike McGoldrick's
     R: jig
     M: 6/8

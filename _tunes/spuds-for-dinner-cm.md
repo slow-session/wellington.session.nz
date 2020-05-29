@@ -19,7 +19,7 @@ source:  Old Friends
 abc_source: Charlie Montgomery
 abc_url:
 abc: |
-    X:1
+    X: 1
     T: Spuds for dinner
     R: reel
     C: Charlie Montgomery

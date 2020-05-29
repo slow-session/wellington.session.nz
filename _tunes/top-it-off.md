@@ -19,7 +19,7 @@ source: Wellington
 abc_source: abc notation home page
 abc_url: http://abcnotation.com/tunePage?a=www.norbeck.nu/abc/i/hnsj0/0049
 abc: |
-    X:46
+    X: 4
     T:Top It Off
     R:hop jig
     D:Paddy Glackin: Ceol ar an bhFidil le Paddy Glackin

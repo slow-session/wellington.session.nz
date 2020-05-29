@@ -19,7 +19,7 @@ mp3_url: https://media.comhaltas.ie/audio/fs1/1-53ReelsP16ShipAreSailing.mp3
 abc_url: http://nefc.org.nz/
 source: Arrowtown
 abc: |
-    X:21
+    X: 2
     T:Ships are Sailing
     Z:Mike Moroney
     L:1/8

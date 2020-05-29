@@ -20,7 +20,7 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2973
 abc: |
-    X:2973
+    X: 2
     T:Kilmovee, The
     M:6/8
     L:1/8

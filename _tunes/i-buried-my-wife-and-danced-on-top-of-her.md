@@ -19,6 +19,7 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/383
 abc: |
+    X: 1
     T: I Buried My Wife and Danced on Top of Her
     M:6/8
     L:1/8

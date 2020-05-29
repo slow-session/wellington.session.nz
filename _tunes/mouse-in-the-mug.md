@@ -19,7 +19,7 @@ mp3_url: http://www.burginguitars.co.nz/recordings/ballyscully-live/
 abc_url:
 source: Wellington
 abc: |
-    X:1
+    X: 1
     T:Mouse in the Mug
     M:6/8
     L:1/8
