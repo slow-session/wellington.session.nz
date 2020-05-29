@@ -71,7 +71,7 @@ Fill in the details for the set title, rhythm, location and your name. Then find
 <fieldset style="display: inline-block; vertical-align: middle;">
 <legend>Check set details:</legend>
 <div class="container">
-<textarea id="setMD" rows="13" cols="35" style="background-color: #ebebeb" spellcheck="false"></textarea>
+<textarea id="setMD" class="abcText" rows="13" spellcheck="false"></textarea>
 <!-- Allow the user to save their MD-->
 <form>
    <span title="Download the MD data you've entered. Don't lose your work!">      

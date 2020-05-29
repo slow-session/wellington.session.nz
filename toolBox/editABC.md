@@ -32,9 +32,7 @@ If you want to add a new tune to the archive you can use the
         <!-- Group the input and controls for ABC-->
         <h3>Edit this sample ABC:</h3>
         <!-- Read the modified ABC and play if requested -->
-        <textarea name='abc' id="abc" rows="13" cols="55"
-        style="background-color:#ebebeb; font-size:small; max-width:100%;"
-        spellcheck="false">
+        <textarea name='abc' id="abc" class="abcText" rows="13" spellcheck="false">
 X: 1
 T: Kilglass Lakes
 R: jig
