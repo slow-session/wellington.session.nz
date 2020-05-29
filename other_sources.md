@@ -12,17 +12,17 @@ Charlie Montgomery:
 
 Paddy Fahey tunes:
 
- * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis](/tunebooks/other/Paddy_Fahey_Holohan_1995_Tune_.pdf "PDF")
- * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/other/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
+ * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis](/tunebooks/Paddy_Fahey_Holohan_1995_Tune_.pdf "PDF")
+ * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
 
 Sets of tunes put together by Paddy O'Brien:
 
  * [O'Brien sets on line](/obrientunes/)
- * [obrien.pdf](/tunebooks/other/obrien.pdf "PDF")
+ * [obrien.pdf](/tunebooks/obrien.pdf "PDF")
 
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
- * [The Northern Fiddler](/tunebooks/other/The_Northern_Fiddler.pdf) 
+ * [The Northern Fiddler](/tunebooks/The_Northern_Fiddler.pdf) 
 
 Dunedin Fiddle Orchestra:
 
@@ -30,25 +30,25 @@ Dunedin Fiddle Orchestra:
 
 Sean Manning's Sets (Dunedin):
 
- * [seansSetBook1704.pdf](/tunebooks/other/seansSetBook1704.pdf "PDF")
+ * [seansSetBook1704.pdf](/tunebooks/seansSetBook1704.pdf "PDF")
 
 Begged Borrowed and Stolen:
 
- * [bbs.pdf](/tunebooks/other/bbs.pdf "PDF")
+ * [bbs.pdf](/tunebooks/bbs.pdf "PDF")
 
 Some other tunebooks from early days of ABC i.e. the 1990s:
 
- * [reavy.pdf](/tunebooks/other/reavy.pdf "PDF")
- * [session1.pdf](/tunebooks/other/session1.pdf "PDF")
- * [session2.pdf](/tunebooks/other/session2.pdf "PDF")
+ * [reavy.pdf](/tunebooks/reavy.pdf "PDF")
+ * [session1.pdf](/tunebooks/session1.pdf "PDF")
+ * [session2.pdf](/tunebooks/session2.pdf "PDF")
 
  You can also get copies of the ABC files that were used to generate some of these PDFs:
 
- * [obrien.abc](/tunebooks/other/obrien.abc "ABC")
- * [seansSetBook1704.abc](/tunebooks/other/seansSetBook1704.abc "ABC")
- * [reavy.abc](/tunebooks/other/reavy.abc "ABC")
- * [session1.abc](/tunebooks/other/session1.abc "ABC")
- * [session2.abc](/tunebooks/other/session2.abc "ABC")
+ * [obrien.abc](/tunebooks/obrien.abc "ABC")
+ * [seansSetBook1704.abc](/tunebooks/seansSetBook1704.abc "ABC")
+ * [reavy.abc](/tunebooks/reavy.abc "ABC")
+ * [session1.abc](/tunebooks/session1.abc "ABC")
+ * [session2.abc](/tunebooks/session2.abc "ABC")
 
 Tunebooks for this site
 ---------
