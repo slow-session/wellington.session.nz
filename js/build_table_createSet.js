@@ -238,19 +238,11 @@
 
          if (results.length) {
              displayTunesTable(results, window.store);
-             if (results.length > 10) {
-                createArchiveSlider('tableSlider');
-                document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
-            }
          } else {
              document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
          displayTunesTable('', window.store);
-         if (Object.keys(store).length > 10) {
-             createArchiveSlider('tableSlider');
-             document.getElementById("tunes").addEventListener("scroll", scroll_indicator);
-         }
      }
      return false;
  })();
