@@ -17,7 +17,6 @@ to view the set.
               "title": "{{ tune.title | xml_escape }}",
               "tuneID": "{{ tuneID }}",
               "key": "{{ tune.key | xml_escape }}",
-              "mode": "{{ tune.mode | xml_escape }}",
               "rhythm": "{{ tune.rhythm | xml_escape }}",
               "url": "{{ tune.url | xml_escape }}",
               "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
@@ -71,7 +70,6 @@ to view the set.
 <fieldset id="modalControls" style="display:none;">
 <h3>Selected Tunes:</h3>
 <div id="setTuneTitles"></div>
-
 <form>
 <div class="formParent">
     <div class="formChild">

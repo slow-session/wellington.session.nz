@@ -15,39 +15,36 @@
 
 
 function displayABCsource() {
-        var abcText = document.getElementById('abcText');
-                
-        // create file headers
-        var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
-        appendString += '% Generated on: ' + new Date() + '\n%\n';
-        var tuneIDoffset = 0;
-                
-        
-        
-        for (var key in store) { // Iterate over the original data
-            var item = store[key];
-            if (!tuneIDoffset) {
-                tuneIDoffset = item.tuneID
-            }
-            appendString += createABCitem(item, tuneIDoffset);
-        }
+  var abcText = document.getElementById('abcText');
 
-        abcText.innerHTML = appendString;
+  // create file headers
+  var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
+  appendString += '% Generated on: ' + new Date() + '\n%\n';
+  var tuneIDoffset = 0;
+
+
+
+  for (var key in store) { // Iterate over the original data
+    var item = store[key];
+    if (!tuneIDoffset) {
+      tuneIDoffset = item.tuneID
     }
+    appendString += createABCitem(item, tuneIDoffset);
+  }
 
-    function createABCitem(item, tuneIDoffset) {
-        var gridRow = '';
+  abcText.innerHTML = appendString;
+}
 
-        // build the ABC item
-        var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
-        //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
-        
-        if (newABC) {
-            gridRow += newABC + '\n';
-        }
-        
-        return gridRow;
-    }
+function createABCitem(item, tuneIDoffset) {
+  var gridRow = '';
 
+  // build the ABC item
+  var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
+  //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
 
+  if (newABC) {
+    gridRow += newABC + '\n';
+  }
 
+  return gridRow;
+}
