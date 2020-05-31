@@ -15,7 +15,7 @@
 
   var tuneIDs = [];
 
-  function appendABC(abcSource, tuneID) {
+  function appendABC(abcSource, tuneID, title) {
       var regex = new RegExp('X:.*\n');
 
       document.getElementById('ABCraw').innerHTML += abcSource + "\n";
@@ -24,6 +24,7 @@
       document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
       document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
 
+      document.getElementById('setTuneTitles').innerHTML += title + '<br />';
       document.getElementById("modalControls").style.display = 'block'
       document.getElementById(tuneID).style.backgroundColor = 'khaki';
       tuneIDs.push(tuneID);
@@ -49,6 +50,7 @@
       document.getElementById('ABCraw').innerHTML = '';
       document.getElementById('ABCprocessed').innerHTML = 'X: 1';
       document.getElementById('filename').innerHTML = '';
+      document.getElementById('setTuneTitles').innerHTML = '';
 
       // delete the paper for the tune dots after a reset
       // selecting new tunes will then create new paper
@@ -107,7 +109,7 @@
 
         // build the first three columns
         gridRow += '<span id="tr' + item.tuneID + '"><a href="' + item.url + '">' + item.title + '</a></span>';
-        gridRow += '<span><input type="button" class="filterButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\')" value="Select"></span>';
+        gridRow += '<span><input type="button" class="filterButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\', \'' + item.title + '\')" value="Select"></span>';
         gridRow += '<span>' + item.key + ' '+ item.rhythm + '</span>';
         return gridRow;
      }
