@@ -69,6 +69,9 @@ to view the set.
 <div class="row"></div>
 
 <fieldset id="modalControls" style="display:none;">
+<h3>Selected Tunes:</h3>
+<div id="setTuneTitles"></div>
+
 <form>
 <div class="formParent">
     <div class="formChild">
