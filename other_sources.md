@@ -53,9 +53,9 @@ Some other tunebooks from early days of ABC i.e. the 1990s:
 Tunebooks for this site
 ---------
 
-We've decided to stop producing PDF versions of tunebooks for this site as it was difficult for us to maintain and we felt it led to people printing copies which meant trees were being cut down. You can download a file containing all the ABCs used on this site.
+We've decided to stop producing PDF versions of tunebooks for this site as it was difficult for us to maintain and we felt it led to people printing copies which meant trees were being cut down. 
 
-There are a number of tools you can use to read this file and print copies of tunes from it. We've used EasyABC in the past.
+You can download a file containing all the ABCs used on this site. There are a number of tools you can use to read this file and print copies of tunes from it. We've used EasyABC in the past.
 
 <form id="ABCform">
     <input type="button" class="filterButton" value="Show ABC File" onclick="toggle(this);">

@@ -1,0 +1,61 @@
+<!-- The Modal -->
+
+<div id="setModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">×</span>
+        <!-- *** Player controls *** -->
+        <!-- Show a header for where the dots will appear -->
+        <div id="paperHeader"><h2>Choose some tunes first!!</h2></div>
+        <!-- Draw the dots -->
+        <div class="output" id='output' style="max-width: 650px;">
+            <div id="paper0" class="paper"></div>
+        </div>
+
+        <!-- Controls for ABC player -->
+        <div id="ABCplayer"></div>
+
+        <!-- Allow the user to save their ABC-->
+        <form>
+        <div class="formParent">
+            <div class="formChild">
+                <span title="Download the ABC you've entered. Don't lose your work!">      
+                    <input value='Download ABC' type='button' class="loopButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
+                </span>
+            </div>
+            <div class="formChild">
+                <span title="When you're happy with your selection you can print your set using this button. Please think of the trees!">
+                    <input class="button" type="button" class="loopButton" onclick="printDiv('paper0')" value="Print this Set" />
+                </span>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+<!-- Area to store filename for download -->
+<textarea id="filename" style="display:none;"></textarea>
+
+<script>
+// Get the modal
+var modal = document.getElementById("setModal");
+
+function viewModal () {
+    modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

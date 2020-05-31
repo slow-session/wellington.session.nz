@@ -24,6 +24,7 @@
       document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
       document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
 
+      document.getElementById("modalControls").style.display = 'block'
       document.getElementById(tuneID).style.backgroundColor = 'khaki';
       tuneIDs.push(tuneID);
 
@@ -55,6 +56,7 @@
           document.getElementById('output').removeChild(elem);
       }
 
+      document.getElementById("modalControls").style.display = 'none';
       var tLen = tuneIDs.length;
       for (i = 0; i < tLen; i++) {
           document.getElementById(tuneIDs[i]).style.backgroundColor = '';
@@ -63,33 +65,23 @@
   }
 
  (function() {
-     function displayTunesTable(results, store) {
-         var tunesTable = document.getElementById('tunesTable');
+     function displayTunesGrid(results, store) {
+         var tunesGrid = document.getElementById('tunesGrid');
          var tunesCount = document.getElementById('tunesCount');
          var tunesCounter = 0;
 
         // create table headers
         if (testForMobile()) {
-            var appendString = '<table id="tunes" class="tuneSelect tablesorter mobileScrolling">';
+            var appendString = '<div id="tunes" class="tunesArchiveLayout mobileScrolling">';;
         } else {
-            var appendString = '<table id="tunes" class="tuneSelect tablesorter">';            
+            var appendString = '<div id="tunes" class="tunesArchiveLayout">';
         }
-
-        appendString += '<thead> \
-         <tr> \
-           <th style="width:10%;min-width:75px;">Add Tune</th> \
-           <th style="width:35%;">Name &#x25B2;&#x25BC;</th> \
-           <th style="width:6%;">Rhythm<br />&#x25B2;&#x25BC;</th> \
-           <th style="width:4%;">Key<br />&#x25B2;&#x25BC;</th> \
-         </tr> \
-         </thead> \
-         <tbody>';
 
          if (results.length) { // Are there any results?
              for (var i = 0; i < results.length; i++) { // Iterate over the results
                  var item = store[results[i].ref];
                  if (item.abc) {
-                     appendString += createTableRow(item);
+                     appendString += createGridRow(item);
                      addTextArea(item);
                      tunesCounter++;
                  }
@@ -98,34 +90,31 @@
              for (var key in store) { // Iterate over the original data
                  var item = store[key];
                  if (item.abc) {
-                     appendString += createTableRow(item);
+                     appendString += createGridRow(item);
                      addTextArea(item);
                      tunesCounter++;
                  }
              }
          }
          appendString += '</tbody></table></div>';
-         tunesTable.innerHTML = appendString;
+         tunesGrid.innerHTML = appendString;
          tunesCount.innerHTML = tunesCounter;
      }
 
-     function createTableRow(item) {
-         var tableRow = '';
-         var tuneID = 'ABC' + item.tuneID;
+     function createGridRow(item) {
+        var gridRow = '';
+        var tuneID = 'ABC' + item.tuneID;
 
-         // build the first three columns
-         tableRow += '<tr id="tr' + item.tuneID + '">';
-         tableRow += '<td><input type="button" class="loopButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\')" value="Select"></td>';
-         tableRow += '<td class="tuneTitle" style="text-align:left"><span title="Tune played in: ' + item.location + '">';
-         tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
-         tableRow += '<td>' + item.rhythm + '</td>';
-         tableRow += '<td>' + item.key + '</td>';
-         tableRow += '</tr>';
-         return tableRow;
+        // build the first three columns
+        gridRow += '<span id="tr' + item.tuneID + '"><a href="' + item.url + '">' + item.title + '</a></span>';
+        gridRow += '<span><input type="button" class="filterButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\')" value="Select"></span>';
+        gridRow += '<span>' + item.key + ' '+ item.rhythm + '</span>';
+        return gridRow;
      }
 
      function addTextArea(item) {
          var textAreas = document.getElementById("abc-textareas");
+         //console.log(item.tuneID);
          // unroll ABC to handle repeats and different endings for parts
          textAreas.innerHTML += '<textarea id="ABC' + item.tuneID + '" style="display:none;">' + item.abc + '</textarea>';
      }
@@ -158,22 +147,6 @@
              e.value = rhythm;
          }
      }
-     var tags = getQueryVariable('tags');
-     if (tags) {
-         searchTerm += tags + ' ';
-         var e = document.getElementById('tags-box');
-         if (e) {
-             e.value = tags;
-         }
-     }
-     var location = getQueryVariable('location');
-     if (location) {
-         searchTerm += location;
-         var e = document.getElementById('location-box');
-         if (e) {
-             e.value = location;
-         }
-     }
 
      // Define the index terms for lunr search
      var tuneIndex = lunr(function() {
@@ -182,8 +155,6 @@
              boost: 10
          });
          this.field('rhythm');
-         this.field('tags');
-         this.field('location');
      });
 
      // Add the search items to the search index
@@ -192,8 +163,6 @@
              'id': key,
              'title': window.store[key].title,
              'rhythm': window.store[key].rhythm,
-             'tags': window.store[key].tags,
-             'location': window.store[key].location
          });
      }
 
@@ -202,12 +171,12 @@
          var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
 
          if (results.length) {
-             displayTunesTable(results, window.store);
+             displayTunesGrid(results, window.store);
          } else {
              document.getElementById('tunesCount').innerHTML = 0;
          }
      } else {
-         displayTunesTable('', window.store);
+         displayTunesGrid('', window.store);
      }
      return false;
  })();
