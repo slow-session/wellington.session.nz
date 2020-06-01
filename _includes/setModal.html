@@ -38,24 +38,24 @@
 
 <script>
 // Get the modal
-var modal = document.getElementById("setModal");
+var setModal = document.getElementById("setModal");
 
 function viewModal () {
-    modal.style.display = "block";
+    setModal.style.display = "block";
 }
 
-// Get the <span> element that closes the modal
+// Get the <span> element that closes the setModal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the setModal
 span.onclick = function() {
-    modal.style.display = "none";
+    setModal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the setModal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == setModal) {
+    setModal.style.display = "none";
   }
 }
 </script>

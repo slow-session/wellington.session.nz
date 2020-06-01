@@ -15,21 +15,24 @@
 
  var tuneIDs = [];
 
- function appendABC(abcSource, tuneID, title) {
-   var regex = new RegExp('X:.*\n');
+ function addABCtune (tuneID) {
+    var item = store[tuneID];
 
-   document.getElementById('ABCraw').innerHTML += abcSource + "\n";
-   abcSource = abcSource.replace(regex, '');
+    var regex = new RegExp('X:.*\n');
+    var abcSource = item.abc.replace(regex, 'X: ' + tuneID + '\n');
+    document.getElementById('ABCraw').innerHTML += abcSource + "\n";
+    
+    abcSource = item.abc.replace(regex, '');
+    document.getElementById('ABCprocessed').innerHTML += preProcessABC (abcSource) + "\n";
+    document.getElementById("filename").innerHTML = slugify(item.title) + '-set.abc';
 
-   document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
-   document.getElementById("filename").innerHTML = slugify(getABCtitle(ABCraw.value)) + '.abc';
+    document.getElementById('modalControls').style.display = 'block';
+    document.getElementById('setTuneTitles').innerHTML += item.title + '<br />';
+    document.getElementById('tr' + tuneID).style.backgroundColor = 'khaki';
+    
+    tuneIDs.push('tr' + tuneID);
 
-   document.getElementById('setTuneTitles').innerHTML += unescape(title) + '<br />';
-   document.getElementById('modalControls').style.display = 'block';
-   document.getElementById(tuneID).style.backgroundColor = 'khaki';
-   tuneIDs.push(tuneID);
-
-   document.getElementById('paperHeader').style.display = "none";
+    document.getElementById('paperHeader').style.display = "none";
 
    // create the paper for the tune dots each time the user selects tunes
    // This makes sure there's no extra white space after a reset
@@ -52,12 +55,13 @@
    });
  }
 
- function Reset() {
+function Reset() {
    document.getElementById('paperHeader').style.display = "block";
    document.getElementById('ABCraw').innerHTML = '';
-   document.getElementById('ABCprocessed').innerHTML = 'X: 1';
+   document.getElementById('ABCprocessed').innerHTML = '';
    document.getElementById('filename').innerHTML = '';
    document.getElementById('setTuneTitles').innerHTML = '';
+   document.getElementById('modalControls').style.display = 'none';
 
    // delete the paper for the tune dots after a reset
    // selecting new tunes will then create new paper
@@ -65,7 +69,6 @@
      document.getElementById('output').removeChild(elem);
    }
 
-   document.getElementById('modalControls').style.display = 'none';
    var tLen = tuneIDs.length;
    for (i = 0; i < tLen; i++) {
      document.getElementById(tuneIDs[i]).style.backgroundColor = '';
@@ -92,21 +95,20 @@
         
          if (item.abc) {
            appendString += createGridRow(item);
-           addTextArea(item);
            tunesCounter++;
          }
        }
      } else {
-       for (var key in store) { // Iterate over the original data
+      for (var key in store) { // Iterate over the original data
          var item = store[key];
          if (item.abc) {
            appendString += createGridRow(item);
-           addTextArea(item);
            tunesCounter++;
          }
        }
      }
-     appendString += '</tbody></table></div>';
+
+     appendString += '</div>';
      tunesGrid.innerHTML = appendString;
      tunesCount.innerHTML = tunesCounter;
    }
@@ -117,16 +119,10 @@
 
      // build the first three columns
      gridRow += '<span id="tr' + item.tuneID + '"><a href="' + item.url + '">' + item.title + '</a></span>';
-     gridRow += '<span><input type="button" class="filterButton" onclick="appendABC(document.getElementById(\'' + tuneID + '\').value' + ', \'tr' + item.tuneID + '\', \'' + escape(item.title) + '\')" value="Select"></span>';
+     gridRow += '<span><input type="button" class="filterButton" onclick="addABCtune(' + item.tuneID + ')" value="Select"></span>'; 
      gridRow += '<span>' + item.key + ' ' + item.rhythm + '</span>';
+     
      return gridRow;
-   }
-
-   function addTextArea(item) {
-     var textAreas = document.getElementById("abc-textareas");
-     //console.log(item.tuneID);
-     // unroll ABC to handle repeats and different endings for parts
-     textAreas.innerHTML += '<textarea id="ABC' + item.tuneID + '" style="display:none;">' + item.abc + '</textarea>';
    }
 
    function getQueryVariable(variable) {
@@ -142,7 +138,7 @@
      }
    }
 
-   // create the searchTerm from the form data and reflect the values chosen in the form
+     // create the searchTerm from the form data and reflect the values chosen in the form
    var searchTerm = '';
    var title = getQueryVariable('title');
    if (title) {
@@ -175,7 +171,7 @@
        'rhythm': window.store[key].rhythm,
      });
    }
-
+   
    // Get results
    if (searchTerm) {
      // Get lunr to perform a search
