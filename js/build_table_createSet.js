@@ -236,6 +236,9 @@
      if (searchTerm) {
          var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
 
+        // sort the results
+        results.sort((a,b) => (a.ref - b.ref)); 
+     
          if (results.length) {
              displayTunesTable(results, window.store);
          } else {

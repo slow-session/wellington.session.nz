@@ -9,8 +9,8 @@ to view the set.
 
 <script>
     window.store = {
-      {% assign tuneID = 3000 %}
-      {% assign tunes =  site.tunes | sort: 'title' %}
+      {% assign tuneID = 0 %}
+      {% assign tunes =  site.tunes | sort: 'titleID' %}
       {% for tune in tunes %}
           {% assign tuneID = tuneID | plus: 1 %}
           "{{ tuneID }}": {
@@ -19,7 +19,7 @@ to view the set.
               "key": "{{ tune.key | xml_escape }}",
               "rhythm": "{{ tune.rhythm | xml_escape }}",
               "url": "{{ tune.url | xml_escape }}",
-              "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
+              "mp3": "",
               "abc": {{ tune.abc | jsonify }}
           }{% unless forloop.last %},{% endunless %}
       {% endfor %}
