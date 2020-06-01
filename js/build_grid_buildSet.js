@@ -89,7 +89,7 @@
      if (results.length) { // Are there any results?
        for (var i = 0; i < results.length; i++) { // Iterate over the results
          var item = store[results[i].ref];
-         console.log(store[results[i].ref]);
+        
          if (item.abc) {
            appendString += createGridRow(item);
            addTextArea(item);
