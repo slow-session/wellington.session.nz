@@ -84,11 +84,9 @@ to view the set.
 </form>
 </fieldset>
 
-<div id="abc-textareas"></div>
-
 {% include buildSetGrid.html %}
 
-{% include setModal.html%}
+{% include setModal.html %}
 
 <!-- Area to store ABC -->
 <textarea id="ABCraw" style="display:none;"></textarea>
