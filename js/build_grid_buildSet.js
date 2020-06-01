@@ -89,6 +89,7 @@
      if (results.length) { // Are there any results?
        for (var i = 0; i < results.length; i++) { // Iterate over the results
          var item = store[results[i].ref];
+         console.log(store[results[i].ref]);
          if (item.abc) {
            appendString += createGridRow(item);
            addTextArea(item);
@@ -177,9 +178,13 @@
 
    // Get results
    if (searchTerm) {
-     var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
-
-     if (results.length) {
+     // Get lunr to perform a search
+     var results = tuneIndex.search(searchTerm);
+    
+     // sort the results
+     results.sort((a,b) => (a.ref - b.ref)); 
+     
+    if (results.length) {
        displayTunesGrid(results, window.store);
      } else {
        document.getElementById('tunesCount').innerHTML = 0;
