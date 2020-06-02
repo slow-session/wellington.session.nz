@@ -67,13 +67,13 @@ to view the set.
 
 <div class="row"></div>
 
-<fieldset id="modalControls" style="display:none;">
-<h3>Selected Tunes:</h3>
-<div id="setTuneTitles"></div>
+<fieldset id="modalControls" style="display:block;">
+<legend>Selected Tunes</legend>
+<div id="setTuneTitles" class="setChoice"></div>
 <form>
 <div class="formParent">
     <div class="formChild">
-        <input value='View set' type='button' class="filterButton" onclick='viewModal()' />
+        <input value='View Set' type='button' class="filterButton" onclick='viewModal()' />
     </div>
     <div class="formChild">
         <span title="Clear the music notation to start a new set">
