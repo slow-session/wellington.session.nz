@@ -61,7 +61,7 @@ function Reset() {
    document.getElementById('ABCprocessed').innerHTML = '';
    document.getElementById('filename').innerHTML = '';
    document.getElementById('setTuneTitles').innerHTML = '';
-   document.getElementById('modalControls').style.display = 'none';
+   //document.getElementById('modalControls').style.display = 'none';
 
    // delete the paper for the tune dots after a reset
    // selecting new tunes will then create new paper
