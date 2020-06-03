@@ -25,7 +25,7 @@
             </div>
             <div class="formChild">
                 <span title="When you're happy with your selection you can print your set using this button. Please think of the trees!">
-                    <input class="button" type="button" class="filterButton" onclick="printDiv('paper0')" value="Print this Set" />
+                    <input class="button" type="button" class="filterButton" onclick="$('#paper0').printThis();" value="Print this Set" />
                 </span>
             </div>
         </div>
@@ -49,6 +49,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the setModal
 span.onclick = function() {
+    console.log('Click X');
     var playerClass= document.getElementById("playABCprocessed").className;
     if (playerClass == 'stopButton') { // audio is currently playing.
         document.getElementById("playABCprocessed").className = "playButton";
@@ -60,6 +61,7 @@ span.onclick = function() {
 // When the user clicks anywhere outside of the setModal, close it
 window.onclick = function(event) {
   if (event.target == setModal) {
+    console.log('Click outside Modal');
     var playerClass= document.getElementById("playABCprocessed").className;
     if (playerClass == 'stopButton') { // audio is currently playing.
         document.getElementById("playABCprocessed").className = "playButton";
