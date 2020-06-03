@@ -96,8 +96,6 @@ to view the set.
 
 <script>
 $(document).ready(function() {
-
     ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
-
 });
 </script>
