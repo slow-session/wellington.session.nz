@@ -1,14 +1,5 @@
 "use strict";
 
-function printDiv(divName) {
-    var printContents = document.getElementById(divName).innerHTML;
-    var originalContents = document.body.innerHTML;
-
-    document.body.innerHTML = printContents;
-    window.print();
-    document.body.innerHTML = originalContents;
-}
-
 function downloadFile(filename, text) {
     var pom = document.createElement('a');
     pom.setAttribute(
