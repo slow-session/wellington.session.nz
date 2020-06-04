@@ -63,7 +63,7 @@ var regex = new RegExp('X:.*\n');
 <hr>
 <p>You can print your set using this button. Please think of the trees!</p>
 
-<input class="button" type="button" class="loopButton" onclick="$('#paper0').printThis();" value="Print this Set" />
+<input class="button" type="button" class="loopButton" value="Print this Set" onclick="printDotsImage(document.getElementById('paper0').innerHTML)" />
 
 <script>
 $(document).ready(function() {

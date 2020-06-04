@@ -3,6 +3,7 @@ layout: page
 title: Build a Set
 permalink: /build_a_set/
 ---
+
 Find the tunes you want, and then use the "Select" button on each to choose them
 in the order you want to play them in the set. When you've done that you'll be able
 to view the set.
@@ -27,6 +28,7 @@ to view the set.
 </script>
 
 <!-- Some boilerplate that's common to a number of pages -->
+
 {% include tunes-filter-variables.html %}
 
 <fieldset>
@@ -89,9 +91,11 @@ to view the set.
 {% include setModal.html %}
 
 <!-- Area to store ABC -->
+
 <textarea id="ABCraw" style="display:none;"></textarea>
 
 <!-- Area to store unrolled ABC -->
+
 <textarea id="ABCprocessed" style="display:none;"></textarea>
 
 <script>
