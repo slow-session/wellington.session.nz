@@ -6,7 +6,9 @@
         <span class="close">&times;</span>
         <!-- *** Player controls *** -->
         <!-- Show a header for where the dots will appear -->
-        <div id="paperHeader"><h2>Choose some tunes first!!</h2></div>
+        <div id="paperHeader">
+            <h2>Choose some tunes first!!</h2>
+        </div>
         <!-- Draw the dots -->
         <div class="output" id='output' style="max-width: 650px;">
             <div id="paper0" class="paper"></div>
@@ -17,18 +19,20 @@
 
         <!-- Allow the user to save their ABC-->
         <form>
-        <div class="formParent">
-            <div class="formChild">
-                <span title="Download the ABC you've entered. Don't lose your work!">      
-                    <input value='Download ABC' type='button' class="filterButton" onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
-                </span>
+            <div class="formParent">
+                <div class="formChild">
+                    <span title="Download the ABC file details. Don't lose your work!">
+                        <input value='Download ABC' type='button' class="filterButton"
+                            onclick='downloadFile(document.getElementById("filename").value, document.getElementById("ABCraw").value)' />
+                    </span>
+                </div>
+                <div class="formChild">
+                    <span
+                        title="When you're happy with your selection you can print your set using this button. Please think of the trees!">
+                        <input class="button" type="button" class="filterButton" value="Print this Set" onclick="printDotsImage(document.getElementById('paper0').innerHTML)" />
+                    </span>
+                </div>
             </div>
-            <div class="formChild">
-                <span title="When you're happy with your selection you can print your set using this button. Please think of the trees!">
-                    <input class="button" type="button" class="filterButton" onclick="$('#paper0').printThis();" value="Print this Set" />
-                </span>
-            </div>
-        </div>
         </form>
     </div>
 </div>
@@ -37,37 +41,37 @@
 <textarea id="filename" style="display:none;"></textarea>
 
 <script>
-// Get the modal
-var setModal = document.getElementById("setModal");
+    // Get the modal
+    var setModal = document.getElementById("setModal");
 
-function viewModal () {
-    setModal.style.display = "block";
-}
-
-// Get the <span> element that closes the setModal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the setModal
-span.onclick = function() {
-    console.log('Click X');
-    var playerClass= document.getElementById("playABCprocessed").className;
-    if (playerClass == 'stopButton') { // audio is currently playing.
-        document.getElementById("playABCprocessed").className = "playButton";
-        stopABC("playABCprocessed");
+    function viewModal() {
+        setModal.style.display = "block";
     }
-    setModal.style.display = "none";
-}
 
-// When the user clicks anywhere outside of the setModal, close it
-window.onclick = function(event) {
-  if (event.target == setModal) {
-    console.log('Click outside Modal');
-    var playerClass= document.getElementById("playABCprocessed").className;
-    if (playerClass == 'stopButton') { // audio is currently playing.
-        document.getElementById("playABCprocessed").className = "playButton";
-        stopABC("playABCprocessed");
+    // Get the <span> element that closes the setModal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the setModal
+    span.onclick = function () {
+        console.log('Click X');
+        var playerClass = document.getElementById("playABCprocessed").className;
+        if (playerClass == 'stopButton') { // audio is currently playing.
+            document.getElementById("playABCprocessed").className = "playButton";
+            stopABC("playABCprocessed");
+        }
+        setModal.style.display = "none";
     }
-    setModal.style.display = "none";
-  }
-}
+
+    // When the user clicks anywhere outside of the setModal, close it
+    window.onclick = function (event) {
+        if (event.target == setModal) {
+            console.log('Click outside Modal');
+            var playerClass = document.getElementById("playABCprocessed").className;
+            if (playerClass == 'stopButton') { // audio is currently playing.
+                document.getElementById("playABCprocessed").className = "playButton";
+                stopABC("playABCprocessed");
+            }
+            setModal.style.display = "none";
+        }
+    }
 </script>

@@ -17,6 +17,14 @@ function downloadFile(filename, text) {
     }
 }
 
+function printDotsImage(svg) {
+    if (testForMobile()) {
+        alert("Sorry, printing not working from mobile devices");
+    } else {
+        $(svg).printThis();
+    }
+}
+
 function slugify(text) {
     return text.toString().toLowerCase()
         .replace(/\s+/g, '-') // Replace spaces with -
@@ -57,6 +65,6 @@ function toTitleCase(str) {
 
 function enable_button() {
     submit_button.disabled = false;
-    submit_button.style.opacity=1.0;
-    submit_button.style.cursor='pointer';
+    submit_button.style.opacity = 1.0;
+    submit_button.style.cursor = 'pointer';
 }
