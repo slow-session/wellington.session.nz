@@ -26,7 +26,7 @@ var IntervalHandle;
 var instrument;
 
 
-function createABCplayer (tuneID, timbre) {
+function createABCplayer(tuneID, timbre) {
     /*
      * Generate the HTML needed to play ABC tunes
      */
@@ -190,7 +190,7 @@ function startABC(tune, ticks) {
     instrument.silence();
     instrument.play({
         tempo: ticks
-    }, tune.value, function() {
+    }, tune.value, function () {
         playingNow = 0;
         loopABCTune(tune, ticks);
     });
@@ -377,10 +377,10 @@ function unRollABC(ABCNotes) {
     tokenLocations[tokenCount++] = fBarPos[fBarPos.length - 1]; // last bar
 
 
-    var indices = tokenLocations.map(function(elem, index) {
+    var indices = tokenLocations.map(function (elem, index) {
         return index;
     });
-    indices.sort(function(a, b) {
+    indices.sort(function (a, b) {
         return tokenLocations[a] - tokenLocations[b];
     });
 
@@ -444,36 +444,36 @@ function unRollABC(ABCNotes) {
     tempABCNotes = tempABCNotes.replace(/(?=[(])/g, 'z');
 
     var count = (tempABCNotes.match(/a/g) || []).length;
-        count += (tempABCNotes.match(/b/g) || []).length;
-        count += (tempABCNotes.match(/c/g) || []).length;
-        count += (tempABCNotes.match(/d/g) || []).length;
-        count += (tempABCNotes.match(/e/g) || []).length;
-        count += (tempABCNotes.match(/f/g) || []).length;
-        count += (tempABCNotes.match(/g/g) || []).length;
-        count += (tempABCNotes.match(/2/g) || []).length; // note already counted so +1
-        count += (tempABCNotes.match(/3/g) || []).length*2; // note + 2
-        count += (tempABCNotes.match(/4/g) || []).length*3; // note + 3
-        count -= (tempABCNotes.match(/z/g) || []).length*3; //remove triplets (confusing, but correct)
-/*  count is the total number of beats,
-    A 16 bar A part reel = 128 beats,
-    A 16 bar A part jig = 96 beats,
-    for a normal AA BB reel, count should be ~256.
-    For a normal AA BB jig, ~192.
-    if count ~ 384 it is probably an AA BB CC reel
-    if count ~ 288 it is probably an AA BB CC jig
-    For normally structured tunes (e.g. AA BB) using various values of count,
-    and tune type (jig/reel) we can guess at the structure.
-    We know the tune duration, but not the number of repeats of the tune
-    on the recording.  If we knew that we could approximate the timing loops.
-    We could guess most tunes have 2 full repeats...
-    We should add one or two values to the tune.md files:
-        number of times tune is repeated (needed)
-        and number of parts e.g. 2 if A and B parts, 3 if A B C, etc,
-        perhaps it could be in the form of AABB, AABBCC, ABCDE, etc.
-    If a 2 part (A&B) reel is repeated 3 times
-    duration (found when mp3 file is read) / 3 = time for 1 full loop;
-    From 0 to (duration / 3) / 2 = A part.
-    From (duration / 3) / 2 to (duration / 3) = B part, etc.
-*/
+    count += (tempABCNotes.match(/b/g) || []).length;
+    count += (tempABCNotes.match(/c/g) || []).length;
+    count += (tempABCNotes.match(/d/g) || []).length;
+    count += (tempABCNotes.match(/e/g) || []).length;
+    count += (tempABCNotes.match(/f/g) || []).length;
+    count += (tempABCNotes.match(/g/g) || []).length;
+    count += (tempABCNotes.match(/2/g) || []).length; // note already counted so +1
+    count += (tempABCNotes.match(/3/g) || []).length * 2; // note + 2
+    count += (tempABCNotes.match(/4/g) || []).length * 3; // note + 3
+    count -= (tempABCNotes.match(/z/g) || []).length * 3; //remove triplets (confusing, but correct)
+    /*  count is the total number of beats,
+        A 16 bar A part reel = 128 beats,
+        A 16 bar A part jig = 96 beats,
+        for a normal AA BB reel, count should be ~256.
+        For a normal AA BB jig, ~192.
+        if count ~ 384 it is probably an AA BB CC reel
+        if count ~ 288 it is probably an AA BB CC jig
+        For normally structured tunes (e.g. AA BB) using various values of count,
+        and tune type (jig/reel) we can guess at the structure.
+        We know the tune duration, but not the number of repeats of the tune
+        on the recording.  If we knew that we could approximate the timing loops.
+        We could guess most tunes have 2 full repeats...
+        We should add one or two values to the tune.md files:
+            number of times tune is repeated (needed)
+            and number of parts e.g. 2 if A and B parts, 3 if A B C, etc,
+            perhaps it could be in the form of AABB, AABBCC, ABCDE, etc.
+        If a 2 part (A&B) reel is repeated 3 times
+        duration (found when mp3 file is read) / 3 = time for 1 full loop;
+        From 0 to (duration / 3) / 2 = A part.
+        From (duration / 3) / 2 to (duration / 3) = B part, etc.
+    */
     return (newBigABCNotes);
 }

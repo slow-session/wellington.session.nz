@@ -34,7 +34,7 @@ function slugify(text) {
         .replace(/-+$/, ''); // Trim - from end of text
 }
 
-function getABCtitle(tuneStr) {
+function print(tuneStr) {
     var title = '';
     var lines = tuneStr.split("\n");
     var i;
