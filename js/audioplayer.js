@@ -18,7 +18,7 @@
  #
  ################################################################################
 */
-function myDebug(message){
+function myDebug(message) {
     console.log(message);
 }
 
@@ -118,7 +118,7 @@ function createSliders(tuneID) {
         }
     });
 
-    audioSlider.noUiSlider.on('change', function(values, handle) {
+    audioSlider.noUiSlider.on('change', function (values, handle) {
         if (handle === 0) {
             BeginLoopTime = values[0];
             EndLoopTime = assignEndLoopTime(values[2]);
@@ -131,29 +131,29 @@ function createSliders(tuneID) {
             OneAudioPlayer.currentTime = values[1];
         }
     });
-    speedSlider.noUiSlider.on('change', function(value) {
+    speedSlider.noUiSlider.on('change', function (value) {
         myDebug("playbackRate: " + value / 100);
         OneAudioPlayer.playbackRate = value / 100;
     });
     //How to disable handles on audioslider.
-    speedSlider.noUiSlider.on('start', function(value) {
-        OneAudioPlayer.onplaying = function() {
-                OneAudioPlayer.pause();
+    speedSlider.noUiSlider.on('start', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.pause();
         };
     });
-    speedSlider.noUiSlider.on('end', function(value) {
-        OneAudioPlayer.onplaying = function() {
-                OneAudioPlayer.play();
+    speedSlider.noUiSlider.on('end', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.play();
         };
     });
-    audioSlider.noUiSlider.on('start', function(value) {
-        OneAudioPlayer.onplaying = function() {
-                OneAudioPlayer.pause();
+    audioSlider.noUiSlider.on('start', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.pause();
         };
     });
-    audioSlider.noUiSlider.on('end', function(value) {
-        OneAudioPlayer.onplaying = function() {
-                OneAudioPlayer.play();
+    audioSlider.noUiSlider.on('end', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.play();
         };
     });
 }
@@ -172,7 +172,7 @@ function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSour
 
             LoadAudio(audioSource, playPosition);
 
-            OneAudioPlayer.onloadedmetadata = function() {
+            OneAudioPlayer.onloadedmetadata = function () {
                 initialiseAudioSlider();
             };
         }
@@ -190,7 +190,7 @@ function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSour
 
         var promise = OneAudioPlayer.play();
         if (promise) {
-            promise.catch(function(error) {
+            promise.catch(function (error) {
                 console.error(error);
             });
         }
@@ -244,12 +244,12 @@ function changeTune(tuneID) {
         LoadAudio(item.mp3, playPosition);
 
         // calculate presetLoopSegments and set up preset loops
-        OneAudioPlayer.onloadedmetadata = function() {
+        OneAudioPlayer.onloadedmetadata = function () {
             myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
             if (item.repeats && item.parts) {
                 myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
                 buildSegments(tuneID);
-                if (presetLoopSegments.length){
+                if (presetLoopSegments.length) {
                     document.getElementById('loopPresetControls').innerHTML = createLoopControlsContainer();
                 }
             }
@@ -287,7 +287,7 @@ function changeTune(tuneID) {
 
             var showABCform = document.getElementById('showABCform');
             if (showABCform) {
-                showABCform.style.display= "none" ;
+                showABCform.style.display = "none";
             }
         }
         // Reset paper state to original value
@@ -490,7 +490,7 @@ function applySegments() {
     if (numCheckedBoxes > 0) {
         // iOS audio player workaround for initial call to OneAudioPlayer.currentTime
         if (isIOS) {
-            OneAudioPlayer.oncanplaythrough = function() {
+            OneAudioPlayer.oncanplaythrough = function () {
                 OneAudioPlayer.currentTime = fullBeginLoopTime;
             }
         } else {
@@ -511,7 +511,7 @@ function applySegments() {
             var promise = OneAudioPlayer.play();
             // then turn it back on
             if (promise) {
-                promise.catch(function(error) {
+                promise.catch(function (error) {
                     console.error(error);
                 });
             }
@@ -659,15 +659,12 @@ function testForIOS() {
 
 function testForMobile() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (userAgent.match(/iPad/i) 
-        || userAgent.match(/iPhone/i) 
-        || userAgent.match(/iPod/i) 
-        || userAgent.match(/Android/i)) 
-    {
+    if (userAgent.match(/iPad/i) ||
+        userAgent.match(/iPhone/i) ||
+        userAgent.match(/iPod/i) ||
+        userAgent.match(/Android/i)) {
         return true;
     } else {
         return false;
     }
 }
-
-

@@ -15,36 +15,34 @@
 
 
 function displayABCsource() {
-  var abcText = document.getElementById('abcText');
+    var abcText = document.getElementById('abcText');
 
-  // create file headers
-  var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
-  appendString += '% Generated on: ' + new Date() + '\n%\n';
-  var tuneIDoffset = 0;
+    // create file headers
+    var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
+    appendString += '% Generated on: ' + new Date() + '\n%\n';
+    var tuneIDoffset = 0;
 
-
-
-  for (var key in store) { // Iterate over the original data
-    var item = store[key];
-    if (!tuneIDoffset) {
-      tuneIDoffset = item.tuneID
+    for (var key in store) { // Iterate over the original data
+        var item = store[key];
+        if (!tuneIDoffset) {
+            tuneIDoffset = item.tuneID
+        }
+        appendString += createABCitem(item, tuneIDoffset);
     }
-    appendString += createABCitem(item, tuneIDoffset);
-  }
 
-  abcText.innerHTML = appendString;
+    abcText.innerHTML = appendString;
 }
 
 function createABCitem(item, tuneIDoffset) {
-  var gridRow = '';
+    var gridRow = '';
 
-  // build the ABC item
-  var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
-  //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
+    // build the ABC item
+    var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
+    //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
 
-  if (newABC) {
-    gridRow += newABC + '\n';
-  }
+    if (newABC) {
+        gridRow += newABC + '\n';
+    }
 
-  return gridRow;
+    return gridRow;
 }
