@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Current Sets
-permalink: /current_sets/
+title: Historical Sets
+permalink: /historical_sets/
 ---
 
-These are the some of the sets we play at the Wellington Slow Session. These sets will get played regularly so if you know these you'll get a chance to play them.
+These are sets we sometimes play at the Wellington Slow Session.
 
-If you don't find the set you're looking for you can put tunes together and try them out using our <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
+If you want to compile your own, you can put tunes together and try them out using our <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
 page.
 
 {% include tunes-filter-variables.html %}
 
 <fieldset>
-    <legend>Select from current Wellington Sets:</legend>    
+    <legend>Select from historical Wellington Sets:</legend>    
     <form id="wellington" method="get">
     <div class="formParent">
     <div class="formChild">           
@@ -38,7 +38,7 @@ page.
     </div>     
     </form>
     <p></p>
-    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
+    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> sets
 </fieldset>
 
 <div class="row"></div>

@@ -3,10 +3,15 @@ layout: page
 title: Build a Set
 permalink: /build_a_set/
 ---
+Use this tool to compile sets for practice or if you need music for a ceili.
 
 Find the tunes you want, and then use the "Select" button on each to choose them
 in the order you want to play them in the set. When you've done that you'll be able
 to view the set.
+
+You can also look at some sets that have been played in Wellington in recent times on our
+<button class="filterButton" onclick="window.location.href = '/historical_sets/';">Historical Sets</button>
+page.
 
 <script>
     window.store = {
