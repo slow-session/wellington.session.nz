@@ -34,6 +34,20 @@ function slugify(text) {
         .replace(/-+$/, ''); // Trim - from end of text
 }
 
+function getABCtitle(tuneStr) {
+    var title = '';
+    var lines = tuneStr.split("\n");
+    var i;
+
+    for (i = 0; i < lines.length; i += 1) {
+        if (lines[i].match(/^T:/)) {
+            title = lines[i].replace(/T:\s?/, '');
+            break;
+        }
+    }
+    return title;
+}
+
 function print(tuneStr) {
     var title = '';
     var lines = tuneStr.split("\n");
