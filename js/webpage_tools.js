@@ -48,20 +48,6 @@ function getABCtitle(tuneStr) {
     return title;
 }
 
-function print(tuneStr) {
-    var title = '';
-    var lines = tuneStr.split("\n");
-    var i;
-
-    for (i = 0; i < lines.length; i += 1) {
-        if (lines[i].match(/^T:/)) {
-            title = lines[i].replace(/T:\s?/, '');
-            break;
-        }
-    }
-    return title;
-}
-
 function getCheckedCheckboxesFor(checkboxName) {
     var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked');
     var values = [];
