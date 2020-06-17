@@ -2,7 +2,7 @@
 title: Templehouse Reel
 titleID: templehouse-reel.md
 key: Edor
-rhythm: 
+rhythm: reel
 notes: 
 date: 2020-06-17
 regtuneoftheweek: 
