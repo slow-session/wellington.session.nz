@@ -34,41 +34,41 @@ window.store = {
 
 {% include tunes-filter-variables.html %}
 
-<fieldset>
-    <legend>Select from the Tunes Archive:</legend>
-    <form id="wellington" method="get">
+<form id="wellington" method="get">
+    <fieldset>
+        <legend>Select from the Tunes Archive:</legend>
         <div class="formParent">
-        <div class="formChild">
-            <input type="text" id="title-box" name="title" placeholder='Search'
-            value='' onkeydown="enable_button()">
-        </div>
-        <div class="formChild">
-            <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
-            <option value="">All Rhythms</option>
-            {% for rhythm in rhythms %}
-            {% if rhythm != '' %}
-            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-            </select>
-        </div>
-        </div>
-        <div class="formParent">
-        <div class="formChild">
-            <span title="Run the filter with the default settings to see the whole list">
-            <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-            </span>
-        </div>
-        <div class="formChild">      
-            <div class="tooltip filterButton"><em>Help</em>
-                <span class="tooltiptext">Run the filter with the default settings to see the whole list</span>
+            <div class="formChild">
+                <input type="text" id="title-box" name="title" placeholder='Search'
+                value='' onkeydown="enable_button()">
+            </div>
+            <div class="formChild">
+                <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+                <option value="">All Rhythms</option>
+                {% for rhythm in rhythms %}
+                {% if rhythm != '' %}
+                <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
+                {% endif %}
+                {% endfor %}
+                </select>
             </div>
         </div>
+        <div class="formParent">
+            <div class="formChild">
+                <span title="Run the filter with the default settings to see the whole list">
+                    <input class="filterButton filterDisabled" id="submit_button" type="submit"     name="submit" value="Select" disabled>
+                </span>
+            </div>
+            <div class="formChild">      
+                <div class="tooltip filterButton"><em>Help</em>
+                    <span class="tooltiptext">Run the filter with the default settings to see the whole list</span>
+                </div>
+            </div>
         </div>
-    </form>
-    <p></p>
-    Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
-</fieldset>
+        <p></p>
+        Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
+    </fieldset>
+</form>
 
 {% include tunesArchiveGrid.html%}
 

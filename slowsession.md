@@ -29,20 +29,20 @@ See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you ne
 We pick one tune for homework each week, and we’ll play it sometime during the first hour.
 
 <fieldset class="fieldset-tune-of-the-week">
-<legend>Tune of the week</legend>
-<div class="row">
-    <div class="small-5 columns">
-        <span title="Go to Tunepage">
-            <a href="{{ tune.url }}">{{ tune.title }}</a>
-        </span>
+    <legend>Tune of the week</legend>
+    <div class="row">
+        <div class="small-5 columns">
+            <span title="Go to Tunepage">
+                <a href="{{ tune.url }}">{{ tune.title }}</a>
+            </span>
+        </div>
+        <div class="small-3 columns">
+            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
+        </div>
+        <div class="small-3 columns">
+            {{ tune.key }} {{ tune.rhythm }}
+        </div>
     </div>
-    <div class="small-3 columns">
-        <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-    </div>
-    <div class="small-3 columns">
-        {{ tune.key }} {{ tune.rhythm }}
-    </div>
-</div>
 </fieldset>
 
 <div class="row"></div>

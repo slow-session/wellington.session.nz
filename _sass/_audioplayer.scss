@@ -159,6 +159,7 @@ p.attribution {
 .filterButton {
     background-color: $brand-color;
     padding: 7px 5px 4px 5px;
+    margin-right: 10px;
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     border-radius: 8px;
@@ -183,6 +184,7 @@ p.attribution {
 
 h2 span {
     display:inline;
+    font-size:16px;
 }
 
 fieldset {
@@ -206,12 +208,15 @@ fieldset {
     background-color: darken($complimentary-color, 3%);
 }
 
-.fieldset-covid {
-    max-width: none;
-    margin-bottom: 1rem;
+.showCovidInfo {
+    display: inline-block;
+    border: 2px solid $brand-color;
     background-color: #f7c501;
-    padding-bottom: 0; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px 0px 10px;
 }
+
 
 .formParent {
     display: flex;
@@ -572,40 +577,49 @@ tr#no_hover:hover {
 
 // END: CSS for managing the "tunes" grids that appear on a number of pages
 
-// START: LongBow
-.longBowProgressLR {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    background-color: lightgray;
-  }
-  
-  .longBowProgressRL {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    background-color: khaki;
-  }
-  
-  .longBowBarLR {
-    background-color: lightsteelblue;
-    width: 0px;
-    height: 30px;
-    position: absolute;
-  }
-  
-  .longBowBarRL {
-    background-color: silver;
-    width: 100%;
-    height: 30px;
-    position: absolute;
-  }
-  // END: LongBow
-
-  .setChoice {
+.setChoice {
     border: 1px solid black;
     background-color: darken($complimentary-color, 6%);
     border-radius: 8px;
     margin: 10px;
     padding: 10px;
-  }
+}
+
+// START: LongBow
+.longBowTimers {
+    display: none;
+    max-width: 565px;
+    overflow: auto;
+    border: 2px solid $brand-color;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.longBowProgressRL {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: lighten($brand-color, 20%);
+}
+
+.longBowProgressLR {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: lighten($brand-color, 10%);
+}
+
+.longBowBarLR {
+    background-color: darken($complimentary-color, 16%);
+    width: 0px;
+    height: 30px;
+    position: absolute;
+}
+
+.longBowBarRL {
+    background-color: darken($complimentary-color, 6%);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+// END: LongBow

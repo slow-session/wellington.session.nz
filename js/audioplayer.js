@@ -227,7 +227,7 @@ function changeTune(tuneID) {
     // Add info to page if needed
     var tuneTitle = document.getElementById("tuneTitle");
     if (tuneTitle) {
-        tuneTitle.innerHTML = '<h2>' + item.title + '<span style="font-size:16px;"> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
+        tuneTitle.innerHTML = '<h2>' + item.title + '<span> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
     }
     var tuneInfo = document.getElementById("tuneInfo");
     if (tuneInfo && item.mp3_source) {
