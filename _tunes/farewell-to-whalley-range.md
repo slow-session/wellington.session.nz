@@ -1,7 +1,7 @@
 ---
 title: Farewell to Whalley Range
 titleID: farewell-to-whalley-range.md
-key: A
+key: F#m
 rhythm: slip jig
 notes:
 date: 2020-06-17
@@ -25,7 +25,7 @@ abc: |
   R: slip jig
   M: 9/8
   L: 1/8
-  K: A
+  K: F#m
   F2c BA~F- F2E|F2c BAc fec|B3 BAB c2A|1~B3 BAB cBA:|2~B3 BAB cef||
   a3 fec fec|B3 BAB cef|a3 baf afe|fec Bce fec|
   a2f fec fec|B3 BAB cef|a3 baf afe|fec fec BAB||
