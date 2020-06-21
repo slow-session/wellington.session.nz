@@ -22,21 +22,23 @@ The slow session is an opportunity for players who are starting out with Irish t
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
+
+
 <fieldset class="fieldset-tune-of-the-week">
-<legend>Slow tune of the week</legend>
-<div class="row">
-    <div class="small-5 columns">
-        <span title="Go to Tunepage">
-            <a href="{{ tune.url }}">{{ tune.title }}</a>
-        </span>
+    <legend>Slow tune of the week</legend>
+    <div class="row">
+        <div class="small-5 columns">
+            <span title="Go to Tunepage">
+                <a href="{{ tune.url }}">{{ tune.title }}</a>
+            </span>
+        </div>
+        <div class="small-3 columns">
+            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
+        </div>
+        <div class="small-3 columns">
+            {{ tune.key }} {{ tune.rhythm }}
+        </div>
     </div>
-    <div class="small-3 columns">
-        <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-    </div>
-    <div class="small-3 columns">
-        {{ tune.key }} {{ tune.rhythm }}
-    </div>
-</div>
 </fieldset>
 
 <div class="row"></div>
@@ -67,21 +69,23 @@ The regular session is a different beast from the slow session that happens earl
 {% assign tuneID = tuneID | plus: 1 %}
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
+
+
 <fieldset class="fieldset-tune-of-the-week">
-<legend>Regular tune of the week</legend>
-<div class="row">
-    <div class="small-5 columns">
-        <span title="Go to Tunepage">
-            <a href="{{ tune.url }}">{{ tune.title }}</a>
-        </span>
+    <legend>Regular tune of the week</legend>
+    <div class="row">
+        <div class="small-5 columns">
+            <span title="Go to Tunepage">
+                <a href="{{ tune.url }}">{{ tune.title }}</a>
+            </span>
+        </div>
+        <div class="small-3 columns">
+            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
+        </div>
+        <div class="small-3 columns">
+            {{ tune.key }} {{ tune.rhythm }}
+        </div>
     </div>
-    <div class="small-3 columns">
-        <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-    </div>
-    <div class="small-3 columns">
-        {{ tune.key }} {{ tune.rhythm }}
-    </div>
-</div>
 </fieldset>
 
 <div class="row"></div>

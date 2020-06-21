@@ -24,20 +24,20 @@ We often pick a tune for homework, and we'll play it sometime during the evening
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
 <fieldset class="fieldset-tune-of-the-week">
-<legend>Regular tune of the week</legend>
-<div class="row">
-    <div class="small-5 columns">
-        <span title="Go to Tunepage">
-            <a href="{{ tune.url }}">{{ tune.title }}</a>
-        </span>
+    <legend>Regular tune of the week</legend>
+    <div class="row">
+        <div class="small-5 columns">
+            <span title="Go to Tunepage">
+                <a href="{{ tune.url }}">{{ tune.title }}</a>
+            </span>
+        </div>
+        <div class="small-3 columns">
+            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
+        </div>
+        <div class="small-3 columns">
+            {{ tune.key }} {{ tune.rhythm }}
+        </div>
     </div>
-    <div class="small-3 columns">
-        <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-    </div>
-    <div class="small-3 columns">
-        {{ tune.key }} {{ tune.rhythm }}
-    </div>
-</div>
 </fieldset>
 
 <div class="row"></div>

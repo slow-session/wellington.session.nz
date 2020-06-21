@@ -10,28 +10,27 @@ timing and you can change the values as you see fit.
 
 <br />
 
-<fieldset>
-  <legend>Set the timings:</legend>
-  <form id="parameters" method="get">
-    <p>
-      <label>Practice time in minutes: </label>
-      <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15">
-    </p>
-    <p>
-      <label>Time for each bow in seconds: </label>
-      <input type="number" id="bow-time" name="bowTime" value="30" min="10" max="40">
-    </p>
-    <br />
-    <p>
-	  <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
-      <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
-    </p>
-  </form>
-</fieldset>
+<form id="parameters" method="get">
+    <fieldset>
+        <legend>Set the timings:</legend>
+  
+        <p>
+            <label>Practice time in minutes: </label>
+            <input type="number" id="practice-time" name="practiceTime" value="5" min="2" max="15">
+        </p>
+        <p>
+            <label>Time for each bow in seconds: </label>
+            <input type="number" id="bow-time" name="bowTime" value="30" min="10" max="40">
+        </p>
+        <br />
+        <p>
+            <input type="button" class="filterButton" onclick="bowTimer(practiceTime.value, bowTime.value)" value="Start">
+            <input type="button" class="filterButton" onclick="location.reload()" value="Reset">
+        </p>
+    </fieldset>
+</form>
 
-<div class="row"></div>
-
-<div id="main"></div>
+<div id="longBowTimers" class="longBowTimers"></div>
 
 <style>
 form  { display: table;      }
@@ -53,10 +52,13 @@ async function bowTimer(practiceTime, bowTime) {
     var repeat;
     if (running == 0) {
         running = 1;
+
+        document.getElementById('longBowTimers').style.display = "block";
+
         // Allow time to pick up instrument
-        document.getElementById("main").innerHTML = "Get ready.";
+        document.getElementById("longBowTimers").innerHTML = "Get ready.";
         for (repeat=5;repeat>0;repeat--) {
-            document.getElementById("main").innerHTML += ".." + repeat;
+            document.getElementById("longBowTimers").innerHTML += ".." + repeat;
             await sleep(1000);
         }
         // Set up the timer bars
@@ -76,7 +78,7 @@ async function bowTimer(practiceTime, bowTime) {
 
 function setupDiv (repeat) {
     if (elem = document.getElementById("progress" + repeat)) {
-        document.getElementById("main").removeChild(elem);
+        document.getElementById("longBowTimers").removeChild(elem);
     }
 
     var divProgress = document.createElement("div");
@@ -87,7 +89,7 @@ function setupDiv (repeat) {
         divProgress.setAttribute('class', 'longBowProgressRL');
 
     }
-    document.getElementById("main").appendChild(divProgress);
+    document.getElementById("longBowTimers").appendChild(divProgress);
 
     if (!document.getElementById("bar" + repeat)) {
         var divBar = document.createElement("div");
