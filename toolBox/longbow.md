@@ -117,6 +117,11 @@ function drawTimer(repeat, bowTime) {
             clearInterval(id);
         } else {
             width += 100 / bowTime;
+            if (width < 99) {
+                elem.style.borderRight = '4px solid black';
+            } else {
+                elem.style.borderRight = 'unset';
+            }
             if (repeat % 2) {
                 elem.style.width = width + '%';
             } else {
