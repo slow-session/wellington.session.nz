@@ -1,5 +1,5 @@
 ---
-title: Baitheadh Bhrioclais
+title: Baitheadh Bhrioclais (The Drowning At Bruckless)
 titleID: baitheadh-bhrioclais.md
 key: Gmaj
 rhythm: jig
