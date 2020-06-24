@@ -103,13 +103,13 @@ function handleFileSelect(evt) {
                 || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
                 return (1);
             }
-
-            // stop tune currently playing
-            if (typeof playButtonprocessed !== 'undefined'
-                && playButtonprocessed.className == "stopButton") {
+            // stop tune currently playing if needed
+            var playButton = document.getElementById("playABCprocessed");
+            if (typeof playButton !== 'undefined'
+                && playButton.className == "stopButton") {
                 stopABC("ABCprocessed");
-                playButtonprocessed.className = "";
-                playButtonprocessed.className = "playButton";
+                playButton.className = "";
+                playButton.className = "playButton";
             }
 
             // Load the new dots
