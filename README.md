@@ -68,12 +68,15 @@ Using the website:
 
  * <https://github.com/slow-session/wellington.session.nz/compare/gh-pages...master?expand=1>
  
-  * You should see a page entitled **Comparing changes**
-  * If you're happy that the changes should be committed to the live website, press **Create pull request**
+ * You should see a page entitled **Open a pull request**
+
+    * If you're happy that the changes should be committed to the live website, press **Create pull request**
     * You should see a message like: *asjl  wants to merge 1 commit into gh-pages from master*
-  * Choose **Merge pull request** and then **Confirm Merge**
+    * Choose **Merge pull request** and then **Confirm Merge**
     * You should see a message like: *asjl  merged 1 commit into gh-pages from master 12 seconds ago*
-  * Check the website <https://wellington.session.nz/> to make sure the changes are correct.
+    * Check the website <https://wellington.session.nz/> to make sure the changes are correct.
+
+  * If you see a page entitled **Comparing changes** and a message saying, *There isn’t anything to compare*, then you should check that you've committed and pushed your changes from your local machine to GitHub.
 
 Open source
 -----------
