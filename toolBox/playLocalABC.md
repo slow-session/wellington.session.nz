@@ -5,9 +5,6 @@ permalink: /playLocalABC/
 ---
 You can use this page to play an ABC file you've stored locally.
 
-<input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
-
-<output id="fileInfo"></output>
 
 <textarea id="abc" style="display:none;"></textarea>
 <!-- Area to store unrolled ABC -->
@@ -17,10 +14,33 @@ You can use this page to play an ABC file you've stored locally.
 </div>
 
 <div class="player">
-<div id="showPlayer"></div>
+<div id="showPlayer" style="display:none;"></div>
 </div>
 
+<input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
+
+<output id="fileInfo"></output>
+
 <script>
+$(document).ready(function()
+{
+    // Check for the various File API support.
+    var fileInfo = document.getElementById('fileInfo');
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+    } else {
+        fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
+    }
+
+	// Create the ABC player
+	showPlayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
+
+	// If the ABC changes get ready to play the revised ABC
+	$('#abc').change(function() {
+        processABCchange(abc);
+	});
+});
+
 function handleFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
@@ -39,6 +59,17 @@ function handleFileSelect(evt) {
                 return (1);
             }
 
+            // Show the dots
+            abc.value = this.result;
+            // Display the ABC in the textbox as dots
+            abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+
+            // Show the player
+            document.getElementById("showPlayer").style.display = 'block';
+
+            // unroll the ABC for better playing
+            ABCprocessed.value = preProcessABC(this.result);
+
             // stop tune currently playing if needed
             var playButton = document.getElementById("playABCprocessed");
             if (typeof playButton !== 'undefined'
@@ -48,27 +79,19 @@ function handleFileSelect(evt) {
                 playButton.className = "playButton";
             }
             
-            // Show the dots
-            abc.value = this.result;
-            // Display the ABC in the textbox as dots
-            abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-
-            // set up player
-            ABCprocessed.value = preProcessABC(this.result);
-
-            showPlayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
         };
         reader.readAsText(f);
     }
 }
 
-// Check for the various File API support.
-if (window.File && window.FileReader && window.FileList && window.Blob) {
-    var fileInfo = document.getElementById('fileInfo');
-    var showPlayer = document.getElementById('showPlayer');
+function processABCchange(abc) {
+    // Unroll the ABC to make repeats work properly
+    ABCprocessed.value = preProcessABC(abc.value);
 
-    document.getElementById('files').addEventListener('change', handleFileSelect, false);
-} else {
-    alert('The File APIs are not fully supported in this browser.');
+    // Reset the filename for downloading
+    document.getElementById("filename").innerHTML = slugify(getABCtitle(abc.value)) + '.abc';
+
+    // Display the ABC in the textbox as dots
+    abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 }
 </script>
