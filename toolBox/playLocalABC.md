@@ -39,6 +39,15 @@ function handleFileSelect(evt) {
                 return (1);
             }
 
+            // stop tune currently playing if needed
+            var playButton = document.getElementById("playABCprocessed");
+            if (typeof playButton !== 'undefined'
+                && playButton.className == "stopButton") {
+                stopABC("ABCprocessed");
+                playButton.className = "";
+                playButton.className = "playButton";
+            }
+            
             // Show the dots
             abc.value = this.result;
             // Display the ABC in the textbox as dots
@@ -47,13 +56,6 @@ function handleFileSelect(evt) {
             // set up player
             ABCprocessed.value = preProcessABC(this.result);
 
-            // stop tune currently playing
-            if (typeof playButtonprocessed !== 'undefined'
-                && playButtonprocessed.className == "stopButton") {
-                stopABC("ABCprocessed");
-                playButtonprocessed.className = "";
-                playButtonprocessed.className = "playButton";
-            }   
             showPlayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
         };
         reader.readAsText(f);
