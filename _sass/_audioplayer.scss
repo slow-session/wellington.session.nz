@@ -582,7 +582,17 @@ tr#no_hover:hover {
 // END: CSS for managing the "tunes" grids that appear on a number of pages
 
 .setChoice {
-    border: 1px solid black;
+    border: 2px solid $brand-color;
+    background-color: darken($complimentary-color, 6%);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.showTextInfo {
+    display: inline-block;
+    overflow: auto;
+    border: 2px solid $brand-color;
     background-color: darken($complimentary-color, 6%);
     border-radius: 8px;
     margin: 10px;
