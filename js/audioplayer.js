@@ -29,71 +29,68 @@ var CurrentAudioSlider = null;
 var presetLoopSegments = [];
 
 var isIOS = testForIOS();
-myDebug("isIOS: " + isIOS);
+//myDebug("isIOS: " + isIOS);
 
 function createAudioPlayer() {
-    var pagePlayer = '';
-    pagePlayer += '<!-- declare an Audio Player for this page-->';
-    pagePlayer += '<audio id="OneAudioPlayer">';
-    pagePlayer += '    <source id="mp3Source" type="audio/mp3"></source> ';
-    pagePlayer += '    Your browser does not support the audio format.';
-    pagePlayer += '</audio>';
+    var pagePlayer = `
+<!-- declare an Audio Player for this page-->
+<audio id="OneAudioPlayer">
+    <source id="mp3Source" type="audio/mp3"></source> 
+    Your browser does not support the audio format.
+</audio>`;
 
     return (pagePlayer);
 }
 
 function createMP3player(tuneID, mp3url) {
-    var mp3player = '';
     // build the MP3 player for each tune
-
-    mp3player += '<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">';
-    mp3player += '    <div id="audioplayer' + tuneID + '">';
-    mp3player += '    <div class="audioParentOuter">';
-    // Col 1 - play button
-    mp3player += '      <div class="audioChildOuter">';
-    mp3player += '        <button id="playMP3' + tuneID + '" class="playButton"';
-    mp3player += '            onclick="playAudio(audioplayer' + tuneID + ', playMP3' + tuneID + ',  positionMP3' + tuneID + ', speedSliderMP3' + tuneID + ', \'' + mp3url + '\')">';
-    mp3player += '        </button>';
-    mp3player += '      </div>';
-    // Nested row in second column
-    mp3player += '      <div class="audioChildOuter">';
-    mp3player += '        <div class="audioParentInner">';
-    // Col 2 - audio slider
-    mp3player += '          <div class="audioChildInner">';
-    mp3player += '            <div class="audio">';
-    mp3player += '              <span title="Play tune, select loop starting point, then select loop end point">';
-    mp3player += '                <div id="positionMP3' + tuneID + '" class="mp3AudioControl"></div>'
-    mp3player += '              </span>';
-    mp3player += '            </div>';
-    mp3player += '            <div class="mp3LoopControl">';
-    mp3player += '              <span title="Play tune, select loop starting point, then select loop end point">';
-    mp3player += '              <input type="button" class="loopButton" id="LoopStart" value=" Loop Start " onclick="setFromSlider()" />';
-    mp3player += '              <input type="button" class="loopButton" id="LoopEnd" value=" Loop End " onclick="setToSlider()" />';
-    mp3player += '              <input type="button" class="loopButton" id="Reset" value=" Reset " onclick="resetFromToSliders()" />';
-    mp3player += '              </span>';
-    mp3player += '            </div>';
-    mp3player += '          </div>';
-    // Col 3 - speed slider
-    mp3player += '          <div class="audioChildInner">';
-    mp3player += '            <div id="speedControl' + tuneID + '" class="mp3SpeedControl">';
-    mp3player += '              <span title="Adjust playback speed with slider">';
-    mp3player += '                <div id="speedSliderMP3' + tuneID + '"></div>'
-    mp3player += '                <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>';
-    mp3player += '              </span>';
-    mp3player += '            </div>';
-    mp3player += '          </div>';
-    mp3player += '        </div>';
-    mp3player += '      </div>';
-    mp3player += '    </div>';
-    mp3player += '  </div>';
-    mp3player += '</form>';
+    var mp3player = `
+<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+    <div id="audioPlayer${tuneID}">
+        <div class="audioParentOuter">
+            <!-- Col 1 - play button -->
+            <div class="audioChildOuter">
+                <button id="playMP3${tuneID}" class="playButton" onclick="playAudio(${tuneID}, '${mp3url}')"></button>
+            </div>
+            <!-- Nested row in second column -->
+            <div class="audioChildOuter">
+                <div class="audioParentInner">
+                    <!-- Col 2 - audio slider -->
+                    <div class="audioChildInner">
+                        <div class="audio">
+                            <span title="Play tune, select loop starting point, then select loop end point">
+                                <div id="positionMP3${tuneID}" class="mp3AudioControl"></div>
+                            </span>
+                        </div>
+                        <div class="mp3LoopControl">
+                            <span title="Play tune, select loop starting point, then select loop end point">
+                                <input type="button" class="loopButton" id="LoopStart" value=" Loop Start " onclick="setFromSlider()" />
+                                <input type="button" class="loopButton" id="LoopEnd" value=" Loop End " onclick="setToSlider()" />
+                                <input type="button" class="loopButton" id="Reset" value=" Reset " onclick="resetFromToSliders()" />
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Col 3 - speed slider -->
+                    <div class="audioChildInner">
+                        <div id="speedControl${tuneID}" class="mp3SpeedControl">
+                            <span title="Adjust playback speed with slider">
+                                <div id="speedSliderMP3${tuneID}"></div>
+                                <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>`;
 
     return (mp3player);
 }
 
 function createSliders(tuneID) {
-    var audioSlider = document.getElementById('positionMP3' + tuneID);
-    var speedSlider = document.getElementById('speedSliderMP3' + tuneID);
+    var audioSlider = document.getElementById(`positionMP3${tuneID}`);
+    var speedSlider = document.getElementById(`speedSliderMP3${tuneID}`);
 
     noUiSlider.create(audioSlider, {
         start: [0, 0, 100],
@@ -158,9 +155,12 @@ function createSliders(tuneID) {
     });
 }
 
-function playAudio(audioplayer, playButton, playPosition, speedSlider, audioSource) {
+function playAudio(tuneID, audioSource) {
+    var playButton = document.getElementById(`playMP3${tuneID}`);
+    var playPosition = document.getElementById(`positionMP3${tuneID}`);
+    var speedSlider = document.getElementById(`speedSliderMP3${tuneID}`);
+
     if (playButton.className == "playButton") {
-        //myDebug(OneAudioPlayer.src + ', ' + audioSource);
         if (!OneAudioPlayer.src.includes(audioSource)) {
             if (OneAudioPlayer.src != null) { //reset previous audio player
                 //audioSlider.noUiSlider.values[1] = 0;
@@ -245,9 +245,9 @@ function changeTune(tuneID) {
 
         // calculate presetLoopSegments and set up preset loops
         OneAudioPlayer.onloadedmetadata = function () {
-            myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
+            //myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
             if (item.repeats && item.parts) {
-                myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
+                //myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
                 buildSegments(tuneID);
                 if (presetLoopSegments.length) {
                     document.getElementById('loopPresetControls').innerHTML = createLoopControlsContainer();
@@ -326,7 +326,7 @@ function LoadAudio(audioSource, playPosition) {
 }
 
 function initialiseAudioSlider() {
-    myDebug('initialiseAudioSlider: ' + OneAudioPlayer.duration);
+    //myDebug('initialiseAudioSlider: ' + OneAudioPlayer.duration);
     CurrentAudioSlider.noUiSlider.updateOptions({
         range: {
             'min': 0,
@@ -338,16 +338,16 @@ function initialiseAudioSlider() {
 
 function positionUpdate() {
     if (OneAudioPlayer.currentTime >= EndLoopTime) {
-        myDebug("Current time: " + OneAudioPlayer.currentTime);
+        //myDebug("Current time: " + OneAudioPlayer.currentTime);
         OneAudioPlayer.currentTime = BeginLoopTime;
-        myDebug("Reset loop start to: " + OneAudioPlayer.currentTime);
+        //myDebug("Reset loop start to: " + OneAudioPlayer.currentTime);
     }
     CurrentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
 }
 
 function restartLoop() {
     OneAudioPlayer.currentTime = BeginLoopTime;
-    myDebug("Restarting loop at: " + OneAudioPlayer.currentTime);
+    //myDebug("Restarting loop at: " + OneAudioPlayer.currentTime);
     OneAudioPlayer.play();
 }
 
@@ -405,37 +405,44 @@ function createLoopControlsContainer() {
     document.getElementById('loopForm').style.display = "block";
     toggleLoops("Show Preset Loops");
 
-    var loopControlsContainer = '<div class="container loop-container"><div class="row row-title">';
-    loopControlsContainer += '<div class="small-4 columns"><strong>Select Preset Loops</strong></div>';
-    loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"><strong>Start</strong></div>';
-    loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"><strong>Finish</strong></div>';
-    loopControlsContainer += '</div>';
+    var loopControlsContainer = `
+<div class="container loop-container"><div class="row row-title">
+    <div class="small-4 columns"><strong>Select Preset Loops</strong></div>
+    <div class="small-4 columns" style="text-align: center;"><strong>Start</strong></div>
+    <div class="small-4 columns" style="text-align: center;"><strong>Finish</strong></div>
+</div>`;
 
-    for (i = 0; i < presetLoopSegments.length; i++) {
-        if (i % 2) {
+    for (segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
+        // row-odd class allows row 'striping'
+        if (segmentNumber % 2) {
             loopControlsContainer += '<div class="row row-odd">';
         } else {
             loopControlsContainer += '<div class="row">';
         }
-        loopControlsContainer += '<div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="applySegments()" id="check' + i + '">' + presetLoopSegments[i].name + '</div>';
-        loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"> \
-        <a href="javascript:void(0);" \
-        class = "downButton" type="button" id= "button' + i + 'dn" onclick="Adjust_down(' + i + ', 0)"> \
-        <span title=" - 1/5 second">&lt;&lt;</a> \
-        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'from" size="4" style= "height: 18px;" value=' + presetLoopSegments[i].start + '> \
-        <a href="javascript:void(0);" \
-        class = "upButton" type="button" id= "button' + i + 'up" onclick="Adjust_up(' + i + ', 0)"> \
-        <span title=" + 1/5 second">&gt;&gt;</a> \
-        </div>';
-        loopControlsContainer += '<div class="small-4 columns" style="text-align: center;"> \
-        <a href="javascript:void(0);" \
-        class = "downButton" type="button" id= "button' + i + 'Dn" onclick="Adjust_down(' + i + ', 2)"> \
-        <span title=" - 1/5 second">&lt;&lt;</a> \
-        <input class="loopClass" type="text" onchange="applySegments()" id="check' + i + 'to" size="4" style= "height: 18px;" value=' + presetLoopSegments[i].end + '> \
-        <a href="javascript:void(0);" \
-        class = "upButton" type="button" id= "button' + i + 'up" onclick="Adjust_up(' + i + ', 2)"> \
-        <span title=" + 1/5 second">&gt;&gt;</a> \
-        </div>';
+        // build each row
+        loopControlsContainer += `
+        <!-- select loop -->
+        <div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="applySegments()" id="check${segmentNumber}">${presetLoopSegments[segmentNumber].name}</div>
+        <!-- adjust start of loop -->
+        <div class="small-4 columns" style="text-align: center;">
+        <a href="javascript:void(0);" class = "downButton" type="button" id= "button${segmentNumber}dn" onclick="Adjust_down(${segmentNumber}, 0)"> 
+        <span title=" - 1/5 second">&lt;&lt;</a>
+        <input class="loopClass" type="text" onchange="applySegments()" id="check${segmentNumber}from" size="4" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].start}> 
+        <a href="javascript:void(0);" 
+        class = "upButton" type="button" id= "button${segmentNumber}up" onclick="Adjust_up(${segmentNumber}, 0)"> 
+        <span title=" + 1/5 second">&gt;&gt;</a> 
+        </div>
+        <!-- adjust end of loop -->
+        <div class="small-4 columns" style="text-align: center;">
+        <a href="javascript:void(0);" class = "downButton" type="button" id= "button${segmentNumber}dn" onclick="Adjust_down(${segmentNumber}, 2)">
+        <span title=" - 1/5 second">&lt;&lt;</a> 
+        <input class="loopClass" type="text" onchange="applySegments()" id="check${segmentNumber}to" size="4" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].end}> 
+        <a href="javascript:void(0);" 
+        class = "upButton" type="button" id= "button${segmentNumber}up" onclick="Adjust_up(${segmentNumber}, 2)"> 
+        <span title=" + 1/5 second">&gt;&gt;</a> 
+        </div>`;
+
+        // End of row
         loopControlsContainer += '</div>'
     }
     loopControlsContainer += '</div>'
@@ -479,7 +486,7 @@ function applySegments() {
             }
             //myDebug("Is " + fullEndLoopTime + " less than " + tempEndLoopTime);
             if (fullEndLoopTime < tempEndLoopTime) {
-                //myDebug("B, "+tempEndLoopTime+", "+fullEndLoopTime);
+                //myDebug("B, "+tempEndLoopTime+", "+ fullEndLoopTime);
                 fullEndLoopTime = tempEndLoopTime;
             }
             //myDebug(i + ", " + BeginLoopTime + ", "+ EndLoopTime + ", " + fullBeginLoopTime + ", " + fullEndLoopTime);
