@@ -46,11 +46,11 @@ function createMP3player(tuneID, mp3url) {
     // build the MP3 player for each tune
     var mp3player = `
 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-    <div id="audioPlayer${tuneID}">
+    <div id="audioPlayer-${tuneID}">
         <div class="audioParentOuter">
             <!-- Col 1 - play button -->
             <div class="audioChildOuter">
-                <button id="playMP3${tuneID}" class="playButton" onclick="playAudio(${tuneID}, '${mp3url}')"></button>
+                <button id="playMP3-${tuneID}" class="playButton" onclick="playAudio(${tuneID}, '${mp3url}')"></button>
             </div>
             <!-- Nested row in second column -->
             <div class="audioChildOuter">
@@ -59,7 +59,7 @@ function createMP3player(tuneID, mp3url) {
                     <div class="audioChildInner">
                         <div class="audio">
                             <span title="Play tune, select loop starting point, then select loop end point">
-                                <div id="positionMP3${tuneID}" class="mp3AudioControl"></div>
+                                <div id="positionMP3-${tuneID}" class="mp3AudioControl"></div>
                             </span>
                         </div>
                         <div class="mp3LoopControl">
@@ -72,9 +72,9 @@ function createMP3player(tuneID, mp3url) {
                     </div>
                     <!-- Col 3 - speed slider -->
                     <div class="audioChildInner">
-                        <div id="speedControl${tuneID}" class="mp3SpeedControl">
+                        <div id="speedControl-${tuneID}" class="mp3SpeedControl">
                             <span title="Adjust playback speed with slider">
-                                <div id="speedSliderMP3${tuneID}"></div>
+                                <div id="speedSliderMP3-${tuneID}"></div>
                                 <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>
                             </span>
                         </div>
@@ -89,8 +89,8 @@ function createMP3player(tuneID, mp3url) {
 }
 
 function createSliders(tuneID) {
-    var audioSlider = document.getElementById(`positionMP3${tuneID}`);
-    var speedSlider = document.getElementById(`speedSliderMP3${tuneID}`);
+    var audioSlider = document.getElementById(`positionMP3-${tuneID}`);
+    var speedSlider = document.getElementById(`speedSliderMP3-${tuneID}`);
 
     noUiSlider.create(audioSlider, {
         start: [0, 0, 100],
@@ -156,9 +156,9 @@ function createSliders(tuneID) {
 }
 
 function playAudio(tuneID, audioSource) {
-    var playButton = document.getElementById(`playMP3${tuneID}`);
-    var playPosition = document.getElementById(`positionMP3${tuneID}`);
-    var speedSlider = document.getElementById(`speedSliderMP3${tuneID}`);
+    var playButton = document.getElementById(`playMP3-${tuneID}`);
+    var playPosition = document.getElementById(`positionMP3-${tuneID}`);
+    var speedSlider = document.getElementById(`speedSliderMP3-${tuneID}`);
 
     if (playButton.className == "playButton") {
         if (!OneAudioPlayer.src.includes(audioSource)) {
@@ -240,7 +240,7 @@ function changeTune(tuneID) {
         document.getElementById('showPlayer').innerHTML = createMP3player(tuneID, item.mp3);
         createSliders(tuneID);
 
-        var playPosition = document.getElementById('positionMP3' + tuneID);
+        var playPosition = document.getElementById(`positionMP3-${tuneID}`);
         LoadAudio(item.mp3, playPosition);
 
         // calculate presetLoopSegments and set up preset loops
