@@ -3,12 +3,12 @@ title: Green Fields of Rossbeigh
 titleID: green-fields-of-rossbeigh.md
 key: Edor
 rhythm: reel
-notes: 
+notes:
 date: 2020-07-01
-regtuneoftheweek: 
-slowtuneoftheweek: 
-tags: 
-location: 
+regtuneoftheweek:
+slowtuneoftheweek: 2020-07-02
+tags:
+location:
 mp3_file: /mp3/green-fields-of-rossbeigh.mp3
 repeats: 3
 parts: AABB
@@ -20,17 +20,14 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/322
 abc: |
-    X: 5
-    T: The Green Fields Of Rossbeigh
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Edor
-    |: BE ~E2 BAFB | ABde fded | BE ~E2 BAFA | BFAF EFGA |
-    B2 Bd BAFB | ABde fded | BE ~E2 BAFA | BFAF E2 FA :|
-    |: B/c/d ef g2 fe | dB B2 dBAd | B/c/d ef g2 fe | dBAF E2 ef |
-    g2 ga gfed | f2 fg fedB | ABde fgfe | dBAF E4 :|
-    
-    
-
+  X: 5
+  T: The Green Fields Of Rossbeigh
+  R: reel
+  M: 4/4
+  L: 1/8
+  K: Edor
+  |: BE ~E2 BAFB | ABde fded | BE ~E2 BAFA | BFAF EFGA |
+  B2 Bd BAFB | ABde fded | BE ~E2 BAFA | BFAF E2 FA :|
+  |: B/c/d ef g2 fe | dB B2 dBAd | B/c/d ef g2 fe | dBAF E2 ef |
+  g2 ga gfed | f2 fg fedB | ABde fgfe | dBAF E4 :|
 ---
