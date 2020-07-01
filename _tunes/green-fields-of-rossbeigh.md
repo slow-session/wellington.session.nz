@@ -15,7 +15,7 @@ parts: AABB
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_url: https://media.comhaltas.ie/video/cl492/cl492_3.mp4
-alt_mp3_url: https://www.youtube.com/watch?v=rcLa758Aexc
+alt_mp3_url: https://www.facebook.com/100016975685925/videos/710256972883486/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/322
