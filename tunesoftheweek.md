@@ -34,8 +34,6 @@ tuneOfTheWeek = {
 </script>
 {% endif %}
 
-<br />
-
 Regular Session Tune of the Week
 ---------
 

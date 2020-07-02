@@ -51,8 +51,6 @@ tuneOfTheWeek = {
 
 {% endif %}
 
-<br />
-
 ## Recent slow session tunes of the week
 
 These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
@@ -87,8 +85,6 @@ $.extend(window.store, tuneOfTheWeek);
 </script>
 
 {% include tunesArchiveGrid.html%}
-
-<br />
 
 Latest Tunes
 ------------

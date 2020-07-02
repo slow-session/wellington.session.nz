@@ -1,20 +1,20 @@
 <!-- START of code included from tuneoftheweek.html -->
-<fieldset class="fieldset-tune-of-the-week">
-    <legend>{{ legend }}</legend>
-    <div class="row">
-        <div class="small-5 columns">
-            <span title="Go to Tunepage">
+<div class="gridParent">
+    <div class="gridChild">
+            
+        <div class="tuneoftheweekLayout">
+            <div class="tuneoftheweekLegend">{{ legend }}</div>
+            <span>
                 <a href="{{ tune.url }}">{{ tune.title }}</a>
             </span>
-        </div>
-        <div class="small-3 columns">
-            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-        </div>
-        <div class="small-3 columns">
-            {{ tune.key }} {{ tune.rhythm }}
+            <span>
+                <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
+            </span>
+            <span>
+                {{ tune.key }} {{ tune.rhythm }}
+            </span>
         </div>
     </div>
-</fieldset>
-
-<div class="row"></div>
+</div>
 <!-- END of code included from tuneoftheweek.html -->
+                
