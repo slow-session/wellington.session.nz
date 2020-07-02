@@ -46,8 +46,6 @@ tuneOfTheWeek = {
 </script>
 {% endif %}
 
-<br />
-
 Recent regular session tunes of the week
 --------
 
@@ -82,9 +80,7 @@ window.store = {
 $.extend(window.store, tuneOfTheWeek);
 </script>
 
-{% include tunesArchiveGrid.html%}
-
-<br />
+{% include tunesArchiveGrid.html%} 
 
 Latest Tunes
 ------------
