@@ -46,11 +46,3 @@ You can usually find some ABC that you can at least start with on
 [The Session](http://thesession.org) website. The ABC doesn't need to match the
 recorded version exactly - close is good enough!
 
-[Create Set MD File](/createSetMD/)
---------
-
-If you want to help us add a new set to the archive you can use the
-[Create Set MD File](/createSetMD/) page to create the metadata we need.
-
-Send your set suggestion to <a href="{{ site.email }}">{{ site.email }}</a> and
-we'll have a look.
