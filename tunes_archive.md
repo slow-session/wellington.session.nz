@@ -72,8 +72,6 @@ window.store = {
 
 {% include tunesArchiveGrid.html%}
 
-<div class="row"></div>
-
 {% include tuneModal.html%}
 
 <script>
