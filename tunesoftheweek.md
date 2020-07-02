@@ -8,28 +8,13 @@ Each week we choose a couple of tunes to learn or bring back to the fore - somet
 Slow Session Tune of the Week
 -----------
 
+{% assign legend="Slow tune of the week" %}
 {% assign tuneID = 100 %}
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
-<fieldset class="fieldset-tune-of-the-week">
-    <legend>Slow tune of the week</legend>
-    <div class="row">
-        <div class="small-5 columns">
-            <span title="Go to Tunepage">
-                <a href="{{ tune.url }}">{{ tune.title }}</a>
-            </span>
-        </div>
-        <div class="small-3 columns">
-            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-        </div>
-        <div class="small-3 columns">
-            {{ tune.key }} {{ tune.rhythm }}
-        </div>
-    </div>
-</fieldset>
 
-<div class="row"></div>
+{% include tuneoftheweek.html %}
 
 <script>
 tuneOfTheWeek = {
@@ -53,28 +38,14 @@ tuneOfTheWeek = {
 
 Regular Session Tune of the Week
 ---------
-{% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
+
+{% assign legend="Regular tune of the week" %}
 {% assign tuneID = tuneID | plus: 1 %}
+{% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
-<fieldset class="fieldset-tune-of-the-week">
-    <legend>Regular tune of the week</legend>
-    <div class="row">
-        <div class="small-5 columns">
-            <span title="Go to Tunepage">
-                <a href="{{ tune.url }}">{{ tune.title }}</a>
-            </span>
-        </div>
-        <div class="small-3 columns">
-            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-        </div>
-        <div class="small-3 columns">
-            {{ tune.key }} {{ tune.rhythm }}
-        </div>
-    </div>
-</fieldset>
 
-<div class="row"></div>
+{% include tuneoftheweek.html %}
 
 <script>
 window.store = {

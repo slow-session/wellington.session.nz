@@ -18,30 +18,14 @@ Two sessions happen on Tuesday nights starting at 7:30 pm at the <a href="/drago
 
 The slow session is an opportunity for players who are starting out with Irish traditional music and want an opportunity to play tunes that they're learning or have already learnt with others in a supportive environment. We don't teach tunes directly in this session but it's a great chance to practice playing with others. There's some scope for accompaniment but the focus is on the melody instruments. See our <a href="/slowsession/"><button class="filterButton">Slow Session</button></a> page for more information.
 
+{% assign legend="Slow tune of the week" %}
 {% assign tuneID = 100 %}
 {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
 {% assign tune = sortedtunes.first %}
 {% if tune.slowtuneoftheweek %}
 
+{% include tuneoftheweek.html %}
 
-<fieldset class="fieldset-tune-of-the-week">
-    <legend>Slow tune of the week</legend>
-    <div class="row">
-        <div class="small-5 columns">
-            <span title="Go to Tunepage">
-                <a href="{{ tune.url }}">{{ tune.title }}</a>
-            </span>
-        </div>
-        <div class="small-3 columns">
-            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-        </div>
-        <div class="small-3 columns">
-            {{ tune.key }} {{ tune.rhythm }}
-        </div>
-    </div>
-</fieldset>
-
-<div class="row"></div>
 
 <script>
 tuneOfTheWeek = {
@@ -65,30 +49,13 @@ tuneOfTheWeek = {
 
 The regular session is a different beast from the slow session that happens earlier in the evening. We want this to be an excellent Irish session with a very strong focus on the traditional melody instruments playing traditional tunes. This means that accompaniment from rhythm instruments will be limited so that the melody can shine. See our <a href="/regularsession/"><button class="filterButton">Regular Session</button></a> page for more information.
 
+{% assign legend="Regular tune of the week" %}
 {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
 {% assign tuneID = tuneID | plus: 1 %}
 {% assign tune = sortedtunes.first %}
 {% if tune.regtuneoftheweek %}
 
-
-<fieldset class="fieldset-tune-of-the-week">
-    <legend>Regular tune of the week</legend>
-    <div class="row">
-        <div class="small-5 columns">
-            <span title="Go to Tunepage">
-                <a href="{{ tune.url }}">{{ tune.title }}</a>
-            </span>
-        </div>
-        <div class="small-3 columns">
-            <input class="filterButton" type="button" onclick="changeTune({{ tuneID }});" value="Play Now" />
-        </div>
-        <div class="small-3 columns">
-            {{ tune.key }} {{ tune.rhythm }}
-        </div>
-    </div>
-</fieldset>
-
-<div class="row"></div>
+{% include tuneoftheweek.html %}
 
 <script>
 window.store = {

@@ -44,3 +44,9 @@ $spacing-unit: 30px;
 // Footer
 $footer-height: 30px;
 $footer-color: lighten($brand-color, 40%);
+
+// DEPRECATION WARNING on line 226 of 
+// /home/asjl/GitHub/welly-clone/_sass/foundation/util/_mixins.scss:
+// !global assignments won't be able to declare new variables in future 
+// versions. Consider adding `$-zf-size: null` at the top level.
+$-zf-size: null
