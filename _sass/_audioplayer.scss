@@ -159,7 +159,8 @@ p.attribution {
 .filterButton {
     background-color: $brand-color;
     padding: 7px 5px 4px 5px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     border-radius: 8px;

@@ -2,11 +2,11 @@
 layout: page
 title: Learn by Ear
 permalink: /learn_by_ear/
-navigation_weight: 20
 ---
 
-* TOC
-{:toc}
+{% include toc.html %}
+
+## Learning by listening
 
 When learning to play an instrument, many begin by reading music.  This frequently develops into the idea that the “offical version"" of a tune is the one printed on the pages of books, and when people play, they are doing their best to approximate the music on the page.  Any variations are either accidents or embellishments.  That may be true of some kinds of music, but it is definitely not true in Irish traditional music.  The true versions of the tunes only exist in the oral or auditory tradition, and the notes on the page are the approximation.
 
@@ -14,29 +14,25 @@ Written music can help with the order of the notes, but the "feel" or swing only
 
 We reckon that the best way to learn this music is **by ear** - listen to the tune until you can hum or lilt it and then start playing it.  A method that works for many players is to play a recording of the tune slowly, over and over, and keep trying to play along with more and more of it. Once you can play a tune slowly, playing it fast is much easier.
 
-If you have a patient teacher who will sit with you and teach you tunes, that’s great, but it’s not an option for many of us. The next best option is to listen to recordings and try to learn that way.  Learning tunes by ear from recordings is much easier when the tunes are played more slowly and by playing tricky sections over and over again in a loop while you play along. We’ve designed the web page to allow you to set the speed as slowly as 50% of the “session speed”, and to play all or part of it in an endless loop.  We hope that you find that useful.
+If you have a patient teacher who will sit with you and teach you tunes, that’s great, but it’s not an option for many of us. The next best option is to listen to recordings and try to learn that way.  Learning tunes by ear from recordings is much easier when the tunes are played more slowly and by playing tricky sections over and over again in a loop while you play along. We’ve designed the web pages to allow you to set the speed as slow as 50% of the “session speed”, and to play all or part of it in an endless loop.  We hope that you find that useful.
 
-What about learning tunes by reading the music?
------------------------------------------------
+## What about learning tunes by reading the music?
 
-We’ve attempted to provide “dots” and “chords” for the tunes as well as recordings, but be aware that these may/will not match the recordings exactly, although they probably match some version of the tune played somewhere at some time.  When there is a conflict between the dots, and what you hear, go with what you hear.  If in doubt, slow the tune down and listen!
+We’ve attempted to provide “dots” for the tunes as well as recordings, but be aware that these may/will not match the recordings exactly, although they probably match some version of the tune played somewhere at some time.  When there is a conflict between the dots, and what you hear, go with what you hear.  If in doubt, slow the tune down and listen!
 
 When you’re in a session, the tunes change fast, and frequently 4 or 5 tunes are played in a row.  It’s almost impossible to find the name of the tune and turn to the right page in your music when the next tune starts. Also, when you learn tunes by reading, the **triggers** to remember the tunes are the notes on the page.  When you learn tunes by ear, the **triggers** are hearing the first few notes.  That’s what happens in session playing, you hear the first few notes and you recall the tune.
 
-Playing by ear the first time is hard, especially for people who have become proficient at playing by reading music.  It gets much easier with practice, and it is a skill worth learning.
+Playing by ear is hard at first, especially for people who have become proficient at playing by reading music.  It gets much easier with practice, and it is a skill worth learning.
 
-Accompanists and rhythm players
--------------------------------
+## Accompanists and rhythm players
 
-All of the advice above applies to guitar, bouzouki and other non-melody players and percussionists. You need to hear the tunes in your head - listen to the tune until you can hum or lilt it! Use the slow down options and play along with the tunes until you’re happy that what you’re playing fits.  There are many chord choices for the tunes, and often what
-is suggested in written music is only one of a number of choices.  When more than one accompanist is in a session it is important to listen to each other and coordinate the chord choices.
+All of the advice above applies to guitar, bouzouki and other non-melody players and percussionists. You need to hear the tunes in your head - listen to the tune until you can hum or lilt it! Use the slow down options and play along with the tunes until you’re happy that what you’re playing fits.  There are many chord choices for the tunes, and often what is suggested in written music is only one of a number of choices.  When more than one accompanist is in a session it is important to listen to each other and coordinate the chord choices.
 
 In Irish Traditional music, the melody is the boss.  Rhythm players and accompanists must follow, not drive.  Remember it is much easier for you to speed up than it is for melody players (they have lots more notes to play).  And remember that the melody players will forgive the odd wrong chord or note but playing out of time is much harder to forgive.
 
 When in doubt, less is more.  There is no need to strum, or beat a drum with every beat.  You are not providing the rhythm, you are embellishing the music, with the tempo set by the melody players.
 
-Learning from your own music
-----------------------------
+## Learning from your own music
 
 You will probably have recordings of your own that you'd like to do this with and there are options for slowing down other recordings you have on your computer, tablet or phone.
 
@@ -44,15 +40,13 @@ You can can use our [Play Local Audio](/playLocalAudio/) page to slow down a num
 
 You could also try this nice tool - [TimeStretch Player](https://29a.ch/timestretch/)
 
-Want to learn a tune from YouTube?
-----------------------------------
+## Want to learn a tune from YouTube?
 
 There are features built into the YouTube player that allow you to slow down the recording and also to play the complete recording in a loop.
 
 You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-converter/">YouTube to MP3 Converter</a> to extract the audio from YouTube and Facebook videos and store MP3 files locally and then you can use our [Play Local Audio](/playLocalAudio/) page.
 
-Other software
---------------
+## Other software
 
 There's a very comprehensive list of packages for around US$30 which work better at really slow speeds (50% or slower) and also have a number of other useful options such as picking out sections to loop and saving parts of a file for later at:
 

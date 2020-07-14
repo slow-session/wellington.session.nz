@@ -4,11 +4,9 @@ title: Wellington Slow Session
 permalink: /slowsession/
 ---
 
-<!--
 We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
 Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
 Players who want to play traditional Irish music at a relaxed pace are welcome.
--->
 
 The slow session is an opportunity for players who are starting out with Irish
 traditional music and want an opportunity to play tunes that they're learning
@@ -17,7 +15,7 @@ We don't teach tunes directly in this session but it's a great chance to practic
 playing with others. There's some scope for accompaniment but the focus is on the
 melody instruments.
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information, and try out the options for learning tunes using the <b>Play Now</b> option.
+See our <a href="/slowguidelines/"><button class="filterButton">Guidelines for the Slow Session</button></a> if you need more information.
 
 ## Tune of the Week
 
@@ -62,6 +60,7 @@ window.store = {
 {% assign tuneID = 200 %}
 {% for tune in sortedtunes %}
     {% if tune_count > 0 %}
+        {% if tune.slowtuneoftheweek %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -74,6 +73,7 @@ window.store = {
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
         }{% if tune_count < site.slow_tunes_max %},{% else %}{% break %}{% endif %}
+        {% endif %}
     {% endif %}
     {% assign tune_count = tune_count | plus: 1 %}
     {% assign tuneID = tuneID | plus: 1 %}
