@@ -10,7 +10,7 @@ tags:
 repeats: 1 
 parts: AABB 
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2020-07-16
 mp3_file: /mp3/drunken-landlady.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
