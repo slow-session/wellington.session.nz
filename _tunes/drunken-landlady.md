@@ -7,8 +7,8 @@ date: 2019-04-03
 location: Wellington
 notes:
 tags:
-repeats: 1 
-parts: AABB 
+repeats: 1
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2020-07-16
 mp3_file: /mp3/drunken-landlady.mp3
@@ -20,16 +20,15 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/363
 abc: |
-    X: 7
-    T: The Drunken Landlady
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Edor
-    |:BE E2 BAFA|BE E2 BAFB|ABAF D3E|FAAd BAFA|
-    BE E2 BAFA|B2 dB BAFB|A2 Bc dfec|dBAF E4:||
-    |:Beed e2 de|f2 df efdB|ABAF D3E|FAAd BAFA|
-    Beed e2 de|f2 df efdB|A2 Bc dfec|dBAF E4:||
-
-
+  X: 7
+  T: The Drunken Landlady
+  R: reel
+  M: 4/4
+  L: 1/8
+  %Z: Modified by Megan Ward
+  K: Edor
+  |:BE E2 BEFA|B2 dB BAFB|ABAF D2A,D|FGAd BAFA|
+  BE E2 BEFA|B2 dB BAFB|A2 AB defe|dBAF E2GA:||
+  |:Beed e2 de|f2 df efdB|ABAF D2A,D|FGAd BAFA|
+  Beed e2 de|f2 df efdB|A2 AB defe|dBAF E4:||
 ---
