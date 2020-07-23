@@ -20,25 +20,20 @@ function displayABCsource() {
     // create file headers
     var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
     appendString += '% Generated on: ' + new Date() + '\n%\n';
-    var tuneIDoffset = 0;
-
+    
     for (var key in store) { // Iterate over the original data
         var item = store[key];
-        if (!tuneIDoffset) {
-            tuneIDoffset = item.tuneID
-        }
-        appendString += createABCitem(item, tuneIDoffset);
+        appendString += createABCitem(item);
     }
 
     abcText.innerHTML = appendString;
 }
 
-function createABCitem(item, tuneIDoffset) {
+function createABCitem(item) {
     var gridRow = '';
 
     // build the ABC item
     var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
-    //var newABC = decodeURI(item.abc).replace(/X:.*\n/, 'X: ' + (item.tuneID - tuneIDoffset + 1) + '\n')
 
     if (newABC) {
         gridRow += newABC + '\n';
