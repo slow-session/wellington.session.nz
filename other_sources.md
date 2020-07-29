@@ -17,8 +17,9 @@ Paddy Fahey tunes:
 
 Sets of tunes put together by Paddy O'Brien:
 
- * [O'Brien sets on line](/obrientunes/)
- * [obrien.pdf](/tunebooks/obrien.pdf "PDF")
+ * [Tune Sets Arranged by Paddy O'Brien, Co. Tipperary](http://www.ceolas.org/pub/tunes/tunes.pdf/POB.pdf)
+  * [Local copy of obrien.pdf](/tunebooks/obrien.pdf "PDF")
+  * [O'Brien sets on line](/obrientunes/)
 
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
