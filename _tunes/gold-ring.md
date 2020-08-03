@@ -15,6 +15,7 @@ mp3_file: /mp3/gold-ring.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=88eM_-VRG5o
+alt_mp3_url: https://www.facebook.com/ciarank1/videos/10154868959339125/
 source: Wellington
 abc_source: Pat Higgins
 abc_url:
