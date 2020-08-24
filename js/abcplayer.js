@@ -36,12 +36,12 @@ function createABCplayer(tuneID, timbre) {
 <form onsubmit="return false" oninput="level.value=flevel.valueAsNumber">
     <div class="audioParentOuter" id="${tuneID}">
         <!-- Col 1 -->
-        <div class="audioChildOuter">
+        <div class="playpauseButton">
             <button id="playABC${tuneID}" class="playButton" onclick="playABC(ABC${tuneID}, playABC${tuneID}, positionABC${tuneID}, speedSliderABC${tuneID}.value)"></button>
         </div>
         <!-- Nested row in second column -->
         <div class="audioChildOuter">
-            <div class="audioParentInner">
+            <div class="abcParentInner">
                 <!-- Col 2 -->
                 <div class="audioChildInner">
                     <input name="positionABC${tuneID}" id="positionABC${tuneID}" type="range" class="abcAudioControl slider" min="0" max="500" value="0" oninput="setABCPosition(value/100)" />

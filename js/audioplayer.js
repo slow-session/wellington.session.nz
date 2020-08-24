@@ -32,52 +32,50 @@ var isIOS = testForIOS();
 //myDebug("isIOS: " + isIOS);
 
 function createAudioPlayer() {
-    var pagePlayer = `
+    var audioPlayer = `
 <!-- declare an Audio Player for this page-->
 <audio id="OneAudioPlayer">
     <source id="mp3Source" type="audio/mp3"></source> 
     Your browser does not support the audio format.
 </audio>`;
 
-    return (pagePlayer);
+    return (audioPlayer);
 }
 
 function createMP3player(tuneID, mp3url) {
     // build the MP3 player for each tune
     var mp3player = `
 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-    <div id="audioPlayer-${tuneID}">
-        <div class="audioParentOuter">
-            <!-- Col 1 - play button -->
-            <div class="audioChildOuter">
-                <button id="playMP3-${tuneID}" class="playButton" onclick="playAudio(${tuneID}, '${mp3url}')"></button>
-            </div>
-            <!-- Nested row in second column -->
-            <div class="audioChildOuter">
-                <div class="audioParentInner">
-                    <!-- Col 2 - audio slider -->
-                    <div class="audioChildInner">
-                        <div class="audio">
-                            <span title="Play tune, select loop starting point, then select loop end point">
-                                <div id="positionMP3-${tuneID}" class="mp3AudioControl"></div>
-                            </span>
-                        </div>
-                        <div class="mp3LoopControl">
-                            <span title="Play tune, select loop starting point, then select loop end point">
-                                <input type="button" class="loopButton" id="LoopStart" value=" Loop Start " onclick="setFromSlider()" />
-                                <input type="button" class="loopButton" id="LoopEnd" value=" Loop End " onclick="setToSlider()" />
-                                <input type="button" class="loopButton" id="Reset" value=" Reset " onclick="resetFromToSliders()" />
-                            </span>
-                        </div>
+    <div id="audioPlayer-${tuneID}" class="audioParentOuter">
+        <!-- Col 1 - play button -->
+        <div class="playpauseButton">
+            <button id="playMP3-${tuneID}" class="playButton" onclick="playAudio(${tuneID}, '${mp3url}')"></button>
+        </div>
+        <!-- Nested row in second column -->
+        <div class="audioChildOuter">
+            <div class="audioParentInner">
+                <!-- Col 2 - audio slider -->
+                <div class="audioChildInner">
+                    <div class="audio">
+                        <span title="Play the tune and then create a loop using the Start and End sliders">
+                            <div id="positionMP3-${tuneID}" class="mp3AudioControl"></div>
+                        </span>
                     </div>
-                    <!-- Col 3 - speed slider -->
-                    <div class="audioChildInner">
-                        <div id="speedControl-${tuneID}" class="mp3SpeedControl">
-                            <span title="Adjust playback speed with slider">
-                                <div id="speedSliderMP3-${tuneID}"></div>
-                                <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>
-                            </span>
-                        </div>
+                    <div class="mp3LoopControl">
+                        <span title="Play the tune and then create a loop using the Loop Start and Loop End buttons">
+                            <input type="button" class="loopButton" id="LoopStart" value=" Loop Start " onclick="setFromSlider()" />
+                            <input type="button" class="loopButton" id="LoopEnd" value=" Loop End " onclick="setToSlider()" />
+                            <input type="button" class="loopButton" id="Reset" value=" Reset " onclick="resetFromToSliders()" />
+                        </span>
+                    </div>
+                </div>
+                <!-- Col 3 - speed slider -->
+                <div class="audioChildInner">
+                    <div id="speedControl-${tuneID}" class="mp3SpeedControl">
+                        <span title="Adjust playback speed with slider">
+                            <div id="speedSliderMP3-${tuneID}"></div>
+                            <p class="mp3SpeedLabel"><strong>Playback Speed</strong></p>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -128,6 +126,16 @@ function createSliders(tuneID) {
             OneAudioPlayer.currentTime = values[1];
         }
     });
+    audioSlider.noUiSlider.on('start', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.pause();
+        };
+    });
+    audioSlider.noUiSlider.on('end', function (value) {
+        OneAudioPlayer.onplaying = function () {
+            OneAudioPlayer.play();
+        };
+    });
     speedSlider.noUiSlider.on('change', function (value) {
         myDebug("playbackRate: " + value / 100);
         OneAudioPlayer.playbackRate = value / 100;
@@ -139,16 +147,6 @@ function createSliders(tuneID) {
         };
     });
     speedSlider.noUiSlider.on('end', function (value) {
-        OneAudioPlayer.onplaying = function () {
-            OneAudioPlayer.play();
-        };
-    });
-    audioSlider.noUiSlider.on('start', function (value) {
-        OneAudioPlayer.onplaying = function () {
-            OneAudioPlayer.pause();
-        };
-    });
-    audioSlider.noUiSlider.on('end', function (value) {
         OneAudioPlayer.onplaying = function () {
             OneAudioPlayer.play();
         };

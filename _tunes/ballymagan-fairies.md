@@ -17,7 +17,7 @@ mp3_licence: "© Roisin McGrory. All Rights Reserved."
 mp3_url: 
 alt_mp3_url: 
 source: Wellington
-abc_source: ENTER YOUR NEW SOURCE HERE
+abc_source: Roisin McGrory
 abc_url: 
 abc: |
     X: 1
