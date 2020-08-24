@@ -1,14 +1,17 @@
+.noUi-target {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
 
 .noUi-horizontal {
-    // track height
-    height: 10px;
     border-radius: 50%;
-    background: lighten($brand-color, 20%);
+    height: 0.8rem;
 }
 
 .noUi-horizontal .noUi-handle {
-    width: 16px;
-    height: 22px;
+    width: 1rem;
+    height: 2.2rem;
     left: -8px;
     top: -6px;
 }
@@ -19,37 +22,25 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-handle {
-    border: 1px solid #D9D9D9;
+    border: 1px solid lightgray;
     border-radius: 3px;
-    background: #669;
+    background: $brand-color;
     cursor: default;
-    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
 }
 
-.noUi-handle:after,
-.noUi-handle:before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 6px;
-    width: 1px;
-    background: #E8E7E6;
-    left: 4px;
-    top: 6px;
-}
-
-.noUi-handle:after {
-    left: 8px;
+.noUi-handle::before,
+.noUi-handle::after {
+    background: none;
 }
 
 .noUi-tooltip {
     display: block;
     position: absolute;
-    border: 0 solid #D7D7D7;
+    border: 0 solid lightgray;
     border-radius: 8px;
     background: transparent;
-    color: #000;
-    padding: 0 2px;
+    color: $brand-color;
+    padding: 0 0.1rem;
     text-align: center;
     white-space: nowrap;
 }
@@ -59,24 +50,26 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     transform: translate(-50%, 190%);
     left: 50%;
     bottom: 120%;
-    font-size: 12px;
-    padding: 2px;
+    font-size: small;
+    padding: 0.3rem;
     z-index: -1;
 }
 
 .noUi-horizontal .noUi-handle {
-    width: 15px;
-    height: 20px;
+    width: 1rem;
+    height: 1.5rem;
     border-radius: 50%;
-    //background: #455;
+    background: darken($brand-color, 20%);
+    border-color: darken($brand-color, 20%);
     cursor: pointer;
 }
 
 .noUi-horizontal .noUi-handle[data-handle='1'] {
-    width: 15px;
-    height: 20px;
+    width: 1rem;
+    height: 1.5rem;
     border-radius: 50%;
-    //background: #455;
+    background: green;
+    border-color: darken($brand-color, 20%);
     cursor: pointer;
 }
 
@@ -85,54 +78,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     transform: translate(-50%, 20%);
     left: 50%;
     bottom: 120%;
-    font-size: 12px;
-    padding: 2px;
+    font-size: small;
+    padding: 0.3rem;
     z-index: -1;
 }
 
-.noUi-connects {
-    border-radius: 3px;
-}
-
+.noUi-connects,
 .noUi-connect {
-    background: darken($brand-color, 20%);
-}
-
-.noUi-connect {
+    background: steelblue;
+    opacity: 0.7;
     border-radius: 50%;
-}
-
-.noUi-vertical {
-    width: 16px;
-}
-
-.noUi-vertical .noUi-handle {
-    width: 28px;
-    height: 20px;
-    left: -7px;
-    top: -10px;
-}
-
-.noUi-vertical .noUi-handle:after,
-.noUi-vertical .noUi-handle:before {
-    width: 14px;
-    height: 1px;
-    left: 6px;
-    top: 8px;
-}
-
-.noUi-vertical .noUi-handle:after {
-    top: 10px;
-}
-
-.noUi-handle[data-handle="0"] {
-    background: #455;
-}
-
-.noUi-handle[data-handle="1"] {
-    background: #1A1;
-}
-
-.noUi-handle[data-handle="2"] {
-    background: #455;
+    border: none;
 }
