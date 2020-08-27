@@ -186,9 +186,9 @@ function playAudio(tuneID, audioSource) {
 
         OneAudioPlayer.playbackRate = speedSlider.noUiSlider.get() / 100;
 
-        var promise = OneAudioPlayer.play();
-        if (promise) {
-            promise.catch(function (error) {
+        var playPromise = OneAudioPlayer.play();
+        if (playPromise) {
+            playPromise.catch(function (error) {
                 console.error(error);
             });
         }
