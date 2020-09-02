@@ -15,7 +15,7 @@ parts: AB
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=m1je4L9WF2Q
-alt_mp3_url: 
+alt_mp3_url: https://www.youtube.com/watch?v=qD7PkDOzyFQ
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/827
