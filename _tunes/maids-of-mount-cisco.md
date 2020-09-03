@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags: 
 repeats: 2 
-parts: AABB 
+parts: AABCC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/maids-of-mount-cisco.mp3
