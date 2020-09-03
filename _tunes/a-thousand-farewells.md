@@ -15,7 +15,7 @@ parts: AABB
 mp3_source: Richard Tait
 mp3_licence: '© Richard Tait. All Rights Reserved.'
 mp3_url:
-alt_mp3_url: https://www.youtube.com/watch?v=rGbprYHV2Q8?start=67
+alt_mp3_url: https://www.youtube.com/watch?v=WDT_dQKLWZM
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/3739#setting25245
