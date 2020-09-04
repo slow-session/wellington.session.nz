@@ -80,8 +80,8 @@ collections:
   obrientunes:
     output: true
 
-#  pottstunes:
-#    output: true
+  pottstunes:
+    output: true
 
   sets:
     output: true
@@ -97,11 +97,11 @@ defaults:
     values:
         layout: "tunepage-obrien"
         permalink: /obrientunes/:title:output_ext
-#  - scope:
-#        path: "_pottstunes"
-#    values:
-#        layout: "tunepage-potts"
-#        permalink: /pottstunes/:title:output_ext
+  - scope:
+        path: "_pottstunes"
+    values:
+        layout: "tunepage-potts"
+        permalink: /pottstunes/:title:output_ext
   - scope:
         path: "_sets"
     values:
