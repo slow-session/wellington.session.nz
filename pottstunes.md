@@ -22,7 +22,7 @@ We've added audio of versions of the recordings (with some clean up of the audio
 <script>
     window.store = {
       {% assign tuneID = 3000 %}
-      {% assign tunes =  site.pottstunes  %}
+      {% assign tunes =  site.pottstunes %}
       {% for tune in tunes %}
         {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
@@ -37,10 +37,10 @@ We've added audio of versions of the recordings (with some clean up of the audio
     };
 </script>
 
-{% include tunesPottsGrid.html%}
+{% include tunesPottsGrid.html %}
 
 <script>
 $(document).ready(function() {
-
+    console.log("Ready");
 });
 </script>
