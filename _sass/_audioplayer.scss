@@ -540,6 +540,30 @@ tr#no_hover:hover {
     background-color: darken($complimentary-color, 6%);
 }
 
+// if the height is 320px we show 10 tunes in the table
+.tunesPottsLayout{
+    display: grid;
+    height: 320px;
+    max-width: 600px;
+    grid-template-columns: minmax(300px, 600px);
+    grid-auto-rows: fit-content(1em);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tunesPottsLayout > span {
+    display: flex;
+    padding: 4px 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tunesPottsLayout > span:nth-child(4n+1),
+.tunesPottsLayout > span:nth-child(4n+2) {
+    background-color: darken($complimentary-color, 6%);
+}
+
 .titleSpanLeft {
     background-color: $brand-color;
     color: darken($complimentary-color, 10%);

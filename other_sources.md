@@ -21,6 +21,10 @@ Sets of tunes put together by Paddy O'Brien:
   * [Local copy of obrien.pdf](/tunebooks/obrien.pdf "PDF")
   * [O'Brien sets on line](/obrientunes/)
 
+Tommy Potts:
+
+ * [Audio of a set of twelve video clips of Tommie Potts being interview by Mícheál Ó Súilleabháin](/pottstunes/)
+
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
  * [The Northern Fiddler](/tunebooks/The_Northern_Fiddler.pdf) 
