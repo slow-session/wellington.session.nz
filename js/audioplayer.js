@@ -205,15 +205,24 @@ function playAudio(tuneID, audioSource) {
 
 function changeTune(tuneID) {
     var item = store[tuneID];
-    document.getElementById('abcText').innerHTML = item.abc;
-
+    
+    var abcText = document.getElementById('abcText');
+    if (abcText) {
+        abcText.innerHTML = item.abc;
+    }
     // Clear the loop preset display
-    document.getElementById('loopPresetControls').innerHTML = '';
+    var loopPresetControls = document.getElementById('loopPresetControls');
+    if (loopPresetControls) {
+        loopPresetControls.innerHTML = '';
+    }
     var tuneInfo = document.getElementById("tuneInfo");
     if (tuneInfo) {
         tuneInfo.innerHTML = '';
     }
-    document.getElementById('loopForm').style.display = "none";
+    var loopForm = document.getElementById('loopForm');
+    if (loopForm) {
+        loopForm.style.display = "none";
+    }
     presetLoopSegments = [];
 
     // If we have a modal make it visible

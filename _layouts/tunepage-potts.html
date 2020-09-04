@@ -1,0 +1,80 @@
+---
+layout: page
+---
+<div class="attribution">
+Added <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+{% if page.notes %}
+<p>Notes: {{ page.notes }}</p>
+{% endif %}
+</div>
+<br />
+
+<div id="audioPlayer"></div>
+<div style="overflow-x:auto;">
+<div id="showPlayer"></div>
+</div>
+
+<script>
+function show_iframe(url) {
+    // Add other sources as needed
+    if (url.includes('www.youtube.com')) {
+        url = url.replace('&t=', '?start=');
+        document.write('<iframe src="https://www.youtube.com/embed/' + url.split('v=')[1] + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>');
+    }
+}
+</script>
+
+<div class="attribution">
+    <br />
+    {% if page.mp3_file %}
+        <p class="attribution">The audio for {{ page.title }} is sourced from
+        {% if page.mp3_url %}
+            <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        {% else %}
+            {{ page.mp3_source }}.
+        {% endif %}
+        Permission to use is gratefully acknowledged and the audio is made available under this licence:
+        {{ page.mp3_licence }}</p>
+
+        {% if page.mp3_url %}
+        <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
+        <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
+        <p><script>
+        show_iframe("{{ page.mp3_url }}");
+        </script>
+        </p>
+        {% endif %}
+    {% endif %}
+</div>
+
+<div id="debug"></div>
+
+<!-- Show errors -->
+<div id='warnings'></div>
+
+{% assign tuneID = 100 %}
+<script>
+var tuneID = "{{ tuneID }}";
+
+window.store = {
+    "{{ tuneID }}": {
+        "title": "{{ page.title | xml_escape }}",
+        "tuneID": "{{ tuneID }}",
+        "key": "{{ page.key | xml_escape }}",
+        "rhythm": "{{ page.rhythm | xml_escape }}",
+        "url": "{{ page.url | xml_escape }}",
+        "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
+        "mp3_source": "{{ page.mp3_source | strip_html | xml_escape }}",
+        "repeats": "{{ page.repeats }}",
+        "parts": "{{ page.parts }}",
+        "abc": {{ page.abc | jsonify }}
+    },
+};
+
+$(document).ready(function() {
+    audioPlayer.innerHTML = createAudioPlayer();
+
+    changeTune(tuneID);
+
+});
+</script>
