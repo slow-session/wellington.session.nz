@@ -559,8 +559,7 @@ tr#no_hover:hover {
     align-items: center;
 }
 
-.tunesPottsLayout > span:nth-child(4n+1),
-.tunesPottsLayout > span:nth-child(4n+2) {
+.tunesPottsLayout > span:nth-child(2n+1) {
     background-color: darken($complimentary-color, 6%);
 }
 
