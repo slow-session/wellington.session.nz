@@ -1,5 +1,5 @@
 ---
-title: Yellow Tinker
+title: Yellow Tinker aka Drunken Tinker
 titleID: yellow-tinker.md
 key: Amix
 rhythm: reel
