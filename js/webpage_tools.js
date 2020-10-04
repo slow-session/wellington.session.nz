@@ -68,3 +68,34 @@ function enable_button() {
     submit_button.style.opacity = 1.0;
     submit_button.style.cursor = 'pointer';
 }
+
+function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    var files = evt.target.files; // FileList object.
+    var fileInfo = document.getElementById('fileInfo');
+    var audioPlayer = document.getElementById('audioPlayer');
+    var showPlayer = document.getElementById('showPlayer');
+    audioPlayer.innerHTML = createAudioPlayer();
+
+    // files is a FileList of File objects. List some properties.
+    for (var i = 0, f; f = files[i]; i++) {
+        if (f.type.indexOf('audio') == 0) {
+            fileInfo.innerHTML = `<h2>${f.name}<h2>`;
+            showPlayer.innerHTML = '';
+        } else {
+            fileInfo.innerHTML = `Error: Unsupported file type: ${f.type}`;
+            audioPlayer.innerHTML = '';
+            showPlayer.innerHTML = '';
+            continue;
+        }       
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            //showPlayer.src = this.result;
+            showPlayer.innerHTML = createMP3player('100', this.result);
+            createSliders('100');
+        };
+        reader.readAsDataURL(f);
+    }
+}

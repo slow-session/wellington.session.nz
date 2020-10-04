@@ -9,11 +9,11 @@ You can use this page to slow down a number of audio and video formats and play 
 .mp3, .m4a, .ogg, .wav
 </div>
 
-And other formats might work as well.
-
 You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-converter/">YouTube to MP3 Converter</a> to extract the audio from YouTube and Facebook videos and store MP3 files locally.
 
+<span title="Supported file types: .mp3, .m4a, .ogg, .wav">
 <input type="file" id="files" class='filterButton' name="files[]"  accept="audio/x-m4a, audio/mpeg, audio/ogg, audio/wav"/>
+</span>
 
 <output id="fileInfo"></output>
 
@@ -23,37 +23,6 @@ You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-conver
 </div>
 
 <script>
-function handleFileSelect(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-
-    var files = evt.target.files; // FileList object.
-    var fileInfo = document.getElementById('fileInfo');
-    var audioPlayer = document.getElementById('audioPlayer');
-    var showPlayer = document.getElementById('showPlayer');
-    audioPlayer.innerHTML = createAudioPlayer();
-
-    // files is a FileList of File objects. List some properties.
-    for (var i = 0, f; f = files[i]; i++) {
-        if (f.type.indexOf('audio') == 0) {
-            fileInfo.innerHTML = '<h2>' + f.name + '<h2>';
-            showPlayer.innerHTML = '';
-        } else {
-            fileInfo.innerHTML = f.name + ' - unsupported file type';
-            audioPlayer.innerHTML = '';
-            showPlayer.innerHTML = '';
-            continue;
-        }       
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            //showPlayer.src = this.result;
-            showPlayer.innerHTML = createMP3player('100', this.result);
-            createSliders('100');
-        };
-        reader.readAsDataURL(f);
-    }
-}
-
 // Check for the various File API support.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
