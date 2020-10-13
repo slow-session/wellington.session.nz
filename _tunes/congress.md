@@ -1,7 +1,7 @@
 ---
 title: The Congress Reel
 titleID: congress.md
-key: G
+key: Ador
 rhythm: reel
 mode:
 date: 2017-05-18
@@ -27,7 +27,7 @@ abc: |
     O:Ireland
     M:C
     L:1/8
-    K:G
+    K:Ador
     "Am" eAAG A2 (3Bcd | "Am" eaaf "G" gedg | "F/Am" eA ~A2 eA ~A2 | "G" BG ~G2       GABd |
     "Am" eAAG A2    Bd | "Am" eaaf "G" gedB | "F" cBcd        eged | "E/G" cABG "Am" A2 Bd :|
     |:"Am" eaag a2    ag | eaaf          gedg | "G" egdg        egdg | "Em" eaaf        gedg |
