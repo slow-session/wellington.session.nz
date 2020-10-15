@@ -3,15 +3,15 @@ title: The March Of The Meena Toiteen Bull (Three Parts)
 titleID: the-march-of-the-meena-toiteen-bull.md
 key: Amix
 rhythm: highland
-notes:
+notes: Doherty plays this AABBCCBBAABBCC
 date: 2020-10-14
 regtuneoftheweek:
 slowtuneoftheweek:
 tags:
 location: Wellington
 mp3_file: /mp3/the-march-of-the-meena-toiteen-bull.mp3
-repeats: 2
-parts: AABBCC
+repeats: 1
+parts: AABBCCBBAABBCC
 mp3_source: John Doherty
 mp3_licence: Fair Use
 mp3_url: https://open.spotify.com/track/3u4ted3S6dBhidz5MEiOjD?si=ptIJIjTJSAGVvDRSmh4uwQ
