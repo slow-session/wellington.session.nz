@@ -2,11 +2,11 @@
 title: The March Of The Meena Toiteen Bull (Three Parts)
 titleID: the-march-of-the-meena-toiteen-bull.md
 key: Amix
-rhythm: march
+rhythm: highland
 notes:
 date: 2020-10-14
 regtuneoftheweek:
-slowtuneoftheweek: 2020-10-14
+slowtuneoftheweek:
 tags:
 location: Wellington
 mp3_file: /mp3/the-march-of-the-meena-toiteen-bull.mp3
@@ -22,10 +22,10 @@ abc_url: https://thesession.org/tunes/2123
 abc: |
     X: 1
     T: The March of the Meena Toiteen Bull
-    R: jig
+    R: highland
     C: John Doherty
     S: The Northern Fiddler
-    M: 4/4
+    M: C
     L: 1/8
     K: Amix
     |:A2BA e2ef |edBd e2 {a}g2| G2 GB {de}e2 {g}e2|dBGB d2 {g}e2|
