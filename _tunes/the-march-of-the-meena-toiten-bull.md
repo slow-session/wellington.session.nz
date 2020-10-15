@@ -1,5 +1,5 @@
 ---
-title: The March Of The Meena Toiteen Bull
+title: The March Of The Meena Toiteen Bull (Three Parts)
 titleID: the-march-of-the-meena-toiteen-bull.md
 key: Amix
 rhythm: march
@@ -11,11 +11,11 @@ tags:
 location: Wellington
 mp3_file: /mp3/the-march-of-the-meena-toiteen-bull.mp3
 repeats: 2
-parts: 2
+parts: AABBCC
 mp3_source: John Doherty
-mp3_licence: "© John Doherty. All Rights Reserved."
+mp3_licence: Fair Use
 mp3_url: https://open.spotify.com/track/3u4ted3S6dBhidz5MEiOjD?si=ptIJIjTJSAGVvDRSmh4uwQ
-alt_mp3_url: 
+alt_mp3_url: https://www.youtube.com/watch?v=QFF7BqUaZq8
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/2123
