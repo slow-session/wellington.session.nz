@@ -51,7 +51,7 @@ tuneOfTheWeek = {
 
 ## Recent slow session tunes of the week
 
-These are the <span id="tunesCount"></span> tunes we've been learning over the last few months.
+These are the previous <span id="tunesCount"></span> tunes of the week.
 
 <script>
 window.store = {
@@ -86,10 +86,9 @@ $.extend(window.store, tuneOfTheWeek);
 
 {% include tunesArchiveGrid.html%}
 
-Latest Tunes
-------------
+## Latest Tunes
 
-We add new tunes to the archive reasonably often. 
+We add new tunes to the archive reasonably often.
 You can check those out in our <a href="/latest/"><button class="filterButton"> Latest Tunes</button></a> page.
 
 {% include tuneModal.html%}
