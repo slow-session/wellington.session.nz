@@ -6,19 +6,19 @@ keywords: irish, traditional, music, jigs, reels, polkas, craic
 description: Irish trad tune archive
 
 # Parameters embedded in site
-slowsession_time: "7:30 to 8:30"
+slowsession_time: '7:30 to 8:30'
 #slowsession_time: "Please check back when the world is normal!"
-session_time: "8:45 to late"
+session_time: '8:45 to late'
 #session_time: "Please check back when the world is normal!"
 defaultABCplayer: 'piano'
 # no of tunes to show in latest.md etc
 latest_tunes_max: 20
-slow_tunes_max: 20
+slow_tunes_max: 100
 reg_tunes_max: 20
 
 # Only use this if you are serving your site via Github Pages
 github:
-  url: "https://wellington.session.nz"
+  url: 'https://wellington.session.nz'
 
 header: yes
 header_sm: images/banner-small.jpg
@@ -27,7 +27,20 @@ header_large: images/banner-large.jpg
 header_xl: images/banner-xl.jpg
 
 # Exclude our ruby stuff and other dirs
-exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, .last_optimized, _scripts, documentation, archive]
+exclude:
+  [
+    .bundle,
+    bin,
+    vendor,
+    Gemfile,
+    Gemfile.lock,
+    Rakefile,
+    s3_website.yml,
+    .last_optimized,
+    _scripts,
+    documentation,
+    archive,
+  ]
 
 # Build settings
 markdown: kramdown
@@ -65,13 +78,13 @@ facebook_image: /images/pubscene-small.jpg
 # Twitter Cards
 twitter_user:
 twitter_card: false
-twitter_image:                        #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+twitter_image: #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
 
 #
 # Additions for session.nz
 #
 mp3_host: # https://wellington.session.nz # leave blank if mp3 files are served from THIS SERVER
-js_host:  # leave blank if js files are served from THIS SERVER
+js_host: # leave blank if js files are served from THIS SERVER
 
 collections:
   tunes:
@@ -88,22 +101,22 @@ collections:
 
 defaults:
   - scope:
-        path: "_tunes"
+      path: '_tunes'
     values:
-        layout: "tunepage"
-        permalink: /tunes/:title:output_ext
+      layout: 'tunepage'
+      permalink: /tunes/:title:output_ext
   - scope:
-        path: "_obrientunes"
+      path: '_obrientunes'
     values:
-        layout: "tunepage-obrien"
-        permalink: /obrientunes/:title:output_ext
+      layout: 'tunepage-obrien'
+      permalink: /obrientunes/:title:output_ext
   - scope:
-        path: "_pottstunes"
+      path: '_pottstunes'
     values:
-        layout: "tunepage-potts"
-        permalink: /pottstunes/:title:output_ext
+      layout: 'tunepage-potts'
+      permalink: /pottstunes/:title:output_ext
   - scope:
-        path: "_sets"
+      path: '_sets'
     values:
-        layout: "setpage"
-        permalink: /sets/:title:output_ext
+      layout: 'setpage'
+      permalink: /sets/:title:output_ext
