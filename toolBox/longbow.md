@@ -38,7 +38,10 @@ timing and you can change the values as you see fit.
 
 <div class="row"></div>
 
-<div id="longBowTimers" class="longBowTimers"></div>
+<div id="longBowTimers" class="longBowTimers">
+<div id="longBowTimersHeader"></div>
+<div id="longBowTimersBody"></div>
+</div>
 
 <script>
 var running = 0;
@@ -50,16 +53,16 @@ async function bowTimer(practiceTime, bowTime) {
         running = 1;
 
         document.getElementById('longBowTimers').style.display = "block";
-
-        // Allow time to pick up instrument
-        document.getElementById("longBowTimers").innerHTML = "Get ready.";
-        for (repeat=5;repeat>0;repeat--) {
-            document.getElementById("longBowTimers").innerHTML += ".." + repeat;
-            await sleep(1000);
-        }
         // Set up the timer bars
         for (repeat=1;repeat<=repeats;repeat++) {
             setupDiv(repeat);
+        }
+        // Allow time to pick up instrument
+        document.getElementById("longBowTimersHeader").innerHTML = "Get ready.";
+        // Countdown to start 
+        for (repeat=5;repeat>0;repeat--) {
+            document.getElementById("longBowTimersHeader").innerHTML += ".." + repeat;
+            await sleep(1000);
         }
         // Draw the timers
         for (repeat=1;repeat<=repeats;repeat++) {
@@ -74,7 +77,7 @@ async function bowTimer(practiceTime, bowTime) {
 
 function setupDiv (repeat) {
     if (elem = document.getElementById("progress" + repeat)) {
-        document.getElementById("longBowTimers").removeChild(elem);
+        document.getElementById("longBowTimersBody").removeChild(elem);
     }
 
     var divProgress = document.createElement("div");
@@ -83,9 +86,8 @@ function setupDiv (repeat) {
         divProgress.setAttribute('class', 'longBowProgressLR');
     } else {
         divProgress.setAttribute('class', 'longBowProgressRL');
-
     }
-    document.getElementById("longBowTimers").appendChild(divProgress);
+    document.getElementById("longBowTimersBody").appendChild(divProgress);
 
     if (!document.getElementById("bar" + repeat)) {
         var divBar = document.createElement("div");
