@@ -10,10 +10,10 @@ tags:
 repeats: 2
 parts: AABB
 regtuneoftheweek: 2019-11-22
-slowtuneoftheweek:
+slowtuneoftheweek: 2020-11-01
 mp3_file: /mp3/donegal-lass.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
-mp3_licence: "© Katie Davis Henderson. All Rights Reserved."
+mp3_licence: '© Katie Davis Henderson. All Rights Reserved.'
 mp3_url: https://www.youtube.com/watch?v=HueR0fkq3sE
 alt_mp3_url: https://www.youtube.com/watch?v=YLUMaoPHMsc
 source: Wellington
@@ -33,5 +33,4 @@ abc: |
     Ac/d/e aed|cdB A2 a|aed cdB|ABG ~A2 A:|
     |:GBd ~G2 G|FAd ~f2 f|~e2 e ecA|c/d/ec dBA|
     GBd ~G2 G|FAd ~f2 a|aed cdB|ABG ~A2 A:|
-
 ---
