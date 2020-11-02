@@ -1,0 +1,18 @@
+<!-- START of code included from focustunes.html -->
+
+<div class="gridParent">
+    <div class="gridChild">
+    </div>
+    <div id="{{ include.divID }}">
+
+    </div>
+</div>
+
+<script>
+    // We pass the "storeName" twice because we need the name and the storage
+    // object as separate entities
+    displayFocusTunesGrid("{{ include.divID }}", "{{ include.storeName }}", {{ include.storeName }});
+</script>
+
+<!-- END of code included from focustunes.html -->
+                

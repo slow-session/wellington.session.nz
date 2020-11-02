@@ -6,7 +6,7 @@ rhythm: jig
 date: 2018-03-13
 location: Wellington
 notes:
-tags: slow-favourite vicfolk
+tags: slow-popular slow-favourite vicfolk
 repeats: 
 parts: 
 regtuneoftheweek:

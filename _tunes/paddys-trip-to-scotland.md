@@ -6,7 +6,7 @@ rhythm: reel
 date: 2016-06-02
 location: Auckland Wellington Christchurch
 notes:
-tags: slow-favourite vicfolk slowsession ceol-aneas
+tags: slow-popular slow-favourite vicfolk slowsession ceol-aneas
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

@@ -1,20 +1,26 @@
-- title: "home"
-  href: "/"
+- title: 'home'
+  href: '/'
 
-- title: "Slow Session"
-  href: "/slowsession/"
+- title: "Sessions"
+  subcategories:
+    - subtitle: "Slow Session"
+      subhref: "/slowsession/"
+    - subtitle: "Regular Session"
+      subhref: "/regularsession/"
 
-- title: "Tunes"
-  href: "/tunes_archive/"
+- title: 'Tunes Archive'
+  href: '/tunes_archive/'
 
-- title: "Sets"
-  href: "/build_a_set/"
+- title: 'Other Sources'
+  href: '/other_sources/'
 
-- title: "Learn by Ear"
-  href: "/learn_by_ear/"
+- title: 'Learn by Ear'
+  href: '/learn_by_ear/'
 
-- title: "Other Sources"
-  href: "/other_sources/"
+- title: 'Sets'
+  href: '/build_a_set/'
 
-- title: "Toolbox"
-  href: "/toolbox/"
+- title: 'Toolbox'
+  href: '/toolbox/'
+
+

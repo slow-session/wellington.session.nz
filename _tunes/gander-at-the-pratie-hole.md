@@ -6,7 +6,7 @@ rhythm: jig
 date: 2016-01-26
 location: Arrowtown Wellington
 notes:
-tags: slow-favourite slowsession
+tags: slow-popular slow-favourite slowsession
 repeats: 3 
 parts: AABB 
 regtuneoftheweek:

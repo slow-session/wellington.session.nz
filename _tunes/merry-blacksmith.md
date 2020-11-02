@@ -7,7 +7,7 @@ mode:
 date: 2016-3-2
 location: Arrowtown Wellington
 notes:
-tags: slow-favourite slowsession wellyfest ceol-aneas
+tags: slow-popular slow-favourite slowsession wellyfest ceol-aneas
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

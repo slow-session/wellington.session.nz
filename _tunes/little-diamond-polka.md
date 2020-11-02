@@ -7,7 +7,7 @@ mode:
 date: 2016-01-26
 location: Wellington
 notes:
-tags: slow-favourite slowsession
+tags: slow-popular slow-favourite slowsession
 repeats: 2
 parts: AABB
 regtuneoftheweek:

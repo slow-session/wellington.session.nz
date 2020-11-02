@@ -7,7 +7,7 @@ mode:
 date: 2016-05-25
 location: Wellington
 notes:
-tags: slow-favourite vicfolk slowsession
+tags: slow-popular slow-favourite vicfolk slowsession
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

@@ -6,7 +6,7 @@ rhythm: reel
 date: 2019-06-02
 location: Wellington
 notes:
-tags: ca-fiddle-2019
+tags: slow-popular ca-fiddle-2019
 repeats: 3
 parts: AB
 regtuneoftheweek:

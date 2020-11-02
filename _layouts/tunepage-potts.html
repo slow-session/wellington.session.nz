@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<div class="attribution">
+<div>
 Added <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
 {% if page.notes %}
 <p>Notes: {{ page.notes }}</p>
@@ -24,10 +24,10 @@ function show_iframe(url) {
 }
 </script>
 
-<div class="attribution">
+<div>
     <br />
     {% if page.mp3_file %}
-        <p class="attribution">The audio for {{ page.title }} is sourced from
+        <p>The audio for {{ page.title }} is sourced from
         {% if page.mp3_url %}
             <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
         {% else %}
@@ -74,7 +74,7 @@ window.store = {
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    changeTune(tuneID);
+    changeTune(window.store, tuneID);
 
 });
 </script>

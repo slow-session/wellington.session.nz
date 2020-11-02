@@ -7,7 +7,7 @@ mode:
 date: 2016-01-26
 location: Raglan Auckland Arrowtown Wellington
 notes:
-tags: slow-favourite vicfolk slowsession
+tags: slow-popular slow-favourite vicfolk slowsession
 repeats: 2
 parts: AABB
 regtuneoftheweek:
