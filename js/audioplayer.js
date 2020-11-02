@@ -203,13 +203,14 @@ function playAudio(tuneID, audioSource) {
 
 }
 
-function changeTune(tuneID) {
-    var item = store[tuneID];
+function changeTune(storeID, tuneID) {
+    var item = storeID[tuneID];
     
     var abcText = document.getElementById('abcText');
     if (abcText) {
         abcText.innerHTML = item.abc;
     }
+    
     // Clear the loop preset display
     var loopPresetControls = document.getElementById('loopPresetControls');
     if (loopPresetControls) {
@@ -255,7 +256,7 @@ function changeTune(tuneID) {
             //myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
             if (item.repeats && item.parts) {
                 //myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
-                buildSegments(tuneID);
+                buildSegments(item);
                 if (presetLoopSegments.length) {
                     document.getElementById('loopPresetControls').innerHTML = createLoopControlsContainer();
                 }
@@ -358,8 +359,7 @@ function restartLoop() {
     OneAudioPlayer.play();
 }
 
-function buildSegments(tuneID) {
-    var item = store[tuneID];
+function buildSegments(item) {
     var parts = item.parts;
     var repeats = item.repeats;
     var mySegment;
@@ -548,7 +548,6 @@ function Adjust_up(row, inputBox) {
     var checkBox = document.getElementById(elementName);
     NumValue = Number(checkBox.value)
     if (NumValue <= (OneAudioPlayer.duration - 0.2)) {
-        //alert("up "+checkBox.value);
         checkBox.value = Number(NumValue + 0.2).toFixed(1);
         if (((EndLoopTime - checkBox.value) > 0.21) & (inputBox == 2)) {
             // don't change sliders if not at either end (0.21 overcomes rounding)
@@ -562,7 +561,6 @@ function Adjust_up(row, inputBox) {
             OneAudioPlayer.currentTime = checkBox.value;
         }
         CurrentAudioSlider.noUiSlider.setHandle(inputBox, checkBox.value);
-        //alert(checkBox.value);
         if (inputBox == 0) {
             BeginLoopTime = checkBox.value;
         } else if (inputBox == 2) {
@@ -584,7 +582,6 @@ function Adjust_down(row, inputBox) {
     var checkBox = document.getElementById(elementName);
     NumValue = Number(checkBox.value)
     if (NumValue >= 0.2) {
-        //alert("dn "+checkBox.value);
         checkBox.value = Number(NumValue - 0.2).toFixed(1);
         if (((EndLoopTime - checkBox.value) > 0.21) & (inputBox == 2)) {
             // don't change sliders if not at either end (0.21 overcomes rounding)

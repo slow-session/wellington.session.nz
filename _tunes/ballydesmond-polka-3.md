@@ -6,7 +6,7 @@ rhythm: polka
 date: 2016-09-28
 location: Raglan Arrowtown Wellington
 notes:
-tags: slow-favourite vicfolk slowsession wellyfest
+tags: slow-popular slow-favourite vicfolk slowsession wellyfest
 repeats: 2 
 parts: AABB
 regtuneoftheweek:

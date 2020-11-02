@@ -7,7 +7,7 @@ mode:
 date: 2015-11-1
 location: Arrowtown Wellington
 notes:
-tags: slow-favourite vicfolk slowsession ceol-aneas
+tags: slow-popular slow-favourite vicfolk slowsession ceol-aneas
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

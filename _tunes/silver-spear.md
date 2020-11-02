@@ -6,7 +6,7 @@ rhythm: reel
 date: 2016-03-02
 location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
-tags: slow-favourite vicfolk slowsession
+tags: slow-popular slow-favourite vicfolk slowsession
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

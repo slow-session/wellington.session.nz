@@ -6,7 +6,7 @@ rhythm: jig
 date: 2016-10-26
 location: Prebbleton Raglan Arrowtown Wellington Christchurch
 notes:
-tags: slow-favourite vicfolk slowsession
+tags: slow-popular slow-favourite vicfolk slowsession
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

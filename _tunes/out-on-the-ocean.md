@@ -6,7 +6,7 @@ rhythm: jig
 date: 2016-1-26
 location: Raglan Auckland Arrowtown Wellington Christchurch
 notes:
-tags: slow-favourite slowsession wellyfest
+tags: slow-popular slow-favourite slowsession wellyfest
 repeats: 2 
 parts: AABB 
 regtuneoftheweek:

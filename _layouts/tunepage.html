@@ -109,10 +109,10 @@ function show_iframe(url) {
 }
 </script>
 
-<div class="attribution">
+<div>
     <br />
     {% if page.mp3_file %}
-        <p class="attribution">The audio for {{ page.title }} is sourced from
+        <p>The audio for {{ page.title }} is sourced from
         {% if page.mp3_url %}
             <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
         {% else %}
@@ -191,7 +191,7 @@ function toggle(button) {
 $(document).ready(function() {
     audioPlayer.innerHTML = createAudioPlayer();
 
-    changeTune(tuneID);
+    changeTune(window.store, tuneID);
 
     // Initialise text area
     var textAreaID = 'ABC' + tuneID;

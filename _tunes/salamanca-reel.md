@@ -11,7 +11,7 @@ tags: slowsession
 repeats: 3
 parts: AABB
 regtuneoftheweek:
-slowtuneoftheweek: 2020-02-29
+slowtuneoftheweek: 2020-10-30
 mp3_file: /mp3/salamanca-reel.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: '© Fergal Scahill. All Rights Reserved.'

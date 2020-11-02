@@ -7,7 +7,7 @@ mode:
 date: 2016-09-28
 location: Wellington
 notes:
-tags: whistle-class
+tags: slow-popular whistle-class
 repeats: 2 
 parts: AABB
 regtuneoftheweek:

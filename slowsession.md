@@ -4,33 +4,25 @@ title: Wellington Slow Session
 permalink: /slowsession/
 ---
 
-We meet on Tuesday nights from {{ site.slowsession_time }} at the <a href="/dragon/">
-Welsh Dragon Bar</a>, 10/12 Cambridge Terrace, Wellington 6011, New Zealand.
-Players who want to play traditional Irish music at a relaxed pace are welcome.
+{% include slowsession/details.html %}
 
-The slow session is an opportunity for players who are starting out with Irish
-traditional music and want an opportunity to play tunes that they're learning
-or have already learnt with others in a supportive environment.
-We don't teach tunes directly in this session but it's a great chance to practice
-playing with others. There's some scope for accompaniment but the focus is on the
-melody instruments.
+If you're new to session playing or want to know more about our slow session, please check out our <a href="/intro-to-slowsession/">Introduction to Wellington Slow Session</a> page.
 
-See our <a href="/slowguidelines/"><button class="filterButton">Guidelines for the Slow Session</button></a> if you need more information.
+<script src="/js/build_grid_focustunes.js"></script>
 
-## Tune of the Week
+## Current Focus Tunes
 
-We pick one tune for homework each week, and we’ll play it sometime during the first hour.
-
-{% assign legend="Tune of the week" %}
-{% assign tuneID = 100 %}
-{% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
-{% assign tune = sortedtunes.first %}
-{% if tune.slowtuneoftheweek %}
-
-{% include tuneoftheweek.html %}
+We have a number of tunes we're currently focusing on. We'll play
+these at some point during the slow session each week. The list will change regularly.
 
 <script>
-tuneOfTheWeek = {
+window.currentFocusTunes =  {
+    {% assign focustunecount = 4 %}
+    {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+    {% assign tune_count = 0 %}
+    {% assign tuneID = 1 %}
+    {% for tune in sortedtunes %}
+    {% if tune_count < focustunecount %}
     "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -43,24 +35,25 @@ tuneOfTheWeek = {
         "parts": "{{ tune.parts }}",
         "abc": {{ tune.abc | jsonify }}
     },
+    {% endif %}
+    {% assign tune_count = tune_count | plus: 1 %}
+    {% assign tuneID = tuneID | plus: 1 %}
+    {% endfor %}
 };
-
 </script>
 
-{% endif %}
+{% include focustunes.html divID="gridCurrentFocusTunes" storeName="window.currentFocusTunes" %}
 
-## Recent slow session tunes of the week
+## Previous Focus Tunes
 
-These are the previous <span id="tunesCount"></span> tunes of the week.
+Here are the tunes we've focussed on over the last few years.
 
 <script>
-window.store = {
-{% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
-{% assign tune_count = 0 %}
-{% assign tuneID = 200 %}
-{% for tune in sortedtunes %}
-    {% if tune_count > 0 %}
-        {% if tune.slowtuneoftheweek %}
+window.currentTunes = {
+    {% assign sortedtunes = site.tunes | sort: 'slowtuneoftheweek' | reverse %}
+    {% assign tuneID = 1 %}
+    {% for tune in sortedtunes %}
+    {% if tune.slowtuneoftheweek %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -72,26 +65,22 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count < site.slow_tunes_max %},{% else %}{% break %}{% endif %}
-        {% endif %}
+        },
     {% endif %}
-    {% assign tune_count = tune_count | plus: 1 %}
     {% assign tuneID = tuneID | plus: 1 %}
-{% endfor %}
+    {% endfor %}
 };
 
-// Add tune of the week into the window.store
-$.extend(window.store, tuneOfTheWeek);
 </script>
 
-{% include tunesArchiveGrid.html%}
+{% include focustunes.html divID="gridCurrentTunes" storeName="window.currentTunes" %}
+
+{% include tuneModal.html%}
 
 ## Latest Tunes
 
-We add new tunes to the archive reasonably often.
-You can check those out in our <a href="/latest/"><button class="filterButton"> Latest Tunes</button></a> page.
-
-{% include tuneModal.html%}
+We add new tunes to the main Tunes Archive reasonably often.
+You can check those out in our <a href="/latest/">Latest Tunes</a> page.
 
 <script>
 $(document).ready(function() {
