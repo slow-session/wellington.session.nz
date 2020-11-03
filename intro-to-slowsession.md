@@ -13,7 +13,7 @@ or have already learnt with others in a supportive environment.
 We don't teach tunes in this session but it's a great chance to practice
 playing with others. The focus is on melody instruments, but there is some scope for accompaniment. Learning by ear, and playing tunes from memory is strongly encouraged. Please read the <a href="/learn_by_ear/"> Learn by Ear</a> page. 
 
-See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information. In particular, accompanists should read the <a href="/accompaniment>Accompanists and rhythm players</a> section on that page.
+See our <a href="/slowguidelines/">Guidelines for the Slow Session</a> if you need more information. In particular, accompanists should read the <a href="/accompaniment">Accompanists and rhythm players</a> section on that page.
 
 <script src="/js/build_grid_focustunes.js"></script>
 
