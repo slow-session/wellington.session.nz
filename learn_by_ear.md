@@ -24,13 +24,9 @@ When you’re in a session, the tunes change fast, and frequently 4 or 5 tunes a
 
 Playing by ear is hard at first, especially for people who have become proficient at playing by reading music.  It gets much easier with practice, and it is a skill worth learning.
 
-## Accompanists and rhythm players
+## Accompaniment in the Irish Session
 
-All of the advice above applies to guitar, bouzouki and other non-melody players and percussionists. You need to hear the tunes in your head - listen to the tune until you can hum or lilt it! Use the slow down options and play along with the tunes until you’re happy that what you’re playing fits.  There are many chord choices for the tunes, and often what is suggested in written music is only one of a number of choices.  When more than one accompanist is in a session it is important to listen to each other and coordinate the chord choices.
-
-In Irish Traditional music, the melody is the boss.  Rhythm players and accompanists must follow, not drive.  Remember it is much easier for you to speed up than it is for melody players (they have lots more notes to play).  And remember that the melody players will forgive the odd wrong chord or note but playing out of time is much harder to forgive.
-
-When in doubt, less is more.  There is no need to strum, or beat a drum with every beat.  You are not providing the rhythm, you are embellishing the music, with the tempo set by the melody players.
+We've got some notes about <a href="/accompaniment/">Accompaniment in the Irish Session</a> that you might find useful.
 
 ## Learning from your own music
 

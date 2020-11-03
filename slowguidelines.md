@@ -22,10 +22,5 @@ A word about Accompaniment
 
 There can be a tendency to confuse our kind of session with a “jam”, where “anything goes and nothing matters”, but there are some important differences. We think that as the melody in Irish traditional music is where the pulse and rhythm comes from there’s much less need for “accompaniment” than happens in other types of music. For that reason we want to ensure the balance doesn’t tip towards accompaniment over tune-playing.
 
-<a href="https://www.youtube.com/watch?v=BQLdUDEb8E0">It's not unusual</a> to see guitars, bouzoukis and bodhrans at Irish sessions and while these can enhance the session if they're in sympathetic hands there are a number of issues:
+<a href="https://www.youtube.com/watch?v=BQLdUDEb8E0">It's not unusual</a> to see guitars, bouzoukis and bodhrans at Irish sessions and while these can enhance the session if they're in sympathetic hands there are a number of issues. We've got some notes about <a href="/accompaniment/">Accompaniment in the Irish Session</a> that you might find useful.
 
-* When there are multiples of these instruments their volume can drown out the melody instruments and the music suffers. In the regular session the rule of thumb is no more than one guitar/bouzouki and no more than one bodhran playing at any one time. We're a little more relaxed as this is a learning session but during the session, don't take offence if you are asked to play more quietly/stop playing an accompanying instrument.
-
-* Sometimes people playing accompaniment see it as a shortcut into the joy and excitement of playing this music in a group, but playing accompaniment in a way that fits Irish traditional music requires practice. This is especially true since rhythm instruments can quickly overpower the feel of the melody. We think that it’s important to spend lots of time listening to Irish traditional music, both live and when you’re at home. That way you can get to know the tunes and the style really well before thinking about accompanying the music in a session.
-
-* We think that a number of instruments simply aren't appropriate at our session. In particular, loud, dominant instruments such as the bass and large drums.
