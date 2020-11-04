@@ -12,10 +12,11 @@ repeats: 2
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2020-10-30
-mp3_file: /mp3/salamanca-reel-new.mp3
-mp3_source: <a href="https://www.youtube.com/watch?v=2p9q7XwMoQo&feature=youtu.be">Ian Walsh</a>
-mp3_licence: YouTube Fair Use
-mp3_url: https://www.youtube.com/watch?v=IZG7doHupWI
+mp3_file: /mp3/salamanca-reel.mp3
+mp3_source: Ian Walsh
+mp3_licence: "© Ian Walsh. All Rights Reserved."
+mp3_url: https://www.youtube.com/watch?v=2p9q7XwMoQo
+alt_mp3_url: https://www.youtube.com/watch?v=IZG7doHupWI
 abc_source: The Session
 abc_url: https://thesession.org/tunes/99
 source: Wellington
