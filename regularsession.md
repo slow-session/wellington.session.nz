@@ -14,13 +14,13 @@ Many of the tunes that get played at the session are in the <a href="/tunes_arch
 
 <script src="/js/build_grid_focustunes.js"></script>
 
-## Current Focus Tune
+## Current Focus Tunes
 
-We often pick a tune to focus on, and we'll play it sometime during the evening.
+We often pick some tunes to focus on, and we'll probably play them sometime during the evening.
 
 <script>
 window.currentFocusTunes =  {
-    {% assign focustunecount = 1 %}
+    {% assign focustunecount = 4 %}
     {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
     {% assign tune_count = 0 %}
     {% assign tuneID = 1 %}
