@@ -8,8 +8,8 @@ date: 2016-3-2
 location: Arrowtown Wellington
 notes:
 tags: slow-popular slow-favourite slowsession wellyfest ceol-aneas
-repeats: 2 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/merry-blacksmith.mp3
@@ -26,8 +26,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    A |: "D" d3 A BAFA | ABdA BAFA | ABde fded | "A" Beed egfe |
-    "D" d3 A BAFA | ABdA BAFA | "G" ABde fdec | "A" dAAG "D" FAD:|
-    |: f | "D" a2ag fafe | dedA BAFA | ABde fded | "A" Beed e2fg |
-    "D" abag fgfe | dedA BAFA | "G" ABde fdec | "A" dAAG "D" FAD :|
+    "D" d3 A BAFA | ABdA BAFA | ABde ~f2ed | "A" Beed egfe |
+    "D" ~d3 A BAFA | ABdA BAFA | "G" ABde fdec |1 "A" dBAF "D" EDD2:|2dBAFD2fg||
+    |:  "D" a2ag ~f3e | d2dA BAFA | ABde f2ed | "A" Beed e2fg |
+    "D" abag fgfe | d2dA BAFA | "G" ABde fdec | "A" dBAF "D" D2fg :|
 ---

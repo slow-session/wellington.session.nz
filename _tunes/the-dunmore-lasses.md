@@ -8,8 +8,8 @@ date: 2016-1-26
 location: Raglan Arrowtown Wellington
 notes:
 tags: slow-popular slow-favourite vicfolk slowsession
-repeats: 2 
-parts: AABB 
+repeats: 2
+parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/the-dunmore-lasses.mp3
@@ -26,8 +26,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Emin
-    ~E3F ~G3A|Be~e2 Be~e2|~E3F G2BG|A2BA GEFD|
-    ~E3F ~G3A|Beed ~e3f| (3.g.f.e fd eBdB|AcBA GEFD:|
-    |:g2eg fedc|Be~e2 Be~e2|g2eg fedB|AcBA GE~E2|
-    g2eg fedc|Beed ~e3f| (3.g.f.e fd eBdB|AcBA GEE2:|
+    ~E3F GFGA|Beed Beed|~E3F G2BG|~A2BA GEFD|
+    ~E3F ~GFGA|Beed ~e3f| gefd eBAG|AcBA GEFD:|
+    |:g2eg fedA|Beed Beed|gfeg fedB|AcBA GE~E2|
+    g2eg fedA|Beed ~e3f| gefd eBAG|AcBA GEE2:|
 ---
