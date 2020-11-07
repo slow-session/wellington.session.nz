@@ -27,8 +27,8 @@ abc: |
     L: 1/8
     %Z: Modified by Megan Ward
     K: Gmaj
-    |:G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE EDDE|
+    |:G2 GD EDB,D|~G3B d2 Bd|eged BAGA|BAGE EDDE|
     G2 GD EDB,D|GFGB d2 Bd|eged BAGA|BAGE ED D2:|
-    |:ea a2 efge|dBBA B2 Bd|eB ~B2 egfg| eBBA B2 Bd|
-    ea a2 efge|dBBA B2 Bd|eged BAGA|BAGE EDD2:|
+    |:ea ag efge|dBBA B2 Bd|eB ~B2 egfg| eBBA B2 Bd|
+    ea ~a2 efge|dBBA B2 Bd|eged BAGA|BAGE EDD2:|
 ---
