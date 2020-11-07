@@ -20,15 +20,17 @@ source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/5246
 abc: |
-    X: 2
-    T: Tommy Coen's
-    R: reel
-    M: 4/4
-    L: 1/8
-    K: Gdor
-    |:G2 dG G/G/G dG|F2 cF dFcF|G2 dG G/G/G dG|FGAc dAcA|
-    G2 dG G/G/G dG|F2 cF dFcF|GFDE FGAc|dAcA G4:|
-    |:dggf ~g3e|f2 af cfaf|dggf ~g3e|fdcA FGAc|
-    dggf ~g3e|f2 af cfaf|~d3e fage|1 fdcA GABc:|2 fdcA G3F||
+    X: 1
+    T:Tommy Cohen #2
+    R:reel
+    D:session
+    Z:Richard Tait
+    M:C
+    K:F
+    |:BA|G2 dG G2 dG|F2 cF GF F2|G2 dG G2 dG|FGAc dAcA|
+    G2 dG G2 dG|F2 cF GF F2|FDCD FGAc|dAcA G2:|
+    |:Bc|dg g2 dgag|f2 af cfaf|dg g2 dgag|fdcA FGAc|
+    dg g2 dgag|f2 af cfaf|d2 de fage|fdcA G3 A:|
+
 
 ---
