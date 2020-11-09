@@ -26,11 +26,3 @@ We've accumulated a number of resources which you may find useful:
     * Tunes from a Fermanagh fiddle player who has lived in NZ for over 60 years
  * <a href="/other_sources/">Other Sources</a>
     * Recordings and tunebooks in ABC or PDF format
-
-{% include tuneModal.html%}
-
-<script>
-$(document).ready(function() {
-    audioPlayer.innerHTML = createAudioPlayer();
-});
-</script>
