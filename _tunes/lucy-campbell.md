@@ -15,7 +15,7 @@ parts: ABCD
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: '© Fergal Scahill. All Rights Reserved.'
 mp3_url: https://www.youtube.com/watch?v=61htVK74SmM
-alt_mp3_url: http://media.comhaltas.ie/audio/cl248/cl248_3.mp3
+alt_mp3_url: https://media.comhaltas.ie/audio/cl248/cl248_3.mp3
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/1552

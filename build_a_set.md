@@ -100,14 +100,12 @@ page.
 
 <!-- Area to store ABC -->
 
-<textarea id="ABCraw" style="display:none;"></textarea>
-
-<!-- Area to store unrolled ABC -->
-
-<textarea id="ABCprocessed" style="display:none;"></textarea>
+<textarea id="textAreaABC" style="display:none;"></textarea>
 
 <script>
 $(document).ready(function() {
-    ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
+    let tuneID = 1;
+    
+    ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
 });
 </script>

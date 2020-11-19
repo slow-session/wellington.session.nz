@@ -91,6 +91,9 @@ collections:
   tunes:
     output: true
 
+  northernfiddler:
+    output: true
+
   obrientunes:
     output: true
 
@@ -106,6 +109,11 @@ defaults:
     values:
       layout: 'tunepage'
       permalink: /tunes/:title:output_ext
+  - scope:
+        path: "_northernfiddler"
+    values:
+        layout: "tunepage-northernfiddler"
+        permalink: /northernfiddler/:title:output_ext
   - scope:
       path: '_obrientunes'
     values:

@@ -15,7 +15,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/paddy-faheys-reel-6.mp3
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_source: YouTube video
-mp3_url: https://youtu.be/x6qxqDdq4-c
+mp3_url: https://www.youtube.com/watch?v=x6qxqDdq4-c
 abc_source: The Session
 abc_url: https://thesession.org/tunes/859
 source: Wellington

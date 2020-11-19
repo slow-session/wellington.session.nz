@@ -20,11 +20,7 @@ function addABCtune(tuneID) {
 
     var regex = new RegExp('X:.*\n');
     var abcSource = item.abc.replace(regex, 'X: ' + tuneID + '\n');
-    document.getElementById('ABCraw').innerHTML += abcSource + "\n";
-
-    abcSource = item.abc.replace(regex, '');
-    document.getElementById('ABCprocessed').innerHTML += preProcessABC(abcSource) + "\n";
-    document.getElementById("filename").innerHTML = slugify(item.title) + '-set.abc';
+    document.getElementById('textAreaABC').innerHTML += abcSource + "\n";
 
     document.getElementById('modalControls').style.display = 'block';
     document.getElementById('setTuneTitles').innerHTML += item.title + '<br />';
@@ -36,16 +32,16 @@ function addABCtune(tuneID) {
 
     // create the paper for the tune dots each time the user selects tunes
     // This makes sure there's no extra white space after a reset
-    if (!document.getElementById('paper0')) {
+    if (!document.getElementById('abcPaper')) {
         var divPaper = document.createElement("div");
-        divPaper.id = 'paper0';
+        divPaper.id = 'abcPaper';
         divPaper.setAttribute('class', 'paper');
         divPaper.style.maxWidth = '650px';
         document.getElementById('output').appendChild(divPaper);
     }
 
-    abc_editor = new window.ABCJS.Editor("ABCraw", {
-        paper_id: 'paper0',
+    abc_editor = new window.ABCJS.Editor("textAreaABC", {
+        paper_id: 'abcPaper',
         midi_id: "midi",
         warnings_id: "warnings",
         render_options: {
@@ -57,15 +53,14 @@ function addABCtune(tuneID) {
 
 function Reset() {
     document.getElementById('paperHeader').style.display = "block";
-    document.getElementById('ABCraw').innerHTML = '';
-    document.getElementById('ABCprocessed').innerHTML = '';
+    document.getElementById('textAreaABC').innerHTML = '';
     document.getElementById('filename').innerHTML = '';
     document.getElementById('setTuneTitles').innerHTML = '';
     //document.getElementById('modalControls').style.display = 'none';
 
     // delete the paper for the tune dots after a reset
     // selecting new tunes will then create new paper
-    if (elem = document.getElementById('paper0')) {
+    if (elem = document.getElementById('abcPaper')) {
         document.getElementById('output').removeChild(elem);
     }
 

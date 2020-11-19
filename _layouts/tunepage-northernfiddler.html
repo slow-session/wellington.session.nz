@@ -31,17 +31,13 @@ layout: page
     <!-- attribution details-->
     <div>
         <br />
-        {% if page.abc_source %}
-        <p>The music notation was derived from
-        {% if page.abc_url %}
-        <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
-        {% else %}
-        {{ page.abc_source }}
-        {% endif %}
+        {% if page.musician != null and page.page != null %}
+        <p>The music notation was derived from the playing of {{ page.musician }}. See <a href="/tunebooks/The_Northern_Fiddler.pdf">The Northern Fiddler</a>, Page {{ page.page }}.
         {% endif %}
     </div>
     {% endif %}
 </div>
+
 
 {% assign tuneID = 1 %}
 <script>
@@ -53,17 +49,19 @@ window.store = {
         "key": "{{ page.key | xml_escape }}",
         "rhythm": "{{ page.rhythm | xml_escape }}",
         "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
+        "musician": "{{ page.musician | xml_escape }}",
+        "page": "{{ page.page | xml_escape }}",
         "abc": {{ page.abc | jsonify }}
     },
 };
 
 $(document).ready(function() {
     let tuneID = "{{ tuneID }}";
-
+    
     {% if page.abc contains "K:" %}    
     // create the ABC player
     document.getElementById('ABCplayer').innerHTML = 
-        createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');    
+        createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
     {% endif %}
 
     selectTune(window.store, tuneID);

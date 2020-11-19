@@ -83,7 +83,7 @@
              var tuneID = tuneIDs[i];
 
              tableRow += '<tr class="tdArchive" style="background-color:transparent;"><td>';
-             tableRow += '<input class="filterButton" type="button" onclick="changeTune(store, ' + tuneID + ');" value="Play Now" />';
+             tableRow += '<input class="filterButton" type="button" onclick="selectTune(store,' + tuneID + ');" value="Play Now" />';
              tableRow += '</td></tr>';
          }
          tableRow += '</table></td></tr>';

@@ -13,7 +13,6 @@
  * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
  */
 
-
 function displayABCsource() {
     var abcText = document.getElementById('abcText');
 
@@ -26,7 +25,7 @@ function displayABCsource() {
         appendString += createABCitem(item);
     }
 
-    abcText.innerHTML = appendString;
+    abcText.innerHTML = DOMPurify.sanitize(appendString);
 }
 
 function createABCitem(item) {

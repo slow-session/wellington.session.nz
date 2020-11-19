@@ -4,7 +4,7 @@ title: Other Sources
 permalink: /other_sources/
 ---
 Here's some other sources of tunes you might find useful. If you look at nothing
-else make sure you check out Charlie Montomery's tunes.
+else make sure you check out Charlie Montomery's tunes on this website.
 
 Charlie Montgomery:
 
@@ -19,7 +19,7 @@ Sets of tunes put together by Paddy O'Brien:
 
  * [Tune Sets Arranged by Paddy O'Brien, Co. Tipperary](http://www.ceolas.org/pub/tunes/tunes.pdf/POB.pdf)
   * [Local copy of obrien.pdf](/tunebooks/obrien.pdf "PDF")
-  * [O'Brien sets on line](/obrientunes/)
+  * [O'Brien Tunes - Online](/obrientunes/)
 
 Tommy Potts:
 
@@ -27,7 +27,8 @@ Tommy Potts:
 
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
- * [The Northern Fiddler](/tunebooks/The_Northern_Fiddler.pdf) 
+ * [The Northern Fiddler - PDF](/tunebooks/The_Northern_Fiddler.pdf)
+ * [The Northern Fiddler - Online](/northernfiddler/)
 
 Dunedin Fiddle Orchestra:
 

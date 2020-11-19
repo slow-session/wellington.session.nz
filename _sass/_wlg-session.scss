@@ -146,6 +146,10 @@ p.mp3SpeedLabel {
     display: none;
 }
 
+.abcPaper {
+    display: block;
+}
+
 .abcText {
     background-color: darken($complimentary-color, 6%);
     font-size: small;
@@ -154,10 +158,6 @@ p.mp3SpeedLabel {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-}
-
-.outputABC {
-    
 }
 
 .loopButton {
