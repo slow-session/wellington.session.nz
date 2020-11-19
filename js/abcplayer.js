@@ -26,7 +26,7 @@ var IntervalHandle;
 var instrument;
 
 
-function createABCplayer(tuneID, timbre) {
+function createABCplayer(textArea, tuneID, timbre) {
     /*
      * Generate the HTML needed to play ABC tunes
      */
@@ -34,10 +34,10 @@ function createABCplayer(tuneID, timbre) {
 
     var abcPlayer = `
 <form onsubmit="return false" oninput="level.value=flevel.valueAsNumber">
-    <div class="audioParentOuter" id="${tuneID}">
+    <div class="audioParentOuter" id="ABC${tuneID}">
         <!-- Col 1 -->
         <div class="playpauseButton">
-            <button id="playABC${tuneID}" class="playButton" onclick="playABC(ABC${tuneID}, playABC${tuneID}, positionABC${tuneID}, speedSliderABC${tuneID}.value)"></button>
+            <button id="playABC${tuneID}" class="playButton" onclick="playABC(${textArea}, playABC${tuneID}, positionABC${tuneID}, speedSliderABC${tuneID}.value)"></button>
         </div>
         <!-- Nested row in second column -->
         <div class="audioChildOuter">
@@ -50,7 +50,7 @@ function createABCplayer(tuneID, timbre) {
                 <!-- Col 3 -->
                 <div class="audioChildInner">
                     <span title="Adjust playback speed with slider">
-                        <input name="flevel" id="speedSliderABC${tuneID}" class="abcSpeedControl slider" type="range" min="50" max="120" value="100" onchange="changeABCspeed(ABC${tuneID}, playABC${tuneID}, value)">
+                        <input name="flevel" id="speedSliderABC${tuneID}" class="abcSpeedControl slider" type="range" min="50" max="120" value="100" onchange="changeABCspeed(${textArea}, playABC${tuneID}, value)">
                         <p class="audioLabel">Speed - <strong><output name="level">100</output>%</strong></p>
                     </span>
                 </div>
@@ -72,19 +72,20 @@ function makeInstrument(timbre) {
     return (tempInstrument);
 }
 
-function playABC(tune, playButton, playPosition, bpm) {
+/*
+ * Play an ABC tune when the button gets pushed
+ */
+function playABC(textArea, playButton, playPosition, bpm) {
     /*
-     * Play an ABC tune when the button gets pushed
+     * Our simple ABC player doesn't handle repeats well.
+     * This function unrolls the ABC so that things play better.
      */
-    CalculateTuneDuration(tune, bpm);
+    var tuneABC = preProcessABC(textArea.value);
 
-    var ticks;
-    // The ABC L: value scales the ticks value!
-    var noteLenStr = getABCheaderValue("L:", tune.value);
-    if (!noteLenStr) {
-        noteLenStr = "1/8";
-    }
-    ticks = bpm / (2 * eval(noteLenStr));
+    // calculate tune length
+    ABCduration = calculateTuneDuration(tuneABC, bpm);
+
+    let ticks = calculateTicks(tuneABC, bpm);
 
     // If we have multiple ABC tunes on a page and we start a second one,
     // close the previous one cleanly
@@ -97,78 +98,77 @@ function playABC(tune, playButton, playPosition, bpm) {
     ABCPosition.Ptr = playPosition;
 
     if (playButton.className == "playButton") {
-        stopABC(tune);
-        startABC(tune, ticks);
+        stopABC(tuneABC);
+        startABC(tuneABC, ticks);
         playButton.className = "";
         playButton.className = "stopButton";
     } else {
-        stopABC(tune);
+        stopABC(tuneABC);
         playButton.className = "";
         playButton.className = "playButton";
     }
 }
 
-function changeABCspeed(tune, playButton, bpm) {
+function changeABCspeed(textArea, playButton, bpm) {
+
+    var tuneABC = preProcessABC(textArea.value);
+
     // Change the speed of playback
-    CalculateTuneDuration(tune, bpm);
+    ABCduration = calculateTuneDuration(tuneABC, bpm);
 
-    // The ABC L: value scales the bpm value!
-    var ticks;
-    var noteLenStr = getABCheaderValue("L:", tune.value);
-    if (!noteLenStr) {
-        noteLenStr = "1/8";
-    }
-    ticks = bpm / (2 * eval(noteLenStr));
-
-    CalculateTuneDuration(tune, bpm);
+    let ticks = calculateTicks(tuneABC, bpm);
 
     if (playButton.className == "stopButton") {
-        stopABC(tune);
+        stopABC(tuneABC);
         playButton.className = "";
         playButton.className = "stopButton";
         setABCPosition(0);
         ABCCurrentTime = 0;
-        startABC(tune, ticks);
+        startABC(tuneABC, ticks);
     } else {
-        stopABC(tune);
+        stopABC(tuneABC);
         playButton.className = "";
         playButton.className = "playButton";
     }
 }
 
-function CalculateTuneDuration(tune, bpm) {
-    // Clean up the ABC bar markers
-    var tempTune = tune.value.replace(/:\|/g, "|");
-    tempTune = tempTune.replace(/\|:/g, "|");
-    tempTune.replace(/::/g, "|");
-    tempTune = tempTune.replace(/\|+/g, "|");
-
-    // Calculate number of bars
+function calculateTuneDuration(tuneABC, bpm) {
+    // calculate number of bars
     var bars;
-    bars = tempTune.split("|").length;
+    bars = tuneABC.split("|").length;
     bars = Math.round(bars / 8) * 8;
 
     // Get the meter from the ABC
-    var meterStr = getABCheaderValue("M:", tune.value);
+    var meterStr = getABCheaderValue("M:", tuneABC);
     if (meterStr == "C") {
         meterStr = "4/4";
     }
     if (meterStr == "C|") {
         meterStr = "2/2";
     }
-    var noteLenStr = getABCheaderValue("L:", tune.value);
+    var noteLenStr = getABCheaderValue("L:", tuneABC);
     if (!noteLenStr) {
         noteLenStr = "1/8";
     }
-    // Calculate the length of the tune
 
-    ABCduration = bars * eval(meterStr) * 16 * eval(noteLenStr) * 60 / bpm;
+    // calculate the length of the tune
+    return (bars * eval(meterStr) * 16 * eval(noteLenStr) * 60 / bpm);
 }
 
-function getABCheaderValue(key, tuneStr) {
+function calculateTicks(tuneABC, bpm) {
+    // The ABC L: value scales the ticks value!
+    var noteLenStr = getABCheaderValue("L:", tuneABC);
+    if (!noteLenStr) {
+        noteLenStr = "1/8";
+    }
+
+    return (bpm / (2 * eval(noteLenStr)));
+}
+
+function getABCheaderValue(key, tuneABC) {
     // Extract the value of one of the ABC keywords e.g. T: Out on the Ocean
     var regex = new RegExp(key);
-    var lines = tuneStr.split("\n");
+    var lines = tuneABC.split("\n");
     var ABCvalue = '';
     var i;
 
@@ -182,49 +182,37 @@ function getABCheaderValue(key, tuneStr) {
     return ABCvalue;
 }
 
-function startABC(tune, ticks) {
+function startABC(tuneABC, ticks) {
     playingNow = 1;
     abcStopped = 0;
     instrument.silence();
     instrument.play({
         tempo: ticks
-    }, tune.value, function () {
+    }, tuneABC, function () {
         playingNow = 0;
-        loopABCTune(tune, ticks);
+        loopABCTune(tuneABC, ticks);
     });
     setABCPosition(0);
     ABCCurrentTime = 0;
-    ABCtimer();
+
+    IntervalHandle = setInterval(nudgeABCSlider, 100);
 }
 
-function simplePlayABC(tune, ticks, timbre) {
-    instrument = new Instrument(timbre);
-
-    instrument.silence();
-    instrument.play({
-        tempo: ticks
-    }, tune.value);
-}
-
-function stopABC(tune) {
+function stopABC(tuneABC) {
     clearInterval(IntervalHandle);
     abcStopped = 1;
     instrument.silence();
     setABCPosition(0);
 }
 
-function loopABCTune(tune, ticks) {
+function loopABCTune(tuneABC, ticks) {
     instrument.silence();
     clearInterval(IntervalHandle);
     if ((playingNow == 0) && (abcStopped == 0)) {
-        startABC(tune, ticks);
+        startABC(tuneABC, ticks);
         setABCPosition(0);
         ABCCurrentTime = 0;
     }
-}
-
-function ABCtimer() {
-    IntervalHandle = setInterval(nudgeABCSlider, 100);
 }
 
 function nudgeABCSlider() {
@@ -238,12 +226,12 @@ function setABCPosition(ticks) {
     ABCPosition.Ptr.value = ticks;
 }
 
-function preProcessABC(str) {
+function preProcessABC(tuneABC) {
     /*
      * Our simple ABC player doesn't handle repeats well.
      * This function unrolls the ABC so that things play better.
      */
-    var lines = str.split('\n');
+    var lines = tuneABC.split('\n');
     var ABCHeader = [""];
     var ABCNotes = [""];
     var headerRegex = /^([A-Za-z]):\s*(.*)$/;
@@ -283,7 +271,6 @@ function preProcessABC(str) {
 }
 
 function unRollABC(ABCNotes) {
-    var index = 0;
     /*
      * Regular expression used to parse ABC - https://regex101.com/ was very helpful in decoding
      *
@@ -323,19 +310,16 @@ function unRollABC(ABCNotes) {
         lRepPos = [],
         rRepPos = [],
         dblBarPos = [];
-    var firstRepeat = 0,
-        tokenString = [],
+    var tokenString = [],
         tokenLocations = [],
         tokenCount = 0,
         sortedTokens = [],
         sortedTokenLocations = [];
     var pos = 0,
-        endPos = 0,
         i = 0,
         k = 0,
         l = 0,
-        m = 0,
-        ntokenString = [];
+        m = 0;
     var bigABCNotes = "";
 
     while ((match = firstBar.exec(ABCNotes)) != null) {
@@ -431,47 +415,23 @@ function unRollABC(ABCNotes) {
     bigABCNotes += ABCNotes.substr(pos, sortedTokenLocations[sortedTokens.length - 1] - pos);
     bigABCNotes += "\""; //hack to make sure the newBigABCNotes gets fills when there are not quotes
 
-    var newBigABCNotes = "";
+    let newBigABCNotes = "";
     for (j = 0; j < bigABCNotes.length; j++) {
         if (bigABCNotes[j] == "\"") {
             newBigABCNotes = [bigABCNotes.slice(0, j), "\\\"", bigABCNotes.slice(j)].join('');
         }
         newBigABCNotes = newBigABCNotes.substring(0, newBigABCNotes.length - 3); //undo hack
     }
-    tempABCNotes = newBigABCNotes.toLowerCase();
-    tempABCNotes = tempABCNotes.replace(/(?=[(])/g, 'z');
 
-    var count = (tempABCNotes.match(/a/g) || []).length;
-    count += (tempABCNotes.match(/b/g) || []).length;
-    count += (tempABCNotes.match(/c/g) || []).length;
-    count += (tempABCNotes.match(/d/g) || []).length;
-    count += (tempABCNotes.match(/e/g) || []).length;
-    count += (tempABCNotes.match(/f/g) || []).length;
-    count += (tempABCNotes.match(/g/g) || []).length;
-    count += (tempABCNotes.match(/2/g) || []).length; // note already counted so +1
-    count += (tempABCNotes.match(/3/g) || []).length * 2; // note + 2
-    count += (tempABCNotes.match(/4/g) || []).length * 3; // note + 3
-    count -= (tempABCNotes.match(/z/g) || []).length * 3; //remove triplets (confusing, but correct)
-    /*  count is the total number of beats,
-        A 16 bar A part reel = 128 beats,
-        A 16 bar A part jig = 96 beats,
-        for a normal AA BB reel, count should be ~256.
-        For a normal AA BB jig, ~192.
-        if count ~ 384 it is probably an AA BB CC reel
-        if count ~ 288 it is probably an AA BB CC jig
-        For normally structured tunes (e.g. AA BB) using various values of count,
-        and tune type (jig/reel) we can guess at the structure.
-        We know the tune duration, but not the number of repeats of the tune
-        on the recording.  If we knew that we could approximate the timing loops.
-        We could guess most tunes have 2 full repeats...
-        We should add one or two values to the tune.md files:
-            number of times tune is repeated (needed)
-            and number of parts e.g. 2 if A and B parts, 3 if A B C, etc,
-            perhaps it could be in the form of AABB, AABBCC, ABCDE, etc.
-        If a 2 part (A&B) reel is repeated 3 times
-        duration (found when mp3 file is read) / 3 = time for 1 full loop;
-        From 0 to (duration / 3) / 2 = A part.
-        From (duration / 3) / 2 to (duration / 3) = B part, etc.
-    */
+    /*
+     * Clean up the ABC repeat markers - the above code should clean this up...
+     * But...
+     */
+    newBigABCNotes = newBigABCNotes.replace(/:\|/g, "|");
+    newBigABCNotes = newBigABCNotes.replace(/\|:/g, "|");
+    newBigABCNotes = newBigABCNotes.replace(/::/g, "|");
+    newBigABCNotes = newBigABCNotes.replace(/\|+/g, "|");
+    newBigABCNotes = newBigABCNotes.replace(/:$/, "|");
+
     return (newBigABCNotes);
 }

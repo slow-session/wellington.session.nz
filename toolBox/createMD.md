@@ -155,6 +155,6 @@ function showForm(textArea, myForm) {
     document.getElementById(textArea).innerHTML += '---\n';
 
     // Set the filename for downloading
-    document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.md'
+    document.getElementById("filename").innerHTML = obj["titleID"]
 }
 </script>

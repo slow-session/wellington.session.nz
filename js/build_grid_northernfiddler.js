@@ -21,9 +21,9 @@
 
          // create table headers
          if (testForMobile()) {
-             var appendString = '<div id="tunes" class="tunesObrienLayout mobileScrolling">';
+             var appendString = '<div id="tunes" class="tunesArchiveLayout mobileScrolling">';
          } else {
-             var appendString = '<div id="tunes" class="tunesObrienLayout">';
+             var appendString = '<div id="tunes" class="tunesArchiveLayout">';
          }
 
          if (results.length) { // Are there any results?
@@ -47,9 +47,10 @@
      function createGridRow(item) {
          var gridRow = '';
 
-         // build the two columns
+         // build the three columns
          gridRow += '<span><a href="' + item.url + '">' + item.title + '</a></span>';
          gridRow += '<span>' + item.key + ' ' + item.rhythm + '</span>';
+         gridRow += '<span>' + item.musician + ' Page ' + item.page + '</span>';
 
          return gridRow;
      }
@@ -82,6 +83,14 @@
              e.value = rhythm;
          }
      }
+     var musician = getQueryVariable('musician');
+     if (musician) {
+         searchTerm += musician + ' ';
+         var e = document.getElementById('musician-box');
+         if (e) {
+             e.value = musician;
+         }
+     }
      // Define the index terms for lunr search
      var tuneIndex = lunr(function () {
          this.field('id');
@@ -89,6 +98,8 @@
              boost: 10
          });
          this.field('rhythm');
+         this.field('musician')
+
      });
 
      // Add the search items to the search index
@@ -97,6 +108,7 @@
              'id': key,
              'title': window.store[key].title,
              'rhythm': window.store[key].rhythm,
+             'musician': window.store[key].musician,
          });
      }
 

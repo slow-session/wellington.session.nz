@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/beeswing-hornpipe-a.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
-mp3_url: http://media.comhaltas.ie/audio/cl232/cl232_4.mp3
+mp3_url: https://media.comhaltas.ie/audio/cl232/cl232_4.mp3
 abc_url: trillian.mit.edu
 source: Wellington
 abc: |

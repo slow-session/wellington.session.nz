@@ -62,7 +62,7 @@ window.store = {
     "tuneID": "{{ tune.titleID }}",
     "key": "{{ tune.key | xml_escape }}",
     "rhythm": "{{ tune.rhythm | xml_escape }}",
-    "url": "{{ tune.url | append: '.html' | xml_escape }}",
+    "url": "{{ tune.url | xml_escape }}",
     "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
     "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
     "repeats": "{{ tune.repeats }}",

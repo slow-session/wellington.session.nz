@@ -203,49 +203,55 @@ function playAudio(tuneID, audioSource) {
 
 }
 
-function changeTune(storeID, tuneID) {
-    var item = storeID[tuneID];
-    
-    var abcText = document.getElementById('abcText');
-    if (abcText) {
-        abcText.innerHTML = item.abc;
-    }
-    
-    // Clear the loop preset display
-    var loopPresetControls = document.getElementById('loopPresetControls');
-    if (loopPresetControls) {
-        loopPresetControls.innerHTML = '';
-    }
-    var tuneInfo = document.getElementById("tuneInfo");
+function selectTune(storeID, tuneID) {
+    let item = storeID[tuneID];
+
+    let showPlayer = document.getElementById("showPlayer");
+
+    let tuneInfo = document.getElementById("tuneInfo");
     if (tuneInfo) {
         tuneInfo.innerHTML = '';
     }
-    var loopForm = document.getElementById('loopForm');
+
+    // Clear the loop preset display
+    let loopPresetControls = document.getElementById('loopPresetControls');
+    if (loopPresetControls) {
+        loopPresetControls.innerHTML = '';
+    }
+
+    let loopForm = document.getElementById('loopForm');
     if (loopForm) {
         loopForm.style.display = "none";
     }
+
     presetLoopSegments = [];
 
+    let dotsForm = document.getElementById('dotsForm');
+    if (dotsForm) {
+        dotsForm.style.display = "block";
+    }
+
     // If we have a modal make it visible
-    var modal = document.getElementById('tuneModal');
+    let modal = document.getElementById('tuneModal');
     if (modal) {
         modal.style.display = "block";
     }
 
     // Add info to page if needed
-    var tuneTitle = document.getElementById("tuneTitle");
+    let tuneTitle = document.getElementById("tuneTitle");
     if (tuneTitle) {
         tuneTitle.innerHTML = '<h2>' + item.title + '<span> - ' + item.key + ' ' + item.rhythm + '</span></h2>';
     }
-    var tuneInfo = document.getElementById("tuneInfo");
-    if (tuneInfo && item.mp3_source) {
-        tuneInfo.innerHTML = 'Source: ' + item.mp3_source;
-    }
 
-    var dotsForm = document.getElementById('dotsForm');
-    if (item.mp3.includes('mp3')) {
+    if (item.mp3.includes('mp3') && showPlayer) {
+        let tuneInfo = document.getElementById("tuneInfo");
+        if (tuneInfo && item.mp3_source) {
+            tuneInfo.innerHTML = 'Source: ' + item.mp3_source;
+        }
+
         // make the MP3 player
-        document.getElementById('showPlayer').innerHTML = createMP3player(tuneID, item.mp3);
+        showPlayer.innerHTML =
+            createMP3player(tuneID, item.mp3);
         createSliders(tuneID);
 
         var playPosition = document.getElementById(`positionMP3-${tuneID}`);
@@ -260,62 +266,69 @@ function changeTune(storeID, tuneID) {
                 if (presetLoopSegments.length) {
                     document.getElementById('loopPresetControls').innerHTML = createLoopControlsContainer();
                 }
+                if (loopForm) {
+                    loopForm.style.display = "block";
+                }
             }
             initialiseAudioSlider();
         };
-
-        // Show the button that allows show/hide of dots
-        if (dotsForm) {
-            dotsForm.style.display = "block";
-        }
-        // Get the current paper state
-        var currentPaperState = document.getElementById('paper0').style.display;
-        // Set the paper state to 'block'
-        document.getElementById('paper0').style.display = "block";
-        if (item.abc) {
-            // Draw the dots
-            abc_editor = new window.ABCJS.Editor('abcText', {
-                paper_id: "paper0",
-                warnings_id: "warnings",
-                render_options: {
-                    responsive: 'resize'
-                },
-                indicate_changed: "true"
-            });
-        } else {
-            document.getElementById('paper0').style.paddingBottom = '0px';
-            document.getElementById('paper0').style.overflow = 'auto';
-            var urlSessionSearch = 'https://thesession.org/tunes/search?type=' + item.rhythm + '&q=' + item.title.replace(/\s+/g, '+');
-            document.getElementById('paper0').innerHTML = '<fieldset><strong> \
-            <p>We don\'t have dots for this tune. If you find a version of the tune that\'s a good match, send \
-            us a copy of the ABC and we\'ll get it added to the site. You might find it on The Session \
-            at this link:</p>\
-            <a href="' + urlSessionSearch + '">' + urlSessionSearch + '</a>\
-            </strong></fieldset>';
-
-            var showABCform = document.getElementById('showABCform');
-            if (showABCform) {
-                showABCform.style.display = "none";
-            }
-        }
-        // Reset paper state to original value
-        document.getElementById('paper0').style.display = currentPaperState;
     } else {
         // no recording available
-        document.getElementById('loopForm').style.display = "none";
+        if (showPlayer) {
+            var recordingMessage = '<fieldset><strong> \
+            A recording for this tune is not available.';
+            if (modal) {
+                recordingMessage += '<br /><input class="filterButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Go to Tune Page" />'
+                if (dotsForm) {
+                    dotsForm.style.display = "none";
+                }
+            }
+            recordingMessage += '</strong></fieldset>';
 
-        if (dotsForm) {
-            dotsForm.style.display = "none";
+            showPlayer.style.overflow = 'auto';
+            showPlayer.innerHTML = recordingMessage;
         }
-        var recordingMessage = '<fieldset><strong> \
-        A recording for this tune is not available.';
-        if (modal) {
-            recordingMessage += '<br /><input class="filterButton" type="button" onclick="location.href=\'' + item.url + '\';" value="Go to Tune Page" />'
+
+        if (loopForm) {
+            loopForm.style.display = "none";
         }
-        recordingMessage += '</strong></fieldset>';
-        document.getElementById('showPlayer').style.overflow = 'auto';
-        document.getElementById('showPlayer').innerHTML = recordingMessage;
+
+
     }
+
+    if (item.abc) {
+        var abcText = document.getElementById(`textAreaABC`);
+        if (abcText) {
+            abcText.innerHTML = item.abc;
+        };
+
+        // Get the current paper state
+        var currentPaperState = document.getElementById('abcPaper').style.display;
+        // Set the paper state to 'block'
+        document.getElementById('abcPaper').style.display = "block";
+
+        // Draw the dots
+        abc_editor = new window.ABCJS.Editor('textAreaABC', {
+            paper_id: "abcPaper",
+            warnings_id: "warnings",
+            render_options: {
+                responsive: 'resize'
+            },
+            indicate_changed: "true"
+        });
+    } else {
+        document.getElementById('abcPaper').style.paddingBottom = '0px';
+        document.getElementById('abcPaper').style.overflow = 'auto';
+        var urlSessionSearch = 'https://thesession.org/tunes/search?type=' + item.rhythm + '&q=' + item.title.replace(/\s+/g, '+');
+        document.getElementById('abcPaper').innerHTML = '<fieldset><strong> \
+        <p>We don\'t have dots for this tune. If you find a version of the tune that\'s a good match, send \
+        us a copy of the ABC and we\'ll get it added to the site. You might find it on The Session \
+        at this link:</p>\
+        <a href="' + urlSessionSearch + '">' + urlSessionSearch + '</a>\
+        </strong></fieldset>';
+    }
+    // Reset paper state to original value
+    document.getElementById('abcPaper').style.display = currentPaperState;
 }
 
 function LoadAudio(audioSource, playPosition) {
@@ -621,11 +634,24 @@ function toggleTheDots(button) {
     switch (button.value) {
         case "Show the Dots":
             button.value = "Hide the Dots";
-            document.getElementById('paper0').style.display = "block";
+            document.getElementById('abcPaper').style.display = "block";
             break;
         case "Hide the Dots":
             button.value = "Show the Dots";
-            document.getElementById('paper0').style.display = "none";
+            document.getElementById('abcPaper').style.display = "none";
+            break;
+    }
+}
+
+function toggleABC(button) {
+    switch (button.value) {
+        case "Show ABC Source":
+            button.value = "Hide ABC Source";
+            document.getElementById('abcSource').style.display = "block";
+            break;
+        case "Hide ABC Source":
+            button.value = "Show ABC Source";
+            document.getElementById('abcSource').style.display = "none";
             break;
     }
 }

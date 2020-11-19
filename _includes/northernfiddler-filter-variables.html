@@ -1,0 +1,24 @@
+
+{% assign tune_rhythms = '' %}
+{% assign tune_musicians = '' %}
+
+{% for tune in site.northernfiddler %}
+    {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
+
+    {% for musician in tune.musician %}
+        {% assign tune_musicians = tune_musicians | append: musician | strip %}
+        {% unless forloop.last %}{% assign tune_musicians = tune_musicians | append: ':' %}{% endunless %}
+    {% endfor %}
+    {% unless forloop.last %}
+        {% assign tune_rhythms = tune_rhythms | append: ':' %}
+        {% assign tune_musicians = tune_musicians | append: ':' %}
+    {% endunless %}
+{% endfor %}
+
+{% assign tune_rhythms = tune_rhythms | replace: '::', ':' %}
+{% assign tune_rhythms = tune_rhythms | replace: '/', ':' %}
+{% assign rhythms = tune_rhythms | split: ':' | uniq | sort %}
+
+{% assign tune_musicians = tune_musicians | replace: '::', ':' %}
+{% assign musicians = tune_musicians | split: ':' | uniq | sort %}
+

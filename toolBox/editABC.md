@@ -5,34 +5,34 @@ permalink: /editABC/
 ---
 
 Use this sample as a template to edit or create your own ABC files.
-A brief set of instructions is found <a href="/editingABC/">here.</a> If you'd like more information on the ABC format check out the
-<a href="http://abcnotation.com/wiki/abc:standard:v2.1">ABC Notation</a>
+A brief set of instructions is found <a href="/editingABC/">here.</a> If you'd like more information on the ABC format
+check out the
+<a href="http://abcnotation.com/wiki/abc:standard:v2.2">ABC Notation</a>
 guide.
 
 If you want to add a new tune to the archive you can use the
 [Create MD File](/createMD/) page to create the metadata needed.
 
-<!-- Area to store unrolled ABC -->
-<textarea id="ABCprocessed" style="display:none;"></textarea>
-
-<!-- Area to store filename for download -->
-<textarea id="filename" style="display:none;"></textarea>
-
-<div class="row small-up-1 medium-up-2 large-up-2">
-    <div class="small-7 columns">
-        <!-- Draw the dots -->
-        <div class="output">
-            <div id="paper0" class="paper"></div>
-        </div>
-
-        <!-- Controls for ABC player -->
-        <div id="ABCplayer"></div>
+<div class="row">
+    <!-- Draw the dots -->
+    <div class="output">
+        <div id="abcPaper" class="abcPaper"></div>
     </div>
-    <div class="small-5 columns">
-        <!-- Group the input and controls for ABC-->
-        <h3>Edit this sample ABC:</h3>
-        <!-- Read the modified ABC and play if requested -->
-        <textarea name='abc' id="abc" class="abcText" rows="13" spellcheck="false">
+
+    <!-- Controls for ABC player -->
+    <div id="ABCplayer"></div>
+</div>
+<div class="row">
+    <!-- Group the input and controls for ABC-->
+    <h3>Load an ABC file:</h3>
+    <input type="file" id="files" class='filterButton' name="files[]" accept=".abc" />
+    <output id="fileInfo"></output>
+    <p />
+</div>
+<div class="row">
+    <h3>Or edit this sample ABC:</h3>
+    <!-- Read the modified ABC and play if requested -->
+    <textarea name='abc' id="textAreaABC" class="abcText" rows="13" spellcheck="false">
 X: 1
 T: Kilglass Lakes
 R: jig
@@ -46,47 +46,36 @@ DED DFA|BAF d2e|faf ede|1 fdd d3 :|2 fdd d2 e ||
 |:faa fbb|afe ~f3|faf dBA| (3Bcd B AFE|
 DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
         </textarea>
-        <!-- Show errors -->
-        <div id='warnings'></div>
-
-        <h3>Or load an ABC file:</h3>
-        <input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
-        <output id="fileInfo"></output>
-        <br />
-        <br />
-        <!-- Allow the user to save their ABC-->
-        <h3>Don’t forget to ‘Download ABC’ to save your work</h3>
-        <form>
-            <span title="Download the ABC you've entered. Don't lose your work!">
-                <input value='Download ABC' type='button' class='filterButton' onclick='downloadFile(document.getElementById("filename").value, document.getElementById("abc").value)' />
-            </span>
-        </form>
-    </div>
+    <!-- Show ABC errors -->
+    <div id='warnings'></div>
+</div>
+<div class="row">
+    <!-- Allow the user to save their ABC-->
+    <h3>Don’t forget to ‘Download ABC’ to save your work:</h3>
+    <form>
+        <span title="Download the ABC you've entered. Don't lose your work!">
+            <input value='Download ABC' type='button' class='filterButton'
+                onclick='downloadABCFile(document.getElementById("textAreaABC").value)' />
+        </span>
+    </form>
+    <p />
 </div>
 
 <script>
-$(document).ready(function()
-{
+$(document).ready(function () {
     // Check for the various File API support.
     var fileInfo = document.getElementById('fileInfo');
     if (window.File && window.FileReader && window.FileList && window.Blob) {
-        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+        document.getElementById('files').addEventListener('change', handleABCFileSelect, false);
     } else {
         fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
     }
 
-	// Create the ABC player
-	ABCplayer.innerHTML = createABCplayer('processed', '{{ site.defaultABCplayer }}');
-
-    processABCchange(abc);
-
-	// If the ABC changes get ready to play the revised ABC
-	$('#abc').change(function() {
-        processABCchange(abc);
-	});
+    // Create the ABC player
+    ABCplayer.innerHTML = createABCplayer('textAreaABC', '1', '{{ site.defaultABCplayer }}');   
 });
 
-function handleFileSelect(evt) {
+function handleABCFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
 
@@ -103,32 +92,27 @@ function handleFileSelect(evt) {
                 || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
                 return (1);
             }
+
+            // Show the dots
+            textAreaABC.value = this.result; 
+            
+            // Display the ABC in the textbox as dots
+            abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+            
             // stop tune currently playing if needed
-            var playButton = document.getElementById("playABCprocessed");
+            var playButton = document.getElementById("playABC1");
             if (typeof playButton !== 'undefined'
                 && playButton.className == "stopButton") {
-                stopABC("ABCprocessed");
+                stopABC("ABC1");
                 playButton.className = "";
                 playButton.className = "playButton";
             }
+            
+            // Show the player when we've loaded some dots
+            document.getElementById("abcPlayer").style.display = 'block';
 
-            // Load the new dots
-            abc.value = this.result;
-
-            processABCchange(abc);
         };
         reader.readAsText(f);
     }
-}
-
-function processABCchange(abc) {
-    // Unroll the ABC to make repeats work properly
-    ABCprocessed.value = preProcessABC(abc.value);
-
-    // Reset the filename for downloading
-    document.getElementById("filename").innerHTML = slugify(getABCtitle(abc.value)) + '.abc';
-
-    // Display the ABC in the textbox as dots
-    abc_editor = new window.ABCJS.Editor("abc", { paper_id: "paper0", warnings_id:"warnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
 }
 </script>

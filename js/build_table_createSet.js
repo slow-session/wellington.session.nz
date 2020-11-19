@@ -13,94 +13,98 @@
   * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
   */
 
-  var tuneIDs = [];
+ var tuneIDs = [];
 
-  function appendSetTunes(mdfile, tuneID) {
-  	document.getElementById('setTitles').innerHTML += mdfile + "<br />";
-  	document.getElementById('setTunes').innerHTML += mdfile + ", ";
-  	document.getElementById(tuneID).style.backgroundColor = 'khaki';
-  	tuneIDs.push(tuneID);
-  }
+ function appendSetTunes(mdfile, tuneID) {
+     document.getElementById('setTitles').innerHTML += mdfile + "<br />";
+     document.getElementById('setTunes').innerHTML += mdfile + ", ";
+     document.getElementById(tuneID).style.backgroundColor = 'khaki';
+     tuneIDs.push(tuneID);
+ }
 
-  function Reset() {
-      document.getElementById('createSetMD').reset();
-  	document.getElementById('setTitles').innerHTML = '';
-      document.getElementById('setTunes').innerHTML = '[';
-      document.getElementById('setMD').innerHTML = '';
-  	var tLen = tuneIDs.length;
-  	for (i = 0; i < tLen; i++) {
-  		document.getElementById(tuneIDs[i]).style.backgroundColor = '';
-  	}
-  	tuneIDs = [];
-  }
+ function Reset() {
+     document.getElementById('createSetMD').reset();
+     document.getElementById('setTitles').innerHTML = '';
+     document.getElementById('setTunes').innerHTML = '[';
+     document.getElementById('setMD').innerHTML = '';
+     var tLen = tuneIDs.length;
+     for (i = 0; i < tLen; i++) {
+         document.getElementById(tuneIDs[i]).style.backgroundColor = '';
+     }
+     tuneIDs = [];
+ }
 
-  function showForm(textArea, myForm) {
-      var elements = document.getElementById(myForm).elements;
-      var obj = {};
-      var date = new Date();
-      var day = date.getDate();
-      var month = date.getMonth() + 1;
-      var year = date.getFullYear();
-      var locationNotProcessed = 1;
+ function showForm(textArea, myForm) {
+     var elements = document.getElementById(myForm).elements;
+     var obj = {};
+     var date = new Date();
+     var day = date.getDate();
+     var month = date.getMonth() + 1;
+     var year = date.getFullYear();
+     var locationNotProcessed = 1;
 
-      document.getElementById(textArea).innerHTML = '---\n';
-      for(var i = 0 ; i < elements.length ; i++){
-          var item = elements.item(i);
+     let appendString = '---\n';
+     for (var i = 0; i < elements.length; i++) {
+         var item = elements.item(i);
 
-  		if (item.name == "") {
-  			continue;
-  		}
-          if (item.value == "Build the MD file") {
-              continue;
-          }
+         if (item.name == "") {
+             continue;
+         }
+         if (item.value == "Build the MD file") {
+             continue;
+         }
 
-          switch(item.name) {
-  			case 'title':
-  				if (item.value == '') {
-  					alert("'Title' is required");
-          			return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-  			case 'rhythm':
-  				if (item.value == '') {
-  					alert("'Rhythm' is required");
-  		        	return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-            case 'location':
-  				if (item.value == '') {
-  					alert("'Location' is required");
-  		        	return false;
-      			}
-      			obj[item.name] = item.value;
-      			break;
-  			case 'contributor':
-  				if (item.value == '') {
-  					alert("'Contributed by' is required");
-  	        		return false;
-  				}
-  				obj[item.name] = item.value;
-  				break;
-            case 'date':
-                obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
-                break;
-  			case 'tunes':
-  				obj[item.name] = document.getElementById('setTunes').value.concat(']').replace(', ]', ']');
-  				break;
-              default:
-                  obj[item.name] = item.value;
-          }
-          document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
-      }
-      document.getElementById(textArea).innerHTML += '---\n';
+         switch (item.name) {
+             case 'title':
+                 if (item.value == '') {
+                     alert("'Title' is required");
+                     return false;
+                 }
+                 obj[item.name] = item.value;
+                 break;
+             case 'rhythm':
+                 if (item.value == '') {
+                     alert("'Rhythm' is required");
+                     return false;
+                 }
+                 obj[item.name] = item.value;
+                 break;
+             case 'location':
+                 if (item.value == '') {
+                     alert("'Location' is required");
+                     return false;
+                 }
+                 obj[item.name] = item.value;
+                 break;
+             case 'contributor':
+                 if (item.value == '') {
+                     alert("'Contributed by' is required");
+                     return false;
+                 }
+                 obj[item.name] = item.value;
+                 break;
+             case 'date':
+                 obj[item.name] = year + '-' + (month <= 9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
+                 break;
+             case 'tunes':
+                 obj[item.name] = document.getElementById('setTunes').value.concat(']').replace(', ]', ']');
+                 break;
+             default:
+                 obj[item.name] = item.value;
+         }
+         appendString += item.name + ': ' + obj[item.name] + '\n';
+ }
+ appendString += '---\n';
 
-      // Set the filename for downloading
-      document.getElementById("filename").innerHTML = slugify(obj["title"]) + '.md'
-  }
+ document.getElementById(textArea).innerHTML =
+     DOMPurify.sanitize(appendString);
 
- (function() {
+ // Set the filename for downloading
+ document.getElementById("filename").innerHTML = 
+    DOMPurify.sanitize(slugify(obj["title"]) + '.md');
+ }
+
+ (function () {
      function displayTunesTable(results, store) {
          var tunesTable = document.getElementById('tunesTable');
          var tunesCount = document.getElementById('tunesCount');
@@ -110,9 +114,9 @@
          if (testForMobile()) {
              var appendString = '<table id="tunes" class="tuneSelect tablesorter mobileScrolling">';
          } else {
-             var appendString = '<table id="tunes" class="tuneSelect tablesorter">';            
+             var appendString = '<table id="tunes" class="tuneSelect tablesorter">';
          }
- 
+
          appendString += '<thead> \
          <tr> \
            <th style="width:10%;min-width:75px;">Add Tune</th> \
@@ -150,7 +154,7 @@
          // build the columns
          tableRow += '<tr id="tr' + item.tuneID + '">';
          tableRow += '<td><input type="button" class="loopButton" ';
-         tableRow += 'onclick="appendSetTunes(\''  + item.mdFile + '\', \'tr' + item.tuneID + '\')" value="Select">';
+         tableRow += 'onclick="appendSetTunes(\'' + item.mdFile + '\', \'tr' + item.tuneID + '\')" value="Select">';
          tableRow += '<td class="tuneTitle" style="text-align:left"><span title="Tune played in: ' + item.location + '">';
          tableRow += '<a href="' + item.url + '">' + item.title + '</a></span></td>';
          tableRow += '<td>' + item.rhythm + '</td>';
@@ -211,7 +215,7 @@
      }
 
      // Define the index terms for lunr search
-     var tuneIndex = lunr(function() {
+     var tuneIndex = lunr(function () {
          this.field('id');
          this.field('title', {
              boost: 10
@@ -236,9 +240,9 @@
      if (searchTerm) {
          var results = tuneIndex.search(searchTerm); // Get lunr to perform a search
 
-        // sort the results
-        results.sort((a,b) => (a.ref - b.ref)); 
-     
+         // sort the results
+         results.sort((a, b) => (a.ref - b.ref));
+
          if (results.length) {
              displayTunesTable(results, window.store);
          } else {
