@@ -70,7 +70,10 @@ $(document).ready(function () {
     } else {
         fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
     }
-
+    
+    // Display the ABC in the textbox as dots
+    let abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+    
     // Create the ABC player
     ABCplayer.innerHTML = createABCplayer('textAreaABC', '1', '{{ site.defaultABCplayer }}');   
 });
@@ -97,7 +100,7 @@ function handleABCFileSelect(evt) {
             textAreaABC.value = this.result; 
             
             // Display the ABC in the textbox as dots
-            abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
+            let abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
             
             // stop tune currently playing if needed
             var playButton = document.getElementById("playABC1");
