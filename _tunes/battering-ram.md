@@ -1,7 +1,7 @@
 ---
 title: Battering Ram
 titleID: battering-ram.md
-key: D
+key: Gmaj
 rhythm: jig
 date: 2018-05-21
 location: Wellington
@@ -24,7 +24,7 @@ abc: |
     R: jig
     M: 6/8
     L: 1/8
-    K: Dmaj
+    K: Gmaj
     |: dBG BAG | dBG G2g | dBG AGE | GED D2B |
     dBG BAG | B/c/dB BAG | A3 BAB |1 GED D2B :|2GED D2d||
     |: deg aga | bge edB | deg a3 | bge ega |
