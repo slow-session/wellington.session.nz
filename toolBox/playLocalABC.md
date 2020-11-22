@@ -45,8 +45,6 @@ function handleABCFileSelect(evt) {
     for (var i = 0, f; f = files[i]; i++) {
         var reader = new FileReader();
 
-        console.log(f.size);
-
         reader.onload = function(e) {
             // Is ABC file valid?
             if ((getABCheaderValue("X:", this.result) == '')
