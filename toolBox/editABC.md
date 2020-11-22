@@ -110,10 +110,6 @@ function handleABCFileSelect(evt) {
                 playButton.className = "";
                 playButton.className = "playButton";
             }
-            
-            // Show the player when we've loaded some dots
-            document.getElementById("abcPlayer").style.display = 'block';
-
         };
         reader.readAsText(f);
     }
