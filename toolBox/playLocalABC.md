@@ -17,7 +17,7 @@ You can use this page to play an ABC file you've stored locally.
 <div id="abcPlayer" style="display:none;"></div>
 </div>
 
-<input type="file" id="files" class='filterButton' name="files[]" accept=".abc"/>
+<input type="file" id="files" class='filterButton' name="files[]" accept="text/vnd.abc,.abc"/>
 
 <output id="fileInfo"></output>
 
@@ -44,6 +44,8 @@ function handleABCFileSelect(evt) {
     // files is a FileList of File objects. List some properties.
     for (var i = 0, f; f = files[i]; i++) {
         var reader = new FileReader();
+
+        console.log(f.size);
 
         reader.onload = function(e) {
             // Is ABC file valid?
