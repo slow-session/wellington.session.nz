@@ -292,20 +292,18 @@ function selectTune(storeID, tuneID) {
         if (loopForm) {
             loopForm.style.display = "none";
         }
-
-
     }
+
+    // Get the current paper state
+    var currentPaperState = document.getElementById('abcPaper').style.display;
+    // Set the paper state to 'block'
+    document.getElementById('abcPaper').style.display = "block";
 
     if (item.abc) {
         var abcText = document.getElementById(`textAreaABC`);
         if (abcText) {
             abcText.innerHTML = item.abc;
         };
-
-        // Get the current paper state
-        var currentPaperState = document.getElementById('abcPaper').style.display;
-        // Set the paper state to 'block'
-        document.getElementById('abcPaper').style.display = "block";
 
         // Draw the dots
         abc_editor = new window.ABCJS.Editor('textAreaABC', {
