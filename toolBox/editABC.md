@@ -75,7 +75,9 @@ $(document).ready(function () {
     let abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
     
     // Create the ABC player
-    ABCplayer.innerHTML = createABCplayer('textAreaABC', '1', '{{ site.defaultABCplayer }}');   
+    ABCplayer.innerHTML = createABCplayer('textAreaABC', '1', '{{ site.defaultABCplayer }}');  
+    createABCSliders("textAreaABC", '1');
+ 
 });
 
 function handleABCFileSelect(evt) {
@@ -106,7 +108,7 @@ function handleABCFileSelect(evt) {
             var playButton = document.getElementById("playABC1");
             if (typeof playButton !== 'undefined'
                 && playButton.className == "stopButton") {
-                stopABC("ABC1");
+                stopABCplayer();
                 playButton.className = "";
                 playButton.className = "playButton";
             }

@@ -51,7 +51,7 @@
 
     // When the user clicks on <span> (x), close the setModal
     span.onclick = function () {
-        var playerClass = document.getElementById("playABCset").className;
+        var playerClass = document.getElementById("playABC1").className;
         if (playerClass == 'stopButton') { // audio is currently playing.
             document.getElementById("playABCset").className = "playButton";
             stopABC("playABCset");
@@ -62,7 +62,7 @@
     // When the user clicks anywhere outside of the setModal, close it
     window.onclick = function (event) {
         if (event.target == setModal) {
-            var playerClass = document.getElementById("playABCset").className;
+            var playerClass = document.getElementById("playABC1").className;
             if (playerClass == 'stopButton') { // audio is currently playing.
                 document.getElementById("playABCset").className = "playButton";
                 stopABC("playABCset");

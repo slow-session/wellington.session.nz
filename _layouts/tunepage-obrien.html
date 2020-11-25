@@ -64,7 +64,8 @@ $(document).ready(function() {
     // create the ABC player
     document.getElementById('ABCplayer').innerHTML = 
         createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');    
-    {% endif %}
+        createABCSliders("textAreaABC", tuneID);
+{% endif %}
 
     selectTune(window.store, tuneID);
 });

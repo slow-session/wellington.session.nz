@@ -46,10 +46,10 @@ layout: page
 
 <!-- if there's ABC for the tune, display the dots, an ABC player and an ABC editor -->
 <div>
-{% if page.abc contains "K:" %}
     <!-- display the dots -->
     <div id="abcPaper" class="abcPaper"></div>
-    
+
+    {% if page.abc contains "K:" %}    
     <!-- play the ABC version -->
     <div style="overflow-x:auto;">
         <div id="ABCplayer"></div>
@@ -143,13 +143,17 @@ $(document).ready(function() {
     
     // create the ABC player
     audioPlayer.innerHTML = createAudioPlayer();
-
+    
     {% if page.abc contains "K:" %}   
     // create the ABC player
     ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
+    createABCSliders("textAreaABC", tuneID);
     {% endif %}
 
+
     selectTune(window.store, tuneID);
+    
+    
 
 });
 </script>

@@ -32,7 +32,9 @@ $(document).ready(function()
         fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
     }
 	// Create the ABC player
-	abcPlayer.innerHTML = createABCplayer('textAreaABC', 1, '{{ site.defaultABCplayer }}');
+    abcPlayer.innerHTML = createABCplayer('textAreaABC', 1, '{{ site.defaultABCplayer }}');
+    createABCSliders("textAreaABC", '1');
+
 });
 
 function handleABCFileSelect(evt) {
@@ -63,7 +65,7 @@ function handleABCFileSelect(evt) {
             var playButton = document.getElementById("playABC1");
             if (typeof playButton !== 'undefined'
                 && playButton.className == "stopButton") {
-                stopABC("ABC1");
+                stopABCplayer();
                 playButton.className = "";
                 playButton.className = "playButton";
             }

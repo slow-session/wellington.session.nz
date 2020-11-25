@@ -14,29 +14,30 @@
  */
 
 function displayABCsource() {
-    var abcText = document.getElementById('abcText');
+  var abcText = document.getElementById("abcText");
 
-    // create file headers
-    var appendString = '% \n% File sourced from: ' + window.location.href + '\n';
-    appendString += '% Generated on: ' + new Date() + '\n%\n';
-    
-    for (var key in store) { // Iterate over the original data
-        var item = store[key];
-        appendString += createABCitem(item);
-    }
+  // create file headers
+  var appendString = "% \n% File sourced from: " + window.location.href + "\n";
+  appendString += "% Generated on: " + new Date() + "\n%\n";
 
-    abcText.innerHTML = DOMPurify.sanitize(appendString);
+  for (var key in store) {
+    // Iterate over the original data
+    var item = store[key];
+    appendString += createABCitem(item);
+  }
+
+  abcText.innerHTML = DOMPurify.sanitize(appendString);
 }
 
 function createABCitem(item) {
-    var gridRow = '';
+  var gridRow = "";
 
-    // build the ABC item
-    var newABC = decodeURI(item.abc).replace(/X:\s*/g, 'X: ' + item.tuneID)
+  // build the ABC item
+  var newABC = decodeURI(item.abc).replace(/X:\s*/g, "X: " + item.tuneID);
 
-    if (newABC) {
-        gridRow += newABC + '\n';
-    }
+  if (newABC) {
+    gridRow += newABC + "\n";
+  }
 
-    return gridRow;
+  return gridRow;
 }
