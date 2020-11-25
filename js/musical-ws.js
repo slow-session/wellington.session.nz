@@ -876,7 +876,7 @@
             var ABCheader = /^([A-Za-z]):\s*(.*)$/;
             var ABCtoken = /(?:\[[A-Za-z]:[^\]]*\])|\s+|%[^\n]*|![^\s!:|\[\]]*!|\+[^+|!]*\+|[_<>@^]?"[^"]*"|\[|\]|>+|<+|(?:(?:\^+|_+|=|)[A-Ga-g](?:,+|'+|))|\(\d+(?::\d+){0,2}|\d*\/\d+|\d+\/?|\/+|[xzXZ]|\[?\|\]?|:?\|:?|::|./g;
 
-            module.exports = function parseABCFile(str) {
+            module.exports = function parseABCFile(str) {                
                 var lines = str.split('\n'),
                     result = {},
                     context = result,
@@ -899,20 +899,6 @@
                         // Parse the notes.
                         // TED:  parses ABC a line at a time - problem if looking for repeats
                         parseABCNotes(lines[j]);
-                    }
-                }
-                for (j = 0; j < lines.length; ++j) {
-                    // First, check to see if the line is a header line.
-                    header = ABCheader.exec(lines[j]);
-                    if (header) {
-                        handleInformation(header[1], header[2].trim());
-                    } else if (/^\s*(?:%.*)?$/.test(lines[j])) {
-                        // Skip blank and comment lines.
-                        continue;
-                    } else {
-                        // Parse the notes.
-                        // TED:  parses ABC a line at a time - problem if looking for repeats
-                        makeLongLine(lines[j]);
                     }
                 }
                 var infer = ['unitnote', 'unitbeat', 'tempo'];
@@ -1186,8 +1172,6 @@
                         index = parsed.index;
                     }
                 }
-
-                function makeLongLine(str) {}
                 // Parse M: lines.  "3/4" is 3/4 time and "C" is 4/4 (common) time.
                 function parseMeter(mline, beatinfo) {
                     var d = /^C/.test(mline) ? 4 / 4 : durationToTime(mline);
@@ -1701,7 +1685,6 @@
                     return i + (n / d);
                 }
             }
-
         }, {
             "./utils": 4
         }],

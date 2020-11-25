@@ -71,5 +71,7 @@ $(document).ready(function() {
     tunelist.innerHTML = tuneList.slice(0, -2);
 
     ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
+    createABCSliders("textAreaABC", tuneID);
+
 });
 </script>
