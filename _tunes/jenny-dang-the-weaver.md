@@ -6,7 +6,7 @@ rhythm: reel
 notes:
 date: 2020-11-18
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2020-11-30
 tags:
 location: Wellington
 mp3_file: /mp3/jenny-dang-the-weaver.mp3
