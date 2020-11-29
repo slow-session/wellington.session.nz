@@ -12,7 +12,7 @@ parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/trip-to-pakistan.mp3
-mp3_licence: "© Niall Kenny. All Rights Reserved."
+mp3_licence: '© Niall Kenny. All Rights Reserved.'
 mp3_source: Niall Kenny
 mp3_url: https://www.youtube.com/watch?v=RsY0eod7eQM&t=512
 source: Wellington
