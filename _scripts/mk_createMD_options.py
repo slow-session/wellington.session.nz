@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
-import sys
-import re
-import os
 import html
-
-archiveName = 'wellington.session.nz'
-
+import os
+import re
+import sys
 #
 # You will need to change these variables to
 # match your directory structure
 #
 from pathlib import Path
+
+archiveName = 'wellington.session.nz'
+
 homeDir = str(Path.home())
 
 tunesDir = homeDir + '/GitHub/' + archiveName + '/_tunes'
