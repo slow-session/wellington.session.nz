@@ -11,7 +11,7 @@ tags: slowsession
 repeats: 2
 parts: AABBCC
 regtuneoftheweek:
-slowtuneoftheweek: 2017-01-04
+slowtuneoftheweek: 2020-11-30
 mp3_file: /mp3/christmas-eve.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann

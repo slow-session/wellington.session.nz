@@ -7,10 +7,10 @@ date: 2019-04-10
 location: Wellington
 notes: Often played after Whistler at the Wake
 tags:
-repeats: 3 
-parts: AABB 
+repeats: 3
+parts: AABB
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2020-11-30
 mp3_file: /mp3/old-flail.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -31,5 +31,4 @@ abc: |
     DEG GAB|deg gab|age ege|dBG A3:|
     |:ega aga|ega ega|deg ged|ged BAG|
     DEG GAB|d2g gab|age ege|dBG A3:|
-
 ---
