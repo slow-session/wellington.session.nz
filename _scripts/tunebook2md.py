@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
-import sys
-import os
-from slugify import slugify
-from collections import defaultdict
 import datetime
+import os
+import sys
+from collections import defaultdict
+#
+# You will need to change these variables to
+# match your directory structure
+#
+from pathlib import Path
+
+from slugify import slugify
 
 creationDate = datetime.datetime.now().strftime("%Y-%m-%d")
 
@@ -20,11 +26,6 @@ else:
     usage()
     sys.exit()
 
-#
-# You will need to change these variables to
-# match your directory structure
-#
-from pathlib import Path
 homeDir = str(Path.home())
 
 tunebookDir = homeDir + '/GitHub/wellington.session.nz/tunebooks/other/'

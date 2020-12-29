@@ -2,9 +2,9 @@
 # encoding: utf-8
 
 
-import sys
-import re
 import os
+import re
+import sys
 
 #
 # You will need to change these variables to
