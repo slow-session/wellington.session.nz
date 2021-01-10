@@ -4,13 +4,13 @@ titleID: sally-gardens.md
 key: G
 rhythm: reel
 date: 2018-06-11
-location: Christchurch Wellington 
+location: Christchurch Wellington
 notes:
-tags: 
-repeats: 2 
-parts: AABB 
+tags:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2021-01-11
 mp3_file: /mp3/sally-gardens.mp3
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
@@ -29,5 +29,4 @@ abc: |
     G2DG BAGB|dBeB dBAB|d2Bd efge|1 dBAB G2:|2 dBAB G4||
     dggf g2dg|gabg agfg|eaag a2ea|agbg ageg|
     dggf g2dg|gabg ageg|d2Bd efge|1 dBAB G4:|2 dBAB G2||
-
 ---
