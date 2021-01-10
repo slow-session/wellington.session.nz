@@ -6,14 +6,14 @@ rhythm: jig
 date: 2017-04-06
 location: Wellington
 notes:
-tags: slow-favourite slowsession 
-repeats: 3 
-parts: AABB 
+tags: slow-favourite slowsession
+repeats: 3
+parts: AABB
 regtuneoftheweek:
-slowtuneoftheweek: 2017-04-06
+slowtuneoftheweek: 2021-01-11
 mp3_file: /mp3/donnybrook-fair.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
-mp3_licence: "© Fergal Scahill. All Rights Reserved."
+mp3_licence: '© Fergal Scahill. All Rights Reserved.'
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1217181108378222/
 source: Wellington
 abc_source: The Session
