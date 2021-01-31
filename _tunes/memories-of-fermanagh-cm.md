@@ -1,6 +1,6 @@
 ---
-title: Memories Of Farmanagh *
-titleID: memories-of-farmanagh-cm.md
+title: Memories Of Fermanagh *
+titleID: memories-of-fermanagh-cm.md
 key: D
 rhythm: air
 notes:
@@ -11,7 +11,7 @@ repeats: 5
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/cm/memories-of-farmanagh-cm.mp3
+mp3_file: /mp3/cm/memories-of-fermanagh-cm.mp3
 mp3_source: Charlie Montgomery
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:
@@ -20,7 +20,7 @@ abc_source: Charlie Montgomery
 abc_url:
 abc: |
     X: 1
-    T: Memories of Farmanagh
+    T: Memories of Fermanagh
     R: air
     C: Charlie Montgomery
     M: 3/4
