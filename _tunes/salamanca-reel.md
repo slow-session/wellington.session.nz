@@ -26,7 +26,7 @@ abc: |
     R:reel
     D:Bothy Band 1975.
     Z:id:hn-reel-73
-    M:C|
+    M: 4/4
     K:D
     AD "D" (3FED AD (3FED|Adcd fdcd|"Em"BE~E2 BE~E2|Beed cdeg|
     "Bm"fB~B2 fB~B2|fgef dfag|fdec "G" dBAG|1 "A"FAEF "D"D2dB:|2 "A" FAEF "D"D2fg||

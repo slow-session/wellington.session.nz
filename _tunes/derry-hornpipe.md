@@ -22,7 +22,7 @@ abc: |
     X: 24
     T:Derry Hornpipe, The
     R:hornpipe
-    M:C|
+    M: 4/4
     L:1/8
     K:D
     AG|:F2Ad fdAF|G2Bd gdBG|F2Ad fdAF|E2Ac ecAG|

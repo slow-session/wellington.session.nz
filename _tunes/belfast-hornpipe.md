@@ -24,7 +24,7 @@ abc: |
     T:Sweep's Hornpipe
     R:hornpipe
     Z:id:hn-hornpipe-46
-    M:C|
+    M: 4/4
     L:1/8
     K:D
     ag|(3faf df AdFA|DFAd f2ef|gabg efge|cdec A2ag|
