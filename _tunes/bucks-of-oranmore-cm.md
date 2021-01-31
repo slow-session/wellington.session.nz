@@ -24,7 +24,7 @@ abc: |
   R:reel
   D:Stockton's Wing
   Z:id:hn-reel-148
-  M:C|
+  M: 4/4
   L:1/8
   K:D
   A2FA ~A2dB|A2FA BE~E2|1 A2FA ~A2Bd|egfd edBd:|2 ~D3F ADFA|defd efdB||

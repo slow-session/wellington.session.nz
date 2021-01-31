@@ -22,7 +22,7 @@ abc_url: https://thesession.org/tunes/83
 abc: |
     X: 5
     T: Rights of Man
-    M:C|
+    M: 4/4
     L:1/8
     K:Em
     |:GA|(3BcB (3ABA (3GAG (3FGF|EFGA B2ef|gfed edBd|cBAG A2GA|!

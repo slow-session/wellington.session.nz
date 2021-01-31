@@ -23,7 +23,7 @@ abc: |
     T:Murphy's Hornpipe
     R:hornpipe
     Z:id:hn-hornpipe-52
-    M:C|
+    M: 4/4
     L:1/8
     K:G
     (3DEF|GABG EFGE|ABcA FGAF|GBdg ecAG|FGAF DEFD|

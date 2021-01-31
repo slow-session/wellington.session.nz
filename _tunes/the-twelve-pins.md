@@ -25,7 +25,7 @@ abc: |
   R:reel
   C:Charlie Lennon
   Z: Megan Ward
-  M:C|
+  M: 4/4
   K:G
   dB~B2 dBGB | dA~A2 dAFE | DEFG ABcA | defg agfe |
   dB~B2 dBGB | dA~A2 dAFE | DEFG ABcA | d2cA BGG2 :|

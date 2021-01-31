@@ -20,7 +20,7 @@ source: Wellington
 abc: |
     X: 19
     T:Blackberry Blossom, The
-    M:C|
+    M: 4/4
     L:1/8
     R:reel
     K:G
