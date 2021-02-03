@@ -6,15 +6,16 @@ layout: page
     
     <!-- display the dots -->
     <div id="abcPaper" class="abcPaper"></div>
+    <div id="abcAudio"></div>
     
     <!-- play the ABC version -->
     <div style="overflow-x:auto;">
-    <div id="ABCplayer"></div>
+    <div id="pageABCplayer"></div>
     </div>
 
     <!-- show/edit the ABC -->
     <form>
-        <input type="button" class="filterButton" value="Show ABC Source" onclick="toggleABC(this);">
+        <input type="button" class="filterButton" value="Show ABC Source" onclick="audioPlayer.toggleABC(this);">
     </form>
     <div id='abcSource' class="abcSource">
         <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
@@ -24,7 +25,7 @@ layout: page
         <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief set of instructions is found <a href="/editingABC/">here.</a></p>
         <div title="Download the ABC you've entered. Don't lose your work!">
        	<input value='Download ABC' type='button' class="filterButton"
-            onclick='downloadABCFile(document.getElementById("textAreaABC").value)' />
+            onclick='wssTools.downloadABCFile(document.getElementById("textAreaABC").value)' />
         </div>
     </div>
 
@@ -55,16 +56,8 @@ window.store = {
     },
 };
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     let tuneID = "{{ tuneID }}";
-    
-    {% if page.abc contains "K:" %}    
-    // create the ABC player
-    document.getElementById('ABCplayer').innerHTML = 
-        createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
-        createABCSliders("textAreaABC", tuneID);
-{% endif %}
-
-    selectTune(window.store, tuneID);
+    audioPlayer.selectTune(window.store, tuneID);
 });
 </script>

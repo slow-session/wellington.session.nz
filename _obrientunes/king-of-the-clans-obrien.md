@@ -23,7 +23,7 @@ abc: |
     T:Set: King of the Clan's/My Love is in America/Flogging
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     c|:~d2GA Bdge|dedB AGEG|DGBG dGBG|cege dcBc|
     dGBd gdBd|gabg agef|gf (3gfe dBge|dBAc BG G2:|

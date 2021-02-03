@@ -106,7 +106,7 @@ There's a large list of tunes including tunes played in other New Zealand sessio
 
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */

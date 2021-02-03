@@ -5,16 +5,16 @@ permalink: /playLocalABC/
 ---
 You can use this page to play an ABC file you've stored locally.
 
-
 <textarea id="textAreaABC" style="display:none;"></textarea>
 
 <div class="output">
     <div id="abcPaper" class="abcPaper"></div>
+    <div id="abcAudio"></div>
 </div>
 
 <div class="player">
 <!-- hide the player until we've loaded some dots -->
-<div id="abcPlayer" style="display:none;"></div>
+<div id="pageABCplayer" style="display:none;"></div>
 </div>
 
 <input type="file" id="files" class='filterButton' name="files[]" accept="text/vnd.abc,.abc"/>
@@ -22,8 +22,8 @@ You can use this page to play an ABC file you've stored locally.
 <output id="fileInfo"></output>
 
 <script>
-$(document).ready(function()
-{
+
+document.addEventListener("DOMContentLoaded", function (event) {
     // Check for the various File API support.
     var fileInfo = document.getElementById('fileInfo');
     if (window.File && window.FileReader && window.FileList && window.Blob) {
@@ -31,10 +31,6 @@ $(document).ready(function()
     } else {
         fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
     }
-	// Create the ABC player
-    abcPlayer.innerHTML = createABCplayer('textAreaABC', 1, '{{ site.defaultABCplayer }}');
-    createABCSliders("textAreaABC", '1');
-
 });
 
 function handleABCFileSelect(evt) {
@@ -49,30 +45,14 @@ function handleABCFileSelect(evt) {
 
         reader.onload = function(e) {
             // Is ABC file valid?
-            if ((getABCheaderValue("X:", this.result) == '')
-                || (getABCheaderValue("T:", this.result) == '')
-                || (getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
+            if ((wssTools.getABCheaderValue("X:", this.result) == '')
+                || (wssTools.getABCheaderValue("T:", this.result) == '')
+                || (wssTools.getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
                 return (1);
             }
 
-            // Show the dots
-            textAreaABC.value = this.result;
+            audioPlayer.displayABC(this.result);
             
-            // Display the ABC in the textbox as dots
-            abc_editor = new window.ABCJS.Editor("textAreaABC", { paper_id: "abcPaper", warnings_id:"abcWarnings", render_options: {responsive: 'resize'}, indicate_changed: "true" });
-            
-            // stop tune currently playing if needed
-            var playButton = document.getElementById("playABC1");
-            if (typeof playButton !== 'undefined'
-                && playButton.className == "stopButton") {
-                stopABCplayer();
-                playButton.className = "";
-                playButton.className = "playButton";
-            }
-            
-            // Show the player when we've loaded some dots
-            document.getElementById("abcPlayer").style.display = 'block';
-
         };
         reader.readAsText(f);
     }

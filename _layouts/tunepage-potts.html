@@ -2,38 +2,39 @@
 layout: page
 ---
 <div>
-Added <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-{% if page.notes %}
-<p>Notes: {{ page.notes }}</p>
-{% endif %}
+    Added <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    {% if page.notes %}
+    <p>Notes: {{ page.notes }}</p>
+    {% endif %}
 </div>
 <br />
 
 <!-- audio player for MP3 files-->
-<div id="audioPlayer"></div>
+<div id="pageAudioPlayer"></div>
 <div style="overflow-x:auto;">
-    <div id="showPlayer"></div>
+    <div id="pageMP3player"></div>
 </div>
 
 <!-- attribution -->
 <div>
     <br />
     {% if page.mp3_file %}
-     <p>The audio for {{ page.title }} is sourced from
-    {% if page.mp3_url %}
-    <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
-    {% else %}
-    {{ page.mp3_source }}.
-    {% endif %}
-    Permission to use is gratefully acknowledged and the audio is made available under this licence:
-    {{ page.mp3_licence }}</p>
+    <p>The audio for {{ page.title }} is sourced from
+        {% if page.mp3_url %}
+        <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+        {% else %}
+        {{ page.mp3_source }}.
+        {% endif %}
+        Permission to use is gratefully acknowledged and the audio is made available under this licence:
+        {{ page.mp3_licence }}</p>
 
     {% if page.mp3_url %}
     <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
     <!-- If the mp3_url is one from YouTube or Facebook etc, embed a copy here -->
-    <p><script>
-    show_iframe("{{ page.mp3_url }}");
-    </script>
+    <p>
+        <script>
+            wssTools.show_iframe("{{ page.mp3_url }}");
+        </script>
     </p>
     {% endif %}
     {% endif %}
@@ -41,29 +42,28 @@ Added <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: 
 
 {% assign tuneID = 1 %}
 <script>
+    window.store = {
+        "{{ tuneID }}": {
+            "title": "{{ page.title | xml_escape }}",
+            "tuneID": "{{ tuneID }}",
+            "key": "{{ page.key | xml_escape }}",
+            "rhythm": "{{ page.rhythm | xml_escape }}",
+            "url": "{{ page.url | xml_escape }}",
+            "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
+            "mp3_source": "{{ page.mp3_source | strip_html | xml_escape }}",
+            "repeats": "{{ page.repeats }}",
+            "parts": "{{ page.parts }}",
+            "abc": {{ page.abc | jsonify }}
+        },
+    };
 
-window.store = {
-    "{{ tuneID }}": {
-        "title": "{{ page.title | xml_escape }}",
-        "tuneID": "{{ tuneID }}",
-        "key": "{{ page.key | xml_escape }}",
-        "rhythm": "{{ page.rhythm | xml_escape }}",
-        "url": "{{ page.url | xml_escape }}",
-        "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
-        "mp3_source": "{{ page.mp3_source | strip_html | xml_escape }}",
-        "repeats": "{{ page.repeats }}",
-        "parts": "{{ page.parts }}",
-        "abc": {{ page.abc | jsonify }}
-    },
-};
+    document.addEventListener("DOMContentLoaded", function (event) {
+        let tuneID = "{{ tuneID }}";
 
-$(document).ready(function() {
-    let tuneID = "{{ tuneID }}";
+        // create the ABC player
+        pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
 
-    // create the ABC player
-    audioPlayer.innerHTML = createAudioPlayer();
+        audioPlayer.selectTune(window.store, tuneID);
 
-    selectTune(window.store, tuneID);
-
-});
+    });
 </script>

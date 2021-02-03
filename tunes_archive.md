@@ -40,10 +40,10 @@ window.store = {
         <div class="formParent">
             <div class="formChild">
                 <input type="text" id="title-box" name="title" placeholder='Search'
-                value='' onkeydown="enable_button()">
+                value='' onkeydown="wssTools.enableButton()">
             </div>
             <div class="formChild">
-                <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
                 <option value="">All Rhythms</option>
                 {% for rhythm in rhythms %}
                 {% if rhythm != '' %}
@@ -75,7 +75,7 @@ window.store = {
 {% include tuneModal.html%}
 
 <script>
-  $(document).ready(function() {
-    audioPlayer.innerHTML = createAudioPlayer();
+  document.addEventListener("DOMContentLoaded", function (event) {
+    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
   });
 </script>

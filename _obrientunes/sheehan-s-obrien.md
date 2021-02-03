@@ -23,7 +23,7 @@ abc: |
     T:Set: Sheehan's/Down the Broom/Kiss Me Kate
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     F|:~G2 BG DGBG |ABcA BG~G2|AGAB cBcA|EAAG FDEF |
     ~G2 BG DGBd|~c2 AB cdef|gedB ~c2 Bc|dBcA BG~G2:|

@@ -37,7 +37,7 @@ These are just copies of the versions we have on the current site. I'll replace 
 
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */

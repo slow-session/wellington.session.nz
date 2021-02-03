@@ -23,7 +23,7 @@ abc: |
     T:Set: Follow Me Down/Milliner's Daughter/Sailor's Jacket
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:ADor
     G|ABAG EF~G2|AGAB ~c2ed|cABG EFGA|aged cAdc|
     ABAG EF~G2|AGAB ~c2ed|cABG EFGA|aged cAA:|

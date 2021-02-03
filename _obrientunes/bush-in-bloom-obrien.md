@@ -23,7 +23,7 @@ abc: |
     T:Set: Bush in Bloom/Congress/Ewe Reel
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     ge|~d2 BG AGEF|~G2 Bd efge|~d2BG AGED |Eaag fde^c|
     ~d2 BG AGEF|~G2 Bd efge|dG~G2 AGEF|GBAF G2:|

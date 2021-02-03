@@ -15,19 +15,19 @@
 
 function displayFocusTunesGrid(divID, storeName, storeObject) {
   // create div for tunes grid
-  if (testForMobile()) {
-    var appendString = `<div id="${divID}" class="tunesArchiveLayout mobileScrolling">`;
-  } else {
-    var appendString = `<div id="${divID}" class="tunesArchiveLayout">`;
+  document.getElementById(divID).classList.add("tunes3columnLayout");
+  if (wssTools.testForMobile()) {
+    document.getElementById(divID).classList.add("mobileScrolling");
   }
 
+  let appendString = '';
   for (var key in storeObject) {
     // Iterate over the original data
     var item = storeObject[key];
 
     appendString += `<span><a href="${item.url}">${item.title}</a></span>
             <span><input class="filterButton" type="button" 
-            onclick="selectTune(${storeName}, ${item.tuneID});" value="Play Now">
+            onclick="audioPlayer.selectTune(${storeName}, ${item.tuneID});" value="Play Now">
             </span>
             <span>${item.key} ${item.rhythm}</span>`;
   }

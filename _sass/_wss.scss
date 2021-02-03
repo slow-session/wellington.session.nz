@@ -4,6 +4,7 @@
     padding-right: 2rem
 }
 
+// START: controls for embedded videos
 .container-iframe {
     position: relative;
     overflow: hidden;
@@ -21,11 +22,12 @@
     width: 100%;
     height: 100%;
   }
-  
+// END: controls for embedded videos
 
-// START: controls for audio and ABC players
+// START: controls for audio player
 .audioParentOuter {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 2.5em 1fr;
     border-style: solid;
     border-radius: 8px;
     border-color: $brand-color;
@@ -39,25 +41,12 @@
     flex-wrap: wrap;
 }
 
-.abcParentInner {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-}
-
-.audioChildOuter {
-    flex: 1 auto;
-}
-
 .audioChildInner {
     flex: 1;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.mp3AudioControl {
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    min-width: 10rem;
 }
 
 .mp3LoopControl {
@@ -65,27 +54,6 @@
     min-width: 10rem;
     display: flex;
     justify-content: space-around;
-}
-
-.mp3SpeedControl {
-    margin-top: 1.5rem;
-}
-
-.abcAudioControl {
-    width: 100%;
-    min-width: 12.5rem;
-    margin-bottom: 2.0rem;
-    float: left;
-}
-
-.abcSpeedControl {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    float: left;
-}
-
-.playPauseButton {
-    max-width: 2.5rem;
 }
 
 .playButton {
@@ -121,24 +89,13 @@
     margin-top: 0.5rem;
 }
 
-p.audioLabel {
-    clear: left;
-    font-size: small;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-p.mp3SpeedLabel {
+p.speedLabel {
     margin-top: 2.5rem;
     margin-bottom: 0;
     min-width: 7rem;
     clear: left;
     font-size: small;
     text-align: center;
-}
-
-.tuneTitle {
-    font-size: 110%;
 }
 
 .abcSource {
@@ -159,63 +116,27 @@ p.mp3SpeedLabel {
     width: 100%;
 }
 
+// END: controls for audio and ABC players
+
 .loopButton {
     background-color: $brand-color;
-    cursor: pointer;
     padding: 4px;
+    margin-bottom: 5px;
+    color: darken($complimentary-color, 10%);
+    cursor: pointer;
     border-radius: 8px;
     font-size: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darken($brand-color, 10%);
 }
-
-// START: sliders used in ABCplayer
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 50%;
-    background: steelblue;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
-}
-
-.slider:hover {
-    opacity: 1;
-}
-// The slider handle (use -webkit- (Chrome, Opera, Safari, Edge)
-// and -moz- (Firefox) to override default look)
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    // adjust width of control button
-    width: 15px;
-    // adjust height of control button
-    height: 20px;
-    border-radius: 50%;
-    background: darken($brand-color, 20%);
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    // adjust width of control button
-    width: 15px;
-    // adjust height of control button
-    height: 20px;
-    border-radius: 50%;
-    background: darken($brand-color, 20%);
-    cursor: pointer;
-}
-// END: sliders used in ABCplayer
-
-// END: controls for audio and ABC players
 
 .filterButton {
     background-color: $brand-color;
     padding: 7px 5px 4px 5px;
     margin-right: 5px;
     margin-left: 5px;
+    margin-bottom: 5px;
     color: darken($complimentary-color, 10%);
     cursor: pointer;
     border-radius: 8px;
@@ -228,14 +149,6 @@ p.mp3SpeedLabel {
 .filterButton.filterDisabled {
     opacity: 0.55;
     cursor: not-allowed;
-}
-
-.sep {
-    border-bottom: 1px solid black;
-}
-
-.sep td {
-    padding-bottom: 5px;
 }
 
 h2 span {
@@ -267,7 +180,6 @@ fieldset {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    
 }
 
 .formChild {
@@ -479,10 +391,10 @@ tr#no_hover:hover {
 }
 
 // if the height is 320px we show 10 tunes in the table
-.tunesArchiveLayout {
+.tunes3columnLayout {
     display: grid;
     max-height: 320px;
-    grid-template-columns: minmax(100px, 350px) 2fr minmax(50px, 90px);
+    grid-template-columns: minmax(100px, 350px) 3fr minmax(50px, 90px);
     grid-auto-rows: fit-content(1em);
     overflow-x: hidden;
     overflow-y: auto;
@@ -491,50 +403,17 @@ tr#no_hover:hover {
     border-radius: 8px;
 }
 
-.tunesArchiveLayout > span {
-    display: flex;
-    padding: 4px 2px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.tunesArchiveLayout > span:nth-child(6n + 1),
-.tunesArchiveLayout > span:nth-child(6n + 2),
-.tunesArchiveLayout > span:nth-child(6n + 3) {
+.tunes3columnLayout > span:nth-child(6n + 1),
+.tunes3columnLayout > span:nth-child(6n + 2),
+.tunes3columnLayout > span:nth-child(6n + 3) {
     background-color: darken($complimentary-color, 6%);
 }
 
-.tuneoftheweekLayout {
-    display: grid;
-    grid-template-columns: minmax(100px, 350px) 2fr minmax(50px, 90px);
-    grid-auto-rows: fit-content(1em);
-    border-color: $brand-color;
-    border-style: solid;
-    border-radius: 8px;
-}
-
-.tuneoftheweekLegend {
-    grid-column: 1 / span 3;
-    margin: -1em auto -0.5em;
-    padding: 3px;
-    background-color: $complimentary-color;
-    text-align: center;
-}
-
-.tuneoftheweekLayout > span {
-    display: flex;
-    padding: 6px 2px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
 // if the height is 320px we show 10 tunes in the table
-.tunesObrienLayout {
+.tunes2columnLayout {
     display: grid;
     max-height: 320px;
-    grid-template-columns: minmax(200px, 300px) minmax(60px, 90px);
+    grid-template-columns: 6fr 1fr;
     grid-auto-rows: fit-content(1em);
     overflow-x: hidden;
     overflow-y: auto;
@@ -543,21 +422,13 @@ tr#no_hover:hover {
     border-radius: 8px;
 }
 
-.tunesObrienLayout > span {
-    display: flex;
-    padding: 4px 2px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.tunesObrienLayout > span:nth-child(4n + 1),
-.tunesObrienLayout > span:nth-child(4n + 2) {
+.tunes2columnLayout > span:nth-child(4n + 1),
+.tunes2columnLayout > span:nth-child(4n + 2) {
     background-color: darken($complimentary-color, 6%);
 }
 
 // if the height is 320px we show 10 tunes in the table
-.tunesPottsLayout {
+.tunes1columnLayout {
     display: grid;
     max-height: 320px;
     grid-template-columns: minmax(300px, 600px);
@@ -569,17 +440,18 @@ tr#no_hover:hover {
     border-radius: 8px;
 }
 
-.tunesPottsLayout > span {
+.tunes1columnLayout > span:nth-child(2n + 1) {
+    background-color: darken($complimentary-color, 6%);
+}
+
+.tunes3columnLayout > span,
+.tunes2columnLayout > span,
+.tunes1columnLayout > span {
     display: flex;
     padding: 4px 2px;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.tunesPottsLayout > span:nth-child(4n + 1),
-.tunesPottsLayout > span:nth-child(4n + 2) {
-    background-color: darken($complimentary-color, 6%);
 }
 
 .titleSpanLeft {
@@ -685,3 +557,125 @@ tr#no_hover:hover {
     position: absolute;
 }
 // END: LongBow
+
+.editHelp {
+    display: none;
+    overflow: auto;
+    border: 2px solid $brand-color;
+    background-color: darken($complimentary-color, 6%);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+// Local mods to noUi sliders
+
+.noUi-target {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-horizontal {
+    border-radius: 50%;
+    height: 0.8rem;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 1rem;
+    height: 2.2rem;
+    left: -8px;
+    top: -6px;
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -10px;
+    left: auto;
+}
+
+.noUi-handle {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background: $brand-color;
+    cursor: default;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+    background: none;
+}
+
+.noUi-tooltip {
+    display: block;
+    position: absolute;
+    border: 0 solid lightgray;
+    border-radius: 8px;
+    background: transparent;
+    color: $brand-color;
+    padding: 0 0.1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 190%);
+    left: 50%;
+    bottom: 120%;
+    font-size: small;
+    padding: 0.3rem;
+    z-index: -1;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 1rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: darken($brand-color, 20%);
+    border-color: darken($brand-color, 20%);
+    cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle[data-handle='1'] {
+    width: 1rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: green;
+    border-color: darken($brand-color, 20%);
+    cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle[data-handle='1'] .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 20%);
+    left: 50%;
+    bottom: 120%;
+    font-size: small;
+    padding: 0.3rem;
+    z-index: -1;
+}
+
+.noUi-connects,
+.noUi-connect {
+    background: steelblue;
+    opacity: 0.7;
+    border-radius: 50%;
+    border: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0.5rem;
+}
+
+.grid-child {
+    border: 2px solid $brand-color;
+    border-radius: 8px;
+}
+
+.setRow {
+    display: flex;
+    flex-wrap: wrap;
+}

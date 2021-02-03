@@ -1,21 +1,21 @@
 ---
 layout: page
-title: Latest Tunes
-permalink: /latest/
+title: Jukebox
+permalink: /jukebox/
 ---
-These are the last <span id="tunesCount"></span> tunes we’ve added to the <a href="/tunes_archive/">Tunes Archive</a>.
-
 <script>
+const getRandomInt = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
 window.store = {
-    {% assign sortedtunes = site.tunes | sort: 'date' | reverse %}
-    {% assign tune_count = 0 %}
-    {% assign tuneID = 200 %}
+    {% assign tunes = site.tunes %}
+    {% assign sortedtunes = tunes | sort: 'titleID' %}
+    {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
-        {% if tune.tags contains 'cm' %}
-            {% continue %}
-        {% endif %}
-        {% assign tune_count = tune_count | plus: 1 %}
-        {% assign tuneID = tuneID | plus: 1 %}
+    {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -27,15 +27,18 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count < site.latest_tunes_max %},{% else %}{% break %}{% endif %}
-    {% endfor %}
-};
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    };
 </script>
 
-
-{% include tunesArchiveGrid.html%}
-
 {% include tuneModal.html%}
+
+Pick a random tune from the archive:
+
+<div>
+    <input class="filterButton" type="button" onclick="audioPlayer.selectTune(store, getRandomInt(1, {{ tuneID }}));" value="Play Now">
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {

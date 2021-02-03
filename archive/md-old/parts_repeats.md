@@ -37,7 +37,7 @@ window.store = {
 
 
 <script>
-  $(document).ready(function() {
+  document.addEventListener("DOMContentLoaded", function (event) {
 
   });
 </script>

@@ -24,7 +24,7 @@ abc: |
     T:Set: Christmas Eve/Bunker Hill/Hunter's Purse
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     GE|~D2 DE GFGA|~B2dB ABGB|ABGE DB,DE|~G2BG ABGE|
     FB,DE GFGA|~B2 dB ABGA|BA~A2 GEBG|ABGE ~G2:|
