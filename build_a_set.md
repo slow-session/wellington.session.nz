@@ -11,7 +11,7 @@ in the order you want to play them in the set. When you've done that you'll be a
 to view the set.
 
 You can also look at some sets that have been played in Wellington in recent times on our
-<button class="filterButton" onclick="window.location.href = '/historical_sets/';">Historical Sets</button>
+<button class="filterButton" onclick="window.location.href = '/historic_sets/';">Historic Sets</button>
 page.
 
 <script>
@@ -43,10 +43,10 @@ page.
         <div class="formParent">
         <div class="formChild">
             <input type="text" id="title-box" name="title" placeholder='Search'
-            value='' onkeydown="enable_button()">
+            value='' onkeydown="wssTools.enableButton()">
         </div>
         <div class="formChild">
-            <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+            <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
             {% if rhythm != '' %}
@@ -76,7 +76,7 @@ page.
 <div class="row"></div>
 
 <form>
-    <fieldset id="modalControls" style="display:block;">
+    <fieldset id="modalControls" style="display:inline;">
         <legend>Selected Tunes</legend>
         <div id="setTuneTitles" class="setChoice"></div>
         <div class="formParent">
@@ -103,10 +103,8 @@ page.
 <textarea id="textAreaABC" style="display:none;"></textarea>
 
 <script>
-$(document).ready(function() {
-    let tuneID = 1;
-    
-    ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
-    createABCSliders("textAreaABC", tuneID);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+    // no action needed here
 });
 </script>

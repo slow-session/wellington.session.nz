@@ -23,7 +23,7 @@ abc: |
     Z:Set Paddy Reynold's/Jer Quigley's/Hunters' House
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     F2|DGGF GABd|~g2 dg egdB|~A2 ^GB AcBA|GBAF GFEF|
     DG~G2 DGBd|~g2dg egdB|GABd gedc|BcAF G2:|

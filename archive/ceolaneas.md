@@ -107,7 +107,7 @@ There's also a large list of tunes including tunes played in other New Zealand s
 
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */

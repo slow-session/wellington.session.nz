@@ -23,7 +23,7 @@ abc: |
     T:Set: Limerick Lassies/Old Copper Plate/Buckley's Fancy
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:D
     c2|dBAF DEFD|GFGA BE~E2|dBAF DFAF|GBAG FD~D2|
     dBAF DFAF|GFGA BE~E2|~d2cd (3Bcd AF|GBAG FD~D2||

@@ -23,7 +23,7 @@ abc: |
     T:Set: Boys of Balliysodare/Pat Tuohy's/Birmingham
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:DMix
     c2|dG~G2 dGeG|dGGA BAAB|dG~G2 dedB|AcBA GE~D2|
     dG~G2 dGeG|dG~G2 BA~A2|Bd~d2 eBdB|AcBA GED||

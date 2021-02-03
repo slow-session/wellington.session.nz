@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Historical Sets
-permalink: /historical_sets/
+title: Historic Sets
+permalink: /historic_sets/
 ---
 
 These are sets we sometimes play at the Wellington Slow Session.
@@ -16,10 +16,10 @@ page.
         <legend>Select from historical Wellington Sets:</legend>    
         <div class="formParent">
             <div class="formChild">           
-                <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="enable_button()">
+                <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="wssTools.enableButton()">
             </div>
             <div class="formChild">
-                <select id="rhythm-box" name="rhythm"  onChange="enable_button()">
+                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
                     <option value="">Any Rhythm</option>
                     {% for rhythm in rhythms %}
                     {% if rhythm != '' %}
@@ -43,8 +43,8 @@ page.
 
 <div class="row"></div>
 
-{% assign tuneID = 200 %}
-{% assign setID = 200 %}
+{% assign tuneID = 1 %}
+{% assign setID = 1 %}
 {% for set in site.sets %}
     {% for setTune in set.tunes %}
         {% assign setTunes = setTunes | append: setTune | append: ' ' %}
@@ -93,16 +93,12 @@ window.setStore = {
 };
 </script>
 
-<div class="tableParent">
-  <div class="tableChild" id="tunesTable"></div>
-</div>
+{% include tunesSetsGrid.html %}
 
-<script src="{{ site.js_host }}/js/build_table_current_sets.js"></script>
-
-{% include tuneModal.html%}
+{% include tuneModal.html %}
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
-    audioPlayer.innerHTML = createAudioPlayer();
+    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
 });
 </script>

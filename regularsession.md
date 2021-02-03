@@ -86,7 +86,7 @@ We add new tunes to the archive reasonably often. You can check those out in our
 {% include tuneModal.html%}
 
 <script>
-$(document).ready(function() {
-    audioPlayer.innerHTML = createAudioPlayer();
+document.addEventListener("DOMContentLoaded", function (event) {
+    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
 });
 </script>

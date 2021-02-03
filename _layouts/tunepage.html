@@ -17,7 +17,8 @@ layout: page
         {% if page.location contains 'Wellington' %}
         {% if page.slowtuneoftheweek %}
         Slow Session:
-        <time datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
+        <time
+            datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
         {% elsif page.tags contains 'slowsession' %}
         Slow Session: before 2017
         {% endif %}
@@ -25,7 +26,8 @@ layout: page
         {% endif %}
         {% if page.location contains 'Wellington' and page.regtuneoftheweek %}
         Regular Session:
-        <time datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
+        <time
+            datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
         <br />
         {% endif %}
     </div>
@@ -33,14 +35,14 @@ layout: page
 <br />
 
 <!-- audio player for MP3 files-->
-<div id="audioPlayer"></div>
+<div id="pageAudioPlayer"></div>
 <div style="overflow-x:auto;">
-    <div id="showPlayer"></div>
+    <div id="pageMP3player"></div>
 </div>
 
 <!-- preset loops -->
 <form id="loopForm" style="display: none;">
-    <input type="button" class="filterButton" value="Show Preset Loops" onclick="toggleLoops(this);">
+    <input type="button" class="filterButton" value="Show Preset Loops" onclick="audioPlayer.toggleLoops(this);">
 </form>
 <div id="loopPresetControls" style="display: none;"></div>
 
@@ -48,53 +50,60 @@ layout: page
 <div>
     <!-- display the dots -->
     <div id="abcPaper" class="abcPaper"></div>
+    <div id="abcAudio"></div>
 
-    {% if page.abc contains "K:" %}    
+
+    {% if page.abc contains "K:" %}
     <!-- play the ABC version -->
     <div style="overflow-x:auto;">
-        <div id="ABCplayer"></div>
-    </div>
-        
+        <div id="pageABCplayer"></div>
+    </div>    
+
     <!-- show/edit the ABC -->
     <form>
-        <input type="button" class="filterButton" value="Show ABC Source" onclick="toggleABC(this);">
+        <input type="button" class="filterButton" value="Show ABC Source" onclick="audioPlayer.toggleABC(this);">
     </form>
     <div id='abcSource' class="abcSource">
         <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
         <!-- show ABC errors -->
         <div id='abcWarnings'></div>
-        
-        <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief set of instructions is found    <a href="/editingABC/">here.</a>
+
+        <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief
+            set of instructions is found <a href="/editingABC/">here.</a>
         </p>
 
         <div title="Download the ABC you've entered. Don't lose your work!">
-            <input value='Download ABC' type='button' class="filterButton" onclick='downloadABCFile(document.getElementById("textAreaABC").value)' />
+            <input value='Download ABC' type='button' class="filterButton"
+                onclick='wssTools.downloadABCFile(document.getElementById("textAreaABC").value)' />
         </div>
-        <br />        
-        <p>If you feel that your changes are a closer match to the recording on the website, please save your changes (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and we will review the proposed changes.
-        </p>            
+        <br />
+        <p>If you feel that your changes are a closer match to the recording on the website, please save your changes
+            (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and
+            we will review the proposed changes.
+        </p>
     </div>
-{% endif %}
+    {% endif %}
 
     <!-- attribution -->
     <div>
         <br />
         {% if page.mp3_file %}
         <p>The audio for {{ page.title }} is sourced from
-        {% if page.mp3_url %}
-        <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
-        {% else %}
-        {{ page.mp3_source }}.
-        {% endif %}
-        Permission to use is gratefully acknowledged and the audio is made available under this licence:
-        {{ page.mp3_licence }}</p>
+            {% if page.mp3_url %}
+            <a href="{{ page.mp3_url }}">{{ page.mp3_source }}</a>.
+            {% else %}
+            {{ page.mp3_source }}.
+            {% endif %}
+            Permission to use is gratefully acknowledged and the audio is made available under this licence:
+            {{ page.mp3_licence }}</p>
 
         {% if page.mp3_url %}
         <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        <p><script>
-        show_iframe("{{ page.mp3_url }}");
-        </script>
+        <p>
+            <script>
+                wssTools.show_iframe("{{ page.mp3_url }}");
+            </script>
         </p>
         {% endif %}
         {% endif %}
@@ -103,16 +112,16 @@ layout: page
         <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
         <p>
-        <script>
-        show_iframe("{{ page.alt_mp3_url }}");
-        </script>
+            <script>
+                wssTools.show_iframe("{{ page.alt_mp3_url }}");
+            </script>
         </p>
         {% endif %}
 
         {% if page.abc_source %}
         <p>The music notation was derived from
-        {% if page.abc_url %}
-        <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+            {% if page.abc_url %}
+            <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
         {% else %}
         {{ page.abc_source }}
         {% endif %}
@@ -122,38 +131,29 @@ layout: page
 
 {% assign tuneID = 1 %}
 <script>
-
-window.store = {
-    "{{ tuneID }}": {
-        "title": "{{ page.title | xml_escape }}",
-        "tuneID": "{{ tuneID }}",
-        "key": "{{ page.key | xml_escape }}",
-        "rhythm": "{{ page.rhythm | xml_escape }}",
-        "url": "{{ page.url | xml_escape }}",
-        "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
-        "mp3_source": "{{ page.mp3_source | strip_html | xml_escape }}",
-        "repeats": "{{ page.repeats }}",
-        "parts": "{{ page.parts }}",
-        "abc": {{ page.abc | jsonify }}
-    },
-};
-
-$(document).ready(function() {
-    let tuneID = "1";
-    
-    // create the ABC player
-    audioPlayer.innerHTML = createAudioPlayer();
-    
-    {% if page.abc contains "K:" %}   
-    // create the ABC player
-    ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
-    createABCSliders("textAreaABC", tuneID);
-    {% endif %}
+    window.store = {
+        "{{ tuneID }}": {
+            "title": "{{ page.title | xml_escape }}",
+            "tuneID": "{{ tuneID }}",
+            "key": "{{ page.key | xml_escape }}",
+            "rhythm": "{{ page.rhythm | xml_escape }}",
+            "url": "{{ page.url | xml_escape }}",
+            "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
+            "mp3_source": "{{ page.mp3_source | strip_html | xml_escape }}",
+            "repeats": "{{ page.repeats }}",
+            "parts": "{{ page.parts }}",
+            "abc": {{ page.abc | jsonify }}
+        },
+    };
 
 
-    selectTune(window.store, tuneID);
-    
-    
+    document.addEventListener("DOMContentLoaded", function (event) {
+        let tuneID = "1";
 
-});
+        // create the player
+        pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
+
+        audioPlayer.selectTune(window.store, tuneID);
+
+    });
 </script>

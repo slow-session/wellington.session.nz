@@ -76,7 +76,7 @@ You can download a file containing all the ABCs used on this site. There are a n
         <div class="row">
             <span title="Download the ABC you've entered. Don't lose your work!">
         	    <input value='Download ABC File' type='button' class="filterButton"
-                onclick='downloadFile("WellingtonIrishSessions.abc", 
+                onclick='wssTools.downloadFile("WellingtonIrishSessions.abc", 
                         document.getElementById("abcText").value)' />
             </span>
         </div>
@@ -87,23 +87,16 @@ You can download a file containing all the ABCs used on this site. There are a n
 window.store = {
     {% assign tunes = site.tunes %}
     {% assign sortedtunes = tunes | sort: 'titleID' %}
-    {% assign tuneID = 100 %}
+    {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
-    {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
-            "key": "{{ tune.key | xml_escape }}",
-            "rhythm": "{{ tune.rhythm | xml_escape }}",
-            "url": "{{ tune.url | xml_escape }}",
-            "mp3": "{{ site.mp3_host | append: tune.mp3_file | xml_escape }}",
-            "mp3_source": "{{ tune.mp3_source | strip_html | xml_escape }}",
-            "repeats": "{{ tune.repeats }}",
-            "parts": "{{ tune.parts }}",
             "abc": "{{ tune.abc | uri_escape }}"
             }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    };
+        {% assign tuneID = tuneID | plus: 1 %}
+    {% endfor %}
+};
 </script>
 
 <script src="{{ site.js_host }}/js/build_abc_source.js"></script>

@@ -23,7 +23,7 @@ abc: |
     T:Set: Crooked Road to Dublin/College Grove/Killaghbeg House
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     F2|~G2~G2 FGAF|~G2 FG AdcA|GBAG FGAg|fdcA ~d2 cA|
     ~G2 ~G2 FGAF|~G2 FG AdcA|GBAG FGAg|fdcA ~d2cA||

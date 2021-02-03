@@ -27,7 +27,7 @@ permalink: /createMD/
             <!-- Allow the user to save their MD-->
             <form>
                 <span title="Download the MD data you've entered. Don't lose your work!">      
-                    <input value='Download MD' type='button' class="filterButton"         onclick='downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
+                    <input value='Download MD' type='button' class="filterButton"         onclick='wssTools.downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
                 </span>
             </form>
         </div>
@@ -102,16 +102,16 @@ function showForm(textArea, myForm) {
         }
         switch(item.name) {
             case 'titleID':
-                obj[item.name] = slugify(obj["title"]) + '.md';
+                obj[item.name] = wssTools.slugify(obj["title"]) + '.md';
                 break;
             case 'key':
-                obj[item.name] = toTitleCase(item.value);
+                obj[item.name] = wssTools.toTitleCase(item.value);
                 break;
             case 'location':
                 if (locationNotProcessed) {
                     obj[item.name] = '';
                     var locationString = '';
-                    var locationArray = getCheckedCheckboxesFor(item.name);
+                    var locationArray = wssTools.getCheckedCheckboxesFor(item.name);
                     for (var j = 0; j < locationArray.length; j++) {   
                         locationString += locationArray[j] + ' ';
                     }
@@ -128,7 +128,7 @@ function showForm(textArea, myForm) {
                 break;
             case 'mp3_file':
                 if (item.value == 'yes') {
-                    obj[item.name] = '/mp3/' + slugify(obj["title"]) + '.mp3';
+                    obj[item.name] = '/mp3/' + wssTools.slugify(obj["title"]) + '.mp3';
                 } else {
                     obj[item.name] = '';
                 }

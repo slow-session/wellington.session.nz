@@ -18,8 +18,8 @@ You can use tools like <a href="https://www.mediahuman.com/youtube-to-mp3-conver
 <output id="fileInfo"></output>
 
 <div class="player">
-<div id="audioPlayer"></div>
-<div id="showPlayer"></div>
+<div id="pageAudioPlayer"></div>
+<div id="pageMP3player"></div>
 </div>
 
 <script>
@@ -34,27 +34,27 @@ function handleAudioFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
 
-    var files = evt.target.files; // FileList object.
-    var fileInfo = document.getElementById('fileInfo');
-    var audioPlayer = document.getElementById('audioPlayer');
-    var showPlayer = document.getElementById('showPlayer');
-    audioPlayer.innerHTML = createAudioPlayer();
+    let files = evt.target.files; // FileList object.
+    let fileInfo = document.getElementById('fileInfo');
+    let pageAudioPlayer = document.getElementById('pageAudioPlayer');
+    let pageMP3player = document.getElementById('pageMP3player');
+    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
 
     // files is a FileList of File objects. List some properties.
-    for (var i = 0, f; f = files[i]; i++) {
+    for (let i = 0, f; f = files[i]; i++) {
         if (f.type.indexOf('audio') == 0) {
             fileInfo.innerHTML = '<h2>' + f.name + '<h2>';
-            showPlayer.innerHTML = '';
+            pageMP3player.innerHTML = '';
         } else {
             fileInfo.innerHTML = f.name + ' - unsupported file type';
-            audioPlayer.innerHTML = '';
-            showPlayer.innerHTML = '';
+            pageAudioPlayer.innerHTML = '';
+            pageMP3player.innerHTML = '';
             continue;
         }       
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.onload = function(e) {
-            showPlayer.innerHTML = createMP3player('1', this.result);
-            createSliders('1');
+            pageMP3player.innerHTML = audioPlayer.createMP3player('1', this.result);
+            audioPlayer.createSliders('1');
         };
         reader.readAsDataURL(f);
     }

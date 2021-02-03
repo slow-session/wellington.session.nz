@@ -22,7 +22,7 @@ abc: |
     C:Trad, arr. Paddy O'Brien
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:D
     E|FEDF Adfd|eB~B2 dBAF|DEFA BFAF|~E2 DF EFGE|
     FEDF Adfd|eB~B2 dBAB|defa bfaf|~e2 ce fdd:|

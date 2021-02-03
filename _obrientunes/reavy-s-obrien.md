@@ -24,7 +24,7 @@ abc: |
     C:arr. Paddy O'Brien
     R:reel
     I:speed 300
-    M:C|
+    M: 4/4
     K:G
     (3DEF|~G2BG dGBG|cBcd efge|~d2 BG dGBG|(3FED AD BDAF|
     ~G2BG dGBG|cBcd efge|dgfg ecAF|GBAF G2:|

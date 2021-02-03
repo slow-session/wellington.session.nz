@@ -10,68 +10,36 @@ Type: {{ page.rhythm }}, added
 {% endif %}
 <br />
 
-<!-- Area to store unrolled ABC (style="display:none;")-->
-<textarea id="textAreaABC" style="display:none;">X: 1
+<!-- Area to store ABC -->
+<textarea id="textAreaABC" class="abcSource">
+X: 1
 </textarea>
 
+<div id="abcPaper" class="abcPaper"></div>
+<div id="abcAudio"></div>
+
 <script>
-
-var MyFonts = "%%titlefont       Helvetica 20\n\
-%%subtitlefont    Helvetica 16\n\
-%%gchordfont      Helvetica 12\n\
-%%composerfont    Helvetica-Oblique 14\n\
-%%partsfont       Helvetica 12%%\n\
-%%tempofont       Helvetica 12\n\
-%%annotationfont  Helvetica 12\n\
-%%infofont        Helvetica 12\n\
-%%textfont        Helvetica 12\n\
-%%vocalfont       Helvetica 12\n\
-%%wordsfont       Helvetica 12\n";
-
-var tuneList = '';
 var abcSource = '';
 var regex = new RegExp('X:.*\n');
+var textAreaABC = document.getElementById('textAreaABC');
 </script>
 
-<div id="abcPaper" class="abcPaper">
-{% assign tuneId = 100 %}
+{% assign tuneId = 1 %}
 {% for setTune in page.tunes %}
 {% assign siteTunes = site.tunes | where: 'titleID', setTune %}
 {% for tune in siteTunes %}
-    <div id="notation{{tuneId}}" class="abc" style="max-width: 650px;"></div>
-    <script>
-        tuneList += '{{ tune.title | escape  }} ({{ tune.key}}), ';
-
-        var thisTune = "%%staffwidth 540\n" + MyFonts + {{ tune.abc | jsonify }};
-        ABCJS.renderAbc('notation{{tuneId}}', thisTune, {}, { responsive: 'resize' }, {});
-
-        abcSource = {{ tune.abc | jsonify }};
-        abcSource = abcSource.replace(regex, '');
-
-        document.getElementById('textAreaABC').innerHTML += abcSource + "\n";
-    </script>
-    {% assign tuneId = tuneId | plus: 1 %}
+<script>
+abcSource = {{ tune.abc | jsonify }};
+abcSource = abcSource.replace(regex, '');
+textAreaABC.innerHTML += abcSource;
+</script>
+{% assign tuneId = tuneId | plus: 1 %}
 {% endfor %}
 {% endfor %}
-</div>
-
-<!-- Controls for ABC player -->
-<div style="overflow-x:auto;">
-<div id="ABCplayer"></div>
-</div>
-
-<hr>
-<p>You can print your set using this button. Please think of the trees!</p>
-
-<input class="button" type="button" class="filterButton" value="Print this Set" onclick="printDotsImage(document.getElementById('abcPaper').innerHTML)" />
 
 <script>
-$(document).ready(function() {
-    let tuneID = 1;
-    tunelist.innerHTML = tuneList.slice(0, -2);
 
-    ABCplayer.innerHTML = createABCplayer("textAreaABC", tuneID, '{{ site.defaultABCplayer }}');
-    createABCSliders("textAreaABC", tuneID);
-
+document.addEventListener("DOMContentLoaded", function (event) {
+    audioPlayer.displayABC(textAreaABC.value);
 });
 </script>

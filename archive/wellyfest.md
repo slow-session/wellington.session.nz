@@ -109,7 +109,7 @@ recordings of session tunes.  Sheet music is also provided for the tunes for
 folks who prefer to learn by reading music (just click the Tune Name link).
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */

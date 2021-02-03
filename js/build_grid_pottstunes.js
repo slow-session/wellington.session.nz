@@ -18,11 +18,11 @@
     var tunesGrid = document.getElementById("tunesGrid");
 
     // create table headers
-    if (testForMobile()) {
+    if (wssTools.testForMobile()) {
       var appendString =
-        '<div id="tunes" class="tunesPottsLayout mobileScrolling">';
+        '<div id="tunes" class="tunes1columnLayout mobileScrolling">';
     } else {
-      var appendString = '<div id="tunes" class="tunesPottsLayout">';
+      var appendString = '<div id="tunes" class="tunes1columnLayout">';
     }
 
     for (var key in store) {

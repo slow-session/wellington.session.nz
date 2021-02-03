@@ -47,7 +47,7 @@ There's also a large list of tunes including tunes played in other New Zealand s
 <a href="/tunes_archive/">Tunes Archive</a> page.  Feel free to poke around.
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last two columns */

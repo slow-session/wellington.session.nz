@@ -22,7 +22,7 @@ abc: |
     C:Trad. arr. Paddy O'Brien
     R:reel
     I:speed 300
-    M:C|
+    M: 4/4
     K:D
     EDEF DEFA|~d2 fd gdfd|ed(3Bcd AdBA|~B2AF GFED|
     EDEF DEFA|~d2 fd gdfd|ed (3Bcd AdBA|~B2AG FD D2:|

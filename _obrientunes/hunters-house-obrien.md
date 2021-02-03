@@ -23,7 +23,7 @@ abc: |
     S:arr. Paddy O'Brien
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     G/2A/2|Bd~d2 cAFA|~G2BG DGBG|Bd~d2 cAFA|GBAG FDCE|
     DGBG cAFA|(3BAG AF GABc|defg agfd|cAFA G2:|

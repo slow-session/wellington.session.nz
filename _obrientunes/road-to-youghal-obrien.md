@@ -23,7 +23,7 @@ abc: |
     T:Set: Road to Youghal/Conlan's Well/Holly Bush
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:G
     B|~d2 Bd ABGE|DGBG AE ~E2|GEDE GABd|gbaf gedB|
     GB ~B2 eBdB|AcBG AGEG|gfgd (3efg dB|DEGA BGG:|

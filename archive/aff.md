@@ -50,7 +50,7 @@ Andy Linton and Ted Cizadlo started a slow session in Wellington just after the 
 We believe the best way to learn tunes for session play is to learn them by ear. The usual way to learn tunes by ear is for someone to play the tune slowly, playing parts of the tune over and over as you play along.  We developed a website to help people learn the tunes, <a href="{{ site.mp3_host }}">{{ site.mp3_host }}</a>, that provides tools for learning tunes by ear from MP3 recordings of session tunes.  Sheet music is also provided for the tunes for folks who prefer to learn by reading music (just click the Tune Name link).
 
 <script>
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function (event) {
     audioPlayer.innerHTML = createAudioPlayer();
 
     /* turn off sorting on last column */

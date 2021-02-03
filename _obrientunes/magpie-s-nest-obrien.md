@@ -23,7 +23,7 @@ abc: |
     T:Set: Magpie's Nest/Chattering Magpie/Kerry
     R:reel
     I:speed 350
-    M:C|
+    M: 4/4
     K:D
     B2|:AddA BAFA|BdAF GFED|FAAB AFEF|ABde fddB|
     ~A2 dA BAFA|BdAF GFED|FAAB AFEF|ABde fdd2:|
