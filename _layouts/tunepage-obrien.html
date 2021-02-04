@@ -14,20 +14,20 @@ layout: page
     </div>
 
     <!-- show/edit the ABC -->
-    <form>
-        <input type="button" class="filterButton" value="Show ABC Source" onclick="audioPlayer.toggleABC(this);">
-    </form>
-    <div id='abcSource' class="abcSource">
-        <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
-        <!-- show ABC errors -->
-        <div id='abcWarnings'></div>
+    <details>
+        <summary class="filterButton">ABC Source</summary>
+        <div id='abcSource'>
+            <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
+            <!-- show ABC errors -->
+            <div id='abcWarnings'></div>
 
-        <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief set of instructions is found <a href="/editingABC/">here.</a></p>
-        <div title="Download the ABC you've entered. Don't lose your work!">
-       	<input value='Download ABC' type='button' class="filterButton"
+            <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief set of instructions is found <a href="/editingABC/">here.</a></p>
+            <div title="Download the ABC you've entered. Don't lose your work!">
+       	    <input value='Download ABC' type='button' class="filterButton"
             onclick='downloadABCFile(document.getElementById("textAreaABC").value)' />
+            </div>
         </div>
-    </div>
+    </details>
 
     <!-- attribution details-->
     <div>

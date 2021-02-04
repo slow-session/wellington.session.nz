@@ -75,7 +75,7 @@ const audioPlayer = (function () {
             <!-- Col 3 - speed slider -->
             <div class="audioChildInner">
                 <div id="speedControl-${tuneID}">
-                <span title="Adjust playback speed with slider">
+                    <span title="Adjust playback speed with slider">
                         <div id="speedSliderMP3-${tuneID}"></div>
                         <p class="speedLabel"><strong>Playback Speed</strong></p>
                     </span>
@@ -231,17 +231,7 @@ const audioPlayer = (function () {
             loopPresetControls.innerHTML = "";
         }
 
-        let loopForm = document.getElementById("loopForm");
-        if (loopForm) {
-            loopForm.style.display = "none";
-        }
-
         presetLoopSegments = [];
-
-        let dotsForm = document.getElementById("dotsForm");
-        if (dotsForm) {
-            dotsForm.style.display = "block";
-        }
 
         // If we have a modal make it visible
         let modal = document.getElementById("tuneModal");
@@ -268,9 +258,6 @@ const audioPlayer = (function () {
                             "loopPresetControls"
                         ).innerHTML = createLoopControlsContainer();
                     }
-                    if (loopForm) {
-                        loopForm.style.display = "block";
-                    }
                 }
                 initialiseAudioSlider();
             };
@@ -293,10 +280,6 @@ const audioPlayer = (function () {
 
                 pageMP3player.style.overflow = "auto";
                 pageMP3player.innerHTML = recordingMessage;
-            }
-
-            if (loopForm) {
-                loopForm.style.display = "none";
             }
         }
 
@@ -458,48 +441,39 @@ const audioPlayer = (function () {
     }
 
     function createLoopControlsContainer() {
-        document.getElementById("loopForm").style.display = "block";
-        toggleLoops("Show Preset Loops");
-
         let loopControlsContainer = `
-<div class="container loop-container"><div class="row row-title">
-    <div class="small-4 columns"><strong>Preset Loops</strong></div>
-    <div class="small-4 columns" style="text-align: center;"><strong>Start</strong></div>
-    <div class="small-4 columns" style="text-align: center;"><strong>Finish</strong></div>
-</div>`;
+<div class="loop3columnLayout">
+    <!-- loop titles -->
+    <div class="loopTitleLeft"><strong>Preset Loops</strong></div>
+    <div class="loopTitle"><strong>Start</strong></div>
+    <div class="loopTitleRight"><strong>Finish</strong></div>`;
 
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
-            // row-odd class allows row 'striping'
-            if (segmentNumber % 2) {
-                loopControlsContainer += '<div class="row row-odd">';
-            } else {
-                loopControlsContainer += '<div class="row">';
-            }
             // build each row
             loopControlsContainer += `
-        <!-- select loop -->
-        <div class="small-4 columns"><input class="loopClass" type="checkbox" onclick="audioPlayer.applySegments()" id="check${segmentNumber}">${presetLoopSegments[segmentNumber].name}</div>
-        <!-- adjust start of loop -->
-        <div class="small-4 columns" style="text-align: center;">
-        <a href="javascript:void(0);" class = "downButton" type="button" id= "button${segmentNumber}dn" onclick="audioPlayer.adjustDown(${segmentNumber}, 0)"> 
-        <span title=" - 1/5 second">&lt;&lt;</a>
-        <input class="loopClass" type="text" onchange="audioPlayer.applySegments()" id="check${segmentNumber}from" size="4" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].start}> 
-        <a href="javascript:void(0);" 
-        class = "upButton" type="button" id= "button${segmentNumber}up" onclick="audioPlayer.adjustUp(${segmentNumber}, 0)"> 
-        <span title=" + 1/5 second">&gt;&gt;</a> 
-        </div>
-        <!-- adjust end of loop -->
-        <div class="small-4 columns" style="text-align: center;">
-        <a href="javascript:void(0);" class = "downButton" type="button" id= "button${segmentNumber}dn" onclick="audioPlayer.adjustDown(${segmentNumber}, 2)">
-        <span title=" - 1/5 second">&lt;&lt;</a> 
-        <input class="loopClass" type="text" onchange="audioPlayer.applySegments()" id="check${segmentNumber}to" size="4" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].end}> 
-        <a href="javascript:void(0);" 
-        class = "upButton" type="button" id= "button${segmentNumber}up" onclick="audioPlayer.adjustUp(${segmentNumber}, 2)"> 
-        <span title=" + 1/5 second">&gt;&gt;</a> 
-        </div>`;
+    <!-- select loop ${segmentNumber} -->
+    <div class="loopLabel">
+        <input class="loopClass" type="checkbox" onclick="audioPlayer.applySegments()" id="check${segmentNumber}">${presetLoopSegments[segmentNumber].name}
+    </div>
 
-            // End of row
-            loopControlsContainer += "</div>";
+    <!-- adjust start of loop ${segmentNumber} -->
+    <div class="loopControl">
+        <a href="javascript:void(0);" class = "downButton" type="button" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 0)">&lt;&lt;</a>
+
+        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}from" size="4" step="0.2" min="0" style="height: 18px;" value=${presetLoopSegments[segmentNumber].start}>
+
+        <a href="javascript:void(0);" class = "upButton" type="button" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 0)">&gt;&gt;</a> 
+    </div>
+
+    <!-- adjust end of loop ${segmentNumber} -->
+    <div class="loopControl">
+        <a href="javascript:void(0);" class = "downButton" type="button" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 2)">&lt;&lt;</a> 
+
+        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}to" size="4" step="0.2" min="0" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].end}> 
+
+        <a href="javascript:void(0);" class = "upButton" type="button" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 2)"> &gt;&gt;</a> 
+    </div>`;
+
         }
         loopControlsContainer += "</div>";
 
@@ -590,16 +564,13 @@ const audioPlayer = (function () {
 
     function adjustUp(row, inputBox) {
         let elementName = "check" + row;
-        if (document.getElementById(elementName).checked == false) {
-            return;
-        }
         if (inputBox == 0) {
             elementName += "from";
         } else if (inputBox == 2) {
             elementName += "to";
         }
         let checkBox = document.getElementById(elementName);
-        NumValue = Number(checkBox.value);
+        let NumValue = Number(checkBox.value);
         if (NumValue <= OneAudioPlayer.duration - 0.2) {
             checkBox.value = Number(NumValue + 0.2).toFixed(1);
             if ((endLoopTime - checkBox.value > 0.21) & (inputBox == 2)) {
@@ -624,16 +595,13 @@ const audioPlayer = (function () {
 
     function adjustDown(row, inputBox) {
         let elementName = "check" + row;
-        if (document.getElementById(elementName).checked == false) {
-            return;
-        }
         if (inputBox == 0) {
             elementName += "from";
         } else if (inputBox == 2) {
             elementName += "to";
         }
         let checkBox = document.getElementById(elementName);
-        NumValue = Number(checkBox.value);
+        let NumValue = Number(checkBox.value);
         if (NumValue >= 0.2) {
             checkBox.value = Number(NumValue - 0.2).toFixed(1);
             if ((endLoopTime - checkBox.value > 0.21) & (inputBox == 2)) {
@@ -653,45 +621,6 @@ const audioPlayer = (function () {
             } else if (inputBox == 2) {
                 endLoopTime = assignendLoopTime(checkBox.value);
             }
-        }
-    }
-
-    function toggleLoops(button) {
-        switch (button.value) {
-            case "Show Preset Loops":
-                button.value = "Hide Preset Loops";
-                document.getElementById("loopPresetControls").style.display = "block";
-                break;
-            case "Hide Preset Loops":
-                button.value = "Show Preset Loops";
-                document.getElementById("loopPresetControls").style.display = "none";
-                break;
-        }
-    }
-
-    function toggleTheDots(button) {
-        switch (button.value) {
-            case "Show the Dots":
-                button.value = "Hide the Dots";
-                document.getElementById("abcOutput").style.display = "block";
-                break;
-            case "Hide the Dots":
-                button.value = "Show the Dots";
-                document.getElementById("abcOutput").style.display = "none";
-                break;
-        }
-    }
-
-    function toggleABC(button) {
-        switch (button.value) {
-            case "Show ABC Source":
-                button.value = "Hide ABC Source";
-                document.getElementById("abcSource").style.display = "block";
-                break;
-            case "Hide ABC Source":
-                button.value = "Show ABC Source";
-                document.getElementById("abcSource").style.display = "none";
-                break;
         }
     }
 
@@ -750,9 +679,6 @@ const audioPlayer = (function () {
         applySegments: applySegments,
         adjustUp: adjustUp,
         adjustDown: adjustDown,
-        toggleABC: toggleABC,
-        toggleTheDots: toggleTheDots,
-        toggleLoops: toggleLoops,
         displayABC: displayABC,
 
     };

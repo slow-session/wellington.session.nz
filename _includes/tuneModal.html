@@ -17,21 +17,20 @@
         </div>
 
         <!-- *** loop presets *** -->
-        <form id="loopForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show Preset Loops"
-                onclick="audioPlayer.toggleLoops(this);">
-        </form>
-        <div id="loopPresetControls" style="display: none;"></div>
-
+        <details>
+            <summary class="filterButton">Preset Loops</summary>
+            <div id="loopPresetControls"></div>
+        </details>
+        
         <!-- *** rendered ABC and tune selector scrolling table *** -->
-        <form id="dotsForm" style="display: none;">
-            <input type="button" class="filterButton" value="Show the Dots" onclick="audioPlayer.toggleTheDots(this);">
-        </form>
-        <div id="abcOutput" style="display: none;">
-            <div id="abcPaper"></div>
-            <div id="abcAudio"></div>
-        </div>
-        <div id='abcSource' style="display: none;">
+        <details>
+            <summary class="filterButton" onclick="audioPlayer.stopAudio()">the Dots</summary>
+            <div id="abcOutput">
+                <div id="abcPaper"></div>
+                <div id="abcAudio"></div>
+            </div>
+        </details>
+        <div id='abcSource' class="abcSource">
             <textarea name='abcText' id="textAreaABC"></textarea>
         </div>
     </div>
@@ -40,7 +39,7 @@
 <script>
     // Get the modal
     var modal = document.getElementById("tuneModal");
-    
+
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
