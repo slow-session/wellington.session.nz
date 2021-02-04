@@ -151,6 +151,18 @@ p.speedLabel {
     cursor: not-allowed;
 }
 
+details > summary {
+    width: fit-content;
+}
+
+details summary::before {
+    content: "Show ";
+}
+
+details[open] summary::before {
+    content: "Hide ";
+}
+
 h2 span {
     display: inline;
     font-size: 16px;
@@ -198,8 +210,17 @@ textarea {
     border-radius: 8px;
 }
 
-input[type='number'] {
-    text-align: right;
+// Hide Arrows From Input Number
+// Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Firefox
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 th {
@@ -279,23 +300,49 @@ tr#no_hover:hover {
     width: 45px;
 }
 
-.loop-container {
-    padding-left: 20px;
-    display: block;
-    border: 2px solid $complimentary-color;
+.loop3columnLayout {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    padding: 0.5rem;
 }
 
-.row-title {
+.loop3columnLayout > div:nth-child(6n + 1),
+.loop3columnLayout > div:nth-child(6n + 2),
+.loop3columnLayout > div:nth-child(6n + 3) {
+    background-color: darken($complimentary-color, 6%);
+}
+
+.loopTitleLeft {
+    background-color: $brand-color !important;
     color: darken($complimentary-color, 10%);
-    background-color: $brand-color;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    padding: 5px 10px;
 }
 
-.row-odd {
-    //background-color: lighten($brand-color, 40%);
-    background-color: darken($complimentary-color, 10%);
+.loopTitle {
+    background-color: $brand-color !important;
+    color: darken($complimentary-color, 10%);
+    padding: 5px 10px;
+    text-align: center;
 }
+
+.loopTitleRight {
+    background-color: $brand-color !important;
+    color: darken($complimentary-color, 10%);
+    border-top-right-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.loopLabel {
+    padding: 5px 0;
+}
+
+.loopControl {
+    text-align: center;
+    padding: 5px 0;
+}
+
 // END: used for Preset Loops
 
 
@@ -454,22 +501,6 @@ tr#no_hover:hover {
     align-items: center;
 }
 
-.titleSpanLeft {
-    background-color: $brand-color;
-    color: darken($complimentary-color, 10%);
-    border-top-left-radius: 8px;
-}
-
-.titleSpan {
-    background-color: $brand-color;
-    color: darken($complimentary-color, 10%);
-}
-
-.titleSpanRight {
-    background-color: $brand-color;
-    color: darken($complimentary-color, 10%);
-    border-top-right-radius: 8px;
-}
 
 ::-webkit-scrollbar {
     /* style scrollbar for WebKit */
@@ -663,19 +694,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border: none;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 0.5rem;
-}
-
-.grid-child {
-    border: 2px solid $brand-color;
-    border-radius: 8px;
-}
-
 .setRow {
     display: flex;
     flex-wrap: wrap;
 }
+
