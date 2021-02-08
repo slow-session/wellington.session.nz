@@ -446,7 +446,7 @@ const audioPlayer = (function () {
     <!-- loop titles -->
     <div class="loopTitleLeft"><strong>Preset Loops</strong></div>
     <div class="loopTitle"><strong>Start</strong></div>
-    <div class="loopTitleRight"><strong>Finish</strong></div>`;
+    <div class="loopTitle"><strong>Finish</strong></div>`;
 
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
             // build each row
