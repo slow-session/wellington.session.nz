@@ -161,6 +161,10 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
+details > summary::marker {
+    display: block;
+}
+
 details summary::before {
     content: "Show ";
 }
@@ -262,7 +266,9 @@ input[type=number] {
 .loop3columnLayout {
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
-    padding: 0.5rem;
+    border-color: $brand-color;
+    border-style: solid;
+    border-radius: 8px;
 }
 
 .loop3columnLayout > div:nth-child(6n + 1),
@@ -274,7 +280,6 @@ input[type=number] {
 .loopTitleLeft {
     background-color: $brand-color !important;
     color: darken($complimentary-color, 10%);
-    border-top-left-radius: 8px;
     padding: 5px 10px;
 }
 
@@ -285,16 +290,8 @@ input[type=number] {
     text-align: center;
 }
 
-.loopTitleRight {
-    background-color: $brand-color !important;
-    color: darken($complimentary-color, 10%);
-    border-top-right-radius: 8px;
-    padding: 5px 10px;
-    text-align: center;
-}
-
 .loopLabel {
-    padding: 5px 0;
+    padding: 5px 0 0 5px;
 }
 
 .loopControl {
