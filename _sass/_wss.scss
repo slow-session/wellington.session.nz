@@ -133,7 +133,6 @@ p.speedLabel {
 
 .filterButton {
     background-color: $brand-color;
-    width: fit-content;
     padding: 7px 5px 4px 5px;
     margin-right: 5px;
     margin-left: 5px;
@@ -153,6 +152,7 @@ p.speedLabel {
 }
 
 details > summary {
+    width: max-content;
     min-width: 100px;
     list-style-type: none;
 }
