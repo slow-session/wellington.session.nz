@@ -1,5 +1,5 @@
 ---
-title: Banshee
+title: The Banshee
 titleID: banshee.md
 key: G
 rhythm: reel

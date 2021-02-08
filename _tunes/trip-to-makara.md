@@ -11,7 +11,7 @@ tags:
 location: Wellington
 mp3_file: /mp3/trip-to-makara.mp3
 repeats: 2
-parts: AB
+parts: AABB
 mp3_source: Kris Nielsen
 mp3_licence: Kris Nielsen All Rights Reserved
 mp3_url:
