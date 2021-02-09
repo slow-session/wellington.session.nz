@@ -458,20 +458,20 @@ const audioPlayer = (function () {
 
     <!-- adjust start of loop ${segmentNumber} -->
     <div class="loopControl">
-        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 0)">&lt;&lt;</button>
+        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 0)"></button>
 
-        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}from" size="4" step="0.2" min="0" style="height: 18px;" value=${presetLoopSegments[segmentNumber].start}>
+        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}from" size="4" step="0.2" min="0" value=${presetLoopSegments[segmentNumber].start}>
 
-        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 0)">&gt;&gt;</button> 
+        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 0)"></button> 
     </div>
 
     <!-- adjust end of loop ${segmentNumber} -->
     <div class="loopControl">
-        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 2)">&lt;&lt;</button>
+        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 2)"></button>
         
-        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}to" size="4" step="0.2" min="0" style= "height: 18px;" value=${presetLoopSegments[segmentNumber].end}> 
+        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}to" size="4" step="0.2" min="0" value=${presetLoopSegments[segmentNumber].end}> 
 
-        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 2)">&gt;&gt;</button> 
+        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 2)"></button> 
     </div>`;
 
         }
