@@ -235,31 +235,30 @@ input[type=number] {
 }
 
 // START: used for Preset Loops
+
 .upButton {
-    background-color: $brand-color;
-    color: darken($complimentary-color, 10%);
-    cursor: pointer;
-    //padding: 1px;
-    text-align: center;
-    //font-size: 90%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: none;
+    background: url('/images/circle-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none
 }
 
 .downButton {
-    background-color: $brand-color;
-    color: darken($complimentary-color, 10%);
-    cursor: pointer;
-    padding: 1px;
-    text-align: center;
-    font-size: 90%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: none;
+    background: url('/images/circle-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
 }
 
 .loopClass {
     font-size: 14px;
-    border-radius: 2px;
+    border-radius: unset;
     width: 45px;
 }
 
@@ -297,6 +296,9 @@ input[type=number] {
 .loopControl {
     text-align: center;
     padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // END: used for Preset Loops
