@@ -40,6 +40,9 @@
     // Get the modal
     var modal = document.getElementById("tuneModal");
 
+    if (wssTools.testForMobile()) {
+        modal.classList.add("mobileScrolling");
+    }
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 

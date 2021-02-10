@@ -38,6 +38,10 @@
         setModal.style.display = "inline";
     }
 
+    if (wssTools.testForMobile()) {
+        setModal.classList.add("mobileScrolling");
+    }
+    
     // Get the <span> element that closes the setModal
     let span = document.getElementsByClassName("close")[0];
 
