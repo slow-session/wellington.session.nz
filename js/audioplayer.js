@@ -13,24 +13,13 @@
 "use strict";
 
 const audioPlayer = (function () {
-    /*
-     ################################################################################
-     #
-     # Comment out the line with "console.log" to turn off console logging
-     #
-     ################################################################################
-    */
-    function myDebug(message) {
-        console.log(message);
-    }
-
-    var beginLoopTime = 0;
-    var endLoopTime = 0;
-    var previousPlayButton = null;
-    var currentAudioSlider = null;
-    var presetLoopSegments = [];
-    var isIOS = testForIOS();
-    var abcEditor = null;
+    let beginLoopTime = 0;
+    let endLoopTime = 0;
+    let previousPlayButton = null;
+    let currentAudioSlider = null;
+    let presetLoopSegments = [];
+    let isIOS = testForIOS();
+    let abcEditor = null;
     
     function createAudioPlayer() {
         let audioPlayer = `
@@ -120,12 +109,10 @@ const audioPlayer = (function () {
         audioSlider.noUiSlider.on("change", function (values, handle) {
             if (handle === 0) {
                 beginLoopTime = values[0];
-                endLoopTime = assignendLoopTime(values[2]);
-                saveUserLoop(values);
+                document.getElementById("loopControlStart").value = beginLoopTime;
             } else if (handle === 2) {
-                beginLoopTime = values[0];
-                endLoopTime = assignendLoopTime(values[2]);
-                saveUserLoop(values);
+                endLoopTime = setEndLoopTime(values[2]);
+                document.getElementById("loopControlEnd").value = endLoopTime;
             } else if (handle === 1) {
                 OneAudioPlayer.currentTime = values[1];
             }
@@ -141,7 +128,7 @@ const audioPlayer = (function () {
             };
         });
         speedSlider.noUiSlider.on("change", function (value) {
-            //myDebug("playbackRate: " + value / 100);
+            //console.log("playbackRate: " + value / 100);
             OneAudioPlayer.playbackRate = value / 100;
         });
         //How to disable handles on audioslider.
@@ -249,9 +236,9 @@ const audioPlayer = (function () {
 
             // calculate presetLoopSegments and set up preset loops
             OneAudioPlayer.onloadedmetadata = function () {
-                //myDebug("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
+                //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
                 if (item.repeats && item.parts) {
-                    //myDebug('setupPresetLoops: ' + OneAudioPlayer.duration);
+                    //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
                     buildSegments(item);
                     if (presetLoopSegments.length) {
                         document.getElementById(
@@ -336,7 +323,7 @@ const audioPlayer = (function () {
     }
 
     function LoadAudio(audioSource, playPosition) {
-        //myDebug("Loading: " + audioSource)
+        //console.log("Loading: " + audioSource)
         OneAudioPlayer.src = audioSource;
 
         playPosition.noUiSlider.updateOptions({
@@ -365,7 +352,7 @@ const audioPlayer = (function () {
     }
 
     function initialiseAudioSlider() {
-        //myDebug('initialiseAudioSlider: ' + OneAudioPlayer.duration);
+        //console.log('initialiseAudioSlider: ' + OneAudioPlayer.duration);
         currentAudioSlider.noUiSlider.updateOptions({
             range: {
                 min: 0,
@@ -377,16 +364,16 @@ const audioPlayer = (function () {
 
     function positionUpdate() {
         if (OneAudioPlayer.currentTime >= endLoopTime) {
-            //myDebug("Current time: " + OneAudioPlayer.currentTime);
+            //console.log("Current time: " + OneAudioPlayer.currentTime);
             OneAudioPlayer.currentTime = beginLoopTime;
-            //myDebug("Reset loop start to: " + OneAudioPlayer.currentTime);
+            //console.log("Reset loop start to: " + OneAudioPlayer.currentTime);
         }
         currentAudioSlider.noUiSlider.setHandle(1, OneAudioPlayer.currentTime);
     }
 
     function restartLoop() {
         OneAudioPlayer.currentTime = beginLoopTime;
-        //myDebug("Restarting loop at: " + OneAudioPlayer.currentTime);
+        //console.log("Restarting loop at: " + OneAudioPlayer.currentTime);
         OneAudioPlayer.play();
     }
 
@@ -397,25 +384,26 @@ const audioPlayer = (function () {
 
         presetLoopSegments = [];
 
-        // If tune MD file has AABB notation use that
+        // Look for AABB notation in "md" file
         if (parts.toString().includes("A")) {
             let lastPart = "";
             let part_names = parts.split("");
             let repeatCount = 1;
-            for (let i = 0; i < part_names.length; i++) {
+            for (let segmentNumber = 0; segmentNumber < part_names.length; segmentNumber++) {
                 mySegment = {
                     name: 0,
-                    start: 0,
-                    end: 0,
+                    repeat: 0,
+                    start: 0.0,
+                    end: 0.0,
                 };
-                if (lastPart == part_names[i]) {
-                    repeatCount = 2;
+                mySegment.name = part_names[segmentNumber];
+                if (lastPart == part_names[segmentNumber]) {
+                    mySegment.repeat = "Repeat 2";
                 } else {
-                    repeatCount = 1;
+                    mySegment.repeat = "Repeat 1";
                 }
-                mySegment.name = part_names[i] + " Repeat " + repeatCount;
                 presetLoopSegments.push(mySegment);
-                lastPart = part_names[i];
+                lastPart = part_names[segmentNumber];
             }
             // Insert the values
             let start = 0.0;
@@ -429,124 +417,168 @@ const audioPlayer = (function () {
                 presetLoopSegments[key].end = end.toFixed(1);
             }
         }
-        // Add segment for user-defined use
-        mySegment = {
-            name: 0,
-            start: 0,
-            end: 0,
-        };
-        mySegment.name = "User-1";
-        mySegment.end = OneAudioPlayer.duration.toFixed(1);
-        presetLoopSegments.push(mySegment);
     }
 
     function createLoopControlsContainer() {
         let loopControlsContainer = `
 <div class="loop3columnLayout">
-    <!-- loop titles -->
-    <div class="loopTitleLeft"><strong>Preset Loops</strong></div>
-    <div class="loopTitle"><strong>Start</strong></div>
-    <div class="loopTitle"><strong>Finish</strong></div>`;
+    <div class="loopLabel"><strong>Adjust Loop</strong></div>
+    
+    <!-- adjust start of loop  -->
+    <div class="loopControl">
+        <button id="buttonStartDown" class="downButton" title=" - 1/5 second" onclick="audioPlayer.adjustDown('loopControlStart', loopControlStart.value)"></button>
+
+        <input id="loopControlStart" class="loopClass" type="number" size="4" min="0" step=0.1 value=0.0 onchange="audioPlayer.setStartSlider(loopControlStart.value)"> 
+
+        <button id="buttonStartUp" class="upButton" title=" + 1/5 second" onclick="audioPlayer.adjustUp('loopControlStart', loopControlStart.value)"></button> 
+    </div>
+
+    <!-- adjust end of loop -->
+    <div class="loopControl">
+        <button id="buttonEndDown" class="downButton" title=" - 1/5 second" onclick="audioPlayer.adjustDown('loopControlEnd', loopControlEnd.value)"></button>
+        
+        <input id="loopControlEnd" class="loopClass" type="number" size="4" min="0" step=0.1 value=${OneAudioPlayer.duration.toFixed(1)} onchange="audioPlayer.setEndSlider(loopControlEnd.value)"> 
+
+        <button id="buttonEndUp" class="upButton" title=" + 1/5 second" onclick="audioPlayer.adjustUp('loopControlEnd', loopControlEnd.value)"></button> 
+    </div>`;
 
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
             // build each row
             loopControlsContainer += `
-    <!-- select loop ${segmentNumber} -->
     <div class="loopLabel">
-        <input class="loopClass" type="checkbox" onclick="audioPlayer.applySegments()" id="check${segmentNumber}">${presetLoopSegments[segmentNumber].name}
+        <strong>Part ${presetLoopSegments[segmentNumber].name}</strong>
     </div>
-
-    <!-- adjust start of loop ${segmentNumber} -->
-    <div class="loopControl">
-        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 0)"></button>
-
-        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}from" size="4" step="0.2" min="0" value=${presetLoopSegments[segmentNumber].start}>
-
-        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 0)"></button> 
-    </div>
-
-    <!-- adjust end of loop ${segmentNumber} -->
-    <div class="loopControl">
-        <button class="downButton" id="button${segmentNumber}dn" title=" - 1/5 second" onclick="audioPlayer.adjustDown(${segmentNumber}, 2)"></button>
-        
-        <input class="loopClass" type="number" onchange="audioPlayer.applySegments()" id="check${segmentNumber}to" size="4" step="0.2" min="0" value=${presetLoopSegments[segmentNumber].end}> 
-
-        <button class="upButton" id="button${segmentNumber}up" title=" + 1/5 second" onclick="audioPlayer.adjustUp(${segmentNumber}, 2)"></button> 
+    <div class="loopLabel">
+        <input type="checkbox" onclick="audioPlayer.applySegments()" id="segment${segmentNumber}">${presetLoopSegments[segmentNumber].repeat}</input>
     </div>`;
-
+            let nextSegment = segmentNumber + 1;
+            if (nextSegment == presetLoopSegments.length) {
+                loopControlsContainer += `
+    <div class="loopLabel">
+    </div>`;
+                break;
+            }
+            if (presetLoopSegments[nextSegment].name == presetLoopSegments[segmentNumber].name) {
+                loopControlsContainer += `
+    <div class="loopLabel">
+        <input type="checkbox" onclick="audioPlayer.applySegments()" id="segment${nextSegment}">${presetLoopSegments[nextSegment].repeat}</input>
+    </div>`;
+                segmentNumber = nextSegment;
+            } else {
+                loopControlsContainer += `
+    <div class="loopLabel">
+    </div>`;
+            }
         }
         loopControlsContainer += "</div>";
 
         return loopControlsContainer;
     }
 
-    function saveUserLoop(values) {
-        if (presetLoopSegments.length) {
-            // Preset loop 'User-1' is always the last segment
-            let lastSegment = presetLoopSegments.length - 1;
+    function setStartSlider(startTime){
+        if (startTime >  OneAudioPlayer.currentTime) {
+            currentAudioSlider.noUiSlider.setHandle(1, startTime);
+        }
+        currentAudioSlider.noUiSlider.setHandle(0, startTime);
+        beginLoopTime = startTime;
+    }
 
-            if (document.getElementById("check" + lastSegment).checked) {
-                document.getElementById("check" + lastSegment + "from").value = Number(
-                    values[0]
-                ).toFixed(1);
-                document.getElementById("check" + lastSegment + "to").value = Number(
-                    values[2]
-                ).toFixed(1);
+    function setEndSlider(endTime){
+        if (endTime <  OneAudioPlayer.currentTime) {
+            currentAudioSlider.noUiSlider.setHandle(1, endTime);
+        }
+        currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(endTime));
+        endLoopTime = endTime;
+    }
+
+    function adjustUp(elementName, inputTime) {
+        let loopInput = document.getElementById(elementName);
+
+        if (inputTime <= OneAudioPlayer.duration - 0.2) {
+            let newTime = parseFloat(inputTime) + parseFloat(0.2);
+            newTime = newTime.toFixed(1);
+        
+            if (newTime >  OneAudioPlayer.currentTime) {
+                currentAudioSlider.noUiSlider.setHandle(1, newTime);
             }
+            if (elementName == "loopControlStart") {
+                currentAudioSlider.noUiSlider.setHandle(0, newTime);
+                beginLoopTime = newTime;
+            } else {
+                currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(newTime));
+                endLoopTime = newTime;    
+            }
+            loopInput.value = newTime;
+        }
+    }
+
+    function adjustDown(elementName, inputTime) {
+        let loopInput = document.getElementById(elementName);
+
+        if (inputTime >= 0.2) {
+            let newTime = parseFloat(inputTime) - parseFloat(0.2);
+            newTime = newTime.toFixed(1);
+            
+            if (newTime <  OneAudioPlayer.currentTime) {
+                currentAudioSlider.noUiSlider.setHandle(1, newTime);
+            }
+            if (elementName == "loopControlStart") {
+                currentAudioSlider.noUiSlider.setHandle(0, newTime);
+                beginLoopTime = newTime;
+            } else {
+                currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(newTime));
+                endLoopTime = newTime;    
+            }
+            loopInput.value = newTime;
         }
     }
 
     function applySegments() {
-        let fullbeginLoopTime = parseFloat(OneAudioPlayer.duration);
-        let fullendLoopTime = 0.0;
-        let numCheckedBoxes = 0;
-        let tempbeginLoopTime = 0.0;
-        let tempendLoopTime = 0.0;
-        let checkBox, fromId, toId;
+        let checkBox;
+        let firstSegment = null;
+        let lastSegment = null;
 
-        for (let i = 0; i < presetLoopSegments.length; i++) {
-            checkBox = document.getElementById("check" + i);
-            fromId = document.getElementById("check" + i + "from");
-            toId = document.getElementById("check" + i + "to");
-
+        for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
+            checkBox = document.getElementById("segment" + segmentNumber);
+            
             if (checkBox.checked == true) {
-                numCheckedBoxes++;
-                tempbeginLoopTime = parseFloat(fromId.value);
-                tempendLoopTime = parseFloat(toId.value);
-                //myDebug("Is " + fullbeginLoopTime + " greater than " + tempbeginLoopTime);
-                if (fullbeginLoopTime > tempbeginLoopTime) {
-                    //myDebug("A, " + beginLoopTime + ", " + fullbeginLoopTime);
-                    fullbeginLoopTime = tempbeginLoopTime;
+    
+                if (firstSegment == null) {
+                    firstSegment = segmentNumber;
                 }
-                //myDebug("Is " + fullendLoopTime + " less than " + tempendLoopTime);
-                if (fullendLoopTime < tempendLoopTime) {
-                    //myDebug("B, "+tempendLoopTime+", "+ fullendLoopTime);
-                    fullendLoopTime = tempendLoopTime;
-                }
-                //myDebug(i + ", " + beginLoopTime + ", "+ endLoopTime + ", " + fullbeginLoopTime + ", " + fullendLoopTime);
+                lastSegment = segmentNumber;
             }
         }
-        //myDebug(fullbeginLoopTime + ", " + fullendLoopTime);
+        if (firstSegment != null) {
+            beginLoopTime = parseFloat(presetLoopSegments[firstSegment].start);
+        }
+        if (lastSegment != null) {
+           endLoopTime = setEndLoopTime(parseFloat(presetLoopSegments[lastSegment].end));
+        }
+    
         // do nothing unless at least one box is checked
-        if (numCheckedBoxes > 0) {
+        if (firstSegment != null || lastSegment != null) {
             // iOS audio player workaround for initial call to OneAudioPlayer.currentTime
             if (isIOS) {
                 OneAudioPlayer.oncanplaythrough = function () {
-                    OneAudioPlayer.currentTime = fullbeginLoopTime;
+                    OneAudioPlayer.currentTime = beginLoopTime;
                 };
             } else {
-                OneAudioPlayer.currentTime = fullbeginLoopTime; // look here
+                OneAudioPlayer.currentTime = beginLoopTime;
             }
+            
             // first reset to ends, then reposition
             currentAudioSlider.noUiSlider.setHandle(0, 0);
             currentAudioSlider.noUiSlider.setHandle(2, OneAudioPlayer.duration);
             currentAudioSlider.noUiSlider.setHandle(1, 0);
-            // then set to positions in row
-            currentAudioSlider.noUiSlider.setHandle(1, fullbeginLoopTime);
-            currentAudioSlider.noUiSlider.setHandle(0, fullbeginLoopTime);
-            currentAudioSlider.noUiSlider.setHandle(2, fullendLoopTime);
-            beginLoopTime = fullbeginLoopTime;
-            endLoopTime = assignendLoopTime(fullendLoopTime);
+            // set to positions in row
+            currentAudioSlider.noUiSlider.setHandle(1, beginLoopTime);
+            currentAudioSlider.noUiSlider.setHandle(0, beginLoopTime);
+            currentAudioSlider.noUiSlider.setHandle(2, endLoopTime);
+            
+            document.getElementById("loopControlStart").value = beginLoopTime;
+            document.getElementById("loopControlEnd").value = endLoopTime;
+
             if (OneAudioPlayer.paused == false) {
                 // audio was  playing when they fiddled with the checkboxes
                 let promise = OneAudioPlayer.play();
@@ -559,93 +591,39 @@ const audioPlayer = (function () {
             }
         } else {
             resetFromToSliders();
-        }
-    }
-
-    function adjustUp(row, inputBox) {
-        let elementName = "check" + row;
-        if (inputBox == 0) {
-            elementName += "from";
-        } else if (inputBox == 2) {
-            elementName += "to";
-        }
-        let checkBox = document.getElementById(elementName);
-        let NumValue = Number(checkBox.value);
-        if (NumValue <= OneAudioPlayer.duration - 0.2) {
-            checkBox.value = Number(NumValue + 0.2).toFixed(1);
-            if ((endLoopTime - checkBox.value > 0.21) & (inputBox == 2)) {
-                // don't change sliders if not at either end (0.21 overcomes rounding)
-                return;
-            }
-            if ((checkBox.value - beginLoopTime > 0.21) & (inputBox == 0)) {
-                // don't change sliders if not at either end
-                return;
-            }
-            if ((inputBox == 0) & (OneAudioPlayer.currentTime < checkBox.value)) {
-                OneAudioPlayer.currentTime = checkBox.value;
-            }
-            currentAudioSlider.noUiSlider.setHandle(inputBox, checkBox.value);
-            if (inputBox == 0) {
-                beginLoopTime = checkBox.value;
-            } else if (inputBox == 2) {
-                endLoopTime = assignendLoopTime(checkBox.value);
-            }
-        }
-    }
-
-    function adjustDown(row, inputBox) {
-        let elementName = "check" + row;
-        if (inputBox == 0) {
-            elementName += "from";
-        } else if (inputBox == 2) {
-            elementName += "to";
-        }
-        let checkBox = document.getElementById(elementName);
-        let NumValue = Number(checkBox.value);
-        if (NumValue >= 0.2) {
-            checkBox.value = Number(NumValue - 0.2).toFixed(1);
-            if ((endLoopTime - checkBox.value > 0.21) & (inputBox == 2)) {
-                // don't change sliders if not at either end (0.21 overcomes rounding)
-                return;
-            }
-            if ((checkBox.value - beginLoopTime > 0.21) & (inputBox == 0)) {
-                // don't change sliders if not at either end
-                return;
-            }
-            if ((inputBox == 2) & (OneAudioPlayer.currentTime > checkBox.value)) {
-                OneAudioPlayer.currentTime = checkBox.value;
-            }
-            currentAudioSlider.noUiSlider.setHandle(inputBox, checkBox.value);
-            if (inputBox == 0) {
-                beginLoopTime = checkBox.value;
-            } else if (inputBox == 2) {
-                endLoopTime = assignendLoopTime(checkBox.value);
-            }
+            OneAudioPlayer.currentTime = beginLoopTime;
         }
     }
 
     function setFromSlider() {
-        currentAudioSlider.noUiSlider.setHandle(0, OneAudioPlayer.currentTime);
         beginLoopTime = OneAudioPlayer.currentTime;
+        currentAudioSlider.noUiSlider.setHandle(0, beginLoopTime);
+        document.getElementById("loopControlStart").value = beginLoopTime;        
     }
 
     function setToSlider() {
-        currentAudioSlider.noUiSlider.setHandle(2, OneAudioPlayer.currentTime);
         endLoopTime = OneAudioPlayer.currentTime;
+        currentAudioSlider.noUiSlider.setHandle(2, endLoopTime);
+        document.getElementById("loopControlEnd").value = endLoopTime;
     }
 
     function resetFromToSliders() {
-        currentAudioSlider.noUiSlider.setHandle(0, 0);
         beginLoopTime = 0;
-        currentAudioSlider.noUiSlider.setHandle(2, OneAudioPlayer.duration);
-        endLoopTime = OneAudioPlayer.duration;
+        currentAudioSlider.noUiSlider.setHandle(0, beginLoopTime);
+        currentAudioSlider.noUiSlider.setHandle(1, beginLoopTime);
+        document.getElementById("loopControlStart").value = beginLoopTime;        
+        
+        endLoopTime = OneAudioPlayer.duration.toFixed(1);
+        currentAudioSlider.noUiSlider.setHandle(2, endLoopTime);
+        document.getElementById("loopControlEnd").value = endLoopTime;
+
         // Uncheck all the checkboxes in the Preset Loops
-        for (let i = 0; i < presetLoopSegments.length; i++) {
-            document.getElementById("check" + i).checked = false;
+        for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
+            document.getElementById("segment" + segmentNumber).checked = false;
         }
     }
 
-    function assignendLoopTime(endLoopValue) {
+    function setEndLoopTime(endLoopValue) {
         // Don't allow endLoopTime to be >= OneAudioPlayer.duration
         if (endLoopValue > OneAudioPlayer.duration) {
             endLoopValue = OneAudioPlayer.duration;
@@ -673,6 +651,8 @@ const audioPlayer = (function () {
         playAudio: playAudio,
         stopAudio: stopAudio,
         selectTune: selectTune,
+        setStartSlider: setStartSlider,
+        setEndSlider: setEndSlider,
         setFromSlider: setFromSlider,
         setToSlider: setToSlider,
         resetFromToSliders: resetFromToSliders,
@@ -680,7 +660,6 @@ const audioPlayer = (function () {
         adjustUp: adjustUp,
         adjustDown: adjustDown,
         displayABC: displayABC,
-
     };
 })();
 

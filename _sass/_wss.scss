@@ -219,6 +219,10 @@ textarea {
     border-radius: 8px;
 }
 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 // Hide Arrows From Input Number
 // Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,
@@ -236,8 +240,8 @@ input[type=number] {
 // START: used for Preset Loops
 
 .upButton {
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 22px;
+    width: 22px;
     border: none;
     background: url('/images/circle-right.png');
     background-size: contain;
@@ -246,8 +250,8 @@ input[type=number] {
 }
 
 .downButton {
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 22px;
+    width: 22px;
     border: none;
     background: url('/images/circle-left.png');
     background-size: contain;
@@ -258,7 +262,8 @@ input[type=number] {
 .loopClass {
     font-size: 14px;
     border-radius: unset;
-    width: 2rem;
+    width: 6ch;
+    height: fit-content;
 }
 
 .loop3columnLayout {
@@ -267,6 +272,7 @@ input[type=number] {
     border-color: $brand-color;
     border-style: solid;
     border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .loop3columnLayout > div:nth-child(6n + 1),
@@ -290,6 +296,7 @@ input[type=number] {
 
 .loopLabel {
     padding: 5px 0 0 5px;
+    text-align: center;
 }
 
 .loopControl {
