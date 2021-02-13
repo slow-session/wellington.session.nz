@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags:
 repeats: 3
-parts: AABBCCDDEE
+parts: ABCDE
 regtuneoftheweek:
 slowtuneoftheweek: 2019-11-07
 mp3_file: /mp3/an-phis-fhliuch.mp3
