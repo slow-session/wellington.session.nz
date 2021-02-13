@@ -241,9 +241,7 @@ const audioPlayer = (function () {
                     //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
                     buildSegments(item);
                     if (presetLoopSegments.length) {
-                        document.getElementById(
-                            "loopPresetControls"
-                        ).innerHTML = createLoopControlsContainer();
+                        document.getElementById("loopPresetControls").innerHTML = createLoopControlsContainer();
                     }
                 }
                 initialiseAudioSlider();
@@ -421,7 +419,6 @@ const audioPlayer = (function () {
 
     function createLoopControlsContainer() {
         let loopControlsContainer = `
-<div class="loop3columnLayout">
     <div class="loopLabel"><strong>Adjust Loop</strong></div>
     
     <!-- adjust start of loop  -->
@@ -454,8 +451,7 @@ const audioPlayer = (function () {
             let nextSegment = segmentNumber + 1;
             if (nextSegment == presetLoopSegments.length) {
                 loopControlsContainer += `
-    <div class="loopLabel">
-    </div>`;
+    <div class="loopLabel"></div>`;
                 break;
             }
             if (presetLoopSegments[nextSegment].name == presetLoopSegments[segmentNumber].name) {
@@ -466,11 +462,9 @@ const audioPlayer = (function () {
                 segmentNumber = nextSegment;
             } else {
                 loopControlsContainer += `
-    <div class="loopLabel">
-    </div>`;
+    <div class="loopLabel"></div>`;
             }
         }
-        loopControlsContainer += "</div>";
 
         return loopControlsContainer;
     }
