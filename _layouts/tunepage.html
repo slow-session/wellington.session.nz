@@ -2,33 +2,33 @@
 layout: page
 ---
 <!-- show tune info -->
-<div class="row small-up-1 medium-up-2 large-up-2">
-    <div class="small-6 columns">
-        {{ page.key }} {{ page.rhythm }}, added
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+<div class="tuneInfoRow">
+    <div class="tuneInfoColumn">
+        <p class="tuneInfoPara">{{ page.key }} {{ page.rhythm }}, added
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
         {% if page.location %}
-        <br />Played in: {{ page.location }}
+        <p class="tuneInfoPara">Played in: {{ page.location }}</p>
         {% endif %}
         {% if page.notes %}
-        <p>Notes: {{ page.notes }}</p>
+        <p class="tuneInfoPara">Notes: {{ page.notes }}</p>
         {% endif %}
     </div>
-    <div class="small-6 columns">
-        {% if page.location contains 'Wellington' %}
-        {% if page.slowtuneoftheweek %}
-        Slow Session:
+    <div class="tuneInfoColumn">
+        {% if page.location contains 'Wellington' and page.slowtuneoftheweek %}
+        <p class="tuneInfoPara">Slow Session:
         <time
             datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
+        </p>
         {% elsif page.tags contains 'slowsession' %}
+        <p class="tuneInfoPara">
         Slow Session: before 2017
-        {% endif %}
-        <br />
+        </p>
         {% endif %}
         {% if page.location contains 'Wellington' and page.regtuneoftheweek %}
-        Regular Session:
+        <p class="tuneInfoPara">Regular Session:
         <time
             datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
-        <br />
+        </p>
         {% endif %}
     </div>
 </div>
