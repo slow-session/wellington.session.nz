@@ -10,8 +10,8 @@ slowtuneoftheweek:
 tags:
 location:
 mp3_file: /mp3/oot-be-est-da-vong.mp3
-repeats:
-parts:
+repeats: 2
+parts: AB
 mp3_source: Sarah and Catherine Brown
 mp3_licence: "© Sarah and Catherine Brown. All Rights Reserved."
 mp3_url:

@@ -10,8 +10,8 @@ slowtuneoftheweek:
 tags:
 location:
 mp3_file: /mp3/stoots-trip-ta-skea.mp3
-repeats:
-parts:
+repeats: 2
+parts: AABB
 mp3_source: Sarah and Catherine Brown
 mp3_licence: "© Sarah and Catherine Brown. All Rights Reserved."
 mp3_url:
@@ -26,9 +26,9 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    DBAF EDEF|(3A,A,A, B,D E2 ED|DBAF EDEF|A,2 B,C D4|
-    DBAF EDEF|(3A,A,A, B,D E2 ED|DBAF EDEF|A,2 B,C D3 A||
-    |d2 d2 BABd|(3AAA Bd e2 ef|defe dcBA|(3Bcd AF E3 c|
-    d2 d2 BABd|(3AAA Bd e2 ef|abag feBA|(3Bcd AF D3 A,|]
+    |:DBAF EDEF|(3A,A,A, B,D E2 ED|DBAF EDEF|A,2 B,C D4|
+    DBAF EDEF|(3A,A,A, B,D E2 ED|DBAF EDEF|A,2 B,C D3 A:|
+    |:d2 d2 BABd|(3AAA Bd e2 ef|defe dcBA|(3Bcd AF E3 c|
+    d2 d2 BABd|(3AAA Bd e2 ef|abag feBA|(3Bcd AF D3 A,:|
 
 ---
