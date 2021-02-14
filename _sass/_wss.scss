@@ -238,34 +238,6 @@ input[type=number] {
 }
 
 // START: used for Preset Loops
-
-.upButton {
-    height: 22px;
-    width: 22px;
-    border: none;
-    background: url('/images/circle-right.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    outline: none
-}
-
-.downButton {
-    height: 22px;
-    width: 22px;
-    border: none;
-    background: url('/images/circle-left.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    outline: none;
-}
-
-.loopClass {
-    font-size: 14px;
-    border-radius: unset;
-    width: 6ch;
-    height: fit-content;
-}
-
 .loop3columnLayout {
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
@@ -281,19 +253,6 @@ input[type=number] {
     background-color: darken($complimentary-color, 6%);
 }
 
-.loopTitleLeft {
-    background-color: $brand-color !important;
-    color: darken($complimentary-color, 10%);
-    padding: 5px 10px;
-}
-
-.loopTitle {
-    background-color: $brand-color !important;
-    color: darken($complimentary-color, 10%);
-    padding: 5px 10px;
-    text-align: center;
-}
-
 .loopLabel {
     padding: 5px 0 0 5px;
     text-align: center;
@@ -307,6 +266,32 @@ input[type=number] {
     align-items: center;
 }
 
+.loopUpButton {
+    height: 22px;
+    width: 22px;
+    border: none;
+    background: url('/images/circle-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none
+}
+
+.loopDownButton {
+    height: 22px;
+    width: 22px;
+    border: none;
+    background: url('/images/circle-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.loopInput {
+    font-size: 14px;
+    border-radius: unset;
+    width: 6ch;
+    height: fit-content;
+}
 // END: used for Preset Loops
 
 
