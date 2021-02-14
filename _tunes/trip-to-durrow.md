@@ -7,7 +7,7 @@ date: 2018-02-22
 location: Wellington
 notes:
 tags: slow-favourite slowsession
-repeats: 2
+repeats: 1
 parts: AABCBC
 regtuneoftheweek:
 slowtuneoftheweek: 2018-02-22
