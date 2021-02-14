@@ -11,7 +11,7 @@ tags:
 location: Wellington
 mp3_file: /mp3/march-of-the-meeatoiteen-bull.mp3
 repeats: 2
-parts: 2
+parts: AABB
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=J60750HxtRw
