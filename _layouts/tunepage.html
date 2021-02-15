@@ -64,19 +64,18 @@ layout: page
     <details>
         <summary class="filterButton">ABC Source</summary>
         <div id='abcSource'>
-            <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
-            <!-- show ABC errors -->
-            <div id='abcWarnings'></div>
-
             <p>You can edit the ABC source, and see your changes. This will <b>NOT</b> change the website directly. A brief
             set of instructions is found <a href="/editingABC/">here.</a>
             </p>
 
+            <textarea id="textAreaABC" class="abcText" rows="14" spellcheck="false"></textarea>
+            <!-- show ABC errors -->
+            <div id='abcWarnings'></div>
             <div title="Download the ABC you've entered. Don't lose your work!">
                 <input value='Download ABC' type='button' class="filterButton"
                 onclick='wssTools.downloadABCFile(document.getElementById("textAreaABC").value)' />
             </div>
-            <br />
+
             <p>If you feel that your changes are a closer match to the recording on the website, please save your changes (<b>Download ABC</b> button), send them to us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>, and
             we will review the proposed changes.
             </p>
@@ -86,7 +85,6 @@ layout: page
 
     <!-- attribution -->
     <div>
-        <br />
         {% if page.mp3_file %}
         <p>The audio for {{ page.title }} is sourced from
             {% if page.mp3_url %}

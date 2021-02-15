@@ -236,12 +236,17 @@ const audioPlayer = (function () {
 
             // calculate presetLoopSegments and set up preset loops
             OneAudioPlayer.onloadedmetadata = function () {
-                //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);
+                //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);             
+                // Add details button
+                document.getElementById("loopPresetControls").innerHTML =
+                    createLoopControlsContainer();
+                
                 if (item.repeats && item.parts) {
                     //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
                     buildSegments(item);
                     if (presetLoopSegments.length) {
-                        document.getElementById("loopPresetControls").innerHTML = createLoopControlsContainer();
+                        document.getElementById("loopPresetControls").innerHTML += 
+                            createPresetLoops();
                     }
                 }
                 initialiseAudioSlider();
@@ -311,12 +316,10 @@ const audioPlayer = (function () {
             document.getElementById("abcPaper").style.overflow = "auto";
             let urlTheSession = "https://thesession.org/tunes/";
             document.getElementById("abcPaper").innerHTML =
-                "<fieldset><strong> \
-    <p>We don't have dots for this tune. If you find a version of the tune that's a good match, send \
-    us a copy of the ABC and we'll get it added to the site. You might find it on The Session \
-    at this link:</p>\
-    <a href=\"" + urlTheSession + '">' + urlTheSession + "</a>\
-    </strong></fieldset>";
+    `<p>We don't have dots for this tune. If you find a version of the tune that's 
+    a good match, send us a copy of the ABC and we'll get it added to the site. 
+    You might find it on The Session at this link: 
+    <a href="${urlTheSession}">${urlTheSession}</a></p>`;
         }
     }
 
@@ -438,6 +441,12 @@ const audioPlayer = (function () {
 
         <button class="loopUpButton" title=" + 1/5 second" onclick="audioPlayer.adjustUp('loopControlEnd', loopControlEnd.value)"></button> 
     </div>`;
+        
+        return loopControlsContainer;
+    }
+    
+    function createPresetLoops () {
+        let loopControlsContainer = '';
 
         // Add the details for each "part" with "repeats"
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
