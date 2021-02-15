@@ -238,15 +238,16 @@ const audioPlayer = (function () {
             OneAudioPlayer.onloadedmetadata = function () {
                 //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);             
                 // Add details button
-                document.getElementById("loopPresetControls").innerHTML =
-                    createLoopControlsContainer();
+                let loopPresetControls  = document.getElementById("loopPresetControls");
+                if (loopPresetControls) {
+                    loopPresetControls.innerHTML = createLoopControlsContainer();
                 
-                if (item.repeats && item.parts) {
-                    //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
-                    buildSegments(item);
-                    if (presetLoopSegments.length) {
-                        document.getElementById("loopPresetControls").innerHTML += 
-                            createPresetLoops();
+                    if (item.repeats && item.parts) {
+                        //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
+                        buildSegments(item);
+                        if (presetLoopSegments.length) {
+                            loopPresetControls.innerHTML += createPresetLoops();
+                        }
                     }
                 }
                 initialiseAudioSlider();
@@ -312,14 +313,17 @@ const audioPlayer = (function () {
             // Reset paper state to original value
             document.getElementById("abcPaper").style.display = currentPaperState;
         } else {
-            document.getElementById("abcPaper").style.paddingBottom = "0px";
-            document.getElementById("abcPaper").style.overflow = "auto";
-            let urlTheSession = "https://thesession.org/tunes/";
-            document.getElementById("abcPaper").innerHTML =
+            let abcPaper = document.getElementById("abcPaper");
+            if (abcPaper) {
+                abcPaper.style.paddingBottom = "0px";
+                abcPaper.style.overflow = "auto";
+                let urlTheSession = "https://thesession.org/tunes/";
+                abcPaper.innerHTML =
     `<p>We don't have dots for this tune. If you find a version of the tune that's 
     a good match, send us a copy of the ABC and we'll get it added to the site. 
     You might find it on The Session at this link: 
     <a href="${urlTheSession}">${urlTheSession}</a></p>`;
+            }
         }
     }
 
@@ -618,11 +622,17 @@ const audioPlayer = (function () {
         beginLoopTime = 0;
         currentAudioSlider.noUiSlider.setHandle(0, beginLoopTime);
         currentAudioSlider.noUiSlider.setHandle(1, beginLoopTime);
-        document.getElementById("loopControlStart").value = beginLoopTime;        
-        
+        let loopControlStart = document.getElementById("loopControlStart");
+        if (loopControlStart) {
+            loopControlStart.value = beginLoopTime;        
+        }
+
         endLoopTime = OneAudioPlayer.duration.toFixed(1);
         currentAudioSlider.noUiSlider.setHandle(2, endLoopTime);
-        document.getElementById("loopControlEnd").value = endLoopTime;
+        let loopControlEnd = document.getElementById("loopControlEnd");
+        if (loopControlEnd) {
+            loopControlEnd.value = endLoopTime;        
+        }
 
         // Uncheck all the checkboxes in the Preset Loops
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
