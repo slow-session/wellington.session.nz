@@ -236,21 +236,7 @@ const audioPlayer = (function () {
 
             // calculate presetLoopSegments and set up preset loops
             OneAudioPlayer.onloadedmetadata = function () {
-                //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);             
-                // Add details button
-                let loopPresetControls  = document.getElementById("loopPresetControls");
-                if (loopPresetControls) {
-                    loopPresetControls.innerHTML = createLoopControlsContainer();
-                
-                    if (item.repeats && item.parts) {
-                        //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
-                        buildSegments(item);
-                        if (presetLoopSegments.length) {
-                            loopPresetControls.innerHTML += createPresetLoops();
-                        }
-                    }
-                }
-                initialiseAudioSlider();
+                displayPresetLoops(item);
             };
         } else {
             // no recording available
@@ -260,12 +246,7 @@ const audioPlayer = (function () {
             A recording for this tune is not available.";
                 if (modal) {
                     recordingMessage +=
-                        '<br /><input class="filterButton" type="button" onclick="location.href=\'' +
-                        item.url +
-                        '\';" value="Go to Tune Page" />';
-                    if (dotsForm) {
-                        dotsForm.style.display = "none";
-                    }
+                        `<br /><input class="filterButton" type="button" onclick="location.href='${item.url}';" value="Go to Tune Page" />`;
                 }
                 recordingMessage += "</strong></fieldset>";
 
@@ -276,6 +257,33 @@ const audioPlayer = (function () {
 
         // show the dots and the abc player
         displayABC(item.abc);
+    }
+
+    function displayPresetLoops (item) {
+        let presetLoops = document.getElementById("presetLoops");
+        if (presetLoops) {
+            presetLoops.innerHTML = `
+    <details>
+        <summary class="filterButton">Preset Loops</summary>
+        <div id="loopPresetControls" class="loop3columnLayout"></div>
+    </details>`;
+    
+            //console.log("OneAudioPlayer.duration: " + OneAudioPlayer.duration);             
+            // Add details button
+            let loopPresetControls  = document.getElementById("loopPresetControls");
+            if (loopPresetControls) {
+                loopPresetControls.innerHTML = createLoopControlsContainer();
+        
+                if (item.repeats && item.parts) {
+                    //console.log('setupPresetLoops: ' + OneAudioPlayer.duration);
+                    buildSegments(item);
+                    if (presetLoopSegments.length) {
+                        loopPresetControls.innerHTML += createPresetLoops();
+                    }
+                }
+            }
+        }
+        initialiseAudioSlider();
     }
 
     function displayABC(abcText) {
