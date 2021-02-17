@@ -458,12 +458,12 @@ const audioPlayer = (function () {
     }
     
     function createPresetLoops () {
-        let loopControlsContainer = '';
+        let loopDetails = '';
 
         // Add the details for each "part" with "repeats"
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
             // build each row
-            loopControlsContainer += `
+            loopDetails += `
     <div class="loopLabel">
         <strong>Part ${presetLoopSegments[segmentNumber].name}</strong>
     </div>
@@ -474,24 +474,24 @@ const audioPlayer = (function () {
             let nextSegment = segmentNumber + 1;
             // last segment so no repeat
             if (nextSegment == presetLoopSegments.length) {
-                loopControlsContainer += `
+                loopDetails += `
     <div class="loopLabel"></div>`;
                 break;
             }
             // add the second repeat
             if (presetLoopSegments[nextSegment].name == presetLoopSegments[segmentNumber].name) {
-                loopControlsContainer += `
+                loopDetails += `
     <div class="loopLabel">
         <input type="checkbox" onclick="audioPlayer.applySegments()" id="segment${nextSegment}">${presetLoopSegments[nextSegment].repeat}</input>
     </div>`;
                 segmentNumber = nextSegment;
             } else {
-                loopControlsContainer += `
+                loopDetails += `
     <div class="loopLabel"></div>`;
             }
         }
 
-        return loopControlsContainer;
+        return loopDetails;
     }
 
     function setSliderStart(startTime){

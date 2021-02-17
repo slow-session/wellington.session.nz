@@ -203,6 +203,11 @@ fieldset {
     padding-bottom: 0rem;
 }
 
+// wrap long URLs
+a {
+    word-wrap: break-word;
+}
+
 form {
     text-align: left;
 }
