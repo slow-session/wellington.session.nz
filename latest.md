@@ -32,13 +32,20 @@ window.store = {
 };
 </script>
 
-
-{% include tunesArchiveGrid.html%}
-
 {% include tuneModal.html%}
+
+<!-- START of Tunes Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+<script src="{{ site.js_host }}/js/buildGrid.js"></script>
+<!-- END of Tunes Grid -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
     pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
+
+    buildGrid.displayGrid("tunesarchive", "", window.store);
 });
 </script>

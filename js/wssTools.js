@@ -54,10 +54,16 @@ const wssTools = (function () {
         });
     }
 
-    function enableButton() {
-        submit_button.disabled = false;
-        submit_button.style.opacity = 1.0;
-        submit_button.style.cursor = "pointer";
+    function enableSearchButton() {
+        submitSearch.disabled = false;
+        //submitSearch.style.opacity = 1.0;
+        //submitSearch.style.cursor = "pointer";
+        submitSearch.classList.remove('filterDisabled');
+    }
+
+    function disableSearchButton(){
+        submitSearch.disabled = true;
+        submitSearch.classList.add('filterDisabled');
     }
 
     function show_iframe(url) {
@@ -129,7 +135,8 @@ const wssTools = (function () {
         slugify: slugify,
         getCheckedCheckboxesFor: getCheckedCheckboxesFor,
         toTitleCase: toTitleCase,
-        enableButton: enableButton,
+        enableSearchButton: enableSearchButton,
+        disableSearchButton: disableSearchButton,
         show_iframe: show_iframe,
         testForMobile: testForMobile,
         getABCheaderValue: getABCheaderValue,

@@ -18,17 +18,16 @@
         var setsTable = document.getElementById("tunesGrid");
         var setsCount = document.getElementById("tunesCount");
         var setsCounter = 0;
+        let appendString = '';
 
         // Find the tuneIDs that correspond to each set
         mapSetToTuneIDs();
 
+        // create div for tunes grid
+        tunesGrid.classList.add("tunes3columnLayout");
         if (wssTools.testForMobile()) {
-            var appendString =
-                '<div id="tunes" class="tunes3columnLayout mobileScrolling">';
-        } else {
-            var appendString = '<div id="tunes" class="tunes3columnLayout">';
+            tunesGrid.classList.add("mobileScrolling");
         }
-
 
         if (results.length) {
             // Are there any results?

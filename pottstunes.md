@@ -21,10 +21,9 @@ We've added audio of versions of the recordings (with some clean up of the audio
 
 <script>
     window.store = {
-      {% assign tuneID = 3000 %}
+      {% assign tuneID = 1 %}
       {% assign tunes =  site.pottstunes %}
       {% for tune in tunes %}
-        {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -33,14 +32,21 @@ We've added audio of versions of the recordings (with some clean up of the audio
         "rhythm": "{{ tune.rhythm | xml_escape }}",
         "url": "{{ tune.url | xml_escape }}",
         }{% unless forloop.last %},{% endunless %}
+        {% assign tuneID = tuneID | plus: 1 %}
       {% endfor %}
     };
 </script>
 
-{% include tunesPottsGrid.html %}
+<!-- START of Tunes Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+<script src="{{ site.js_host }}/js/buildGrid.js"></script>
+<!-- END of Tunes Grid -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
-
+    buildGrid.displayGrid("potts", "", window.store);
 });
 </script>

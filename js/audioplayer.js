@@ -37,7 +37,7 @@ const audioPlayer = (function () {
 
         // build the MP3 player for each tune
         let mp3player = `
-<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+<form onsubmit="return false">
     <div id="mp3Player-${tuneID}" class="audioParentOuter">
         <!-- Col 1 - play button -->
         <div class="playpauseButton">
@@ -111,7 +111,7 @@ const audioPlayer = (function () {
                 beginLoopTime = values[0];
                 document.getElementById("loopControlStart").value = beginLoopTime;
             } else if (handle === 2) {
-                endLoopTime = setEndLoopTime(values[2]);
+                endLoopTime = Math.min(OneAudioPlayer.duration, values[2]);
                 document.getElementById("loopControlEnd").value = endLoopTime;
             } else if (handle === 1) {
                 OneAudioPlayer.currentTime = values[1];
@@ -261,7 +261,7 @@ const audioPlayer = (function () {
 
     function displayPresetLoops (item) {
         let presetLoops = document.getElementById("presetLoops");
-        if (presetLoops) {
+        if (presetLoops && item.mp3) {
             presetLoops.innerHTML = `
     <details>
         <summary class="filterButton">Preset Loops</summary>
@@ -440,7 +440,7 @@ const audioPlayer = (function () {
     <div class="loopControl">
         <button class="loopDownButton" title=" - 1/5 second" onclick="audioPlayer.adjustDown('loopControlStart', loopControlStart.value)"></button>
 
-        <input id="loopControlStart" class="loopInput" type="number" size="4" min="0" step=0.1 value=0.0 onchange="audioPlayer.setSliderStart(loopControlStart.value)"> 
+        <input id="loopControlStart" class="loopInput" type="number" size="4" min="0" max="${OneAudioPlayer.duration}" step=0.1 value=0.0 onchange="audioPlayer.setSliderStart(loopControlStart.value)"> 
 
         <button class="loopUpButton" title=" + 1/5 second" onclick="audioPlayer.adjustUp('loopControlStart', loopControlStart.value)"></button> 
     </div>
@@ -449,7 +449,7 @@ const audioPlayer = (function () {
     <div class="loopControl">
         <button class="loopDownButton" title=" - 1/5 second" onclick="audioPlayer.adjustDown('loopControlEnd', loopControlEnd.value)"></button>
         
-        <input id="loopControlEnd" class="loopInput" type="number" size="4" min="0" step=0.1 value=${OneAudioPlayer.duration.toFixed(1)} onchange="audioPlayer.setSliderEnd(loopControlEnd.value)"> 
+        <input id="loopControlEnd" class="loopInput" type="number" size="4" min="0" max="${OneAudioPlayer.duration}" step=0.1 value=${OneAudioPlayer.duration.toFixed(1)} onchange="audioPlayer.setSliderEnd(loopControlEnd.value)"> 
 
         <button class="loopUpButton" title=" + 1/5 second" onclick="audioPlayer.adjustUp('loopControlEnd', loopControlEnd.value)"></button> 
     </div>`;
@@ -506,7 +506,7 @@ const audioPlayer = (function () {
         if (endTime <  OneAudioPlayer.currentTime) {
             currentAudioSlider.noUiSlider.setHandle(1, endTime);
         }
-        currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(endTime));
+        currentAudioSlider.noUiSlider.setHandle(2, Math.min(OneAudioPlayer.duration, endTime));
         endLoopTime = endTime;
     }
 
@@ -524,7 +524,7 @@ const audioPlayer = (function () {
                 currentAudioSlider.noUiSlider.setHandle(0, newTime);
                 beginLoopTime = newTime;
             } else {
-                currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(newTime));
+                currentAudioSlider.noUiSlider.setHandle(2, Math.min(OneAudioPlayer.duration, newTime));
                 endLoopTime = newTime;    
             }
             loopInput.value = newTime;
@@ -545,7 +545,7 @@ const audioPlayer = (function () {
                 currentAudioSlider.noUiSlider.setHandle(0, newTime);
                 beginLoopTime = newTime;
             } else {
-                currentAudioSlider.noUiSlider.setHandle(2, setEndLoopTime(newTime));
+                currentAudioSlider.noUiSlider.setHandle(2, Math.min(OneAudioPlayer.duration, newTime));
                 endLoopTime = newTime;    
             }
             loopInput.value = newTime;
@@ -572,7 +572,7 @@ const audioPlayer = (function () {
             beginLoopTime = parseFloat(presetLoopSegments[firstSegment].start);
         }
         if (lastSegment != null) {
-           endLoopTime = setEndLoopTime(parseFloat(presetLoopSegments[lastSegment].end));
+           endLoopTime = Math.min(OneAudioPlayer.duration, parseFloat(presetLoopSegments[lastSegment].end));
         }
     
         // do nothing unless at least one box is checked
@@ -646,14 +646,6 @@ const audioPlayer = (function () {
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
             document.getElementById("segment" + segmentNumber).checked = false;
         }
-    }
-
-    function setEndLoopTime(endLoopValue) {
-        // Don't allow endLoopTime to be >= OneAudioPlayer.duration
-        if (endLoopValue > OneAudioPlayer.duration) {
-            endLoopValue = OneAudioPlayer.duration;
-        }
-        return endLoopValue;
     }
 
     function testForIOS() {

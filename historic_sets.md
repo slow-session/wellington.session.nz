@@ -16,10 +16,10 @@ page.
         <legend>Select from historical Wellington Sets:</legend>    
         <div class="formParent">
             <div class="formChild">           
-                <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="wssTools.enableButton()">
+                <input type="text" id="title-box" name="title" placeholder='Search' value='' onkeydown="wssTools.enableSearchButton()">
             </div>
             <div class="formChild">
-                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
+                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableSearchButton()">
                     <option value="">Any Rhythm</option>
                     {% for rhythm in rhythms %}
                     {% if rhythm != '' %}
@@ -32,7 +32,7 @@ page.
         <div class="formParent">
             <div class="formChild">
                 <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
+                    <input class="filterButton filterDisabled" id="submitSearch" type="submit" name="submit" value="Select" disabled>
                 </span>
             </div>
         </div>     
