@@ -6,7 +6,7 @@ rhythm: jig
 notes:
 date: 2020-02-24
 regtuneoftheweek: 2020-02-24
-slowtuneoftheweek:
+slowtuneoftheweek: 2021-02-21
 tags:
 location: Wellington
 mp3_file: /mp3/the-holly-bush.mp3
