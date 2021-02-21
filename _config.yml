@@ -18,7 +18,7 @@ reg_tunes_max: 20
 
 # Only use this if you are serving your site via Github Pages
 github:
-  url: 'https://wellington.session.nz'
+    url: 'https://wellington.session.nz'
 
 header: yes
 header_sm: images/banner-small.jpg
@@ -28,24 +28,24 @@ header_xl: images/banner-xl.jpg
 
 # Exclude our ruby stuff and other dirs
 exclude:
-  [
-    .bundle,
-    bin,
-    vendor,
-    Gemfile,
-    Gemfile.lock,
-    Rakefile,
-    s3_website.yml,
-    .last_optimized,
-    _scripts,
-    documentation,
-    archive,
-  ]
+    [
+        .bundle,
+        bin,
+        vendor,
+        Gemfile,
+        Gemfile.lock,
+        Rakefile,
+        s3_website.yml,
+        .last_optimized,
+        _scripts,
+        documentation,
+        archive,
+    ]
 
 # Build settings
 markdown: kramdown
 kramdown:
-  input: GFM
+    input: GFM
 
 destination: _site
 
@@ -54,7 +54,7 @@ destination: _site
 #  - jekyll-seo-tag
 
 feed:
-  path: atom.xml
+    path: atom.xml
 
 # Compress our Css
 #sass:
@@ -88,44 +88,44 @@ mp3_host: # https://wellington.session.nz # leave blank if mp3 files are served 
 js_host: # leave blank if js files are served from THIS SERVER
 
 collections:
-  tunes:
-    output: true
+    tunes:
+        output: true
 
-  northernfiddler:
-    output: true
+    northernfiddler:
+        output: true
 
-  obrientunes:
-    output: true
+    obrientunes:
+        output: true
 
-  pottstunes:
-    output: true
+    pottstunes:
+        output: true
 
-  sets:
-    output: true
+    sets:
+        output: true
 
 defaults:
-  - scope:
-      path: '_tunes'
-    values:
-      layout: 'tunepage'
-      permalink: /tunes/:title:output_ext
-  - scope:
-        path: "_northernfiddler"
-    values:
-        layout: "tunepage-northernfiddler"
-        permalink: /northernfiddler/:title:output_ext
-  - scope:
-      path: '_obrientunes'
-    values:
-      layout: 'tunepage-obrien'
-      permalink: /obrientunes/:title:output_ext
-  - scope:
-      path: '_pottstunes'
-    values:
-      layout: 'tunepage-potts'
-      permalink: /pottstunes/:title:output_ext
-  - scope:
-      path: '_sets'
-    values:
-      layout: 'setpage'
-      permalink: /sets/:title:output_ext
+    - scope:
+          path: '_tunes'
+      values:
+          layout: 'tunepage'
+          permalink: /tunes/:title:output_ext
+    - scope:
+          path: '_northernfiddler'
+      values:
+          layout: 'tunepage-northernfiddler'
+          permalink: /northernfiddler/:title:output_ext
+    - scope:
+          path: '_obrientunes'
+      values:
+          layout: 'tunepage-obrien'
+          permalink: /obrientunes/:title:output_ext
+    - scope:
+          path: '_pottstunes'
+      values:
+          layout: 'tunepage-potts'
+          permalink: /pottstunes/:title:output_ext
+    - scope:
+          path: '_sets'
+      values:
+          layout: 'setpage'
+          permalink: /sets/:title:output_ext

@@ -2,16 +2,16 @@
 title: Ships are Sailing
 titleID: ships-are-sailing.md
 key: G
-rhythm: reel 
+rhythm: reel
 mode:
 date: 2016-10-27
 location: Arrowtown Wellington
 notes:
-tags: 
-repeats: 2 
-parts: AABB 
+tags:
+repeats: 2
+parts: AABB
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2021-02-21
 mp3_file: /mp3/ships-are-sailing.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
