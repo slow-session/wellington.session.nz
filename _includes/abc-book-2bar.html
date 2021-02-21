@@ -1,3 +1,0 @@
-{% if tune.abc contains "K:" %}X:{{ include.xcounter }}{% assign temp = tune.abc | lstrip | replace: 'X:',  '% Old value - X:' %}{% assign words = temp | split: '|' %}
-{{ words[0] }}{% if words[1].size < 4 %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}{{ words[3] }}{{ "|" }} {% else %}{{ "|" }}{{ words[1] }}{{ "|" }}{{ words[2] }}{{ "|" }}
-{% endif %}{% endif %}

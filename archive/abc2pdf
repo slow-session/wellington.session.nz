@@ -1,9 +1,0 @@
-#!/bin/sh
-# Convert a text file with abc musical notation (abcnotation.com)
-# to a PDF, using abc2ps.
-TMPPS=$(mktemp /tmp/temp.XXXXXXX).ps
-PDF=$(basename "${1%.abc}.pdf")
-abcm2ps "$@" -q -N0 -O $TMPPS
-ps2pdf $TMPPS $PDF
-#echo "Created $PDF"
-rm $TMPPS

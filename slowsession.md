@@ -8,7 +8,7 @@ permalink: /slowsession/
 
 If you're new to session playing or want to know more about our slow session, please check out our <a href="/intro-to-slowsession/">Introduction to Wellington Slow Session</a> page.
 
-<script src="/js/build_grid_focustunes.js"></script>
+<script src="/js/buildGrid.js"></script>
 
 ## Current Focus Tunes
 

@@ -12,7 +12,7 @@ Getting a great session humming requires some attention to certain ground rules.
 
 Many of the tunes that get played at the session are in the <a href="/tunes_archive/">Tunes Archive</a> page but other tunes that are firmly in the traditional mould are very welcome.
 
-<script src="/js/build_grid_focustunes.js"></script>
+<script src="/js/buildGrid.js"></script>
 
 ## Current Focus Tunes
 

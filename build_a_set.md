@@ -36,17 +36,16 @@ page.
 <!-- Some boilerplate that's common to a number of pages -->
 
 {% include tunes-filter-variables.html %}
-
-<form id="wellington" method="get">
+<form>
     <fieldset>
         <legend>Select from the Tunes Archive:</legend>
         <div class="formParent">
         <div class="formChild">
-            <input type="text" id="title-box" name="title" placeholder='Search'
-            value='' onkeydown="wssTools.enableButton()">
+            <input type="text" id="title-box" name="searchTitle" placeholder='Search'
+            value='' onkeydown="wssTools.enableSearchButton()">
         </div>
         <div class="formChild">
-            <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
+            <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
             <option value="">All Rhythms</option>
             {% for rhythm in rhythms %}
             {% if rhythm != '' %}
@@ -57,16 +56,16 @@ page.
         </div>
         </div>
         <div class="formParent">
-        <div class="formChild">
-            <span title="Run the filter with the default settings to see the whole list">
-            <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
-            </span>
-        </div>
-        <div class="formChild">      
-            <div class="tooltip filterButton"><em>Help</em>
-                <span class="tooltiptext">Run the filter with the default settings to see the whole list</span>
+            <div class="formChild">
+                <span title="Run the filter with the default settings to see the whole list">
+                    <input class="filterButton filterDisabled" id="submitSearch" type="button" name="submit" value="Select" onclick="buildSetGrid.formSearch([searchTitle.value, searchRhythm.value])" disabled>
+                </span>
             </div>
-        </div>
+            <div class="formChild">   
+                <span title="Reset to default">  
+                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset(['title-box', 'rhythm-box'])">
+                </span>
+            </div>
         </div>
         <p></p>
         Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
@@ -85,7 +84,7 @@ page.
             </div>
             <div class="formChild">
                 <span title="Clear the music notation to start a new set">
-                    <input value='RESET' type='button' class="filterButton" onclick='Reset()' />
+                    <input value='Start New Set' type='button' class="filterButton" onclick='buildSetGrid.Reset()' />
                 </span>
             </div>
         </div>
@@ -103,8 +102,9 @@ page.
 <textarea id="textAreaABC" style="display:none;"></textarea>
 
 <script>
+buildSetGrid.initialiseLunrSearch();
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    // no action needed here
+    buildSetGrid.displaySetGrid("", window.store);
 });
 </script>

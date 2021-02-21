@@ -11,16 +11,16 @@ This collection was one of the very early uses of ABC to capture and transmit Ir
 <!-- Some boilerplate that's common to a number of pages -->
 {% include obrientunes-filter-variables.html %}
 
-<form id="obrien" method="get">
+<form onsubmit="return false">
     <fieldset>
         <legend>Select from the Tunes Archive:</legend>    
         <div class="formParent">
             <div class="formChild">
-                <input type="text" id="title-box" name="title" placeholder='Search'
-                value='' onkeydown="wssTools.enableButton()">
+                <input type="text" id="title-box" name="searchTitle" placeholder='Search'
+                value='' onkeydown="wssTools.enableSearchButton()">
             </div>
             <div class="formChild">
-                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
+                <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
                     <option value="">All Rhythms</option>
                     {% for rhythm in rhythms %}
                     {% if rhythm != '' %}
@@ -33,21 +33,25 @@ This collection was one of the very early uses of ABC to capture and transmit Ir
         <div class="formParent">
             <div class="formChild">
                 <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
+                    <input class="filterButton filterDisabled" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildGrid.formSearch('obrien', [searchTitle.value, searchRhythm.value])" disabled>
+                </span>
+            </div>
+            <div class="formChild">   
+                <span title="Reset to default">  
+                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildGrid.formReset('obrien', ['title-box', 'rhythm-box'])">
                 </span>
             </div>
         </div>     
         <p></p>
-        Displaying <span id="tunesCount"></span> tunes
+        Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
     </fieldset>
 </form>
 
 <script>
     window.store = {
-      {% assign tuneID = 3000 %}
+      {% assign tuneID = 1 %}
       {% assign tunes =  site.obrientunes | sort: 'title' %}
       {% for tune in tunes %}
-        {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -55,14 +59,24 @@ This collection was one of the very early uses of ABC to capture and transmit Ir
         "rhythm": "{{ tune.rhythm | xml_escape }}",
         "url": "{{ tune.url | xml_escape }}",
         }{% unless forloop.last %},{% endunless %}
+        {% assign tuneID = tuneID | plus: 1 %}
       {% endfor %}
     };
 </script>
 
-{% include tunesObrienGrid.html%}
+<!-- START of Tunes Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+<script src="{{ site.js_host }}/js/buildGrid.js"></script>
+<!-- END of Tunes Grid -->
 
 <script>
+buildGrid.initialiseLunrSearch();
+    
 document.addEventListener("DOMContentLoaded", function (event) {
-
+       
+    buildGrid.displayGrid("obrien", "", window.store);
 });
 </script>

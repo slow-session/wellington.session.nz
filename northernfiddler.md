@@ -15,16 +15,16 @@ There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddl
 <!-- Some boilerplate that's common to a number of pages -->
 {% include northernfiddler-filter-variables.html %}
 
-<form id="northernfiddler" method="get">
+<form onsubmit="return false">
     <fieldset>
         <legend>Select from the Tunes Archive:</legend>    
         <div class="formParent">
             <div class="formChild">
-                <input type="text" id="title-box" name="title" placeholder='Search'
-                value='' onkeydown="wssTools.enableButton()">
+                <input type="text" id="title-box" name="searchTitle" placeholder='Search'
+                value='' onkeydown="wssTools.enableSearchButton()">
             </div>
             <div class="formChild">
-                <select id="rhythm-box" name="rhythm"  onChange="wssTools.enableButton()">
+                <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
                     <option value="">All Rhythms</option>
                     {% for rhythm in rhythms %}
                     {% if rhythm != '' %}
@@ -34,7 +34,7 @@ There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddl
                 </select>
             </div>
             <div class="formChild">
-                <select id="musician-box" name="musician"  onChange="wssTools.enableButton()">
+                <select id="musician-box" name="searchMusician"  onChange="wssTools.enableSearchButton()">
                     <option value="">All musicians</option>
                     {% for musician in musicians %}
                     {% if musician != '' %}
@@ -47,7 +47,12 @@ There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddl
         <div class="formParent">
             <div class="formChild">
                 <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submit_button" type="submit" name="submit" value="Select" disabled>
+                    <input class="filterButton filterDisabled" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildGrid.formSearch('northernfiddler', [searchTitle.value, searchRhythm.value, searchMusician.value])" disabled>
+                </span>
+            </div>
+            <div class="formChild">   
+                <span title="Reset to default">  
+                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildGrid.formReset('northernfiddler', ['title-box', 'rhythm-box', 'musician-box'])">
                 </span>
             </div>
         </div>     
@@ -64,7 +69,7 @@ There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddl
         "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
-        "musician": "{{ tune.musician | xml_escape }}",
+        "mp3_source": "{{ tune.mp3_source | xml_escape }}",
         "page": "{{ tune.page | xml_escape }}",
         "key": "{{ tune.key | xml_escape }}",
         "rhythm": "{{ tune.rhythm | xml_escape }}",
@@ -75,10 +80,20 @@ There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddl
     };
 </script>
 
-{% include tunesNorthernFiddlerGrid.html%}
+
+<!-- START of Tunes Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+<script src="{{ site.js_host }}/js/buildGrid.js"></script>
+<!-- END of Tunes Grid -->
 
 <script>
+buildGrid.initialiseLunrSearch();
+    
 document.addEventListener("DOMContentLoaded", function (event) {
-
+    
+    buildGrid.displayGrid("northernfiddler", "", window.store);
 });
 </script>

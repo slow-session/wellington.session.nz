@@ -5,7 +5,7 @@
 {% for tune in site.northernfiddler %}
     {% assign tune_rhythms = tune_rhythms | append: tune.rhythm %}
 
-    {% for musician in tune.musician %}
+    {% for musician in tune.mp3_source %}
         {% assign tune_musicians = tune_musicians | append: musician | strip %}
         {% unless forloop.last %}{% assign tune_musicians = tune_musicians | append: ':' %}{% endunless %}
     {% endfor %}
