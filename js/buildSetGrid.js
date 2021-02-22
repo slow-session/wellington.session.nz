@@ -15,7 +15,9 @@
 "use strict";
 
 const buildSetGrid = (function () {
-    function displaySetGrid(results, store) {
+    let tuneIDs = [];
+
+    function displayBuildSet(results, store) {
         let tunesGrid = document.getElementById("tunesGrid");
         let tunesCount = document.getElementById("tunesCount");
         let tunesCounter = 0;
@@ -34,7 +36,9 @@ const buildSetGrid = (function () {
                 let item = store[results[i].ref];
 
                 if (item.abc) {
-                    appendString += createGridRow(item);
+                    appendString += `<span id="gr${item.tuneID}"><a href="${item.url}">${item.title}</a></span>
+                    <span><input type="button" class="filterButton" onclick="buildSetGrid.addABCtune(${item.tuneID})" value="Select"></span>
+                    <span>${item.key} ${item.rhythm}</span>`;
                     tunesCounter++;
                 }
             }
@@ -43,7 +47,9 @@ const buildSetGrid = (function () {
                 // Iterate over the original data
                 let item = store[key];
                 if (item.abc) {
-                    appendString += createGridRow(item);
+                    appendString += `<span id="gr${item.tuneID}"><a href="${item.url}">${item.title}</a></span>
+                    <span><input type="button" class="filterButton" onclick="buildSetGrid.addABCtune(${item.tuneID})" value="Select"></span>
+                    <span>${item.key} ${item.rhythm}</span>`;
                     tunesCounter++;
                 }
             }
@@ -53,28 +59,98 @@ const buildSetGrid = (function () {
         tunesCount.innerHTML = tunesCounter;
     }
 
-    function createGridRow(item) {
+    function displayHistoricSet(results, setStore) {
+        let setsTable = document.getElementById("tunesGrid");
+        let setsCount = document.getElementById("tunesCount");
+        let setsCounter = 0;
+        let appendString = '';
+
+        // Find the tuneIDs that correspond to each set
+        mapSetToTuneIDs();
+
+        // create div for tunes grid
+        tunesGrid.classList.add("tunes3columnLayout");
+        if (wssTools.testForMobile()) {
+            tunesGrid.classList.add("mobileScrolling");
+        }
+
+        if (results.length) {
+            // Are there any results?
+            for (let i = 0; i < results.length; i++) {
+                // Iterate over the results
+                let item = setStore[results[i].ref];
+                appendString += createHistoricSetRow(item);
+                setsCounter++;
+            }
+        } else {
+            for (let key in setStore) {
+                // Iterate over the original data
+                let item = setStore[key];
+                appendString += createHistoricSetRow(item);
+                setsCounter++;
+            }
+        }
+        appendString += "</div>";
+        setsTable.innerHTML = appendString;
+        setsCount.innerHTML = setsCounter;
+    }
+
+    function createHistoricSetRow(item) {
         let gridRow = "";
+        let setID = "ABC" + item.setID;
+        let tuneIDs = item.tuneIDs.split(",");
 
         // build the first three columns
         gridRow +=
-            '<span id="gr' +
-            item.tuneID +
-            '"><a href="' +
-            item.url +
-            '">' +
-            item.title +
-            "</a></span>";
-        gridRow +=
-            '<span><input type="button" class="filterButton" onclick="buildSetGrid.addABCtune(' +
-            item.tuneID +
-            ')" value="Select"></span>';
-        gridRow += "<span>" + item.key + " " + item.rhythm + "</span>";
+            '<span title="Set played in: ' +
+            item.location +
+            '">';
+        gridRow += '<a href="' + item.url + '">' + item.title + '</a>';
+        gridRow += '&nbsp;(' + item.rhythm + ')';
+        gridRow += '</span>';
+        gridRow += '<span class="setRow">';
+        for (let i = 0; i < tuneIDs.length; i++) {
+            let url = window.store[tuneIDs[i]].url;
+            let title = window.store[tuneIDs[i]].title;
+            let key = window.store[tuneIDs[i]].key;
+
+            gridRow += '<div>';
+            gridRow += '<a href="' + url + '">' + title + " (" + key + ")</a>";
+            gridRow += "</div>";
+        }
+        gridRow += "</span>";
+        gridRow += '<span class="setRow">';
+        for (let i = 0; i < tuneIDs.length; i++) {
+            let tuneID = tuneIDs[i];
+
+            gridRow +=
+                '<input class="filterButton setChild" type="button" onclick="audioPlayer.selectTune(store,' +
+                tuneID +
+                ');" value="Play Now" />';
+        }
+        gridRow += "</span>";
 
         return gridRow;
     }
 
-    let tuneIDs = [];
+    function mapSetToTuneIDs() {
+        for (let setKey in setStore) {
+            // only do this mapping once
+            if ( !setStore[setKey].tuneIDs) {
+                let setTunes = setStore[setKey].setTunes;
+                for (let i = 0; i < setTunes.length; i++) {
+                    for (let tuneKey in store) {
+                        let tune = store[tuneKey];
+                        if (setTunes[i] == tune.tuneID) {
+                            setStore[setKey].tuneIDs += tuneKey + ",";
+                        }
+                    }
+                }
+                // Strip off trailing ','
+                setStore[setKey].tuneIDs = setStore[setKey].tuneIDs.slice(0, -1);
+            }
+        }
+    }
 
     function addABCtune(tuneID) {
         let item = store[tuneID];
@@ -105,7 +181,7 @@ const buildSetGrid = (function () {
 
     }
 
-    function Reset() {
+    function newSet() {
         document.getElementById("paperHeader").style.display = "inline";
         document.getElementById("setTuneTitles").innerHTML = "";
 
@@ -122,7 +198,7 @@ const buildSetGrid = (function () {
 
     let tuneIndex = '';
     
-    function initialiseLunrSearch() {
+    function initialiseLunrSearch(store) {
         // create the searchTerm from the form data and reflect the values chosen in the form
 
         // Define the index terms for lunr search
@@ -135,17 +211,29 @@ const buildSetGrid = (function () {
         });
 
         // Add the search items to the search index
-        for (let key in window.store) {
+        for (let key in store) {
             // Add the data to lunr
             tuneIndex.add({
                 id: key,
-                title: window.store[key].title,
-                rhythm: window.store[key].rhythm,
+                title: store[key].title,
+                rhythm: store[key].rhythm,
             });
         }
     }
 
-    function formSearch(formInputs) {
+
+    function displaySetGrid(setType, searchResults, store) {
+
+        switch (setType) {
+            case 'historic':
+                displayHistoricSet(searchResults, store);
+                break;
+            default:
+                displayBuildSet(searchResults, store);
+        }
+    }
+
+    function formSearch(setType, formInputs, store) {
         const regex = /[A-Za-z]/g;
         let searchTerm = "";
         let searchResults = "";
@@ -163,24 +251,24 @@ const buildSetGrid = (function () {
             if (searchResults.length) {
                 // sort the results
                 searchResults.sort((a, b) => a.ref - b.ref);
-                displaySetGrid(searchResults, window.store);
+                displaySetGrid(setType, searchResults, store);
             } else {
                 document.getElementById("tunesGrid").innerHTML = '';
                 document.getElementById("tunesCount").innerHTML = 0;
             }
         } else {
-            displaySetGrid(searchResults, window.store);
+            displaySetGrid(setType, searchResults, store);
         }
         wssTools.disableSearchButton()
     }
 
-    function formReset(formInputs) {
+    function formReset(setType, formInputs, store) {
         let searchResults = '';
         
         for (const formInput of formInputs) {
             document.getElementById(formInput).value = '';
         }
-        displaySetGrid(searchResults, window.store);
+        displaySetGrid(setType, searchResults, store);
     }
 
     return {
@@ -190,7 +278,7 @@ const buildSetGrid = (function () {
         formReset: formReset,
         addABCtune: addABCtune,
         loadTextarea: loadTextarea,
-        Reset: Reset,
+        newSet: newSet,
     };
 
 })();

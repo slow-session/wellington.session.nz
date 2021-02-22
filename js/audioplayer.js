@@ -21,17 +21,15 @@ const audioPlayer = (function () {
     let isIOS = testForIOS();
     let abcEditor = null;
     
-    function createAudioPlayer() {
-        let audioPlayer = `
-<!-- declare an Audio Player for this page-->
-<audio id="OneAudioPlayer">
-    <source id="mp3Source" type="audio/mp3"></source> 
-    <source id="wavSource" type="audio/wav"></source>
-    Your browser does not support the audio format.
-</audio>`;
-
-        return audioPlayer;
-    }
+    /*
+     ***************************************************************************
+     * The function createABCPlayer() is no longer used and is replaced by using:
+     *
+     * {% include audioPlayerControls.html %}
+     * 
+     * in the relevant .md or .html file
+     ***************************************************************************
+     */
 
     function createMP3player(tuneID, mp3URL) {
 
@@ -662,7 +660,6 @@ const audioPlayer = (function () {
     }
 
     return {
-        createAudioPlayer: createAudioPlayer,
         createMP3player: createMP3player,
         createSliders: createSliders,
         playAudio: playAudio,

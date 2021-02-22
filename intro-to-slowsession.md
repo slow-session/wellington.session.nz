@@ -57,6 +57,6 @@ window.currentTunes = {
 <script>
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
-};
+
+});
 </script>
