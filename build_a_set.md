@@ -75,7 +75,7 @@ page.
 <div class="row"></div>
 
 <form>
-    <fieldset id="modalControls" style="display:inline;">
+    <fieldset>
         <legend>Selected Tunes</legend>
         <div id="setTuneTitles" class="setChoice"></div>
         <div class="formParent">
