@@ -87,6 +87,6 @@ We add new tunes to the archive reasonably often. You can check those out in our
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
-    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
+   
 });
 </script>

@@ -32,7 +32,7 @@ window.store = {
     };
 </script>
 
-{% include tuneModal.html%}
+{% include tuneModal.html %}
 
 Pick a random tune from the archive:
 
@@ -42,6 +42,6 @@ Pick a random tune from the archive:
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
-    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
+
 });
 </script>

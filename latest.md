@@ -44,8 +44,6 @@ window.store = {
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
-    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
-
     buildGrid.displayGrid("tunesarchive", "", window.store);
 });
 </script>

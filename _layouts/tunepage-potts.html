@@ -9,11 +9,7 @@ layout: page
 </div>
 <br />
 
-<!-- audio player for MP3 files-->
-<div id="pageAudioPlayer"></div>
-<div style="overflow-x:auto;">
-    <div id="pageMP3player"></div>
-</div>
+{% include audioPlayerControls.html %}
 
 <!-- attribution -->
 <div>
@@ -60,10 +56,6 @@ layout: page
     document.addEventListener("DOMContentLoaded", function (event) {
         let tuneID = "{{ tuneID }}";
 
-        // create the ABC player
-        pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
-
         audioPlayer.selectTune(window.store, tuneID);
-
     });
 </script>

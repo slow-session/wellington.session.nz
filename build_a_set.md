@@ -58,12 +58,12 @@ page.
         <div class="formParent">
             <div class="formChild">
                 <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submitSearch" type="button" name="submit" value="Select" onclick="buildSetGrid.formSearch([searchTitle.value, searchRhythm.value])" disabled>
+                    <input class="filterButton filterDisabled" id="submitSearch" type="button" name="submit" value="Select" onclick="buildSetGrid.formSearch('build', [searchTitle.value, searchRhythm.value], window.store)" disabled>
                 </span>
             </div>
             <div class="formChild">   
                 <span title="Reset to default">  
-                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset(['title-box', 'rhythm-box'])">
+                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset('build', ['title-box', 'rhythm-box'], window.store)">
                 </span>
             </div>
         </div>
@@ -84,7 +84,7 @@ page.
             </div>
             <div class="formChild">
                 <span title="Clear the music notation to start a new set">
-                    <input value='Start New Set' type='button' class="filterButton" onclick='buildSetGrid.Reset()' />
+                    <input value='Start New Set' type='button' class="filterButton" onclick='buildSetGrid.newSet()' />
                 </span>
             </div>
         </div>
@@ -93,7 +93,12 @@ page.
 
 <div class="row"></div>
 
-{% include buildSetGrid.html %}
+<!-- Build a Set Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+<script src="{{ site.js_host }}/js/buildSetGrid.js"></script>
 
 {% include setModal.html %}
 
@@ -102,9 +107,9 @@ page.
 <textarea id="textAreaABC" style="display:none;"></textarea>
 
 <script>
-buildSetGrid.initialiseLunrSearch();
+buildSetGrid.initialiseLunrSearch(window.store);
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    buildSetGrid.displaySetGrid("", window.store);
+    buildSetGrid.displaySetGrid("build", "", window.store);
 });
 </script>

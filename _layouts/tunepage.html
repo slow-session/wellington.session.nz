@@ -34,11 +34,7 @@ layout: page
 </div>
 <br />
 
-<!-- audio player for MP3 files-->
-<div id="pageAudioPlayer"></div>
-<div style="overflow-x:auto;">
-    <div id="pageMP3player"></div>
-</div>
+{% include audioPlayerControls.html %}
 
 <!-- *** preset loops if needed *** -->
 <div id="presetLoops"></div>
@@ -144,9 +140,6 @@ layout: page
 
     document.addEventListener("DOMContentLoaded", function (event) {
         let tuneID = "1";
-
-        // create the player
-        pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
 
         audioPlayer.selectTune(window.store, tuneID);
 

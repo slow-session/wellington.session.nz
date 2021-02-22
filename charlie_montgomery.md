@@ -100,8 +100,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 buildGrid.initialiseLunrSearch();
     
 document.addEventListener("DOMContentLoaded", function (event) {
-    pageAudioPlayer.innerHTML = audioPlayer.createAudioPlayer();
-
     buildGrid.displayGrid("tunesarchive", "", window.store);
 });
 </script>
