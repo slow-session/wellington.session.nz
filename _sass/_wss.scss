@@ -168,7 +168,7 @@ h2 span {
 }
 
 fieldset {
-    float: left;
+    //float: left;
     margin: 0 auto 5px auto;
     text-align: left;
     border-radius: 8px;
@@ -350,7 +350,7 @@ input[type=number] {
 
 // these column layout classes need to be embedded in a "gridChild" class
 .tunes3columnLayout {
-    grid-template-columns: minmax(100px, 350px) 3fr minmax(50px, 90px);
+    grid-template-columns: minmax(100px, 360px) 3fr minmax(50px, 120px);
 }
 
 .tunes3columnLayout > span:nth-child(6n + 1),
@@ -360,7 +360,8 @@ input[type=number] {
 }
 
 .tunes2columnLayout {
-    grid-template-columns: 6fr 1fr;
+    //grid-template-columns: 6fr 1fr;
+    grid-template-columns: minmax(200px, 400px) minmax(50px, 200px);
 }
 
 .tunes2columnLayout > span:nth-child(4n + 1),
