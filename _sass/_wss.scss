@@ -162,6 +162,11 @@ details[open] summary::before {
     content: "Hide ";
 }
 
+// deprecated in Chrome 89 but needed on Chrome on Android
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
 h2 span {
     display: inline;
     font-size: 16px;
