@@ -26,8 +26,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    |:A|B2dB BAFA | B2Bd BAFA | AF (3FFF DF (3FFF | AFdB AFEF |
-    B2dB BAFA | B2Bd BAFA | AFAB dcdf |edef d3 :|
+    |A|:B2dB BAFA | B2Bd BAFA | AF (3FFF DF (3FFF | AFdB AFEF |
+    B2dB BAFA | B2Bd BAFA | AFAB dcdf |edef d3 A :|
     |:e2ec d2Bd | efec dFAB | e2ec d3e | fedB ADFA |
     e2ef eB (3BBB | gB (3BBB defg |afbf afeg | fedB ADFA :|
 ---

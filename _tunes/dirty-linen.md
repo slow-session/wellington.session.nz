@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags: slowsession 
 repeats: 2 
-parts: AABB 
+parts: AB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-07-14
 mp3_file: /mp3/dirty-linen.mp3
@@ -20,7 +20,7 @@ abc_source: The Session
 abc_url:
 abc: |
     X: 1
-    T: Dirty Linnen
+    T: Dirty Linen
     T: Paddy Be Easy
     R: slip jig
     M: 9/8

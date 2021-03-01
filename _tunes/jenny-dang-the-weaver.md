@@ -11,7 +11,7 @@ tags:
 location: Wellington
 mp3_file: /mp3/jenny-dang-the-weaver.mp3
 repeats: 2
-parts: AABB
+parts: AB
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=SYU22NKsp2M

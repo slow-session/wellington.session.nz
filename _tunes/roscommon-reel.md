@@ -8,7 +8,7 @@ location: Wellington
 notes:
 tags: 
 repeats: 3 
-parts: AABB 
+parts: ABC 
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/roscommon-reel.mp3

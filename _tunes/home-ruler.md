@@ -28,9 +28,9 @@ abc: |
     L: 1/8
     %Z: Modified by Megan Ward
     K: Dmaj
-    (3A,B,C|D2FA DAFA|dfed B2dB|A2AB AFDE|FDED B,A,B,C |
+    |:(3A,B,C|D2FA DAFA|dfed B2dB|A2AB AFDE|FDED B,A,B,C |
     D2FA DAFA|dfed B2dB|A2AB AFDE|F2D2 D2 :||
-    (3ABc|d2dc defg|afbf afed|efed BAde|fded Bd (3ABc|
+    |:(3ABc|d2dc defg|afbf afed|efed BAde|fded Bd (3ABc|
     d2dc defg|afbf afed|efed BAdB|AFEF D2:||
 
 

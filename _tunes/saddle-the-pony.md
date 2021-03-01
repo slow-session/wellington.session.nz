@@ -25,9 +25,9 @@ abc: |
     M: 6/8
     L: 1/8
     K: Gmaj
-    GBA G2 B | def gdB | GBA G2 B | AFD AFD |
+    |:GBA G2 B | def gdB | GBA G2 B | AFD AFD |
     GBA G2 B | def gfg | ege dBA | BAF G2 :|
-    efe edB | def gfg | ege edB | dBA ABd |
+    |:efe edB | def gfg | ege edB | dBA ABd |
     efe edB | def gfg | e/f/ge dBA | BAF G2 :|
 
 ---

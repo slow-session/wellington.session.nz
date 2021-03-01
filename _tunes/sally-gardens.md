@@ -25,8 +25,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Gmaj
-    BA|G2DG BAGB|dBeB dBAB|d2Bd efge|dBAB GEDE|
+    |:BA|G2DG BAGB|dBeB dBAB|d2Bd efge|dBAB GEDE|
     G2DG BAGB|dBeB dBAB|d2Bd efge|1 dBAB G2:|2 dBAB G4||
-    dggf g2dg|gabg agfg|eaag a2ea|agbg ageg|
+    |:dggf g2dg|gabg agfg|eaag a2ea|agbg ageg|
     dggf g2dg|gabg ageg|d2Bd efge|1 dBAB G4:|2 dBAB G2||
 ---
