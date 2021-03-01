@@ -47,7 +47,8 @@
 
 .abcjs-inline-audio .abcjs-midi-loop.abcjs-pushed {
 	border: 1px solid #cccccc;
-	background-color: #666666;
+	//background-color: #666666;
+    background-color: steelblue;
 	box-sizing: border-box;
 }
 
@@ -55,6 +56,10 @@
 	border: 1px solid #cccccc;
 	background-color: #666666;
 	box-sizing: border-box;
+}
+
+.abcjs-inline-audio .abcjs-midi-start.abcjs-pushed {
+    background-color: steelblue;
 }
 
 .abcjs-inline-audio .abcjs-midi-start .abcjs-pause-svg {
@@ -78,7 +83,7 @@
 }
 
 .abcjs-inline-audio .abcjs-midi-progress-background {
-	background-color: $brand-color;
+	background-color: steelblue;
 	height: 10px;
 	border-radius: 5px;
 	border: 2px solid #cccccc;

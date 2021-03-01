@@ -27,8 +27,8 @@ abc: |
   L: 1/8
   %Z: Modified by Ted Cizadlo
   K: Edor
-  D|Eeed e2 BA|GBAF GFEF|Dddc d2 AF|GBAG FDDF|
+  |: D|Eeed e2 BA|GBAF GFEF|Dddc d2 AF|GBAG FDDF|
   Eeed efge|fedf edBA|GABG FGA=c|BGAF GE E :|
-  |g2 ef (3gfe be|(3gfe be gfef|d3e fefg |afdf gfed|
+  |: g2 ef (3gfe be|(3gfe be gfef|d3e fefg |afdf gfed|
   B2 GB A2 GA|Beef gfed|B2 BG A2 GA|(3BAG AF GE E2 :|
 ---

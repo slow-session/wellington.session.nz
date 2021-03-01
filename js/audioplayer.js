@@ -307,7 +307,7 @@ const audioPlayer = (function () {
                 synth: {
                     el: "#abcAudio",
                     options: {
-                        displayLoop: false,
+                        displayLoop: true,
                         displayRestart: true,
                         displayPlay: true,
                         displayProgress: true,

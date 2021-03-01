@@ -26,8 +26,8 @@ abc: |
     M: 4/4
     L: 1/8
     K: Dmaj
-    A|"Bm"B2dB BAFA | B2Bd BAFA | "D"AF (3 FFF DF (3 FFF | AFdB AFEF |!
-    "Bm"B2dB BAFA | B2Bd BAFA | "D"AFAB dcdf |"A7"edef "D"d3 :||!
-    "Em"e2ec d2Bd | efec "Bm"dFAB | "Em"e2ec d3e | "D"fedB ADFA |!
-    "Em"e2ef eB (3 BBB | gB (3 BBB defg |"D"afbf "A7"afeg | "D"fedB ADFA :||
+    |:A|B2dB BAFA | B2Bd BAFA | AF (3FFF DF (3FFF | AFdB AFEF |
+    B2dB BAFA | B2Bd BAFA | AFAB dcdf |edef d3 :|
+    |:e2ec d2Bd | efec dFAB | e2ec d3e | fedB ADFA |
+    e2ef eB (3BBB | gB (3BBB defg |afbf afeg | fedB ADFA :|
 ---
