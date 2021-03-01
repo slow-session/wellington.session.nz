@@ -26,9 +26,9 @@ abc: |
     M: 6/8
     L: 1/8
     K: Gmaj
-    D|GFG AGA|Bge dBA|BAB GAB|AGE GED|
+    |:D|GFG AGA|Bge dBA|BAB GAB|AGE GED|
     GFG AGA|Bge dBA|BAB GAB|AGF G2:|
-    f|gfe fed|efg dBA|Bee dBA|Bee e2 f
+    |:f|gfe fed|efg dBA|Bee dBA|Bee e2 f
     |1gfe fed|efg dBA|BAB GAB|AGF G2:|
     |2gbg faf|ege dBA|BAB GAB|AGF G2|]
 ---

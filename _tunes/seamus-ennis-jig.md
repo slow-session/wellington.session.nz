@@ -25,9 +25,9 @@ abc: |
     M: 6/8
     L: 1/8
     K: G
-    | BGB def | gdc BAB | GBd gdB | ecA A3 |
+    |: BGB def | gdc BAB | GBd gdB | ecA A3 |
     | BGB def | gdc BAB | GBd gdc | BGF G3 :|
-    | dBd G3 | dBd G3 | ece A3 | ece A3 |
+    |: dBd G3 | dBd G3 | ece A3 | ece A3 |
     | d2 B e2 c | d2 B edc | def gdc | BGF G3 :|
 
 ---
