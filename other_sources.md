@@ -99,14 +99,14 @@ window.store = {
 };
 </script>
 
-<script src="{{ site.js_host }}/js/build_abc_source.js"></script>
+<script src="{{ site.js_host }}/js/buildABCsource.js"></script>
 
 <script>
 function toggle(button) {
     switch (button.value) {
         case "Show ABC File":
             button.value = "Hide ABC File";
-            displayABCsource();      
+            buildABCsource.displayABCsource();      
             document.getElementById('abcSource').style.display= "block" ;
             break;
         case "Hide ABC File":
@@ -117,6 +117,3 @@ function toggle(button) {
     }
 }
 </script>
-
-
-
