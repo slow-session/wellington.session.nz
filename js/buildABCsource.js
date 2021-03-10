@@ -13,6 +13,10 @@
  * Derived from: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
  */
 
+"use strict";
+
+const buildABCsource = (function () {
+
 function displayABCsource() {
     let abcText = document.getElementById("abcText");
 
@@ -40,4 +44,14 @@ function createABCitem(item) {
     }
 
     return gridRow;
+}
+
+return {
+    displayABCsource: displayABCsource,
+};
+
+})();
+
+if (typeof module !== "undefined" && module.exports) {
+module.exports = buildABCsource;
 }
