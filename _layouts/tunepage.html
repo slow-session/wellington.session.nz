@@ -91,22 +91,22 @@ layout: page
         {% if page.mp3_url %}
         <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        <p>
-            <script>
-                wssTools.show_iframe("{{ page.mp3_url }}");
-            </script>
-        </p>
+        <div id="mp3Video"></div>
+        <script>
+        let mp3Video = document.getElementById('mp3Video');
+        mp3Video.innerHTML = wssTools.show_iframe("{{ page.mp3_url }}");
+        </script>
         {% endif %}
         {% endif %}
 
         {% if page.alt_mp3_url %}
         <p>Alternative version: <a href="{{ page.alt_mp3_url }}">{{ page.alt_mp3_url }}</a></p>
         <!-- If the mp3_url is one from YouTube or Facebook, embed a copy here -->
-        <p>
-            <script>
-                wssTools.show_iframe("{{ page.alt_mp3_url }}");
-            </script>
-        </p>
+        <div id="altMP3Video"></div>
+        <script>
+        let altMP3Video = document.getElementById('altMP3Video');
+        altMP3Video.innerHTML = wssTools.show_iframe("{{ page.alt_mp3_url }}");
+        </script>
         {% endif %}
 
         {% if page.abc_source %}
