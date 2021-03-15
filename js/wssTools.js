@@ -85,7 +85,7 @@ const wssTools = (function () {
         } else if (url.startsWith("https://soundcloud.com/")) {
             let myURL = encodeURI(url);
 
-            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing soundcloud video"src="https://w.soundcloud.com/player/?url=${myURL}&hide_related=true" width="100%"></iframe></div>`;
+            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing soundcloud video" src="https://w.soundcloud.com/player/?url=${myURL}&hide_related=true" width="100%"></iframe></div>`;
 
         } else if (url.startsWith("https://media.comhaltas.ie/video/")) {
             let myURL = encodeURI(url);
