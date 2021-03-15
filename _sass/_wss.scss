@@ -274,7 +274,7 @@ input[type=number] {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 75%; /* 4:3 Aspect Ratio (divide 3 by 4 = 0.75) */
   }
   
   /* Then style the iframe to fit in the container div with full height and width */

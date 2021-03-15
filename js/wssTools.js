@@ -69,36 +69,29 @@ const wssTools = (function () {
     function show_iframe(url) {
         // Add other sources as needed
         if (url.startsWith("https://www.youtube.com/")) {
-            url = url.replace("&t=", "?start=");
-            document.write(
-                '<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing youtube video" src="https://www.youtube.com/embed/' +
-                    url.split("v=")[1] +
-                    '" frameborder="0" allowfullscreen></iframe></div>'
-            );
+            let myURL = url.replace("&t=", "?start=").split("v=")[1];
+            
+            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing youtube video" src="https://www.youtube.com/embed/${myURL}" frameborder="0" allowfullscreen></iframe></div>`;
+
         } else if (url.startsWith("https://www.facebook.com/")) {
-            document.write(
-                '<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing facebook video" src="https://www.facebook.com/plugins/video.php?href=' +
-                    encodeURI(url) +
-                    '&show_text=0&mute=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="false"></iframe></div>'
-            );
+            let myURL = encodeURI(url);
+
+            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing facebook video" src="https://www.facebook.com/plugins/video.php?href=${myURL}&show_text=0&mute=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="false"></iframe></div>`;
+
         } else if (url.startsWith("https://vimeo.com/")) {
-            document.write(
-                '<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing vimeo video" src="https://player.vimeo.com/video/' +
-                    url.split("vimeo.com/")[1] +
-                    '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-            );
+            let myURL = url.split("vimeo.com/")[1];
+
+            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing vimeo video" src="https://player.vimeo.com/video/${myURL}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`;
         } else if (url.startsWith("https://soundcloud.com/")) {
-            document.write(
-                '<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing soundcloud video"src="https://w.soundcloud.com/player/?url=' +
-                    encodeURI(url) +
-                    '&hide_related=true" width="100%"></iframe></div>'
-            );
+            let myURL = encodeURI(url);
+
+            return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing soundcloud video"src="https://w.soundcloud.com/player/?url=${myURL}&hide_related=true" width="100%"></iframe></div>`;
+
         } else if (url.startsWith("https://media.comhaltas.ie/video/")) {
-            document.write(
-                '<div class="container-iframe"><video class="responsive-iframe" aria-label="iframe showing comhaltas video" controls><source src="' +
-                    encodeURI(url) +
-                    '" type="video/mp4"></video></div>'
-            );
+            let myURL = encodeURI(url);
+       
+            return `<div class="container-iframe"><video class="responsive-iframe" aria-label="iframe showing comhaltas video" controls><source src="${myURL}" type="video/mp4"></video></div>`;
+
         }
     }
 
