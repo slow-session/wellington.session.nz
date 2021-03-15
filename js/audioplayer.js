@@ -106,10 +106,16 @@ const audioPlayer = (function () {
         audioSlider.noUiSlider.on("change", function (values, handle) {
             if (handle === 0) {
                 beginLoopTime = values[0];
-                document.getElementById("loopControlStart").value = beginLoopTime;
+                let loopControlStart = document.getElementById("loopControlStart");
+                if (loopControlStart) {
+                    loopControlStart.value = beginLoopTime;        
+                }
             } else if (handle === 2) {
                 endLoopTime = Math.min(OneAudioPlayer.duration, values[2]);
-                document.getElementById("loopControlEnd").value = endLoopTime;
+                let loopControlEnd = document.getElementById("loopControlEnd");
+                if (loopControlEnd) {
+                    loopControlEnd.value = endLoopTime;        
+                }
             } else if (handle === 1) {
                 OneAudioPlayer.currentTime = values[1];
             }
@@ -618,13 +624,18 @@ const audioPlayer = (function () {
     function setSliderLoopStart() {
         beginLoopTime = OneAudioPlayer.currentTime;
         currentAudioSlider.noUiSlider.setHandle(0, beginLoopTime);
-        document.getElementById("loopControlStart").value = beginLoopTime;        
-    }
+        let loopControlStart = document.getElementById("loopControlStart");
+        if (loopControlStart) {
+            loopControlStart.value = beginLoopTime;        
+        }    }
 
     function setSliderLoopEnd() {
         endLoopTime = OneAudioPlayer.currentTime;
         currentAudioSlider.noUiSlider.setHandle(2, endLoopTime);
-        document.getElementById("loopControlEnd").value = endLoopTime;
+        let loopControlEnd = document.getElementById("loopControlEnd");
+        if (loopControlEnd) {
+            loopControlEnd.value = endLoopTime;        
+        }
     }
 
     function resetFromToSliders() {
