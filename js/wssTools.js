@@ -92,6 +92,9 @@ const wssTools = (function () {
        
             return `<div class="container-iframe"><video class="responsive-iframe" aria-label="iframe showing comhaltas video" controls><source src="${myURL}" type="video/mp4"></video></div>`;
 
+        } else {
+            // Don't recognize this URL
+            return "";
         }
     }
 

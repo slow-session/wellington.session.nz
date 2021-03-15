@@ -152,7 +152,7 @@ const audioPlayer = (function () {
                 if (OneAudioPlayer.src != null) {
                     //reset previous audio player
                     // not sure we need this
-                    if (previousPlayButton.classList.contains("icon-pause")) {
+                    if (previousPlayButton && previousPlayButton.classList.contains("icon-pause")) {
                         previousPlayButton.classList.remove("icon-pause");
                         previousPlayButton.classList.add("icon-play2");
                     }
