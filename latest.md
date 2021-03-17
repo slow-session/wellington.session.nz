@@ -8,14 +8,11 @@ These are the last <span id="tunesCount"></span> tunes we’ve added to the <a h
 <script>
 window.store = {
     {% assign sortedtunes = site.tunes | sort: 'date' | reverse %}
-    {% assign tune_count = 0 %}
-    {% assign tuneID = 200 %}
+    {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
         {% if tune.tags contains 'cm' %}
             {% continue %}
         {% endif %}
-        {% assign tune_count = tune_count | plus: 1 %}
-        {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -27,7 +24,8 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-        }{% if tune_count < site.latest_tunes_max %},{% else %}{% break %}{% endif %}
+        }{% if tuneID < site.latest_tunes_max %},{% else %}{% break %}{% endif %}
+        {% assign tuneID = tuneID | plus: 1 %}
     {% endfor %}
 };
 </script>

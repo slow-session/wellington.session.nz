@@ -62,13 +62,11 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 
 <script>
     window.store = {
-
       {% assign tunes = site.tunes %}
       {% assign sortedtunes = tunes | sort: 'titleID' %}
-      {% assign tuneID = 200 %}
+      {% assign tuneID = 1 %}
       {% for tune in sortedtunes %}
         {% if tune.tags contains 'cm' %}
-        {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
         "title": "{{ tune.title | xml_escape }}",
         "tuneID": "{{ tuneID }}",
@@ -81,6 +79,7 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
         "parts": "{{ tune.parts }}",
         "abc": {{ tune.abc | jsonify }}
         }{% unless forloop.last %},{% endunless %}
+        {% assign tuneID = tuneID | plus: 1 %}
         {% endif %}
       {% endfor %}
     };

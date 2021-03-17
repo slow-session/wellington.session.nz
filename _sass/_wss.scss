@@ -1,7 +1,8 @@
 // Pad the header image in from the sides
 .header-image {
-    padding-left: 2rem;
-    padding-right: 2rem
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    width: 100%;
 }
 
 .tuneInfoRow {
@@ -53,7 +54,7 @@ p.tuneInfoPara {
 .playButton {
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-top: 0.7rem;
 }
 
@@ -93,7 +94,7 @@ p.speedLabel {
     color: $complimentary-color;
     cursor: pointer;
     border-radius: 8px;
-    font-size: 85%;
+    font-size: 0.8rem;
     border-style: solid;
     border-width: 2px;
     border-color: darken($brand-color, 10%);
@@ -106,7 +107,7 @@ p.speedLabel {
     color: $complimentary-color;
     cursor: pointer;
     border-radius: 8px;
-    font-size: 85%;
+    font-size: 0.8rem;
     border-style: solid;
     border-width: 2px;
     border-color: darken($brand-color, 10%);
@@ -118,8 +119,9 @@ p.speedLabel {
 }
 
 details > summary {
-    width: max-content;
+    width: fit-content;
     list-style-type: none;
+    white-space: nowrap
 }
 
 details > summary::marker {
@@ -141,7 +143,7 @@ details > summary::-webkit-details-marker {
 
 h2 span {
     display: inline;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 fieldset {
