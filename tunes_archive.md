@@ -13,9 +13,8 @@ You can check those out in our <a href="/latest/"> Latest Tunes</a> page.
 window.store = {
     {% assign tunes = site.tunes %}
     {% assign sortedtunes = tunes | sort: 'titleID' %}
-    {% assign tuneID = 200 %}
+    {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
-    {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -27,9 +26,10 @@ window.store = {
             "repeats": "{{ tune.repeats }}",
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
-            }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    };
+        }{% unless forloop.last %},{% endunless %}
+        {% assign tuneID = tuneID | plus: 1 %}
+    {% endfor %}
+};
 </script>
 
 {% include tunes-filter-variables.html %}
