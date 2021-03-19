@@ -28,6 +28,6 @@ abc: |
     K: Ador
     |:~A2 eA gAeA|agea gedc|BG ~G2 dGBG|cBcd edeg|
     |aA ~A2 gA ~A2|agea gedc|Bcde gedB|1 GABG ~A3 G:|2 GABG ~A2 Bd||
-    |:ea ~a2 bage|bgaf gedB|cBcd edeg|agab c'agf=|
+    |:ea ~a2 bage|bgaf gedB|cBcd edeg|agab c'ag=f|
     |ea ~a2 gedg|edgd edBd|cBcd edeg|1 dBGB ~A3 d:|2 dBGB ~A3 G||
 ---
