@@ -13,7 +13,7 @@ const wssTools = (function () {
         pom.setAttribute(
             "href",
             "data:application/download;charset=utf-8," +
-                encodeURIComponent(text)
+            encodeURIComponent(text)
         );
         pom.setAttribute("download", filename);
 
@@ -61,7 +61,7 @@ const wssTools = (function () {
         submitSearch.classList.remove('filterDisabled');
     }
 
-    function disableSearchButton(){
+    function disableSearchButton() {
         submitSearch.disabled = true;
         submitSearch.classList.add('filterDisabled');
     }
@@ -70,7 +70,7 @@ const wssTools = (function () {
         // Add other sources as needed
         if (url.startsWith("https://www.youtube.com/")) {
             let myURL = url.replace("&t=", "?start=").split("v=")[1];
-            
+
             return `<div class="container-iframe"><iframe class="responsive-iframe" aria-label="iframe showing youtube video" src="https://www.youtube.com/embed/${myURL}" frameborder="0" allowfullscreen></iframe></div>`;
 
         } else if (url.startsWith("https://www.facebook.com/")) {
@@ -89,26 +89,12 @@ const wssTools = (function () {
 
         } else if (url.startsWith("https://media.comhaltas.ie/video/")) {
             let myURL = encodeURI(url);
-       
+
             return `<div class="container-iframe"><video class="responsive-iframe" aria-label="iframe showing comhaltas video" controls><source src="${myURL}" type="video/mp4"></video></div>`;
 
         } else {
             // Don't recognize this URL
             return "";
-        }
-    }
-
-    function testForMobile() {
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        if (
-            userAgent.match(/iPad/i) ||
-            userAgent.match(/iPhone/i) ||
-            userAgent.match(/iPod/i) ||
-            userAgent.match(/Android/i)
-        ) {
-            return true;
-        } else {
-            return false;
         }
     }
 
@@ -134,7 +120,6 @@ const wssTools = (function () {
         enableSearchButton: enableSearchButton,
         disableSearchButton: disableSearchButton,
         show_iframe: show_iframe,
-        testForMobile: testForMobile,
         getABCheaderValue: getABCheaderValue,
     };
 })();

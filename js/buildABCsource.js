@@ -17,41 +17,41 @@
 
 const buildABCsource = (function () {
 
-function displayABCsource() {
-    let abcText = document.getElementById("abcText");
+    function displayABCsource() {
+        let abcText = document.getElementById("abcText");
 
-    // create file headers
-    let appendString = "% \n% File sourced from: " + window.location.href + "\n";
-    appendString += "% Generated on: " + new Date() + "\n%\n";
+        // create file headers
+        let appendString = "% \n% File sourced from: " + window.location.href + "\n";
+        appendString += "% Generated on: " + new Date() + "\n%\n";
 
-    for (let key in store) {
-        // Iterate over the original data
-        let item = store[key];
-        appendString += createABCitem(item);
+        for (let key in store) {
+            // Iterate over the original data
+            let item = store[key];
+            appendString += createABCitem(item);
+        }
+
+        abcText.innerHTML = DOMPurify.sanitize(appendString);
     }
 
-    abcText.innerHTML = DOMPurify.sanitize(appendString);
-}
+    function createABCitem(item) {
+        let gridRow = "";
 
-function createABCitem(item) {
-    let gridRow = "";
+        // build the ABC item
+        let newABC = decodeURI(item.abc).replace(/X:.*/, "X: " + item.tuneID);
 
-    // build the ABC item
-    let newABC = decodeURI(item.abc).replace(/X:.*/, "X: " + item.tuneID);
+        if (newABC) {
+            gridRow += newABC + "\n";
+        }
 
-    if (newABC) {
-        gridRow += newABC + "\n";
+        return gridRow;
     }
 
-    return gridRow;
-}
-
-return {
-    displayABCsource: displayABCsource,
-};
+    return {
+        displayABCsource: displayABCsource,
+    };
 
 })();
 
 if (typeof module !== "undefined" && module.exports) {
-module.exports = buildABCsource;
+    module.exports = buildABCsource;
 }

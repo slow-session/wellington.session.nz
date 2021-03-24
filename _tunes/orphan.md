@@ -12,9 +12,9 @@ parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2018-08-16
 mp3_file: /mp3/orphan.mp3
-mp3_source: Raglan Session
+mp3_source: Raglan Session - Christopher Robin
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
-mp3_url: Christopher Robin
+mp3_url: 
 source: Raglan
 abc_source: The Session
 abc_url: https://thesession.org/tunes/217

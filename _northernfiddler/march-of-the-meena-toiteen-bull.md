@@ -6,7 +6,7 @@ rhythm: highland
 notes: 
 date: 2020-10-14
 tags:
-musician: John Doherty
+mp3_source: John Doherty
 page: 87
 abc_source: The Northern Fiddler
 abc_url: 
