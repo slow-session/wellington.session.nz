@@ -112,7 +112,7 @@ function addBlackboardABC(abcText) {
         render_options: {responsive: 'resize'}, 
         indicate_changed: "true", 
         synth: { el: "#abcAudio", options: {
-                displayLoop: false,
+                displayLoop: true,
                 displayRestart: true,
                 displayPlay: true,
                 displayProgress: true,

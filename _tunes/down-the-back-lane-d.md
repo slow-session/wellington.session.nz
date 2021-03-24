@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/down-the-back-lane-d.mp3
 mp3_source: Wynton Moore
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
-mp3_url: /tunes/down-the-back-lane.html
+mp3_url: 
 source: Wellington
 abc_source: Wynton Moore
 abc_url: /tunes/down-the-back-lane.html

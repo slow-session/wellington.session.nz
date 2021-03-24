@@ -63,7 +63,7 @@ the **Edit the ABC here:** box. If you click on a note in the music, the
 corresponding symbol is highlighted in the ABC notation. You can edit the note
 in the ABC, and the results will instantly be seen in the music.
 
-<img src="/images/editABC.png" alt="editABC-image" style="border:1px solid black;">
+<img src="/images/editABC.png" alt="editABC-image" style="border:1px solid black;" width="1131" height="560">
 
 If you want to write out a tune from scratch then it's probably a good idea to leave the
 code for Kilglass Lakes in place and change it bit by bit.

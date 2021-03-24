@@ -21,10 +21,7 @@ github:
     url: 'https://wellington.session.nz'
 
 header: yes
-header_sm: images/banner-small.jpg
-header_med: images/banner-med.jpg
-header_large: images/banner-large.jpg
-header_xl: images/banner-xl.jpg
+header_image: images/banner.jpg
 
 # Exclude our ruby stuff and other dirs
 exclude:
@@ -57,8 +54,8 @@ feed:
     path: atom.xml
 
 # Compress our Css
-#sass:
-#    style: :compressed
+sass:
+    style: :compressed
 
 permalink: /blog/:year/:title
 

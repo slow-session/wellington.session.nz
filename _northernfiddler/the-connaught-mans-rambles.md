@@ -6,7 +6,7 @@ rhythm: jig
 notes: 
 date: 2020-11-08
 tags:
-musician: Peter Turbit
+mp3_source: Peter Turbit
 page: 229
 abc_source: The Northern Fiddler
 abc_url: 

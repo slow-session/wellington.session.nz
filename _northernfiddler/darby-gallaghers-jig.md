@@ -6,7 +6,7 @@ rhythm: jig
 notes:  
 date: 2020-11-12
 tags: 
-musician: John Doherty
+mp3_source: John Doherty
 page: 57
 abc_source: The Northern Fiddler
 abc_url: 

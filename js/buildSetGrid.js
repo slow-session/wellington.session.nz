@@ -25,9 +25,6 @@ const buildSetGrid = (function () {
 
         // create div for tunes grid
         tunesGrid.classList.add("tunes3columnLayout");
-        if (wssTools.testForMobile()) {
-          tunesGrid.classList.add("mobileScrolling");
-        }
 
         if (results.length) {
             // Are there any results?
@@ -70,9 +67,6 @@ const buildSetGrid = (function () {
 
         // create div for tunes grid
         tunesGrid.classList.add("tunes3columnLayout");
-        if (wssTools.testForMobile()) {
-            tunesGrid.classList.add("mobileScrolling");
-        }
 
         if (results.length) {
             // Are there any results?
@@ -136,7 +130,7 @@ const buildSetGrid = (function () {
     function mapSetToTuneIDs() {
         for (let setKey in setStore) {
             // only do this mapping once
-            if ( !setStore[setKey].tuneIDs) {
+            if (!setStore[setKey].tuneIDs) {
                 let setTunes = setStore[setKey].setTunes;
                 for (let i = 0; i < setTunes.length; i++) {
                     for (let tuneKey in store) {
@@ -197,7 +191,7 @@ const buildSetGrid = (function () {
     }
 
     let tuneIndex = '';
-    
+
     function initialiseLunrSearch(store) {
         // create the searchTerm from the form data and reflect the values chosen in the form
 
@@ -264,7 +258,7 @@ const buildSetGrid = (function () {
 
     function formReset(setType, formInputs, store) {
         let searchResults = '';
-        
+
         for (const formInput of formInputs) {
             document.getElementById(formInput).value = '';
         }

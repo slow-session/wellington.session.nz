@@ -6,7 +6,7 @@ rhythm:
 notes: 
 date: 2020-11-10
 tags:
-musician: A N Other
+mp3_source: A N Other
 page: 250
 abc_source: The Northern Fiddler
 abc_url: 

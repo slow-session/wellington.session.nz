@@ -22,7 +22,7 @@ p.tuneInfoPara {
 // START: controls for audio player
 .audioParentOuter {
     display: grid;
-    grid-template-columns: 2.5em 1fr;
+    grid-template-columns: 2.8rem 1fr;
     border-style: solid;
     border-radius: 8px;
     border-color: $brand-color;
@@ -38,10 +38,10 @@ p.tuneInfoPara {
 
 .audioChildInner {
     flex: 1;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
-    min-width: 10rem;
+    //min-width: 10rem;
 }
 
 .mp3LoopControl {
@@ -56,6 +56,7 @@ p.tuneInfoPara {
     width: 2.5rem;
     font-size: 2.5rem;
     margin-top: 0.7rem;
+    margin-left: 0.1rem;
 }
 
 p.speedLabel {
@@ -97,7 +98,7 @@ p.speedLabel {
     font-size: 0.8rem;
     border-style: solid;
     border-width: 2px;
-    border-color: darken($brand-color, 10%);
+    border-color: darken($brand-color, 20%);
 }
 
 .filterButton {
@@ -110,7 +111,7 @@ p.speedLabel {
     font-size: 0.8rem;
     border-style: solid;
     border-width: 2px;
-    border-color: darken($brand-color, 10%);
+    border-color: darken($brand-color, 20%);
 }
 
 .filterButton.filterDisabled {
@@ -153,7 +154,7 @@ fieldset {
     border-radius: 8px;
     border-color: $brand-color;
     border-style: solid;
-    background-color: darken($complimentary-color, 3%);
+    background-color: darken($complimentary-color, 6%);
 }
 
 .showCovidInfo {
@@ -221,9 +222,10 @@ input[type=number] {
     margin-bottom: 1rem;
 }
 
-.loop3columnLayout > div:nth-child(6n + 1),
-.loop3columnLayout > div:nth-child(6n + 2),
-.loop3columnLayout > div:nth-child(6n + 3) {
+// shading for alternate rows
+.loop3columnLayout > div:nth-child(6n + 4),
+.loop3columnLayout > div:nth-child(6n + 5),
+.loop3columnLayout > div:nth-child(6n + 6) {
     background-color: darken($complimentary-color, 6%);
 }
 
@@ -302,6 +304,7 @@ input[type=number] {
 .gridChild {
     display: grid;
     max-height: 320px;
+    width: 100%;
     grid-auto-rows: fit-content(1em);
     overflow-x: hidden;
     overflow-y: auto;
@@ -370,13 +373,15 @@ input[type=number] {
     height: 40px;
 }
 
-// mobileScrolling is enabled via a test in the javascript that draws the grid
-.mobileScrolling {
-    scrollbar-width: none;
-}
-
-.mobileScrolling::-webkit-scrollbar {
-    display: none;
+// if the device doesn't have a "mouse" then turn off the scrollbar on gridchild
+// 'coarse' implies it's a phone or tablet
+@media (any-pointer: coarse) {
+    .gridChild {
+        scrollbar-width: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 // END: CSS for managing the "tunes" grids that appear on a number of pages
 
@@ -386,6 +391,11 @@ input[type=number] {
     border-radius: 8px;
     margin: 10px;
     padding: 10px;
+}
+
+.setRow {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .showTextInfo {
@@ -436,18 +446,7 @@ input[type=number] {
 }
 // END: LongBow
 
-.editHelp {
-    display: none;
-    overflow: auto;
-    border: 2px solid $brand-color;
-    background-color: darken($complimentary-color, 6%);
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
-}
-
-// Local mods to noUi sliders
-
+// START: Local mods to noUi sliders
 .noUi-target {
     background: none;
     border: none;
@@ -540,8 +539,4 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border-radius: 50%;
     border: none;
 }
-
-.setRow {
-    display: flex;
-    flex-wrap: wrap;
-}
+// END: Local mods to noUi sliders
