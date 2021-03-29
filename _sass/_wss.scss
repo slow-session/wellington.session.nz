@@ -138,9 +138,9 @@ details[open] summary::before {
 }
 
 // deprecated in Chrome 89 but needed on Chrome on Android
-details > summary::-webkit-details-marker {
-    display: none;
-}
+//details > summary::-webkit-details-marker {
+//   display: none;
+//}
 
 h2 span {
     display: inline;
