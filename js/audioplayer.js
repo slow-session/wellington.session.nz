@@ -25,7 +25,7 @@ const audioPlayer = (function () {
 
     /*
      ***************************************************************************
-     * The function createABCPlayer() is no longer used and is replaced by using:
+     * The function createAudioPlayer() is no longer used and is replaced by using:
      *
      * {% include audioPlayerControls.html %}
      * 
@@ -33,49 +33,49 @@ const audioPlayer = (function () {
      ***************************************************************************
      */
 
-    function createMP3player(tuneID, mp3URL) {
+    function createMP3player(playerdivID, tuneID, mp3URL) {
 
         // build the MP3 player for each tune
-        let mp3player = `
-<form onsubmit="return false">
+        playerdivID.innerHTML = `
     <div class="audioParentOuter">
         <!-- Col 1 - play button -->
-        <button id="playButtonMP3-${tuneID}" class="playButton icon-play2" aria-label="play/pause button" onclick="audioPlayer.playAudio(${tuneID}, '${mp3URL}')"></button>  
-        <!-- Nested row in second column -->
+        <button id="playButtonMP3-${tuneID}" class="playButton icon-play2" aria-label="play/pause button" 
+            onclick="audioPlayer.playAudio(${tuneID}, '${mp3URL}')"></button>  
         <div class="audioParentInner">
             <!-- Col 2 - audio slider -->
             <div class="audioChildInner">
-                <div class="audio">
-                    <span title="Play the tune and then create a loop using the Start and End sliders">
-                        <div id="positionMP3-${tuneID}"></div>
-                    </span>
-                </div>
+                <span title="Play the tune and then create a loop using the Start and End sliders">
+                    <div id="audioSliderMP3-${tuneID}"></div>
+                </span>
                 <div class="mp3LoopControl">
                     <span title="Play the tune and then create a loop using the Loop Start and Loop End buttons">
-                        <input type="button" class="loopButton" id="LoopStart" value=" Loop Start " onclick="audioPlayer.setSliderLoopStart()" />
-                        <input type="button" class="loopButton" id="LoopEnd" value=" Loop End " onclick="audioPlayer.setSliderLoopEnd()" />
-                        <input type="button" class="loopButton" id="Reset" value=" Reset " onclick="audioPlayer.resetFromToSliders()" />
+                        <button id="LoopStart-${tuneID}" class="loopButton" aria-label="loop start" 
+                            onclick="audioPlayer.setSliderLoopStart()"> Loop Start </button>
+                        <button id="LoopEnd-${tuneID}" class="loopButton" aria-label="loop end" 
+                            onclick="audioPlayer.setSliderLoopEnd()"> Loop End </button>
+                        <button id="Reset-${tuneID}" class="loopButton"  aria-label="reset" 
+                            onclick="audioPlayer.resetFromToSliders()"> Reset </button>
                     </span>
                 </div>
             </div>
             <!-- Col 3 - speed slider -->
             <div class="audioChildInner">
-                <div id="speedControl-${tuneID}">
-                    <span title="Adjust playback speed with slider">
-                        <div id="speedSliderMP3-${tuneID}"></div>
-                        <p class="speedLabel"><strong>Playback Speed</strong></p>
-                    </span>
-                </div>
+                <span title="Adjust playback speed with slider">
+                    <div id="speedSliderMP3-${tuneID}"></div>
+                    <p class="speedLabel"><strong>Playback Speed</strong></p>
+                </span>
             </div>
         </div>
-    </div>
-</form>`;
+    </div>`;
 
-        return mp3player;
+        // Add the sliders
+        createSliders(tuneID);
+
+        return true;
     }
 
     function createSliders(tuneID) {
-        let audioSlider = document.getElementById(`positionMP3-${tuneID}`);
+        let audioSlider = document.getElementById(`audioSliderMP3-${tuneID}`);
         let speedSlider = document.getElementById(`speedSliderMP3-${tuneID}`);
 
         noUiSlider.create(audioSlider, {
@@ -149,7 +149,7 @@ const audioPlayer = (function () {
 
     function playAudio(tuneID, audioSource) {
         let playButton = document.getElementById(`playButtonMP3-${tuneID}`);
-        let playPosition = document.getElementById(`positionMP3-${tuneID}`);
+        let audioSlider = document.getElementById(`audioSliderMP3-${tuneID}`);
         let speedSlider = document.getElementById(`speedSliderMP3-${tuneID}`);
 
         if (playButton.classList.contains("icon-play2")) {
@@ -165,7 +165,7 @@ const audioPlayer = (function () {
                 }
                 previousPlayButton = playButton;
 
-                LoadAudio(audioSource, playPosition);
+                LoadAudio(audioSource, audioSlider);
 
                 OneAudioPlayer.onloadedmetadata = function () {
                     initialiseAudioSlider();
@@ -202,8 +202,6 @@ const audioPlayer = (function () {
     function selectTune(storeID, tuneID) {
         let item = storeID[tuneID];
 
-        let pageMP3player = document.getElementById("pageMP3player");
-
         // Add info to page if needed
         let tuneTitle = document.getElementById("tuneTitle");
         if (tuneTitle) {
@@ -224,7 +222,6 @@ const audioPlayer = (function () {
         if (loopPresetControls) {
             loopPresetControls.innerHTML = "";
         }
-
         presetLoopSegments = [];
 
         // If we have a modal make it visible
@@ -233,13 +230,13 @@ const audioPlayer = (function () {
             modal.style.display = "block";
         }
 
+        let pageMP3player = document.getElementById("pageMP3player");
         // make the MP3 player
         if (item.mp3.includes("mp3") && pageMP3player) {
-            pageMP3player.innerHTML = audioPlayer.createMP3player(tuneID, item.mp3);
-            createSliders(tuneID);
+            createMP3player(pageMP3player, tuneID, item.mp3);
 
-            let playPosition = document.getElementById(`positionMP3-${tuneID}`);
-            LoadAudio(item.mp3, playPosition);
+            let audioSlider = document.getElementById(`audioSliderMP3-${tuneID}`);
+            LoadAudio(item.mp3, audioSlider);
 
             // calculate presetLoopSegments and set up preset loops
             OneAudioPlayer.onloadedmetadata = function () {
@@ -249,13 +246,7 @@ const audioPlayer = (function () {
             // no recording available
             if (pageMP3player) {
                 let recordingMessage =
-                    "<fieldset><strong> \
-            A recording for this tune is not available.";
-                if (modal) {
-                    recordingMessage +=
-                        `<br /><input class="filterButton" type="button" onclick="location.href='${item.url}';" value="Go to Tune Page" />`;
-                }
-                recordingMessage += "</strong></fieldset>";
+                    "<fieldset><strong>A recording for this tune is not available.</strong></fieldset>";
 
                 pageMP3player.style.overflow = "auto";
                 pageMP3player.innerHTML = recordingMessage;
@@ -342,11 +333,11 @@ const audioPlayer = (function () {
         }
     }
 
-    function LoadAudio(audioSource, playPosition) {
+    function LoadAudio(audioSource, audioSlider) {
         //console.log("Loading: " + audioSource)
         OneAudioPlayer.src = audioSource;
 
-        playPosition.noUiSlider.updateOptions({
+        audioSlider.noUiSlider.updateOptions({
             tooltips: [
                 wNumb({
                     decimals: 1,
@@ -359,7 +350,7 @@ const audioPlayer = (function () {
                 }),
             ],
         });
-        currentAudioSlider = playPosition;
+        currentAudioSlider = audioSlider;
     }
 
     function stopAudio() {
@@ -670,7 +661,6 @@ const audioPlayer = (function () {
 
     return {
         createMP3player: createMP3player,
-        createSliders: createSliders,
         playAudio: playAudio,
         stopAudio: stopAudio,
         selectTune: selectTune,
