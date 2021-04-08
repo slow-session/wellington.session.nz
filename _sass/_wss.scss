@@ -12,7 +12,7 @@
 
 .tuneInfoColumn {
     flex: 1;
-    min-width: max-content;
+    min-width: fit-content;
 }
 
 p.tuneInfoPara {
@@ -516,13 +516,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-horizontal .noUi-handle[data-handle='1'] {
-    width: 1rem;
-    height: 1.5rem;
-    border-radius: 50%;
+    //width: 1rem;
+    //height: 1.5rem;
+    //border-radius: 50%;
     background: green;
-    border-color: darken($brand-color, 20%);
-    cursor: pointer;
-    z-index: 100; /* Sit on top */
+    //border-color: darken($brand-color, 20%);
+    //cursor: pointer;
+    //z-index: 100; /* Sit on top */
 }
 
 .noUi-horizontal .noUi-handle[data-handle='1'] .noUi-tooltip {

@@ -17,7 +17,6 @@ const audioPlayer = (function () {
     let endLoopTime = 0;
     let currentAudioSlider = null;
     let presetLoopSegments = [];
-    let isIOS = testForIOS();
     let abcEditor = null;
 
     /*
@@ -297,9 +296,9 @@ const audioPlayer = (function () {
             OneAudioPlayer.currentTime = audioSlider.noUiSlider.get()[1];
             endLoopTime = audioSlider.noUiSlider.get()[2];
 
-            console.log(beginLoopTime);
-            console.log(OneAudioPlayer.currentTime);
-            console.log(endLoopTime);
+            //console.log(beginLoopTime);
+            //console.log(OneAudioPlayer.currentTime);
+            //console.log(endLoopTime);
 
             playButton.classList.remove("icon-play2");
             playButton.classList.add("icon-pause");
@@ -694,14 +693,6 @@ const audioPlayer = (function () {
         for (let segmentNumber = 0; segmentNumber < presetLoopSegments.length; segmentNumber++) {
             document.getElementById("segment" + segmentNumber).checked = false;
         }
-    }
-
-    // test to see if we're on an iPad/iPhone - not called externally
-    function testForIOS() {
-        const iOS_1to13 = /^iP/.test(navigator.platform) ||
-            /^Mac/.test(navigator.platform) && navigator.maxTouchPoints > 4;
-
-        return !window.MSStream && iOS_1to13;
     }
 
     return {
