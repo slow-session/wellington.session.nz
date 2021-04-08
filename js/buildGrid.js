@@ -23,9 +23,9 @@ const buildGrid = (function () {
         // create div for tunes grid
         tunesGrid.classList.add("tunes1columnLayout");
 
-        for (var key in store) {
+        for (let key in store) {
             // Iterate over the original data
-            var item = store[key];
+            let item = store[key];
             appendString += '<span><a href="' + item.url + '">' + item.title + "</a></span>";
         }
         tunesGrid.innerHTML = appendString;
@@ -96,9 +96,9 @@ const buildGrid = (function () {
     }
 
     function displayTunesArchive(results, store) {
-        var tunesGrid = document.getElementById("tunesGrid");
-        var tunesCount = document.getElementById("tunesCount");
-        var tunesCounter = 0;
+        let tunesGrid = document.getElementById("tunesGrid");
+        let tunesCount = document.getElementById("tunesCount");
+        let tunesCounter = 0;
         let appendString = '';
 
         // create div for tunes grid
@@ -106,9 +106,9 @@ const buildGrid = (function () {
 
         if (results.length) {
             // Are there any results?
-            for (var i = 0; i < results.length; i++) {
+            for (let i = 0; i < results.length; i++) {
                 // Iterate over the results
-                var item = store[results[i].ref];
+                let item = store[results[i].ref];
                 appendString += '<span><a href="' + item.url + '">' + item.title + "</a></span>";
                 appendString +=
                     '<span><input class="filterButton" type="button" onclick="audioPlayer.selectTune(window.store, ' +
@@ -119,9 +119,9 @@ const buildGrid = (function () {
                 tunesCounter++;
             }
         } else {
-            for (var key in store) {
+            for (let key in store) {
                 // Iterate over the original data
-                var item = store[key];
+                let item = store[key];
                 appendString += '<span><a href="' + item.url + '">' + item.title + "</a></span>";
                 appendString +=
                     '<span><input class="filterButton" type="button" onclick="audioPlayer.selectTune(window.store, ' +
@@ -142,9 +142,9 @@ const buildGrid = (function () {
         document.getElementById(divID).classList.add("tunes3columnLayout");
 
         let appendString = '';
-        for (var key in storeObject) {
+        for (let key in storeObject) {
             // Iterate over the original data
-            var item = storeObject[key];
+            let item = storeObject[key];
 
             appendString += `<span><a href="${item.url}">${item.title}</a></span>
                   <span><input class="filterButton" type="button" 

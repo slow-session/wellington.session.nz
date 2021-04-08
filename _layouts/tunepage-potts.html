@@ -27,11 +27,11 @@ layout: page
     {% if page.mp3_url %}
     <p>Original audio: <a href="{{ page.mp3_url }}">{{ page.mp3_url }}</a></p>
     <!-- If the mp3_url is one from YouTube or Facebook etc, embed a copy here -->
-    <p>
-        <script>
-            wssTools.show_iframe("{{ page.mp3_url }}");
-        </script>
-    </p>
+    <div id="mp3Video"></div>
+    <script>
+    let mp3Video = document.getElementById('mp3Video');
+    mp3Video.innerHTML = wssTools.show_iframe("{{ page.mp3_url }}");
+    </script>
     {% endif %}
     {% endif %}
 </div>

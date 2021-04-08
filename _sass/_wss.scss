@@ -12,7 +12,7 @@
 
 .tuneInfoColumn {
     flex: 1;
-    min-width: fit-content;
+    min-width: max-content;
 }
 
 p.tuneInfoPara {
@@ -52,7 +52,7 @@ p.tuneInfoPara {
 }
 
 .playButton {
-    height: 2.5rem;
+    height: 2.6rem;
     width: 2.5rem;
     font-size: 2.5rem;
     margin-top: 0.7rem;
@@ -120,7 +120,7 @@ p.speedLabel {
 }
 
 details > summary {
-    width: fit-content;
+    width: max-content;
     list-style-type: none;
     white-space: nowrap
 }
@@ -137,10 +137,10 @@ details[open] summary::before {
     content: "Hide ";
 }
 
-// deprecated in Chrome 89 but needed on Chrome on Android
-//details > summary::-webkit-details-marker {
-//   display: none;
-//}
+// deprecated in Chrome 89 but needed on Safari
+details > summary::-webkit-details-marker {
+    display: none;
+}
 
 h2 span {
     display: inline;
@@ -243,13 +243,15 @@ input[type=number] {
 }
 
 .loopNudgeButton {
+    height: 1.5rem;
+    width: 1.5rem;
     font-size: 1.4rem;
 }
 
 .loopInput {
     font-size: 0.9rem;
     border-radius: unset;
-    width: 5ch;
+    width: 6ch;
     height: fit-content;
 }
 // END: used for Preset Loops
@@ -520,6 +522,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     background: green;
     border-color: darken($brand-color, 20%);
     cursor: pointer;
+    z-index: 100; /* Sit on top */
 }
 
 .noUi-horizontal .noUi-handle[data-handle='1'] .noUi-tooltip {
