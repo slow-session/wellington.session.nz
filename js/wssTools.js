@@ -120,7 +120,6 @@ const wssTools = (function () {
         enableSearchButton: enableSearchButton,
         disableSearchButton: disableSearchButton,
         show_iframe: show_iframe,
-        getABCheaderValue: getABCheaderValue,
     };
 })();
 

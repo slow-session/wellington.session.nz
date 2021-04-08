@@ -16,20 +16,15 @@ If you want to add a new tune to the archive you can use the
 
 <div class="row">
     <!-- Draw the dots -->
-    <div class="output">
-        <div id="abcPaper" class="abcPaper"></div>
-        <div id="abcAudio"></div>
-        <!-- Show ABC errors -->
-        <div id='abcWarnings'></div>
-    </div>
-
-    <!-- Controls for ABC player -->
-    <div id="pageABCplayer"></div>
+    <div id="abcPaper" class="abcPaper"></div>
+    <div id="abcAudio"></div>
+    <!-- Show ABC errors -->
+    <div id='abcWarnings'></div>
 </div>
 <!-- Group the input and controls for ABC-->
 <div class="row">
     <h3>Load an ABC file:</h3>
-    <input type="file" id="files" class='filterButton' name="files[]" accept=".abc" />
+    <input type="file" id="files" class='filterButton' name="files[]" accept="text/vnd.abc,.abc" />
     <output id="fileInfo"></output>
     <p />
 </div>
@@ -49,19 +44,15 @@ K: Dmaj
 DED DFA|BAF d2e|faf ede|1 fdd d3 :|2 fdd d2 e ||
 |:faa fbb|afe ~f3|faf dBA| (3Bcd B AFE|
 DED DFA|BAF d2e|faf ede|1 fdd d2 e :|2 fdd d2 D ||
-</textarea>
-
+    </textarea>
 </div>
 <div class="row">
     <!-- Allow the user to save their ABC-->
     <h3>Don’t forget to ‘Download ABC’ to save your work:</h3>
-    <form>
-        <span title="Download the ABC you've entered. Don't lose your work!">
-            <input value='Download ABC' type='button' class='filterButton'
-                onclick='wssTools.downloadABCFile(document.getElementById("textAreaABC").value)' />
-        </span>
-    </form>
-    <p />
+    <span title="Download the ABC you've entered. Don't lose your work!">
+        <button class='filterButton' 
+        onclick='wssTools.downloadABCFile(document.getElementById("textAreaABC").value)'>Download ABC</button>
+    </span>
 </div>
 
 <script>
@@ -74,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     } else {
         fileInfo.innerHTML = 'The File APIs are not fully supported in this browser.';
     }
-
     audioPlayer.displayABC(textAreaABC.value);
 });
 
@@ -89,18 +79,16 @@ function handleABCFileSelect(evt) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-            // Is ABC file valid?
-            if ((wssTools.getABCheaderValue("X:", this.result) == '')
-                || (wssTools.getABCheaderValue("T:", this.result) == '')
-                || (wssTools.getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
-                return (1);
+            // the ABC file should have "X:", "T:", "K:" fields to be valid
+            if (this.result.match(/[XTK]:/g).length >= 3) {
+                // Show the dots
+                fileInfo.innerHTML = '';
+                textAreaABC.value = this.result + "\n";
+                audioPlayer.stopAudio();
+                audioPlayer.displayABC(textAreaABC.value);
+            } else {
+                fileInfo.innerHTML = '<h2>Invalid ABC file - missing "X:", "T:", "K:" fields</h2>';
             }
-
-            // Show the dots
-            textAreaABC.value = this.result + "\n";
-
-            audioPlayer.stopAudio();
-            audioPlayer.displayABC(textAreaABC.value);
         };
         reader.readAsText(f);
     }

@@ -36,18 +36,17 @@ function handleAudioFileSelect(evt) {
     let pageMP3player = document.getElementById('pageMP3player');
 
     // files is a FileList of File objects. List some properties.
-    for (let i = 0, f; f = files[i]; i++) {
-        if (f.type.indexOf('audio') == 0) {
-            fileInfo.innerHTML = '<h2>' + f.name + '<h2>';
-            pageMP3player.innerHTML = '';
-        } else {
-            fileInfo.innerHTML = f.name + ' - unsupported file type';
-            pageMP3player.innerHTML = '';
-            continue;
-        }       
+    for (let i = 0, f; f = files[i]; i++) {      
         let reader = new FileReader();
         reader.onload = function(e) {
-            audioPlayer.createMP3player(pageMP3player, '1', this.result);
+            if (this.result.includes('audio')) {
+                fileInfo.innerHTML = `<h2>${f.name}<h2>`;
+                // last parameter is null as we've no preset loop info in a window.store structure
+                audioPlayer.displayMP3player(pageMP3player, '1', this.result, null);
+            } else {
+                fileInfo.innerHTML = `<h2>${f.name} - unsupported file type`;
+                pageMP3player.innerHTML = '';
+            }       
         };
         reader.readAsDataURL(f);
     }
