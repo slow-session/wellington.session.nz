@@ -78,17 +78,19 @@ function handleABCFileSelect(evt) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-            // Is ABC file valid?
-            if ((wssTools.getABCheaderValue("X:", this.result) == '')
-                || (wssTools.getABCheaderValue("T:", this.result) == '')
-                || (wssTools.getABCheaderValue("K:", this.result) == '')) { fileInfo.innerHTML = "Invalid ABC file";
-                return (1);
+            // the ABC file should have "X:", "T:", "K:" fields to be valid
+            if (this.result.match(/[XTK]:/g).length >= 3) {
+                // Show the dots
+                fileInfo.innerHTML = '';
+                audioPlayer.stopABCplayer();
+                audioPlayer.displayABC(this.result);
+            } else {
+                fileInfo.innerHTML = '<h2>Invalid ABC file - missing "X:", "T:", "K:" fields</h2>';
+                abcPaper.innerHTML = '';
+                abcPaper.style.paddingBottom = "0px";
+                abcPaper.style.overflow = "auto";
+                abcAudio.innerHTML = '';
             }
-
-            // Show the dots
-            textAreaABC.value = this.result + "\n"; 
-            
-            audioPlayer.displayABC(textAreaABC.value);
         };
         reader.readAsText(f);
     }
