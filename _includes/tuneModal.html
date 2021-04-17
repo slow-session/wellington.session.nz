@@ -17,7 +17,7 @@
         
         <!-- *** rendered ABC and tune selector scrolling table *** -->
         <details>
-            <summary class="filterButton" onclick="audioPlayer.stopAudio()">the Dots</summary>
+            <summary class="filterButton" onclick="audioPlayer.stopABCplayer()">the Dots</summary>
             <div id="abcOutput">
                 <div id="abcPaper"></div>
                 <div id="abcAudio"></div>
@@ -38,14 +38,16 @@
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
-        audioPlayer.stopAudio();
+        audioPlayer.stopMP3player();
+        audioPlayer.stopABCplayer();
         modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
-            audioPlayer.stopAudio();
+            audioPlayer.stopMP3player();
+            audioPlayer.stopABCplayer();
             modal.style.display = "none";
         }
     }

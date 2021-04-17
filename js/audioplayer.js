@@ -369,12 +369,16 @@ const audioPlayer = (function () {
         }
     }
 
-    // stop any audio playing when modals are closed 
-    // or new ABC is loaded in editABC and playLocalABC
-    function stopAudio() {
+    // stop any MP3 playing when modals are closed 
+    function stopMP3player() {
         if (document.getElementById('OneAudioPlayer')) {
             OneAudioPlayer.pause();
         }
+    }
+
+    // stop any ABC playing when modals are closed 
+    // or new ABC is loaded in editABC and playLocalABC
+    function stopABCplayer() {
         if (abcEditor) {
             abcEditor.synth.synthControl.pause();
         }
@@ -698,7 +702,7 @@ const audioPlayer = (function () {
     return {
         displayMP3player: displayMP3player,
         playAudio: playAudio,
-        stopAudio: stopAudio,
+        stopMP3player: stopMP3player,
         selectTune: selectTune,
         setSliderStart: setSliderStart,
         setSliderEnd: setSliderEnd,
@@ -709,6 +713,7 @@ const audioPlayer = (function () {
         adjustUp: adjustUp,
         adjustDown: adjustDown,
         displayABC: displayABC,
+        stopABCplayer: stopABCplayer,
     };
 })();
 

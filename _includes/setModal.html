@@ -47,14 +47,16 @@
 
     // When the user clicks on <span> (x), close the setModal
     span.onclick = function () {
-        audioPlayer.stopAudio();
+        audioPlayer.stopMP3player();
+        audioPlayer.stopABCplayer();
         setModal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the setModal, close it
     window.onclick = function (event) {
         if (event.target == setModal) {
-            audioPlayer.stopAudio();
+            audioPlayer.stopMP3player();
+            audioPlayer.stopABCplayer();
             setModal.style.display = "none";
         }
     }
