@@ -12,8 +12,8 @@ Charlie Montgomery:
 
 Paddy Fahey tunes:
 
- * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis](/tunebooks/Paddy_Fahey_Holohan_1995_Tune_.pdf "PDF")
- * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/Paddy_Fahey's_by_Maria_Holohan.pdf "PDF")
+ * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis, 1995](/tunebooks/Paddy_Fahey_Thesis_Maria_Holohan.pdf "PDF")
+ * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/Paddy_Fahey_Tunes_Only_Maria_Holohan.pdf "PDF")
 
 Sets of tunes put together by Paddy O'Brien:
 
@@ -27,7 +27,8 @@ Tommy Potts:
 
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
- * [The Northern Fiddler - PDF](/tunebooks/The_Northern_Fiddler.pdf)
+ * [The Northern Fiddler, Allen Feldman & Eamonn O'Doherty - PDF](/tunebooks/The_Northern_Fiddler.pdf)
+ * [The Northern Fiddler (just the tunes!) - PDF](/tunebooks/The_Northern_Fiddler_Tunes_Only.pdf)
  * [The Northern Fiddler - Online](/northernfiddler/)
 
 Dunedin Fiddle Orchestra:
