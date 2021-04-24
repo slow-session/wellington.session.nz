@@ -35,7 +35,7 @@ layout: page
         {% if page.abc_source %}
         <p>The music notation was derived from
         {% if page.abc_url %}
-        <a href="{{ page.abc_url }}">{{ page.abc_source }}</a>.</p>
+        <a href="{{ site.tunebooks_host }}{{ page.abc_url }}">{{ page.abc_source }}</a></p>
         {% else %}
         {{ page.abc_source }}
         {% endif %}
@@ -53,7 +53,6 @@ window.store = {
         "tuneID": "{{ tuneID }}",
         "key": "{{ page.key | xml_escape }}",
         "rhythm": "{{ page.rhythm | xml_escape }}",
-        "mp3": "{{ site.mp3_host | append: page.mp3_file | xml_escape }}",
         "abc": {{ page.abc | jsonify }}
     },
 };

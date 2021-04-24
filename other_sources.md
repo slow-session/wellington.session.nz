@@ -12,13 +12,13 @@ Charlie Montgomery:
 
 Paddy Fahey tunes:
 
- * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis, 1995](/tunebooks/Paddy_Fahey_Thesis_Maria_Holohan.pdf "PDF")
- * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)](/tunebooks/Paddy_Fahey_Tunes_Only_Maria_Holohan.pdf "PDF")
+ * [The Tune Compositions of Paddy Fahey, Maria Holohon, MA Thesis, 1995]({{ site.tunebooks_host }}/tunebooks/Paddy_Fahey_Thesis_Maria_Holohan.pdf "PDF")
+ * [Paddy Fahey tunes compiled by Maria Holohan (just the tunes!)]({{ site.tunebooks_host }}/tunebooks/Paddy_Fahey_Tunes_Only_Maria_Holohan.pdf "PDF")
 
 Sets of tunes put together by Paddy O'Brien:
 
  * [Tune Sets Arranged by Paddy O'Brien, Co. Tipperary](http://www.ceolas.org/pub/tunes/tunes.pdf/POB.pdf)
-  * [Local copy of obrien.pdf](/tunebooks/obrien.pdf "PDF")
+  * [Local copy of obrien.pdf]({{ site.tunebooks_host }}/tunebooks/obrien.pdf "PDF")
   * [O'Brien Tunes - Online](/obrientunes/)
 
 Tommy Potts:
@@ -27,8 +27,8 @@ Tommy Potts:
 
  The Northern Fiddler - Music and Musicians of Donegal and Tyrone:
 
- * [The Northern Fiddler, Allen Feldman & Eamonn O'Doherty - PDF](/tunebooks/The_Northern_Fiddler.pdf)
- * [The Northern Fiddler (just the tunes!) - PDF](/tunebooks/The_Northern_Fiddler_Tunes_Only.pdf)
+ * [The Northern Fiddler, Allen Feldman & Eamonn O'Doherty - PDF]({{ site.tunebooks_host }}/tunebooks/The_Northern_Fiddler.pdf)
+ * [The Northern Fiddler (just the tunes!) - PDF]({{ site.tunebooks_host }}/tunebooks/The_Northern_Fiddler_Tunes_Only.pdf)
  * [The Northern Fiddler - Online](/northernfiddler/)
 
 Dunedin Fiddle Orchestra:
@@ -37,25 +37,25 @@ Dunedin Fiddle Orchestra:
 
 Sean Manning's Sets (Dunedin):
 
- * [seansSetBook1704.pdf](/tunebooks/seansSetBook1704.pdf "PDF")
+ * [seansSetBook1704.pdf]({{ site.tunebooks_host }}/tunebooks/seansSetBook1704.pdf "PDF")
 
 Begged Borrowed and Stolen:
 
- * [bbs.pdf](/tunebooks/bbs.pdf "PDF")
+ * [bbs.pdf]({{ site.tunebooks_host }}/tunebooks/bbs.pdf "PDF")
 
 Some other tunebooks from early days of ABC i.e. the 1990s:
 
- * [reavy.pdf](/tunebooks/reavy.pdf "PDF")
- * [session1.pdf](/tunebooks/session1.pdf "PDF")
- * [session2.pdf](/tunebooks/session2.pdf "PDF")
+ * [reavy.pdf]({{ site.tunebooks_host }}/tunebooks/reavy.pdf "PDF")
+ * [session1.pdf]({{ site.tunebooks_host }}/tunebooks/session1.pdf "PDF")
+ * [session2.pdf]({{ site.tunebooks_host }}/tunebooks/session2.pdf "PDF")
 
  You can also get copies of the ABC files that were used to generate some of these PDFs:
 
- * [obrien.abc](/tunebooks/obrien.abc "ABC")
- * [seansSetBook1704.abc](/tunebooks/seansSetBook1704.abc "ABC")
- * [reavy.abc](/tunebooks/reavy.abc "ABC")
- * [session1.abc](/tunebooks/session1.abc "ABC")
- * [session2.abc](/tunebooks/session2.abc "ABC")
+ * [obrien.abc]({{ site.tunebooks_host }}/tunebooks/obrien.abc "ABC")
+ * [seansSetBook1704.abc]({{ site.tunebooks_host }}/tunebooks/seansSetBook1704.abc "ABC")
+ * [reavy.abc]({{ site.tunebooks_host }}/tunebooks/reavy.abc "ABC")
+ * [session1.abc]({{ site.tunebooks_host }}/tunebooks/session1.abc "ABC")
+ * [session2.abc]({{ site.tunebooks_host }}/tunebooks/session2.abc "ABC")
 
 Tunebooks for this site
 ---------
