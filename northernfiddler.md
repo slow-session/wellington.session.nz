@@ -10,7 +10,7 @@ These tunes have been transcribed as closely as possible from:
 
 This page is very much a "Work in Progress" and tunes will be added from time to time. If you want to help, pick a tune that hasn't been transcribed, write out the ABC and send it to the address at the bottom of the page!
 
-There's a PDF of the book on this site at <a href="/tunebooks/The_Northern_Fiddler.pdf">The Northern Fiddler</a>
+There's a PDF of the book on this site at <a href="{{ site.tunebooks_host }}/tunebooks/The_Northern_Fiddler.pdf">The Northern Fiddler (34M)</a>
 
 <!-- Some boilerplate that's common to a number of pages -->
 {% include northernfiddler-filter-variables.html %}
