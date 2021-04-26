@@ -9,7 +9,7 @@ site = "wellington.session.nz"
 
 desc "build the site"
 task :build do
-  system "JEKYLL_ENV=production bundle exec jekyll build --incremental"
+  system "JEKYLL_ENV=production bundle exec jekyll build"
 end
 
 ##############
@@ -68,4 +68,3 @@ desc "deploy the site"
 task :deploy do
     system "ssh -t archive@lpnz.org update_site.sh"
 end   
-
