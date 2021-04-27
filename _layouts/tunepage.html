@@ -41,19 +41,12 @@ layout: page
 
 <!-- if there's ABC for the tune, display the dots, an ABC player and an ABC editor -->
 <div>
+    {% if page.abc contains "K:" %}
     <!-- display the dots -->
     <div id="abcPaper" class="abcPaper"></div>
     <div id="abcAudio"></div>
-
-
-    {% if page.abc contains "K:" %}
-    <!-- play the ABC version -->
-    <div style="overflow-x:auto;">
-        <div id="pageABCplayer"></div>
-    </div>    
-
+    
     <!-- show/edit the ABC -->
-
     <details>
         <summary class="filterButton">ABC Source</summary>
         <div id='abcSource'>

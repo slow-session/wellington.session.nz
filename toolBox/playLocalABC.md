@@ -5,7 +5,7 @@ permalink: /playLocalABC/
 ---
 You can use this page to play an ABC file you've stored locally.
 
-<textarea id="textAreaABC" style="display:none;"></textarea>
+<textarea id="textAreaABC" class="abcSource"></textarea>
 
 <div id="abcPaper" class="abcPaper"></div>
 <div id="abcAudio"></div>

@@ -104,7 +104,7 @@ page.
 
 <!-- Area to store ABC -->
 
-<textarea id="textAreaABC" style="display:none;"></textarea>
+<textarea id="textAreaABC" class="abcSource"></textarea>
 
 <script>
 buildSetGrid.initialiseLunrSearch(window.store);

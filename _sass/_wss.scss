@@ -275,6 +275,11 @@ input[type=number] {
     padding: 10px;
 }
 
+.hr-with-margins {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+}
+
 // START: controls for embedded videos
 .container-iframe {
     position: relative;
@@ -292,6 +297,7 @@ input[type=number] {
     right: 0;
     width: 100%;
     height: 100%;
+    border: none;
   }
 // END: controls for embedded videos
 

@@ -7,12 +7,7 @@ layout: page
     <!-- display the dots -->
     <div id="abcPaper" class="abcPaper"></div>
     <div id="abcAudio"></div>
-    
-    <!-- play the ABC version -->
-    <div style="overflow-x:auto;">
-    <div id="pageABCplayer"></div>
-    </div>
-
+  
     <!-- show/edit the ABC -->
     <details>
         <summary class="filterButton">ABC Source</summary>
@@ -28,14 +23,6 @@ layout: page
                 </div>
         </div>
     </details>
-    
-    <!-- attribution details-->
-    <div>
-        <br />
-        {% if page.musician != null and page.page != null %}
-        <p>The music notation was derived from the playing of {{ page.musician }}. See <a href="/tunebooks/The_Northern_Fiddler.pdf">The Northern Fiddler</a>, Page {{ page.page }}.
-        {% endif %}
-    </div>
     {% endif %}
 </div>
 
