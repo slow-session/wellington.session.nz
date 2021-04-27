@@ -13,7 +13,7 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 
 <div class="row"></div>
 
-<hr style="margin-top: 1rem; margin-bottom: 1rem;" />
+<hr class="hr-with-margins" />
 <p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 
 <div class="row"></div>

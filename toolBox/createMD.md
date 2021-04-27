@@ -36,7 +36,7 @@ permalink: /createMD/
 
 <div class="row"></div>
 
-<textarea id="filename" style="display:none;"></textarea>
+<textarea id="filename" class="abcSource"></textarea>
 
 <style type="text/css">
     .container {
