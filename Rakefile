@@ -66,5 +66,5 @@ end
 
 desc "deploy the site"
 task :deploy do
-    system "ssh -t archive@lpnz.org update_site.sh"
+    system "ssh -t lpnz.org sudo /home/archive/bin/update_site.sh"
 end   
