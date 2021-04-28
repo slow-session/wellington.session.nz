@@ -78,6 +78,10 @@ Using the website:
 
   * If you see a page entitled **Comparing changes** and a message saying, *There isn’t anything to compare*, then you should check that you've committed and pushed your changes from your local machine to GitHub.
 
+  * You can check the current deployment state at:
+
+    * <https://github.com/slow-session/wellington.session.nz/deployments>
+
 Open source
 -----------
 
