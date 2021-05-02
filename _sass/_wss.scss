@@ -416,6 +416,18 @@ input[type=number] {
     padding: 10px;
 }
 
+.showFooterInfo {
+    display: block;
+    border: 2px solid $brand-color;
+    background-color: darken($complimentary-color, 6%);
+    border-radius: 8px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
 // START: LongBow
 .longBowTimers {
     display: none;

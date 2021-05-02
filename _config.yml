@@ -10,7 +10,7 @@ slowsession_time: '7:30 to 8:30'
 #slowsession_time: "Please check back when the world is normal!"
 session_time: '8:45 to late'
 #session_time: "Please check back when the world is normal!"
-defaultABCplayer: 'piano'
+
 # no of tunes to show in latest.md etc
 latest_tunes_max: 20
 slow_tunes_max: 100
@@ -37,6 +37,8 @@ exclude:
         _scripts,
         documentation,
         archive,
+        mp3,
+        tunebooks,
     ]
 
 # Build settings
@@ -46,10 +48,7 @@ kramdown:
 
 destination: _site
 
-#plugins:
-#  - jekyll-feed
-#  - jekyll-seo-tag
-
+# Needed?
 feed:
     path: atom.xml
 
@@ -57,13 +56,14 @@ feed:
 sass:
     style: :compressed
 
+# Needed?
 permalink: /blog/:year/:title
 
 #### SEO Stuff
 # Google Analytics
 #google_universal_analytics: UA-77351761-1
-google_universal_analytics: G-SPNPRLXLS4
-google_universal_analytics_cookiedomain: auto
+#google_universal_analytics: G-SPNPRLXLS4
+#google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
 facebook_user: WellingtonSession
@@ -73,13 +73,14 @@ facebook_locale: en_US
 facebook_page: https://www.facebook.com/groups/WellingtonSession/
 facebook_image: /images/pubscene-small.jpg
 
+# Needed?
 # Twitter Cards
 twitter_user:
 twitter_card: false
 twitter_image: #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
 
 #
-# Additions for session.nz
+# Additions for transition or split site working like the DEV site
 #
 mp3_host: https://mp3.session.nz # leave blank if mp3 files are served from THIS SERVER
 tunebooks_host: https://mp3.session.nz # leave blank if tunebook files are served from THIS SERVER
