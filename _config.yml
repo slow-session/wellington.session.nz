@@ -17,8 +17,8 @@ slow_tunes_max: 100
 reg_tunes_max: 20
 
 # Only use this if you are serving your site via Github Pages
-github:
-    url: 'https://wellington.session.nz'
+#github:
+#    url: 'https://wellington.session.nz'
 
 header: yes
 header_image: images/banner.jpg
