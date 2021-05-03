@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/the-priest.mp3
 mp3_source: Dennis Doody
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
-mp3_url: http://ceolalainn.breqwas.net/download/Denis%20Doody/Kerry%20Music/
+mp3_url: https://ceolalainn.breqwas.net/download/Denis%20Doody/Kerry%20Music/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/1765

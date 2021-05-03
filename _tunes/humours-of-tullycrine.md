@@ -12,7 +12,7 @@ parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2018-11-14
 mp3_file: /mp3/humours-of-tullycrine.mp3
-mp3_source: <a href="http://www.irishmusic.org.nz/">John McEvoy @ Ceol Aneas 2016</a>
+mp3_source: <a href="https://www.irishmusic.org.nz/">John McEvoy @ Ceol Aneas 2016</a>
 mp3_licence: "© John McEvoy. All Rights Reserved."
 mp3_url:
 source: Wellington

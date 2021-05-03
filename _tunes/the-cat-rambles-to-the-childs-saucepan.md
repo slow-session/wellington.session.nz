@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/the-cat-rambles-to-the-childs-saucepan.mp3
 mp3_source: Johnny Cronin & Joe Burke
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
-mp3_url: http://ceolalainn.breqwas.net/download/Johnny%20Cronin%20%26%20Joe%20Burke/Cronin%20%26%20Burke/
+mp3_url: https://ceolalainn.breqwas.net/download/Johnny%20Cronin%20%26%20Joe%20Burke/Cronin%20%26%20Burke/
 source: Wellington
 abc_source: The Session
 abc_url: https://thesession.org/tunes/365

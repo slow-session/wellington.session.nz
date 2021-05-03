@@ -16,7 +16,7 @@ mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/christy_barrys_no_2/
 source: Wellington
-abc_url: http://abcnotation.com/tunePage?a=trillian.mit.edu/~jc/music/abc/mirror/kirby98.fsnet.co.uk/ch/Christy_Barrys_2_3/0000
+abc_url: https://abcnotation.com/tunePage?a=trillian.mit.edu/~jc/music/abc/mirror/kirby98.fsnet.co.uk/ch/Christy_Barrys_2_3/0000
 abc: |
   X: 1
   T:Christy Barry's #2

@@ -12,9 +12,9 @@ parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-10-16
 mp3_file: /mp3/the-banks-of-lough-gowna.mp3
-mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
+mp3_source: <a href="https://toraigh.com/">Bob Midden</a>
 mp3_licence: "© Bob Midden. All Rights Reserved."
-mp3_url: http://toraigh.com/slowsessions/BanksLoughGowna.mp3
+mp3_url: 
 alt_mp3_url: https://www.youtube.com/watch?v=B0HB0FQyesY
 source: Wellington
 abc_source: The Session

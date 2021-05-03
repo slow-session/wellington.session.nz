@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_url:
 mp3_licence:
 mp3_source:
-abc_url: http://slowplayers.org/wp-content/uploads/Crested-Hens.txt
+abc_url: https://slowplayers.org/wp-content/uploads/Crested-Hens.txt
 source: Wellington
 abc: |
     X: 6

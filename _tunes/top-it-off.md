@@ -17,7 +17,7 @@ mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1481249541971376/
 source: Wellington
 abc_source: abc notation home page
-abc_url: http://abcnotation.com/tunePage?a=www.norbeck.nu/abc/i/hnsj0/0049
+abc_url: https://abcnotation.com/tunePage?a=www.norbeck.nu/abc/i/hnsj0/0049
 abc: |
     X: 4
     T:Top It Off

@@ -13,9 +13,9 @@ parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/hewlett.mp3
-mp3_source: <a href="http://toraigh.com/slowsessions.html">Bob Midden</a>
+mp3_source: <a href="https://toraigh.com/">Bob Midden</a>
 mp3_licence: "© Bob Midden. All Rights Reserved."
-mp3_url: http://toraigh.com/slowsessions/Hewlett.mp3
+mp3_url:
 abc_url:
 source: Wellington
 abc: |

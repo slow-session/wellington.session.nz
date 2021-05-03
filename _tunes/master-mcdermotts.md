@@ -13,7 +13,7 @@ regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/master-mcdermotts.mp3
 mp3_licence: "© Cian Kissane. All Rights Reserved."
-mp3_source: <a href="http://www.irishmusic.org.nz/">Cian Kissane @ Ceol Aneas 2016</a>
+mp3_source: <a href="https://www.irishmusic.org.nz/">Cian Kissane @ Ceol Aneas 2016</a>
 mp3_url: 
 abc_source: The Session
 abc_url: https://thesession.org/tunes/682

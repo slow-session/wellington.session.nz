@@ -14,7 +14,7 @@ slowtuneoftheweek:
 mp3_file: /mp3/parnells-march.mp3
 mp3_licence: "© Four Winds. All Rights Reserved."
 mp3_source: Four Winds
-mp3_url: http://fourwindsirishmusic.com/
+mp3_url: https://fourwindsirishmusic.com/
 abc_source: The Session
 abc_url: https://thesession.org/tunes/7512
 source: Wellington

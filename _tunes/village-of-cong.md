@@ -13,7 +13,7 @@ regtuneoftheweek:
 slowtuneoftheweek:
 mp3_file: /mp3/village-of-cong.mp3
 mp3_licence: "© Luke Plumb. All Rights Reserved."
-mp3_source: <a href="http://www.irishmusic.org.nz/">Luke Plumb @ Ceol Aneas 2017</a>
+mp3_source: <a href="https://www.irishmusic.org.nz/">Luke Plumb @ Ceol Aneas 2017</a>
 mp3_url:
 source: Wellington
 abc_source: The Session

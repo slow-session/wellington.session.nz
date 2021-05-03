@@ -23,7 +23,7 @@ abc: |
     C:By James Hill
     R:hornpipe, reel
     B:Kohler's Violin Repository, v.2, 1885 p.133 #1
-    F:http://www.archive.org/details/klersviolinrepos02rugg
+    F:https://www.archive.org/details/klersviolinrepos02rugg
     Z:2012 John Chambers jc:trillian.mit.edu
     M:4/4
     L:1/8
