@@ -11,7 +11,7 @@ import sys
 #
 from pathlib import Path
 
-archiveName = 'wellington.session.nz'
+archiveName = sys.argv[1]
 
 homeDir = str(Path.home())
 

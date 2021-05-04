@@ -1,4 +1,5 @@
 site = "wellington.session.nz"
+port = "4002"
 
 ##############
 #   Build    #
@@ -21,7 +22,7 @@ end
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
-  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localhost.yml' --watch --host=0.0.0.0 --port=4001"
+  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localhost.yml' --watch --host=0.0.0.0 --port=#{port}"
 end
 
 ##############
@@ -32,7 +33,7 @@ end
 
 desc "build the pdf tunebooks"
 task :tunebooks do
-    system "_scripts/add-tunebook-pdfs.sh #{site}"
+    system "_scripts/add-tunebook-pdfs.sh"
 end
 
 ####################
@@ -43,7 +44,7 @@ end
 
 desc "build the createMD option"
 task :createMD do
-    system "_scripts/mk_createMD_options.py"
+    system "_scripts/mk_createMD_options.py #{site}"
 end
 
 ##############
@@ -54,5 +55,5 @@ end
 
 desc "deploy the site"
 task :deploy do
-    system "ssh -t lpnz.org sudo /home/archive/bin/update_site.sh"
+    system "ssh -t #{site} sudo /usr/local/sbin/update_site.sh"
 end   

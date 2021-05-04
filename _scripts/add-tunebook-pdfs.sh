@@ -1,10 +1,8 @@
 #!/bin/sh
 #
-# You may need to change ARCHIVEDIR and/or SOURCEDIR variables
-# to match your directory structure 
+# You may need to change SOURCEDIR to match your directory structure 
 #
-ARCHIVEDIR='wellington.session.nz'
-SOURCEDIR="${HOME}/GitHub/${ARCHIVEDIR}"
+SOURCEDIR="${HOME}/GitHub/wellington-large-files"
 
 cd ${SOURCEDIR}
 
