@@ -76,14 +76,14 @@ facebook_image: /images/pubscene-small.jpg
 # Needed?
 # Twitter Cards
 twitter_user:
-twitter_card: false
+twitter_card: fals
 twitter_image: #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
 
 #
-# Additions for transition or split site working like the DEV site
+# Additions for split site working like the DEV site
 #
-mp3_host: https://mp3.session.nz # leave blank if mp3 files are served from THIS SERVER
-tunebooks_host: https://mp3.session.nz # leave blank if tunebook files are served from THIS SERVER
+mp3_host: # leave blank if mp3 files are served from THIS SERVER
+tunebooks_host: # leave blank if tunebook files are served from THIS SERVER
 js_host: # leave blank if js files are served from THIS SERVER
 
 collections:

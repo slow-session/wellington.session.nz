@@ -1,2 +1,5 @@
 github:
   url: "http://localhost:4001"
+
+mp3_host: https://wellington.session.nz
+tunebooks_host: https://wellington.session.nz

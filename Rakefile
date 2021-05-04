@@ -44,7 +44,7 @@ end
 
 desc "build the pdf tunebooks"
 task :tunebooks do
-    system "_scripts/add-tunebook-pdfs #{site}"
+    system "_scripts/add-tunebook-pdfs.sh #{site}"
 end
 
 ####################

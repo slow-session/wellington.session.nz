@@ -3,3 +3,6 @@
 #
 github:
   url: "http://N.N.N.N:4001"
+
+mp3_host: https://wellington.session.nz
+tunebooks_host: https://wellington.session.nz
