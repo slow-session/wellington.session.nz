@@ -5,12 +5,12 @@
 {% assign description = page.title %}
 {% endif %}
 
-<meta property="og:url" content="{% if page.url %}{{ site.github.url }}{{ page.url }}{% else %}{{ site.github.url }}{% endif %}" />
+<meta property="og:url" content="{% if page.url %}{{ site.http_host }}{{ page.url }}{% else %}{{ site.http_host }}{% endif %}" />
 <meta property="og:title" content="{{ description }}" />
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:locale" content="{{ site.facebook_locale }}" />
 <meta property="og:type" content="article" />
 <meta property="og:description" content="{% if page.key %}{{ page.key }} {{ page.rhythm }}{% endif %}" />
-<meta property="og:image" content="{{ site.github.url }}{{ site.facebook_image }}" />
+<meta property="og:image" content="{{ site.http_host }}{{ site.facebook_image }}" />
 <meta property="og:image:alt" content="Session players in a bar" />
 <meta property="fb:app_id" content="{{ site.facebook_app_id }}"

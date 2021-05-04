@@ -16,12 +16,19 @@ latest_tunes_max: 20
 slow_tunes_max: 100
 reg_tunes_max: 20
 
-# Only use this if you are serving your site via Github Pages
-#github:
-#    url: 'https://wellington.session.nz'
-
 header: yes
 header_image: images/banner.jpg
+
+#
+# used for split site working like the DEV site
+#
+# NOTE: leave these blank for the production site 
+# Also overriden by the _config_localhost.yml when testing locally
+#
+http_host: 
+mp3_host: 
+tunebooks_host: 
+js_host: 
 
 # Exclude our ruby stuff and other dirs
 exclude:
@@ -60,10 +67,6 @@ sass:
 permalink: /blog/:year/:title
 
 #### SEO Stuff
-# Google Analytics
-#google_universal_analytics: UA-77351761-1
-#google_universal_analytics: G-SPNPRLXLS4
-#google_universal_analytics_cookiedomain: auto
 
 # Facebook Opengraph
 facebook_user: WellingtonSession
@@ -78,13 +81,6 @@ facebook_image: /images/pubscene-small.jpg
 twitter_user:
 twitter_card: fals
 twitter_image: #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
-
-#
-# Additions for split site working like the DEV site
-#
-mp3_host: # leave blank if mp3 files are served from THIS SERVER
-tunebooks_host: # leave blank if tunebook files are served from THIS SERVER
-js_host: # leave blank if js files are served from THIS SERVER
 
 collections:
     tunes:

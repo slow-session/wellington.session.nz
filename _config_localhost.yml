@@ -1,5 +1,7 @@
-github:
-  url: "http://localhost:4001"
-
+#
+# Use the mp3 and tunebook files on the production site
+# This means you can't easily test a new mp3 file locally
+# Use https://wellington.session.nz/playLocalAudio/ instead
+#
 mp3_host: https://wellington.session.nz
 tunebooks_host: https://wellington.session.nz

@@ -21,19 +21,7 @@ end
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
-  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localhost.yml' --watch --port=4001"
-end
-
-##############
-# Develop  2 #
-##############
-
-# Useful for development
-# It watches for chagnes and updates when it finds them
-
-desc "Watch the site and regenerate when it changes"
-task :watch2 do
-  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localnet.yml' --watch --host=0.0.0.0 --port=4001"
+  system "JEKYLL_ENV=development bundle exec jekyll serve --config '_config.yml,_config_localhost.yml' --watch --host=0.0.0.0 --port=4001"
 end
 
 ##############
