@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /mp3/
+Disallow: /tunebooks/
+
+Sitemap: http://wellington.session.nz/sitemap.xml
