@@ -58,29 +58,7 @@ for the audio to play.
 
 ## Loading changes to live website
 
-Needs updated!!!
-
-Once you've pushed updates to the **Branch: master** these changes need to be incorporated to the
-**Branch: gh-pages**.
-
-Using the website:
-
--   <https://github.com/slow-session/wellington.session.nz/compare/gh-pages...master?expand=1>
-
--   You should see a page entitled **Open a pull request**
-
-    -   If you're happy that the changes should be committed to the live website, press **Create pull request**
-    -   You should see a message like: _asjl wants to merge 1 commit into gh-pages from master_
-    -   Choose **Merge pull request** and then **Confirm Merge**
-    -   You should see a message like: _asjl merged 1 commit into gh-pages from master 12 seconds ago_
-    -   Check the website <https://wellington.session.nz/> to make sure the changes are correct.
-
--   If you see a page entitled **Comparing changes** and a message saying, _There isn’t anything to compare_, then you should check that you've committed and pushed your changes from your local machine to GitHub.
-
--   You can check the current deployment state at:
-
-    -   <https://github.com/slow-session/wellington.session.nz/deployments>
-
+Needs updated!
 ## Open source
 
 This code open source (released under the licence at:
