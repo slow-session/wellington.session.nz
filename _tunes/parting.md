@@ -1,6 +1,6 @@
 ---
 title: The Parting
-titleID: the-parting.md
+titleID: parting.md
 key: G
 rhythm: waltz
 date: 2018-04-27
@@ -11,7 +11,7 @@ repeats: 6
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-parting.mp3
+mp3_file: /mp3/parting.mp3
 mp3_source: YouTube video
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">YouTube Fair Use</a>
 mp3_url: https://www.youtube.com/watch?v=gK2ceda8hcg

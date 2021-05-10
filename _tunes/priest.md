@@ -1,6 +1,6 @@
 ---
 title: The Priest
-titleID: the-priest.md
+titleID: priest.md
 key: G
 rhythm: slide
 date: 2018-05-24
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-priest.mp3
+mp3_file: /mp3/priest.mp3
 mp3_source: Dennis Doody
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_url: https://ceolalainn.breqwas.net/download/Denis%20Doody/Kerry%20Music/

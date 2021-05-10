@@ -1,6 +1,6 @@
 ---
 title: The Banks Of Lough Gowna
-titleID: the-banks-of-lough-gowna.md
+titleID: banks-of-lough-gowna.md
 key: Bmin
 rhythm: jig
 date: 2019-10-16
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek: 2019-10-16
-mp3_file: /mp3/the-banks-of-lough-gowna.mp3
+mp3_file: /mp3/banks-of-lough-gowna.mp3
 mp3_source: <a href="https://toraigh.com/">Bob Midden</a>
 mp3_licence: "© Bob Midden. All Rights Reserved."
 mp3_url: 

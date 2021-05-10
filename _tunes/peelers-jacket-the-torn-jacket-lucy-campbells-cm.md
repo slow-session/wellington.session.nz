@@ -1,6 +1,6 @@
 ---
 title: The Peelers Jacket, The Torn Jacket, Lucy Campbells
-titleID: the-peelers-jacket-the-torn-jacket-lucy-campbells-cm.md
+titleID: peelers-jacket-the-torn-jacket-lucy-campbells-cm.md
 key: G,D,D
 rhythm: reel
 notes: Sean Connolly, whistle
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABBCCDDEEFF
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/cm/the-peelers-jacket-the-torn-jacket-lucy-campbells-cm.mp3
+mp3_file: /mp3/cm/peelers-jacket-the-torn-jacket-lucy-campbells-cm.mp3
 mp3_source: Charlie Montgomery
 mp3_licence: "© Charlie Montgomery. All Rights Reserved."
 mp3_url:

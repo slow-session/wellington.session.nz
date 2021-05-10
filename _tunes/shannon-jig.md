@@ -1,6 +1,6 @@
 ---
 title: The Shannon Jig
-titleID: the-shannon-jig.md
+titleID: shannon-jig.md
 key: A
 rhythm: jig
 date: 2016-01-01
@@ -11,7 +11,7 @@ repeats: 1
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-shannon-jig.mp3
+mp3_file: /mp3/shannon-jig.mp3
 mp3_licence: "© Cian Kissane. All Rights Reserved."
 mp3_source: <a href="https://www.irishmusic.org.nz/">Cian Kissane @ Ceol Aneas 2016</a>
 mp3_url:

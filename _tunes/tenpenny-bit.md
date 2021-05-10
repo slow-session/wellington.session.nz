@@ -1,6 +1,6 @@
 ---
 title: The Tenpenny Bit
-titleID: the-tenpenny-bit.md
+titleID: tenpenny-bit.md
 key: Ador
 rhythm: jig
 date: 2018-03-13

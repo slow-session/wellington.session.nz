@@ -1,6 +1,6 @@
 ---
 title: The Cat Rambles To The Child's Saucepan
-titleID: the-cat-rambles-to-the-childs-saucepan.md
+titleID: cat-rambles-to-the-childs-saucepan.md
 key: D
 rhythm: slide
 date: 2018-05-24
@@ -11,7 +11,7 @@ repeats: 3
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-cat-rambles-to-the-childs-saucepan.mp3
+mp3_file: /mp3/cat-rambles-to-the-childs-saucepan.mp3
 mp3_source: Johnny Cronin & Joe Burke
 mp3_licence: <a href="https://www.youtube.com/yt/copyright/fair-use.html">Fair Use</a>
 mp3_url: https://ceolalainn.breqwas.net/download/Johnny%20Cronin%20%26%20Joe%20Burke/Cronin%20%26%20Burke/

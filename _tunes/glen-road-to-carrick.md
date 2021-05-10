@@ -1,6 +1,6 @@
 ---
 title: The Glen Road to Carrick
-titleID: the-glen-road-to-carrick.md
+titleID: glen-road-to-carrick.md
 key: Dmaj
 rhythm: reel
 notes: Paddy, Seamus & Kevin Glackin - Glen Road to Carrick
@@ -9,7 +9,7 @@ regtuneoftheweek:
 slowtuneoftheweek:
 tags:
 location:
-mp3_file: /mp3/the-glen-road-to-carrick.mp3
+mp3_file: /mp3/glen-road-to-carrick.mp3
 repeats: 3
 parts: ABCDE
 mp3_source: YouTube video

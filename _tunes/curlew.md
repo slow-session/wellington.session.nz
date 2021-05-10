@@ -1,6 +1,6 @@
 ---
 title: The Curlew
-titleID: the-curlew.md
+titleID: curlew.md
 key: Bdor
 rhythm: reel
 date: 2017-02-09
@@ -11,7 +11,7 @@ repeats: 3
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-curlew.mp3
+mp3_file: /mp3/curlew.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=ZEfR1jz7uu0

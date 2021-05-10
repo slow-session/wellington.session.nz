@@ -1,6 +1,6 @@
 ---
 title: The Square at Crossmaglen
-titleID: the-square-at-crossmaglen.md
+titleID: square-at-crossmaglen.md
 key: Gdor
 rhythm: reel
 date: 2017-03-06
@@ -11,7 +11,7 @@ repeats: 3
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-square-at-crossmaglen.mp3
+mp3_file: /mp3/square-at-crossmaglen.mp3
 mp3_source: <a href="https://www.facebook.com/FergalScahillMusic/">Fergal Scahill</a>
 mp3_licence: "© Fergal Scahill. All Rights Reserved."
 mp3_url: https://www.facebook.com/FergalScahillMusic/videos/1235742746522058/

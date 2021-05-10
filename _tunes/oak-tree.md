@@ -1,6 +1,6 @@
 ---
 title: The Oak Tree
-titleID: the-oak-tree.md
+titleID: oak-tree.md
 key: Dmaj
 rhythm: reel
 notes: The tune starts about 30 mins into the podcast
@@ -9,7 +9,7 @@ regtuneoftheweek:
 slowtuneoftheweek: 
 tags: 
 location: 
-mp3_file: /mp3/the-oak-tree.mp3
+mp3_file: /mp3/oak-tree.mp3
 repeats: 3
 parts: AABBC
 mp3_source: The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)

@@ -1,6 +1,6 @@
 ---
 title: Dunmore Lasses
-titleID: the-dunmore-lasses.md
+titleID: dunmore-lasses.md
 key: Edor
 rhythm: reel
 mode:
@@ -12,7 +12,7 @@ repeats: 2
 parts: AABB
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-dunmore-lasses.mp3
+mp3_file: /mp3/dunmore-lasses.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/cl454_mp3/cl454_4.mp3

@@ -1,6 +1,6 @@
 ---
 title: The Fox in the Town
-titleID: the-fox-in-the-town.md
+titleID: fox-in-the-town.md
 key: G
 rhythm: reel
 date: 2017-02-26
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek: 2017-04-12
-mp3_file: /mp3/the-fox-in-the-town.mp3
+mp3_file: /mp3/fox-in-the-town.mp3
 mp3_source: <a href="https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA">Katie Davis Henderson</a>
 mp3_licence: "© Katie Davis Henderson. All Rights Reserved."
 mp3_url: https://www.youtube.com/watch?v=_5J5N3QXsdg

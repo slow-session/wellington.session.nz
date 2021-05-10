@@ -1,6 +1,6 @@
 ---
-title: Gravel Walk
-titleID: the-gravel-walks.md
+title: The Gravel Walks
+titleID: gravel-walks.md
 key: Ador
 rhythm: reel
 date: 2016-1-26
@@ -11,7 +11,7 @@ repeats: 2
 parts: ABCDD
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-gravel-walks.mp3
+mp3_file: /mp3/gravel-walks.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/fs3/wip/GeorgeWhites.mp3

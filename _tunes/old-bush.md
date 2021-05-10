@@ -1,6 +1,6 @@
 ---
 title: Old Bush
-titleID: the-old-bush.md
+titleID: old-bush.md
 key: Dmix
 rhythm: reel
 date: 2016-4-27
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-old-bush.mp3
+mp3_file: /mp3/old-bush.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://comhaltas.ie/music/detail/comhaltaslive_370_5_caolainn_and_aisling_meaney/

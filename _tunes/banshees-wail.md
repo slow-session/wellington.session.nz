@@ -1,6 +1,6 @@
 ---
 title: The Banshee's Wail
-titleID: the-banshees-wail.md
+titleID: banshees-wail.md
 key: Gmaj
 rhythm: jig
 notes: 
@@ -9,7 +9,7 @@ regtuneoftheweek:
 slowtuneoftheweek: 
 tags: 
 location: Wellington 
-mp3_file: /mp3/the-banshees-wail.mp3
+mp3_file: /mp3/banshees-wail.mp3
 repeats: 2
 parts: AABB
 mp3_source: Richard Tait

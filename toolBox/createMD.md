@@ -102,7 +102,8 @@ function showForm(textArea, myForm) {
         }
         switch(item.name) {
             case 'titleID':
-                obj[item.name] = wssTools.slugify(obj["title"]) + '.md';
+                // strip leading 'The ' from title
+                obj[item.name] = wssTools.slugify(obj["title"].replace(/^The /, '')) + '.md';
                 break;
             case 'key':
                 obj[item.name] = wssTools.toTitleCase(item.value);
@@ -128,7 +129,8 @@ function showForm(textArea, myForm) {
                 break;
             case 'mp3_file':
                 if (item.value == 'yes') {
-                    obj[item.name] = '/mp3/' + wssTools.slugify(obj["title"]) + '.mp3';
+                    // strip leading 'The ' from title
+                    obj[item.name] = '/mp3/' + wssTools.slugify(obj["title"].replace(/^The /, '')) + '.mp3';
                 } else {
                     obj[item.name] = '';
                 }

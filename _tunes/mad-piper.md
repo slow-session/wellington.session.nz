@@ -1,6 +1,6 @@
 ---
 title: The Mad Piper
-titleID: the-mad-piper.md
+titleID: mad-piper.md
 key: G
 rhythm: jig
 date: 2018-03-13
@@ -11,7 +11,7 @@ repeats: 2
 parts: AABB 
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-mad-piper.mp3
+mp3_file: /mp3/mad-piper.mp3
 mp3_source: Pat Higgins
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
 mp3_url:
