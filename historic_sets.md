@@ -9,44 +9,10 @@ These are sets we sometimes play at the Wellington Slow Session.
 If you want to compile your own, you can put tunes together and try them out using our <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
 page.
 
-{% include tunes-filter-variables.html %}
-<form>
-    <fieldset>
-        <legend>Select from the Sets Archive:</legend>
-        <div class="formParent">
-        <div class="formChild">
-            <input type="text" id="title-box" name="searchTitle" placeholder='Search'
-            value='' onkeydown="wssTools.enableSearchButton()">
-        </div>
-        <div class="formChild">
-            <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
-            <option value="">All Rhythms</option>
-            {% for rhythm in rhythms %}
-            {% if rhythm != '' %}
-            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-            </select>
-        </div>
-        </div>
-        <div class="formParent">
-            <div class="formChild">
-                <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submitSearch" type="button" name="submit" value="Select" onclick="buildSetGrid.formSearch('historic', [searchTitle.value, searchRhythm.value], window.setStore)" disabled>
-                </span>
-            </div>
-            <div class="formChild">   
-                <span title="Reset to default">  
-                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset('historic', ['title-box', 'rhythm-box'], window.setStore)">
-                </span>
-            </div>
-        </div>
-        <p></p>
-        Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> sets
-    </fieldset>
-</form>
+{% include sets-search.html tuneBook="historic" searchTerms="Titles, Rhythms" store="setStore" %}
 
-<div class="row"></div>
+<h3>Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> sets</h3>
+
 
 {% assign tuneID = 1 %}
 {% assign setID = 1 %}
@@ -114,4 +80,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
     buildSetGrid.displaySetGrid("historic", "", window.setStore);
 });
 </script>
-

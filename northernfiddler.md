@@ -12,54 +12,6 @@ This page is very much a "Work in Progress" and tunes will be added from time to
 
 There's a PDF of the book on this site at <a href="{{ site.tunebooks_host }}/tunebooks/The_Northern_Fiddler.pdf">The Northern Fiddler (34M)</a>
 
-<!-- Some boilerplate that's common to a number of pages -->
-{% include northernfiddler-filter-variables.html %}
-
-<form onsubmit="return false">
-    <fieldset>
-        <legend>Select from the Tunes Archive:</legend>    
-        <div class="formParent">
-            <div class="formChild">
-                <input type="text" id="title-box" name="searchTitle" placeholder='Search'
-                value='' onkeydown="wssTools.enableSearchButton()">
-            </div>
-            <div class="formChild">
-                <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
-                    <option value="">All Rhythms</option>
-                    {% for rhythm in rhythms %}
-                    {% if rhythm != '' %}
-                    <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
-                    {% endif %}
-                    {% endfor %}
-                </select>
-            </div>
-            <div class="formChild">
-                <select id="musician-box" name="searchMusician"  onChange="wssTools.enableSearchButton()">
-                    <option value="">All musicians</option>
-                    {% for musician in musicians %}
-                    {% if musician != '' %}
-                    <option value="{{ musician }}">{{ musician }}</option>
-                    {% endif %}
-                    {% endfor %}
-                </select>
-            </div>
-        </div>
-        <div class="formParent">
-            <div class="formChild">
-                <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildGrid.formSearch('northernfiddler', [searchTitle.value, searchRhythm.value, searchMusician.value])" disabled>
-                </span>
-            </div>
-            <div class="formChild">   
-                <span title="Reset to default">  
-                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildGrid.formReset('northernfiddler', ['title-box', 'rhythm-box', 'musician-box'])">
-                </span>
-            </div>
-        </div>     
-        <p></p>
-        Displaying <span id="tunesCount"></span> tunes
-    </fieldset>
-</form>
 
 <script>
     window.store = {
@@ -80,6 +32,8 @@ There's a PDF of the book on this site at <a href="{{ site.tunebooks_host }}/tun
     };
 </script>
 
+<!-- Some boilerplate that's common to a number of pages -->
+{% include tunes-search.html tuneBook="northernfiddler" searchTerms="Titles, Rhythms, Musicians" %}
 
 <!-- START of Tunes Grid -->
 <div class="gridParent">

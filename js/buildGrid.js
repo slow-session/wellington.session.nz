@@ -16,7 +16,7 @@
 "use strict";
 
 const buildGrid = (function () {
-    function displayPottsTunes(results, store) {
+    function displayPottsTunes(store) {
         let tunesGrid = document.getElementById("tunesGrid");
         let appendString = '';
 
@@ -187,7 +187,7 @@ const buildGrid = (function () {
 
         switch (tuneBook) {
             case 'potts':
-                displayPottsTunes(searchResults, store);
+                displayPottsTunes(store);
                 break;
             case 'obrien':
                 displayObrienTunes(searchResults, store);
@@ -199,17 +199,9 @@ const buildGrid = (function () {
                 displayTunesArchive(searchResults, store);
         }
     }
-
-    function formSearch(tuneBook, formInputs) {
-        const regex = /[A-Za-z]/g;
-        let searchTerm = "";
+    
+    function formSearch(tuneBook, searchTerm) {
         let searchResults = "";
-
-        for (const formInput of formInputs) {
-            if (formInput.match(regex)) {
-                searchTerm += `${formInput} `;
-            }
-        }
 
         // Get results
         if (searchTerm) {
@@ -226,15 +218,12 @@ const buildGrid = (function () {
         } else {
             displayGrid(tuneBook, searchResults, window.store);
         }
-        wssTools.disableSearchButton()
     }
 
-    function formReset(tuneBook, formInputs) {
+    function formReset(tuneBook, formInput) {
         let searchResults = '';
 
-        for (const formInput of formInputs) {
-            document.getElementById(formInput).value = '';
-        }
+        document.getElementById(formInput).value = '';
         displayGrid(tuneBook, searchResults, window.store);
     }
 

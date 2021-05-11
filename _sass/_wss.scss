@@ -198,6 +198,10 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
+input[type="search"] {
+    width: 85%;
+}
+
 // Hide Arrows From Input Number
 // Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,

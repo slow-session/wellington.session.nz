@@ -54,18 +54,6 @@ const wssTools = (function () {
         });
     }
 
-    function enableSearchButton() {
-        submitSearch.disabled = false;
-        //submitSearch.style.opacity = 1.0;
-        //submitSearch.style.cursor = "pointer";
-        submitSearch.classList.remove('filterDisabled');
-    }
-
-    function disableSearchButton() {
-        submitSearch.disabled = true;
-        submitSearch.classList.add('filterDisabled');
-    }
-
     function show_iframe(url) {
         // Add other sources as needed
         if (url.startsWith("https://www.youtube.com/")) {
@@ -117,8 +105,6 @@ const wssTools = (function () {
         slugify: slugify,
         getCheckedCheckboxesFor: getCheckedCheckboxesFor,
         toTitleCase: toTitleCase,
-        enableSearchButton: enableSearchButton,
-        disableSearchButton: disableSearchButton,
         show_iframe: show_iframe,
     };
 })();

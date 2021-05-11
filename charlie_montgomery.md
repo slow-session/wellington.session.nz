@@ -16,49 +16,7 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 <hr class="hr-with-margins" />
 <p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 
-<div class="row"></div>
 
-{% include tunes-filter-variables.html %}
-
-<form onsubmit="return false">
-    <fieldset>
-        <legend>Select from the Tunes Archive:</legend>    
-        <div class="formParent">
-            <div class="formChild">
-                <input type="text" id="title-box" name="searchTitle" placeholder='Search'
-                value='' onkeydown="wssTools.enableSearchButton()">
-            </div>
-            <div class="formChild">
-                <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
-                    <option value="">All Rhythms</option>
-                    {% for rhythm in rhythms %}
-                    {% if rhythm != '' %}
-                    <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
-                    {% endif %}
-                    {% endfor %}
-                </select>
-            </div>
-        </div>
-        <div class="formParent">
-            <div class="formChild">
-                <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildGrid.formSearch('tunesarchive', [searchTitle.value, searchRhythm.value])" disabled>
-                </span>
-            </div>
-            <div class="formChild">   
-                <span title="Reset to default">  
-                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildGrid.formReset('tunesarchive', ['title-box', 'rhythm-box'])">
-                </span>
-            </div>
-        </div>  
-         <p></p>
-        Charlie's compositions tagged with <strong>*</strong>      
-        <p></p>
-        Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
-    </fieldset>
-</form>
-
-<div class="row"></div>
 
 <script>
     window.store = {
@@ -84,6 +42,8 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
       {% endfor %}
     };
 </script>
+
+{% include tunes-search.html tuneBook="tunesarchive" searchTerms="Titles, Rhythms" %}
 
 {% include tuneModal.html%}
 

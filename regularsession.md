@@ -52,7 +52,7 @@ window.currentFocusTunes =  {
 Here are the tunes we've focussed on recently.
 
 <script>
-window.currentTunes = {
+window.store = {
     {% assign sortedtunes = site.tunes | sort: 'regtuneoftheweek' | reverse %}
     {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
@@ -76,17 +76,25 @@ window.currentTunes = {
 
 </script>
 
-{% include focustunes.html divID="gridCurrentTunes" storeName="window.currentTunes" %}
-
-Latest Tunes
-------------
-
-We add new tunes to the archive reasonably often. You can check those out in our <a href="/latest/">Latest Tunes</a> page.
+{% include tunes-search.html tuneBook="tunesarchive" searchTerms="Titles, Rhythms, Musicians" %}
 
 {% include tuneModal.html%}
 
+<!-- START of Tunes Grid -->
+<div class="gridParent">
+  <div class="gridChild" id="tunesGrid"></div>
+</div>
+
+## Latest Tunes
+
+We add new tunes to the main Tunes Archive reasonably often.
+You can check those out in our <a href="/latest/">Latest Tunes</a> page.
+
 <script>
+buildGrid.initialiseLunrSearch();
+
 document.addEventListener("DOMContentLoaded", function (event) {
-   
+        buildGrid.displayGrid("tunesarchive", "", window.store);
+
 });
 </script>

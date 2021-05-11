@@ -150,6 +150,7 @@ const buildSetGrid = (function () {
         let item = store[tuneID];
 
         document.getElementById("setTuneTitles").innerHTML += item.title + "<br />";
+        document.getElementById("setTuneTitles").style.backgroundColor = "khaki";
         document.getElementById("gr" + tuneID).style.backgroundColor = "khaki";
 
         tuneIDs.push(tuneID);
@@ -178,6 +179,8 @@ const buildSetGrid = (function () {
     function newSet() {
         document.getElementById("paperHeader").style.display = "inline";
         document.getElementById("setTuneTitles").innerHTML = "";
+        document.getElementById("setTuneTitles").style.backgroundColor = "";
+
 
         textAreaABC.value = '';
 
@@ -227,16 +230,8 @@ const buildSetGrid = (function () {
         }
     }
 
-    function formSearch(setType, formInputs, store) {
-        const regex = /[A-Za-z]/g;
-        let searchTerm = "";
+    function formSearch(setType, searchTerm, store) {
         let searchResults = "";
-
-        for (const formInput of formInputs) {
-            if (formInput.match(regex)) {
-                searchTerm += `${formInput} `;
-            }
-        }
 
         // Get results
         if (searchTerm) {
@@ -253,15 +248,13 @@ const buildSetGrid = (function () {
         } else {
             displaySetGrid(setType, searchResults, store);
         }
-        wssTools.disableSearchButton()
+
     }
 
-    function formReset(setType, formInputs, store) {
+    function formReset(setType, formInput, store) {
         let searchResults = '';
 
-        for (const formInput of formInputs) {
-            document.getElementById(formInput).value = '';
-        }
+        document.getElementById(formInput).value = '';
         displaySetGrid(setType, searchResults, store);
     }
 

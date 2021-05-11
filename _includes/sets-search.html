@@ -1,0 +1,19 @@
+<!-- START of search code included from tunes-search.html -->
+
+<div class="gridParent">
+    <div class="gridChild tunes3columnLayout">
+        <span>
+            <input type="search" id="searchBox" class="searchBox" name="searchBox" placeholder='Search {{ include.searchTerms }}' value=''>
+        </span>
+        <span>
+            <input class="filterButton" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildSetGrid.formSearch('{{ include.tuneBook }}', searchBox.value, window.{{ include.store }})">
+        </span>
+        <span>   
+            <span title="Reset to default">  
+                <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset('{{ include.tuneBook }}', 'searchBox', window.{{ include.store }})">
+            </span>
+        </span>
+    </div>
+</div>     
+
+<!-- END of search code included from tunes-search.html -->

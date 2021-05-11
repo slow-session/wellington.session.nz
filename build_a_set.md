@@ -35,44 +35,9 @@ page.
 
 <!-- Some boilerplate that's common to a number of pages -->
 
-{% include tunes-filter-variables.html %}
-<form>
-    <fieldset>
-        <legend>Select from the Tunes Archive:</legend>
-        <div class="formParent">
-        <div class="formChild">
-            <input type="text" id="title-box" name="searchTitle" placeholder='Search'
-            value='' onkeydown="wssTools.enableSearchButton()">
-        </div>
-        <div class="formChild">
-            <select id="rhythm-box" name="searchRhythm"  onChange="wssTools.enableSearchButton()">
-            <option value="">All Rhythms</option>
-            {% for rhythm in rhythms %}
-            {% if rhythm != '' %}
-            <option value="{{ rhythm }}">{{ rhythm | capitalize }}</option>
-            {% endif %}
-            {% endfor %}
-            </select>
-        </div>
-        </div>
-        <div class="formParent">
-            <div class="formChild">
-                <span title="Run the filter with the default settings to see the whole list">
-                    <input class="filterButton filterDisabled" id="submitSearch" type="button" name="submit" value="Select" onclick="buildSetGrid.formSearch('build', [searchTitle.value, searchRhythm.value], window.store)" disabled>
-                </span>
-            </div>
-            <div class="formChild">   
-                <span title="Reset to default">  
-                    <input class="filterButton" id="formReset" type="button" name="reset" value="Reset" onclick="buildSetGrid.formReset('build', ['title-box', 'rhythm-box'], window.store)">
-                </span>
-            </div>
-        </div>
-        <p></p>
-        Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes
-    </fieldset>
-</form>
 
-<div class="row"></div>
+
+{% include sets-search.html tuneBook="build" searchTerms="Titles, Rhythms" store="store" %}
 
 <form>
     <fieldset>
@@ -91,7 +56,8 @@ page.
     </fieldset>
 </form>
 
-<div class="row"></div>
+
+<h3>Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes</h3>
 
 <!-- Build a Set Grid -->
 <div class="gridParent">
