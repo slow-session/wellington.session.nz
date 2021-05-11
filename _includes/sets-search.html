@@ -3,7 +3,7 @@
 <div class="gridParent">
     <div class="gridChild tunes3columnLayout">
         <span>
-            <input type="search" id="searchBox" class="searchBox" name="searchBox" placeholder='Search {{ include.searchTerms }}' value=''>
+            <input type="search" id="searchBox" name="searchBox" placeholder='Search {{ include.searchTerms }}' value=''>
         </span>
         <span>
             <input class="filterButton" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildSetGrid.formSearch('{{ include.tuneBook }}', searchBox.value, window.{{ include.store }})">
