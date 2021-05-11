@@ -100,7 +100,6 @@ const wssTools = (function () {
     }
 
     function enterSearch(searchBox, submitSearch) {
-        console.log('enterSearch');
         let enterSearch = document.getElementById(searchBox);
         enterSearch.addEventListener("keyup", function(event) {
             if (event.keyCode === 13) {
