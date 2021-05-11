@@ -3,7 +3,7 @@
 <div class="gridParent">
     <div class="gridChild tunes3columnLayout">
         <span>
-            <input type="search" id="searchBox" class="searchBox" name="searchBox" placeholder='Search {{ include.searchTerms }}' value=''>
+            <input type="search" id="searchBox" class="searchBox" name="searchBox" onsubmit="buildGrid.formSearch('{{ include.tuneBook }}', searchBox.value)" placeholder='Search {{ include.searchTerms }}' value=''>
         </span>
         <span>
             <input class="filterButton" id="submitSearch" type="submit" name="submit" value="Select" onclick="buildGrid.formSearch('{{ include.tuneBook }}', searchBox.value)">
@@ -18,4 +18,13 @@
 
 <h3>Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes</h3>
 
+<script>
+    var enterSearch = document.getElementById("searchBox");
+    enterSearch.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("submitSearch").click();
+        }
+    });
+</script>
 <!-- END of search code included from tunes-search.html -->

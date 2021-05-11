@@ -16,4 +16,13 @@
     </div>
 </div>     
 
+<script>
+    var enterSearch = document.getElementById("searchBox");
+    enterSearch.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("submitSearch").click();
+        }
+    });
+</script>
 <!-- END of search code included from tunes-search.html -->
