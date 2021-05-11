@@ -3,10 +3,9 @@ layout: page
 title: Historic Sets
 permalink: /historic_sets/
 ---
-
 These are sets we sometimes play at the Wellington Slow Session.
 
-If you want to compile your own, you can put tunes together and try them out using our <button class="filterButton" onclick="window.location.href = '/build_a_set/';">Build a Set</button>
+If you want to compile your own, you can put tunes together and try them out using our <a href = '/build_a_set/'>Build a Set</a>
 page.
 
 {% include sets-search.html tuneBook="historic" searchTerms="Titles, Rhythms" store="setStore" %}

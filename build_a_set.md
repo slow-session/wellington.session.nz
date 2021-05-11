@@ -4,14 +4,12 @@ title: Build a Set
 permalink: /build_a_set/
 ---
 
-Use this tool to compile sets for practice or if you need music for a ceili.
-
 Find the tunes you want, and then use the "Select" button on each to choose them
-in the order you want to play them in the set. When you've done that you'll be able
-to view the set.
+in the order you want to play them in a set. When you've done that you'll be able
+to view and play back the set.
 
-You can also look at some sets that have been played in Wellington in recent times on our
-<button class="filterButton" onclick="window.location.href = '/historic_sets/';">Historic Sets</button>
+You can also look at some sets that have been played in Wellington on our
+<a href = '/historic_sets/'>Historic Sets</a>
 page.
 
 <script>
@@ -34,28 +32,22 @@ page.
 </script>
 
 <!-- Some boilerplate that's common to a number of pages -->
-
-
-
 {% include sets-search.html tuneBook="build" searchTerms="Titles, Rhythms" store="store" %}
 
-<form>
-    <fieldset>
-        <legend>Selected Tunes</legend>
-        <div id="setTuneTitles" class="setChoice"></div>
-        <div class="formParent">
-            <div class="formChild">
-                <input value='View Set' type='button' class="filterButton" onclick='viewModal()' />
-            </div>
-            <div class="formChild">
-                <span title="Clear the music notation to start a new set">
-                    <input value='Start New Set' type='button' class="filterButton" onclick='buildSetGrid.newSet()' />
-                </span>
-            </div>
+<!-- Chosen tunes -->
+<div class="setParentOuter">
+    <div id="setTuneTitles" class="setChoice"></div>
+    <div class="setParentInner">
+        <div class="setChildInner">
+            <span title="Clear the music notation to start a new set">
+                <input value='Start New Set' type='button' class="filterButton" onclick='buildSetGrid.newSet()' />
+            </span>
         </div>
-    </fieldset>
-</form>
-
+        <div class="setChildInner">
+            <input value='View Set' type='button' class="filterButton" onclick='viewModal()' />
+        </div>
+    </div>
+</div>
 
 <h3>Scroll &#8593;&#8595; to choose from <span id="tunesCount"></span> tunes</h3>
 
