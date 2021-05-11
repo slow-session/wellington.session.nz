@@ -30,8 +30,6 @@ abc: |
     DFA dcd|ecA cde|fef gec|edc d3:||
     |:dfa agf|efg efg|~f3 gfg|ecA GFE|
     DFA dcd|ecA cde|fef gec|edc d3:||
-
-    X: 4
     T: Billy McCormack's
     R: jig
     M: 6/8
@@ -41,11 +39,10 @@ abc: |
     ABG A2 g | edB def | g2 e fdB | BAG A2 :|
     |:aa/a/a bge | aaa bge | ggg gdB | GAB deg |
     a2 b age | edB ded | g2 e fdB | BAG A2 :|
-
-    X: 3
     T: Shandon Bells
     R: jig
     M: 6/8
+    
     L: 1/8
     K: Dmaj
     |:AFD DFA|ded cBA|BGE E2G|B2A Bcd|

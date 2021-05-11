@@ -31,8 +31,6 @@ abc: |
     Bee fee|aee fee|gfe d2A|BAG FGA|
     Bee fee|aee fee|Bee fee|faf def|
     g3 gfe|def g2d|edc d2A|BAG FED|
-
-    X: 2
     T: Drowsy Maggie
     R: reel
     M: 4/4

@@ -29,8 +29,6 @@ abc: |
     "G"B2 GB AGEG | "G"DGGF G2(3ABc | "C"d2 Bd gdBd | "D"cAFA "G"G2 :|
     Bc |: "G"d2 (3Bcd gdBd | d2 (3Bcd gdBd | "C"e2 ce agfe | "D"defg agfe |
     "G"d2 (3Bcd gdBd | "G"d2 (3Bcd gdBd | "C"cBAc BAGB |"D" AGFA "G"G2 :|
-
-    X: 4
     T: The Sailor On The Rock
     R: reel
     M: 4/4

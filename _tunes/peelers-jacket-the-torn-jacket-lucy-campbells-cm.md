@@ -29,8 +29,6 @@ abc: |
     G2BG DGBG|FGAB c2Bc|dggf d2eg|fdcA BG~G2:|
     |:gagf d2ef|gfga bgaf|gagf d2eg|fdcA BGBd|
     gagf d2ef|gfga bgaf|gbag fdeg|1 fdcA BG~G2:|2 fdcA BGAF||
-
-    X: 2
     T: Torn Jacket
     C: Connie O'Connell
     R: reel
@@ -41,8 +39,6 @@ abc: |
     F2FA dfed|cAAA B/2c/2d ec|d2 de fded|cAGE EDD2:|
     |:FAdf a2 af|g2 ga gfed|cAAA B/2c/2d ef|gfed cAGE|
     FAdf a2 af|g2 ga gfef|gaba gfed|cAGE EDD2:|
-
-    X: 3
     T: Lucy Campbell
     R: reel
     M: 4/4

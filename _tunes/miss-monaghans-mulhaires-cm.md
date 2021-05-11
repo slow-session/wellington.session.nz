@@ -29,8 +29,6 @@ abc: |
     {E}D2ED FAAd | ~B3A FABc | d2dB ABdB | (3AGF EG FDD2 :|
     |: faab afdf | gefd edBc | ~d3B ABde | fede fee2 |
     faab afdf | g2fd edBc | d2dB ABdB | AFEG FDD2 :|
-
-    X: 2
     T: Mulhaire's
     R: reel
     M: 4/4

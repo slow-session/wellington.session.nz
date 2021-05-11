@@ -29,8 +29,6 @@ abc: |
     fdd cAA|BAG A2G|FAA def|gec d2:|
     |:G|FAA B2A|FAA B2A|FAA def|gfg eag|
     fdd cAA|BAG A2G|FAA def|gec d2:|
-
-    X: 2
     T: Saddle The Pony
     R: jig
     M: 6/8
@@ -40,8 +38,6 @@ abc: |
     GBA G2 B | def gfg | ege dBA | BAF G2 :|
     |:efe edB | def gfg | ege edB | dBA ABd |
     efe edB | def gfg | e/f/ge dBA | BAF G2 :|
-
-    X: 3
     T: The Lark In The Morning
     R: jig
     M: 6/8

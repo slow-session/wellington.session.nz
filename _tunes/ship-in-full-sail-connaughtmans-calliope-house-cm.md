@@ -29,8 +29,6 @@ abc: |
     DGG BGG|dBG GBd|ege dBG|AGF G2:|
     |:A|Bdd dBd|egg g2d|edB dBG|AGA BGE|
     DGG BGG|dBG GBd|ege dBG|AGF G2:|
-
-    X: 5
     T: The Connachtman's Rambles
     R: jig
     M: 6/8
@@ -41,8 +39,6 @@ abc: |
     FAA dAA|BAB def|gfe f2e|1 dBB BAG:|2 dBA B2 g||
     |:fbb faa|fef d2e|fbb faa|fed e3|
     fbb faa|fef def|gfe f2e|1 dBA B2 g:|2 dBA BAG||
-
-    X: 1
     T: Calliope House
     R: jig
     M: 6/8

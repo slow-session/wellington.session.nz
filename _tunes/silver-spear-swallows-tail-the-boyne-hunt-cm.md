@@ -29,8 +29,6 @@ abc: |
     "D"FA ~A2 {A}BAFA|dfed Bd ef|"G"g2 fe f2 fe|dfed B2 A[Gd]:||
     |:"D"fa af bfaf|"G"gfed Bcde|"D"fa af bfaf|"Em"gfed "G"B2 "A"A2|
     "D"fa af bfaf|"G"gfed Bdef|"Em"g3e "D"f3e |dfed "G"B2 "A"A2:||
-
-    X: 2
     T: The Swallow's Tail
     R: reel
     M: 4/4
@@ -40,8 +38,6 @@ abc: |
     eA (3cBA eA (3cBA|cdef g2fg|afge dBGB|AcBG A2 gf:|
     |:eaag abag|edef gedB|(3GFG BG dGBG|cdef g2fg|
     eaag abag|edef g2fg|afge dBGB|AcBG A2 gf:|
-
-    X: 3
     T:The Boyne Hunt
     R:reel
     C:Trad.
