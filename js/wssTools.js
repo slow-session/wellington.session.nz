@@ -99,6 +99,17 @@ const wssTools = (function () {
         }
     }
 
+    function enterSearch(searchBox, submitSearch) {
+        console.log('enterSearch');
+        let enterSearch = document.getElementById(searchBox);
+        enterSearch.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById(submitSearch).click();
+            }
+        });
+    }
+
     return {
         downloadABCFile: downloadABCFile,
         downloadFile: downloadFile,
@@ -106,6 +117,7 @@ const wssTools = (function () {
         getCheckedCheckboxesFor: getCheckedCheckboxesFor,
         toTitleCase: toTitleCase,
         show_iframe: show_iframe,
+        enterSearch: enterSearch,
     };
 })();
 
