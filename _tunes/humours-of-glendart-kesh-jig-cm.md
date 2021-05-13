@@ -29,8 +29,6 @@ abc: |
     BAF ADD|FEF DFA|dcB AFE|FDD D2A:||
     |:def d2B|AF/G/A AF/G/A|def d2f|e3 fdB|
     def d2B|A3 ABc|dcB AFE|FDD D2A:|
-
-    X: 1
     T: The Kesh
     R: jig
     M: 6/8
