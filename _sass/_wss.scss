@@ -199,7 +199,9 @@ input[type="checkbox"] {
 }
 
 input[type="search"] {
+    border: 2px solid $brand-color;
     background-color: #f0f0f0;
+    padding: inherit;
 }
 
 // Hide Arrows From Input Number
@@ -401,8 +403,7 @@ input[type=number] {
     border: 2px solid $brand-color;
     background-color: darken($complimentary-color, 6%);
     border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
+    padding: inherit;
 }
 
 .setRow {
