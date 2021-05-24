@@ -16,6 +16,10 @@ video formats and play parts of them in a loop.
 If you have ABC files on your own computer you can use the
 [Play Local ABC](/playLocalABC/) page to play them in a loop.
 
+[Jukebox](/jukebox/)
+-------
+Pick a random tune from the archive.
+
 [The Long Bow](/longbow/)
 -------
 In his fiddle class at Ceol Aneas 2018, Rob Zielinski suggested practicing
@@ -45,4 +49,3 @@ can use to learn by ear that would be great. We need that recording to be either
 You can usually find some ABC that you can at least start with on
 [The Session](http://thesession.org) website. The ABC doesn't need to match the
 recorded version exactly - close is good enough!
-
