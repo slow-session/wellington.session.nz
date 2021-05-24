@@ -15,7 +15,6 @@ window.store = {
     {% assign sortedtunes = tunes | sort: 'titleID' %}
     {% assign tuneID = 1 %}
     {% for tune in sortedtunes %}
-    {% assign tuneID = tuneID | plus: 1 %}
         "{{ tuneID }}": {
             "title": "{{ tune.title | xml_escape }}",
             "tuneID": "{{ tuneID }}",
@@ -28,8 +27,9 @@ window.store = {
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
             }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    };
+        {% assign tuneID = tuneID | plus: 1 %}
+    {% endfor %}
+};
 </script>
 
 {% include tuneModal.html %}
