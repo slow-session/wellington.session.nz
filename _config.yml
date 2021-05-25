@@ -55,10 +55,6 @@ kramdown:
 
 destination: _site
 
-# Needed?
-feed:
-    path: atom.xml
-
 # Compress our Css
 sass:
     style: :compressed
