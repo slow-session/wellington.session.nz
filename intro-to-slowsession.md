@@ -4,7 +4,7 @@ title: Introduction to Wellington Slow Session
 permalink: /intro-to-slowsession/
 ---
 
-{% include slowsession/details.html %}
+{% include session-details.html %}
 
 The slow session is an opportunity for players who are starting out with Irish
 traditional music and want an opportunity to play tunes that they're learning

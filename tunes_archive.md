@@ -32,6 +32,7 @@ window.store = {
 };
 </script>
 
+{% include jukebox.html %}
 
 {% include tunes-search.html tuneBook="tunesarchive" searchTerms="Titles, Rhythms, Musicians" %}
 

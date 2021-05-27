@@ -17,7 +17,6 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
 <p>Go to the Tune Page by selecting the link in the first column or play a tune now using the <strong>Play Now</strong> button.</p>
 
 
-
 <script>
     window.store = {
       {% assign tunes = site.tunes %}
@@ -36,12 +35,16 @@ We'd like to thank Charlie very much for giving us the privilege of being able t
         "repeats": "{{ tune.repeats }}",
         "parts": "{{ tune.parts }}",
         "abc": {{ tune.abc | jsonify }}
-        }{% unless forloop.last %},{% endunless %}
         {% assign tuneID = tuneID | plus: 1 %}
+        }{% unless forloop.last %},{% endunless %}
         {% endif %}
       {% endfor %}
     };
 </script>
+
+{% assign tuneID = tuneID | minus: 1 %}
+
+{% include jukebox.html %}
 
 {% include tunes-search.html tuneBook="tunesarchive" searchTerms="Titles, Rhythms" %}
 

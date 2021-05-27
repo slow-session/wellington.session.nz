@@ -4,7 +4,7 @@ title: Wellington Slow Session
 permalink: /slowsession/
 ---
 
-{% include slowsession/details.html %}
+{% include session-details.html %}
 
 If you're new to session playing or want to know more about our slow session, please check out our <a href="/intro-to-slowsession/">Introduction to Wellington Slow Session</a> page.
 
@@ -69,13 +69,15 @@ window.store = {
             "parts": "{{ tune.parts }}",
             "abc": {{ tune.abc | jsonify }}
         },
+        {% assign tuneID = tuneID | plus: 1 %}
     {% endif %}
-    {% assign tuneID = tuneID | plus: 1 %}
 {% endfor %}
 
 };
 
 </script>
+
+{% include jukebox.html %}
 
 {% include tunes-search.html tuneBook="tunesarchive" searchTerms="Titles, Rhythms, Musicians" %}
 
