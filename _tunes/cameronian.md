@@ -10,8 +10,8 @@ slowtuneoftheweek:
 tags: 
 location: 
 mp3_file: /mp3/cameronian.mp3
-repeats: 
-parts: 
+repeats: 2
+parts: AABB
 mp3_source: <a href="https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg">Duncan Ross Cameron</a>
 mp3_licence: '© Duncan Ross Cameron. All Rights Reserved.'
 mp3_url: https://www.youtube.com/watch?v=A1ZvI-FrmNc
