@@ -8,7 +8,7 @@ date: 2021-06-01
 regtuneoftheweek: 
 slowtuneoftheweek: 
 tags: 
-location: 
+location: Wellington
 mp3_file: /mp3/cameronian.mp3
 repeats: 2
 parts: AABB
