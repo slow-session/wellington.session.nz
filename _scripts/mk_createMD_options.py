@@ -11,6 +11,14 @@ import sys
 #
 from pathlib import Path
 
+def usage():
+    sys.stdout = sys.stderr
+    print('Usage: {0} <archiveName> '.format(sys.argv[0]))
+    sys.exit(2)
+
+if len(sys.argv) != 2:
+    usage()
+
 archiveName = sys.argv[1]
 
 homeDir = str(Path.home())
