@@ -14,7 +14,7 @@ layout: page
         {% endif %}
     </div>
     <div class="tuneInfoColumn">
-        {% if page.location contains 'Wellington' and page.slowtuneoftheweek %}
+        {% if page.slowtuneoftheweek %}
         <p class="tuneInfoPara">Slow Session:
         <time
             datetime="{{ page.slowtuneoftheweek | date_to_xmlschema }}">{{ page.slowtuneoftheweek | date: "%-d %B %Y" }}</time>
@@ -24,7 +24,7 @@ layout: page
         Slow Session: before 2017
         </p>
         {% endif %}
-        {% if page.location contains 'Wellington' and page.regtuneoftheweek %}
+        {% if page.regtuneoftheweek %}
         <p class="tuneInfoPara">Regular Session:
         <time
             datetime="{{ page.regtuneoftheweek | date_to_xmlschema }}">{{ page.regtuneoftheweek | date: "%-d %B %Y" }}</time>
