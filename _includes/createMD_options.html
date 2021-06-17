@@ -2,6 +2,7 @@
 <!-- mk_createMD_options.py -->
 <!-- Any changes WILL be overwritten! -->
 
+
 <form id="createMD" method="get">
     <label>Title:<sup>*</sup></label>
     <input type="text" id="title-box" name="title" value="">
@@ -9,21 +10,34 @@
     <input type="hidden" id="titleID-box" name="titleID" value=""><br />
 
     <label>Key:<sup>*</sup></label>
-    <input type="text" id="key-box" name="key" value="">
+    <input type="text" id="key-box" name="key" list="key" value="">
+    <datalist id="key">
+        <option value="Ddor">Ddor</option>
+        <option value="Dmaj">Dmaj</option>
+        <option value="Dmix">Dmix</option>
+        <option value="Gdor">Gdor</option>
+        <option value="Gmaj">Gmaj</option>
+        <option value="Gmix">Gmix</option>
+        <option value="Ador">Ador</option>
+        <option value="Amaj">Amaj</option>
+        <option value="Amix">Amix</option>
+        <option value="Bdor">Bdor</option>
+        <option value="Bmix">Bmix</option>
+        <option value="Cmaj">Cmaj</option>
+        <option value="Edor">Edor</option>
+        <option value="Fmaj">Fmaj</option>
+    </datalist>
 
     <label>Rhythm:<sup>*</sup></label>
-    <select id="rhythm-box" name="rhythm">
-        <option value="">None</option>
+    <input type="text" id="rhythm-box" name="rhythm" list="rhythm" value="">
+    <datalist id="rhythm">
         <option value="air">air</option>
-    <option value="air, hornpipe">air, hornpipe</option>
     <option value="barndance">barndance</option>
     <option value="highland">highland</option>
     <option value="hop jig">hop jig</option>
     <option value="hornpipe">hornpipe</option>
     <option value="jig">jig</option>
-    <option value="jig, reel">jig, reel</option>
     <option value="march">march</option>
-    <option value="march, strathspey, reel">march, strathspey, reel</option>
     <option value="mazurka">mazurka</option>
     <option value="planxty">planxty</option>
     <option value="polka">polka</option>
@@ -31,8 +45,8 @@
     <option value="slide">slide</option>
     <option value="slip jig">slip jig</option>
     <option value="waltz">waltz</option>
-    <option value="ENTER YOUR NEW RHYTHM HERE">Other</option>
-    </select>
+
+    </datalist>
 
     <label>Notes:</label>
     <input type="text" id="notes-box" name="notes" value="">
@@ -40,335 +54,306 @@
     <input type="hidden" id="date-box" name="date" value=""><br />
     <input type="hidden" id="regtuneoftheweek-box" name="regtuneoftheweek" value="">
     <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
-    <input type="hidden" id="tags-box" name="tags" value="">
-
-    <br /><label>Location:</label><br />
-        <input name="location" type="checkbox" value="Arrowtown"/>
-        <label for="location">Arrowtown</label><br />
-        <input name="location" type="checkbox" value="Auckland"/>
-        <label for="location">Auckland</label><br />
-        <input name="location" type="checkbox" value="Christchurch"/>
-        <label for="location">Christchurch</label><br />
-        <input name="location" type="checkbox" value="Donegal"/>
-        <label for="location">Donegal</label><br />
-        <input name="location" type="checkbox" value="Dunedin"/>
-        <label for="location">Dunedin</label><br />
-        <input name="location" type="checkbox" value="Hamilton"/>
-        <label for="location">Hamilton</label><br />
-        <input name="location" type="checkbox" value="Prebbleton"/>
-        <label for="location">Prebbleton</label><br />
-        <input name="location" type="checkbox" value="Raglan"/>
-        <label for="location">Raglan</label><br />
-        <input name="location" type="checkbox" value="Wellington"/>
-        <label for="location">Wellington</label><br />
-<br />
+    
+    <p></p>
 
     <h3>Recorded version of the tune</h3>
 
-    <label>MP3 file:</label>
-    <select id="mp3_file-box" name="mp3_file">
-        <option value="yes">Available</option>
-        <option value="no">Not available</option>
-    </select>
-
+    <label>MP3 file available</label>
+    <input type="checkbox" name="mp3_file" value="yes" checked="checked">
+    
     <p></p>
 
     <p>If an MP3 version of the tune is available, please provide these details:</p>
 
-    <label>Repeats:</label>
-    <input type="text" id="repeats-box" name="repeats" value="">
+      <label>Number of Repeats:</label>
+    <input type="number" id="repeats-box" name="repeats" list="repeats" placeholder="e.g. 2">
+    <datalist id="repeats">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </datalist>
     <br />
 
     <label>Parts:</label>
-    <input type="text" id="parts-box" name="parts" value="">
+    <input type="text" id="parts-box" name="parts" list="parts" placeholder="e.g. AABB">
+    <datalist id="parts">
+        <option value="AABB">AABB</option>
+        <option value="AABBCC">AABBCC</option>
+        <option value="AB">AB</option>
+    </datalist>
     <br />
 
     <label>MP3 source:</label>
-    <select id="mp3_source-box" name="mp3_source">
-    <option value="">None</option>
-        <option value="Adrian Barker and Ben Stephenson">Adrian Barker and Ben Stephenson</option>
-    <option value="Alistair Cuthill and Steve McGlone">Alistair Cuthill and Steve McGlone</option>
-    <option value="Angela Usher">Angela Usher</option>
-    <option value="Ballyscully">Ballyscully</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/channel/UClYVRYfxWN1TCLSnkMsLo-Q&quot;&gt;Björn Persmats&lt;/a&gt;">Björn Persmats</option>
-    <option value="&lt;a href=&quot;https://toraigh.com/&quot;&gt;Bob Midden&lt;/a&gt;">Bob Midden</option>
-    <option value="Charlie Montgomery">Charlie Montgomery</option>
-    <option value="&lt;a href=&quot;https://www.irishmusic.org.nz/&quot;&gt;Cian Kissane @ Ceol Aneas 2016&lt;/a&gt;">Cian Kissane @ Ceol Aneas 2016</option>
-    <option value="&lt;a href=&quot;https://www.facebook.com/ciarank1&quot;&gt;Ciaran Kelly&lt;/a&gt;">Ciaran Kelly</option>
-    <option value="Comhaltas Ceoltóirí Éireann">Comhaltas Ceoltóirí Éireann</option>
-    <option value="&lt;a href=&quot;http://epu.ucc.ie/connieoconnell/&quot;&gt;Connie O&#x27;Connell&lt;/a&gt;">Connie O'Connell</option>
-    <option value="De Danann">De Danann</option>
-    <option value="Dennis Doody">Dennis Doody</option>
-    <option value="&lt;a href=&quot;https://vimeo.com/dickglasgow&quot;&gt;Dick Glasgow&lt;/a&gt;">Dick Glasgow</option>
-    <option value="Doug Makinson">Doug Makinson</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/channel/UCYb4BctMXfZRLdUgYh2_kDg&quot;&gt;Dulahan Ireland&lt;/a&gt;">Dulahan Ireland</option>
-    <option value="Duncan Davidson">Duncan Davidson</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/channel/UCC8c0kZG5rnxGvJPwaYvBkg&quot;&gt;Duncan Ross Cameron&lt;/a&gt;">Duncan Ross Cameron</option>
-    <option value="Eileen O&#x27;Brien @ Ceol Aneas 2019">Eileen O'Brien @ Ceol Aneas 2019</option>
-    <option value="Emily Griffiths">Emily Griffiths</option>
-    <option value="FARNE - Folk Archive Resource North East">FARNE - Folk Archive Resource North East</option>
-    <option value="&lt;a href=&quot;https://www.facebook.com/FergalScahillMusic/&quot;&gt;Fergal Scahill&lt;/a&gt;">Fergal Scahill</option>
-    <option value="Four Winds">Four Winds</option>
-    <option value="Francine Gagnon">Francine Gagnon</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/channel/UC83KeE92brBlML9UX07iQjg&quot;&gt;Gilles Poutoux&lt;/a&gt;">Gilles Poutoux</option>
-    <option value="&lt;a href=&quot;https://www.facebook.com/gillianbouchermusic/&quot;&gt;Gillian Boucher&lt;/a&gt;">Gillian Boucher</option>
-    <option value="Gillian Gillies">Gillian Gillies</option>
-    <option value="Hannah Harris">Hannah Harris</option>
-    <option value="Ian Walsh">Ian Walsh</option>
-    <option value="James McNamara">James McNamara</option>
-    <option value="Jody Moran">Jody Moran</option>
-    <option value="&lt;a href=&quot;https://www.facebook.com/irishharmonica/&quot;&gt;Joel Anderson&lt;/a&gt;">Joel Anderson</option>
-    <option value="John Doherty">John Doherty</option>
-    <option value="&lt;a href=&quot;https://www.irishmusic.org.nz/&quot;&gt;John McEvoy @ Ceol Aneas 2016&lt;/a&gt;">John McEvoy @ Ceol Aneas 2016</option>
-    <option value="Johnny Cronin &amp; Joe Burke">Johnny Cronin & Joe Burke</option>
-    <option value="Jonathan Berkahn">Jonathan Berkahn</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/channel/UCZ_eIEJuiuBMvYb4kOtx3hA&quot;&gt;Katie Davis Henderson&lt;/a&gt;">Katie Davis Henderson</option>
-    <option value="Kris Nielsen">Kris Nielsen</option>
-    <option value="&lt;a href=&quot;https://www.irishmusic.org.nz/&quot;&gt;Luke Plumb @ Ceol Aneas 2017&lt;/a&gt;">Luke Plumb @ Ceol Aneas 2017</option>
-    <option value="Maurice Bradley and Ciaran Kelly">Maurice Bradley and Ciaran Kelly</option>
-    <option value="Mick Hanly and Micheal O Dhomhnaill">Mick Hanly and Micheal O Dhomhnaill</option>
-    <option value="Niall Kenny">Niall Kenny</option>
-    <option value="Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)">Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)</option>
-    <option value="Pat Higgins">Pat Higgins</option>
-    <option value="Patrick Cummins">Patrick Cummins</option>
-    <option value="&lt;a href=&quot;https://en.wikipedia.org/wiki/Paul_O%27Shaughnessy_(musician)&quot;&gt;Paul O&#x27;Shaughnessy @ Ceol na Coille 2017&lt;/a&gt;">Paul O'Shaughnessy @ Ceol na Coille 2017</option>
-    <option value="Paula Doohan &amp; Liz Doherty">Paula Doohan & Liz Doherty</option>
-    <option value="Peter Laing">Peter Laing</option>
-    <option value="Raglan Session - Christopher Robin">Raglan Session - Christopher Robin</option>
-    <option value="Richard Tait">Richard Tait</option>
-    <option value="Roisin McGrory">Roisin McGrory</option>
-    <option value="Ruairidh Morrison and Melanie Brown">Ruairidh Morrison and Melanie Brown</option>
-    <option value="Sarah and Catherine Brown">Sarah and Catherine Brown</option>
-    <option value="&lt;a href=&quot;https://connollymusiccollection.bc.edu/&quot;&gt;Seamus Connolly and Boston College Libraries, 2016&lt;/a&gt;">Seamus Connolly and Boston College Libraries, 2016</option>
-    <option value="Sean Smyth and Donogh Hennessey">Sean Smyth and Donogh Hennessey</option>
-    <option value="Soundcloud audio posted by gdae-burke">Soundcloud audio posted by gdae-burke</option>
-    <option value="Steven McGlone, Ceol Aneas 2021">Steven McGlone, Ceol Aneas 2021</option>
-    <option value="Séan Ryan, Denis Ryan &amp; Conor Moriarty">Séan Ryan, Denis Ryan & Conor Moriarty</option>
-    <option value="The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)">The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)</option>
-    <option value="&lt;a href=&quot;https://www.facebook.com/ucctradsoc/&quot;&gt;UCC TradSoc&lt;/a&gt;">UCC TradSoc</option>
-    <option value="Wellington Session">Wellington Session</option>
-    <option value="Wynton Moore">Wynton Moore</option>
-    <option value="YouTube video">YouTube video</option>
-    <option value="Zoe Conway &amp; Meabh O&#x27;Hare">Zoe Conway & Meabh O'Hare</option>
-    <option value="Zoe Conway, Tara Breen &amp; Lydia Warnock">Zoe Conway, Tara Breen & Lydia Warnock</option>
-    <option value="archive.org">archive.org</option>
-    <option value="ENTER YOUR NEW MP3 SOURCE HERE">Other</option>
-    </select>
+    <input type="text" id="mp3_source-box" name="mp3_source" list="mp3_source">
+    <datalist id="mp3_source">
+        <option value="">None</option>
+            <option value="Adrian Barker and Ben Stephenson">Adrian Barker and Ben Stephenson</option>
+        <option value="Alistair Cuthill and Steve McGlone">Alistair Cuthill and Steve McGlone</option>
+        <option value="Angela Usher">Angela Usher</option>
+        <option value="Ballyscully">Ballyscully</option>
+        <option value="Björn Persmats">Björn Persmats</option>
+        <option value="Bob Midden">Bob Midden</option>
+        <option value="Charlie Montgomery">Charlie Montgomery</option>
+        <option value="Cian Kissane @ Ceol Aneas 2016">Cian Kissane @ Ceol Aneas 2016</option>
+        <option value="Ciaran Kelly">Ciaran Kelly</option>
+        <option value="Comhaltas Ceoltóirí Éireann">Comhaltas Ceoltóirí Éireann</option>
+        <option value="Connie O'Connell">Connie O'Connell</option>
+        <option value="De Danann">De Danann</option>
+        <option value="Dennis Doody">Dennis Doody</option>
+        <option value="Dick Glasgow">Dick Glasgow</option>
+        <option value="Doug Makinson">Doug Makinson</option>
+        <option value="Dulahan Ireland">Dulahan Ireland</option>
+        <option value="Duncan Davidson">Duncan Davidson</option>
+        <option value="Duncan Ross Cameron">Duncan Ross Cameron</option>
+        <option value="Eileen O'Brien @ Ceol Aneas 2019">Eileen O'Brien @ Ceol Aneas 2019</option>
+        <option value="Emily Griffiths">Emily Griffiths</option>
+        <option value="FARNE - Folk Archive Resource North East">FARNE - Folk Archive Resource North East</option>
+        <option value="Fergal Scahill">Fergal Scahill</option>
+        <option value="Four Winds">Four Winds</option>
+        <option value="Francine Gagnon">Francine Gagnon</option>
+        <option value="Gilles Poutoux">Gilles Poutoux</option>
+        <option value="Gillian Boucher">Gillian Boucher</option>
+        <option value="Gillian Gillies">Gillian Gillies</option>
+        <option value="Hannah Harris">Hannah Harris</option>
+        <option value="Ian Walsh">Ian Walsh</option>
+        <option value="James McNamara">James McNamara</option>
+        <option value="Jody Moran">Jody Moran</option>
+        <option value="Joel Anderson">Joel Anderson</option>
+        <option value="John Doherty">John Doherty</option>
+        <option value="John McEvoy @ Ceol Aneas 2016">John McEvoy @ Ceol Aneas 2016</option>
+        <option value="Johnny Cronin & Joe Burke">Johnny Cronin & Joe Burke</option>
+        <option value="Jonathan Berkahn">Jonathan Berkahn</option>
+        <option value="Katie Davis Henderson">Katie Davis Henderson</option>
+        <option value="Kris Nielsen">Kris Nielsen</option>
+        <option value="Luke Plumb @ Ceol Aneas 2017">Luke Plumb @ Ceol Aneas 2017</option>
+        <option value="Maurice Bradley and Ciaran Kelly">Maurice Bradley and Ciaran Kelly</option>
+        <option value="Mick Hanly and Micheal O Dhomhnaill">Mick Hanly and Micheal O Dhomhnaill</option>
+        <option value="Niall Kenny">Niall Kenny</option>
+        <option value="Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)">Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)</option>
+        <option value="Pat Higgins">Pat Higgins</option>
+        <option value="Patrick Cummins">Patrick Cummins</option>
+        <option value="Paul O'Shaughnessy @ Ceol na Coille 2017">Paul O'Shaughnessy @ Ceol na Coille 2017</option>
+        <option value="Paula Doohan & Liz Doherty">Paula Doohan & Liz Doherty</option>
+        <option value="Peter Laing">Peter Laing</option>
+        <option value="Raglan Session - Christopher Robin">Raglan Session - Christopher Robin</option>
+        <option value="Richard Tait">Richard Tait</option>
+        <option value="Roisin McGrory">Roisin McGrory</option>
+        <option value="Ruairidh Morrison and Melanie Brown">Ruairidh Morrison and Melanie Brown</option>
+        <option value="Sarah and Catherine Brown">Sarah and Catherine Brown</option>
+        <option value="Seamus Connolly and Boston College Libraries, 2016">Seamus Connolly and Boston College Libraries, 2016</option>
+        <option value="Sean Smyth and Donogh Hennessey">Sean Smyth and Donogh Hennessey</option>
+        <option value="Soundcloud audio posted by gdae-burke">Soundcloud audio posted by gdae-burke</option>
+        <option value="Steven McGlone, Ceol Aneas 2021">Steven McGlone, Ceol Aneas 2021</option>
+        <option value="Séan Ryan, Denis Ryan & Conor Moriarty">Séan Ryan, Denis Ryan & Conor Moriarty</option>
+        <option value="The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)">The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)</option>
+        <option value="UCC TradSoc">UCC TradSoc</option>
+        <option value="Wellington Session">Wellington Session</option>
+        <option value="Wynton Moore">Wynton Moore</option>
+        <option value="YouTube video">YouTube video</option>
+        <option value="Zoe Conway & Meabh O'Hare">Zoe Conway & Meabh O'Hare</option>
+        <option value="Zoe Conway, Tara Breen & Lydia Warnock">Zoe Conway, Tara Breen & Lydia Warnock</option>
+        <option value="archive.org">archive.org</option>
+
+    </datalist>
 
     <div class="licenceUsed">
     <h3>Licences Used</h3>
-    <p><small><strong>Adrian Barker and Ben Stephenson</strong> uses these licences:<br />
-© Adrian Barker and Ben Stephenson. All Rights Reserved. </small></p>
-<p><small><strong>Alistair Cuthill and Steve McGlone</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Angela Usher</strong> uses these licences:<br />
-© Angela Usher. All rights reserved. </small></p>
-<p><small><strong>Ballyscully</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Björn Persmats</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Bob Midden</strong> uses these licences:<br />
-© Bob Midden. All Rights Reserved. </small></p>
-<p><small><strong>Charlie Montgomery</strong> uses these licences:<br />
-© Charlie Montgomery. All Rights Reserved. YouTube Fair Use </small></p>
-<p><small><strong>Cian Kissane @ Ceol Aneas 2016</strong> uses these licences:<br />
-© Cian Kissane. All Rights Reserved. </small></p>
-<p><small><strong>Ciaran Kelly</strong> uses these licences:<br />
-© Ciaran Kelly. All Rights Reserved. Fair Use '© Ciaran Kelly. All Rights Reserved.' </small></p>
-<p><small><strong>Comhaltas Ceoltóirí Éireann</strong> uses these licences:<br />
-CC-BY-NC-2.5 </small></p>
-<p><small><strong>Connie O'Connell</strong> uses these licences:<br />
-© Connie O'Connell. All Rights Reserved. </small></p>
-<p><small><strong>De Danann</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Dennis Doody</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Dick Glasgow</strong> uses these licences:<br />
-© Dick Glasgow. All Rights Reserved. </small></p>
-<p><small><strong>Doug Makinson</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Dulahan Ireland</strong> uses these licences:<br />
-'© Dulahan Ireland. All Rights Reserved.' © Joe Greene. All Rights Reserved. </small></p>
-<p><small><strong>Duncan Davidson</strong> uses these licences:<br />
-© Duncan Davidson. All Rights Reserved. </small></p>
-<p><small><strong>Duncan Ross Cameron</strong> uses these licences:<br />
-© Duncan Ross Cameron. All Rights Reserved. '© Duncan Ross Cameron. All Rights Reserved.' </small></p>
-<p><small><strong>Eileen O'Brien @ Ceol Aneas 2019</strong> uses these licences:<br />
-© Eileen O'Brien. All Rights Reserved. </small></p>
-<p><small><strong>Emily Griffiths</strong> uses these licences:<br />
-CC-BY-NC-4.0 © Emily Griffiths. All Rights Reserved. </small></p>
-<p><small><strong>FARNE - Folk Archive Resource North East</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Fergal Scahill</strong> uses these licences:<br />
-© Fergal Scahill. All Rights Reserved. '© Fergal Scahill. All Rights Reserved.' </small></p>
-<p><small><strong>Four Winds</strong> uses these licences:<br />
-© Four Winds. All Rights Reserved. </small></p>
-<p><small><strong>Francine Gagnon</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Gilles Poutoux</strong> uses these licences:<br />
-© Gilles Poutoux. All Rights Reserved. </small></p>
-<p><small><strong>Gillian Boucher</strong> uses these licences:<br />
-© Gillian Boucher. All Rights Reserved. </small></p>
-<p><small><strong>Gillian Gillies</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Hannah Harris</strong> uses these licences:<br />
-© Hannah Harris. All Rights Reserved. </small></p>
-<p><small><strong>Ian Walsh</strong> uses these licences:<br />
-'© Ian Walsh. All Rights Reserved.' </small></p>
-<p><small><strong>James McNamara</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Jody Moran</strong> uses these licences:<br />
-© Jody Moran. All Rights Reserved. </small></p>
-<p><small><strong>Joel Anderson</strong> uses these licences:<br />
-© Joel Anderson. All Rights Reserved. </small></p>
-<p><small><strong>John Doherty</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>John McEvoy @ Ceol Aneas 2016</strong> uses these licences:<br />
-© John McEvoy. All Rights Reserved. </small></p>
-<p><small><strong>Johnny Cronin & Joe Burke</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Jonathan Berkahn</strong> uses these licences:<br />
-CC-BY-NC-2.5 </small></p>
-<p><small><strong>Katie Davis Henderson</strong> uses these licences:<br />
-© Katie Davis Henderson. All Rights Reserved. '© Katie Davis Henderson. All Rights Reserved.' </small></p>
-<p><small><strong>Kris Nielsen</strong> uses these licences:<br />
-Kris Nielsen All Rights Reserved </small></p>
-<p><small><strong>Luke Plumb @ Ceol Aneas 2017</strong> uses these licences:<br />
-© Luke Plumb. All Rights Reserved. </small></p>
-<p><small><strong>Maurice Bradley and Ciaran Kelly</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Mick Hanly and Micheal O Dhomhnaill</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Niall Kenny</strong> uses these licences:<br />
-'© Niall Kenny. All Rights Reserved.' </small></p>
-<p><small><strong>Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Pat Higgins</strong> uses these licences:<br />
-CC-BY-NC-4.0 YouTube Fair Use </small></p>
-<p><small><strong>Patrick Cummins</strong> uses these licences:<br />
-'© Patrick Cummins. All Rights Reserved.' </small></p>
-<p><small><strong>Paul O'Shaughnessy @ Ceol na Coille 2017</strong> uses these licences:<br />
-© Paul O'Shaughnessy. All Rights Reserved. </small></p>
-<p><small><strong>Paula Doohan & Liz Doherty</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Peter Laing</strong> uses these licences:<br />
-© Peter Laing. All Rights Reserved. </small></p>
-<p><small><strong>Raglan Session - Christopher Robin</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Richard Tait</strong> uses these licences:<br />
-CC-BY-NC-4.0 © Richard Tait. All Rights Reserved. '© Richard Tait. All Rights Reserved.' </small></p>
-<p><small><strong>Roisin McGrory</strong> uses these licences:<br />
-© Roisin McGrory. All Rights Reserved. </small></p>
-<p><small><strong>Ruairidh Morrison and Melanie Brown</strong> uses these licences:<br />
-CC-BY-NC-4.0 © Ruairidh Morrison and Melanie Brown. All Rights Reserved. </small></p>
-<p><small><strong>Sarah and Catherine Brown</strong> uses these licences:<br />
-© Sarah and Catherine Brown. All Rights Reserved. </small></p>
-<p><small><strong>Seamus Connolly and Boston College Libraries, 2016</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Sean Smyth and Donogh Hennessey</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Soundcloud audio posted by gdae-burke</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Steven McGlone, Ceol Aneas 2021</strong> uses these licences:<br />
-'© Steven McGlone. All Rights Reserved.' </small></p>
-<p><small><strong>Séan Ryan, Denis Ryan & Conor Moriarty</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)</strong> uses these licences:<br />
-© The Blarney Pilgrims Podcast. All Rights Reserved. </small></p>
-<p><small><strong>UCC TradSoc</strong> uses these licences:<br />
-Fair Use </small></p>
-<p><small><strong>Wellington Session</strong> uses these licences:<br />
-CC-BY-NC-4.0 </small></p>
-<p><small><strong>Wynton Moore</strong> uses these licences:<br />
-CC-BY-NC-2.5 </small></p>
-<p><small><strong>YouTube video</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Zoe Conway & Meabh O'Hare</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>Zoe Conway, Tara Breen & Lydia Warnock</strong> uses these licences:<br />
-YouTube Fair Use </small></p>
-<p><small><strong>archive.org</strong> uses these licences:<br />
-CC-BY-NC-3.0 </small></p>
+        <p><small><strong>Adrian Barker and Ben Stephenson</strong> uses these licences:<br />
+    © Adrian Barker and Ben Stephenson. All Rights Reserved. </small></p>
+    <p><small><strong>Alistair Cuthill and Steve McGlone</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Angela Usher</strong> uses these licences:<br />
+    © Angela Usher. All rights reserved. </small></p>
+    <p><small><strong>Ballyscully</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Björn Persmats</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Bob Midden</strong> uses these licences:<br />
+    © Bob Midden. All Rights Reserved. </small></p>
+    <p><small><strong>Charlie Montgomery</strong> uses these licences:<br />
+    © Charlie Montgomery. All Rights Reserved.     YouTube Fair Use </small></p>
+    <p><small><strong>Cian Kissane @ Ceol Aneas 2016</strong> uses these licences:<br />
+    © Cian Kissane. All Rights Reserved. </small></p>
+    <p><small><strong>Ciaran Kelly</strong> uses these licences:<br />
+    © Ciaran Kelly. All Rights Reserved.     Fair Use </small></p>
+    <p><small><strong>Comhaltas Ceoltóirí Éireann</strong> uses these licences:<br />
+    CC-BY-NC-2.5 </small></p>
+    <p><small><strong>Connie O'Connell</strong> uses these licences:<br />
+    © Connie O'Connell. All Rights Reserved. </small></p>
+    <p><small><strong>De Danann</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Dennis Doody</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Dick Glasgow</strong> uses these licences:<br />
+    © Dick Glasgow. All Rights Reserved. </small></p>
+    <p><small><strong>Doug Makinson</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Dulahan Ireland</strong> uses these licences:<br />
+    © Dulahan Ireland. All Rights Reserved.     © Joe Greene. All Rights Reserved. </small></p>
+    <p><small><strong>Duncan Davidson</strong> uses these licences:<br />
+    © Duncan Davidson. All Rights Reserved. </small></p>
+    <p><small><strong>Duncan Ross Cameron</strong> uses these licences:<br />
+    © Duncan Ross Cameron. All Rights Reserved. </small></p>
+    <p><small><strong>Eileen O'Brien @ Ceol Aneas 2019</strong> uses these licences:<br />
+    © Eileen O'Brien. All Rights Reserved. </small></p>
+    <p><small><strong>Emily Griffiths</strong> uses these licences:<br />
+    CC-BY-NC-4.0     © Emily Griffiths. All Rights Reserved. </small></p>
+    <p><small><strong>FARNE - Folk Archive Resource North East</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Fergal Scahill</strong> uses these licences:<br />
+    © Fergal Scahill. All Rights Reserved. </small></p>
+    <p><small><strong>Four Winds</strong> uses these licences:<br />
+    © Four Winds. All Rights Reserved. </small></p>
+    <p><small><strong>Francine Gagnon</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Gilles Poutoux</strong> uses these licences:<br />
+    © Gilles Poutoux. All Rights Reserved. </small></p>
+    <p><small><strong>Gillian Boucher</strong> uses these licences:<br />
+    © Gillian Boucher. All Rights Reserved. </small></p>
+    <p><small><strong>Gillian Gillies</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Hannah Harris</strong> uses these licences:<br />
+    © Hannah Harris. All Rights Reserved. </small></p>
+    <p><small><strong>Ian Walsh</strong> uses these licences:<br />
+    © Ian Walsh. All Rights Reserved. </small></p>
+    <p><small><strong>James McNamara</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Jody Moran</strong> uses these licences:<br />
+    © Jody Moran. All Rights Reserved. </small></p>
+    <p><small><strong>Joel Anderson</strong> uses these licences:<br />
+    © Joel Anderson. All Rights Reserved. </small></p>
+    <p><small><strong>John Doherty</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>John McEvoy @ Ceol Aneas 2016</strong> uses these licences:<br />
+    © John McEvoy. All Rights Reserved. </small></p>
+    <p><small><strong>Johnny Cronin & Joe Burke</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Jonathan Berkahn</strong> uses these licences:<br />
+    CC-BY-NC-2.5 </small></p>
+    <p><small><strong>Katie Davis Henderson</strong> uses these licences:<br />
+    © Katie Davis Henderson. All Rights Reserved. </small></p>
+    <p><small><strong>Kris Nielsen</strong> uses these licences:<br />
+    © Kris Nielsen All Rights Reserved </small></p>
+    <p><small><strong>Luke Plumb @ Ceol Aneas 2017</strong> uses these licences:<br />
+    © Luke Plumb. All Rights Reserved. </small></p>
+    <p><small><strong>Maurice Bradley and Ciaran Kelly</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Mick Hanly and Micheal O Dhomhnaill</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Niall Kenny</strong> uses these licences:<br />
+    © Niall Kenny. All Rights Reserved. </small></p>
+    <p><small><strong>Paddy Fahy, Aughrim, Co Galway, fiddle, Recorded by Chris Delaney (a US research student, during a field trip to Ireland)</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Pat Higgins</strong> uses these licences:<br />
+    CC-BY-NC-4.0     YouTube Fair Use </small></p>
+    <p><small><strong>Patrick Cummins</strong> uses these licences:<br />
+    © Patrick Cummins. All Rights Reserved. </small></p>
+    <p><small><strong>Paul O'Shaughnessy @ Ceol na Coille 2017</strong> uses these licences:<br />
+    © Paul O'Shaughnessy. All Rights Reserved. </small></p>
+    <p><small><strong>Paula Doohan & Liz Doherty</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Peter Laing</strong> uses these licences:<br />
+    © Peter Laing. All Rights Reserved. </small></p>
+    <p><small><strong>Raglan Session - Christopher Robin</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Richard Tait</strong> uses these licences:<br />
+    CC-BY-NC-4.0     © Richard Tait. All Rights Reserved. </small></p>
+    <p><small><strong>Roisin McGrory</strong> uses these licences:<br />
+    © Roisin McGrory. All Rights Reserved. </small></p>
+    <p><small><strong>Ruairidh Morrison and Melanie Brown</strong> uses these licences:<br />
+    CC-BY-NC-4.0     © Ruairidh Morrison and Melanie Brown. All Rights Reserved. </small></p>
+    <p><small><strong>Sarah and Catherine Brown</strong> uses these licences:<br />
+    © Sarah and Catherine Brown. All Rights Reserved. </small></p>
+    <p><small><strong>Seamus Connolly and Boston College Libraries, 2016</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Sean Smyth and Donogh Hennessey</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Soundcloud audio posted by gdae-burke</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Steven McGlone, Ceol Aneas 2021</strong> uses these licences:<br />
+    © Steven McGlone. All Rights Reserved. </small></p>
+    <p><small><strong>Séan Ryan, Denis Ryan & Conor Moriarty</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>The Blarney Pilgrims Podcast - Ado Barker Interview (Fiddle)</strong> uses these licences:<br />
+    © The Blarney Pilgrims Podcast. All Rights Reserved. </small></p>
+    <p><small><strong>UCC TradSoc</strong> uses these licences:<br />
+    Fair Use </small></p>
+    <p><small><strong>Wellington Session</strong> uses these licences:<br />
+    CC-BY-NC-4.0 </small></p>
+    <p><small><strong>Wynton Moore</strong> uses these licences:<br />
+    CC-BY-NC-2.5 </small></p>
+    <p><small><strong>YouTube video</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Zoe Conway & Meabh O'Hare</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>Zoe Conway, Tara Breen & Lydia Warnock</strong> uses these licences:<br />
+    YouTube Fair Use </small></p>
+    <p><small><strong>archive.org</strong> uses these licences:<br />
+    CC-BY-NC-3.0 </small></p>
 
     </div>
+    
     <label>MP3 licence:</label>
-    <select id="mp3_licence-box" name="mp3_licence">
-        <option value="">None</option>
-        <option value="&#x27;© Ciaran Kelly. All Rights Reserved.&#x27;">'© Ciaran Kelly. All Rights Reserved.'</option>
-    <option value="&#x27;© Dulahan Ireland. All Rights Reserved.&#x27;">'© Dulahan Ireland. All Rights Reserved.'</option>
-    <option value="&#x27;© Duncan Ross Cameron. All Rights Reserved.&#x27;">'© Duncan Ross Cameron. All Rights Reserved.'</option>
-    <option value="&#x27;© Fergal Scahill. All Rights Reserved.&#x27;">'© Fergal Scahill. All Rights Reserved.'</option>
-    <option value="&#x27;© Ian Walsh. All Rights Reserved.&#x27;">'© Ian Walsh. All Rights Reserved.'</option>
-    <option value="&#x27;© Katie Davis Henderson. All Rights Reserved.&#x27;">'© Katie Davis Henderson. All Rights Reserved.'</option>
-    <option value="&#x27;© Niall Kenny. All Rights Reserved.&#x27;">'© Niall Kenny. All Rights Reserved.'</option>
-    <option value="&#x27;© Patrick Cummins. All Rights Reserved.&#x27;">'© Patrick Cummins. All Rights Reserved.'</option>
-    <option value="&#x27;© Richard Tait. All Rights Reserved.&#x27;">'© Richard Tait. All Rights Reserved.'</option>
-    <option value="&#x27;© Steven McGlone. All Rights Reserved.&#x27;">'© Steven McGlone. All Rights Reserved.'</option>
-    <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/2.5/&quot;&gt;CC-BY-NC-2.5&lt;/a&gt;">CC-BY-NC-2.5</option>
-    <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/3.0/&quot;&gt;CC-BY-NC-3.0&lt;/a&gt;">CC-BY-NC-3.0</option>
-    <option value="&lt;a href=&quot;https://creativecommons.org/licenses/by-nc/4.0/&quot;&gt;CC-BY-NC-4.0&lt;/a&gt;">CC-BY-NC-4.0</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/yt/copyright/fair-use.html&quot;&gt;Fair Use&lt;/a&gt;">Fair Use</option>
-    <option value="Kris Nielsen All Rights Reserved">Kris Nielsen All Rights Reserved</option>
-    <option value="&lt;a href=&quot;https://www.youtube.com/yt/copyright/fair-use.html&quot;&gt;YouTube Fair Use&lt;/a&gt;">YouTube Fair Use</option>
-    <option value="&quot;© Adrian Barker and Ben Stephenson. All Rights Reserved.&quot;">© Adrian Barker and Ben Stephenson. All Rights Reserved.</option>
-    <option value="&quot;© Angela Usher. All rights reserved.&quot;">© Angela Usher. All rights reserved.</option>
-    <option value="&quot;© Bob Midden. All Rights Reserved.&quot;">© Bob Midden. All Rights Reserved.</option>
-    <option value="&quot;© Charlie Montgomery. All Rights Reserved.&quot;">© Charlie Montgomery. All Rights Reserved.</option>
-    <option value="&quot;© Cian Kissane. All Rights Reserved.&quot;">© Cian Kissane. All Rights Reserved.</option>
-    <option value="&quot;© Ciaran Kelly. All Rights Reserved.&quot;">© Ciaran Kelly. All Rights Reserved.</option>
-    <option value="&quot;© Connie O&#x27;Connell. All Rights Reserved.&quot;">© Connie O'Connell. All Rights Reserved.</option>
-    <option value="&quot;© Dick Glasgow. All Rights Reserved.&quot;">© Dick Glasgow. All Rights Reserved.</option>
-    <option value="&quot;© Duncan Davidson. All Rights Reserved.&quot;">© Duncan Davidson. All Rights Reserved.</option>
-    <option value="&quot;© Duncan Ross Cameron. All Rights Reserved.&quot;">© Duncan Ross Cameron. All Rights Reserved.</option>
-    <option value="&quot;© Eileen O&#x27;Brien. All Rights Reserved.&quot;">© Eileen O'Brien. All Rights Reserved.</option>
-    <option value="&quot;© Emily Griffiths. All Rights Reserved.&quot;">© Emily Griffiths. All Rights Reserved.</option>
-    <option value="&quot;© Fergal Scahill. All Rights Reserved.&quot;">© Fergal Scahill. All Rights Reserved.</option>
-    <option value="&quot;© Four Winds. All Rights Reserved.&quot;">© Four Winds. All Rights Reserved.</option>
-    <option value="&quot;© Gilles Poutoux. All Rights Reserved.&quot;">© Gilles Poutoux. All Rights Reserved.</option>
-    <option value="&quot;© Gillian Boucher. All Rights Reserved.&quot;">© Gillian Boucher. All Rights Reserved.</option>
-    <option value="&quot;© Hannah Harris. All Rights Reserved.&quot;">© Hannah Harris. All Rights Reserved.</option>
-    <option value="&quot;© Jody Moran. All Rights Reserved.&quot;">© Jody Moran. All Rights Reserved.</option>
-    <option value="&quot;© Joe Greene. All Rights Reserved.&quot;">© Joe Greene. All Rights Reserved.</option>
-    <option value="&quot;© Joel Anderson. All Rights Reserved.&quot;">© Joel Anderson. All Rights Reserved.</option>
-    <option value="&quot;© John McEvoy. All Rights Reserved.&quot;">© John McEvoy. All Rights Reserved.</option>
-    <option value="&quot;© Katie Davis Henderson. All Rights Reserved.&quot;">© Katie Davis Henderson. All Rights Reserved.</option>
-    <option value="&quot;© Luke Plumb. All Rights Reserved.&quot;">© Luke Plumb. All Rights Reserved.</option>
-    <option value="&quot;© Paul O&#x27;Shaughnessy. All Rights Reserved.&quot;">© Paul O'Shaughnessy. All Rights Reserved.</option>
-    <option value="&quot;© Peter Laing. All Rights Reserved.&quot;">© Peter Laing. All Rights Reserved.</option>
-    <option value="&quot;© Richard Tait. All Rights Reserved.&quot;">© Richard Tait. All Rights Reserved.</option>
-    <option value="&quot;© Roisin McGrory. All Rights Reserved.&quot;">© Roisin McGrory. All Rights Reserved.</option>
-    <option value="&quot;© Ruairidh Morrison and Melanie Brown. All Rights Reserved.&quot;">© Ruairidh Morrison and Melanie Brown. All Rights Reserved.</option>
-    <option value="&quot;© Sarah and Catherine Brown. All Rights Reserved.&quot;">© Sarah and Catherine Brown. All Rights Reserved.</option>
-    <option value="&quot;© The Blarney Pilgrims Podcast. All Rights Reserved.&quot;">© The Blarney Pilgrims Podcast. All Rights Reserved.</option>
-    <option value="ENTER YOUR NEW MP3 LICENCE HERE">Other</option>
-    </select>
+    <input type="text" name="mp3_licence" id="mp3_licence-box" list="mp3_licence">
+    <datalist id="mp3_licence">
+        <option value="CC-BY-NC-2.5">CC-BY-NC-2.5</option>
+    <option value="CC-BY-NC-3.0">CC-BY-NC-3.0</option>
+    <option value="CC-BY-NC-4.0">CC-BY-NC-4.0</option>
+    <option value="Fair Use">Fair Use</option>
+    <option value="YouTube Fair Use">YouTube Fair Use</option>
+    <option value="© Adrian Barker and Ben Stephenson. All Rights Reserved.">© Adrian Barker and Ben Stephenson. All Rights Reserved.</option>
+    <option value="© Angela Usher. All rights reserved.">© Angela Usher. All rights reserved.</option>
+    <option value="© Bob Midden. All Rights Reserved.">© Bob Midden. All Rights Reserved.</option>
+    <option value="© Charlie Montgomery. All Rights Reserved.">© Charlie Montgomery. All Rights Reserved.</option>
+    <option value="© Cian Kissane. All Rights Reserved.">© Cian Kissane. All Rights Reserved.</option>
+    <option value="© Ciaran Kelly. All Rights Reserved.">© Ciaran Kelly. All Rights Reserved.</option>
+    <option value="© Connie O'Connell. All Rights Reserved.">© Connie O'Connell. All Rights Reserved.</option>
+    <option value="© Dick Glasgow. All Rights Reserved.">© Dick Glasgow. All Rights Reserved.</option>
+    <option value="© Dulahan Ireland. All Rights Reserved.">© Dulahan Ireland. All Rights Reserved.</option>
+    <option value="© Duncan Davidson. All Rights Reserved.">© Duncan Davidson. All Rights Reserved.</option>
+    <option value="© Duncan Ross Cameron. All Rights Reserved.">© Duncan Ross Cameron. All Rights Reserved.</option>
+    <option value="© Eileen O'Brien. All Rights Reserved.">© Eileen O'Brien. All Rights Reserved.</option>
+    <option value="© Emily Griffiths. All Rights Reserved.">© Emily Griffiths. All Rights Reserved.</option>
+    <option value="© Fergal Scahill. All Rights Reserved.">© Fergal Scahill. All Rights Reserved.</option>
+    <option value="© Four Winds. All Rights Reserved.">© Four Winds. All Rights Reserved.</option>
+    <option value="© Gilles Poutoux. All Rights Reserved.">© Gilles Poutoux. All Rights Reserved.</option>
+    <option value="© Gillian Boucher. All Rights Reserved.">© Gillian Boucher. All Rights Reserved.</option>
+    <option value="© Hannah Harris. All Rights Reserved.">© Hannah Harris. All Rights Reserved.</option>
+    <option value="© Ian Walsh. All Rights Reserved.">© Ian Walsh. All Rights Reserved.</option>
+    <option value="© Jody Moran. All Rights Reserved.">© Jody Moran. All Rights Reserved.</option>
+    <option value="© Joe Greene. All Rights Reserved.">© Joe Greene. All Rights Reserved.</option>
+    <option value="© Joel Anderson. All Rights Reserved.">© Joel Anderson. All Rights Reserved.</option>
+    <option value="© John McEvoy. All Rights Reserved.">© John McEvoy. All Rights Reserved.</option>
+    <option value="© Katie Davis Henderson. All Rights Reserved.">© Katie Davis Henderson. All Rights Reserved.</option>
+    <option value="© Kris Nielsen All Rights Reserved">© Kris Nielsen All Rights Reserved</option>
+    <option value="© Luke Plumb. All Rights Reserved.">© Luke Plumb. All Rights Reserved.</option>
+    <option value="© Niall Kenny. All Rights Reserved.">© Niall Kenny. All Rights Reserved.</option>
+    <option value="© Patrick Cummins. All Rights Reserved.">© Patrick Cummins. All Rights Reserved.</option>
+    <option value="© Paul O'Shaughnessy. All Rights Reserved.">© Paul O'Shaughnessy. All Rights Reserved.</option>
+    <option value="© Peter Laing. All Rights Reserved.">© Peter Laing. All Rights Reserved.</option>
+    <option value="© Richard Tait. All Rights Reserved.">© Richard Tait. All Rights Reserved.</option>
+    <option value="© Roisin McGrory. All Rights Reserved.">© Roisin McGrory. All Rights Reserved.</option>
+    <option value="© Ruairidh Morrison and Melanie Brown. All Rights Reserved.">© Ruairidh Morrison and Melanie Brown. All Rights Reserved.</option>
+    <option value="© Sarah and Catherine Brown. All Rights Reserved.">© Sarah and Catherine Brown. All Rights Reserved.</option>
+    <option value="© Steven McGlone. All Rights Reserved.">© Steven McGlone. All Rights Reserved.</option>
+    <option value="© The Blarney Pilgrims Podcast. All Rights Reserved.">© The Blarney Pilgrims Podcast. All Rights Reserved.</option>
+    </datalist>
 
     <label>MP3 url:</label>
-    <input type="text" id="mp3_url-box" name="mp3_url" value="">
+    <input type="text" id="mp3_url-box" name="mp3_url" value="" placeholder="e.g. https://www.youtube.com/watch?v=Hzi7OhSzysw&t=126">
 
     <label>Alternative MP3 url:</label>
-    <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="">
+    <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="" placeholder="e.g. https://media.comhaltas.ie/video/cl277/cl277_6_Med.mp4">
 
-    <label>Source:<sup>*</sup></label>
-    <select id="source-box" name="source">
-    <option value="Wellington">Wellington</option>
-        <option value="Arrowtown">Arrowtown</option>
-    <option value="Ceol Aneas">Ceol Aneas</option>
-    <option value="Charlie Montgomery">Charlie Montgomery</option>
-    <option value="Dunedin">Dunedin</option>
-    <option value="House recording">House recording</option>
-    <option value="Old Friends">Old Friends</option>
-    <option value="Raglan">Raglan</option>
-    <option value="Steven McGlone">Steven McGlone</option>
-    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
-    </select>
-
-    <p></p>
 
     <h3>ABC version of the tune</h3>
 
     <label>ABC source:</label>
-    <select id="abc_source-box" name="abc_source">
+    <input type="text" name="abc_source" id="abc_source-box" list="abc_source">
+    <datalist id="abc_source">
     <option value="The Session">The Session</option>
         <option value="Angela Usher">Angela Usher</option>
     <option value="Charlie Montgomery">Charlie Montgomery</option>
@@ -393,11 +378,10 @@ CC-BY-NC-3.0 </small></p>
     <option value="Steven McGlone">Steven McGlone</option>
     <option value="Séamus Connolly Collection">Séamus Connolly Collection</option>
     <option value="The Mandolin Cafe">The Mandolin Cafe</option>
-    <option value="ENTER YOUR NEW SOURCE HERE">Other</option>
-    </select>
+    </datalist>
 
     <label>ABC url:</label>
-    <input type="text" id="abc_url-box" name="abc_url" value="">
+    <input type="text" id="abc_url-box" name="abc_url" value="" placeholder="e.g. https://thesession.org/tunes/1555">
 
     <label>ABC:<sup>*</sup></label>
     <textarea id="abc-box" name="abc" class="abcText"

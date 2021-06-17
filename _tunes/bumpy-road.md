@@ -13,7 +13,7 @@ mp3_file: /mp3/bumpy-road.mp3
 repeats: 2
 parts: AABB
 mp3_source: Kris Nielsen
-mp3_licence: Kris Nielsen All Rights Reserved
+mp3_licence: "© Kris Nielsen All Rights Reserved."
 mp3_url:
 alt_mp3_url:
 source: Wellington
