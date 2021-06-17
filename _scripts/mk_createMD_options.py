@@ -199,6 +199,8 @@ with open(optionsFile, 'w') as outfile:
     <label>Alternative MP3 url:</label>
     <input type="text" id="alt_mp3_url-box" name="alt_mp3_url" value="" placeholder="e.g. https://media.comhaltas.ie/video/cl277/cl277_6_Med.mp4">
 
+    <p></p>
+    <hr>
 
     <h3>ABC version of the tune</h3>
 
