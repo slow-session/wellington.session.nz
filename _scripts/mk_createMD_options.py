@@ -113,10 +113,10 @@ with open(optionsFile, 'w') as outfile:
     <label>Rhythm:<sup>*</sup></label>
     <input type="text" id="rhythm-box" name="rhythm" list="rhythm" value="">
     <datalist id="rhythm">
-    """)
+""")
 
     for key in sorted(rhythmDict.keys()):
-        outfile.write('    <option value="' + html.escape(rhythmDict[key], quote=True) + '">' + key + '</option>\n')
+        outfile.write('        <option value="' + html.escape(rhythmDict[key], quote=True) + '">' + key + '</option>\n')
 
     outfile.write("""
     </datalist>
@@ -162,8 +162,7 @@ with open(optionsFile, 'w') as outfile:
     <label>MP3 source:</label>
     <input type="text" id="mp3_source-box" name="mp3_source" list="mp3_source">
     <datalist id="mp3_source">
-        <option value="">None</option>
-    """)
+""")
     for key in sorted(mp3sourceDict.keys()):
         outfile.write('        <option value="' + key + '">' + key + '</option>\n')
     
@@ -172,7 +171,7 @@ with open(optionsFile, 'w') as outfile:
 
     <div class="licenceUsed">
     <h3>Licences Used</h3>
-    """)
+""")
 
     for key in sorted(licenceUsedBy.keys()):
         
@@ -187,7 +186,7 @@ with open(optionsFile, 'w') as outfile:
     <label>MP3 licence:</label>
     <input type="text" name="mp3_licence" id="mp3_licence-box" list="mp3_licence">
     <datalist id="mp3_licence">
-    """)
+""")
 
     for key in sorted(mp3licenceDict.keys()):
         outfile.write('    <option value="' + key + '">' + key + '</option>\n')
@@ -207,7 +206,7 @@ with open(optionsFile, 'w') as outfile:
     <input type="text" name="abc_source" id="abc_source-box" list="abc_source">
     <datalist id="abc_source">
     <option value="The Session">The Session</option>
-    """)
+""")
 
     for key in sorted(abcsourceDict.keys()):
         if 'The Session' in key:
@@ -225,7 +224,7 @@ with open(optionsFile, 'w') as outfile:
     </textarea>
 
     <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
-    </form>
-    """)
+</form>
+""")
 
     outfile.write('<!-- End of ' + os.path.basename(sys.argv[0])  +' code -->\n')
