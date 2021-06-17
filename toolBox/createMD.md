@@ -108,22 +108,6 @@ function showForm(textArea, myForm) {
             case 'key':
                 obj[item.name] = wssTools.toTitleCase(item.value);
                 break;
-            case 'location':
-                if (locationNotProcessed) {
-                    obj[item.name] = '';
-                    var locationString = '';
-                    var locationArray = wssTools.getCheckedCheckboxesFor(item.name);
-                    for (var j = 0; j < locationArray.length; j++) {   
-                        locationString += locationArray[j] + ' ';
-                    }
-                    if (locationString) {
-                        obj[item.name] = locationString;
-                    }
-                    locationNotProcessed = 0;
-                } else {
-                    continue;
-                }
-                break;
             case 'date':
                 obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
                 break;
