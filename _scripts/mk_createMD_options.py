@@ -133,7 +133,7 @@ with open(optionsFile, 'w') as outfile:
     <h3>Recorded version of the tune</h3>
 
     <label>MP3 file available</label>
-    <input type="checkbox" name="mp3_file" value="yes" checked="checked">
+    <input type="checkbox" name="mp3_file" checked>
     
     <p></p>
 

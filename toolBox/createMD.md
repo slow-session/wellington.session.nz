@@ -128,7 +128,7 @@ function showForm(textArea, myForm) {
                 obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
                 break;
             case 'mp3_file':
-                if (item.value == 'yes') {
+                if (item.checked) {
                     // strip leading 'The ' from title
                     obj[item.name] = '/mp3/' + wssTools.slugify(obj["title"].replace(/^The /, '')) + '.mp3';
                 } else {
