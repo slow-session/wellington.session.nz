@@ -40,7 +40,7 @@ permalink: /createMD/
 
 <style type="text/css">
     .container {
-        width: 500px;
+        width: 100%;
         clear: both;
     }
     .container input {
@@ -49,12 +49,12 @@ permalink: /createMD/
         clear: both;
     }
     .container input[type=checkbox] {
-        width: 5%;
-        margin-bottom: 5px;
+        width: 10%;
+        margin-bottom: 10px;
         float: left;
         clear: right;
     }
-    .container select {
+    .container datalist {
         width: 100%;
         margin-bottom: 5px;
         clear: both;
