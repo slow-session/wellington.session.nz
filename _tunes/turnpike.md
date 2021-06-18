@@ -1,30 +1,29 @@
 ---
-title: Caherlistrane
-titleID: caherlistrane.md
+title: The Turnpike
+titleID: turnpike.md
 key: Amaj
-rhythm: jig
-notes: 
+rhythm: reel
+notes:
 date: 2021-06-18
-regtuneoftheweek: 
-slowtuneoftheweek: 
-mp3_file: /mp3/tcaherlistrane.mp3
+regtuneoftheweek:
+slowtuneoftheweek:
+mp3_file: /mp3/the-turnpike.mp3
 repeats: 1
-parts: AABBCC
+parts: AABB
 mp3_source: Steven McGlone, Ceol Aneas 2021
 mp3_licence: © Steven McGlone. All Rights Reserved.
-mp3_url: 
-alt_mp3_url: 
+mp3_url:
+alt_mp3_url:
 abc_source: Steven McGlone
-abc_url: 
+abc_url:
 abc: |
-    T: Caherlistrane
-    M:6/8
-    L:1/8
-    R:jig
-    K:Amaj
-    A2 B|:c2c BAF|EAF ECE|FEC A,B,C|EFA BAB|
-    c2c BAF|EAF ECE|FEC A,B,C|EAG A2B:|
-    |:c2c e2e|fec B2B|cec BAF|EFA BAB|
-    c2c ece|fec B2B|cec BAF|[1 EAG A2B:|[2 EAG A3|]
-
+    T: The Turnpike
+    M: 4/4
+    L: 1/8
+    R: reel
+    K: Amaj
+    A2cA BcAF|E2EF ABce|a2ga faec|dBcA BAFE|
+    A2cA BcAF|E2EF ABce|a2ga faed|cABc A4:|
+    E2GE BEGB|A2cA eAcA|B2^dB fBdf|e2ge befg|
+    agae faec|defg a2ga|bgaf gece|dBGB A4:|
 ---

@@ -1,30 +1,29 @@
 ---
-title: Caherlistrane
-titleID: caherlistrane.md
-key: Amaj
-rhythm: jig
-notes: 
+title: Farewell to Connaught
+titleID: farewell-to-connaught.md
+key: Dmix
+rhythm: reel
+notes:
 date: 2021-06-18
-regtuneoftheweek: 
-slowtuneoftheweek: 
-mp3_file: /mp3/tcaherlistrane.mp3
+regtuneoftheweek:
+slowtuneoftheweek:
+mp3_file: /mp3/farewell-to-connaught.mp3
 repeats: 1
 parts: AABBCC
 mp3_source: Steven McGlone, Ceol Aneas 2021
 mp3_licence: © Steven McGlone. All Rights Reserved.
-mp3_url: 
-alt_mp3_url: 
+mp3_url:
+alt_mp3_url:
 abc_source: Steven McGlone
-abc_url: 
+abc_url:
 abc: |
-    T: Caherlistrane
-    M:6/8
-    L:1/8
-    R:jig
-    K:Amaj
-    A2 B|:c2c BAF|EAF ECE|FEC A,B,C|EFA BAB|
-    c2c BAF|EAF ECE|FEC A,B,C|EAG A2B:|
-    |:c2c e2e|fec B2B|cec BAF|EFA BAB|
-    c2c ece|fec B2B|cec BAF|[1 EAG A2B:|[2 EAG A3|]
-
+    T: Farewell To Connaught
+    M: 4/4
+    L: 1/8
+    R: reel
+    K: Dmix
+    |: D2 FD FGAB | c2cd cA G2 | Add^c d2 cd | ed^cd e^cAF |
+    D2 FD FGAB | c2cd cA G2 | ABAG EGAB | cAGE ED D2 :|
+    |: eggf g2 ed | cded cA A2 | eaag a2ag | eaag ed^cd |
+    eggf g2 ed | cded dAAG | ABAG EGAB | cAGE ED D2 :|
 ---
