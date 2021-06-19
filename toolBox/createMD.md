@@ -3,17 +3,10 @@ layout: page
 title: Create MD File
 permalink: /createMD/
 ---
+<div class="container-createMD">
+{% include createMD_options.html%}
+</div>
 
-<div class="row"></div>
-
-<fieldset style="display: inline-block; vertical-align: middle;">
-  <legend>Enter the MD file details:</legend>
-  <div class="container">
-  {% include createMD_options.html%}
-  </div>
-</fieldset>
-
-<div class="row"></div>
 
 <div id="mdModal" class="modal">
     <!-- Modal content -->
@@ -21,53 +14,21 @@ permalink: /createMD/
         <span class="close">×</span>
         <h2>Check the MD file details:</h2>
         <div class="container">
-            <textarea id="md" class="abcText"
-            rows="20" spellcheck="false">
-            </textarea>
+            <textarea id="mdTextArea" class="abcText" rows="20" spellcheck="false"></textarea>
             <!-- Allow the user to save their MD-->
-            <form>
-                <span title="Download the MD data you've entered. Don't lose your work!">      
-                    <input value='Download MD' type='button' class="filterButton"         onclick='wssTools.downloadFile(document.getElementById("filename").value, document.getElementById("md").value)' />
-                </span>
-            </form>
+            <span title="Download the MD data you've entered. Don't lose your work!">      
+                <input value='Download MD' type='button' class="filterButton" onclick='wssTools.downloadFile(mdFileName, document.getElementById("mdTextArea").value)' />
+            </span>
         </div>
     </div>
 </div>
 
-<div class="row"></div>
-
-<textarea id="filename" class="abcSource"></textarea>
-
-<style type="text/css">
-    .container {
-        width: 100%;
-        clear: both;
-    }
-    .container input {
-        width: 100%;
-        margin-bottom: 5px;
-        clear: both;
-    }
-    .container input[type=checkbox] {
-        width: 10%;
-        margin-bottom: 10px;
-        float: left;
-        clear: right;
-    }
-    .container datalist {
-        width: 100%;
-        margin-bottom: 5px;
-        clear: both;
-    }
-
-</style>
-
 <script>
 // Get the modal
-var modal = document.getElementById("mdModal");
+let modal = document.getElementById("mdModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -81,66 +42,6 @@ window.onclick = function(event) {
     }
 }
 
-function showForm(textArea, myForm) {
-    var elements = document.getElementById(myForm).elements;
-    var obj = {};
-    var date = new Date();
-    var day = date.getDate();
-    var month = date.getMonth() + 1;
-    var year = date.getFullYear();
-    var locationNotProcessed = 1;
-
-    // Display the output in the modal area
-    modal.style.display = "block";
-
-    document.getElementById(textArea).innerHTML = '---\n';
-    for(var i = 0 ; i < elements.length ; i++){
-        var item = elements.item(i);
-
-        if (item.value == "Show MD File") {
-            continue;
-        }
-        switch(item.name) {
-            case 'titleID':
-                // strip leading 'The ' from title
-                obj[item.name] = wssTools.slugify(obj["title"].replace(/^The /, '')) + '.md';
-                break;
-            case 'key':
-                obj[item.name] = wssTools.toTitleCase(item.value);
-                break;
-            case 'date':
-                obj[item.name] = year + '-' + (month<=9 ? '0' + month : month) + '-' + (day <= 9 ? '0' + day : day)
-                break;
-            case 'mp3_file':
-                if (item.checked) {
-                    // strip leading 'The ' from title
-                    obj[item.name] = '/mp3/' + wssTools.slugify(obj["title"].replace(/^The /, '')) + '.mp3';
-                } else {
-                    obj[item.name] = '';
-                }
-                break;
-            case 'abc':
-                var lines = item.value.split('\n');
-                obj[item.name] = '|\n';
-                for (var j = 0; j < lines.length; j++) {
-                    // Get key from ABC here!!
-                    if(lines[j].includes("K:", 0)) {
-                        abckey = lines[j].split(':')[1].trim();
-                        if (obj['key'] != abckey) {
-                            alert('md key: ' + obj['key'] + ' != abc key: ' + abckey);
-                        }
-                    }
-                    obj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
-                }
-                break;
-            default:
-                obj[item.name] = item.value;
-        }
-        document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
-    }
-    document.getElementById(textArea).innerHTML += '---\n';
-
-    // Set the filename for downloading
-    document.getElementById("filename").innerHTML = obj["titleID"]
-}
+// output file name - we'll set this later
+let mdFileName = "";
 </script>

@@ -86,6 +86,76 @@ const wssTools = (function () {
         }
     }
 
+    function showMDform(myForm, textArea) {
+        let elements = document.getElementById(myForm).elements;
+        let obj = {};
+        
+        let dateTime = new Date();
+        let year = dateTime.getFullYear();
+        let month = dateTime.getMonth() + 1;
+        let day = dateTime.getDate();
+        // Pad these with leading '0' if needed
+        month = month.toString().padStart(2, 0);
+        day = day.toString().padStart(2, 0);
+        let dateStamp = `${year}-${month}-${day}`;
+
+        // Display the output in the modal area
+        modal.style.display = "block";
+
+        let titleSlug = '';
+        
+        document.getElementById(textArea).innerHTML = '---\n';
+        for (let i = 0; i < elements.length; i++) {
+            let item = elements.item(i);
+
+            if (item.value == "Show MD File") {
+                continue;
+            }
+            switch (item.name) {
+                case 'title':
+                    obj[item.name] = item.value;
+                    // strip leading 'The ' from title
+                    titleSlug = slugify(obj["title"].replace(/^The /, ''));
+                    break;
+                case 'titleID':
+                    obj[item.name] = `${titleSlug}.md`;
+                    mdFileName = `${titleSlug}.md`;
+                    break;
+                case 'key':
+                    obj[item.name] = toTitleCase(item.value);
+                    break;
+                case 'date':
+                    obj[item.name] = dateStamp;
+                    break;
+                case 'mp3_file':
+                    if (item.checked) {    
+                        obj[item.name] = `/mp3/${titleSlug}.mp3`
+                    } else {
+                        obj[item.name] = '';
+                    }
+                    break;
+                case 'abc':
+                    obj[item.name] = '|\n';
+                    let lines = item.value.split('\n');
+                    for (let j = 0; j < lines.length; j++) {
+                        obj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
+                    }
+                    let abckey = getABCheaderValue("K:", item.value);
+                    if (obj['key'] != abckey) {
+                        alert('md key: ' + obj['key'] + ' != abc key: ' + abckey);
+                    }
+                    break;
+                default:
+                    obj[item.name] = item.value;
+            }
+            document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
+        }
+        document.getElementById(textArea).innerHTML += '---\n';
+
+        // Set the filename for downloading
+        document.getElementById("filename").innerHTML = obj["titleID"]
+    }
+
     function getABCheaderValue(key, tuneABC) {
         // Extract the value of one of the ABC keywords e.g. T: Out on the Ocean
         const KEYWORD_PATTERN = new RegExp(`^\\s*${key}`);
@@ -101,7 +171,7 @@ const wssTools = (function () {
 
     function enterSearch(searchBox, submitSearch) {
         let enterSearch = document.getElementById(searchBox);
-        enterSearch.addEventListener("keyup", function(event) {
+        enterSearch.addEventListener("keyup", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
                 document.getElementById(submitSearch).click();
@@ -113,7 +183,7 @@ const wssTools = (function () {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
-      };      
+    };
 
     return {
         downloadABCFile: downloadABCFile,
@@ -124,6 +194,7 @@ const wssTools = (function () {
         show_iframe: show_iframe,
         enterSearch: enterSearch,
         getRandomInt: getRandomInt,
+        showMDform: showMDform,
     };
 })();
 

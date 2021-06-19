@@ -129,8 +129,9 @@ with open(optionsFile, 'w') as outfile:
     <input type="hidden" id="slowtuneoftheweek-box" name="slowtuneoftheweek" value="">
     
     <p></p>
+    <hr>
 
-    <h3>Recorded version of the tune</h3>
+    <h3>MP3 version of the tune</h3>
 
     <label>MP3 file available</label>
     <input type="checkbox" name="mp3_file" checked>
@@ -221,11 +222,9 @@ with open(optionsFile, 'w') as outfile:
     <input type="text" id="abc_url-box" name="abc_url" value="" placeholder="e.g. https://thesession.org/tunes/1555">
 
     <label>ABC:<sup>*</sup></label>
-    <textarea id="abc-box" name="abc" class="abcText"
-        rows="13" spellcheck="false">
-    </textarea>
+    <textarea id="abc-box" name="abc" class="abcText" rows="13" spellcheck="false"></textarea>
 
-    <input type="button" class="filterButton" onclick="showForm('md', 'createMD')" value="Show MD File">
+    <input type="button" class="filterButton" onclick="wssTools.showMDform('createMD', 'mdTextArea')" value="Show MD File">
 </form>
 """)
 
