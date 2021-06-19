@@ -135,11 +135,13 @@ const wssTools = (function () {
                     }
                     break;
                 case 'abc':
+                    // add the abc details adding the leading '|' and the right indentation
                     obj[item.name] = '|\n';
                     let lines = item.value.split('\n');
                     for (let j = 0; j < lines.length; j++) {
                         obj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
                     }
+                    // check to see if the provided key matches the ABC details
                     let abckey = getABCheaderValue("K:", item.value);
                     if (obj['key'] != abckey) {
                         alert('md key: ' + obj['key'] + ' != abc key: ' + abckey);
