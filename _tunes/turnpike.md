@@ -7,7 +7,7 @@ notes:
 date: 2021-06-18
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-turnpike.mp3
+mp3_file: /mp3/turnpike.mp3
 repeats: 1
 parts: AABB
 mp3_source: Steven McGlone, Ceol Aneas 2021

@@ -7,7 +7,7 @@ notes:
 date: 2021-06-18
 regtuneoftheweek:
 slowtuneoftheweek:
-mp3_file: /mp3/the-shepherdess.mp3
+mp3_file: /mp3/shepherdess.mp3
 repeats: 1
 parts: AABBCC
 mp3_source: Steven McGlone, Ceol Aneas 2021
