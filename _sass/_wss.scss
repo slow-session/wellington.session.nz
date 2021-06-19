@@ -157,7 +157,7 @@ fieldset {
     background-color: darken($complimentary-color, 6%);
 }
 
-.showCovidInfo {
+.container-covidInfo {
     display: inline-block;
     border: 2px solid $brand-color;
     background-color: #f7c501;
@@ -603,7 +603,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border-radius: 8px;
     margin: 10px;
     padding: 10px;
-    width: 100%;
     clear: both;
 }
 
@@ -618,10 +617,4 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin-bottom: 10px;
     float: left;
     clear: right;
-}
-
-.container-createMD datalist {
-    width: 100%;
-    margin-bottom: 5px;
-    clear: both;
 }
