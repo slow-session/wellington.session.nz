@@ -57,7 +57,7 @@ end
 # Check MP3 and tunebook files on the site
 # Usage: rake mp3check
 
-desc "deploy MP3s to the site"
+desc "check MP3s on the site"
 task :mp3check do
     system "ssh -t #{site} sudo /usr/local/sbin/check-site.sh"
 end   
