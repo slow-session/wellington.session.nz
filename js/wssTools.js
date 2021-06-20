@@ -103,6 +103,7 @@ const wssTools = (function () {
         modal.style.display = "block";
 
         let titleSlug = '';
+        mdFileName = '';
         
         document.getElementById(textArea).innerHTML = '---\n';
         for (let i = 0; i < elements.length; i++) {
@@ -113,13 +114,21 @@ const wssTools = (function () {
             }
             switch (item.name) {
                 case 'title':
+                    if (item.value.includes("T:")) {
+                        alert(`Title includes 'T:' - ${item.value}`);
+                    }
                     obj[item.name] = item.value;
                     // strip leading 'The ' from title
                     titleSlug = slugify(obj["title"].replace(/^The /, ''));
                     break;
                 case 'titleID':
-                    obj[item.name] = `${titleSlug}.md`;
-                    mdFileName = `${titleSlug}.md`;
+                    if (titleSlug) {
+                        obj[item.name] = `${titleSlug}.md`;
+                        mdFileName = `${titleSlug}.md`;
+                    } else {
+                        alert('No Title defined');
+                        obj[item.name] = '';
+                    }
                     break;
                 case 'key':
                     obj[item.name] = toTitleCase(item.value);
@@ -128,11 +137,28 @@ const wssTools = (function () {
                     obj[item.name] = dateStamp;
                     break;
                 case 'mp3_file':
-                    if (item.checked) {    
-                        obj[item.name] = `/mp3/${titleSlug}.mp3`
+                    if (item.checked) {
+                        if (titleSlug) {
+                            obj[item.name] = `/mp3/${titleSlug}.mp3`
+                        } else {
+                            alert('No MP3 file name defined');
+                            obj[item.name] = '';
+                        }
                     } else {
                         obj[item.name] = '';
                     }
+                    break;
+                case 'repeats':
+                    if (obj['mp3_file'] && typeof item.value !== 'number') {
+                        alert(`Check value for Repeats - '${item.value}'`);
+                    }
+                    obj[item.name] = item.value;
+                    break;
+                case 'parts':
+                    if (obj['mp3_file'] && !item.value.includes("AB")) {
+                        alert(`Check value for Parts - '${item.value}'`);
+                    }
+                    obj[item.name] = item.value;
                     break;
                 case 'abc':
                     // add the abc details adding the leading '|' and the right indentation
@@ -140,6 +166,16 @@ const wssTools = (function () {
                     let lines = item.value.split('\n');
                     for (let j = 0; j < lines.length; j++) {
                         obj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
+                    }
+                    // check to see if the provided title matches the ABC details
+                    let abctitle = getABCheaderValue("T:", item.value);
+                    if (obj['title'] != abctitle) {
+                        alert('md title: ' + obj['title'] + ' != abc title: ' + abctitle);
+                    }
+                    // check to see if the provided rhythm matches the ABC details
+                    let abcrhythm = getABCheaderValue("R:", item.value);
+                    if (obj['rhythm'] != abcrhythm) {
+                        alert('md rhythm: ' + obj['rhythm'] + ' != abc rhythm: ' + abcrhythm);
                     }
                     // check to see if the provided key matches the ABC details
                     let abckey = getABCheaderValue("K:", item.value);
@@ -153,9 +189,6 @@ const wssTools = (function () {
             document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
         }
         document.getElementById(textArea).innerHTML += '---\n';
-
-        // Set the filename for downloading
-        document.getElementById("filename").innerHTML = obj["titleID"]
     }
 
     function getABCheaderValue(key, tuneABC) {
