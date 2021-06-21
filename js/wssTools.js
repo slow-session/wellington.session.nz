@@ -101,6 +101,10 @@ const wssTools = (function () {
 
         let titleSlug = '';
         mdFileName = '';
+
+        // Display the output in the modal area
+        modal.style.display = "block";
+
         
         document.getElementById(textArea).innerHTML = '---\n';
 
@@ -189,10 +193,7 @@ const wssTools = (function () {
             document.getElementById(textArea).innerHTML += item.name + ': ' + mdFormObj[item.name] + '\n';
         }
         
-        document.getElementById(textArea).innerHTML += '---\n';
-        
-        // Display the output in the modal area
-        modal.style.display = "block";
+        document.getElementById(textArea).innerHTML += '---\n';        
     }
 
     function getABCheaderValue(key, tuneABC) {
