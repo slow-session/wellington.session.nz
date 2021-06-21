@@ -88,8 +88,8 @@ const wssTools = (function () {
 
     function showMDform(myForm, textArea) {
         let elements = document.getElementById(myForm).elements;
-        let obj = {};
-        
+        let mdFormObj = {};
+
         let dateTime = new Date();
         let year = dateTime.getFullYear();
         let month = dateTime.getMonth() + 1;
@@ -99,13 +99,11 @@ const wssTools = (function () {
         day = day.toString().padStart(2, 0);
         let dateStamp = `${year}-${month}-${day}`;
 
-        // Display the output in the modal area
-        modal.style.display = "block";
-
         let titleSlug = '';
         mdFileName = '';
         
         document.getElementById(textArea).innerHTML = '---\n';
+
         for (let i = 0; i < elements.length; i++) {
             let item = elements.item(i);
 
@@ -117,80 +115,84 @@ const wssTools = (function () {
                     if (item.value.includes("T:")) {
                         alert(`Title includes 'T:' - ${item.value}`);
                     }
-                    obj[item.name] = toTitleCase(item.value);
+                    mdFormObj[item.name] = toTitleCase(item.value);
                     // strip leading 'The' from title
-                    titleSlug = slugify(obj[item.name].replace(/^\bthe\b/i, ''));
+                    titleSlug = slugify(mdFormObj[item.name].replace(/^\bthe\b/i, ''));
                     break;
                 case 'titleID':
                     if (titleSlug) {
-                        obj[item.name] = `${titleSlug}.md`;
+                        mdFormObj[item.name] = `${titleSlug}.md`;
                         mdFileName = `${titleSlug}.md`;
                     } else {
                         alert('No Title defined');
-                        obj[item.name] = '';
+                        mdFormObj[item.name] = '';
                     }
                     break;
                 case 'key':
-                    obj[item.name] = toTitleCase(item.value);
+                    mdFormObj[item.name] = toTitleCase(item.value);
                     break;
                 case 'date':
-                    obj[item.name] = dateStamp;
+                    mdFormObj[item.name] = dateStamp;
                     break;
                 case 'mp3_file':
                     if (item.checked) {
                         if (titleSlug) {
-                            obj[item.name] = `/mp3/${titleSlug}.mp3`
+                            mdFormObj[item.name] = `/mp3/${titleSlug}.mp3`
                         } else {
                             alert('No MP3 file name defined');
-                            obj[item.name] = '';
+                            mdFormObj[item.name] = '';
                         }
                     } else {
-                        obj[item.name] = '';
+                        mdFormObj[item.name] = '';
                     }
                     break;
                 case 'repeats':
-                    if (obj['mp3_file'] && parseInt(item.value)) {
-                        obj[item.name] = parseInt(item.value);
+                    if (mdFormObj['mp3_file'] && parseInt(item.value)) {
+                        mdFormObj[item.name] = parseInt(item.value);
                     } else {
                         alert(`Check value for Repeats - '${item.value}'`);
                     }
                     break;
                 case 'parts':
-                    if (obj['mp3_file'] && item.value.includes("AB")) {
-                        obj[item.name] = item.value;
+                    if (mdFormObj['mp3_file'] && item.value.includes("AB")) {
+                        mdFormObj[item.name] = item.value;
                     } else {
                         alert(`Check value for Parts - '${item.value}'`);
                     }
                     break;
                 case 'abc':
                     // add the abc details adding the leading '|' and the right indentation
-                    obj[item.name] = '|\n';
+                    mdFormObj[item.name] = '|\n';
                     let lines = item.value.split('\n');
                     for (let j = 0; j < lines.length; j++) {
-                        obj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
+                        mdFormObj[item.name] += '    ' + lines[j].replace(/^\s*/, '') + '\n';
                     }
                     // check to see if the provided title matches the ABC details
                     let abctitle = getABCheaderValue("T:", item.value);
-                    if (obj['title'] != abctitle) {
-                        alert('md title: ' + obj['title'] + ' != abc title: ' + abctitle);
+                    if (mdFormObj['title'] != abctitle) {
+                        alert('md title: ' + mdFormObj['title'] + ' != abc title: ' + abctitle);
                     }
                     // check to see if the provided rhythm matches the ABC details
                     let abcrhythm = getABCheaderValue("R:", item.value);
-                    if (obj['rhythm'] != abcrhythm) {
-                        alert('md rhythm: ' + obj['rhythm'] + ' != abc rhythm: ' + abcrhythm);
+                    if (mdFormObj['rhythm'] != abcrhythm) {
+                        alert('md rhythm: ' + mdFormObj['rhythm'] + ' != abc rhythm: ' + abcrhythm);
                     }
                     // check to see if the provided key matches the ABC details
                     let abckey = getABCheaderValue("K:", item.value);
-                    if (obj['key'] != abckey) {
-                        alert('md key: ' + obj['key'] + ' != abc key: ' + abckey);
+                    if (mdFormObj['key'] != abckey) {
+                        alert('md key: ' + mdFormObj['key'] + ' != abc key: ' + abckey);
                     }
                     break;
                 default:
-                    obj[item.name] = item.value;
+                    mdFormObj[item.name] = item.value;
             }
-            document.getElementById(textArea).innerHTML += item.name + ': ' + obj[item.name] + '\n';
+            document.getElementById(textArea).innerHTML += item.name + ': ' + mdFormObj[item.name] + '\n';
         }
+        
         document.getElementById(textArea).innerHTML += '---\n';
+        
+        // Display the output in the modal area
+        modal.style.display = "block";
     }
 
     function getABCheaderValue(key, tuneABC) {
