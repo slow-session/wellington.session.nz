@@ -117,9 +117,9 @@ const wssTools = (function () {
                     if (item.value.includes("T:")) {
                         alert(`Title includes 'T:' - ${item.value}`);
                     }
-                    obj[item.name] = item.value;
-                    // strip leading 'The ' from title
-                    titleSlug = slugify(obj["title"].replace(/^The /, ''));
+                    obj[item.name] = toTitleCase(item.value);
+                    // strip leading 'The' from title
+                    titleSlug = slugify(obj[item.name].replace(/^\bthe\b/i, ''));
                     break;
                 case 'titleID':
                     if (titleSlug) {
