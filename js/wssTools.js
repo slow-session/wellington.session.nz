@@ -149,16 +149,18 @@ const wssTools = (function () {
                     }
                     break;
                 case 'repeats':
-                    if (obj['mp3_file'] && typeof item.value !== 'number') {
+                    if (obj['mp3_file'] && parseInt(item.value)) {
+                        obj[item.name] = parseInt(item.value);
+                    } else {
                         alert(`Check value for Repeats - '${item.value}'`);
                     }
-                    obj[item.name] = item.value;
                     break;
                 case 'parts':
-                    if (obj['mp3_file'] && !item.value.includes("AB")) {
+                    if (obj['mp3_file'] && item.value.includes("AB")) {
+                        obj[item.name] = item.value;
+                    } else {
                         alert(`Check value for Parts - '${item.value}'`);
                     }
-                    obj[item.name] = item.value;
                     break;
                 case 'abc':
                     // add the abc details adding the leading '|' and the right indentation
@@ -219,6 +221,10 @@ const wssTools = (function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
+    
+    function isNumber(value) {
+        return typeof value === 'number' && isFinite(value);
+    }
 
     return {
         downloadABCFile: downloadABCFile,
