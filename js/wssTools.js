@@ -104,7 +104,6 @@ const wssTools = (function () {
 
         // Display the output in the modal area
         modal.style.display = "block";
-
         
         document.getElementById(textArea).innerHTML = '---\n';
 
@@ -224,10 +223,6 @@ const wssTools = (function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
-    
-    function isNumber(value) {
-        return typeof value === 'number' && isFinite(value);
-    }
 
     return {
         downloadABCFile: downloadABCFile,
