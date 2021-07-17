@@ -41,28 +41,36 @@ p.tuneInfoPara {
     padding-left: 0.5rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
-    //min-width: 10rem;
 }
 
 .mp3LoopControl {
+    display: flex;
     margin-top: 2rem;
     min-width: 10rem;
-    display: flex;
     justify-content: space-around;
 }
 
 .playButton {
-    height: 2.6rem;
+    height: 2.5rem;
     width: 2.5rem;
-    font-size: 2.5rem;
     margin-top: 0.7rem;
-    margin-left: 0.1rem;
+}
+
+.playIcon {
+    background-image: url("/images/play-button.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.pauseIcon {
+    background-image: url("/images/pause-button.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 p.speedLabel {
     margin-top: 2.5rem;
     margin-bottom: 0;
-    min-width: 7rem;
     clear: left;
     font-size: small;
     text-align: center;
@@ -254,10 +262,22 @@ input[type=number] {
     font-size: 1.4rem;
 }
 
+.loopDownIcon {
+    background-image: url("/images/down-button.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.loopUpIcon {
+    background-image: url("/images/up-button.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
 .loopInput {
     font-size: 0.9rem;
     border-radius: unset;
-    width: 6ch;
+    width: 5ch;
     height: fit-content;
 }
 // END: used for Preset Loops
