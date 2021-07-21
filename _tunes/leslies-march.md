@@ -11,11 +11,12 @@ tags: slowsession
 repeats: 3 
 parts: AABBCC 
 regtuneoftheweek:
-slowtuneoftheweek:
+slowtuneoftheweek: 2021-07-21
 mp3_file: /mp3/leslies-march.mp3
 mp3_licence: <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC-2.5</a>
 mp3_source: Comhaltas Ceoltóirí Éireann
 mp3_url: https://media.comhaltas.ie/audio/cl225/cl225_4.mp3
+alt_mp3_url: https://www.youtube.com/watch?v=KGl7iFro4Ow
 abc_source: The Session
 abc_url: https://thesession.org/tunes/987
 source: Wellington
